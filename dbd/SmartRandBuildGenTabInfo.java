@@ -22,7 +22,7 @@ public class SmartRandBuildGenTabInfo extends JPanel {
     private JPanel pan_header, pan_author;
     private JScrollPane scrollPane;
     private JEditorPane pan_tuto;
-    private JLabel author, lab_email, lab_git;
+    private JLabel lab_author, lab_email, lab_git;
     private ImageIcon pict;
     // Strings
     private String s_profile, s_git, s_email;
@@ -37,7 +37,7 @@ public class SmartRandBuildGenTabInfo extends JPanel {
         this.s_email = "gnehehe70@gmail.com";
         this.s_git = "https://github.com/GneHeHe/SmartRandomBuildGeneratorDbD";
 
-        // Create JEditorPane
+        // Create JEditorPane for HTML Tutorial
         this.pan_tuto = new JEditorPane();
 
         // Add Swing Components
@@ -45,9 +45,7 @@ public class SmartRandBuildGenTabInfo extends JPanel {
 
         this.pan_author = new JPanel(new FlowLayout());
         this.pan_author.setLayout(new BoxLayout(this.pan_author, BoxLayout.X_AXIS));
-        //this.pan_author = new JPanel();
-        //this.pan_author.setLayout(new GridLayout(5, 1));
-        this.pan_author.add(this.author);
+        this.pan_author.add(this.lab_author);
         this.pan_author.add(this.lab_email);
         this.pan_author.add(this.lab_git);
 
@@ -57,7 +55,7 @@ public class SmartRandBuildGenTabInfo extends JPanel {
         this.pan_header.add(new JLabel(this.pict), BorderLayout.CENTER);
         this.pan_header.add(this.pan_author, BorderLayout.SOUTH);
 
-        // Add the html tutorial to Panel
+        // Add tutorial to Panel
         this.scrollPane = new JScrollPane(this.pan_tuto);
 
         // Set the Layout and add Subpanels
@@ -97,10 +95,10 @@ public class SmartRandBuildGenTabInfo extends JPanel {
         }
 
         // Define JLabel Name
-        this.author = new JLabel("<html><u>Author</u></html>", SwingConstants.CENTER);
-        this.author.setFont(new Font("Helvetica", Font.BOLD, 18));
-        this.author.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        this.author.setToolTipText("Go to GneHeHe's STEAM Profile");
+        this.lab_author = new JLabel("<html><u>Author</u></html>", SwingConstants.CENTER);
+        this.lab_author.setFont(new Font("Helvetica", Font.BOLD, 18));
+        this.lab_author.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        this.lab_author.setToolTipText("Go to GneHeHe's STEAM Profile");
 
         // Define JLabel Email
         this.lab_email = new JLabel("<html><u>Contact</u></html>", SwingConstants.CENTER);
@@ -115,7 +113,7 @@ public class SmartRandBuildGenTabInfo extends JPanel {
         this.lab_git.setToolTipText("Go to SRBG GitHub Repository");
 
         // Define MouseListener
-        this.author.addMouseListener(new MouseAdapter() {
+        this.lab_author.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 try {

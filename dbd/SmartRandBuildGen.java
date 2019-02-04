@@ -44,7 +44,7 @@ public class SmartRandBuildGen {
     private String config;
     // Path to default Configuration File
     private String config_def;
-    // Verbose LEvel
+    // Verbose Level
     private boolean verbose;
 
     /**
