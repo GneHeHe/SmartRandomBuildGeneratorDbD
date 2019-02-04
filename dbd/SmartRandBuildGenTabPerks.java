@@ -133,6 +133,7 @@ public class SmartRandBuildGenTabPerks extends JPanel {
                 String f = chooseFile(true);
                 if (new File(f).exists()) {
                     try {
+                        System.out.println("# Loading custom perk distribution from " + f);
                         // Load a custom Configuration File
                         srbg.readConfigFile(f, "\t");
                         // Update Model & Table
@@ -161,6 +162,7 @@ public class SmartRandBuildGenTabPerks extends JPanel {
             public void actionPerformed(ActionEvent e) {
                 InputStream is = srbg.getClass().getResourceAsStream(srbg.getConfigDef());
                 if (is != null) {
+                    System.out.println("# All perks now have the default weights");
                     // Load default Configuration File
                     srbg.readConfigFile(is, "\t");
                     // Update Model & Table
@@ -193,17 +195,12 @@ public class SmartRandBuildGenTabPerks extends JPanel {
                 JComboBox combo = (JComboBox) e.getSource();
                 // Retrieve and Define the Side
                 String value = combo.getSelectedItem().toString();
-                if (value.equals("Survivor")) {
-                    srbg.setSide(value);
-                } else if (value.equals("Killer")) {
-                    srbg.setSide(value);
+                srbg.setSide(value);
+                if (value.equals("Killer")) {
                     // Update Values
                     srbg.setNeedCare(false);
-                    srbg.setNeedExhaust(false);
-                } else {
-                    getAlert("ERROR: Wrong Side", "Warning", JOptionPane.ERROR_MESSAGE);
+                    srbg.setNeedSprint(false);
                 }
-                System.out.println("# Selected Side = " + srbg.getSide());
                 // Update Table => Only Display Perks from the current Side                
                 mymodel.updateTable();
             }

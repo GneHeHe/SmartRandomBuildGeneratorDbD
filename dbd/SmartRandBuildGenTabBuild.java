@@ -26,7 +26,7 @@ public class SmartRandBuildGenTabBuild extends JPanel {
     private JButton b_run;
     private JComboBox cb_nbperks, cb_nbbuilds;
     private JLabel lab_nbperks, lab_nbbuilds;
-    private JCheckBox check_care, check_exhaust;
+    private JCheckBox check_care, check_sprint;
     private JTextArea text;
     private JTable table;
     // SmartRandBuildGen Object
@@ -59,7 +59,7 @@ public class SmartRandBuildGenTabBuild extends JPanel {
         pan_config.add(lab_nbbuilds);
         pan_config.add(cb_nbbuilds);
         pan_config.add(check_care);
-        pan_config.add(check_exhaust);
+        pan_config.add(check_sprint);
         pan_config.add(b_run);
 
         scrollPane = new JScrollPane(text);
@@ -96,13 +96,12 @@ public class SmartRandBuildGenTabBuild extends JPanel {
         cb_nbperks.setPreferredSize(new Dimension(50, 20));
         ((JLabel) cb_nbperks.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
         cb_nbperks.setSelectedItem(srbg.getNbPerk());
-        srbg.setNbPerk(Integer.parseInt(cb_nbperks.getSelectedItem().toString()));
 
         // Define JComboBox Objects for Number of Builds
         cb_nbbuilds = new JComboBox(new Integer[]{1, 3, 5, 10});
         cb_nbbuilds.setPreferredSize(new Dimension(50, 20));
         ((JLabel) cb_nbbuilds.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
-        cb_nbbuilds.setSelectedIndex(1);
+        cb_nbbuilds.setSelectedIndex(2);
         nbbuilds = Integer.parseInt(cb_nbbuilds.getSelectedItem().toString());
 
         // Define JCheckBox Objects
@@ -112,15 +111,15 @@ public class SmartRandBuildGenTabBuild extends JPanel {
         } else {
             check_care.setSelected(false);
         }
-        check_care.setToolTipText(srbg.getCareString());
+        check_care.setToolTipText(srbg.getCareAsString());
 
-        check_exhaust = new JCheckBox("Exhaustion Perk Needed");
-        if (srbg.getNeedExhaust()) {
-            check_exhaust.setSelected(true);
+        check_sprint = new JCheckBox("Sprint Perk Needed");
+        if (srbg.getNeedSprint()) {
+            check_sprint.setSelected(true);
         } else {
-            check_exhaust.setSelected(false);
+            check_sprint.setSelected(false);
         }
-        check_exhaust.setToolTipText(srbg.getExhaustString());
+        check_sprint.setToolTipText(srbg.getSprintAsString());
 
         // Define JTable Objects
         table = new JTable(1, 4);
@@ -140,18 +139,18 @@ public class SmartRandBuildGenTabBuild extends JPanel {
             public void actionPerformed(ActionEvent e) {
                 // Update Var according to Side
                 if (srbg.getSide().equals("Killer")) {
-                    // Special Case => disabled JCheckBox and Care/Exhaustion Status
+                    // Special Case => disabled JCheckBox and Care/Perk Status
                     check_care.setSelected(false);
                     check_care.setEnabled(false);
                     srbg.setNeedCare(false);
-                    check_exhaust.setSelected(false);
-                    check_exhaust.setEnabled(false);
-                    srbg.setNeedExhaust(false);
+                    check_sprint.setSelected(false);
+                    check_sprint.setEnabled(false);
+                    srbg.setNeedSprint(false);
                 } else {
                     check_care.setEnabled(true);
                     check_care.setSelected(srbg.getNeedCare());
-                    check_exhaust.setEnabled(true);
-                    check_exhaust.setSelected(srbg.getNeedExhaust());
+                    check_sprint.setEnabled(true);
+                    check_sprint.setSelected(srbg.getNeedSprint());
                 }
                 // Reset TextArea
                 text.setText("");
@@ -199,19 +198,18 @@ public class SmartRandBuildGenTabBuild extends JPanel {
                 JComboBox combo = (JComboBox) e.getSource();
                 // Retrieve and Define the Number of Perks
                 srbg.setNbPerk(Integer.parseInt(cb_nbperks.getSelectedItem().toString()));
-                System.out.println("# Number of wanted Perks = " + srbg.getNbPerk());
                 if (srbg.getNbPerk() < 2) {
-                    // Special Case => disabled JCheckBox and Care/Exhaustion Status
+                    // Special Case => disabled JCheckBox and Care/Sprint Status
                     check_care.setSelected(false);
                     check_care.setEnabled(false);
                     srbg.setNeedCare(false);
-                    check_exhaust.setSelected(false);
-                    check_exhaust.setEnabled(false);
-                    srbg.setNeedExhaust(false);
+                    check_sprint.setSelected(false);
+                    check_sprint.setEnabled(false);
+                    srbg.setNeedSprint(false);
                 } else {
                     // Common Case => enabled JCheckBox
                     check_care.setEnabled(true);
-                    check_exhaust.setEnabled(true);
+                    check_sprint.setEnabled(true);
                     // Update JCheckBox according to SRBG Object
                     if (srbg.getNeedCare()) {
                         check_care.setSelected(true);
@@ -219,10 +217,10 @@ public class SmartRandBuildGenTabBuild extends JPanel {
                         check_care.setSelected(false);
                     }
                     // Update JCheckBox according to SRBG Object
-                    if (srbg.getNeedExhaust()) {
-                        check_exhaust.setSelected(true);
+                    if (srbg.getNeedSprint()) {
+                        check_sprint.setSelected(true);
                     } else {
-                        check_exhaust.setSelected(false);
+                        check_sprint.setSelected(false);
                     }
                 }
             }
@@ -249,21 +247,19 @@ public class SmartRandBuildGenTabBuild extends JPanel {
                 } else {
                     srbg.setNeedCare(false);
                 }
-                System.out.println("# Care Mode = " + srbg.getNeedCare());
             }
         });
 
         // Define ItemListener
-        check_exhaust.addItemListener(new ItemListener() {
+        check_sprint.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
-                // Retrieve and Define the Needed Exhaustion Status
-                if (check_exhaust.isSelected()) {
-                    srbg.setNeedExhaust(true);
+                // Retrieve and Define the Needed Sprint Status
+                if (check_sprint.isSelected()) {
+                    srbg.setNeedSprint(true);
                 } else {
-                    srbg.setNeedExhaust(false);
+                    srbg.setNeedSprint(false);
                 }
-                System.out.println("# Exhaust Mode = " + srbg.getNeedExhaust());
             }
         });
 
