@@ -619,7 +619,7 @@ public class SmartRandBuildGen {
         System.out.println("#  -care : enable constraints for care-related perks");
         System.out.println("#  -sprint : enable constraints for sprint-related perks");
         System.out.println("#  -v : enable verbose mode");
-        System.out.println("#  -h : print this help and quit\n#");
+        System.out.println("#  -h : print this help and quit\n);
         System.exit(0);
     }
 
