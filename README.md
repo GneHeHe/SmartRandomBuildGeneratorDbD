@@ -14,7 +14,7 @@ Both "number of builds to generate" and "number of perks in each build" can be e
 
 Finally, some interesting constraints can be enabled:
 * required perk related to care/healing (Self-Care, AfterCare, Bond, Pharmacy)
-* required exhaustion perk (Dead Hard, Balanced Landing, Lithe, Sprint Burst)
+* required sprint perk (Dead Hard, Balanced Landing, Lithe, Sprint Burst)
 
 # Conclusion
 
