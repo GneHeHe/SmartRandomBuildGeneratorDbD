@@ -122,7 +122,7 @@ public class SmartRandBuildGenTabPerks extends JPanel {
                 } else {
                     cb_side.setSelectedIndex(1);
                 }
-                getAlert("You will play on the " + srbg.getSide() + " side for your next round !", "Message from The Entity", JOptionPane.INFORMATION_MESSAGE);
+                getAlert("You will play on the " + srbg.getSide() + " side next round ;)", "Message from The Entity", JOptionPane.INFORMATION_MESSAGE);
             }
         });
 
