@@ -18,14 +18,14 @@ Finally, some interesting constraints can be enabled:
 
 # How to install and use SRBG ?
 
-Download the compiled JAR file (available in **"releases"**)
+Download the last compiled JAR file (available in **"releases"**)
 
 System Requirements:
 
 * Latest **Java** Version https://java.com/en/download/
 * Library **Gson** (included in compiled JAR file)
 
-Double click on the **SmartRandBuildGen.jar** file to run SRBG
+Double click on the **SmartRandBuildGen.jar** file to run **SRBG**
 
 # Conclusion
 
