@@ -209,7 +209,7 @@ public class SmartRandBuildGenTabPerks extends JPanel {
     }
 
     /**
-     * Display a message in a windows
+     * Display Message in a Window
      *
      * @param msg the string to display
      * @param title the title of the window

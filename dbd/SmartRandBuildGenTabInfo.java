@@ -26,16 +26,23 @@ public class SmartRandBuildGenTabInfo extends JPanel {
     private ImageIcon pict;
     // Strings
     private String s_profile, s_git, s_email;
+    // SmartRandBuildGen Object
+    private SmartRandBuildGen srbg;
 
     /**
      * Constructor
+     *
+     * @param myBuilder
      */
-    public SmartRandBuildGenTabInfo() {
+    public SmartRandBuildGenTabInfo(SmartRandBuildGen myBuilder) {
+
+        // Set SmartRandBuildGen Object
+        this.srbg = myBuilder;
 
         // Define Strings
         this.s_profile = "http://steamcommunity.com/id/trna";
         this.s_email = "gnehehe70@gmail.com";
-        this.s_git = "https://github.com/GneHeHe/SmartRandomBuildGeneratorDbD";
+        this.s_git = "https://github.com/" + srbg.git_user + "/" + srbg.git_repo + "/releases";
 
         // Create JEditorPane for HTML Tutorial
         this.pan_tuto = new JEditorPane();
@@ -158,7 +165,7 @@ public class SmartRandBuildGenTabInfo extends JPanel {
     }
 
     /**
-     * Display a message in a windows
+     * Display Message in a Window
      *
      * @param msg the string to display
      * @param title the title of the window

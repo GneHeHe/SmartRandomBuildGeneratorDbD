@@ -46,7 +46,12 @@ public class SmartRandBuildGen {
     private String config_def;
     // Verbose Level
     private boolean verbose;
-    public String spacer;
+    // Version
+    final private double version = 1.1;
+    // GitHub User/Repos
+    final public String git_user = "GneHeHe";
+    final public String git_repo = "SmartRandomBuildGeneratorDbD";
+    final public String spacer = "####################################";
 
     /**
      * Default Constructor
@@ -79,8 +84,6 @@ public class SmartRandBuildGen {
         setTitle();
 
         this.verbose = false;
-
-        this.spacer = "####################################";
 
     }
 
@@ -355,7 +358,7 @@ public class SmartRandBuildGen {
         }
 
         // Set Title of Tool
-        this.title = "Smart Random Build Generator for Dead by Daylight (version 1.0, last build " + sdf.format(date) + ")";
+        this.title = "Smart Random Build Generator for Dead by Daylight (version " + this.version + ", last build " + sdf.format(date) + ")";
     }
 
     /**
@@ -365,6 +368,15 @@ public class SmartRandBuildGen {
      */
     public String getTitle() {
         return this.title;
+    }
+
+    /**
+     * Get Version of Tool
+     *
+     * @return
+     */
+    public double getVersion() {
+        return this.version;
     }
 
     /**
@@ -624,6 +636,24 @@ public class SmartRandBuildGen {
     }
 
     /**
+     * Display Help and Quit
+     *
+     * @return
+     */
+    public boolean checkUpdate() {
+        System.out.print("\n# Checking Update from ");
+        boolean update_new = false;
+        double gitversion = Tools.checkUpdate(this.git_user, this.git_repo);
+        if (gitversion > this.version) {
+            update_new = true;
+            System.out.println("# Remote Version = " + gitversion + "\n# Local Version = " + this.version + "\n# An Update is available from https://github.com/" + this.git_user + "/" + this.git_repo + "/releases\n");
+        } else {
+            System.out.println("# You already have the last Version\n");
+        }
+        return update_new;
+    }
+
+    /**
      * Main Method for Command-line Use
      *
      * @param args
@@ -632,6 +662,9 @@ public class SmartRandBuildGen {
 
         // Build SmartRandBuildGen Object
         SmartRandBuildGen srbg = new SmartRandBuildGen();
+
+        // Check Update
+        srbg.checkUpdate();
 
         // Check Args
         if (args.length == 0) {

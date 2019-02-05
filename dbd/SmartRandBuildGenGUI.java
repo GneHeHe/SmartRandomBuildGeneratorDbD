@@ -76,8 +76,13 @@ public class SmartRandBuildGenGUI extends JFrame {
         // Define Tabs
         final SmartRandBuildGenTabPerks myPerks = new SmartRandBuildGenTabPerks(srbg);
         final SmartRandBuildGenTabBuild myBuilds = new SmartRandBuildGenTabBuild(srbg);
-        final SmartRandBuildGenTabInfo myInfo = new SmartRandBuildGenTabInfo();
+        final SmartRandBuildGenTabInfo myInfo = new SmartRandBuildGenTabInfo(srbg);
 
+        
+        if (srbg.checkUpdate()) {
+            getAlert("An update is available from GitHub repository.\n\nClickable link is available from \"Contact & Help\" tab.", "Information", JOptionPane.INFORMATION_MESSAGE);
+        }
+        
         // Launch Frame
         SwingUtilities.invokeLater(new Runnable() {
             @Override
@@ -127,6 +132,17 @@ public class SmartRandBuildGenGUI extends JFrame {
             System.out.println("# ERROR: LookAndFeel can't be loaded\n" + ex.getMessage());
             System.exit(0);
         }
+    }
+
+    /**
+     * Display Message in a Window
+     *
+     * @param msg the string to display
+     * @param title the title of the window
+     * @param type the type of alert (error, information ...)
+     */
+    private static void getAlert(String msg, String title, int type) {
+        JOptionPane.showMessageDialog(null, msg, title, type);
     }
 
 }
