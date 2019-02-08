@@ -54,7 +54,7 @@ public class SmartRandBuildGenGUI extends JFrame {
 
         // Set the Frame
         setTitle(myperks.srbg.getTitle());
-        setSize(new Dimension(900, 760));
+        setSize(new Dimension(900, 750));
         setResizable(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         //pack();
@@ -78,11 +78,11 @@ public class SmartRandBuildGenGUI extends JFrame {
         final SmartRandBuildGenTabBuild myBuilds = new SmartRandBuildGenTabBuild(srbg);
         final SmartRandBuildGenTabInfo myInfo = new SmartRandBuildGenTabInfo(srbg);
 
-        
+
         if (srbg.checkUpdate()) {
             getAlert("An update is available from GitHub repository.\n\nClickable link is available from \"Contact & Help\" tab.", "Information", JOptionPane.INFORMATION_MESSAGE);
         }
-        
+
         // Launch Frame
         SwingUtilities.invokeLater(new Runnable() {
             @Override
@@ -129,7 +129,7 @@ public class SmartRandBuildGenGUI extends JFrame {
         try {
             UIManager.setLookAndFeel(laf);
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException ex) {
-            System.out.println("# ERROR: LookAndFeel can't be loaded\n" + ex.getMessage());
+            System.err.println("# ERROR: LookAndFeel can't be loaded\n" + ex.getMessage());
             System.exit(0);
         }
     }
@@ -139,7 +139,7 @@ public class SmartRandBuildGenGUI extends JFrame {
      *
      * @param msg the string to display
      * @param title the title of the window
-     * @param type the type of alert (error, information ...)
+     * @param type the type of alert
      */
     private static void getAlert(String msg, String title, int type) {
         JOptionPane.showMessageDialog(null, msg, title, type);

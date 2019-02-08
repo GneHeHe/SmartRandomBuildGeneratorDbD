@@ -5,7 +5,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
-import java.io.InputStream;
 import java.util.TreeSet;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -33,8 +32,6 @@ public class SmartRandBuildGenTabBuild extends JPanel {
     private SmartRandBuildGen srbg;
     // Number of Random Builds
     private int nbbuilds;
-    // Size of Pictures    
-    private int size;
 
     /**
      * Default Constructor
@@ -45,9 +42,6 @@ public class SmartRandBuildGenTabBuild extends JPanel {
 
         // Set SmartRandBuildGen Object
         this.srbg = myBuilder;
-
-        // Define Size of Pictures
-        this.size = 220;
 
         // Add Swing Components
         addComponents();
@@ -95,10 +89,10 @@ public class SmartRandBuildGenTabBuild extends JPanel {
         cb_nbperks = new JComboBox(new Integer[]{1, 2, 3, 4});
         cb_nbperks.setPreferredSize(new Dimension(50, 20));
         ((JLabel) cb_nbperks.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
-        cb_nbperks.setSelectedItem(srbg.getNbPerk());
+        cb_nbperks.setSelectedItem(srbg.getNbPerksBuild());
 
         // Define JComboBox Objects for Number of Builds
-        cb_nbbuilds = new JComboBox(new Integer[]{1, 3, 5, 10});
+        cb_nbbuilds = new JComboBox(new Integer[]{1, 3, 5, 7, 9});
         cb_nbbuilds.setPreferredSize(new Dimension(50, 20));
         ((JLabel) cb_nbbuilds.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
         cb_nbbuilds.setSelectedIndex(2);
@@ -122,14 +116,15 @@ public class SmartRandBuildGenTabBuild extends JPanel {
         check_sprint.setToolTipText(srbg.getSprintAsString());
 
         // Define JTable Objects
+        int size = 220;
         table = new JTable(1, 4);
-        table.setRowHeight(this.size);
+        table.setRowHeight(size);
         table.setShowHorizontalLines(false);
         table.setShowVerticalLines(false);
         for (int i = 0; i < table.getColumnCount(); i++) {
             TableColumn column = table.getColumnModel().getColumn(i);
             column.setCellRenderer(new IconTableCellRenderer());
-            column.setPreferredWidth(this.size);
+            column.setPreferredWidth(size);
         }
         table.setAutoscrolls(false);
 
@@ -152,6 +147,8 @@ public class SmartRandBuildGenTabBuild extends JPanel {
                     check_sprint.setEnabled(true);
                     check_sprint.setSelected(srbg.getNeedSprint());
                 }
+                // Display loaded Parameters
+                srbg.showParams();
                 // Reset TextArea
                 text.setText("");
                 // Reset Table => Remove Data in TableModel (RowCount = 0)
@@ -160,7 +157,7 @@ public class SmartRandBuildGenTabBuild extends JPanel {
                 // Add a new Line for the 1st Build
                 model.setRowCount(1);
                 // Define the Text to be Displayed
-                String fulltext = "\n ";
+                String fulltext = "\n\n ";
                 for (int i = 1; i <= nbbuilds; i++) {
                     TreeSet<String> l = srbg.genRandomBuild();
                     fulltext = fulltext + srbg.showBuild(l, i + "", "       ");
@@ -170,23 +167,16 @@ public class SmartRandBuildGenTabBuild extends JPanel {
                     // 1st Build => Display It in the Table
                     if (i == 1) {
                         int nb = 0;
-                        String path = "";
-                        String icon = null;
                         JLabel tmp = null;
-                        InputStream is = null;
                         for (String s : l) {
-                            icon = srbg.getPerk(s).getIconString();
-                            path = "icons/" + icon + ".png";
-                            is = this.getClass().getResourceAsStream(path);
-                            if (is != null) {
-                                tmp = new JLabel(new ImageIcon(Tools.resizePicture(is, size, size)));
-                            }
+                            tmp = new JLabel(srbg.getPerk(s).getIconImage(true));
                             table.getModel().setValueAt(tmp, 0, nb);
                             nb++;
                         }
                     }
                 }
                 // Display Text
+                System.out.println(fulltext.replaceAll("\n\n", "\n#")+"\n");
                 text.setText(fulltext);
             }
         });
@@ -197,8 +187,8 @@ public class SmartRandBuildGenTabBuild extends JPanel {
             public void actionPerformed(ActionEvent e) {
                 JComboBox combo = (JComboBox) e.getSource();
                 // Retrieve and Define the Number of Perks
-                srbg.setNbPerk(Integer.parseInt(cb_nbperks.getSelectedItem().toString()));
-                if (srbg.getNbPerk() < 2) {
+                srbg.setNbPerksBuild(Integer.parseInt(cb_nbperks.getSelectedItem().toString()));
+                if (srbg.getNbPerksBuild() < 2) {
                     // Special Case => disabled JCheckBox and Care/Sprint Status
                     check_care.setSelected(false);
                     check_care.setEnabled(false);

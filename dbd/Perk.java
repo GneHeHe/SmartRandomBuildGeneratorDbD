@@ -17,9 +17,13 @@ public final class Perk {
     // Side the Perk
     private String side;
     // Icon of the Perk (as String)
-    private String s_icon;
+    private String icon_string;
     // Icon of the Perk (as ImageIcon)
-    private ImageIcon img_icon;
+    private ImageIcon icon_img_small;
+    private ImageIcon icon_img_large;
+    // Sizes of ImageIcon
+    private final int nb_small = 60;
+    private final int nb_large = 220;
 
     /**
      * Default Constructor
@@ -29,8 +33,9 @@ public final class Perk {
         this.name = "";
         this.weight = 0;
         this.side = "";
-        this.s_icon = "";
-        this.img_icon = null;
+        this.icon_string = "";
+        this.icon_img_small = null;
+        this.icon_img_large = null;
     }
 
     /**
@@ -48,7 +53,8 @@ public final class Perk {
         try {
             setIcon(icon);
         } catch (IOException ex) {
-            System.out.println(ex.getMessage());
+            System.err.println("ERROR while creating Perk " + name);
+            System.err.println(ex.getMessage());
             System.exit(0);
         }
     }
@@ -90,7 +96,7 @@ public final class Perk {
         if (side.equals("Killer") || side.equals("Survivor")) {
             this.side = side;
         } else {
-            System.out.println("# ERROR: This side " + side + " is wrong (expected value = 'Killer' or 'Survivor'");
+            System.err.println("# ERROR: This side " + side + " is wrong (expected value = 'Killer' or 'Survivor'");
             System.exit(0);
         }
     }
@@ -98,10 +104,15 @@ public final class Perk {
     /**
      * Get Perk Icon as ImageIcon
      *
+     * @param getlarge
      * @return
      */
-    public ImageIcon getIconImage() {
-        return this.img_icon;
+    public ImageIcon getIconImage(boolean getlarge) {
+        if (getlarge) {
+            return this.icon_img_large;
+        } else {
+            return this.icon_img_small;
+        }
     }
 
     /**
@@ -110,7 +121,7 @@ public final class Perk {
      * @return
      */
     public String getIconString() {
-        return this.s_icon;
+        return this.icon_string;
     }
 
     /**
@@ -120,14 +131,28 @@ public final class Perk {
      * @throws java.io.IOException
      */
     public void setIcon(String s_icon) throws IOException {
-        this.s_icon = s_icon;
-        this.img_icon = null;
+        this.icon_string = s_icon;
+        this.icon_img_small = null;
+        this.icon_img_large = null;
         String path = "icons/" + s_icon + ".png";
-        InputStream is = this.getClass().getResourceAsStream(path);
-        if (is != null) {
-            this.img_icon = new ImageIcon(Tools.resizePicture(is, 60, 60));
+        InputStream is1 = this.getClass().getResourceAsStream(path);
+        // Any way to reset the InputStream instead of reading it twice in different Objects (functions mark(), reset() don't work) ?
+        InputStream is2 = this.getClass().getResourceAsStream(path);
+        if (is1 != null) {
+            this.icon_img_small = new ImageIcon(Tools.resizePicture(is1, this.nb_small, this.nb_small));
+            this.icon_img_large = new ImageIcon(Tools.resizePicture(is2, this.nb_large, this.nb_large));
         } else {
-            System.out.println("# WARNING: " + path + " not found !");
+            System.err.println("# WARNING: Icon File '" + path + "' was not found for Perk '" + this.name + "' => using default Icon File ('iconPerks_default.png') from data directory");
+            path = "data/iconPerks_default.png";
+            is1 = this.getClass().getResourceAsStream(path);
+            is2 = this.getClass().getResourceAsStream(path);
+            if (is1 != null) {
+                this.icon_img_small = new ImageIcon(Tools.resizePicture(is1, this.nb_small, this.nb_small));
+                this.icon_img_large = new ImageIcon(Tools.resizePicture(is2, this.nb_large, this.nb_large));
+            } else {
+                System.err.println("# WARNING: Both expected and default Icon Files were not found for Perk '" + this.name + "' => exit");
+                System.exit(0);
+            }
         }
     }
 
@@ -152,10 +177,15 @@ public final class Perk {
     /**
      * Display Perk as String
      *
+     * @param detail
      * @return
      */
-    public String show() {
-        return "# Name = " + this.name + " | Side = " + this.side + " | Icon = " + this.s_icon + " | Weight = " + this.getWeight();
+    public String show(boolean detail) {
+        if (detail) {
+            return "# Perk = '" + this.name + "' | Side = " + this.side + " | Icon = " + this.icon_string + " | Weight = " + this.getWeight();
+        } else {
+            return "# Perk = '" + this.name + "' | Side = " + this.side + " | Weight = " + this.getWeight();
+        }
     }
 
 }

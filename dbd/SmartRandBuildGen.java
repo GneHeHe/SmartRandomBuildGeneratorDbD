@@ -37,7 +37,11 @@ public class SmartRandBuildGen {
     // Boolean Sprint Perk Needed
     private boolean sprint_needed;
     // Number of Perks in the Build
-    private int nb_perks;
+    private int nb_perks_build;
+    // Number of Loaded Perks
+    private int nb_perks_all;
+    // Number of Loaded Perks in active Side
+    private int nb_perks_side;
     // Title of Tool
     private String title;
     // Path to current Configuration File
@@ -46,12 +50,12 @@ public class SmartRandBuildGen {
     private String config_def;
     // Verbose Level
     private boolean verbose;
-    // Version
-    final private double version = 1.1;
+    // Version of SRBG
+    final private double version = 1.2;
     // GitHub User/Repos
     final public String git_user = "GneHeHe";
     final public String git_repo = "SmartRandomBuildGeneratorDbD";
-    final public String spacer = "####################################";
+    final private String spacer = "##########";
 
     /**
      * Default Constructor
@@ -59,18 +63,21 @@ public class SmartRandBuildGen {
      */
     public SmartRandBuildGen() {
 
+        // Set Title of Tool
+        setTitle();
+        System.out.println("\n" + spacer + " " + getTitle() + " " + spacer + "\n");
+
         // Set the Lists of Perks
         this.l_perks = new ArrayList<>();
         this.l_perks_string = new ArrayList<>();
 
-        // Define the default Side
+        // Read the default Weight Distribution File
+        this.initConfigFile();
+
+        // Define the default Side and Number of Perks
         this.side_current = "Survivor";
-
-        // Define the default Number of Perks
-        this.nb_perks = 4;
-
-        // Read the default Perk Distribution File
-        initConfigFile();
+        this.updatePerksSide();
+        this.nb_perks_build = 4;
 
         // Init Care/Sprint Perk Lists
         this.set_care = initTreeSet("data/perks_care.txt");
@@ -80,9 +87,7 @@ public class SmartRandBuildGen {
         this.care_needed = false;
         this.sprint_needed = false;
 
-        // Set Title of Tool
-        setTitle();
-
+        // Set Verbose Mode
         this.verbose = false;
 
     }
@@ -97,6 +102,8 @@ public class SmartRandBuildGen {
         for (Perk p : this.l_perks) {
             p.setWeight(value);
         }
+        // Display Perks
+        showPerks(false);
     }
 
     /**
@@ -128,8 +135,8 @@ public class SmartRandBuildGen {
      *
      * @return
      */
-    public int getNbPerk() {
-        return this.nb_perks;
+    public int getNbPerksBuild() {
+        return this.nb_perks_build;
     }
 
     /**
@@ -137,15 +144,33 @@ public class SmartRandBuildGen {
      *
      * @param n
      */
-    public void setNbPerk(int n) {
-        this.nb_perks = n;
+    public void setNbPerksBuild(int n) {
+        this.nb_perks_build = n;
         // Adjust Booleans if Value is lower than 2
-        if (this.nb_perks < 2) {
+        if (this.nb_perks_build < 2) {
             setNeedCare(false);
             setNeedSprint(false);
             System.out.println("# WARNING: Booleans (NeedCare and NeedSprint) are set to False because the number of desired Perks is lower than 2");
         }
-        System.out.println("# Number of wanted Perks = " + this.nb_perks);
+        System.out.println("# Nb of Perks per Build = " + this.nb_perks_build + "\n");
+    }
+
+    /**
+     * Get the Number of Loaded Perks
+     *
+     * @return
+     */
+    public int getNbPerksAll() {
+        return this.nb_perks_all;
+    }
+
+    /**
+     * Get the Number of Active Perks
+     *
+     * @return
+     */
+    public int getNbPerksActive() {
+        return this.nb_perks_side;
     }
 
     /**
@@ -182,13 +207,20 @@ public class SmartRandBuildGen {
      * @param s
      */
     public void setSide(String s) {
+        if (s.equals("Random")) {
+            s = selectRandomSide();
+        }
         if ((s.equals("Survivor")) || (s.equals("Killer"))) {
             this.side_current = s;
         } else {
-            System.out.println("# ERROR: The side must be either 'Survivor' or 'Killer'");
+            System.err.println("\n# ERROR: The side must be either 'Survivor' OR 'Killer' OR 'Random'\n");
             System.exit(0);
         }
-        System.out.println("# Selected Side = " + this.side_current);
+        System.out.println("# Active Side = " + this.side_current);
+        // Update Nb of Active Perks
+        updatePerksSide();
+        // Display Perks
+        showPerksSide(false);
     }
 
     /**
@@ -207,12 +239,12 @@ public class SmartRandBuildGen {
      * @param b
      */
     public void setNeedCare(boolean b) {
-        if ((this.side_current.equals("Survivor")) && (((getNbPerk() == 1) && (!getNeedSprint())) || (getNbPerk() >= 2))) {
+        if ((this.side_current.equals("Survivor")) && (((getNbPerksBuild() == 1) && (!getNeedSprint())) || (getNbPerksBuild() >= 2))) {
             this.care_needed = b;
-            System.out.println("# Care Mode = " + this.care_needed);
+            System.out.println("# Care Perk Needed = " + this.care_needed);
         } else {
             this.care_needed = false;
-            System.out.println("# Care Mode = " + this.care_needed + " (WARNING: value can't be updated)");
+            System.out.println("# Care Perk Needed = " + this.care_needed + " (WARNING: value can't be updated)");
         }
     }
 
@@ -232,12 +264,12 @@ public class SmartRandBuildGen {
      * @param b
      */
     public void setNeedSprint(boolean b) {
-        if ((this.side_current.equals("Survivor")) && (((getNbPerk() == 1) && (!getNeedCare())) || (getNbPerk() >= 2))) {
+        if ((this.side_current.equals("Survivor")) && (((getNbPerksBuild() == 1) && (!getNeedCare())) || (getNbPerksBuild() >= 2))) {
             this.sprint_needed = b;
-            System.out.println("# Sprint Mode = " + this.sprint_needed);
+            System.out.println("# Sprint Perk Needed = " + this.sprint_needed);
         } else {
             this.sprint_needed = false;
-            System.out.println("# Sprint Mode = " + this.sprint_needed + " (WARNING: value can't be updated)");
+            System.out.println("# Sprint Perk Needed = " + this.sprint_needed + " (WARNING: value can't be updated)");
         }
     }
 
@@ -295,14 +327,46 @@ public class SmartRandBuildGen {
     }
 
     /**
-     * Display all Perks and their Attributes
+     * Display all Perks and Features
      *
+     * @param detail
      */
-    public void showPerks() {
-        System.out.println("\n" + spacer + " Loaded Perks with their Attributes " + spacer + "\n");
+    public void showPerks(boolean detail) {
+        System.out.println("\n# All Loaded Perks (" + this.nb_perks_all + " Perks)\n");
         for (Perk p : this.l_perks) {
-            System.out.println(p.show());
+            System.out.println(p.show(detail));
         }
+        System.out.println("");
+    }
+
+    /**
+     * Display active Perks and Features
+     *
+     * @param detail
+     */
+    public void showPerksSide(boolean detail) {
+        System.out.println("\n# Active Perks from '" + this.side_current + "' Side (" + this.nb_perks_side + " Perks)\n");
+        for (Perk p : this.l_perks) {
+            if (p.getSide().equals(this.side_current)) {
+                System.out.println(p.show(detail));
+            }
+        }
+        System.out.println("");
+    }
+
+    /**
+     * Update active Perks
+     *
+     * @param detail
+     */
+    private void updatePerksSide() {
+        int nb = 0;
+        for (Perk p : this.l_perks) {
+            if (p.getSide().equals(this.side_current)) {
+                nb++;
+            }
+        }
+        this.nb_perks_side = nb;
     }
 
     /**
@@ -311,11 +375,13 @@ public class SmartRandBuildGen {
      */
     public void showParams() {
         System.out.println("\n" + spacer + " Input Parameters " + spacer + "\n");
-        System.out.println("# Side = " + this.side_current);
-        System.out.println("# Number of Perks per Build = " + this.nb_perks);
-        System.out.println("# Care Needed = " + this.care_needed);
-        System.out.println("# Sprint Needed = " + this.sprint_needed);
-        System.out.println("# Number of Loaded Perks = " + this.l_perks_string.size());
+        System.out.println("# Nb of Loaded Perks = " + this.nb_perks_all);
+        System.out.println("# Active Side = " + this.side_current);
+        System.out.println("# Nb of Perks on Active Side = " + this.nb_perks_side);
+        System.out.println("# Nb of Perks per Build = " + this.nb_perks_build);
+        System.out.println("# Care Perk Needed = " + this.care_needed);
+        System.out.println("# Sprint Perk Needed = " + this.sprint_needed);
+        System.out.println("# Verbose Mode = " + this.verbose);
     }
 
     /**
@@ -330,7 +396,7 @@ public class SmartRandBuildGen {
         int nb = 1;
         String build = "Random Build " + name + " :" + spacer;
         for (String s : tree) {
-            if (nb == getNbPerk()) {
+            if (nb == getNbPerksBuild()) {
                 build = build + s;
             } else {
                 build = build + s + spacer;
@@ -354,11 +420,12 @@ public class SmartRandBuildGen {
         try {
             date = new File(getClass().getProtectionDomain().getCodeSource().getLocation().toURI().getPath()).lastModified();
         } catch (Exception ex) {
-            System.out.println(ex.getMessage());
+            System.err.println("\n# ERROR: The title can't be defined");
+            System.err.println(ex.getMessage());
         }
 
         // Set Title of Tool
-        this.title = "Smart Random Build Generator for Dead by Daylight (version " + this.version + ", last build " + sdf.format(date) + ")";
+        this.title = "Smart Random Build Generator for Dead by Daylight " + this.version + " [ last build " + sdf.format(date) + " ]";
     }
 
     /**
@@ -384,7 +451,7 @@ public class SmartRandBuildGen {
      *
      * @param b
      */
-    public void setVerbose(boolean b) {
+    private void setVerbose(boolean b) {
         this.verbose = b;
         System.out.println("# Verbose Mode = " + this.verbose);
     }
@@ -424,7 +491,7 @@ public class SmartRandBuildGen {
             }
         }
         // Check if the Pool of Perks if sufficiently big enough, same for the Number of unique Perks
-        if ((l.size() < this.nb_perks) || (nbperks < this.nb_perks)) {
+        if ((l.size() < this.nb_perks_build) || (nbperks < this.nb_perks_build)) {
             System.out.println("# Pool of available Perks is too small => Check the Weights of Perks and/or the Number of Perks in each Build");
             return l_ok;
         }
@@ -443,7 +510,7 @@ public class SmartRandBuildGen {
             boolean sprint_found = false;
             boolean care_found = false;
             l_ok.clear();
-            while (l_ok.size() < getNbPerk()) {
+            while (l_ok.size() < getNbPerksBuild()) {
                 int rand = (int) (l.size() * Math.random());
                 String perk = l.get(rand);
                 if (!l_ok.contains(perk)) {
@@ -493,17 +560,17 @@ public class SmartRandBuildGen {
         String f = System.getProperty("user.dir") + File.separator + "perks_db_custom.txt";
         if (new File(f).exists()) {
             this.config = new File(f).getAbsolutePath();
-            System.out.println("# Loading custom perk distribution from " + this.config);
+            System.out.println("# Loading custom weight distribution from " + this.config);
             readConfigFile(f, "\t");
         } else {
             // Or use the default Configuration File
             this.config = "data/perks_db.txt";
-            System.out.println("# Loading default perk distribution from " + this.config);
+            System.out.println("# Loading default weight distribution from " + this.config);
             InputStream is = getClass().getResourceAsStream(this.config);
             if (is != null) {
                 readConfigFile(is, "\t");
             } else {
-                System.out.println("\n# ERROR: The configuration file \"" + this.config + "\" was not found !\n");
+                System.err.println("\n# ERROR: The configuration file \"" + this.config + "\" was not found !\n");
                 System.exit(0);
             }
         }
@@ -544,7 +611,7 @@ public class SmartRandBuildGen {
                     int weight = Integer.parseInt(tab[3]);
                     // Check Weight Value
                     if (weight < 0) {
-                        System.out.println("# ERROR: Weights must be larger than 0 (Error with this Line : >" + line + "<");
+                        System.err.println("\n# ERROR: Weights must be larger than 0 (Error with this Line : >" + line + "<\n");
                         System.exit(0);
                     }
                     // Create Perk Object
@@ -554,21 +621,27 @@ public class SmartRandBuildGen {
                     // Add Perk Name to known Perk List
                     this.l_perks_string.add(name);
                 } else {
-                    System.out.println("# ERROR: Corrupted Configuration File (Error with this Line : >" + line + "< (defined spacer='" + spacer + "')");
+                    System.err.println("\n# ERROR: Corrupted Configuration File (Error with this Line : >" + line + "< (defined spacer='" + spacer + "')\n");
                     System.exit(0);
                 }
                 line = br.readLine();
             }
             br.close();
-        } catch (IOException | NumberFormatException ex) {
-            System.out.println("# ERROR: Issues with the Configuration File");
-            System.out.println(ex.getMessage());
+        } catch (Exception ex) {
+            System.err.println("\n# ERROR: Issues with the Configuration File");
+            System.err.println(ex.getMessage());
             System.exit(0);
         }
+        // Set Nb of Perks
+        this.nb_perks_all = this.l_perks.size();
+        // Update Nb of Active Perks
+        updatePerksSide();
+        // Display Perks
+        showPerks(false);
     }
 
     /**
-     * Write the current Perk Distribution in a Configuration File
+     * Write the current Weight Distribution in one Configuration File
      *
      * @param filename
      * @param spacer
@@ -580,12 +653,12 @@ public class SmartRandBuildGen {
             for (Perk p : this.l_perks) {
                 bw.write(p.getName() + spacer + p.getSide() + spacer + p.getIconString() + spacer + p.getWeight() + "\n");
             }
-            System.out.println("# Saving current perk distribution in " + filename);
+            System.out.println("# Saving current weight distribution in " + filename);
             bw.flush();
             bw.close();
         } catch (IOException ex) {
-            System.out.println("# ERROR: Issues while saving the current Perk Distribution");
-            System.out.println(ex.getMessage());
+            System.err.println("\n# ERROR: Issues while saving the current weight distribution");
+            System.err.println(ex.getMessage());
         }
     }
 
@@ -603,15 +676,15 @@ public class SmartRandBuildGen {
                 if (l_perks_string.contains(line)) {
                     tree.add(line);
                 } else {
-                    System.out.println("# ERROR: Perk " + line + " does not exist !");
+                    System.err.println("\n# ERROR: Perk " + line + " does not exist !\n");
                     System.exit(0);
                 }
                 line = br.readLine();
             }
             br.close();
         } catch (Exception ex) {
-            System.out.println("# ERROR: Issues with the input File " + f);
-            System.out.println(ex.getMessage());
+            System.err.println("\n# ERROR: Issues with the input File " + f);
+            System.err.println(ex.getMessage());
             System.exit(0);
         }
         return tree;
@@ -622,33 +695,54 @@ public class SmartRandBuildGen {
      *
      */
     public void displayHelp() {
-        System.out.println("\n# " + getTitle() + "\n#");
-        System.out.println("# Options:");
-        System.out.println("#  -conf : custom configuration file for the perk distribution");
-        System.out.println("#  -side : set the side ('Survivor' or 'Killer')");
-        System.out.println("#  -perk : set the number of perks in each build");
-        System.out.println("#  -build : set the number of builds to generate");
+        System.out.println("# Available Options in Smart Random Build Generator:\n#");
+        System.out.println("#  -conf : custom weight distribution file for all perks");
+        System.out.println("#  -side : set active side ('Survivor' OR 'Killer' OR 'Random')");
+        System.out.println("#  -perk : set number of perks per build");
+        System.out.println("#  -build : set number of builds to generate");
         System.out.println("#  -care : enable constraints for care-related perks");
         System.out.println("#  -sprint : enable constraints for sprint-related perks");
-        System.out.println("#  -v : enable verbose mode");
+        System.out.println("#  -v : enable verbose mode (disabled by default)");
         System.out.println("#  -h : print this help and quit\n");
         System.exit(0);
     }
 
     /**
-     * Display Help and Quit
+     * Randomly Select the Active Side
+     *
+     */
+    public String selectRandomSide() {
+        // Get a random Number
+        double p = Math.random();
+        // Slight Bias toward other Side
+        double offset = 0.15;
+        if (this.side_current.equals("Survivor")) {
+            p = p - offset;
+        } else {
+            p = p + offset;
+        }
+        // Select Side according to Random Value
+        if (p > 0.5) {
+            return "Survivor";
+        } else {
+            return "Killer";
+        }
+    }
+
+    /**
+     * Check Update from GitHub
      *
      * @return
      */
     public boolean checkUpdate() {
-        System.out.print("\n# Checking Update from ");
+        System.out.print(spacer + " Checking Update from remote GitHub Repository " + spacer + "\n\n# ");
         boolean update_new = false;
         double gitversion = Tools.checkUpdate(this.git_user, this.git_repo);
         if (gitversion > this.version) {
             update_new = true;
             System.out.println("# Remote Version = " + gitversion + "\n# Local Version = " + this.version + "\n# An Update is available from https://github.com/" + this.git_user + "/" + this.git_repo + "/releases\n");
         } else {
-            System.out.println("# You already have the last Version\n");
+            System.out.println("# You already have the last Version (" + this.version + ")\n");
         }
         return update_new;
     }
@@ -675,6 +769,7 @@ public class SmartRandBuildGen {
         int nbbuilds = 10;
 
         // Process User-defined Arguments
+        System.out.println(srbg.spacer + " Parsing Arguments " + srbg.spacer + "\n");
         String val = "";
         int valn = 0;
         int argn = args.length;
@@ -683,14 +778,14 @@ public class SmartRandBuildGen {
                 if ((i + 1) < argn) {
                     if (!args[i + 1].startsWith("-")) {
                         val = args[i + 1];
+                        System.out.println("# Updating weight distribution from this configuration file " + val);
                         srbg.readConfigFile(val, "\t");
-                        System.out.println("# Updating perk distribution from this configuration file " + val);
                     } else {
-                        System.out.println("\n# FATAL: The '-conf' option requires an argument\n");
+                        System.err.println("\n# ERROR: The '-conf' option requires an argument\n");
                         System.exit(0);
                     }
                 } else {
-                    System.out.println("\n# FATAL: The '-conf' option requires an argument\n");
+                    System.err.println("\n# ERROR: The '-conf' option requires an argument\n");
                     System.exit(0);
                 }
             } else if (args[i].equals("-side")) {
@@ -699,11 +794,11 @@ public class SmartRandBuildGen {
                         val = args[i + 1];
                         srbg.setSide(val);
                     } else {
-                        System.out.println("\n# FATAL: The '-side' option requires an argument\n");
+                        System.err.println("\n# ERROR: The '-side' option requires an argument\n");
                         System.exit(0);
                     }
                 } else {
-                    System.out.println("\n# FATAL: The '-side' option requires an argument\n");
+                    System.err.println("\n# ERROR: The '-side' option requires an argument\n");
                     System.exit(0);
                 }
             } else if (args[i].equals("-care")) {
@@ -715,17 +810,17 @@ public class SmartRandBuildGen {
                     if (!args[i + 1].startsWith("-")) {
                         try {
                             valn = Integer.parseInt(args[i + 1]);
-                            srbg.setNbPerk(valn);
+                            srbg.setNbPerksBuild(valn);
                         } catch (Exception ex) {
-                            System.out.println("\n# FATAL: The '-perk' option requires an integer value\n");
+                            System.err.println("\n# ERROR: The '-perk' option requires an integer value\n");
                             System.exit(0);
                         }
                     } else {
-                        System.out.println("\n# FATAL: The '-perk' option requires an argument\n");
+                        System.err.println("\n# ERROR: The '-perk' option requires an argument\n");
                         System.exit(0);
                     }
                 } else {
-                    System.out.println("\n# FATAL: The '-perk' option requires an argument\n");
+                    System.err.println("\n# ERROR: The '-perk' option requires an argument\n");
                     System.exit(0);
                 }
             } else if (args[i].equals("-build")) {
@@ -735,15 +830,15 @@ public class SmartRandBuildGen {
                             valn = Integer.parseInt(args[i + 1]);
                             nbbuilds = valn;
                         } catch (Exception ex) {
-                            System.out.println("\n# FATAL: The '-build' option requires an integer value\n");
+                            System.err.println("\n# ERROR: The '-build' option requires an integer value\n");
                             System.exit(0);
                         }
                     } else {
-                        System.out.println("\n# FATAL: The '-build' option requires an argument\n");
+                        System.err.println("\n# ERROR: The '-build' option requires an argument\n");
                         System.exit(0);
                     }
                 } else {
-                    System.out.println("\n# FATAL: The '-build' option requires an argument\n");
+                    System.err.println("\n# ERROR: The '-build' option requires an argument\n");
                     System.exit(0);
                 }
             } else if (args[i].equals("-v")) {
@@ -751,17 +846,16 @@ public class SmartRandBuildGen {
             } else if (args[i].equals("-h")) {
                 srbg.displayHelp();
             } else if (args[i].startsWith("-")) {
-                System.out.println("\n# FATAL: Wrong option '" + args[i] + "'\n");
+                System.err.println("\n# ERROR: Wrong option '" + args[i] + "'\n");
                 System.exit(0);
             }
         }
 
-        // Display loaded Data & Perks
+        // Display loaded Parameters
         srbg.showParams();
-        srbg.showPerks();
 
         // Generate several Random Builds using various Care/Sprint Criteria Combinations
-        System.out.println("\n" + srbg.spacer + " " + nbbuilds + " Random Builds " + srbg.spacer + "\n");
+        System.out.println("\n" + srbg.spacer + " " + nbbuilds + " Random Builds with " + srbg.getNbPerksBuild() + " Perks per Build " + srbg.spacer + "\n");
         for (int k = 1; k <= nbbuilds; k++) {
             if (srbg.getVerbose()) {
                 System.out.println("");

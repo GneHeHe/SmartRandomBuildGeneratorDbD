@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.net.URL;
 import javax.swing.*;
 
 /**
@@ -83,12 +84,12 @@ public class SmartRandBuildGenTabInfo extends JPanel {
         if (is != null) {
             this.pict = new ImageIcon(Tools.resizePicture(is, 45));
         } else {
-            System.out.println("# WARNING: " + logo + " not found !");
+            System.err.println("# WARNING: " + logo + " not found !");
         }
 
         // Define JEditorPane
         this.pan_tuto.setEditable(false);
-        java.net.URL url_tuto = getClass().getResource("data/tuto.html");
+        URL url_tuto = getClass().getResource("data/tuto.html");
         if (url_tuto != null) {
             try {
                 this.pan_tuto.setPage(url_tuto);
@@ -127,8 +128,8 @@ public class SmartRandBuildGenTabInfo extends JPanel {
                     // Open default Browser and Go to STEAM Profile
                     Desktop.getDesktop().browse(new URI(s_profile));
                 } catch (IOException | URISyntaxException ex) {
-                    System.out.println("WARNING_STEAM_PROFILE");
-                    System.out.println(ex.getMessage());
+                    System.err.println("WARNING_STEAM_PROFILE");
+                    System.err.println(ex.getMessage());
                 }
             }
         });
@@ -142,8 +143,8 @@ public class SmartRandBuildGenTabInfo extends JPanel {
                     URI mailto = new URI("mailto:" + s_email + "?subject=SRBG");
                     Desktop.getDesktop().mail(mailto);
                 } catch (IOException | URISyntaxException ex) {
-                    System.out.println("WARNING_EMAIL");
-                    System.out.println(ex.getMessage());
+                    System.err.println("WARNING_EMAIL");
+                    System.err.println(ex.getMessage());
                 }
             }
         });
@@ -156,8 +157,8 @@ public class SmartRandBuildGenTabInfo extends JPanel {
                     // Open default Browser and Go to STEAM Profile
                     Desktop.getDesktop().browse(new URI(s_git));
                 } catch (IOException | URISyntaxException ex) {
-                    System.out.println("WARNING_GIT");
-                    System.out.println(ex.getMessage());
+                    System.err.println("WARNING_GIT");
+                    System.err.println(ex.getMessage());
                 }
             }
         });
@@ -169,7 +170,7 @@ public class SmartRandBuildGenTabInfo extends JPanel {
      *
      * @param msg the string to display
      * @param title the title of the window
-     * @param type the type of alert (error, information ...)
+     * @param type the type of alert
      */
     private void getAlert(String msg, String title, int type) {
         JOptionPane.showMessageDialog(this, msg, title, type);

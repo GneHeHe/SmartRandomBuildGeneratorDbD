@@ -19,9 +19,10 @@ public class SmartRandBuildGenTabPerks extends JPanel {
     private JPanel pan_side, pan_button;
     private JScrollPane scrollPane;
     private JButton b_load, b_save, b_default, b_same, b_rand;
-    private JLabel lab_side;
+    private JLabel lab_side, lab_perks_all, lab_perks_active;
     private JComboBox cb_side;
     private JFileChooser fileChooser;
+    private JTextField tf_perks_all, tf_perks_active;
     // Table Objects
     private MyTable table;
     private MyTableModel mymodel;
@@ -46,6 +47,10 @@ public class SmartRandBuildGenTabPerks extends JPanel {
         pan_side.add(lab_side);
         pan_side.add(cb_side);
         pan_side.add(b_rand);
+        pan_side.add(lab_perks_all);
+        pan_side.add(tf_perks_all);
+        pan_side.add(lab_perks_active);
+        pan_side.add(tf_perks_active);
 
         pan_button = new JPanel(new FlowLayout(FlowLayout.CENTER));
         pan_button.add(b_default);
@@ -70,10 +75,22 @@ public class SmartRandBuildGenTabPerks extends JPanel {
     private void addComponents() {
 
         // Define JLabel Objects
-        lab_side = new JLabel("Select the Side");
+        lab_side = new JLabel("Select Active Side");
+        lab_perks_all = new JLabel("  Nb of Loaded Perks");
+        lab_perks_active = new JLabel("  Nb of Active Perks");
+
+        // Define JTextField Objects
+        tf_perks_all = new JTextField(4);
+        tf_perks_all.setText(srbg.getNbPerksAll() + "");
+        tf_perks_all.setHorizontalAlignment(JTextField.CENTER);
+        tf_perks_all.setEditable(false);
+        tf_perks_active = new JTextField(4);
+        tf_perks_active.setText(srbg.getNbPerksActive() + "");
+        tf_perks_active.setHorizontalAlignment(JTextField.CENTER);
+        tf_perks_active.setEditable(false);
 
         // Define JButton Objects
-        b_rand = new JButton("Automatically Select Side");
+        b_rand = new JButton("Randomly Select Side");
         b_load = new JButton("Open Custom Perk Distribution");
         b_save = new JButton("Save Current Perk Distribution");
         b_same = new JButton("Set Identical Weights");
@@ -96,7 +113,7 @@ public class SmartRandBuildGenTabPerks extends JPanel {
 
         // Define JComboBox Objects for Side
         cb_side = new JComboBox(new String[]{"Survivor", "Killer"});
-        cb_side.setPreferredSize(new Dimension(125, 30));
+        cb_side.setPreferredSize(new Dimension(125, 25));
         ((JLabel) cb_side.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
         if (srbg.getSide().equals("Survivor")) {
             cb_side.setSelectedIndex(0);
@@ -108,21 +125,14 @@ public class SmartRandBuildGenTabPerks extends JPanel {
         b_rand.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                double p = Math.random();
-                // Slight Bias toward other Side
-                double offset = 0.2;
-                if (srbg.getSide().equals("Survivor")) {
-                    p = p - offset;
-                } else {
-                    p = p + offset;
-                }
-                // Select Side according to Random Value
-                if (p > 0.5) {
-                    cb_side.setSelectedIndex(0);
-                } else {
-                    cb_side.setSelectedIndex(1);
-                }
-                getAlert("You will play on the " + srbg.getSide() + " side next round ;)", "Message from The Entity", JOptionPane.INFORMATION_MESSAGE);
+                // Randomly Select Side
+                srbg.setSide("Random");
+                // Update Table
+                cb_side.setSelectedItem(srbg.getSide());
+                // Display Info
+                String s = "You will play on the " + srbg.getSide() + " side next round ;)";
+                System.out.println("\n# " + s + "\n");
+                getAlert(s, "Message from The Entity", JOptionPane.INFORMATION_MESSAGE);
             }
         });
 
@@ -133,9 +143,12 @@ public class SmartRandBuildGenTabPerks extends JPanel {
                 String f = chooseFile(true);
                 if (new File(f).exists()) {
                     try {
-                        System.out.println("# Loading custom perk distribution from " + f);
+                        System.out.println("# Loading custom weight distribution from " + f);
                         // Load a custom Configuration File
                         srbg.readConfigFile(f, "\t");
+                        // Update Fields
+                        tf_perks_all.setText(srbg.getNbPerksAll() + "");
+                        tf_perks_active.setText(srbg.getNbPerksActive() + "");
                         // Update Model & Table
                         mymodel.updateTable();
                     } catch (Exception ex) {
@@ -165,6 +178,9 @@ public class SmartRandBuildGenTabPerks extends JPanel {
                     System.out.println("# All perks now have the default weights");
                     // Load default Configuration File
                     srbg.readConfigFile(is, "\t");
+                    // Update Field
+                    tf_perks_all.setText(srbg.getNbPerksAll() + "");
+                    tf_perks_active.setText(srbg.getNbPerksActive() + "");
                     // Update Model & Table
                     mymodel.updateTable();
                 } else {
@@ -196,6 +212,8 @@ public class SmartRandBuildGenTabPerks extends JPanel {
                 // Retrieve and Define the Side
                 String value = combo.getSelectedItem().toString();
                 srbg.setSide(value);
+                // Update Field
+                tf_perks_active.setText(srbg.getNbPerksActive() + "");
                 if (value.equals("Killer")) {
                     // Update Values
                     srbg.setNeedCare(false);
@@ -206,17 +224,6 @@ public class SmartRandBuildGenTabPerks extends JPanel {
             }
         });
 
-    }
-
-    /**
-     * Display Message in a Window
-     *
-     * @param msg the string to display
-     * @param title the title of the window
-     * @param type the type of alert (error, information ...)
-     */
-    private void getAlert(String msg, String title, int type) {
-        JOptionPane.showMessageDialog(this, msg, title, type);
     }
 
     /**
@@ -237,6 +244,17 @@ public class SmartRandBuildGenTabPerks extends JPanel {
             fileChooser.showSaveDialog(this);
         }
         return fileChooser.getSelectedFile().getAbsolutePath();
+    }
+
+    /**
+     * Display Message in a Window
+     *
+     * @param msg the string to display
+     * @param title the title of the window
+     * @param type the type of alert
+     */
+    private void getAlert(String msg, String title, int type) {
+        JOptionPane.showMessageDialog(this, msg, title, type);
     }
 
 }

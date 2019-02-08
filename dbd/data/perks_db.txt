@@ -28,7 +28,7 @@ Deerstalker	Killer	iconPerks_deerstalker	50
 Deja Vu	Survivor	iconPerks_dejaVu	1
 Deliverance	Survivor	iconPerks_deliverance	125
 Detective's Hunch	Survivor	iconPerks_detectivesHunch	10
-Discordance	Killer	iconPerks_discordance	100
+Discordance	Killer	iconPerks_discordance	125
 Distortion	Survivor	iconPerks_distortion	50
 Distressing	Killer	iconPerks_distressing	10
 Diversion	Survivor	iconPerks_diversion	150
@@ -70,7 +70,7 @@ Overwhelming Presence	Killer	iconPerks_overwhelmingPresence	1
 Pharmacy	Survivor	iconPerks_pharmacy	75
 Play With Your Food	Killer	iconPerks_playWithYourFood	50
 Plunderer's Instinct	Survivor	iconPerks_plunderersInstinct	100
-Pop Goes The Weasel	Killer	iconPerks_popGoesTheWeasel	125
+Pop Goes The Weasel	Killer	iconPerks_popGoesTheWeasel	150
 Predator	Killer	iconPerks_predator	5
 Premonition	Survivor	iconPerks_premonition	25
 Prove Thyself	Survivor	iconPerks_proveThyself	50

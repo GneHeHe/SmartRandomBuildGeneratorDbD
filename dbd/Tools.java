@@ -33,7 +33,8 @@ public class Tools {
             BufferedImage img = ImageIO.read(new File(filename));
             dimg = img.getScaledInstance(width, height, Image.SCALE_SMOOTH);
         } catch (Exception ex) {
-            System.out.println(ex.getMessage());
+            System.err.println("\n# ERROR while resizing " + filename);
+            System.err.println(ex.getMessage());
         }
         return dimg;
     }
@@ -52,7 +53,8 @@ public class Tools {
             BufferedImage img = ImageIO.read(is);
             dimg = img.getScaledInstance(width, height, Image.SCALE_SMOOTH);
         } catch (Exception ex) {
-            System.out.println(ex.getMessage());
+            System.err.println("\n# ERROR while resizing " + is.toString());
+            System.err.println(ex.getMessage());
         }
         return dimg;
     }
@@ -70,7 +72,8 @@ public class Tools {
             BufferedImage img = ImageIO.read(is);
             dimg = img.getScaledInstance((int) (img.getWidth() * percent / 100), (int) (img.getHeight() * percent / 100), Image.SCALE_SMOOTH);
         } catch (Exception ex) {
-            System.out.println(ex.getMessage());
+            System.err.println("\n# ERROR while resizing " + is.toString());
+            System.err.println(ex.getMessage());
         }
         return dimg;
     }
@@ -111,8 +114,8 @@ public class Tools {
                 }
             }
         } catch (IOException ex) {
-            System.out.println("# Checking Update Error");
-            System.out.println(ex.getMessage());
+            System.err.println("\n# ERROR while checking Update");
+            System.err.println(ex.getMessage());
         }
         return version_git;
     }

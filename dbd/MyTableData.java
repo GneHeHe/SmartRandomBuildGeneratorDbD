@@ -30,7 +30,7 @@ public class MyTableData {
         // Set the Weight
         this.data_weight = p.getWeight();
         // Set the Icon
-        this.data_icon = new JLabel(p.getIconImage());
+        this.data_icon = new JLabel(p.getIconImage(false));
 
     }
 
