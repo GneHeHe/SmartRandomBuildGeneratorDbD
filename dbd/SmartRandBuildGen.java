@@ -8,9 +8,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
 import java.util.TreeSet;
 
@@ -64,7 +62,7 @@ public class SmartRandBuildGen {
     public SmartRandBuildGen() {
 
         // Set Title of Tool
-        setTitle();
+        this.title = "Smart Random Build Generator for Dead by Daylight " + this.version;
         System.out.println("\n" + spacer + " " + getTitle() + " " + spacer + "\n");
 
         // Set the Lists of Perks
@@ -404,28 +402,6 @@ public class SmartRandBuildGen {
             nb++;
         }
         return build;
-    }
-
-    /**
-     * Set Title of Tool
-     *
-     */
-    private void setTitle() {
-
-        // Object to format Date
-        SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
-
-        // Get Modification Date of current Class
-        long date = Calendar.getInstance().getTimeInMillis();
-        try {
-            date = new File(getClass().getProtectionDomain().getCodeSource().getLocation().toURI().getPath()).lastModified();
-        } catch (Exception ex) {
-            System.err.println("\n# ERROR: The title can't be defined");
-            System.err.println(ex.getMessage());
-        }
-
-        // Set Title of Tool
-        this.title = "Smart Random Build Generator for Dead by Daylight " + this.version + " [ last build " + sdf.format(date) + " ]";
     }
 
     /**
