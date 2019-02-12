@@ -26,7 +26,7 @@ System Requirements:
 * Library **Gson** (included in compiled JAR file)
 
 <br>
-Double click on the JAR file **'SmartRandBuildGen.jar'** to run **SRBG**
+Double click on the JAR file **SmartRandBuildGen.jar** to run **SRBG**
 
 # Conclusion
 
