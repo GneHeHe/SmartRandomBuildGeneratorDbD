@@ -178,7 +178,7 @@ public class SmartRandBuildGenTabPerks extends JPanel {
                     System.out.println("# All perks now have the default weights");
                     // Load default Configuration File
                     srbg.readConfigFile(is, "\t");
-                    // Update Field
+                    // Update Fields
                     tf_perks_all.setText(srbg.getNbPerksAll() + "");
                     tf_perks_active.setText(srbg.getNbPerksActive() + "");
                     // Update Model & Table

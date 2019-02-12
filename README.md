@@ -1,6 +1,6 @@
 # What is "Smart Random Build Generator" ?
 
-**Smart Random Build Generator** (SRBG) is a user-friendly tool that can be used to generate random builds for **Dead by Daylight**.
+**Smart Random Build Generator** (SRBG) is a user-friendly tool that can be used to generate random builds for **Dead by Daylight** game.
 
 Most related tools purely generate random builds which are hardly ever interesting/efficient because lots of perks are more or less trash in this game.
 
@@ -18,14 +18,15 @@ Finally, some interesting constraints can be enabled:
 
 # How to install and use SRBG ?
 
-Download the last compiled JAR file (available in **"releases"**)
+Download the last compiled JAR file [here](https://github.com/GneHeHe/SmartRandomBuildGeneratorDbD/releases/download/1.2/SmartRandBuildGen.jar) (also available in **"releases"** tab)
 
 System Requirements:
 
-* Latest **Java** Version https://java.com/en/download/
+* Latest **Java** Version [Link](https://java.com/en/download)
 * Library **Gson** (included in compiled JAR file)
 
-Double click on the **SmartRandBuildGen.jar** file to run **SRBG**
+<br>
+Double click on the JAR file **'SmartRandBuildGen.jar'** to run **SRBG**
 
 # Conclusion
 
@@ -38,4 +39,4 @@ Feel free to contact me about **SRBG**:
 
 I hope you will find my **SRBG** tool useful to vary your gameplay
 
-See you in the Fog ;)
+**See you in the Fog ;)**

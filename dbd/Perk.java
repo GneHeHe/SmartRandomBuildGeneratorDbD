@@ -22,8 +22,8 @@ public final class Perk {
     private ImageIcon icon_img_small;
     private ImageIcon icon_img_large;
     // Sizes of ImageIcon
-    private final int nb_small = 60;
-    private final int nb_large = 220;
+    private final int size_small = 60;
+    private final int size_large = 220;
 
     /**
      * Default Constructor
@@ -139,16 +139,16 @@ public final class Perk {
         // Any way to reset the InputStream instead of reading it twice in different Objects (functions mark(), reset() don't work) ?
         InputStream is2 = this.getClass().getResourceAsStream(path);
         if (is1 != null) {
-            this.icon_img_small = new ImageIcon(Tools.resizePicture(is1, this.nb_small, this.nb_small));
-            this.icon_img_large = new ImageIcon(Tools.resizePicture(is2, this.nb_large, this.nb_large));
+            this.icon_img_small = new ImageIcon(Tools.resizePicture(is1, this.size_small, this.size_small));
+            this.icon_img_large = new ImageIcon(Tools.resizePicture(is2, this.size_large, this.size_large));
         } else {
             System.err.println("# WARNING: Icon File '" + path + "' was not found for Perk '" + this.name + "' => using default Icon File ('iconPerks_default.png') from data directory");
             path = "data/iconPerks_default.png";
             is1 = this.getClass().getResourceAsStream(path);
             is2 = this.getClass().getResourceAsStream(path);
             if (is1 != null) {
-                this.icon_img_small = new ImageIcon(Tools.resizePicture(is1, this.nb_small, this.nb_small));
-                this.icon_img_large = new ImageIcon(Tools.resizePicture(is2, this.nb_large, this.nb_large));
+                this.icon_img_small = new ImageIcon(Tools.resizePicture(is1, this.size_small, this.size_small));
+                this.icon_img_large = new ImageIcon(Tools.resizePicture(is2, this.size_large, this.size_large));
             } else {
                 System.err.println("# WARNING: Both expected and default Icon Files were not found for Perk '" + this.name + "' => exit");
                 System.exit(0);

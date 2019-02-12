@@ -433,7 +433,7 @@ public class SmartRandBuildGen {
      *
      * @return
      */
-    public String getTitle() {
+    final public String getTitle() {
         return this.title;
     }
 
@@ -710,8 +710,10 @@ public class SmartRandBuildGen {
     /**
      * Randomly Select the Active Side
      *
+     * @return
      */
     public String selectRandomSide() {
+        System.out.print("# Randomly Selecting Side => ");
         // Get a random Number
         double p = Math.random();
         // Slight Bias toward other Side
@@ -721,12 +723,15 @@ public class SmartRandBuildGen {
         } else {
             p = p + offset;
         }
+        String s = "";
         // Select Side according to Random Value
         if (p > 0.5) {
-            return "Survivor";
+            s = "Survivor";
         } else {
-            return "Killer";
+            s = "Killer";
         }
+        System.out.println(s + "\n");
+        return s;
     }
 
     /**
