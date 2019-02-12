@@ -409,7 +409,7 @@ public class SmartRandBuildGen {
      *
      * @return
      */
-    final public String getTitle() {
+    public String getTitle() {
         return this.title;
     }
 
