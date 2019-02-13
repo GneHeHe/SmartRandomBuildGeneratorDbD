@@ -72,9 +72,9 @@ public class SmartRandBuildGen {
         // Read the default Weight Distribution File
         this.initConfigFile();
 
-        // Define the default Side and Number of Perks
-        this.side_current = "Survivor";
-        this.updatePerksSide();
+        // Define both default Side and Number of Perks
+        this.side_current = "";
+        this.setSide("Random");
         this.nb_perks_build = 4;
 
         // Init Care/Sprint Perk Lists
@@ -204,7 +204,7 @@ public class SmartRandBuildGen {
      *
      * @param s
      */
-    public void setSide(String s) {
+    public final void setSide(String s) {
         if (s.equals("Random")) {
             s = selectRandomSide();
         }
@@ -409,7 +409,7 @@ public class SmartRandBuildGen {
      *
      * @return
      */
-    public String getTitle() {
+    public final String getTitle() {
         return this.title;
     }
 
@@ -689,25 +689,22 @@ public class SmartRandBuildGen {
      * @return
      */
     public String selectRandomSide() {
-        System.out.print("# Randomly Selecting Side => ");
-        // Get a random Number
+        System.out.println("# Randomly Selecting Side\n");
+        // Get random Number
         double p = Math.random();
-        // Slight Bias toward other Side
-        double offset = 0.15;
+        // Add Bias toward the other Side
+        double offset = 0.20;
         if (this.side_current.equals("Survivor")) {
             p = p - offset;
-        } else {
+        } else if (this.side_current.equals("Killer")) {
             p = p + offset;
         }
-        String s = "";
         // Select Side according to Random Value
         if (p > 0.5) {
-            s = "Survivor";
+            return "Survivor";
         } else {
-            s = "Killer";
+            return "Killer";
         }
-        System.out.println(s + "\n");
-        return s;
     }
 
     /**
@@ -722,7 +719,7 @@ public class SmartRandBuildGen {
         if (gitversion > this.version) {
             update_new = true;
             System.out.println("# Remote Version = " + gitversion + "\n# Local Version = " + this.version + "\n# An Update is available from https://github.com/" + this.git_user + "/" + this.git_repo + "/releases\n");
-        } else {
+        } else if (gitversion > 0) {
             System.out.println("# You already have the last Version (" + this.version + ")\n");
         }
         return update_new;
@@ -810,6 +807,7 @@ public class SmartRandBuildGen {
                         try {
                             valn = Integer.parseInt(args[i + 1]);
                             nbbuilds = valn;
+                            System.out.println("# Number of desired Builds =  " + nbbuilds);
                         } catch (Exception ex) {
                             System.err.println("\n# ERROR: The '-build' option requires an integer value\n");
                             System.exit(0);

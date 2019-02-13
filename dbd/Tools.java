@@ -115,7 +115,7 @@ public class Tools {
             }
         } catch (IOException ex) {
             System.err.println("\n# ERROR while checking Update");
-            System.err.println(ex.getMessage());
+            System.err.println(ex.getMessage() + "\n");
         }
         return version_git;
     }
