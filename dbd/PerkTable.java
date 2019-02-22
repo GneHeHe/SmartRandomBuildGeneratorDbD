@@ -4,55 +4,56 @@ import java.awt.Color;
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Font;
-import java.util.Vector;
+import java.util.ArrayList;
 import javax.swing.DefaultCellEditor;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JTable;
+import javax.swing.ListSelectionModel;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.TableCellRenderer;
 import javax.swing.table.TableColumn;
 
 /**
  *
- * MyTable
+ * PerkTable
  *
  * @author GneHeHe (2018)
  *
  */
-public class MyTable extends JTable {
+public class PerkTable extends JTable {
 
-    private Vector<Integer> v_weights;
+    private ArrayList<Integer> l_weights;
     private int weight_max;
 
     /**
      * Default Constructor
      */
-    public MyTable() {
+    public PerkTable() {
         // Default Dimension of Header
-        getTableHeader().setPreferredSize(new Dimension(30, 30));
-        // Set Reordering Status
-        getTableHeader().setReorderingAllowed(false);
-        // Set Resizing Status
-        getTableHeader().setResizingAllowed(false);
-        // Set Font of Header
-        getTableHeader().setFont(new Font("Helvetica", Font.BOLD, 16));
-        // Set Font of Table
-        setFont(new Font("Helvetica", Font.BOLD, 14));
+        this.getTableHeader().setPreferredSize(new Dimension(30, 30));
+        // Set Reordering/Resizing Status
+        this.getTableHeader().setReorderingAllowed(false);
+        this.getTableHeader().setResizingAllowed(false);
+        // Set Fonts
+        this.getTableHeader().setFont(new Font("Helvetica", Font.BOLD, 16));
+        this.setFont(new Font("Helvetica", Font.BOLD, 14));
+        // Only select 1 Line
+        setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         // Set Available Weights
-        this.v_weights = new Vector<>();
-        this.v_weights.add(0);
-        this.v_weights.add(1);
-        this.v_weights.add(5);
-        this.v_weights.add(10);
-        this.v_weights.add(25);
-        this.v_weights.add(50);
-        this.v_weights.add(75);
-        this.v_weights.add(100);
-        this.v_weights.add(125);
-        this.v_weights.add(150);
-        this.v_weights.add(175);
-        this.v_weights.add(200);
+        this.l_weights = new ArrayList<>();
+        this.l_weights.add(0);
+        this.l_weights.add(1);
+        this.l_weights.add(5);
+        this.l_weights.add(10);
+        this.l_weights.add(25);
+        this.l_weights.add(50);
+        this.l_weights.add(75);
+        this.l_weights.add(100);
+        this.l_weights.add(125);
+        this.l_weights.add(150);
+        this.l_weights.add(175);
+        this.l_weights.add(200);
         this.weight_max = getWeightMax();
     }
 
@@ -85,18 +86,17 @@ public class MyTable extends JTable {
      * @param i
      */
     public void setColumnWeight(int i) {
-        //Set up the editor for the sport cells.
-        JComboBox comboBox = new JComboBox(v_weights);
+        JComboBox comboBox = new JComboBox(l_weights.toArray());
         TableColumn column = getColumnModel().getColumn(i);
         column.setCellEditor(new DefaultCellEditor(comboBox));
     }
 
     /**
-     * Define Content of a Column as a JLabel
+     * Set JLabel Rendering in a Column
      *
      * @param i
      */
-    public void setColumnPerk(int i) {
+    public void setIconColumn(int i) {
         TableColumn column = getColumnModel().getColumn(i);
         column.setCellRenderer(new IconTableCellRenderer());
     }
@@ -128,7 +128,7 @@ public class MyTable extends JTable {
                 float h2 = 210.0f / 360;
                 // Use of HSB Model | Set third Hue to Intermediate Color
                 float h3 = h1 + (value / this.weight_max) * (h2 - h1);
-                // Define Background according to third Hue with half Saturation and default Brightness
+                // Define Background according to third Hue with half Saturation & default Brightness
                 comp.setBackground(Color.getHSBColor(h3, 0.5f, 1));
             }
         }
@@ -136,13 +136,13 @@ public class MyTable extends JTable {
     }
 
     /**
-     * Get the largest Weight
+     * Get largest Weight
      *
      * @return
      */
     private int getWeightMax() {
         int max = 0;
-        for (Integer v : v_weights) {
+        for (Integer v : l_weights) {
             if (v > max) {
                 max = v;
             }

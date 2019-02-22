@@ -7,56 +7,76 @@ import javax.swing.SwingConstants;
 
 /**
  *
- * Perk
+ * Character
  *
  * @author GneHeHe (2018)
  *
  */
-public final class Perk implements Comparable<Perk> {
+public final class Character implements Comparable<Character> {
 
-    // Name of Perk
+    // Name of Character
     private String name;
-    // Weight of Perk
-    private int weight;
-    // Side of Perk
+    // Side of Character
     private String side;
-    // Icon of Perk (as String)
+    // Icon of Character (as String)
     private String icon_string;
-    // Icon of Perk (as JLabel)
+    // Icon of Character (as JLabel)
     private JLabel lab_img_small;
-    private JLabel lab_img_medium;
     private JLabel lab_img_large;
     // Size of Icon Pictures
     private final int size_small = 55;
-    private final int size_medium = 75;
-    private final int size_large = 200;
+    private final int size_large = 175;
 
     /**
      * Constructor
      *
      * @param name
-     * @param weight
      * @param side
-     * @param icon
      */
-    public Perk(String name, int weight, String side, String icon) {
+    public Character(String name, String side) {
         this.setName(name);
         this.setSide(side);
-        this.setWeight(weight);
         this.lab_img_small = new JLabel("", SwingConstants.CENTER);
-        this.lab_img_medium = new JLabel("", SwingConstants.CENTER);
         this.lab_img_large = new JLabel("", SwingConstants.CENTER);
+        // Set Default Icon
+        String icon = "";
+        if (this.side.equals("Survivor")) {
+            icon = "iconHelpLoading_survivor";
+        } else if (this.side.equals("Killer")) {
+            icon = "iconHelpLoading_killer";
+        }
         try {
             this.setIconPicture(icon);
         } catch (IOException ex) {
-            System.err.println("ERROR while creating Perk " + name);
+            System.err.println("ERROR while creating Character " + name);
             System.err.println(ex.getMessage());
             System.exit(0);
         }
     }
 
     /**
-     * Get Perk Name
+     * Constructor
+     *
+     * @param name
+     * @param side
+     * @param icon
+     */
+    public Character(String name, String side, String icon) {
+        this.setName(name);
+        this.setSide(side);
+        this.lab_img_small = new JLabel("", SwingConstants.CENTER);
+        this.lab_img_large = new JLabel("", SwingConstants.CENTER);
+        try {
+            this.setIconPicture(icon);
+        } catch (IOException ex) {
+            System.err.println("ERROR while creating Character " + name);
+            System.err.println(ex.getMessage());
+            System.exit(0);
+        }
+    }
+
+    /**
+     * Get Character Name
      *
      * @return
      */
@@ -65,7 +85,7 @@ public final class Perk implements Comparable<Perk> {
     }
 
     /**
-     * Set Perk Name
+     * Set Character Name
      *
      * @param name
      */
@@ -74,7 +94,7 @@ public final class Perk implements Comparable<Perk> {
     }
 
     /**
-     * Get Perk Side
+     * Get Character Side
      *
      * @return
      */
@@ -83,7 +103,7 @@ public final class Perk implements Comparable<Perk> {
     }
 
     /**
-     * Set Perk Side
+     * Set Character Side
      *
      * @param side
      */
@@ -98,7 +118,7 @@ public final class Perk implements Comparable<Perk> {
     }
 
     /**
-     * Get Perk Icon as JLabel
+     * Get Character Icon as JLabel
      *
      * @param size
      * @return
@@ -108,16 +128,14 @@ public final class Perk implements Comparable<Perk> {
             case 1:
                 return lab_img_small;
             case 2:
-                return lab_img_medium;
-            case 3:
                 return lab_img_large;
             default:
-                return new JLabel(this.name);
+                return new JLabel(this.name, SwingConstants.CENTER);
         }
     }
 
     /**
-     * Get Perk Icon as String
+     * Get Character Icon as String
      *
      * @return
      */
@@ -126,7 +144,7 @@ public final class Perk implements Comparable<Perk> {
     }
 
     /**
-     * Set Perk Icon
+     * Set Character Icon
      *
      * @param s_icon
      * @throws java.io.IOException
@@ -134,66 +152,48 @@ public final class Perk implements Comparable<Perk> {
     private void setIconPicture(String s_icon) throws IOException {
         // Try to set given Icon Picture
         this.icon_string = s_icon;
-        String path = "icons_perks/" + s_icon + ".png";
+        String path = "icons_char/" + s_icon + ".png";
         if (this.getClass().getResourceAsStream(path) != null) {
             // Set Icons in JLabel
             this.lab_img_small.setIcon(new ImageIcon(Tools.resizePicture(path, this.size_small, this.size_small)));
-            this.lab_img_medium.setIcon(new ImageIcon(Tools.resizePicture(path, this.size_medium, this.size_medium)));
             this.lab_img_large.setIcon(new ImageIcon(Tools.resizePicture(path, this.size_large, this.size_large)));
             // Set Name for Tooltip
             this.lab_img_small.setName(this.name);
-            this.lab_img_medium.setName(this.name);
             this.lab_img_large.setName(this.name);
         } else {
             // Try to use default Icon Picture
-            s_icon = "iconPerks_default";
-            System.err.println("# WARNING: Icon File '" + path + "' was not found for Perk '" + this.name + "' => using default Icon File ('" + s_icon + "') from data directory");
-            path = "icons_perks/" + s_icon + ".png";
+            if (side.equals("Survivor")) {
+                s_icon = "iconHelpLoading_survivor";
+            } else if (side.equals("Killer")) {
+                s_icon = "iconHelpLoading_killer";
+            }
+            //System.err.println("# WARNING: Icon File '" + path + "' was not found for Character '" + this.name + "' => using default Icon File ('" + s_icon + "') from data directory");
+            path = "icons_char/" + s_icon + ".png";
             if (this.getClass().getResourceAsStream(path) != null) {
                 // Set Default Icon in JLabel
                 this.lab_img_small.setIcon(new ImageIcon(Tools.resizePicture(path, this.size_small, this.size_small)));
-                this.lab_img_medium.setIcon(new ImageIcon(Tools.resizePicture(path, this.size_medium, this.size_medium)));
                 this.lab_img_large.setIcon(new ImageIcon(Tools.resizePicture(path, this.size_large, this.size_large)));
                 // Set Name for Tooltip
                 this.lab_img_small.setName(this.name);
-                this.lab_img_medium.setName(this.name);
                 this.lab_img_large.setName(this.name);
             } else {
-                System.err.println("# WARNING: Both expected and default Icon Files were not found for Perk '" + this.name + "' => Exit");
+                System.err.println("# WARNING: Both expected and default Icon Files were not found for Character '" + this.name + "' => Exit");
                 System.exit(0);
             }
         }
     }
 
     /**
-     * Get Perk Weight
-     *
-     * @return
-     */
-    public int getWeight() {
-        return this.weight;
-    }
-
-    /**
-     * Set Perk Weight
-     *
-     * @param weight
-     */
-    public void setWeight(int weight) {
-        this.weight = weight;
-    }
-
-    /**
-     * Display Perk as String
+     * Display Character as String
      *
      * @param detail
      * @return
      */
     public String show(boolean detail) {
         if (detail) {
-            return "# Perk = '" + this.name + "' | Side = " + this.side + " | Icon = " + this.icon_string + " | Weight = " + this.getWeight();
+            return "# Character = '" + this.name + "' | Side = " + this.side + " | Icon = " + this.icon_string;
         } else {
-            return "# Perk = '" + this.name + "' | Side = " + this.side + " | Weight = " + this.getWeight();
+            return "# Character = '" + this.name + "' | Side = " + this.side;
         }
     }
 
@@ -208,13 +208,13 @@ public final class Perk implements Comparable<Perk> {
     }
 
     /**
-     * Compare two Perks
+     * Compare two Characters
      *
      * @param p
      * @return
      */
     @Override
-    public int compareTo(Perk p) {
+    public int compareTo(Character p) {
         return this.name.compareTo(p.name);
     }
 

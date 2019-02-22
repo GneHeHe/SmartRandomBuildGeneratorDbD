@@ -13,10 +13,13 @@ import javax.swing.UIManager.*;
  */
 public class SmartRandBuildGenGUI extends JFrame {
 
+    // Main Panel
+    private JTabbedPane tabbedPane;
     // Tabs
     private SmartRandBuildGenTabPerks pan_perks;
     private SmartRandBuildGenTabBuild pan_builds;
     private SmartRandBuildGenTabInfo pan_info;
+    private SmartRandBuildGenTabData pan_data;
 
     /**
      * Constructor
@@ -24,42 +27,48 @@ public class SmartRandBuildGenGUI extends JFrame {
      * @param myperks
      * @param mybuilds
      * @param myinfo
+     * @param mydata
      */
-    public SmartRandBuildGenGUI(SmartRandBuildGenTabPerks myperks, SmartRandBuildGenTabBuild mybuilds, SmartRandBuildGenTabInfo myinfo) {
+    public SmartRandBuildGenGUI(SmartRandBuildGenTabPerks myperks, SmartRandBuildGenTabBuild mybuilds, SmartRandBuildGenTabInfo myinfo, SmartRandBuildGenTabData mydata) {
 
         // Set LookAndFeel
         setlookandfeel();
 
-        // Init the Tabs
+        // Init Tabs
         this.pan_perks = myperks;
         this.pan_builds = mybuilds;
         this.pan_info = myinfo;
+        this.pan_data = mydata;
 
-        // TabPanel Component
-        JTabbedPane tabbedPane = new JTabbedPane();
+        // Main Panel
+        this.tabbedPane = new JTabbedPane();
 
-        // Add Panels as Tabs
-        tabbedPane.addTab("Configure Perks", this.pan_perks);
-        tabbedPane.addTab("Generate Random Builds", this.pan_builds);
-        tabbedPane.addTab("Contact & Help", this.pan_info);
+        // Add Tabs to Main Panel
+        this.tabbedPane.addTab("Configure Perks", this.pan_perks);
+        this.tabbedPane.addTab("Get Random Builds", this.pan_builds);
+        this.tabbedPane.addTab("Database of Builds", this.pan_data);
+        this.tabbedPane.addTab("Contact & Help", this.pan_info);
 
-        // Add Tooltip text on Tabs
-        tabbedPane.setToolTipTextAt(0, "Set Side and the Weight for each Perk");
+        // Add Tooltips on Tabs
+        this.tabbedPane.setToolTipTextAt(0, "Set the Weights for all Perks");
+        this.tabbedPane.setToolTipTextAt(1, "Get Random Builds (Side, Character, Perks)");
+        this.tabbedPane.setToolTipTextAt(2, "Save favorite Builds in Database");
+        this.tabbedPane.setToolTipTextAt(3, "Contact Author & Help/Tutorial");
 
-        // Set the favorite Tab
-        tabbedPane.setSelectedIndex(0);
+        // Set favorite Tab
+        this.tabbedPane.setSelectedIndex(0);
 
-        // Add tabs to current Frame
-        getContentPane().add(tabbedPane);
+        // Add Main Panel to Frame
+        this.getContentPane().add(this.tabbedPane);
 
-        // Set the Frame
-        setTitle(myperks.srbg.getTitle());
-        setSize(new Dimension(900, 750));
-        setResizable(false);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        //pack();
-        setLocationRelativeTo(null);
-        setVisible(true);
+        // Set Frame
+        this.setTitle(this.pan_perks.srbg.getTitle());
+        this.setSize(new Dimension(1000, 750));
+        this.setResizable(false);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //this.pack();
+        this.setLocationRelativeTo(null);
+        this.setVisible(true);
 
     }
 
@@ -70,24 +79,25 @@ public class SmartRandBuildGenGUI extends JFrame {
      */
     public static void main(String[] args) {
 
-        // Build SmartRandBuildGen Object
-        SmartRandBuildGen srbg = new SmartRandBuildGen();
+        // Build Object
+        SmartRandBuildGen mysrbg = new SmartRandBuildGen();
 
         // Define Tabs
-        final SmartRandBuildGenTabPerks myPerks = new SmartRandBuildGenTabPerks(srbg);
-        final SmartRandBuildGenTabBuild myBuilds = new SmartRandBuildGenTabBuild(srbg);
-        final SmartRandBuildGenTabInfo myInfo = new SmartRandBuildGenTabInfo(srbg);
+        final SmartRandBuildGenTabPerks myPerks = new SmartRandBuildGenTabPerks(mysrbg);
+        final SmartRandBuildGenTabBuild myBuilds = new SmartRandBuildGenTabBuild(mysrbg);
+        final SmartRandBuildGenTabInfo myInfo = new SmartRandBuildGenTabInfo(mysrbg);
+        final SmartRandBuildGenTabData myData = new SmartRandBuildGenTabData(mysrbg);
 
-
-        if (srbg.checkUpdate()) {
-            getAlert("An update is available from GitHub repository.\n\nClickable link is available from \"Contact & Help\" tab.", "Information", JOptionPane.INFORMATION_MESSAGE);
+        // Check Update
+        if (mysrbg.checkUpdate()) {
+            Tools.getAlert("An update is available from GitHub repository.\n\nClickable link is available from \"Contact & Help\" tab.", "Information", JOptionPane.INFORMATION_MESSAGE);
         }
 
         // Launch Frame
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                SmartRandBuildGenGUI frame = new SmartRandBuildGenGUI(myPerks, myBuilds, myInfo);
+                SmartRandBuildGenGUI frame = new SmartRandBuildGenGUI(myPerks, myBuilds, myInfo, myData);
             }
         }
         );
@@ -125,24 +135,13 @@ public class SmartRandBuildGenGUI extends JFrame {
             }
         }
 
-        // Apply the predefined LookAndFeel
+        // Apply predefined LookAndFeel
         try {
             UIManager.setLookAndFeel(laf);
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException ex) {
             System.err.println("# ERROR: LookAndFeel can't be loaded\n" + ex.getMessage());
             System.exit(0);
         }
-    }
-
-    /**
-     * Display Message in a Window
-     *
-     * @param msg the string to display
-     * @param title the title of the window
-     * @param type the type of alert
-     */
-    private static void getAlert(String msg, String title, int type) {
-        JOptionPane.showMessageDialog(null, msg, title, type);
     }
 
 }

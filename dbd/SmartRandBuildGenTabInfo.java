@@ -4,11 +4,12 @@ import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
 import javax.swing.*;
+import javax.swing.event.HyperlinkEvent;
+import javax.swing.event.HyperlinkListener;
 
 /**
  *
@@ -22,51 +23,45 @@ public class SmartRandBuildGenTabInfo extends JPanel {
     // Swing Components
     private JPanel pan_header, pan_author;
     private JScrollPane scrollPane;
-    private JEditorPane pan_tuto;
+    private JEditorPane editor;
     private JLabel lab_author, lab_email, lab_git;
     private ImageIcon pict;
-    // Strings
-    private String s_profile, s_git, s_email;
-    // SmartRandBuildGen Object
-    private SmartRandBuildGen srbg;
+    private String s_git;
+    final private String s_profile = "http://steamcommunity.com/id/trna";
+    final private String s_email = "gnehehe70@gmail.com";
 
     /**
      * Constructor
      *
-     * @param myBuilder
+     * @param srbg
      */
-    public SmartRandBuildGenTabInfo(SmartRandBuildGen myBuilder) {
+    public SmartRandBuildGenTabInfo(SmartRandBuildGen srbg) {
 
-        // Set SmartRandBuildGen Object
-        this.srbg = myBuilder;
-
-        // Define Strings
-        this.s_profile = "http://steamcommunity.com/id/trna";
-        this.s_email = "gnehehe70@gmail.com";
+        // Define Git String
         this.s_git = "https://github.com/" + srbg.git_user + "/" + srbg.git_repo + "/releases";
 
         // Create JEditorPane for HTML Tutorial
-        this.pan_tuto = new JEditorPane();
+        this.editor = new JEditorPane();
 
         // Add Swing Components
-        addComponents();
+        this.addComponents();
 
+        // Create Subpanels
         this.pan_author = new JPanel(new FlowLayout());
         this.pan_author.setLayout(new BoxLayout(this.pan_author, BoxLayout.X_AXIS));
         this.pan_author.add(this.lab_author);
         this.pan_author.add(this.lab_email);
         this.pan_author.add(this.lab_git);
 
-        // Create Subpanels
         this.pan_header = new JPanel();
         this.pan_header.setLayout(new BorderLayout());
         this.pan_header.add(new JLabel(this.pict), BorderLayout.CENTER);
         this.pan_header.add(this.pan_author, BorderLayout.SOUTH);
 
-        // Add tutorial to Panel
-        this.scrollPane = new JScrollPane(this.pan_tuto);
+        // Add Tutorial to Panel
+        this.scrollPane = new JScrollPane(this.editor);
 
-        // Set the Layout and add Subpanels
+        // Set Layout & add Subpanels
         this.setLayout(new BorderLayout());
         this.add(this.pan_header, BorderLayout.NORTH);
         this.add(this.scrollPane, BorderLayout.CENTER);
@@ -79,26 +74,26 @@ public class SmartRandBuildGenTabInfo extends JPanel {
     private void addComponents() {
 
         // Define ImageIcon Picture
-        String logo = "data/logo.png";
-        InputStream is = getClass().getResourceAsStream(logo);
-        if (is != null) {
-            this.pict = new ImageIcon(Tools.resizePicture(is, 45));
+        String s_logo = "data/logo.png";
+        if (getClass().getResourceAsStream(s_logo) != null) {
+            this.pict = new ImageIcon(Tools.resizePicture(s_logo, 45));
         } else {
-            System.err.println("# WARNING: " + logo + " not found !");
+            System.err.println("# WARNING: " + s_logo + " not found !");
         }
 
         // Define JEditorPane
-        this.pan_tuto.setEditable(false);
+        this.editor.setEditable(false);
+        this.editor.setContentType("text/html");
         URL url_tuto = getClass().getResource("data/tuto.html");
         if (url_tuto != null) {
             try {
-                this.pan_tuto.setPage(url_tuto);
+                this.editor.setPage(url_tuto);
             } catch (IOException e) {
-                getAlert("ERROR: The tutorial file was not found !", "Warning", JOptionPane.ERROR_MESSAGE);
+                Tools.getAlert("ERROR: The tutorial file was not found !", "Warning", JOptionPane.ERROR_MESSAGE);
                 System.exit(0);
             }
         } else {
-            getAlert("ERROR: The tutorial file was not found !", "Warning", JOptionPane.ERROR_MESSAGE);
+            Tools.getAlert("ERROR: The tutorial file was not found !", "Warning", JOptionPane.ERROR_MESSAGE);
             System.exit(0);
         }
 
@@ -125,7 +120,7 @@ public class SmartRandBuildGenTabInfo extends JPanel {
             @Override
             public void mouseClicked(MouseEvent e) {
                 try {
-                    // Open default Browser and Go to STEAM Profile
+                    // Open default Browser & Go to STEAM Profile
                     Desktop.getDesktop().browse(new URI(s_profile));
                 } catch (IOException | URISyntaxException ex) {
                     System.err.println("WARNING_STEAM_PROFILE");
@@ -154,7 +149,7 @@ public class SmartRandBuildGenTabInfo extends JPanel {
             @Override
             public void mouseClicked(MouseEvent e) {
                 try {
-                    // Open default Browser and Go to STEAM Profile
+                    // Open default Browser & Go to GitHub
                     Desktop.getDesktop().browse(new URI(s_git));
                 } catch (IOException | URISyntaxException ex) {
                     System.err.println("WARNING_GIT");
@@ -163,17 +158,22 @@ public class SmartRandBuildGenTabInfo extends JPanel {
             }
         });
 
-    }
+        // Define HyperlinkListener
+        this.editor.addHyperlinkListener(new HyperlinkListener() {
+            @Override
+            public void hyperlinkUpdate(HyperlinkEvent e) {
+                if (HyperlinkEvent.EventType.ACTIVATED.equals(e.getEventType())) {
+                    try {
+                        // Open default Browser & Go to STEAM Profile
+                        Desktop.getDesktop().browse(e.getURL().toURI());
+                    } catch (IOException | URISyntaxException ex) {
+                        System.err.println("WARNING_TUTORIAL");
+                        System.err.println(ex.getMessage());
+                    }
+                }
+            }
+        });
 
-    /**
-     * Display Message in a Window
-     *
-     * @param msg the string to display
-     * @param title the title of the window
-     * @param type the type of alert
-     */
-    private void getAlert(String msg, String title, int type) {
-        JOptionPane.showMessageDialog(this, msg, title, type);
     }
 
 }

@@ -1,24 +1,29 @@
-# What is "Smart Random Build Generator" ?
+# What is 'Smart Random Build Generator' ?
 
-**Smart Random Build Generator** (SRBG) is a user-friendly tool that can be used to generate random builds for **Dead by Daylight** game.
+**Smart Random Build Generator** (SRBG) is a user-friendly tool for **Dead by Daylight** game that can be used to:
+* **generate useful random builds**
+* **store and manipulate builds (1000+ predefined builds loaded at start)**
 
 Most related tools purely generate random builds which are hardly ever interesting/efficient because lots of perks are more or less trash in this game.
 
-By contrast, **SRBG** will create good random builds if desired.
-Briefly, identical or user-defined weights are assigned to each perk.
-Random builds are subsequently designed with bias toward perks with higher weights.
+By contrast, **SRBG** will create **useful random builds** if desired.
+Briefly, weights are assigned to perks, and random builds are subsequently designed with bias toward perks with higher weights.
 
-Both sides (survivor and killer) are obviously handled ... and **SRBG** can also chose the side for your next game ;)
+**SRBG** can also randomly chose the **side** ('**_Survivor_**' or '**_Killer_**') and specific **character** for your next game.
 
-Both "number of builds to generate" and "number of perks in each build" can be easily fine tuned.
+The '**_number of perks in each build_**' and the '**_number of builds to generate_**' can also be fine tuned.
 
-Finally, some interesting constraints can be enabled:
-* required perk related to care/healing (Self-Care, AfterCare, Bond, Pharmacy)
-* required sprint perk (Dead Hard, Balanced Landing, Lithe, Sprint Burst)
+Some interesting **constraints** can be enabled:
+* required **care perk** (Self-Care, AfterCare, Bond, Pharmacy)
+* required **sprint perk** (Dead Hard, Balanced Landing, Lithe, Sprint Burst)
+
+Besides, **generated builds can easily be saved in a database** for future use
+
+Finally, a **built-in tutorial** is included in SRBG tool
 
 # How to install and use SRBG ?
 
-Download the last compiled JAR file [here](https://github.com/GneHeHe/SmartRandomBuildGeneratorDbD/releases/download/1.2/SmartRandBuildGen.jar) (also available in **"releases"** tab)
+Download the last compiled JAR file [here](https://github.com/GneHeHe/SmartRandomBuildGeneratorDbD/releases/download/1.3/SmartRandBuildGen.jar) (also available in '**releases**' tab)
 
 System Requirements:
 

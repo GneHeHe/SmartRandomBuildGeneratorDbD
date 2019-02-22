@@ -9,51 +9,61 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
-import java.util.TreeSet;
 
 /**
  *
  * SmartRandBuildGen
  *
  * @author GneHeHe (2018)
+ *
  */
 public class SmartRandBuildGen {
 
-    // List of all Perks (Perk Objects)
-    private ArrayList<Perk> l_perks;
-    // List of all Perks (String Objects)
-    private ArrayList<String> l_perks_string;
-    // Current Side (Survivor / Killer)
-    private String side_current;
-    // List for Care Perks
-    private TreeSet<String> set_care;
-    // List for Sprint Perks
-    private TreeSet<String> set_sprint;
+    // List of all Perks
+    private ArrayList<Perk> l_perks_all;
+    private ArrayList<String> l_perks_all_string;
+    // List of Survivor Perks
+    private ArrayList<String> l_perks_survivor;
+    // List of Killer Perks
+    private ArrayList<String> l_perks_killer;
+    // List of Survivor Characters
+    private ArrayList<Character> l_char_survivor;
+    // List of Killer Characters
+    private ArrayList<Character> l_char_killer;
+    // Saved Build
+    private Build build_saved;
+    // Active Side
+    private String side;
+    // List of Care Perks
+    private List<String> l_care;
+    // List of Sprint Perks
+    private List<String> l_sprint;
     // Boolean Care Perk Needed
     private boolean care_needed;
     // Boolean Sprint Perk Needed
     private boolean sprint_needed;
-    // Number of Perks in the Build
+    // Nb of Perks in Build
     private int nb_perks_build;
-    // Number of Loaded Perks
+    // Nb of loaded Perks
     private int nb_perks_all;
-    // Number of Loaded Perks in active Side
+    // Nb of active Perks
     private int nb_perks_side;
-    // Title of Tool
-    private String title;
-    // Path to current Configuration File
+    // Set Character Status
+    private boolean character_status;
+    // Path of Configuration File
     private String config;
-    // Path to default Configuration File
-    private String config_def;
     // Verbose Level
     private boolean verbose;
-    // Version of SRBG
-    final private double version = 1.2;
+    // Title of Tool
+    private String title;
+    // Version of Tool
+    final private double version = 1.3;
     // GitHub User/Repos
     final public String git_user = "GneHeHe";
     final public String git_repo = "SmartRandomBuildGeneratorDbD";
-    final private String spacer = "##########";
+    final private String string_spacer = "##########";
 
     /**
      * Default Constructor
@@ -61,29 +71,40 @@ public class SmartRandBuildGen {
      */
     public SmartRandBuildGen() {
 
-        // Set Title of Tool
+        // Set Title
         this.title = "Smart Random Build Generator for Dead by Daylight " + this.version;
-        System.out.println("\n" + spacer + " " + getTitle() + " " + spacer + "\n");
+        System.out.println("\n" + string_spacer + " " + getTitle() + " " + string_spacer + "\n");
 
-        // Set the Lists of Perks
-        this.l_perks = new ArrayList<>();
-        this.l_perks_string = new ArrayList<>();
+        // Set Lists of Perks
+        this.l_perks_all = new ArrayList<>();
+        this.l_perks_all_string = new ArrayList<>();
+        this.l_perks_survivor = new ArrayList<>();
+        this.l_perks_killer = new ArrayList<>();
+        this.l_char_survivor = new ArrayList<>();
+        this.l_char_killer = new ArrayList<>();
 
-        // Read the default Weight Distribution File
-        this.initConfigFile();
-
-        // Define both default Side and Number of Perks
-        this.side_current = "";
+        // Define both default Side & Nb of Perks
+        this.side = "";
         this.setSide("Random");
-        this.nb_perks_build = 4;
+        this.setNbPerksBuild(4);
+
+        // Read default Weight Distribution File
+        this.initConfigFile();
+        this.initCharacters();
 
         // Init Care/Sprint Perk Lists
-        this.set_care = initTreeSet("data/perks_care.txt");
-        this.set_sprint = initTreeSet("data/perks_sprint.txt");
+        this.l_care = initListFromFile("data/perk_care.txt");
+        this.l_sprint = initListFromFile("data/perk_sprint.txt");
 
-        // Set the Care/Sprint Status
-        this.care_needed = false;
-        this.sprint_needed = false;
+        // Set Care/Sprint Status
+        this.setNeedCare(false);
+        this.setNeedSprint(false);
+
+        // Set Character Status
+        this.setRandomCharStatus(false);
+
+        // Define Build
+        this.build_saved = null;
 
         // Set Verbose Mode
         this.verbose = false;
@@ -91,13 +112,13 @@ public class SmartRandBuildGen {
     }
 
     /**
-     * Set the same Weight for all Perks
+     * Set same Weight for all Perks
      *
      * @param value
      */
     public void setSameWeight(int value) {
-        System.out.println("# All perks now have the same weight = " + value);
-        for (Perk p : this.l_perks) {
+        System.out.println("# All perks now have the same weight = " + value + "\n");
+        for (Perk p : this.l_perks_all) {
             p.setWeight(value);
         }
         // Display Perks
@@ -105,12 +126,28 @@ public class SmartRandBuildGen {
     }
 
     /**
-     * Get the Perk List
+     * Get Perk List
      *
      * @return
      */
     public List getPerks() {
-        return this.l_perks;
+        return this.l_perks_all;
+    }
+
+    /**
+     * Get Perk List
+     *
+     * @param side
+     * @return
+     */
+    public List getPerks(String side) {
+        if (side.equals("Survivor")) {
+            return this.l_perks_survivor;
+        } else if (side.equals("Killer")) {
+            return this.l_perks_killer;
+        } else {
+            return null;
+        }
     }
 
     /**
@@ -120,7 +157,7 @@ public class SmartRandBuildGen {
      * @return
      */
     public Perk getPerk(String name) {
-        for (Perk p : this.l_perks) {
+        for (Perk p : this.l_perks_all) {
             if (p.getName().equals(name)) {
                 return p;
             }
@@ -129,7 +166,49 @@ public class SmartRandBuildGen {
     }
 
     /**
-     * Get the Number of Perks in a Build
+     * Get a Character Object given its Name
+     *
+     * @param name
+     * @param side
+     * @return
+     */
+    public Character getChar(String name, String side) {
+        if (side.equals("Survivor")) {
+            for (Character c : this.l_char_survivor) {
+                if (c.getName().equals(name)) {
+                    return c;
+                }
+            }
+        } else if (side.equals("Killer")) {
+            for (Character c : this.l_char_killer) {
+                if (c.getName().equals(name)) {
+                    return c;
+                }
+            }
+        }
+        return null;
+    }
+
+    /**
+     * Get a Character Object given its Name
+     *
+     * @return
+     */
+    public Character getRandomChar() {
+        Character c = null;
+        int rand;
+        if (this.side.equals("Survivor")) {
+            rand = (int) (this.l_char_survivor.size() * Math.random());
+            c = this.l_char_survivor.get(rand);
+        } else if (this.side.equals("Killer")) {
+            rand = (int) (this.l_char_killer.size() * Math.random());
+            c = l_char_killer.get(rand);
+        }
+        return c;
+    }
+
+    /**
+     * Get Nb of Perks in Build
      *
      * @return
      */
@@ -138,23 +217,23 @@ public class SmartRandBuildGen {
     }
 
     /**
-     * Set the Number of Perks in a Build
+     * Set Nb of Perks in Build
      *
      * @param n
      */
-    public void setNbPerksBuild(int n) {
+    public final void setNbPerksBuild(int n) {
         this.nb_perks_build = n;
         // Adjust Booleans if Value is lower than 2
         if (this.nb_perks_build < 2) {
             setNeedCare(false);
             setNeedSprint(false);
-            System.out.println("# WARNING: Booleans (NeedCare and NeedSprint) are set to False because the number of desired Perks is lower than 2");
+            System.out.println("# WARNING: Both Need-Care/Need-Sprint booleans are set to False because number of Perks is too low");
         }
         System.out.println("# Nb of Perks per Build = " + this.nb_perks_build + "\n");
     }
 
     /**
-     * Get the Number of Loaded Perks
+     * Get Nb of Loaded Perks
      *
      * @return
      */
@@ -163,7 +242,7 @@ public class SmartRandBuildGen {
     }
 
     /**
-     * Get the Number of Active Perks
+     * Get Nb of Active Perks
      *
      * @return
      */
@@ -172,7 +251,26 @@ public class SmartRandBuildGen {
     }
 
     /**
-     * Get the current Configuration File
+     * Get Character Status
+     *
+     * @return
+     */
+    public boolean getRandomCharStatus() {
+        return this.character_status;
+    }
+
+    /**
+     * Set Character Status
+     *
+     * @param b
+     */
+    public final void setRandomCharStatus(boolean b) {
+        this.character_status = b;
+        System.out.println("# Selecting Character Randomly = " + this.character_status + "\n");
+    }
+
+    /**
+     * Get current Configuration File
      *
      * @return
      */
@@ -181,26 +279,36 @@ public class SmartRandBuildGen {
     }
 
     /**
-     * Set the current Configuration File
+     * Set current Configuration File
      *
      * @param s
      */
     public void setConfig(String s) {
         this.config = s;
-        System.out.println("# Current configuration file =  " + this.config);
+        System.out.println("# Current configuration file = " + this.config + "\n");
     }
 
     /**
-     * Get the default Configuration File
+     * Get Saved Build
      *
      * @return
      */
-    public String getConfigDef() {
-        return this.config_def;
+    public Build getBuildSaved() {
+        return this.build_saved;
     }
 
     /**
-     * Set the current Side
+     * Set Saved Build
+     *
+     * @param b
+     */
+    public void setBuildSaved(Build b) {
+        this.build_saved = b;
+        //System.out.println("\n# Saving Build = " + this.build_saved.show(true, " "));
+    }
+
+    /**
+     * Set active Side
      *
      * @param s
      */
@@ -208,46 +316,60 @@ public class SmartRandBuildGen {
         if (s.equals("Random")) {
             s = selectRandomSide();
         }
-        if ((s.equals("Survivor")) || (s.equals("Killer"))) {
-            this.side_current = s;
+        if (s.equals("Survivor")) {
+            this.nb_perks_side = l_perks_survivor.size();
+        } else if (s.equals("Killer")) {
+            this.nb_perks_side = l_perks_killer.size();
         } else {
             System.err.println("\n# ERROR: The side must be either 'Survivor' OR 'Killer' OR 'Random'\n");
             System.exit(0);
         }
-        System.out.println("# Active Side = " + this.side_current);
-        // Update Nb of Active Perks
-        updatePerksSide();
-        // Display Perks
-        showPerksSide(false);
+        this.side = s;
+        System.out.println("# Active Side = " + this.side + "\n");
     }
 
     /**
-     * Get the current Side
+     * Get active Side
      *
      * @return
      */
     public String getSide() {
-        return this.side_current;
+        return this.side;
     }
 
     /**
-     * Set the current Care Perks Status (with Contraints regarding the current
-     * Number of Perks)
+     * Get Character List
      *
-     * @param b
+     * @param side
+     * @return
      */
-    public void setNeedCare(boolean b) {
-        if ((this.side_current.equals("Survivor")) && (((getNbPerksBuild() == 1) && (!getNeedSprint())) || (getNbPerksBuild() >= 2))) {
-            this.care_needed = b;
-            System.out.println("# Care Perk Needed = " + this.care_needed);
+    public ArrayList getCharacters(String side) {
+        if (side.equals("Survivor")) {
+            return this.l_char_survivor;
+        } else if (side.equals("Killer")) {
+            return this.l_char_killer;
         } else {
-            this.care_needed = false;
-            System.out.println("# Care Perk Needed = " + this.care_needed + " (WARNING: value can't be updated)");
+            return null;
         }
     }
 
     /**
-     * Get the current Care Perks Status
+     * Set Care Perks Status
+     *
+     * @param b
+     */
+    public final void setNeedCare(boolean b) {
+        if ((this.side.equals("Survivor")) && (((getNbPerksBuild() == 1) && (!getNeedSprint())) || (getNbPerksBuild() >= 2))) {
+            this.care_needed = b;
+            System.out.println("# Care Perk Needed = " + this.care_needed + "\n");
+        } else {
+            this.care_needed = false;
+            System.out.println("# Care Perk Needed = " + this.care_needed + " (WARNING: value was not updated)\n");
+        }
+    }
+
+    /**
+     * Get Care Perks Status
      *
      * @return
      */
@@ -256,23 +378,22 @@ public class SmartRandBuildGen {
     }
 
     /**
-     * Set the current Sprint Perks Status (with Contraints regarding the
-     * current Number of Perks)
+     * Set Sprint Perks Status
      *
      * @param b
      */
-    public void setNeedSprint(boolean b) {
-        if ((this.side_current.equals("Survivor")) && (((getNbPerksBuild() == 1) && (!getNeedCare())) || (getNbPerksBuild() >= 2))) {
+    public final void setNeedSprint(boolean b) {
+        if ((this.side.equals("Survivor")) && (((getNbPerksBuild() == 1) && (!getNeedCare())) || (getNbPerksBuild() >= 2))) {
             this.sprint_needed = b;
-            System.out.println("# Sprint Perk Needed = " + this.sprint_needed);
+            System.out.println("# Sprint Perk Needed = " + this.sprint_needed + "\n");
         } else {
             this.sprint_needed = false;
-            System.out.println("# Sprint Perk Needed = " + this.sprint_needed + " (WARNING: value can't be updated)");
+            System.out.println("# Sprint Perk Needed = " + this.sprint_needed + " (WARNING: value was not updated)\n");
         }
     }
 
     /**
-     * Get the current Sprint Perks Status
+     * Get Sprint Perks Status
      *
      * @return
      */
@@ -281,71 +402,71 @@ public class SmartRandBuildGen {
     }
 
     /**
-     * Get the Sprint Set
+     * Get Sprint List
      *
      * @return
      */
-    public TreeSet getSprintSet() {
-        return this.set_sprint;
+    public List<String> getSprintList() {
+        return this.l_sprint;
     }
 
     /**
-     * Get the Sprint Set as String
+     * Get Sprint List as String
      *
      * @return
      */
-    public String getSprintAsString() {
+    public String getSprintListAsString() {
         String s = "";
-        for (String e : set_sprint) {
+        for (String e : l_sprint) {
             s = s + e + ", ";
         }
         return s.trim().substring(0, s.length() - 2);
     }
 
     /**
-     * Get the Care Set
+     * Get Care List
      *
      * @return
      */
-    public TreeSet getCareSet() {
-        return this.set_care;
+    public List<String> getCareList() {
+        return this.l_care;
     }
 
     /**
-     * Get the Care Set as String
+     * Get Care List as String
      *
      * @return
      */
-    public String getCareAsString() {
+    public String getCareListAsString() {
         String s = "";
-        for (String e : set_care) {
+        for (String e : l_care) {
             s = s + e + ", ";
         }
         return s.trim().substring(0, s.length() - 2);
     }
 
     /**
-     * Display all Perks and Features
+     * Display all Perks & Features
      *
      * @param detail
      */
     public void showPerks(boolean detail) {
         System.out.println("\n# All Loaded Perks (" + this.nb_perks_all + " Perks)\n");
-        for (Perk p : this.l_perks) {
+        for (Perk p : this.l_perks_all) {
             System.out.println(p.show(detail));
         }
         System.out.println("");
     }
 
     /**
-     * Display active Perks and Features
+     * Display active Perks & Features
      *
      * @param detail
      */
     public void showPerksSide(boolean detail) {
-        System.out.println("\n# Active Perks from '" + this.side_current + "' Side (" + this.nb_perks_side + " Perks)\n");
-        for (Perk p : this.l_perks) {
-            if (p.getSide().equals(this.side_current)) {
+        System.out.println("\n# Active Perks from '" + this.side + "' Side (" + this.nb_perks_side + " Perks)\n");
+        for (Perk p : this.l_perks_all) {
+            if (p.getSide().equals(this.side)) {
                 System.out.println(p.show(detail));
             }
         }
@@ -353,55 +474,19 @@ public class SmartRandBuildGen {
     }
 
     /**
-     * Update active Perks
-     *
-     * @param detail
-     */
-    private void updatePerksSide() {
-        int nb = 0;
-        for (Perk p : this.l_perks) {
-            if (p.getSide().equals(this.side_current)) {
-                nb++;
-            }
-        }
-        this.nb_perks_side = nb;
-    }
-
-    /**
      * Display all Parameters
      *
      */
     public void showParams() {
-        System.out.println("\n" + spacer + " Input Parameters " + spacer + "\n");
+        System.out.println(string_spacer + " Input Parameters " + string_spacer + "\n");
         System.out.println("# Nb of Loaded Perks = " + this.nb_perks_all);
-        System.out.println("# Active Side = " + this.side_current);
+        System.out.println("# Active Side = " + this.side);
+        System.out.println("# Randomly Select Character = " + this.character_status);
         System.out.println("# Nb of Perks on Active Side = " + this.nb_perks_side);
         System.out.println("# Nb of Perks per Build = " + this.nb_perks_build);
         System.out.println("# Care Perk Needed = " + this.care_needed);
         System.out.println("# Sprint Perk Needed = " + this.sprint_needed);
         System.out.println("# Verbose Mode = " + this.verbose);
-    }
-
-    /**
-     * Get a Build as String
-     *
-     * @param tree
-     * @param name
-     * @param spacer
-     * @return
-     */
-    public String showBuild(TreeSet<String> tree, String name, String spacer) {
-        int nb = 1;
-        String build = "Random Build " + name + " :" + spacer;
-        for (String s : tree) {
-            if (nb == getNbPerksBuild()) {
-                build = build + s;
-            } else {
-                build = build + s + spacer;
-            }
-            nb++;
-        }
-        return build;
     }
 
     /**
@@ -429,7 +514,7 @@ public class SmartRandBuildGen {
      */
     private void setVerbose(boolean b) {
         this.verbose = b;
-        System.out.println("# Verbose Mode = " + this.verbose);
+        System.out.println("# Verbose Mode = " + this.verbose + "\n");
     }
 
     /**
@@ -444,18 +529,19 @@ public class SmartRandBuildGen {
     /**
      * Generate single Random Build
      *
+     * @param buildname
      * @return
      */
-    public TreeSet<String> genRandomBuild() {
+    public Build genRandomBuild(String buildname) {
         if (verbose) {
             System.out.println("# Need Care Perk = " + getNeedCare() + " | Need Sprint Perk = " + getNeedSprint());
         }
-        List<String> l = new ArrayList();
-        TreeSet<String> l_ok = new TreeSet();
+        List<String> l = new ArrayList<>();
+        List<String> l_ok = new ArrayList<>();
         int nbperks = 0;
         // Get weighted List of Perks from the Side of interest
-        for (Perk perk : this.l_perks) {
-            if (perk.getSide().equals(this.side_current)) {
+        for (Perk perk : this.l_perks_all) {
+            if (perk.getSide().equals(this.side)) {
                 int value = perk.getWeight();
                 for (int i = 0; i < value; i++) {
                     l.add(perk.getName());
@@ -468,8 +554,8 @@ public class SmartRandBuildGen {
         }
         // Check if the Pool of Perks if sufficiently big enough, same for the Number of unique Perks
         if ((l.size() < this.nb_perks_build) || (nbperks < this.nb_perks_build)) {
-            System.out.println("# Pool of available Perks is too small => Check the Weights of Perks and/or the Number of Perks in each Build");
-            return l_ok;
+            System.out.println("# Pool of available Perks is too small => Check the Weights of Perks and/or the Nb of Perks in Build");
+            return null;
         }
         // Several Loops may be required if "Needed Perks" Booleans are not set to "False"
         int nbloop = 1;
@@ -490,7 +576,7 @@ public class SmartRandBuildGen {
                 int rand = (int) (l.size() * Math.random());
                 String perk = l.get(rand);
                 if (!l_ok.contains(perk)) {
-                    if ((sprint_found && (this.set_sprint.contains(perk))) || (care_found && (this.set_care.contains(perk)))) {
+                    if ((sprint_found && (this.l_sprint.contains(perk))) || (care_found && (this.l_care.contains(perk)))) {
                         if (verbose) {
                             System.out.print("... skipped " + perk + " ... ");
                         }
@@ -504,11 +590,11 @@ public class SmartRandBuildGen {
 
                 }
                 // Sprint Perk Found => Update Boolean
-                if (this.set_sprint.contains(perk)) {
+                if (this.l_sprint.contains(perk)) {
                     sprint_found = true;
                 }
                 // Care Perk Found => Update Boolean
-                if (this.set_care.contains(perk)) {
+                if (this.l_care.contains(perk)) {
                     care_found = true;
                 }
             }
@@ -523,54 +609,55 @@ public class SmartRandBuildGen {
                 System.out.println("");
             }
         }
+        Collections.sort(l_ok);
         // Return Random Build
-        return l_ok;
+        Build b = new Build();
+        b.setName(buildname);
+        b.setSide(this.side);
+        for (String s : l_ok) {
+            Perk p = getPerk(s);
+            b.addPerk(p);
+        }
+        return b;
     }
 
     /**
-     * Set Weights for the Perks using Configuration File
+     * Set Weights from Configuration File
      *
      */
-    private void initConfigFile() {
+    public final void initConfigFile() {
         // Try to detect a custom Configuration File in the current Directory
-        String f = System.getProperty("user.dir") + File.separator + "perks_db_custom.txt";
+        String f = System.getProperty("user.dir") + File.separator + "perk_db_custom.txt";
         if (new File(f).exists()) {
             this.config = new File(f).getAbsolutePath();
-            System.out.println("# Loading custom weight distribution from " + this.config);
-            readConfigFile(f, "\t");
         } else {
             // Or use the default Configuration File
-            this.config = "data/perks_db.txt";
-            System.out.println("# Loading default weight distribution from " + this.config);
-            InputStream is = getClass().getResourceAsStream(this.config);
-            if (is != null) {
-                readConfigFile(is, "\t");
-            } else {
-                System.err.println("\n# ERROR: The configuration file \"" + this.config + "\" was not found !\n");
-                System.exit(0);
-            }
+            this.config = "data/perk_db.txt";
         }
-        // Set the default Configuration File (may be the same as current one)
-        this.config_def = "data/perks_db.txt";
+        // Read the Configuration File
+        readConfigFile(this.config);
     }
 
     /**
-     * Set Weights for the Perks using Configuration File
+     * Set Weights from Configuration File
      *
      * @param input
-     * @param spacer
      */
-    public void readConfigFile(Object input, String spacer) {
-        this.l_perks.clear();
-        this.l_perks_string.clear();
+    public void readConfigFile(String input) {
+        String spacer = "\t";
+        this.l_perks_all.clear();
+        this.l_perks_all_string.clear();
+        this.l_perks_survivor.clear();
+        this.l_perks_killer.clear();
         try {
             // Define the Reader
             BufferedReader br = null;
-            if (new File(input.toString()).exists()) {
-                String f = input.toString();
-                br = new BufferedReader(new FileReader(new File(f)));
+            if (new File(input).exists()) {
+                System.out.println("# Loading custom Weight Distribution from " + input);
+                br = new BufferedReader(new FileReader(new File(input)));
             } else {
-                InputStream is = (InputStream) input;
+                InputStream is = getClass().getResourceAsStream(input);
+                System.out.println("# Loading default Weight Distribution from " + input);
                 br = new BufferedReader(new InputStreamReader(is));
             }
             // Loop over the Reader
@@ -581,52 +668,118 @@ public class SmartRandBuildGen {
                 String tab[] = line.split(spacer);
                 if (tab.length == 4) {
                     // Get Data (4 Fields are expected)
-                    String name = tab[0];
-                    String side = tab[1];
-                    String icon = tab[2];
-                    int weight = Integer.parseInt(tab[3]);
+                    String myname = tab[0];
+                    String myside = tab[1];
+                    if (!((myside.equals("Survivor")) || (myside.equals("Killer")))) {
+                        System.err.println("\n# ERROR: wrong side ('" + myside + "') => Exit [ wrong line : >" + line + "< from input file ]\n");
+                        System.exit(0);
+                    }
+                    String myicon = tab[2];
+                    int myweight = Integer.parseInt(tab[3]);
                     // Check Weight Value
-                    if (weight < 0) {
-                        System.err.println("\n# ERROR: Weights must be larger than 0 (Error with this Line : >" + line + "<\n");
+                    if (myweight < 0) {
+                        System.err.println("\n# ERROR: wrong weight ('" + myweight + "') => Exit [ wrong line : >" + line + "< from input file ]\n");
                         System.exit(0);
                     }
                     // Create Perk Object
-                    Perk p = new Perk(name, weight, side, icon);
-                    // Add Perk to the Pool
-                    this.l_perks.add(p);
-                    // Add Perk Name to known Perk List
-                    this.l_perks_string.add(name);
+                    Perk p = new Perk(myname, myweight, myside, myicon);
+                    // Add Perk to the Pool of Perks
+                    this.l_perks_all.add(p);
+                    // Add Perk Name to Perk List
+                    this.l_perks_all_string.add(myname);
+                    if (myside.equals("Survivor")) {
+                        this.l_perks_survivor.add(myname);
+                    } else {
+                        this.l_perks_killer.add(myname);
+                    }
                 } else {
-                    System.err.println("\n# ERROR: Corrupted Configuration File (Error with this Line : >" + line + "< (defined spacer='" + spacer + "')\n");
+                    System.err.println("\n# ERROR: corrupted configuration file => Exit [ wrong line : >" + line + "< from input file ]\n");
                     System.exit(0);
                 }
                 line = br.readLine();
             }
             br.close();
         } catch (Exception ex) {
-            System.err.println("\n# ERROR: Issues with the Configuration File");
+            System.err.println("\n# ERROR: issues with configuration file => Exit");
             System.err.println(ex.getMessage());
             System.exit(0);
         }
         // Set Nb of Perks
-        this.nb_perks_all = this.l_perks.size();
+        this.nb_perks_all = this.l_perks_all.size();
         // Update Nb of Active Perks
-        updatePerksSide();
+        if (this.side.equals("Survivor")) {
+            this.nb_perks_side = l_perks_survivor.size();
+        } else if (this.side.equals("Killer")) {
+            this.nb_perks_side = l_perks_killer.size();
+        }
+        // updatePerksSide();
         // Display Perks
         showPerks(false);
     }
 
     /**
-     * Write the current Weight Distribution in one Configuration File
+     * Init Characters
+     *
+     */
+    private void initCharacters() {
+        String spacer = "\t";
+        this.l_char_survivor.clear();
+        this.l_char_killer.clear();
+        try {
+            // Define the Reader
+            BufferedReader br = null;
+            String input = "data/characters.txt";
+            InputStream is = getClass().getResourceAsStream(input);
+            System.out.println("# Loading Characters from " + input + "\n");
+            br = new BufferedReader(new InputStreamReader(is));
+            // Loop over the Reader
+            String line = "";
+            line = br.readLine();
+            while (line != null) {
+                // Split Line according to Spacer
+                String tab[] = line.split(spacer);
+                if (tab.length == 3) {
+                    // Get Data (4 Fields are expected)
+                    String myname = tab[0];
+                    String myside = tab[1];
+                    if (!((myside.equals("Survivor")) || (myside.equals("Killer")))) {
+                        System.err.println("\n# ERROR: wrong side ('" + myside + "') => Exit [ wrong line : >" + line + "< from input file ]\n");
+                        System.exit(0);
+                    }
+                    String myicon = tab[2];
+                    // Create Character Object
+                    Character c = new Character(myname, myside, myicon);
+                    // Add Character to related List
+                    if (myside.equals("Survivor")) {
+                        this.l_char_survivor.add(c);
+                    } else {
+                        this.l_char_killer.add(c);
+                    }
+                } else {
+                    System.err.println("\n# ERROR: corrupted character file => Exit [ wrong line : >" + line + "< from input file ]\n");
+                    System.exit(0);
+                }
+                line = br.readLine();
+            }
+            br.close();
+        } catch (Exception ex) {
+            System.err.println("\n# ERROR: issues with character file => Exit");
+            System.err.println(ex.getMessage());
+            System.exit(0);
+        }
+    }
+
+    /**
+     * Save Weight Distribution
      *
      * @param filename
-     * @param spacer
      */
-    public void writeConfigFile(String filename, String spacer) {
+    public void saveConfigFile(String filename) {
+        String spacer = "\t";
         BufferedWriter bw;
         try {
             bw = new BufferedWriter(new FileWriter(new File(filename)));
-            for (Perk p : this.l_perks) {
+            for (Perk p : this.l_perks_all) {
                 bw.write(p.getName() + spacer + p.getSide() + spacer + p.getIconString() + spacer + p.getWeight() + "\n");
             }
             System.out.println("# Saving current weight distribution in " + filename);
@@ -639,18 +792,18 @@ public class SmartRandBuildGen {
     }
 
     /**
-     * Init a TreeSet from a Configuration File
+     * Init a List from a Configuration File
      *
      */
-    private TreeSet<String> initTreeSet(String f) {
-        TreeSet<String> tree = new TreeSet<>();
+    private List<String> initListFromFile(String f) {
+        List<String> list = new ArrayList<>();
         try {
             InputStream is = getClass().getResourceAsStream(f);
             BufferedReader br = new BufferedReader(new InputStreamReader(is));
             String line = br.readLine();
             while (line != null) {
-                if (l_perks_string.contains(line)) {
-                    tree.add(line);
+                if (l_perks_all_string.contains(line)) {
+                    list.add(line);
                 } else {
                     System.err.println("\n# ERROR: Perk " + line + " does not exist !\n");
                     System.exit(0);
@@ -663,19 +816,21 @@ public class SmartRandBuildGen {
             System.err.println(ex.getMessage());
             System.exit(0);
         }
-        return tree;
+        Collections.sort(list);
+        return list;
     }
 
     /**
-     * Display Help and Quit
+     * Display Help & Quit
      *
      */
     public void displayHelp() {
-        System.out.println("# Available Options in Smart Random Build Generator:\n#");
-        System.out.println("#  -conf : custom weight distribution file for all perks");
+        System.out.println(string_spacer + " Available Options in Smart Random Build Generator " + string_spacer + "\n");
+        System.out.println("#  -conf : load custom weight distribution file (all perks)");
         System.out.println("#  -side : set active side ('Survivor' OR 'Killer' OR 'Random')");
         System.out.println("#  -perk : set number of perks per build");
         System.out.println("#  -build : set number of builds to generate");
+        System.out.println("#  -char : select randomly the character (disabled by default)");
         System.out.println("#  -care : enable constraints for care-related perks");
         System.out.println("#  -sprint : enable constraints for sprint-related perks");
         System.out.println("#  -v : enable verbose mode (disabled by default)");
@@ -684,7 +839,7 @@ public class SmartRandBuildGen {
     }
 
     /**
-     * Randomly Select the Active Side
+     * Randomly Select Active Side
      *
      * @return
      */
@@ -694,9 +849,9 @@ public class SmartRandBuildGen {
         double p = Math.random();
         // Add Bias toward the other Side
         double offset = 0.20;
-        if (this.side_current.equals("Survivor")) {
+        if (this.side.equals("Survivor")) {
             p = p - offset;
-        } else if (this.side_current.equals("Killer")) {
+        } else if (this.side.equals("Killer")) {
             p = p + offset;
         }
         // Select Side according to Random Value
@@ -713,9 +868,9 @@ public class SmartRandBuildGen {
      * @return
      */
     public boolean checkUpdate() {
-        System.out.print(spacer + " Checking Update from remote GitHub Repository " + spacer + "\n\n# ");
+        System.out.print("# Checking Update from remote GitHub Repository\n# ");
         boolean update_new = false;
-        double gitversion = Tools.checkUpdate(this.git_user, this.git_repo);
+        double gitversion = Tools.getLastVersionGitHub(this.git_user, this.git_repo);
         if (gitversion > this.version) {
             update_new = true;
             System.out.println("# Remote Version = " + gitversion + "\n# Local Version = " + this.version + "\n# An Update is available from https://github.com/" + this.git_user + "/" + this.git_repo + "/releases\n");
@@ -735,20 +890,21 @@ public class SmartRandBuildGen {
         // Build SmartRandBuildGen Object
         SmartRandBuildGen srbg = new SmartRandBuildGen();
 
-        // Check Update
-        srbg.checkUpdate();
-
         // Check Args
         if (args.length == 0) {
             srbg.displayHelp();
         }
 
-        // Define default Number of Random Builds to Generate
+        // Check Update
+        srbg.checkUpdate();
+
+        // Define default Nb of Random Builds
         int nbbuilds = 10;
 
         // Process User-defined Arguments
-        System.out.println(srbg.spacer + " Parsing Arguments " + srbg.spacer + "\n");
+        System.out.println(srbg.string_spacer + " Parsing Arguments from User " + srbg.string_spacer + "\n");
         String val = "";
+        boolean valb = true;
         int valn = 0;
         int argn = args.length;
         for (int i = 0; i < argn; i++) {
@@ -756,8 +912,7 @@ public class SmartRandBuildGen {
                 if ((i + 1) < argn) {
                     if (!args[i + 1].startsWith("-")) {
                         val = args[i + 1];
-                        System.out.println("# Updating weight distribution from this configuration file " + val);
-                        srbg.readConfigFile(val, "\t");
+                        srbg.readConfigFile(val);
                     } else {
                         System.err.println("\n# ERROR: The '-conf' option requires an argument\n");
                         System.exit(0);
@@ -779,6 +934,8 @@ public class SmartRandBuildGen {
                     System.err.println("\n# ERROR: The '-side' option requires an argument\n");
                     System.exit(0);
                 }
+            } else if (args[i].equals("-char")) {
+                srbg.setRandomCharStatus(true);
             } else if (args[i].equals("-care")) {
                 srbg.setNeedCare(true);
             } else if (args[i].equals("-sprint")) {
@@ -807,7 +964,7 @@ public class SmartRandBuildGen {
                         try {
                             valn = Integer.parseInt(args[i + 1]);
                             nbbuilds = valn;
-                            System.out.println("# Number of desired Builds =  " + nbbuilds);
+                            System.out.println("# Number of desired Builds = " + nbbuilds + "\n");
                         } catch (Exception ex) {
                             System.err.println("\n# ERROR: The '-build' option requires an integer value\n");
                             System.exit(0);
@@ -833,14 +990,21 @@ public class SmartRandBuildGen {
         // Display loaded Parameters
         srbg.showParams();
 
-        // Generate several Random Builds using various Care/Sprint Criteria Combinations
-        System.out.println("\n" + srbg.spacer + " " + nbbuilds + " Random Builds with " + srbg.getNbPerksBuild() + " Perks per Build " + srbg.spacer + "\n");
+        // Get Character if desired
+        if (srbg.getRandomCharStatus()) {
+            System.out.println("\n" + srbg.string_spacer + " Randomly Selected Character " + srbg.string_spacer + "\n");
+            System.out.println("# Selected Character = " + srbg.getRandomChar().getName());
+        }
+
+        // Generate Random Builds
+        System.out.println("\n" + srbg.string_spacer + " " + nbbuilds + " Random Builds with " + srbg.getNbPerksBuild() + " Perks per Build " + srbg.string_spacer + "\n");
+        Build b = null;
         for (int k = 1; k <= nbbuilds; k++) {
             if (srbg.getVerbose()) {
                 System.out.println("");
             }
-            TreeSet<String> l = srbg.genRandomBuild();
-            System.out.println("# " + srbg.showBuild(l, k + "", "\t"));
+            b = srbg.genRandomBuild("Random Build " + k);
+            System.out.println("# " + b.show(false, "\t"));
         }
         System.out.println("");
 

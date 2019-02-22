@@ -7,45 +7,44 @@ import javax.swing.JLabel;
 
 /**
  *
- * MyTableModel
+ * PerkTableModel
  *
  * @author GneHeHe (2018)
  *
  */
-public final class MyTableModel extends AbstractTableModel {
+public final class PerkTableModel extends AbstractTableModel {
 
-    // Define the Columns
+    // Define Columns
     private final String[] columns = {"Perk", "Icon", "Weight"};
     // Define Content of Table
-    private final ArrayList<MyTableData> perks;
+    private ArrayList<Perk> l_perks;
     // SmartRandBuildGen Object
-    private SmartRandBuildGen builder;
+    private SmartRandBuildGen srbg;
 
     /**
      * Constructor
      *
-     * @param builder
+     * @param object
      */
-    public MyTableModel(SmartRandBuildGen builder) {
+    public PerkTableModel(SmartRandBuildGen object) {
         // Define List
-        this.perks = new ArrayList();
-        // Set the SmartRandBuildGen Object
-        this.builder = builder;
-
+        this.l_perks = new ArrayList();
+        // Set SmartRandBuildGen Object
+        this.srbg = object;
     }
 
     /**
-     * Get the Number of Rows
+     * Get Number of Rows
      *
      * @return
      */
     @Override
     public int getRowCount() {
-        return perks.size();
+        return l_perks.size();
     }
 
     /**
-     * Get the Number of Columns
+     * Get Number of Columns
      *
      * @return
      */
@@ -55,7 +54,7 @@ public final class MyTableModel extends AbstractTableModel {
     }
 
     /**
-     * Get the Name of a Column
+     * Get Name of a Column
      *
      * @param columnIndex
      * @return
@@ -66,7 +65,27 @@ public final class MyTableModel extends AbstractTableModel {
     }
 
     /**
-     * Get the Value from a given Cell
+     * Get Class of a Column
+     *
+     * @param columnIndex
+     * @return
+     */
+    @Override
+    public Class getColumnClass(int columnIndex) {
+        switch (columnIndex) {
+            case 0:
+                return String.class;
+            case 1:
+                return JLabel.class;
+            case 2:
+                return Integer.class;
+            default:
+                return Object.class;
+        }
+    }
+
+    /**
+     * Get Value from a given Cell
      *
      * @param rowIndex
      * @param columnIndex
@@ -76,21 +95,21 @@ public final class MyTableModel extends AbstractTableModel {
     public Object getValueAt(int rowIndex, int columnIndex) {
         switch (columnIndex) {
             case 0:
-                //System.out.println(perks.get(rowIndex).getPerkName());
-                return perks.get(rowIndex).getPerkName();
+                //System.out.println(l_perks.get(rowIndex).getPerkName());
+                return l_perks.get(rowIndex).getName();
             case 1:
-                //System.out.println(perks.get(rowIndex).getPerkIcon());
-                return perks.get(rowIndex).getPerkIcon();
+                //System.out.println(l_perks.get(rowIndex).getPerkIcon());
+                return l_perks.get(rowIndex).getIconImage(1);
             case 2:
-                //System.out.println(perks.get(rowIndex).getPerkWeight());
-                return perks.get(rowIndex).getPerkWeight();
+                //System.out.println(l_perks.get(rowIndex).getPerkWeight());
+                return l_perks.get(rowIndex).getWeight();
             default:
                 return null;
         }
     }
 
     /**
-     * Is this Cell is Editable ?
+     * Is this Cell Editable ?
      *
      * @param rowIndex
      * @param columnIndex
@@ -111,7 +130,7 @@ public final class MyTableModel extends AbstractTableModel {
     }
 
     /**
-     * Set the Value in a given Cell
+     * Set Value in a given Cell
      *
      * @param aValue
      * @param rowIndex
@@ -120,56 +139,33 @@ public final class MyTableModel extends AbstractTableModel {
     @Override
     public void setValueAt(Object aValue, int rowIndex, int columnIndex) {
         if (aValue != null) {
-            MyTableData data = perks.get(rowIndex);
+            Perk p = l_perks.get(rowIndex);
             if (columnIndex == 2) {
                 // Update Weight for given Perk
-                data.setPerkWeight(Integer.parseInt(aValue.toString()));
-                System.out.println("# Updated Perk '" + data.getPerkName() + "' => New Value is '" + data.getPerkWeight() + "'");
+                p.setWeight(Integer.parseInt(aValue.toString()));
+                System.out.println("# Updated Perk '" + p.getName() + "' => New Value is '" + p.getWeight() + "'");
             }
             // Update SmartRandBuildGen Object
-            updateBuilder();
+            this.updateBuilder();
         }
     }
 
     /**
-     * Get the Class of a Column
-     *
-     * @param columnIndex
-     * @return
-     */
-    @Override
-    public Class getColumnClass(int columnIndex) {
-        switch (columnIndex) {
-            case 0:
-                return String.class;
-            case 1:
-                return JLabel.class;
-            case 2:
-                return Integer.class;
-            default:
-                return Object.class;
-        }
-    }
-
-    /**
-     * Update the Table according to SmartRandBuildGen Object
+     * Update Table according to SmartRandBuildGen Object
      *
      */
     public void updateTable() {
-        // Reset Dztz
-        perks.clear();
+        // Reset Data
+        l_perks.clear();
         // Loop over Perks from SmartRandBuildGen Object
-        List<Perk> allperks = builder.getPerks();
+        List<Perk> allperks = srbg.getPerks();
         for (Perk p : allperks) {
-            if (p.getSide().equals(builder.getSide())) {
-                // Retrieve Data for a single Line
-                MyTableData data = new MyTableData(p);
-                // Store Values in the Model
-                perks.add(data);
+            if (p.getSide().equals(srbg.getSide())) {
+                l_perks.add(p);
             }
         }
         // Update JTable using an Event
-        fireTableDataChanged();
+        this.fireTableDataChanged();
     }
 
     /**
@@ -178,12 +174,12 @@ public final class MyTableModel extends AbstractTableModel {
      */
     public void updateBuilder() {
         // Loop over Data from Model
-        for (int i = 0; i < perks.size(); i++) {
-            MyTableData data = perks.get(i);
+        for (int i = 0; i < l_perks.size(); i++) {
+            Perk p_table = l_perks.get(i);
             // Retrieve Perk from SmartRandBuildGen Object
-            Perk p = builder.getPerk(data.getPerkName());
+            Perk p_builder = srbg.getPerk(p_table.getName());
             // Update Value
-            p.setWeight(data.getPerkWeight());
+            p_builder.setWeight(p_table.getWeight());
         }
     }
 

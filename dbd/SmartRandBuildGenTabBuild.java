@@ -5,7 +5,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
-import java.util.TreeSet;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumn;
@@ -22,10 +21,10 @@ public class SmartRandBuildGenTabBuild extends JPanel {
     // Swing Components
     private JPanel pan_config, pan_table;
     private JScrollPane scrollPane;
-    private JButton b_run;
+    private JButton b_build;
     private JComboBox cb_nbperks, cb_nbbuilds;
     private JLabel lab_nbperks, lab_nbbuilds;
-    private JCheckBox check_care, check_sprint;
+    private JCheckBox check_care, check_sprint, check_side, check_char;
     private JTextArea text;
     private JTable table;
     // SmartRandBuildGen Object
@@ -36,36 +35,41 @@ public class SmartRandBuildGenTabBuild extends JPanel {
     /**
      * Default Constructor
      *
-     * @param myBuilder
+     * @param srbg
      */
-    public SmartRandBuildGenTabBuild(SmartRandBuildGen myBuilder) {
+    public SmartRandBuildGenTabBuild(SmartRandBuildGen srbg) {
 
         // Set SmartRandBuildGen Object
-        this.srbg = myBuilder;
+        this.srbg = srbg;
 
         // Add Swing Components
-        addComponents();
+        this.addComponents();
 
         // Create Subpanels
-        pan_config = new JPanel(new FlowLayout(FlowLayout.CENTER));
-        pan_config.add(lab_nbperks);
-        pan_config.add(cb_nbperks);
-        pan_config.add(lab_nbbuilds);
-        pan_config.add(cb_nbbuilds);
-        pan_config.add(check_care);
-        pan_config.add(check_sprint);
-        pan_config.add(b_run);
+        this.pan_config = new JPanel(new FlowLayout(FlowLayout.CENTER));
+        this.pan_config.add(this.lab_nbperks);
+        this.pan_config.add(this.cb_nbperks);
+        this.pan_config.add(this.lab_nbbuilds);
+        this.pan_config.add(this.cb_nbbuilds);
+        this.pan_config.add(this.check_side);
+        this.pan_config.add(this.check_char);
+        this.pan_config.add(this.check_care);
+        this.pan_config.add(this.check_sprint);
+        this.pan_config.add(this.b_build);
 
-        scrollPane = new JScrollPane(text);
+        this.pan_table = new JPanel(new FlowLayout(FlowLayout.CENTER));
+        this.pan_table.add(this.table);
 
-        pan_table = new JPanel(new FlowLayout(FlowLayout.CENTER));
-        pan_table.add(table);
+        // Create JScrollPane (hide bars)
+        this.scrollPane = new JScrollPane(this.text);
+        this.scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER);
+        this.scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 
-        // Set the Layout and add Subpanels
-        setLayout(new BorderLayout());
-        add(pan_config, BorderLayout.NORTH);
-        add(pan_table, BorderLayout.SOUTH);
-        add(scrollPane, BorderLayout.CENTER);
+        // Set Layout & add Subpanels
+        this.setLayout(new BorderLayout());
+        this.add(this.pan_config, BorderLayout.NORTH);
+        this.add(this.pan_table, BorderLayout.SOUTH);
+        this.add(this.scrollPane, BorderLayout.CENTER);
     }
 
     /**
@@ -73,68 +77,88 @@ public class SmartRandBuildGenTabBuild extends JPanel {
      */
     private void addComponents() {
 
-        // Define JButton Objects
-        b_run = new JButton("Get Random Builds");
-
-        // Define JLabel Objects
-        lab_nbperks = new JLabel("Number of Perks");
-        lab_nbbuilds = new JLabel("Number of Builds");
-
-        // Define JTextArea Objects
-        text = new JTextArea(30, 20);
-        text.setEditable(false);
-        text.setFont(new Font("Helvetica", Font.PLAIN, 16));
-
-        // Define JComboBox Objects for Perks
-        cb_nbperks = new JComboBox(new Integer[]{1, 2, 3, 4});
-        cb_nbperks.setPreferredSize(new Dimension(50, 20));
-        ((JLabel) cb_nbperks.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
-        cb_nbperks.setSelectedItem(srbg.getNbPerksBuild());
-
-        // Define JComboBox Objects for Number of Builds
-        cb_nbbuilds = new JComboBox(new Integer[]{1, 3, 5, 7, 9});
-        cb_nbbuilds.setPreferredSize(new Dimension(50, 20));
-        ((JLabel) cb_nbbuilds.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
-        cb_nbbuilds.setSelectedIndex(2);
-        nbbuilds = Integer.parseInt(cb_nbbuilds.getSelectedItem().toString());
-
-        // Define JCheckBox Objects
-        check_care = new JCheckBox("Care Perk Needed");
-        if (srbg.getNeedCare()) {
-            check_care.setSelected(true);
-        } else {
-            check_care.setSelected(false);
-        }
-        check_care.setToolTipText(srbg.getCareAsString());
-
-        check_sprint = new JCheckBox("Sprint Perk Needed");
-        if (srbg.getNeedSprint()) {
-            check_sprint.setSelected(true);
-        } else {
-            check_sprint.setSelected(false);
-        }
-        check_sprint.setToolTipText(srbg.getSprintAsString());
-
         // Define JTable Objects
-        int size = 220;
-        table = new JTable(1, 4);
-        table.setRowHeight(size);
-        table.setShowHorizontalLines(false);
-        table.setShowVerticalLines(false);
-        for (int i = 0; i < table.getColumnCount(); i++) {
-            TableColumn column = table.getColumnModel().getColumn(i);
+        int size = 200;
+        this.table = new JTable(1, 5);
+        this.table.setRowHeight(size);
+        this.table.setShowHorizontalLines(false);
+        this.table.setShowVerticalLines(false);
+        for (int i = 0; i < this.table.getColumnCount(); i++) {
+            TableColumn column = this.table.getColumnModel().getColumn(i);
             column.setCellRenderer(new IconTableCellRenderer());
             column.setPreferredWidth(size);
         }
-        table.setAutoscrolls(false);
+
+        // Define JButton Objects
+        this.b_build = new JButton("Get Random Builds");
+
+        // Define JLabel Objects
+        this.lab_nbperks = new JLabel("  Nb of Perks ");
+        this.lab_nbbuilds = new JLabel("  Nb of Builds ");
+
+        // Define JTextArea Objects
+        this.text = new JTextArea(30, 20);
+        this.text.setEditable(false);
+        this.text.setFont(new Font("Helvetica", Font.PLAIN, 16));
+
+        // Define JComboBox Objects for Perks
+        this.cb_nbperks = new JComboBox(new Integer[]{1, 2, 3, 4});
+        this.cb_nbperks.setPreferredSize(new Dimension(50, 20));
+        ((JLabel) this.cb_nbperks.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
+        this.cb_nbperks.setSelectedItem(this.srbg.getNbPerksBuild());
+
+        // Define JComboBox Objects for Number of Builds
+        this.cb_nbbuilds = new JComboBox(new Integer[]{1, 3, 5, 10});
+        this.cb_nbbuilds.setPreferredSize(new Dimension(50, 20));
+        ((JLabel) this.cb_nbbuilds.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
+        this.cb_nbbuilds.setSelectedIndex(2);
+        this.nbbuilds = Integer.parseInt(this.cb_nbbuilds.getSelectedItem().toString());
+
+        // Define JCheckBox Objects
+        this.check_side = new JCheckBox("Random Side");
+        this.check_side.setSelected(false);
+        this.check_side.setToolTipText("Get Random Side when generating Build");
+
+        this.check_char = new JCheckBox("Random Character");
+        if (this.srbg.getRandomCharStatus()) {
+            this.check_char.setSelected(true);
+        } else {
+            this.check_char.setSelected(false);
+        }
+        this.check_char.setToolTipText("Get Random Character when generating Build");
+
+        this.check_care = new JCheckBox("Care Perk");
+        if (this.srbg.getNeedCare()) {
+            this.check_care.setSelected(true);
+        } else {
+            this.check_care.setSelected(false);
+        }
+        this.check_care.setToolTipText("One Care Perk is Required (" + this.srbg.getCareListAsString() + ")");
+
+        this.check_sprint = new JCheckBox("Sprint Perk");
+        if (this.srbg.getNeedSprint()) {
+            this.check_sprint.setSelected(true);
+        } else {
+            this.check_sprint.setSelected(false);
+        }
+        this.check_sprint.setToolTipText("One Sprint Perk is Required (" + this.srbg.getSprintListAsString() + ")");
 
         // Define ActionListener
-        b_run.addActionListener(new ActionListener() {
+        this.b_build.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                // Update Side if desired
+                if (check_side.isSelected()) {
+                    srbg.setSide("Random");
+                }
+                // Get Character
+                Character c = new Character("Undefined", srbg.getSide(), "");
+                if (srbg.getRandomCharStatus()) {
+                    c = srbg.getRandomChar();
+                }
                 // Update Var according to Side
                 if (srbg.getSide().equals("Killer")) {
-                    // Special Case => disabled JCheckBox and Care/Perk Status
+                    // Special Case => disabled JCheckBox & Care/Perk Status
                     check_care.setSelected(false);
                     check_care.setEnabled(false);
                     srbg.setNeedCare(false);
@@ -154,42 +178,52 @@ public class SmartRandBuildGenTabBuild extends JPanel {
                 // Reset Table => Remove Data in TableModel (RowCount = 0)
                 DefaultTableModel model = (DefaultTableModel) table.getModel();
                 model.setRowCount(0);
-                // Add a new Line for the 1st Build
+                // Add a new Line for 1st Build
                 model.setRowCount(1);
-                // Define the Text to be Displayed
-                String fulltext = "\n\n ";
+                // Generate Random Builds
+                String fulltext = "\n ";
+                Build b = new Build();
                 for (int i = 1; i <= nbbuilds; i++) {
-                    TreeSet<String> l = srbg.genRandomBuild();
-                    fulltext = fulltext + srbg.showBuild(l, i + "", "       ");
+                    b = srbg.genRandomBuild("Random Build " + i);
+                    fulltext = fulltext + b.show(false, "      ");
                     if (i < nbbuilds) {
                         fulltext = fulltext + "\n\n ";
                     }
-                    // 1st Build => Display It in the Table
                     if (i == 1) {
+                        // Save 1st Build
+                        b.setName("LastBuild");
+                        b.setCharacter(c);
+                        srbg.setBuildSaved(b);
+                        // Display 1st Build in Table
                         int nb = 0;
-                        JLabel tmp = null;
-                        for (String s : l) {
-                            tmp = new JLabel(srbg.getPerk(s).getIconImage(true));
-                            table.getModel().setValueAt(tmp, 0, nb);
+                        for (Perk p : b.getPerks()) {
+                            table.getModel().setValueAt(p.getIconImage(3), 0, nb);
                             nb++;
                         }
+                        // Display Character in Table
+                        table.getModel().setValueAt(c.getIconImage(2), 0, 4);
                     }
+
                 }
                 // Display Text
-                System.out.println(fulltext.replaceAll("\n\n", "\n#")+"\n");
                 text.setText(fulltext);
+                // Reformat String for Shell Display
+                fulltext = fulltext.replaceFirst("\n", "\n#");
+                fulltext = fulltext.replaceAll("\n\n", "\n#");
+                System.out.println(fulltext + "\n");
+
             }
         });
 
         // Define ActionListener
-        cb_nbperks.addActionListener(new ActionListener() {
+        this.cb_nbperks.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JComboBox combo = (JComboBox) e.getSource();
-                // Retrieve and Define the Number of Perks
+                // Retrieve & Define Nb of Perks
                 srbg.setNbPerksBuild(Integer.parseInt(cb_nbperks.getSelectedItem().toString()));
                 if (srbg.getNbPerksBuild() < 2) {
-                    // Special Case => disabled JCheckBox and Care/Sprint Status
+                    // Special Case => disabled JCheckBox & Care/Sprint Status
                     check_care.setSelected(false);
                     check_care.setEnabled(false);
                     srbg.setNeedCare(false);
@@ -217,21 +251,34 @@ public class SmartRandBuildGenTabBuild extends JPanel {
         });
 
         // Define ActionListener
-        cb_nbbuilds.addActionListener(new ActionListener() {
+        this.cb_nbbuilds.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JComboBox combo = (JComboBox) e.getSource();
-                // Retrieve and Define the Number of Builds
+                // Retrieve & Define Nb of Builds
                 nbbuilds = Integer.parseInt(cb_nbbuilds.getSelectedItem().toString());
                 System.out.println("# Number of wanted Builds = " + nbbuilds);
             }
         });
 
         // Define ItemListener
-        check_care.addItemListener(new ItemListener() {
+        this.check_char.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
-                // Retrieve and Define the Needed Care Status
+                // Define Set Char Boolean
+                if (check_char.isSelected()) {
+                    srbg.setRandomCharStatus(true);
+                } else {
+                    srbg.setRandomCharStatus(false);
+                }
+            }
+        });
+
+        // Define ItemListener
+        this.check_care.addItemListener(new ItemListener() {
+            @Override
+            public void itemStateChanged(ItemEvent e) {
+                // Retrieve & Define Needed Care Status
                 if (check_care.isSelected()) {
                     srbg.setNeedCare(true);
                 } else {
@@ -241,10 +288,10 @@ public class SmartRandBuildGenTabBuild extends JPanel {
         });
 
         // Define ItemListener
-        check_sprint.addItemListener(new ItemListener() {
+        this.check_sprint.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
-                // Retrieve and Define the Needed Sprint Status
+                // Retrieve & Define Needed Sprint Status
                 if (check_sprint.isSelected()) {
                     srbg.setNeedSprint(true);
                 } else {

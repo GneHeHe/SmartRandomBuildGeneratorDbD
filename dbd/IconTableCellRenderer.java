@@ -16,6 +16,11 @@ public class IconTableCellRenderer extends DefaultTableCellRenderer {
 
     @Override
     public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int col) {
-        return (JLabel) value;
+        JLabel c = (JLabel) value;
+        if (c != null) {
+            // Add Tooltip
+            c.setToolTipText(c.getName());
+        }
+        return c;
     }
 }

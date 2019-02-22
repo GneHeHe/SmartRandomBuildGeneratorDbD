@@ -1,0 +1,29 @@
+Dwight	Survivor	DF_charSelect_portrait
+Meg	Survivor	MT_charSelect_portrait
+Claudette	Survivor	CM_charSelect_portrait
+Jake	Survivor	JP_charSelect_portrait
+Nea	Survivor	NK_charSelect_portrait
+Bill	Survivor	BO_charSelect_portrait
+David King	Survivor	DK_charSelect_portrait
+Laurie	Survivor	LS_charSelect_portrait
+Ace	Survivor	AV_charSelect_portrait
+Feng	Survivor	FM_charSelect_portrait
+Quentin	Survivor	QS_charSelect_portrait
+David Tapp	Survivor	FS_charSelect_portrait
+Kate	Survivor	GS_charSelect_portrait
+Adam	Survivor	AF_charSelect_portrait
+Jeff	Survivor	KS_charSelect_portrait
+Trapper	Killer	TR_charSelect_portrait
+Wraith	Killer	WR_charSelect_portrait
+Hillbilly	Killer	HB_charSelect_portrait
+Nurse	Killer	NR_charSelect_portrait
+Huntress	Killer	BE_charSelect_portrait
+Myers	Killer	SH_charSelect_portrait
+Hag	Killer	HA_charSelect_portrait
+Leatherface	Killer	CA_charSelect_portrait
+Doctor	Killer	DO_charSelect_portrait
+Freddy	Killer	SD_charSelect_portrait
+Pig	Killer	FK_charSelect_portrait
+Clown	Killer	GK_charSelect_portrait
+Spirit	Killer	HK_charSelect_portrait
+Legion	Killer	KK_charSelect_portrait

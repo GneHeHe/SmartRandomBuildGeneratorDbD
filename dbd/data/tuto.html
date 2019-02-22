@@ -2,53 +2,110 @@
 <html>
 
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 <title>Tutorial</title>
+
 </head>
 
 <body>
 
-<h1><u><center>Tutorial</center></u></h1>
+<center><h1><u><i>Tutorial</i></u></h1></center>
 
-<h2><u>Tab "Configure Perks"</u></h2>
+<br>
+<p><b>This tutorial is a simple demonstration of the 'Smart Random Build Generator' (SRBG) tool</b></p>
+<br>
+<p><b>Each tab from SRBG will be briefly described to highlight the main features</b></p>
+<br>
 
-<p>
-<u><b>Step1</b></u> : Select the side ("Survivor" or "Killer") ... or use the dedicated button to randomly select it :)
-</p>
-<p>
-<u><b>Step2</b></u> : Set the weight of each perk using various ways
+<h2><u>Tab 'Configure Perks'</u></h2>
+
+<p><b>Use this tab to configure perks (default weights are loaded at start)</b></p>
+
+<br>
+<center><img src="tuto_perk.png"></center>
+<br>
+
+<p><b>Weights simply modulate the probability for perks to be selected in generated builds</b></p>
+<p><b>Higher weights mean that related perks will have higher probability to be selected</b></p>
+<p><b>Identical weights involve that all perks will have the same probability to be selected</b></p>
+<p><b>Perks will be disabled if they have a weight of 0</b></p>
+
+<br>
+<p><b><u>Step1</u></b> : select active side ("<b><i>Survivor</i></b>" or "<b><i>Killer</i></b>")</p>
+<p><b><u>Step2</u></b> : set weight of each perk using various ways:</p>
 <ul>
-    <li>Click the "set default weights" button to set predefined weights for each perk (loaded data at start)</li>
-    <li>Click the "set identical weights" button to set the same weight for each perk</li>
-    <li>Click the "open custom perk distribution" button to load custom weights for each perk</li>
-    <li>Manual edit of weights directly from the table</li>
+	<li>use default weights that are loaded at start</li>
+	<li>click '<i>reload original weights</i>' button to reload predefined weights for each perk</li>
+	<li>click '<i>set identical weights</i>' button to set the same weight for each perk</li>
+	<li>click '<i>open custom perk distribution</i>' button to load custom weights for each perk</li>
+	<li>manual edit of weights directly from table</li>
 </ul>
-</p>
-<p>
-<u><b>Step3</b></u> : Don't forget to save the current perk distribution ... if you manually modified weights from the table
-</p>
-<br>
-<b><i>Custom weights will be loaded at start if configuration file ("perks_db_custom.txt") is found in the directory</i></b>
-<br>
-<br>
-<h2><u>Tab "Generate Random Builds"</u></h2>
+<p><b><u>Step3</u></b> : Do not forget to save perk distribution using '<i>save current perk distribution</i>' button if you manually modified weights from table</p>
 
-<p>
-<u><b>Step1</b></u> : Set the number of perks in each build
-</p>
-<p>
-<u><b>Step2</b></u> : Set the number of wanted random builds
-</p>
-<p>
-<u><b>Step3</b></u> : Enable/disable constraints about care/sprint perks in generated builds
-</p>
-<p>
-<u><b>Step4</b></u> : Click the "get random builds" button to generate and display random builds
-</p>
-<p>
-<b><i>The perks from the 1st random build are graphically displayed in the table</i></b>
-</p>
+<br>
+<p><b><i>Custom weights will be loaded at start if configuration file ('<i>perk_db_custom.txt</i>') is found in working directory</i></b></p>
+<br>
+
+<h2><u>Tab 'Get Random Builds'</u></h2>
+
+<p><b>Use this tab to set parameters and to generate random builds</b></p>
+
+<br>
+<center><img src="tuto_build.png"></center>
+<br>
+
+<p><b><u>Step1</u></b> : set number of perks in each build</p>
+<p><b><u>Step2</u></b> : set number of wanted random builds</p>
+<p><b><u>Step3</u></b> : enable/disable random selection of side (<b>bypass previous tab</b>)</p>
+<p><b><u>Step4</u></b> : enable/disable random selection of character</p>
+<p><b><u>Step5</u></b> : enable/disable constraints about care/sprint perks (<b>only available on '<i>Survivor</i>' side</b>)</p>
+<p><b><u>Step6</u></b> : click '<i>get random builds</i>' button to generate random builds</p>
+
+<br>
+<p><b><i>Perks and character from 1st random build are graphically displayed in table (it can be automatically saved using the next tab)</i></b></p>
+<br>
+
+<h2><u>Tab 'Database of Builds'</u></h2>
+
+<p><b>Use this tab to store and manipulate (add/edit/remove) builds in the database</b></p>
+<p><b>More than 1000 predefined builds are automatically loaded at start</b></p>
+
+<br>
+<center><img src="tuto_db-1.png"></center>
+<br>
+
+<p><b><u>Button '<i>reload database</i>'</u></b> : reload original build database</p>
+<p><b><u>Button '<i>open database</i>'</u></b> : open custom build database</p>
+<p><b><u>Button '<i>save database</i>'</u></b> : save current build database</p>
+<p><b><u>Button '<i>add random build</i>'</u></b> : add random build from previous tab to database</p>
+<p><b><u>Button '<i>add current build</i>'</u></b> : add current designed build to database (<b>side/character and 4 distinct perks were previously selected</b>)</p>
+<p><b><u>Button '<i>delete builds</i>'</u></b> : delete selected builds from database</p>
+
+<br>
+<p><b><u>Filter Rows</u></b> : search/filter database using text-based patterns (<i>case insensitive search, regular expressions can be used</i>)</p>
+
+<br>
+<center><img src="tuto_db-2.png"></center>
+<br>
+
+<br>
+<p><b><u>Button '<i>random select</i>'</u></b> : randomly select one saved build from database</p>
+
+<br>
+<center><img src="tuto_db-3.png"></center>
+<br>
+<p><b>You can use this function to randomly select a build within a shortlist (at least 2 selected rows)</b></p>
+
+<br>
+<center><img src="tuto_db-4.png"></center>
+<br>
+
+<br>
+<p><b><i>Custom build database will be loaded at start if file ('<i>build_db_custom.txt</i>') is found in working directory</i></b></p>
+<br>
+
+<p><b>Finally, you can also suggest <a href="https://github.com/GneHeHe/SmartRandomBuildGeneratorDbD/issues">here</a> other builds which are not currently present in '<i>default build database</i>'</b></p>
+<br>
 
 </body>
 
