@@ -33,6 +33,8 @@ public class BuildTable extends JTable {
         // Set Fonts
         this.getTableHeader().setFont(new Font("Helvetica", Font.BOLD, 16));
         this.setFont(new Font("Helvetica", Font.BOLD, 14));
+        // No Manual Sorting
+        this.getTableHeader().setEnabled(false);
     }
 
     /**

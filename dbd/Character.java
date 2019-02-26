@@ -12,7 +12,7 @@ import javax.swing.SwingConstants;
  * @author GneHeHe (2018)
  *
  */
-public final class Character implements Comparable<Character> {
+public class Character implements Comparable<Character> {
 
     // Name of Character
     private String name;
@@ -24,35 +24,10 @@ public final class Character implements Comparable<Character> {
     private JLabel lab_img_small;
     private JLabel lab_img_large;
     // Size of Icon Pictures
-    private final int size_small = 55;
-    private final int size_large = 175;
-
-    /**
-     * Constructor
-     *
-     * @param name
-     * @param side
-     */
-    public Character(String name, String side) {
-        this.setName(name);
-        this.setSide(side);
-        this.lab_img_small = new JLabel("", SwingConstants.CENTER);
-        this.lab_img_large = new JLabel("", SwingConstants.CENTER);
-        // Set Default Icon
-        String icon = "";
-        if (this.side.equals("Survivor")) {
-            icon = "iconHelpLoading_survivor";
-        } else if (this.side.equals("Killer")) {
-            icon = "iconHelpLoading_killer";
-        }
-        try {
-            this.setIconPicture(icon);
-        } catch (IOException ex) {
-            System.err.println("ERROR while creating Character " + name);
-            System.err.println(ex.getMessage());
-            System.exit(0);
-        }
-    }
+    private final static int SIZE_SMALL = 55;
+    private final static int SIZE_LARGE = 175;
+    // Generic Character
+    public final static String GENERIC = "Undefined";
 
     /**
      * Constructor
@@ -76,6 +51,32 @@ public final class Character implements Comparable<Character> {
     }
 
     /**
+     * Constructor for Generic Character
+     *
+     * @param side
+     */
+    public Character(String side) {
+        this.setName(Character.GENERIC);
+        this.setSide(side);
+        this.lab_img_small = new JLabel("", SwingConstants.CENTER);
+        this.lab_img_large = new JLabel("", SwingConstants.CENTER);
+        // Set Default Icon
+        String icon = "";
+        if (this.side.equals("Survivor")) {
+            icon = "iconHelpLoading_survivor";
+        } else if (this.side.equals("Killer")) {
+            icon = "iconHelpLoading_killer";
+        }
+        try {
+            this.setIconPicture(icon);
+        } catch (IOException ex) {
+            System.err.println("ERROR while creating Character " + name);
+            System.err.println(ex.getMessage());
+            System.exit(0);
+        }
+    }
+
+    /**
      * Get Character Name
      *
      * @return
@@ -89,7 +90,7 @@ public final class Character implements Comparable<Character> {
      *
      * @param name
      */
-    public void setName(String name) {
+    public final void setName(String name) {
         this.name = name;
     }
 
@@ -107,7 +108,7 @@ public final class Character implements Comparable<Character> {
      *
      * @param side
      */
-    public void setSide(String side) {
+    public final void setSide(String side) {
         // Only 2 Sides are Available
         if (side.equals("Killer") || side.equals("Survivor")) {
             this.side = side;
@@ -155,8 +156,8 @@ public final class Character implements Comparable<Character> {
         String path = "icons_char/" + s_icon + ".png";
         if (this.getClass().getResourceAsStream(path) != null) {
             // Set Icons in JLabel
-            this.lab_img_small.setIcon(new ImageIcon(Tools.resizePicture(path, this.size_small, this.size_small)));
-            this.lab_img_large.setIcon(new ImageIcon(Tools.resizePicture(path, this.size_large, this.size_large)));
+            this.lab_img_small.setIcon(new ImageIcon(Tools.resizePicture(path, Character.SIZE_SMALL, Character.SIZE_SMALL)));
+            this.lab_img_large.setIcon(new ImageIcon(Tools.resizePicture(path, Character.SIZE_LARGE, Character.SIZE_LARGE)));
             // Set Name for Tooltip
             this.lab_img_small.setName(this.name);
             this.lab_img_large.setName(this.name);
@@ -171,8 +172,8 @@ public final class Character implements Comparable<Character> {
             path = "icons_char/" + s_icon + ".png";
             if (this.getClass().getResourceAsStream(path) != null) {
                 // Set Default Icon in JLabel
-                this.lab_img_small.setIcon(new ImageIcon(Tools.resizePicture(path, this.size_small, this.size_small)));
-                this.lab_img_large.setIcon(new ImageIcon(Tools.resizePicture(path, this.size_large, this.size_large)));
+                this.lab_img_small.setIcon(new ImageIcon(Tools.resizePicture(path, Character.SIZE_SMALL, Character.SIZE_SMALL)));
+                this.lab_img_large.setIcon(new ImageIcon(Tools.resizePicture(path, Character.SIZE_LARGE, Character.SIZE_LARGE)));
                 // Set Name for Tooltip
                 this.lab_img_small.setName(this.name);
                 this.lab_img_large.setName(this.name);

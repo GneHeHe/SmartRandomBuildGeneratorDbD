@@ -23,7 +23,9 @@ import javax.swing.table.TableColumn;
  */
 public class PerkTable extends JTable {
 
+    // Define available Weights
     private ArrayList<Integer> l_weights;
+    // Define max Weight
     private int weight_max;
 
     /**
@@ -38,6 +40,8 @@ public class PerkTable extends JTable {
         // Set Fonts
         this.getTableHeader().setFont(new Font("Helvetica", Font.BOLD, 16));
         this.setFont(new Font("Helvetica", Font.BOLD, 14));
+        // No Manual Sorting
+        this.getTableHeader().setEnabled(false);
         // Only select 1 Line
         setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         // Set Available Weights

@@ -120,7 +120,7 @@ public class SmartRandBuildGenTabBuild extends JPanel {
         this.check_side.setToolTipText("Get Random Side when generating Build");
 
         this.check_char = new JCheckBox("Random Character");
-        if (this.srbg.getRandomCharStatus()) {
+        if (this.srbg.getRandomCharacterStatus()) {
             this.check_char.setSelected(true);
         } else {
             this.check_char.setSelected(false);
@@ -152,9 +152,9 @@ public class SmartRandBuildGenTabBuild extends JPanel {
                     srbg.setSide("Random");
                 }
                 // Get Character
-                Character c = new Character("Undefined", srbg.getSide(), "");
-                if (srbg.getRandomCharStatus()) {
-                    c = srbg.getRandomChar();
+                Character c = new Character(srbg.getSide());
+                if (srbg.getRandomCharacterStatus()) {
+                    c = srbg.getRandomCharacter();
                 }
                 // Update Var according to Side
                 if (srbg.getSide().equals("Killer")) {
@@ -193,7 +193,7 @@ public class SmartRandBuildGenTabBuild extends JPanel {
                         // Save 1st Build
                         b.setName("LastBuild");
                         b.setCharacter(c);
-                        srbg.setBuildSaved(b);
+                        srbg.setBuildLast(b);
                         // Display 1st Build in Table
                         int nb = 0;
                         for (Perk p : b.getPerks()) {
@@ -267,9 +267,9 @@ public class SmartRandBuildGenTabBuild extends JPanel {
             public void itemStateChanged(ItemEvent e) {
                 // Define Set Char Boolean
                 if (check_char.isSelected()) {
-                    srbg.setRandomCharStatus(true);
+                    srbg.setRandomCharacterStatus(true);
                 } else {
-                    srbg.setRandomCharStatus(false);
+                    srbg.setRandomCharacterStatus(false);
                 }
             }
         });

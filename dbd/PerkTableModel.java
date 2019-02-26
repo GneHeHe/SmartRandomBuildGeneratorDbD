@@ -12,7 +12,7 @@ import javax.swing.JLabel;
  * @author GneHeHe (2018)
  *
  */
-public final class PerkTableModel extends AbstractTableModel {
+public class PerkTableModel extends AbstractTableModel {
 
     // Define Columns
     private final String[] columns = {"Perk", "Icon", "Weight"};
@@ -24,13 +24,13 @@ public final class PerkTableModel extends AbstractTableModel {
     /**
      * Constructor
      *
-     * @param object
+     * @param srbg
      */
-    public PerkTableModel(SmartRandBuildGen object) {
+    public PerkTableModel(SmartRandBuildGen srbg) {
         // Define List
         this.l_perks = new ArrayList();
         // Set SmartRandBuildGen Object
-        this.srbg = object;
+        this.srbg = srbg;
     }
 
     /**
@@ -181,6 +181,8 @@ public final class PerkTableModel extends AbstractTableModel {
             // Update Value
             p_builder.setWeight(p_table.getWeight());
         }
+        // Update Pool of Perks
+        srbg.setUpdatePerkPool(true);
     }
 
 }

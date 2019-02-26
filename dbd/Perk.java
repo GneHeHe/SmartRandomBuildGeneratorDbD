@@ -12,7 +12,7 @@ import javax.swing.SwingConstants;
  * @author GneHeHe (2018)
  *
  */
-public final class Perk implements Comparable<Perk> {
+public class Perk implements Comparable<Perk> {
 
     // Name of Perk
     private String name;
@@ -27,9 +27,11 @@ public final class Perk implements Comparable<Perk> {
     private JLabel lab_img_medium;
     private JLabel lab_img_large;
     // Size of Icon Pictures
-    private final int size_small = 55;
-    private final int size_medium = 75;
-    private final int size_large = 200;
+    private final static int SIZE_SMALL = 55;
+    private final static int SIZE_MEDIUM = 75;
+    private final static int SIZE_LARGE = 200;
+    // Generic Perk
+    public final static String GENERIC = "Undefined";
 
     /**
      * Constructor
@@ -56,6 +58,28 @@ public final class Perk implements Comparable<Perk> {
     }
 
     /**
+     * Constructor for Generic Perk
+     *
+     */
+    public Perk() {
+        this.setName(Perk.GENERIC);
+        this.side = Perk.GENERIC;
+        this.setWeight(0);
+        // Set Default Icon
+        String icon = "iconPerks_default";
+        this.lab_img_small = new JLabel("", SwingConstants.CENTER);
+        this.lab_img_medium = new JLabel("", SwingConstants.CENTER);
+        this.lab_img_large = new JLabel("", SwingConstants.CENTER);
+        try {
+            this.setIconPicture(icon);
+        } catch (IOException ex) {
+            System.err.println("ERROR while creating Perk " + name);
+            System.err.println(ex.getMessage());
+            System.exit(0);
+        }
+    }
+
+    /**
      * Get Perk Name
      *
      * @return
@@ -69,7 +93,7 @@ public final class Perk implements Comparable<Perk> {
      *
      * @param name
      */
-    public void setName(String name) {
+    public final void setName(String name) {
         this.name = name;
     }
 
@@ -87,7 +111,7 @@ public final class Perk implements Comparable<Perk> {
      *
      * @param side
      */
-    public void setSide(String side) {
+    public final void setSide(String side) {
         // Only 2 Sides are Available
         if (side.equals("Killer") || side.equals("Survivor")) {
             this.side = side;
@@ -137,9 +161,9 @@ public final class Perk implements Comparable<Perk> {
         String path = "icons_perks/" + s_icon + ".png";
         if (this.getClass().getResourceAsStream(path) != null) {
             // Set Icons in JLabel
-            this.lab_img_small.setIcon(new ImageIcon(Tools.resizePicture(path, this.size_small, this.size_small)));
-            this.lab_img_medium.setIcon(new ImageIcon(Tools.resizePicture(path, this.size_medium, this.size_medium)));
-            this.lab_img_large.setIcon(new ImageIcon(Tools.resizePicture(path, this.size_large, this.size_large)));
+            this.lab_img_small.setIcon(new ImageIcon(Tools.resizePicture(path, Perk.SIZE_SMALL, Perk.SIZE_SMALL)));
+            this.lab_img_medium.setIcon(new ImageIcon(Tools.resizePicture(path, Perk.SIZE_MEDIUM, Perk.SIZE_MEDIUM)));
+            this.lab_img_large.setIcon(new ImageIcon(Tools.resizePicture(path, Perk.SIZE_LARGE, Perk.SIZE_LARGE)));
             // Set Name for Tooltip
             this.lab_img_small.setName(this.name);
             this.lab_img_medium.setName(this.name);
@@ -151,9 +175,9 @@ public final class Perk implements Comparable<Perk> {
             path = "icons_perks/" + s_icon + ".png";
             if (this.getClass().getResourceAsStream(path) != null) {
                 // Set Default Icon in JLabel
-                this.lab_img_small.setIcon(new ImageIcon(Tools.resizePicture(path, this.size_small, this.size_small)));
-                this.lab_img_medium.setIcon(new ImageIcon(Tools.resizePicture(path, this.size_medium, this.size_medium)));
-                this.lab_img_large.setIcon(new ImageIcon(Tools.resizePicture(path, this.size_large, this.size_large)));
+                this.lab_img_small.setIcon(new ImageIcon(Tools.resizePicture(path, Perk.SIZE_SMALL, Perk.SIZE_SMALL)));
+                this.lab_img_medium.setIcon(new ImageIcon(Tools.resizePicture(path, Perk.SIZE_MEDIUM, Perk.SIZE_MEDIUM)));
+                this.lab_img_large.setIcon(new ImageIcon(Tools.resizePicture(path, Perk.SIZE_LARGE, Perk.SIZE_LARGE)));
                 // Set Name for Tooltip
                 this.lab_img_small.setName(this.name);
                 this.lab_img_medium.setName(this.name);
@@ -179,7 +203,7 @@ public final class Perk implements Comparable<Perk> {
      *
      * @param weight
      */
-    public void setWeight(int weight) {
+    public final void setWeight(int weight) {
         this.weight = weight;
     }
 
@@ -204,7 +228,11 @@ public final class Perk implements Comparable<Perk> {
      * @return
      */
     public boolean checkSide(String side) {
-        return this.side.equals(side);
+        if (this.side.equals(Perk.GENERIC)) {
+            return true;
+        } else {
+            return this.side.equals(side);
+        }
     }
 
     /**

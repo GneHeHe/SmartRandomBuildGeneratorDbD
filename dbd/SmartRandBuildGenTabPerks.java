@@ -26,7 +26,7 @@ public class SmartRandBuildGenTabPerks extends JPanel {
     private JTextField tf_perks;
     private PerkTable table;
     // SmartRandBuildGen Object 
-    public SmartRandBuildGen srbg;
+    private SmartRandBuildGen srbg;
 
     /**
      * Default Constructor
@@ -229,7 +229,7 @@ public class SmartRandBuildGenTabPerks extends JPanel {
      *
      */
     private void updateText() {
-        tf_perks.setText(srbg.getNbPerksAll() + " loaded Perks (" + srbg.getNbPerksActive() + " active Perks)");
+        tf_perks.setText(srbg.getNbPerksAll() + " loaded Perks (" + srbg.getNbPerksSide() + " active Perks)");
     }
 
 }

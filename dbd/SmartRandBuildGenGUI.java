@@ -62,7 +62,7 @@ public class SmartRandBuildGenGUI extends JFrame {
         this.getContentPane().add(this.tabbedPane);
 
         // Set Frame
-        this.setTitle(this.pan_perks.srbg.getTitle());
+        this.setTitle(SmartRandBuildGen.TITLE);
         this.setSize(new Dimension(1000, 750));
         this.setResizable(false);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -83,10 +83,10 @@ public class SmartRandBuildGenGUI extends JFrame {
         SmartRandBuildGen mysrbg = new SmartRandBuildGen();
 
         // Define Tabs
-        final SmartRandBuildGenTabPerks myPerks = new SmartRandBuildGenTabPerks(mysrbg);
-        final SmartRandBuildGenTabBuild myBuilds = new SmartRandBuildGenTabBuild(mysrbg);
-        final SmartRandBuildGenTabInfo myInfo = new SmartRandBuildGenTabInfo(mysrbg);
-        final SmartRandBuildGenTabData myData = new SmartRandBuildGenTabData(mysrbg);
+        SmartRandBuildGenTabPerks myPerks = new SmartRandBuildGenTabPerks(mysrbg);
+        SmartRandBuildGenTabBuild myBuilds = new SmartRandBuildGenTabBuild(mysrbg);
+        SmartRandBuildGenTabInfo myInfo = new SmartRandBuildGenTabInfo(mysrbg);
+        SmartRandBuildGenTabData myData = new SmartRandBuildGenTabData(mysrbg);
 
         // Check Update
         if (mysrbg.checkUpdate()) {

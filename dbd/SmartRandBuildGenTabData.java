@@ -309,16 +309,14 @@ public class SmartRandBuildGenTabData extends JPanel {
                 Build b = new Build();
                 b.setName(tf_name.getText());
                 b.setSide(cb_side.getSelectedItem().toString());
-                b.setCharacter(srbg.getChar(cb_char.getSelectedItem().toString(), b.getSide()));
+                b.setCharacter(srbg.getCharacter(cb_char.getSelectedItem().toString(), b.getSide()));
                 ArrayList<String> l = new ArrayList<>();
                 l.add(cb_perk1.getSelectedItem().toString());
                 l.add(cb_perk2.getSelectedItem().toString());
                 l.add(cb_perk3.getSelectedItem().toString());
                 l.add(cb_perk4.getSelectedItem().toString());
                 // Check Build
-                if (Tools.hasDuplicateElements(l)) {
-                    Tools.getAlert("ERROR: Duplicate Perks in your Build", "Warning", JOptionPane.ERROR_MESSAGE);
-                } else {
+                if ((!Tools.hasDuplicateElements(l)) || (l.contains(Perk.GENERIC))) {
                     b.addPerk(srbg.getPerk(cb_perk1.getSelectedItem().toString()));
                     b.addPerk(srbg.getPerk(cb_perk2.getSelectedItem().toString()));
                     b.addPerk(srbg.getPerk(cb_perk3.getSelectedItem().toString()));
@@ -328,6 +326,8 @@ public class SmartRandBuildGenTabData extends JPanel {
                     if (!added) {
                         Tools.getAlert("ERROR: This Build is already present in Database", "Warning", JOptionPane.ERROR_MESSAGE);
                     }
+                } else {
+                    Tools.getAlert("ERROR: Duplicate Perks in your Build", "Warning", JOptionPane.ERROR_MESSAGE);
                 }
             }
         });
@@ -337,20 +337,18 @@ public class SmartRandBuildGenTabData extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
                 // Retrieve last saved Build
-                Build b = srbg.getBuildSaved();
+                Build b = srbg.getBuildLast();
                 if (b != null) {
                     tf_name.setText(b.getName());
                     cb_side.setSelectedItem(b.getSide());
-                    // Check if Character is well defined
-                    Character c = srbg.getChar(b.getCharacter().getName(), b.getSide());
-                    if (c != null) {
-                        cb_char.setSelectedItem(c);
-                    } else {
-                        // Assign one Character
-                        System.out.println("# Defining character (first from active side) because none was defined in random build");
-                        cb_char.setSelectedIndex(0);
-                        b.setCharacter(srbg.getChar(cb_char.getSelectedItem().toString(), b.getSide()));
+                    // Retrieve Character
+                    cb_char.setSelectedItem(b.getCharacter());                    
+                    // Fill Build with generic Perks if needed
+                    while (b.getPerks().size() < 4) {
+                        Perk tmp = new Perk();
+                        b.addPerk(tmp);
                     }
+                    // Retrieve Perks
                     cb_perk1.setSelectedItem(b.getPerk(1).getName());
                     cb_perk2.setSelectedItem(b.getPerk(2).getName());
                     cb_perk3.setSelectedItem(b.getPerk(3).getName());

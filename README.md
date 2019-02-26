@@ -1,6 +1,6 @@
 # What is 'Smart Random Build Generator' ?
 
-**Smart Random Build Generator** (SRBG) is a user-friendly tool for **Dead by Daylight** game that can be used to:
+**Smart Random Build Generator** (SRBG) is a user-friendly tool with **GUI** for **Dead by Daylight** game that can be used to:
 * **generate useful random builds**
 * **store and manipulate builds (1000+ predefined builds loaded at start)**
 
@@ -17,13 +17,13 @@ Some interesting **constraints** can be enabled:
 * required **care perk** (Self-Care, AfterCare, Bond, Pharmacy)
 * required **sprint perk** (Dead Hard, Balanced Landing, Lithe, Sprint Burst)
 
-Besides, **generated builds can easily be saved in a database** for future use
+Besides, **generated builds can be easily saved in a database** for future use
 
-Finally, a **built-in tutorial** is included in SRBG tool
+Finally, a **built-in tutorial** is included in the SRBG tool
 
 # How to install and use SRBG ?
 
-Download the last compiled JAR file [here](https://github.com/GneHeHe/SmartRandomBuildGeneratorDbD/releases/download/1.3/SmartRandBuildGen.jar) (also available in '**releases**' tab)
+Download the last compiled JAR file [here](https://github.com/GneHeHe/SmartRandomBuildGeneratorDbD/releases/download/1.31/SmartRandBuildGen.jar) (also available in '**releases**' tab)
 
 System Requirements:
 
@@ -34,10 +34,11 @@ Double click on the JAR file **'SmartRandBuildGen.jar'** to run **SRBG**
 
 # Conclusion
 
-This is my first GitHub project oOo
+**This is my first GitHub project oOo**
 
-Feel free to contact me about **SRBG**:
-* to report any crash or bug
+Feel free to **contact me** about **SRBG**:
+* to send constructive feedback
+* to report any bug
 * to suggest potential new features
 * ...
 

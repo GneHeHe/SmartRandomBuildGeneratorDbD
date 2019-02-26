@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * @author GneHeHe (2018)
  * 
  */
-public final class Build {
+public class Build {
 
     // Name of Build
     private String name;
@@ -197,12 +197,14 @@ public final class Build {
      */
     public boolean isDuplicate(Build b) {
         ArrayList<String> l1 = new ArrayList<>();
+        l1.add(this.getSide());
         l1.add(this.getCharacter().getName());
         l1.add(this.getPerk(1).getName());
         l1.add(this.getPerk(2).getName());
         l1.add(this.getPerk(3).getName());
         l1.add(this.getPerk(4).getName());
         ArrayList<String> l2 = new ArrayList<>();
+        l2.add(b.getSide());
         l2.add(b.getCharacter().getName());
         l2.add(b.getPerk(1).getName());
         l2.add(b.getPerk(2).getName());

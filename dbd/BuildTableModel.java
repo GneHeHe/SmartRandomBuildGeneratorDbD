@@ -19,7 +19,7 @@ import javax.swing.JLabel;
  * @author GneHeHe (2018)
  *
  */
-public final class BuildTableModel extends AbstractTableModel {
+public class BuildTableModel extends AbstractTableModel {
 
     // Define Columns
     private final String[] columns = {"ID", "Name", "Side", "Character", "Perk1", "Perk2", "Perk3", "Perk4"};
@@ -31,13 +31,13 @@ public final class BuildTableModel extends AbstractTableModel {
     /**
      * Constructor
      *
-     * @param object
+     * @param srbg
      */
-    public BuildTableModel(SmartRandBuildGen object) {
+    public BuildTableModel(SmartRandBuildGen srbg) {
         // Define List
         this.l_builds = new ArrayList<>();
         // Set SmartRandBuildGen Object
-        this.srbg = object;
+        this.srbg = srbg;
         // Read default Build Database
         this.initDatabase();
     }
@@ -239,7 +239,7 @@ public final class BuildTableModel extends AbstractTableModel {
      * Load Build Database at Start (default or custom)
      *
      */
-    public void initDatabase() {
+    public final void initDatabase() {
         // Try to detect a custom build Database in current Directory
         String f = System.getProperty("user.dir") + File.separator + "build_db_custom.txt";
         if (!new File(f).exists()) {
@@ -283,7 +283,7 @@ public final class BuildTableModel extends AbstractTableModel {
                         String myname = tab[0];
                         String myside = tab[1];
                         String mychar_s = tab[2];
-                        Character mychar = this.srbg.getChar(mychar_s, myside);
+                        Character mychar = this.srbg.getCharacter(mychar_s, myside);
                         Perk p1 = this.srbg.getPerk(tab[3]);
                         Perk p2 = this.srbg.getPerk(tab[4]);
                         Perk p3 = this.srbg.getPerk(tab[5]);
@@ -307,7 +307,7 @@ public final class BuildTableModel extends AbstractTableModel {
                             l.add(p2.getName());
                             l.add(p3.getName());
                             l.add(p4.getName());
-                            if (!Tools.hasDuplicateElements(l)) {
+                            if ((!Tools.hasDuplicateElements(l)) || (l.contains(Perk.GENERIC))) {
                                 // Everything is OK => Create Build Object
                                 Build b = new Build();
                                 b.setName(myname);

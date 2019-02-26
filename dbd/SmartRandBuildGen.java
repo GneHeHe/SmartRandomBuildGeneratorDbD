@@ -24,6 +24,7 @@ public class SmartRandBuildGen {
     // List of all Perks
     private ArrayList<Perk> l_perks_all;
     private ArrayList<String> l_perks_all_string;
+    private ArrayList<String> l_perks_pool;
     // List of Survivor Perks
     private ArrayList<String> l_perks_survivor;
     // List of Killer Perks
@@ -33,7 +34,7 @@ public class SmartRandBuildGen {
     // List of Killer Characters
     private ArrayList<Character> l_char_killer;
     // Saved Build
-    private Build build_saved;
+    private Build build_last;
     // Active Side
     private String side;
     // List of Care Perks
@@ -50,20 +51,21 @@ public class SmartRandBuildGen {
     private int nb_perks_all;
     // Nb of active Perks
     private int nb_perks_side;
-    // Set Character Status
-    private boolean character_status;
+    // Random Character Status
+    private boolean bool_rand_character;
+    // Update Pool of Perks
+    private boolean update_perks_pool;
     // Path of Configuration File
     private String config;
     // Verbose Level
     private boolean verbose;
-    // Title of Tool
-    private String title;
-    // Version of Tool
-    final private double version = 1.3;
+    private final String MYSPACER = "##########";
+    // Version & Title of Tool
+    public final static double VERSION = 1.31;
+    public final static String TITLE = "Smart Random Build Generator for Dead by Daylight " + VERSION;
     // GitHub User/Repos
-    final public String git_user = "GneHeHe";
-    final public String git_repo = "SmartRandomBuildGeneratorDbD";
-    final private String string_spacer = "##########";
+    public final static String GIT_USER = "GneHeHe";
+    public final static String GIT_REPO = "SmartRandomBuildGeneratorDbD";
 
     /**
      * Default Constructor
@@ -71,13 +73,12 @@ public class SmartRandBuildGen {
      */
     public SmartRandBuildGen() {
 
-        // Set Title
-        this.title = "Smart Random Build Generator for Dead by Daylight " + this.version;
-        System.out.println("\n" + string_spacer + " " + getTitle() + " " + string_spacer + "\n");
+        System.out.println("\n" + MYSPACER + " " + TITLE + " " + MYSPACER + "\n");
 
         // Set Lists of Perks
         this.l_perks_all = new ArrayList<>();
         this.l_perks_all_string = new ArrayList<>();
+        this.l_perks_pool = new ArrayList<>();
         this.l_perks_survivor = new ArrayList<>();
         this.l_perks_killer = new ArrayList<>();
         this.l_char_survivor = new ArrayList<>();
@@ -101,10 +102,10 @@ public class SmartRandBuildGen {
         this.setNeedSprint(false);
 
         // Set Character Status
-        this.setRandomCharStatus(false);
+        this.setRandomCharacterStatus(false);
 
-        // Define Build
-        this.build_saved = null;
+        // Define last saved Build
+        this.build_last = null;
 
         // Set Verbose Mode
         this.verbose = false;
@@ -121,6 +122,8 @@ public class SmartRandBuildGen {
         for (Perk p : this.l_perks_all) {
             p.setWeight(value);
         }
+        // Update Pool of Perks
+        this.setUpdatePerkPool(true);
         // Display Perks
         showPerks(false);
     }
@@ -172,7 +175,7 @@ public class SmartRandBuildGen {
      * @param side
      * @return
      */
-    public Character getChar(String name, String side) {
+    public Character getCharacter(String name, String side) {
         if (side.equals("Survivor")) {
             for (Character c : this.l_char_survivor) {
                 if (c.getName().equals(name)) {
@@ -190,18 +193,19 @@ public class SmartRandBuildGen {
     }
 
     /**
-     * Get a Character Object given its Name
+     * Get a Character Object given its Name (Generic Character will not be
+     * returned)
      *
      * @return
      */
-    public Character getRandomChar() {
+    public Character getRandomCharacter() {
         Character c = null;
         int rand;
         if (this.side.equals("Survivor")) {
-            rand = (int) (this.l_char_survivor.size() * Math.random());
+            rand = Math.max(1, (int) (this.l_char_survivor.size() * Math.random()));
             c = this.l_char_survivor.get(rand);
         } else if (this.side.equals("Killer")) {
-            rand = (int) (this.l_char_killer.size() * Math.random());
+            rand = Math.max(1, (int) (this.l_char_killer.size() * Math.random()));
             c = l_char_killer.get(rand);
         }
         return c;
@@ -242,31 +246,31 @@ public class SmartRandBuildGen {
     }
 
     /**
-     * Get Nb of Active Perks
+     * Get Nb of Perks from Active Side
      *
      * @return
      */
-    public int getNbPerksActive() {
+    public int getNbPerksSide() {
         return this.nb_perks_side;
     }
 
     /**
-     * Get Character Status
+     * Get Random Character Status
      *
      * @return
      */
-    public boolean getRandomCharStatus() {
-        return this.character_status;
+    public boolean getRandomCharacterStatus() {
+        return this.bool_rand_character;
     }
 
     /**
-     * Set Character Status
+     * Set Random Character Status
      *
      * @param b
      */
-    public final void setRandomCharStatus(boolean b) {
-        this.character_status = b;
-        System.out.println("# Selecting Character Randomly = " + this.character_status + "\n");
+    public final void setRandomCharacterStatus(boolean b) {
+        this.bool_rand_character = b;
+        System.out.println("# Selecting Character Randomly = " + this.bool_rand_character + "\n");
     }
 
     /**
@@ -274,7 +278,7 @@ public class SmartRandBuildGen {
      *
      * @return
      */
-    public String getConfig() {
+    public String getConfigFile() {
         return this.config;
     }
 
@@ -283,7 +287,7 @@ public class SmartRandBuildGen {
      *
      * @param s
      */
-    public void setConfig(String s) {
+    public void setConfigFile(String s) {
         this.config = s;
         System.out.println("# Current configuration file = " + this.config + "\n");
     }
@@ -293,8 +297,8 @@ public class SmartRandBuildGen {
      *
      * @return
      */
-    public Build getBuildSaved() {
-        return this.build_saved;
+    public Build getBuildLast() {
+        return this.build_last;
     }
 
     /**
@@ -302,9 +306,8 @@ public class SmartRandBuildGen {
      *
      * @param b
      */
-    public void setBuildSaved(Build b) {
-        this.build_saved = b;
-        //System.out.println("\n# Saving Build = " + this.build_saved.show(true, " "));
+    public void setBuildLast(Build b) {
+        this.build_last = b;
     }
 
     /**
@@ -313,9 +316,11 @@ public class SmartRandBuildGen {
      * @param s
      */
     public final void setSide(String s) {
+        // Random Selection Case
         if (s.equals("Random")) {
             s = selectRandomSide();
         }
+        // Update Nb Perks on Active Side
         if (s.equals("Survivor")) {
             this.nb_perks_side = l_perks_survivor.size();
         } else if (s.equals("Killer")) {
@@ -324,8 +329,14 @@ public class SmartRandBuildGen {
             System.err.println("\n# ERROR: The side must be either 'Survivor' OR 'Killer' OR 'Random'\n");
             System.exit(0);
         }
+        // Copy current Side & Update Active Side
+        String side_old = this.side;
         this.side = s;
         System.out.println("# Active Side = " + this.side + "\n");
+        // Update Pool of Perks if needed (no update and different side)        
+        if ((!this.getUpdatePerkPool()) && (!this.side.equals(side_old))) {
+            this.setUpdatePerkPool(true);
+        }
     }
 
     /**
@@ -478,33 +489,15 @@ public class SmartRandBuildGen {
      *
      */
     public void showParams() {
-        System.out.println(string_spacer + " Input Parameters " + string_spacer + "\n");
+        System.out.println(MYSPACER + " Input Parameters " + MYSPACER + "\n");
         System.out.println("# Nb of Loaded Perks = " + this.nb_perks_all);
         System.out.println("# Active Side = " + this.side);
-        System.out.println("# Randomly Select Character = " + this.character_status);
+        System.out.println("# Randomly Select Character = " + this.bool_rand_character);
         System.out.println("# Nb of Perks on Active Side = " + this.nb_perks_side);
         System.out.println("# Nb of Perks per Build = " + this.nb_perks_build);
         System.out.println("# Care Perk Needed = " + this.care_needed);
         System.out.println("# Sprint Perk Needed = " + this.sprint_needed);
         System.out.println("# Verbose Mode = " + this.verbose);
-    }
-
-    /**
-     * Get Title of Tool
-     *
-     * @return
-     */
-    public final String getTitle() {
-        return this.title;
-    }
-
-    /**
-     * Get Version of Tool
-     *
-     * @return
-     */
-    public double getVersion() {
-        return this.version;
     }
 
     /**
@@ -518,12 +511,22 @@ public class SmartRandBuildGen {
     }
 
     /**
-     * Get Verbose Mode
+     * Get Status of Pool of Perks
      *
      * @return
      */
-    public boolean getVerbose() {
-        return this.verbose;
+    public boolean getUpdatePerkPool() {
+        return this.update_perks_pool;
+    }
+
+    /**
+     * Set Status of Pool of Perks
+     *
+     * @param b
+     */
+    public void setUpdatePerkPool(boolean b) {
+        this.update_perks_pool = b;
+        //System.out.println("# Update Pool of Perks = " + this.update_perks_pool + "\n");
     }
 
     /**
@@ -534,27 +537,27 @@ public class SmartRandBuildGen {
      */
     public Build genRandomBuild(String buildname) {
         if (verbose) {
-            System.out.println("# Need Care Perk = " + getNeedCare() + " | Need Sprint Perk = " + getNeedSprint());
+            System.out.println("\n# Need Care Perk = " + getNeedCare() + " | Need Sprint Perk = " + getNeedSprint());
         }
-        List<String> l = new ArrayList<>();
         List<String> l_ok = new ArrayList<>();
-        int nbperks = 0;
-        // Get weighted List of Perks from the Side of interest
-        for (Perk perk : this.l_perks_all) {
-            if (perk.getSide().equals(this.side)) {
-                int value = perk.getWeight();
-                for (int i = 0; i < value; i++) {
-                    l.add(perk.getName());
-                    // Count the Number of unique Perks
-                    if (i == 0) {
-                        nbperks++;
+        // Update Pool of Perks if needed
+        if (this.getUpdatePerkPool()) {
+            // Reset Pool of Perks 
+            this.l_perks_pool.clear();
+            // Rebuild Pool of Perks 
+            for (Perk perk : this.l_perks_all) {
+                if (perk.getSide().equals(this.side)) {
+                    int value = perk.getWeight();
+                    for (int i = 0; i < value; i++) {
+                        this.l_perks_pool.add(perk.getName());
                     }
                 }
             }
+            this.setUpdatePerkPool(false);
         }
-        // Check if the Pool of Perks if sufficiently big enough, same for the Number of unique Perks
-        if ((l.size() < this.nb_perks_build) || (nbperks < this.nb_perks_build)) {
-            System.out.println("# Pool of available Perks is too small => Check the Weights of Perks and/or the Nb of Perks in Build");
+        // Check if Pool of Perks is big enough
+        if (this.l_perks_pool.size() < this.nb_perks_build) {
+            System.out.println("# Pool of available Perks is too small => Check the Weights of Perks");
             return null;
         }
         // Several Loops may be required if "Needed Perks" Booleans are not set to "False"
@@ -573,8 +576,8 @@ public class SmartRandBuildGen {
             boolean care_found = false;
             l_ok.clear();
             while (l_ok.size() < getNbPerksBuild()) {
-                int rand = (int) (l.size() * Math.random());
-                String perk = l.get(rand);
+                int rand = (int) (l_perks_pool.size() * Math.random());
+                String perk = l_perks_pool.get(rand);
                 if (!l_ok.contains(perk)) {
                     if ((sprint_found && (this.l_sprint.contains(perk))) || (care_found && (this.l_care.contains(perk)))) {
                         if (verbose) {
@@ -622,7 +625,7 @@ public class SmartRandBuildGen {
     }
 
     /**
-     * Set Weights from Configuration File
+     * Set Weights from Configuration File (at start)
      *
      */
     public final void initConfigFile() {
@@ -649,6 +652,13 @@ public class SmartRandBuildGen {
         this.l_perks_all_string.clear();
         this.l_perks_survivor.clear();
         this.l_perks_killer.clear();
+        // Add generic Perk
+        Perk p = new Perk();
+        this.l_perks_all.add(p);
+        this.l_perks_all_string.add(p.getName());
+        this.l_perks_survivor.add(p.getName());
+        this.l_perks_killer.add(p.getName());
+
         try {
             // Define the Reader
             BufferedReader br = null;
@@ -682,8 +692,8 @@ public class SmartRandBuildGen {
                         System.exit(0);
                     }
                     // Create Perk Object
-                    Perk p = new Perk(myname, myweight, myside, myicon);
-                    // Add Perk to the Pool of Perks
+                    p = new Perk(myname, myweight, myside, myicon);
+                    // Add Perk to the List
                     this.l_perks_all.add(p);
                     // Add Perk Name to Perk List
                     this.l_perks_all_string.add(myname);
@@ -712,9 +722,10 @@ public class SmartRandBuildGen {
         } else if (this.side.equals("Killer")) {
             this.nb_perks_side = l_perks_killer.size();
         }
-        // updatePerksSide();
         // Display Perks
         showPerks(false);
+        // Update Pool of Perks
+        this.setUpdatePerkPool(true);
     }
 
     /**
@@ -725,6 +736,11 @@ public class SmartRandBuildGen {
         String spacer = "\t";
         this.l_char_survivor.clear();
         this.l_char_killer.clear();
+        // Add generic Characters
+        Character c = new Character("Survivor");
+        this.l_char_survivor.add(c);
+        c = new Character("Killer");
+        this.l_char_killer.add(c);
         try {
             // Define the Reader
             BufferedReader br = null;
@@ -748,7 +764,7 @@ public class SmartRandBuildGen {
                     }
                     String myicon = tab[2];
                     // Create Character Object
-                    Character c = new Character(myname, myside, myicon);
+                    c = new Character(myname, myside, myicon);
                     // Add Character to related List
                     if (myside.equals("Survivor")) {
                         this.l_char_survivor.add(c);
@@ -825,7 +841,7 @@ public class SmartRandBuildGen {
      *
      */
     public void displayHelp() {
-        System.out.println(string_spacer + " Available Options in Smart Random Build Generator " + string_spacer + "\n");
+        System.out.println(MYSPACER + " Available Options in Smart Random Build Generator " + MYSPACER + "\n");
         System.out.println("#  -conf : load custom weight distribution file (all perks)");
         System.out.println("#  -side : set active side ('Survivor' OR 'Killer' OR 'Random')");
         System.out.println("#  -perk : set number of perks per build");
@@ -870,12 +886,12 @@ public class SmartRandBuildGen {
     public boolean checkUpdate() {
         System.out.print("# Checking Update from remote GitHub Repository\n# ");
         boolean update_new = false;
-        double gitversion = Tools.getLastVersionGitHub(this.git_user, this.git_repo);
-        if (gitversion > this.version) {
+        double gitversion = Tools.getLastVersionGitHub(SmartRandBuildGen.GIT_USER, SmartRandBuildGen.GIT_REPO);
+        if (gitversion > SmartRandBuildGen.VERSION) {
             update_new = true;
-            System.out.println("# Remote Version = " + gitversion + "\n# Local Version = " + this.version + "\n# An Update is available from https://github.com/" + this.git_user + "/" + this.git_repo + "/releases\n");
+            System.out.println("# Remote Version = " + gitversion + "\n# Local Version = " + SmartRandBuildGen.VERSION + "\n# An Update is available from https://github.com/" + SmartRandBuildGen.GIT_USER + "/" + SmartRandBuildGen.GIT_REPO + "/releases\n");
         } else if (gitversion > 0) {
-            System.out.println("# You already have the last Version (" + this.version + ")\n");
+            System.out.println("# You already have the last Version (" + SmartRandBuildGen.VERSION + ")\n");
         }
         return update_new;
     }
@@ -902,7 +918,7 @@ public class SmartRandBuildGen {
         int nbbuilds = 10;
 
         // Process User-defined Arguments
-        System.out.println(srbg.string_spacer + " Parsing Arguments from User " + srbg.string_spacer + "\n");
+        System.out.println(srbg.MYSPACER + " Parsing Arguments from User " + srbg.MYSPACER + "\n");
         String val = "";
         boolean valb = true;
         int valn = 0;
@@ -935,7 +951,7 @@ public class SmartRandBuildGen {
                     System.exit(0);
                 }
             } else if (args[i].equals("-char")) {
-                srbg.setRandomCharStatus(true);
+                srbg.setRandomCharacterStatus(true);
             } else if (args[i].equals("-care")) {
                 srbg.setNeedCare(true);
             } else if (args[i].equals("-sprint")) {
@@ -991,18 +1007,15 @@ public class SmartRandBuildGen {
         srbg.showParams();
 
         // Get Character if desired
-        if (srbg.getRandomCharStatus()) {
-            System.out.println("\n" + srbg.string_spacer + " Randomly Selected Character " + srbg.string_spacer + "\n");
-            System.out.println("# Selected Character = " + srbg.getRandomChar().getName());
+        if (srbg.getRandomCharacterStatus()) {
+            System.out.println("\n" + srbg.MYSPACER + " Randomly Selected Character " + srbg.MYSPACER + "\n");
+            System.out.println("# Selected Character = " + srbg.getRandomCharacter().getName());
         }
 
         // Generate Random Builds
-        System.out.println("\n" + srbg.string_spacer + " " + nbbuilds + " Random Builds with " + srbg.getNbPerksBuild() + " Perks per Build " + srbg.string_spacer + "\n");
+        System.out.println("\n" + srbg.MYSPACER + " " + nbbuilds + " Random Builds with " + srbg.getNbPerksBuild() + " Perks per Build " + srbg.MYSPACER + "\n");
         Build b = null;
         for (int k = 1; k <= nbbuilds; k++) {
-            if (srbg.getVerbose()) {
-                System.out.println("");
-            }
             b = srbg.genRandomBuild("Random Build " + k);
             System.out.println("# " + b.show(false, "\t"));
         }
