@@ -4,6 +4,12 @@
 * **generate useful random builds**
 * **store and manipulate builds (1000+ predefined builds loaded at start)**
 
+![SRBG](dbd/data/tuto_perk.png)
+
+![SRBG](dbd/data/tuto_build.png)
+
+![SRBG](dbd/data/tuto_db-1.png)
+
 Most related tools purely generate random builds which are hardly ever interesting/efficient because lots of perks are more or less trash in this game.
 
 By contrast, **SRBG** will create **useful random builds** if desired.
