@@ -1,6 +1,6 @@
 # What is 'Smart Random Build Generator' ?
 
-**Smart Random Build Generator** (SRBG) is a user-friendly tool with **GUI** for **Dead by Daylight** game that can be used to:
+**Smart Random Build Generator** (SRBG) is a user-friendly tool for **Dead by Daylight** game that can be used to:
 * **generate useful random builds**
 * **store and manipulate builds (1000+ predefined builds loaded at start)**
 
