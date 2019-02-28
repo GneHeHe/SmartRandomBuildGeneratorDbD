@@ -113,7 +113,7 @@ public class SmartRandBuildGenTabInfo extends JPanel {
         this.lab_git = new JLabel("<html><u>GitHub</u></html>", SwingConstants.CENTER);
         this.lab_git.setFont(new Font("Helvetica", Font.BOLD, 18));
         this.lab_git.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        this.lab_git.setToolTipText("Go to SRBG GitHub Repository");
+        this.lab_git.setToolTipText("Go to GitHub Repository to download last Version of SRBG ('SmartRandBuildGen.jar' File)");
 
         // Define MouseListener
         this.lab_author.addMouseListener(new MouseAdapter() {
