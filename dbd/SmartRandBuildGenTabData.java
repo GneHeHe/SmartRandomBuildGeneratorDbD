@@ -339,10 +339,14 @@ public class SmartRandBuildGenTabData extends JPanel {
                 // Retrieve last saved Build
                 Build b = srbg.getBuildLast();
                 if (b != null) {
+                    // Generic Character if Survivor
+                    if (b.getSide().equals("Survivor")) {
+                        b.setCharacter(new Character(b.getSide()));
+                    }
                     tf_name.setText(b.getName());
                     cb_side.setSelectedItem(b.getSide());
                     // Retrieve Character
-                    cb_char.setSelectedItem(b.getCharacter());                    
+                    cb_char.setSelectedItem(b.getCharacter());
                     // Fill Build with generic Perks if needed
                     while (b.getPerks().size() < 4) {
                         Perk tmp = new Perk();
