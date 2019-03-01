@@ -72,7 +72,7 @@ public class SmartRandBuildGenTabPerks extends JPanel {
         // Create Table
         this.table = new PerkTable();
         this.table.setModel(new PerkTableModel(this.srbg));
-        this.table.setRowHeight(45);
+        this.table.setRowHeight(58);
         this.table.centerText();
         this.table.setIconColumn(1);
         this.table.setColumnWeight(2);

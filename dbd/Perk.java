@@ -27,9 +27,9 @@ public class Perk implements Comparable<Perk> {
     private JLabel lab_img_medium;
     private JLabel lab_img_large;
     // Size of Icon Pictures
-    private final static int SIZE_SMALL = 55;
-    private final static int SIZE_MEDIUM = 75;
-    private final static int SIZE_LARGE = 200;
+    private final static int SIZE_SMALL = 50;
+    private final static int SIZE_MEDIUM = 60;
+    private final static int SIZE_LARGE = 160;
     // Generic Perk
     public final static String GENERIC = "Undefined";
 
