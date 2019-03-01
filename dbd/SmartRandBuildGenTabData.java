@@ -343,20 +343,13 @@ public class SmartRandBuildGenTabData extends JPanel {
                     if (b.getSide().equals("Survivor")) {
                         b.setCharacter(new Character(b.getSide()));
                     }
-                    tf_name.setText(b.getName());
-                    cb_side.setSelectedItem(b.getSide());
-                    // Retrieve Character
-                    cb_char.setSelectedItem(b.getCharacter());
                     // Fill Build with generic Perks if needed
                     while (b.getPerks().size() < 4) {
                         Perk tmp = new Perk();
                         b.addPerk(tmp);
                     }
-                    // Retrieve Perks
-                    cb_perk1.setSelectedItem(b.getPerk(1).getName());
-                    cb_perk2.setSelectedItem(b.getPerk(2).getName());
-                    cb_perk3.setSelectedItem(b.getPerk(3).getName());
-                    cb_perk4.setSelectedItem(b.getPerk(4).getName());
+                    // Update GUI
+                    updateGUI(b);
                     // Add Build
                     boolean added = ((BuildTableModel) table.getModel()).addBuild(b);
                     if (!added) {
@@ -413,6 +406,40 @@ public class SmartRandBuildGenTabData extends JPanel {
             }
         });
 
+        // Define MouseListener
+        this.table.addMouseListener(new java.awt.event.MouseAdapter() {
+            @Override
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                // Get Row & Column
+                int row = table.rowAtPoint(evt.getPoint());
+                int col = table.columnAtPoint(evt.getPoint());
+                if (row >= 0 && col >= 0) {
+                    // Get Selected Build from Database
+                    Build b = ((BuildTableModel) table.getModel()).getBuildFromRow(row);
+                    // Update GUI
+                    updateGUI(b);
+                }
+            }
+        });
+
+    }
+
+    /**
+     * Update GUI with Selected Build
+     *
+     */
+    private void updateGUI(Build b) {
+        // Retrieve Name
+        tf_name.setText(b.getName());
+        // Retrieve Side
+        cb_side.setSelectedItem(b.getSide());
+        // Retrieve Character
+        cb_char.setSelectedItem(b.getCharacter());
+        // Retrieve Perks
+        cb_perk1.setSelectedItem(b.getPerk(1).getName());
+        cb_perk2.setSelectedItem(b.getPerk(2).getName());
+        cb_perk3.setSelectedItem(b.getPerk(3).getName());
+        cb_perk4.setSelectedItem(b.getPerk(4).getName());
     }
 
     /**

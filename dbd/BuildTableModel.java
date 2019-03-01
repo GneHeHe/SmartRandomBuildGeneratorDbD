@@ -341,4 +341,14 @@ public class BuildTableModel extends AbstractTableModel {
         this.fireTableDataChanged();
     }
 
+    /**
+     * Get Build from given Row
+     *
+     * @param row
+     * @return
+     */
+    public Build getBuildFromRow(int row) {
+        return this.l_builds.get(row);
+    }
+
 }
