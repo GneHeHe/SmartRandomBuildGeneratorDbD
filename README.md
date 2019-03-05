@@ -26,9 +26,9 @@ Besides, **generated builds can be easily saved in a database** for future use.
 
 ![SRBG](dbd/data/tuto_db-1.jpg)
 
-Finally, a **built-in tutorial** is also included in **SRBG**.
+Finally, a **built-in tutorial** is also included in **SRBG**
 
-# [Steam Guide](https://steamcommunity.com/sharedfiles/filedetails/?id=1641511649)
+### [Click here for Steam Guide](https://steamcommunity.com/sharedfiles/filedetails/?id=1641511649)
 
 # How to install and use SRBG ?
 
@@ -48,9 +48,8 @@ Double click on the JAR file **'SmartRandBuildGen.jar'** to run **SRBG**
 Feel free to **contact me** about **SRBG**:
 * to send constructive feedback
 * to report any bug
-* to suggest potential new features
-* ...
+* to suggest potential new features, ...
 
-I hope you will find my **SRBG** tool useful to vary your gameplay
+I hope you will find my **SRBG** tool useful to **vary your gameplay**
 
 **See you in the Fog ;)**
