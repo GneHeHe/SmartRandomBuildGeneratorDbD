@@ -28,6 +28,8 @@ Besides, **generated builds can be easily saved in a database** for future use.
 
 Finally, a **built-in tutorial** is also included in **SRBG**.
 
+# [Steam Guide](https://steamcommunity.com/sharedfiles/filedetails/?id=1641511649)
+
 # How to install and use SRBG ?
 
 Download the last compiled JAR file [here](https://github.com/GneHeHe/SmartRandomBuildGeneratorDbD/releases/download/1.31/SmartRandBuildGen.jar) (also available in '**releases**' tab)
