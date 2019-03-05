@@ -4,16 +4,9 @@
 * **generate useful random builds**
 * **store and manipulate builds (1000+ predefined builds loaded at start)**
 
-![SRBG](dbd/data/tuto_perks.jpg)
-
-![SRBG](dbd/data/tuto_build.jpg)
-
-![SRBG](dbd/data/tuto_db-1.jpg)
-
 Most related tools purely generate random builds which are hardly ever interesting/efficient because lots of perks are more or less trash in this game.
 
 By contrast, **SRBG** will create **useful random builds** if desired.
-Briefly, weights are assigned to perks, and random builds are subsequently designed with bias toward perks with higher weights.
 
 **SRBG** can also randomly chose the **side** ('**_Survivor_**' or '**_Killer_**') and specific **character** for your next game.
 
@@ -23,9 +16,17 @@ Some interesting **constraints** can be enabled:
 * required **care perk** (Self-Care, AfterCare, Bond, Pharmacy)
 * required **sprint perk** (Dead Hard, Balanced Landing, Lithe, Sprint Burst)
 
-Besides, **generated builds can be easily saved in a database** for future use
+![SRBG](dbd/data/tuto_build.jpg)
 
-Finally, a **built-in tutorial** is included in the SRBG tool
+Briefly, weights are assigned to perks, and random builds are subsequently designed with bias toward perks with higher weights.
+
+![SRBG](dbd/data/tuto_perks.jpg)
+
+Besides, **generated builds can be easily saved in a database** for future use.
+
+![SRBG](dbd/data/tuto_db-1.jpg)
+
+Finally, a **built-in tutorial** is also included in **SRBG**.
 
 # How to install and use SRBG ?
 

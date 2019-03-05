@@ -45,7 +45,7 @@ public class SmartRandBuildGenGUI extends JFrame {
 
         // Add Tabs to Main Panel
         this.tabbedPane.addTab("Configure Perks", this.pan_perks);
-        this.tabbedPane.addTab("Get Random Builds", this.pan_builds);
+        this.tabbedPane.addTab("Generate Random Builds", this.pan_builds);
         this.tabbedPane.addTab("Database of Builds", this.pan_data);
         this.tabbedPane.addTab("Contact & Help", this.pan_info);
 

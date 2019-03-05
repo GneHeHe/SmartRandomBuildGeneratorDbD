@@ -31,6 +31,7 @@ Build	Killer	Trapper	Hex Devour Hope	Spirit Fury	Enduring	Hex No One Escapes Dea
 Build	Killer	Trapper	Hex Devour Hope	Brutal Strength	Enduring	Hex No One Escapes Death
 Build	Killer	Trapper	Hex Devour Hope	Bamboozle	Enduring	Hex No One Escapes Death
 Build	Killer	Trapper	Hex Devour Hope	Hex Haunted Ground	Enduring	Hex No One Escapes Death
+Perkless	Killer	Trapper	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Wraith #################################
 FavBuild	Killer	Wraith	Hex Ruin	Enduring	Hex No One Escapes Death	Barbecue & Chilli
 FavBuild	Killer	Wraith	Hex Ruin	Enduring	Hex No One Escapes Death	Spirit Fury
@@ -64,6 +65,7 @@ Build	Killer	Wraith	Hex Ruin	Enduring	Bamboozle	Brutal Strength
 Build	Killer	Wraith	Hex Ruin	Enduring	Bamboozle	Pop Goes The Weasel
 Build	Killer	Wraith	Hex Ruin	Enduring	Bamboozle	A Nurse's Calling
 Build	Killer	Wraith	Hex Ruin	Enduring	Bamboozle	Make Your Choice
+Perkless	Killer	Wraith	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Hillbilly #################################
 FavBuild	Killer	Hillbilly	Whispers	Barbecue & Chilli	Enduring	Spirit Fury
 Build	Killer	Hillbilly	Whispers	Barbecue & Chilli	Enduring	Sloppy Butcher
@@ -98,6 +100,7 @@ Totem	Killer	Hillbilly	Hex Ruin	Hex Devour Hope	Hex Haunted Ground	Hex Thrill Of
 Troll	Killer	Hillbilly	Hex Devour Hope	Hex Haunted Ground	Make Your Choice	Hex No One Escapes Death
 OldBuild	Killer	Hillbilly	Whispers	Deerstalker	Enduring	A Nurse's Calling
 OldBuild	Killer	Hillbilly	Whispers	Deerstalker	Enduring	Brutal Strength
+Perkless	Killer	Hillbilly	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Nurse Sally #################################
 FavBuild	Killer	Nurse Sally	Barbecue & Chilli	Whispers	A Nurse's Calling	Shadowborn
 FavBuild	Killer	Nurse Sally	Hex Ruin	Whispers	A Nurse's Calling	Shadowborn
@@ -141,6 +144,7 @@ Troll	Killer	Nurse Sally	Enduring	Spirit Fury	Brutal Strength	Bamboozle
 Troll	Killer	Nurse Sally	Hex Ruin	Spirit Fury	Brutal Strength	Bamboozle
 OldBuild	Killer	Nurse Sally	Whispers	A Nurse's Calling	Shadowborn	Deerstalker
 OldBuild	Killer	Nurse Sally	Whispers	A Nurse's Calling	Shadowborn	Hex No One Escapes Death
+Perkless	Killer	Nurse Sally	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Huntress #################################
 FavBuild	Killer	Huntress	Hex Ruin	Whispers	Barbecue & Chilli	A Nurse's Calling
 FavBuild	Killer	Huntress	Hex Ruin	Whispers	Barbecue & Chilli	Shadowborn
@@ -175,6 +179,7 @@ Build	Killer	Huntress	Pop Goes The Weasel	Barbecue & Chilli	A Nurse's Calling	Sp
 Build	Killer	Huntress	Shadowborn	Whispers	Barbecue & Chilli	A Nurse's Calling
 Build	Killer	Huntress	Enduring	Whispers	Barbecue & Chilli	A Nurse's Calling
 Build	Killer	Huntress	Sloppy Butcher	Whispers	Barbecue & Chilli	A Nurse's Calling
+Perkless	Killer	Huntress	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Myers #################################
 FavBuild	Killer	Myers	Hex Ruin	Monitor & Abuse	Enduring	Spirit Fury
 FavBuild	Killer	Myers	Hex Ruin	Monitor & Abuse	Enduring	A Nurse's Calling
@@ -230,6 +235,7 @@ Build	Killer	Myers	Whispers	Brutal Strength	Enduring	Spirit Fury
 Build	Killer	Myers	Whispers	Bamboozle	Enduring	Spirit Fury
 Build	Killer	Myers	Whispers	Bamboozle	Enduring	Brutal Strength
 Troll	Killer	Myers	Hex Haunted Ground	Distressing	Make Your Choice	Hex No One Escapes Death
+Perkless	Killer	Myers	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Hag #################################
 FavBuild	Killer	Hag	Hex Ruin	Monitor & Abuse	Make Your Choice	Sloppy Butcher
 FavBuild	Killer	Hag	Hex Ruin	Monitor & Abuse	Make Your Choice	Enduring
@@ -258,6 +264,7 @@ Defense	Killer	Hag	Hex Ruin	Monitor & Abuse	Pop Goes The Weasel	Discordance
 Defense	Killer	Hag	Hex Ruin	Monitor & Abuse	Overcharge	Surveillance
 Defense	Killer	Hag	Hex Ruin	Monitor & Abuse	Overcharge	Discordance
 Dungeon	Killer	Hag	Hex Ruin	Monitor & Abuse	Make Your Choice	Agitation
+Perkless	Killer	Hag	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Leatherface #################################
 FavBuild	Killer	Leatherface	Hex Ruin	Enduring	Spirit Fury	Monitor & Abuse
 FavBuild	Killer	Leatherface	Hex Ruin	Enduring	Spirit Fury	Play With Your Food
@@ -306,8 +313,10 @@ Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Barbecue & Chilli	Bamboozl
 Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Barbecue & Chilli	Brutal Strength
 Dungeon	Killer	Leatherface	Hex Ruin	Enduring	Agitation	Insidious
 Dungeon	Killer	Leatherface	Hex Ruin	Enduring	Agitation	Territorial Imperative
+Dungeon	Killer	Leatherface	Agitation	Insidious	Iron Grasp	Hex No One Escapes Death
 Dungeon	Killer	Leatherface	Agitation	Insidious	Iron Grasp	Mad Grit
 Dungeon	Killer	Leatherface	Agitation	Insidious	Iron Grasp	Monstrous Shrine
+Perkless	Killer	Leatherface	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Doctor #################################
 FavBuild	Killer	Doctor	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Hex No One Escapes Death
 Build	Killer	Doctor	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Barbecue & Chilli
@@ -333,6 +342,7 @@ Defense	Killer	Doctor	Hex Ruin	Distressing	Unnerving Presence	Overcharge
 Defense	Killer	Doctor	Hex Ruin	Discordance	Unnerving Presence	Overcharge
 Defense	Killer	Doctor	Hex Ruin	Surveillance	Unnerving Presence	Overcharge
 Totem-Tape	Killer	Doctor	Hex Ruin	Hex Devour Hope	Hex Haunted Ground	Hex Thrill Of The Hunt
+Perkless	Killer	Doctor	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Freddy #################################
 FavBuild	Killer	Freddy	Hex No One Escapes Death	Remember Me	Enduring	Hex Ruin
 FavBuild	Killer	Freddy	Hex No One Escapes Death	Remember Me	Enduring	Monitor & Abuse
@@ -366,6 +376,7 @@ Build	Killer	Freddy	Hex No One Escapes Death	Barbecue & Chilli	Enduring	Pop Goes
 Build	Killer	Freddy	Hex No One Escapes Death	Barbecue & Chilli	Enduring	Bamboozle
 Build	Killer	Freddy	Hex No One Escapes Death	Barbecue & Chilli	Enduring	Brutal Strength
 Troll	Killer	Freddy	Deerstalker	Overcharge	Unnerving Presence	Insidious
+Perkless	Killer	Freddy	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Pig #################################
 FavBuild	Killer	Pig	Hex Ruin	Whispers	Enduring	Monitor & Abuse
 FavBuild	Killer	Pig	Hex Ruin	Whispers	Enduring	Barbecue & Chilli
@@ -387,6 +398,7 @@ Build	Killer	Pig	Hex Ruin	Barbecue & Chilli	Enduring	Brutal Strength
 Build	Killer	Pig	Hex Ruin	Barbecue & Chilli	Monitor & Abuse	A Nurse's Calling
 Build	Killer	Pig	Hex Ruin	Barbecue & Chilli	Monitor & Abuse	Discordance
 Build	Killer	Pig	Hex Ruin	Barbecue & Chilli	Monitor & Abuse	Surveillance
+Perkless	Killer	Pig	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Clown #################################
 FavBuild	Killer	Clown	Hex Ruin	Brutal Strength	Whispers	Sloppy Butcher
 FavBuild	Killer	Clown	Hex Ruin	Brutal Strength	Whispers	Barbecue & Chilli
@@ -406,6 +418,7 @@ Build	Killer	Clown	Hex Ruin	Sloppy Butcher	Whispers	Hex No One Escapes Death
 Build	Killer	Clown	Hex Ruin	Enduring	Whispers	Barbecue & Chilli
 Build	Killer	Clown	Hex Ruin	Enduring	Whispers	Pop Goes The Weasel
 Build	Killer	Clown	Hex Ruin	Enduring	Whispers	Hex No One Escapes Death
+Perkless	Killer	Clown	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Spirit Rin #################################
 FavBuild	Killer	Spirit Rin	Hex Ruin	Whispers	A Nurse's Calling	Barbecue & Chilli
 Build	Killer	Spirit Rin	Hex Ruin	Whispers	A Nurse's Calling	Make Your Choice
@@ -442,6 +455,7 @@ Build	Killer	Spirit Rin	Pop Goes The Weasel	Barbecue & Chilli	A Nurse's Calling	
 Build	Killer	Spirit Rin	Pop Goes The Weasel	Barbecue & Chilli	A Nurse's Calling	Hex No One Escapes Death
 Totem-Addon	Killer	Spirit Rin	Hex Ruin	Hex Devour Hope	Hex Haunted Ground	Hex Thrill Of The Hunt
 Build-Addon	Killer	Spirit Rin	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Discordance
+Perkless	Killer	Spirit Rin	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Legion #################################
 FavBuild	Killer	Legion	Hex Ruin	Monitor & Abuse	Thanatophobia	Bloodhound
 Build	Killer	Legion	Hex Ruin	Monitor & Abuse	Thanatophobia	Sloppy Butcher
@@ -453,6 +467,7 @@ Build	Killer	Legion	Hex Ruin	Sloppy Butcher	Thanatophobia	Stridor
 Build	Killer	Legion	Hex Ruin	Sloppy Butcher	Thanatophobia	Barbecue & Chilli
 Build	Killer	Legion	Hex Ruin	Sloppy Butcher	Thanatophobia	Whispers
 Build	Killer	Legion	Hex Ruin	Whispers	Thanatophobia	Barbecue & Chilli
+Perkless	Killer	Legion	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Perkless #################################
 Perkless	Killer	Undefined	Undefined	Undefined	Undefined	Undefined
 ################################# Survivors #################################
