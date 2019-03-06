@@ -61,11 +61,12 @@ public class SmartRandBuildGen {
     private boolean verbose;
     private final String MYSPACER = "##########";
     // Version & Title of Tool
-    public final static double VERSION = 1.31;
+    public final static double VERSION = 1.4;
     public final static String TITLE = "Smart Random Build Generator for Dead by Daylight " + VERSION;
     // GitHub User/Repos
     public final static String GIT_USER = "GneHeHe";
     public final static String GIT_REPO = "SmartRandomBuildGeneratorDbD";
+    public final static String GIT_DB_REMOTE = "https://raw.githubusercontent.com/GneHeHe/SmartRandomBuildGeneratorDbD/master/dbd/data/build_db.txt";
 
     /**
      * Default Constructor

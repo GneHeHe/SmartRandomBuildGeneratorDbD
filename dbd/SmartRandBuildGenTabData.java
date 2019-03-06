@@ -4,6 +4,9 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.*;
+import java.net.URL;
+import java.nio.channels.Channels;
+import java.nio.channels.ReadableByteChannel;
 import java.util.ArrayList;
 import java.util.regex.PatternSyntaxException;
 import javax.swing.*;
@@ -25,7 +28,7 @@ public class SmartRandBuildGenTabData extends JPanel {
     // Swing Components
     private JPanel pan_all, pan_build, pan_perks, pan_button;
     private JScrollPane scrollPane;
-    private JButton b_load, b_save, b_add, b_add_last, b_remove, b_rand, b_reload;
+    private JButton b_load, b_save, b_add, b_add_last, b_remove, b_rand, b_reload, b_reload_remote;
     private JLabel lab_filter, lab_side, lab_char, lab_perk1, lab_perk2, lab_perk3, lab_perk4;
     private JComboBox cb_side, cb_char, cb_perk1, cb_perk2, cb_perk3, cb_perk4;
     private JFileChooser fileChooser;
@@ -57,6 +60,7 @@ public class SmartRandBuildGenTabData extends JPanel {
         this.pan_button.add(this.tf_expr);
         this.pan_button.add(this.b_rand);
         this.pan_button.add(this.b_reload);
+        this.pan_button.add(this.b_reload_remote);
         this.pan_button.add(this.b_load);
         this.pan_button.add(this.b_save);
 
@@ -127,7 +131,7 @@ public class SmartRandBuildGenTabData extends JPanel {
         this.tf_name.setHorizontalAlignment(JTextField.CENTER);
         this.tf_name.setEditable(true);
         this.tf_name.setToolTipText("Define Name of Build");
-        this.tf_expr = new JTextField(10);
+        this.tf_expr = new JTextField(8);
         this.tf_expr.setText("");
         this.tf_expr.setHorizontalAlignment(JTextField.CENTER);
         this.tf_expr.setEditable(true);
@@ -139,9 +143,10 @@ public class SmartRandBuildGenTabData extends JPanel {
 
         // Define JButton Objects
         this.b_rand = new JButton("Random Select");
-        this.b_reload = new JButton("Reload Database");
-        this.b_load = new JButton("Open Database");
-        this.b_save = new JButton("Save Database");
+        this.b_reload = new JButton("Reload DB");
+        this.b_reload_remote = new JButton("Reload remote DB");
+        this.b_load = new JButton("Open custom DB");
+        this.b_save = new JButton("Save current DB");
         this.b_add = new JButton("Add current Build");
         this.b_add_last = new JButton("Add random Build");
         this.b_remove = new JButton("Delete Builds");
@@ -149,6 +154,7 @@ public class SmartRandBuildGenTabData extends JPanel {
         // Set Tooltips for Buttons
         this.b_rand.setToolTipText("Randomly select one build from database");
         this.b_reload.setToolTipText("Reload default build database");
+        this.b_reload_remote.setToolTipText("Reload last build database from GitHub");
         this.b_load.setToolTipText("Open custom build database");
         this.b_save.setToolTipText("Save current build database");
         this.b_add.setToolTipText("Add current build in database");
@@ -217,6 +223,31 @@ public class SmartRandBuildGenTabData extends JPanel {
                 tf_expr.setText("");
                 // Reload default build database
                 ((BuildTableModel) table.getModel()).initDatabase();
+            }
+        });
+
+        // Define ActionListener
+        this.b_reload_remote.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // Reset Filter
+                tf_expr.setText("");
+                // Download remote build database from GitHub (last version)
+                try {
+                    String output = "build_db_remote.txt";
+                    URL website = new URL(SmartRandBuildGen.GIT_DB_REMOTE);
+                    ReadableByteChannel rbc = Channels.newChannel(website.openStream());
+                    FileOutputStream fos = new FileOutputStream(output);
+                    fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
+                    if (new File(output).exists()) {
+                        // Load remote build database from GitHub
+                        ((BuildTableModel) table.getModel()).readData(output);
+                    } else {
+                        Tools.getAlert("ERROR: Issues were encountered while downloading the last build database from GitHub", "Warning", JOptionPane.ERROR_MESSAGE);
+                    }
+                } catch (Exception ex) {
+                    Tools.getAlert("ERROR: Issues were encountered while downloading the last build database from GitHub", "Warning", JOptionPane.ERROR_MESSAGE);
+                }
             }
         });
 

@@ -1,475 +1,3 @@
-################################# Killer - Trapper #################################
-FavBuild	Killer	Trapper	Hex Ruin	Whispers	Enduring	Spirit Fury
-FavBuild	Killer	Trapper	Hex Ruin	Whispers	Enduring	Hex No One Escapes Death
-FavBuild	Killer	Trapper	Hex Ruin	Whispers	Enduring	Sloppy Butcher
-Build	Killer	Trapper	Hex Ruin	Whispers	Enduring	Barbecue & Chilli
-Build	Killer	Trapper	Hex Ruin	Whispers	Enduring	Agitation
-Build	Killer	Trapper	Hex Ruin	Whispers	Enduring	Bamboozle
-Build	Killer	Trapper	Hex Ruin	Whispers	Enduring	Brutal Strength
-Build	Killer	Trapper	Hex Ruin	Whispers	Enduring	Make Your Choice
-Build	Killer	Trapper	Hex Ruin	Whispers	Enduring	Pop Goes The Weasel
-Build	Killer	Trapper	Hex Ruin	Barbecue & Chilli	Enduring	Spirit Fury
-Build	Killer	Trapper	Hex Ruin	Barbecue & Chilli	Enduring	Hex No One Escapes Death
-Build	Killer	Trapper	Hex Ruin	Barbecue & Chilli	Enduring	Sloppy Butcher
-Build	Killer	Trapper	Hex Ruin	Barbecue & Chilli	Enduring	Bamboozle
-Build	Killer	Trapper	Hex Ruin	Barbecue & Chilli	Enduring	Brutal Strength
-Build	Killer	Trapper	Hex Ruin	Barbecue & Chilli	Enduring	Pop Goes The Weasel
-Build	Killer	Trapper	Hex Ruin	Brutal Strength	Enduring	Spirit Fury
-Build	Killer	Trapper	Hex Ruin	Brutal Strength	Enduring	Hex No One Escapes Death
-Build	Killer	Trapper	Hex Ruin	Brutal Strength	Enduring	Sloppy Butcher
-Build	Killer	Trapper	Hex Ruin	Spirit Fury	Enduring	Hex No One Escapes Death
-Build	Killer	Trapper	Hex Ruin	Spirit Fury	Enduring	Sloppy Butcher
-Build	Killer	Trapper	Hex Ruin	Bamboozle	Enduring	Hex No One Escapes Death
-Build	Killer	Trapper	Hex Ruin	Bamboozle	Enduring	Brutal Strength
-Build	Killer	Trapper	Hex Ruin	Bamboozle	Enduring	Sloppy Butcher
-Build	Killer	Trapper	Hex Ruin	Remember Me	Enduring	Hex No One Escapes Death
-Build	Killer	Trapper	Brutal Strength	Spirit Fury	Enduring	Hex No One Escapes Death
-Build	Killer	Trapper	Brutal Strength	Bamboozle	Enduring	Hex No One Escapes Death
-Build	Killer	Trapper	Hex Devour Hope	Whispers	Enduring	Hex No One Escapes Death
-Build	Killer	Trapper	Hex Devour Hope	Barbecue & Chilli	Enduring	Hex No One Escapes Death
-Build	Killer	Trapper	Hex Devour Hope	Spirit Fury	Enduring	Hex No One Escapes Death
-Build	Killer	Trapper	Hex Devour Hope	Brutal Strength	Enduring	Hex No One Escapes Death
-Build	Killer	Trapper	Hex Devour Hope	Bamboozle	Enduring	Hex No One Escapes Death
-Build	Killer	Trapper	Hex Devour Hope	Hex Haunted Ground	Enduring	Hex No One Escapes Death
-Perkless	Killer	Trapper	Undefined	Undefined	Undefined	Undefined
-################################# Killer - Wraith #################################
-FavBuild	Killer	Wraith	Hex Ruin	Enduring	Hex No One Escapes Death	Barbecue & Chilli
-FavBuild	Killer	Wraith	Hex Ruin	Enduring	Hex No One Escapes Death	Spirit Fury
-FavBuild	Killer	Wraith	Hex Ruin	Enduring	Hex No One Escapes Death	Sloppy Butcher
-Build	Killer	Wraith	Hex Ruin	Enduring	Hex No One Escapes Death	A Nurse's Calling
-Build	Killer	Wraith	Hex Ruin	Enduring	Hex No One Escapes Death	Remember Me
-Build	Killer	Wraith	Hex Ruin	Enduring	Hex No One Escapes Death	Make Your Choice
-Build	Killer	Wraith	Hex Ruin	Enduring	Hex No One Escapes Death	Bamboozle
-Build	Killer	Wraith	Hex Ruin	Enduring	Hex No One Escapes Death	Brutal Strength
-Build	Killer	Wraith	Hex Ruin	Enduring	Hex No One Escapes Death	Whispers
-FavBuild	Killer	Wraith	Hex Ruin	Enduring	Spirit Fury	Sloppy Butcher
-FavBuild	Killer	Wraith	Hex Ruin	Enduring	Spirit Fury	Barbecue & Chilli
-Build	Killer	Wraith	Hex Ruin	Enduring	Spirit Fury	Pop Goes The Weasel
-Build	Killer	Wraith	Hex Ruin	Enduring	Spirit Fury	A Nurse's Calling
-Build	Killer	Wraith	Hex Ruin	Enduring	Spirit Fury	Make Your Choice
-Build	Killer	Wraith	Hex Ruin	Enduring	Spirit Fury	Bamboozle
-Build	Killer	Wraith	Hex Ruin	Enduring	Spirit Fury	Brutal Strength
-Build	Killer	Wraith	Hex Ruin	Enduring	Whispers	Barbecue & Chilli
-Build	Killer	Wraith	Hex Ruin	Enduring	Sloppy Butcher	Barbecue & Chilli
-Build	Killer	Wraith	Hex Ruin	Enduring	Sloppy Butcher	Pop Goes The Weasel
-Build	Killer	Wraith	Hex Ruin	Enduring	Sloppy Butcher	A Nurse's Calling
-Build	Killer	Wraith	Hex Ruin	Enduring	Sloppy Butcher	Make Your Choice
-Build	Killer	Wraith	Hex Ruin	Enduring	Sloppy Butcher	Bamboozle
-Build	Killer	Wraith	Hex Ruin	Enduring	Brutal Strength	Sloppy Butcher
-Build	Killer	Wraith	Hex Ruin	Enduring	Brutal Strength	Barbecue & Chilli
-Build	Killer	Wraith	Hex Ruin	Enduring	Brutal Strength	Pop Goes The Weasel
-Build	Killer	Wraith	Hex Ruin	Enduring	Brutal Strength	A Nurse's Calling
-Build	Killer	Wraith	Hex Ruin	Enduring	Brutal Strength	Make Your Choice
-Build	Killer	Wraith	Hex Ruin	Enduring	Bamboozle	Barbecue & Chilli
-Build	Killer	Wraith	Hex Ruin	Enduring	Bamboozle	Brutal Strength
-Build	Killer	Wraith	Hex Ruin	Enduring	Bamboozle	Pop Goes The Weasel
-Build	Killer	Wraith	Hex Ruin	Enduring	Bamboozle	A Nurse's Calling
-Build	Killer	Wraith	Hex Ruin	Enduring	Bamboozle	Make Your Choice
-Perkless	Killer	Wraith	Undefined	Undefined	Undefined	Undefined
-################################# Killer - Hillbilly #################################
-FavBuild	Killer	Hillbilly	Whispers	Barbecue & Chilli	Enduring	Spirit Fury
-Build	Killer	Hillbilly	Whispers	Barbecue & Chilli	Enduring	Sloppy Butcher
-Build	Killer	Hillbilly	Whispers	Barbecue & Chilli	Enduring	Bamboozle
-Build	Killer	Hillbilly	Whispers	Barbecue & Chilli	Enduring	A Nurse's Calling
-Build	Killer	Hillbilly	Whispers	Barbecue & Chilli	Enduring	Brutal Strength
-Build	Killer	Hillbilly	Whispers	Barbecue & Chilli	Enduring	Pop Goes The Weasel
-Build	Killer	Hillbilly	Whispers	Barbecue & Chilli	Enduring	Discordance
-FavBuild	Killer	Hillbilly	Hex Ruin	Barbecue & Chilli	Enduring	Spirit Fury
-FavBuild	Killer	Hillbilly	Hex Ruin	Barbecue & Chilli	Enduring	Whispers
-Build	Killer	Hillbilly	Hex Ruin	Barbecue & Chilli	Enduring	Sloppy Butcher
-Build	Killer	Hillbilly	Hex Ruin	Barbecue & Chilli	Enduring	Bamboozle
-Build	Killer	Hillbilly	Hex Ruin	Barbecue & Chilli	Enduring	A Nurse's Calling
-Build	Killer	Hillbilly	Hex Ruin	Barbecue & Chilli	Enduring	Hex Thrill Of The Hunt
-Build	Killer	Hillbilly	Hex Ruin	Barbecue & Chilli	Enduring	Brutal Strength
-Build	Killer	Hillbilly	Hex Ruin	Barbecue & Chilli	Enduring	Pop Goes The Weasel
-Build	Killer	Hillbilly	Pop Goes The Weasel	Barbecue & Chilli	Enduring	Spirit Fury
-Build	Killer	Hillbilly	Pop Goes The Weasel	Barbecue & Chilli	Enduring	Sloppy Butcher
-Build	Killer	Hillbilly	Pop Goes The Weasel	Barbecue & Chilli	Enduring	Bamboozle
-Build	Killer	Hillbilly	Pop Goes The Weasel	Barbecue & Chilli	Enduring	A Nurse's Calling
-Build	Killer	Hillbilly	Pop Goes The Weasel	Barbecue & Chilli	Enduring	Hex Thrill Of The Hunt
-Build	Killer	Hillbilly	Pop Goes The Weasel	Barbecue & Chilli	Enduring	Brutal Strength
-Build	Killer	Hillbilly	Hex Devour Hope	Barbecue & Chilli	Enduring	Spirit Fury
-Build	Killer	Hillbilly	Hex Devour Hope	Barbecue & Chilli	Enduring	Whispers
-Build	Killer	Hillbilly	Hex Devour Hope	Barbecue & Chilli	Enduring	Sloppy Butcher
-Build	Killer	Hillbilly	Hex Devour Hope	Barbecue & Chilli	Enduring	Bamboozle
-Build	Killer	Hillbilly	Hex Devour Hope	Barbecue & Chilli	Enduring	A Nurse's Calling
-Build	Killer	Hillbilly	Hex Devour Hope	Barbecue & Chilli	Enduring	Hex Thrill Of The Hunt
-Build	Killer	Hillbilly	Hex Devour Hope	Barbecue & Chilli	Enduring	Brutal Strength
-Build	Killer	Hillbilly	Hex Devour Hope	Barbecue & Chilli	Enduring	Pop Goes The Weasel
-Totem	Killer	Hillbilly	Hex Ruin	Hex Devour Hope	Hex Haunted Ground	Hex Thrill Of The Hunt
-Troll	Killer	Hillbilly	Hex Devour Hope	Hex Haunted Ground	Make Your Choice	Hex No One Escapes Death
-OldBuild	Killer	Hillbilly	Whispers	Deerstalker	Enduring	A Nurse's Calling
-OldBuild	Killer	Hillbilly	Whispers	Deerstalker	Enduring	Brutal Strength
-Perkless	Killer	Hillbilly	Undefined	Undefined	Undefined	Undefined
-################################# Killer - Nurse Sally #################################
-FavBuild	Killer	Nurse Sally	Barbecue & Chilli	Whispers	A Nurse's Calling	Shadowborn
-FavBuild	Killer	Nurse Sally	Hex Ruin	Whispers	A Nurse's Calling	Shadowborn
-FavBuild	Killer	Nurse Sally	Hex Ruin	Whispers	A Nurse's Calling	Barbecue & Chilli
-Build	Killer	Nurse Sally	Hex Ruin	Whispers	A Nurse's Calling	Monitor & Abuse
-Build	Killer	Nurse Sally	Hex Ruin	Whispers	A Nurse's Calling	Make Your Choice
-Build	Killer	Nurse Sally	Hex Ruin	Whispers	A Nurse's Calling	Sloppy Butcher
-Build	Killer	Nurse Sally	Hex Ruin	Whispers	A Nurse's Calling	Hex No One Escapes Death
-Build	Killer	Nurse Sally	Hex Ruin	Whispers	A Nurse's Calling	Pop Goes The Weasel
-Build	Killer	Nurse Sally	Hex Ruin	Whispers	A Nurse's Calling	Stridor
-Build	Killer	Nurse Sally	Hex Ruin	Whispers	A Nurse's Calling	Discordance
-Build	Killer	Nurse Sally	Hex Ruin	Whispers	A Nurse's Calling	Spies From The Shadows
-FavBuild	Killer	Nurse Sally	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Shadowborn
-Build	Killer	Nurse Sally	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Monitor & Abuse
-Build	Killer	Nurse Sally	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Make Your Choice
-Build	Killer	Nurse Sally	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Sloppy Butcher
-Build	Killer	Nurse Sally	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Hex No One Escapes Death
-Build	Killer	Nurse Sally	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Pop Goes The Weasel
-Build	Killer	Nurse Sally	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Stridor
-Build	Killer	Nurse Sally	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Discordance
-Build	Killer	Nurse Sally	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Spies From The Shadows
-Build	Killer	Nurse Sally	Hex Devour Hope	Whispers	A Nurse's Calling	Shadowborn
-Build	Killer	Nurse Sally	Hex Devour Hope	Whispers	A Nurse's Calling	Barbecue & Chilli
-Build	Killer	Nurse Sally	Hex Devour Hope	Whispers	A Nurse's Calling	Monitor & Abuse
-Build	Killer	Nurse Sally	Hex Devour Hope	Whispers	A Nurse's Calling	Sloppy Butcher
-Build	Killer	Nurse Sally	Hex Devour Hope	Whispers	A Nurse's Calling	Pop Goes The Weasel
-Build	Killer	Nurse Sally	Hex Devour Hope	Barbecue & Chilli	A Nurse's Calling	Shadowborn
-Build	Killer	Nurse Sally	Hex Devour Hope	Barbecue & Chilli	A Nurse's Calling	Monitor & Abuse
-Build	Killer	Nurse Sally	Hex Devour Hope	Barbecue & Chilli	A Nurse's Calling	Sloppy Butcher
-Build	Killer	Nurse Sally	Hex Devour Hope	Barbecue & Chilli	A Nurse's Calling	Pop Goes The Weasel
-Build	Killer	Nurse Sally	Pop Goes The Weasel	Whispers	A Nurse's Calling	Shadowborn
-Build	Killer	Nurse Sally	Pop Goes The Weasel	Whispers	A Nurse's Calling	Barbecue & Chilli
-Build	Killer	Nurse Sally	Pop Goes The Weasel	Whispers	A Nurse's Calling	Monitor & Abuse
-Build	Killer	Nurse Sally	Pop Goes The Weasel	Whispers	A Nurse's Calling	Make Your Choice
-Build	Killer	Nurse Sally	Pop Goes The Weasel	Whispers	A Nurse's Calling	Sloppy Butcher
-Build	Killer	Nurse Sally	Pop Goes The Weasel	Whispers	A Nurse's Calling	Hex No One Escapes Death
-Build	Killer	Nurse Sally	Pop Goes The Weasel	Whispers	A Nurse's Calling	Stridor
-Build	Killer	Nurse Sally	Pop Goes The Weasel	Whispers	A Nurse's Calling	Discordance
-Totem	Killer	Nurse Sally	Hex Ruin	Hex Devour Hope	Hex Haunted Ground	Hex Thrill Of The Hunt
-Troll	Killer	Nurse Sally	Enduring	Spirit Fury	Brutal Strength	Bamboozle
-Troll	Killer	Nurse Sally	Hex Ruin	Spirit Fury	Brutal Strength	Bamboozle
-OldBuild	Killer	Nurse Sally	Whispers	A Nurse's Calling	Shadowborn	Deerstalker
-OldBuild	Killer	Nurse Sally	Whispers	A Nurse's Calling	Shadowborn	Hex No One Escapes Death
-Perkless	Killer	Nurse Sally	Undefined	Undefined	Undefined	Undefined
-################################# Killer - Huntress #################################
-FavBuild	Killer	Huntress	Hex Ruin	Whispers	Barbecue & Chilli	A Nurse's Calling
-FavBuild	Killer	Huntress	Hex Ruin	Whispers	Barbecue & Chilli	Shadowborn
-Build	Killer	Huntress	Hex Ruin	Whispers	Barbecue & Chilli	Sloppy Butcher
-Build	Killer	Huntress	Hex Ruin	Whispers	Barbecue & Chilli	Enduring
-Build	Killer	Huntress	Hex Ruin	Whispers	Barbecue & Chilli	Pop Goes The Weasel
-Build	Killer	Huntress	Hex Ruin	Whispers	Barbecue & Chilli	Iron Maiden
-Build	Killer	Huntress	Hex Ruin	Whispers	Barbecue & Chilli	Bitter Murmur
-Build	Killer	Huntress	Hex Ruin	Whispers	Barbecue & Chilli	Spies From The Shadows
-Build	Killer	Huntress	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Sloppy Butcher
-Build	Killer	Huntress	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Shadowborn
-Build	Killer	Huntress	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Enduring
-Build	Killer	Huntress	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Pop Goes The Weasel
-Build	Killer	Huntress	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Iron Maiden
-Build	Killer	Huntress	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Bitter Murmur
-Build	Killer	Huntress	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Spies From The Shadows
-Build	Killer	Huntress	Hex Ruin	Deerstalker	A Nurse's Calling	Sloppy Butcher
-Build	Killer	Huntress	Hex Ruin	Deerstalker	A Nurse's Calling	Enduring
-Build	Killer	Huntress	Pop Goes The Weasel	Whispers	Barbecue & Chilli	A Nurse's Calling
-Build	Killer	Huntress	Pop Goes The Weasel	Whispers	Barbecue & Chilli	Sloppy Butcher
-Build	Killer	Huntress	Pop Goes The Weasel	Whispers	Barbecue & Chilli	Shadowborn
-Build	Killer	Huntress	Pop Goes The Weasel	Whispers	Barbecue & Chilli	Enduring
-Build	Killer	Huntress	Pop Goes The Weasel	Whispers	Barbecue & Chilli	Iron Maiden
-Build	Killer	Huntress	Pop Goes The Weasel	Whispers	Barbecue & Chilli	Bitter Murmur
-Build	Killer	Huntress	Pop Goes The Weasel	Whispers	Barbecue & Chilli	Spies From The Shadows
-Build	Killer	Huntress	Pop Goes The Weasel	Barbecue & Chilli	A Nurse's Calling	Sloppy Butcher
-Build	Killer	Huntress	Pop Goes The Weasel	Barbecue & Chilli	A Nurse's Calling	Shadowborn
-Build	Killer	Huntress	Pop Goes The Weasel	Barbecue & Chilli	A Nurse's Calling	Enduring
-Build	Killer	Huntress	Pop Goes The Weasel	Barbecue & Chilli	A Nurse's Calling	Iron Maiden
-Build	Killer	Huntress	Pop Goes The Weasel	Barbecue & Chilli	A Nurse's Calling	Bitter Murmur
-Build	Killer	Huntress	Pop Goes The Weasel	Barbecue & Chilli	A Nurse's Calling	Spies From The Shadows
-Build	Killer	Huntress	Shadowborn	Whispers	Barbecue & Chilli	A Nurse's Calling
-Build	Killer	Huntress	Enduring	Whispers	Barbecue & Chilli	A Nurse's Calling
-Build	Killer	Huntress	Sloppy Butcher	Whispers	Barbecue & Chilli	A Nurse's Calling
-Perkless	Killer	Huntress	Undefined	Undefined	Undefined	Undefined
-################################# Killer - Myers #################################
-FavBuild	Killer	Myers	Hex Ruin	Monitor & Abuse	Enduring	Spirit Fury
-FavBuild	Killer	Myers	Hex Ruin	Monitor & Abuse	Enduring	A Nurse's Calling
-Build	Killer	Myers	Hex Ruin	Monitor & Abuse	Enduring	Sloppy Butcher
-Build	Killer	Myers	Hex Ruin	Monitor & Abuse	Enduring	Bamboozle
-Build	Killer	Myers	Hex Ruin	Monitor & Abuse	Enduring	Barbecue & Chilli
-Build	Killer	Myers	Hex Ruin	Monitor & Abuse	Enduring	Brutal Strength
-Build	Killer	Myers	Hex Ruin	Monitor & Abuse	Enduring	Pop Goes The Weasel
-Build	Killer	Myers	Hex Ruin	Monitor & Abuse	Enduring	Whispers
-Build	Killer	Myers	Hex Ruin	A Nurse's Calling	Enduring	Spirit Fury
-Build	Killer	Myers	Hex Ruin	A Nurse's Calling	Enduring	Bamboozle
-Build	Killer	Myers	Hex Ruin	A Nurse's Calling	Enduring	Brutal Strength
-FavBuild	Killer	Myers	Hex Ruin	Sloppy Butcher	Enduring	Spirit Fury
-FavBuild	Killer	Myers	Hex Ruin	Sloppy Butcher	Enduring	Bamboozle
-Build	Killer	Myers	Hex Ruin	Sloppy Butcher	Enduring	Brutal Strength
-Build	Killer	Myers	Hex Ruin	Whispers	Enduring	Barbecue & Chilli
-Build	Killer	Myers	Hex Ruin	Whispers	Enduring	Spirit Fury
-Build	Killer	Myers	Hex Ruin	Whispers	Enduring	Bamboozle
-Build	Killer	Myers	Hex Ruin	Whispers	Enduring	Brutal Strength
-Build	Killer	Myers	Hex Ruin	Bamboozle	Enduring	Spirit Fury
-Build	Killer	Myers	Hex Ruin	Bamboozle	Enduring	Brutal Strength
-Build	Killer	Myers	Hex Ruin	Brutal Strength	Enduring	Spirit Fury
-Build	Killer	Myers	Pop Goes The Weasel	Monitor & Abuse	Enduring	Spirit Fury
-Build	Killer	Myers	Pop Goes The Weasel	Monitor & Abuse	Enduring	A Nurse's Calling
-Build	Killer	Myers	Pop Goes The Weasel	Monitor & Abuse	Enduring	Sloppy Butcher
-Build	Killer	Myers	Pop Goes The Weasel	Monitor & Abuse	Enduring	Bamboozle
-Build	Killer	Myers	Pop Goes The Weasel	Monitor & Abuse	Enduring	Barbecue & Chilli
-Build	Killer	Myers	Pop Goes The Weasel	Monitor & Abuse	Enduring	Brutal Strength
-Build	Killer	Myers	Pop Goes The Weasel	Monitor & Abuse	Enduring	Whispers
-Build	Killer	Myers	Pop Goes The Weasel	A Nurse's Calling	Enduring	Spirit Fury
-Build	Killer	Myers	Pop Goes The Weasel	A Nurse's Calling	Enduring	Bamboozle
-Build	Killer	Myers	Pop Goes The Weasel	A Nurse's Calling	Enduring	Brutal Strength
-Build	Killer	Myers	Pop Goes The Weasel	Sloppy Butcher	Enduring	Spirit Fury
-Build	Killer	Myers	Pop Goes The Weasel	Sloppy Butcher	Enduring	Bamboozle
-Build	Killer	Myers	Pop Goes The Weasel	Sloppy Butcher	Enduring	Brutal Strength
-Build	Killer	Myers	Pop Goes The Weasel	Whispers	Enduring	Spirit Fury
-Build	Killer	Myers	Pop Goes The Weasel	Whispers	Enduring	Bamboozle
-Build	Killer	Myers	Pop Goes The Weasel	Whispers	Enduring	Brutal Strength
-Build	Killer	Myers	Pop Goes The Weasel	Bamboozle	Enduring	Spirit Fury
-Build	Killer	Myers	Pop Goes The Weasel	Bamboozle	Enduring	Brutal Strength
-Build	Killer	Myers	Pop Goes The Weasel	Brutal Strength	Enduring	Spirit Fury
-Build	Killer	Myers	Barbecue & Chilli	A Nurse's Calling	Enduring	Spirit Fury
-Build	Killer	Myers	Barbecue & Chilli	A Nurse's Calling	Enduring	Sloppy Butcher
-Build	Killer	Myers	Barbecue & Chilli	A Nurse's Calling	Enduring	Bamboozle
-Build	Killer	Myers	Barbecue & Chilli	A Nurse's Calling	Enduring	Brutal Strength
-Build	Killer	Myers	Barbecue & Chilli	Whispers	Enduring	Spirit Fury
-Build	Killer	Myers	Barbecue & Chilli	Whispers	Enduring	Sloppy Butcher
-Build	Killer	Myers	Barbecue & Chilli	Whispers	Enduring	Bamboozle
-Build	Killer	Myers	Barbecue & Chilli	Whispers	Enduring	Brutal Strength
-Build	Killer	Myers	Barbecue & Chilli	Brutal Strength	Enduring	Spirit Fury
-Build	Killer	Myers	Barbecue & Chilli	Brutal Strength	Enduring	Bamboozle
-Build	Killer	Myers	Whispers	Brutal Strength	Enduring	Spirit Fury
-Build	Killer	Myers	Whispers	Bamboozle	Enduring	Spirit Fury
-Build	Killer	Myers	Whispers	Bamboozle	Enduring	Brutal Strength
-Troll	Killer	Myers	Hex Haunted Ground	Distressing	Make Your Choice	Hex No One Escapes Death
-Perkless	Killer	Myers	Undefined	Undefined	Undefined	Undefined
-################################# Killer - Hag #################################
-FavBuild	Killer	Hag	Hex Ruin	Monitor & Abuse	Make Your Choice	Sloppy Butcher
-FavBuild	Killer	Hag	Hex Ruin	Monitor & Abuse	Make Your Choice	Enduring
-Build	Killer	Hag	Hex Ruin	Monitor & Abuse	Make Your Choice	Hex No One Escapes Death
-Build	Killer	Hag	Hex Ruin	Monitor & Abuse	Make Your Choice	Barbecue & Chilli
-Build	Killer	Hag	Hex Ruin	Monitor & Abuse	Make Your Choice	Pop Goes The Weasel
-Build	Killer	Hag	Hex Ruin	Monitor & Abuse	Make Your Choice	Whispers
-FavBuild	Killer	Hag	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Enduring
-FavBuild	Killer	Hag	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Hex No One Escapes Death
-Build	Killer	Hag	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Barbecue & Chilli
-Build	Killer	Hag	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Whispers
-Build	Killer	Hag	Hex Ruin	Monitor & Abuse	Whispers	Barbecue & Chilli
-Build	Killer	Hag	Pop Goes The Weasel	Monitor & Abuse	Make Your Choice	Sloppy Butcher
-Build	Killer	Hag	Pop Goes The Weasel	Monitor & Abuse	Make Your Choice	Enduring
-Build	Killer	Hag	Pop Goes The Weasel	Monitor & Abuse	Make Your Choice	Hex No One Escapes Death
-Build	Killer	Hag	Pop Goes The Weasel	Monitor & Abuse	Make Your Choice	Barbecue & Chilli
-Build	Killer	Hag	Pop Goes The Weasel	Monitor & Abuse	Make Your Choice	Agitation
-Build	Killer	Hag	Pop Goes The Weasel	Monitor & Abuse	Make Your Choice	Whispers
-Build	Killer	Hag	Pop Goes The Weasel	Monitor & Abuse	Sloppy Butcher	Enduring
-Build	Killer	Hag	Pop Goes The Weasel	Monitor & Abuse	Sloppy Butcher	Hex No One Escapes Death
-Build	Killer	Hag	Pop Goes The Weasel	Monitor & Abuse	Sloppy Butcher	Barbecue & Chilli
-Build	Killer	Hag	Pop Goes The Weasel	Monitor & Abuse	Sloppy Butcher	Whispers
-Totem	Killer	Hag	Hex Ruin	Hex Devour Hope	Hex Haunted Ground	Hex Thrill Of The Hunt
-Defense	Killer	Hag	Hex Ruin	Monitor & Abuse	Pop Goes The Weasel	Surveillance
-Defense	Killer	Hag	Hex Ruin	Monitor & Abuse	Pop Goes The Weasel	Discordance
-Defense	Killer	Hag	Hex Ruin	Monitor & Abuse	Overcharge	Surveillance
-Defense	Killer	Hag	Hex Ruin	Monitor & Abuse	Overcharge	Discordance
-Dungeon	Killer	Hag	Hex Ruin	Monitor & Abuse	Make Your Choice	Agitation
-Perkless	Killer	Hag	Undefined	Undefined	Undefined	Undefined
-################################# Killer - Leatherface #################################
-FavBuild	Killer	Leatherface	Hex Ruin	Enduring	Spirit Fury	Monitor & Abuse
-FavBuild	Killer	Leatherface	Hex Ruin	Enduring	Spirit Fury	Play With Your Food
-Build	Killer	Leatherface	Hex Ruin	Enduring	Bamboozle	Monitor & Abuse
-Build	Killer	Leatherface	Hex Ruin	Enduring	Bamboozle	Play With Your Food
-Build	Killer	Leatherface	Hex Ruin	Enduring	Bamboozle	Spirit Fury
-Build	Killer	Leatherface	Hex Ruin	Enduring	Bamboozle	Brutal Strength
-Build	Killer	Leatherface	Hex Ruin	Enduring	Brutal Strength	Monitor & Abuse
-Build	Killer	Leatherface	Hex Ruin	Enduring	Brutal Strength	Play With Your Food
-Build	Killer	Leatherface	Hex Ruin	Enduring	Monitor & Abuse	Play With Your Food
-FavBuild	Killer	Leatherface	Hex Ruin	Enduring	Whispers	Barbecue & Chilli
-FavBuild	Killer	Leatherface	Hex Ruin	Enduring	Whispers	Spirit Fury
-Build	Killer	Leatherface	Hex Ruin	Enduring	Whispers	Play With Your Food
-Build	Killer	Leatherface	Hex Ruin	Enduring	Whispers	Monitor & Abuse
-Build	Killer	Leatherface	Hex Ruin	Enduring	Whispers	Sloppy Butcher
-Build	Killer	Leatherface	Hex Ruin	Enduring	Whispers	Bamboozle
-Build	Killer	Leatherface	Hex Ruin	Enduring	Whispers	Brutal Strength
-Build	Killer	Leatherface	Hex Ruin	Enduring	Barbecue & Chilli	Spirit Fury
-Build	Killer	Leatherface	Hex Ruin	Enduring	Barbecue & Chilli	Play With Your Food
-Build	Killer	Leatherface	Hex Ruin	Enduring	Barbecue & Chilli	Monitor & Abuse
-Build	Killer	Leatherface	Hex Ruin	Enduring	Barbecue & Chilli	Sloppy Butcher
-Build	Killer	Leatherface	Hex Ruin	Enduring	Barbecue & Chilli	Bamboozle
-Build	Killer	Leatherface	Hex Ruin	Enduring	Barbecue & Chilli	Brutal Strength
-Build	Killer	Leatherface	Hex Ruin	Enduring	Barbecue & Chilli	Pop Goes The Weasel
-Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Spirit Fury	Monitor & Abuse
-Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Spirit Fury	Play With Your Food
-Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Bamboozle	Monitor & Abuse
-Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Bamboozle	Play With Your Food
-Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Bamboozle	Spirit Fury
-Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Bamboozle	Brutal Strength
-Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Brutal Strength	Monitor & Abuse
-Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Brutal Strength	Play With Your Food
-Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Monitor & Abuse	Play With Your Food
-Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Whispers	Barbecue & Chilli
-Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Whispers	Spirit Fury
-Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Whispers	Play With Your Food
-Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Whispers	Monitor & Abuse
-Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Whispers	Sloppy Butcher
-Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Whispers	Bamboozle
-Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Whispers	Brutal Strength
-Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Barbecue & Chilli	Spirit Fury
-Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Barbecue & Chilli	Play With Your Food
-Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Barbecue & Chilli	Monitor & Abuse
-Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Barbecue & Chilli	Sloppy Butcher
-Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Barbecue & Chilli	Bamboozle
-Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Barbecue & Chilli	Brutal Strength
-Dungeon	Killer	Leatherface	Hex Ruin	Enduring	Agitation	Insidious
-Dungeon	Killer	Leatherface	Hex Ruin	Enduring	Agitation	Territorial Imperative
-Dungeon	Killer	Leatherface	Agitation	Insidious	Iron Grasp	Hex No One Escapes Death
-Dungeon	Killer	Leatherface	Agitation	Insidious	Iron Grasp	Mad Grit
-Dungeon	Killer	Leatherface	Agitation	Insidious	Iron Grasp	Monstrous Shrine
-Perkless	Killer	Leatherface	Undefined	Undefined	Undefined	Undefined
-################################# Killer - Doctor #################################
-FavBuild	Killer	Doctor	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Hex No One Escapes Death
-Build	Killer	Doctor	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Barbecue & Chilli
-FavBuild	Killer	Doctor	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Brutal Strength
-Build	Killer	Doctor	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Enduring
-Build	Killer	Doctor	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Pop Goes The Weasel
-Build	Killer	Doctor	Hex Ruin	Monitor & Abuse	Whispers	Barbecue & Chilli
-FavBuild	Killer	Doctor	Hex Ruin	Distressing	Sloppy Butcher	Hex No One Escapes Death
-Build	Killer	Doctor	Hex Ruin	Distressing	Sloppy Butcher	Barbecue & Chilli
-FavBuild	Killer	Doctor	Hex Ruin	Distressing	Sloppy Butcher	Brutal Strength
-Build	Killer	Doctor	Hex Ruin	Distressing	Sloppy Butcher	Enduring
-Build	Killer	Doctor	Hex Ruin	Distressing	Sloppy Butcher	Pop Goes The Weasel
-Build	Killer	Doctor	Hex Ruin	Distressing	Unnerving Presence	Hex No One Escapes Death
-Build	Killer	Doctor	Hex Ruin	Distressing	Unnerving Presence	Sloppy Butcher
-Build	Killer	Doctor	Hex Ruin	Distressing	Unnerving Presence	Barbecue & Chilli
-Build	Killer	Doctor	Hex Ruin	Distressing	Unnerving Presence	Brutal Strength
-Build	Killer	Doctor	Hex Ruin	Distressing	Unnerving Presence	Enduring
-Build	Killer	Doctor	Hex Ruin	Distressing	Unnerving Presence	Pop Goes The Weasel
-Build	Killer	Doctor	Hex Ruin	Monitor & Abuse	Make Your Choice	Sloppy Butcher
-Build	Killer	Doctor	Hex Ruin	Monitor & Abuse	Make Your Choice	Brutal Strength
-Build	Killer	Doctor	Hex Ruin	Monitor & Abuse	Make Your Choice	Enduring
-Defense	Killer	Doctor	Hex Ruin	Distressing	Unnerving Presence	Overcharge
-Defense	Killer	Doctor	Hex Ruin	Discordance	Unnerving Presence	Overcharge
-Defense	Killer	Doctor	Hex Ruin	Surveillance	Unnerving Presence	Overcharge
-Totem-Tape	Killer	Doctor	Hex Ruin	Hex Devour Hope	Hex Haunted Ground	Hex Thrill Of The Hunt
-Perkless	Killer	Doctor	Undefined	Undefined	Undefined	Undefined
-################################# Killer - Freddy #################################
-FavBuild	Killer	Freddy	Hex No One Escapes Death	Remember Me	Enduring	Hex Ruin
-FavBuild	Killer	Freddy	Hex No One Escapes Death	Remember Me	Enduring	Monitor & Abuse
-Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Enduring	Spirit Fury
-Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Enduring	Sloppy Butcher
-Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Enduring	Dying Light
-Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Enduring	Blood Warden
-Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Enduring	Barbecue & Chilli
-Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Enduring	Whispers
-Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Enduring	Pop Goes The Weasel
-Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Enduring	Bamboozle
-Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Enduring	Brutal Strength
-Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Hex Ruin	Monitor & Abuse
-Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Hex Ruin	Sloppy Butcher
-Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Hex Ruin	Blood Warden
-Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Hex Ruin	Barbecue & Chilli
-Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Hex Ruin	Whispers
-Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Hex Ruin	Pop Goes The Weasel
-Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Barbecue & Chilli	Monitor & Abuse
-Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Barbecue & Chilli	Sloppy Butcher
-Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Barbecue & Chilli	Blood Warden
-Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Barbecue & Chilli	Whispers
-FavBuild	Killer	Freddy	Hex No One Escapes Death	Barbecue & Chilli	Enduring	Hex Ruin
-FavBuild	Killer	Freddy	Hex No One Escapes Death	Barbecue & Chilli	Enduring	Monitor & Abuse
-Build	Killer	Freddy	Hex No One Escapes Death	Barbecue & Chilli	Enduring	Spirit Fury
-Build	Killer	Freddy	Hex No One Escapes Death	Barbecue & Chilli	Enduring	Sloppy Butcher
-Build	Killer	Freddy	Hex No One Escapes Death	Barbecue & Chilli	Enduring	Dying Light
-Build	Killer	Freddy	Hex No One Escapes Death	Barbecue & Chilli	Enduring	Blood Warden
-Build	Killer	Freddy	Hex No One Escapes Death	Barbecue & Chilli	Enduring	Whispers
-Build	Killer	Freddy	Hex No One Escapes Death	Barbecue & Chilli	Enduring	Pop Goes The Weasel
-Build	Killer	Freddy	Hex No One Escapes Death	Barbecue & Chilli	Enduring	Bamboozle
-Build	Killer	Freddy	Hex No One Escapes Death	Barbecue & Chilli	Enduring	Brutal Strength
-Troll	Killer	Freddy	Deerstalker	Overcharge	Unnerving Presence	Insidious
-Perkless	Killer	Freddy	Undefined	Undefined	Undefined	Undefined
-################################# Killer - Pig #################################
-FavBuild	Killer	Pig	Hex Ruin	Whispers	Enduring	Monitor & Abuse
-FavBuild	Killer	Pig	Hex Ruin	Whispers	Enduring	Barbecue & Chilli
-Build	Killer	Pig	Hex Ruin	Whispers	Enduring	Spirit Fury
-Build	Killer	Pig	Hex Ruin	Whispers	Enduring	Sloppy Butcher
-Build	Killer	Pig	Hex Ruin	Whispers	Enduring	Pop Goes The Weasel
-Build	Killer	Pig	Hex Ruin	Whispers	Enduring	Make Your Choice
-Build	Killer	Pig	Hex Ruin	Whispers	Enduring	Hex No One Escapes Death
-Build	Killer	Pig	Hex Ruin	Whispers	Enduring	Bamboozle
-Build	Killer	Pig	Hex Ruin	Whispers	Enduring	Brutal Strength
-Build	Killer	Pig	Hex Ruin	Whispers	Monitor & Abuse	A Nurse's Calling
-FavBuild	Killer	Pig	Hex Ruin	Barbecue & Chilli	Enduring	Monitor & Abuse
-Build	Killer	Pig	Hex Ruin	Barbecue & Chilli	Enduring	Spirit Fury
-Build	Killer	Pig	Hex Ruin	Barbecue & Chilli	Enduring	Sloppy Butcher
-Build	Killer	Pig	Hex Ruin	Barbecue & Chilli	Enduring	Pop Goes The Weasel
-Build	Killer	Pig	Hex Ruin	Barbecue & Chilli	Enduring	Hex No One Escapes Death
-Build	Killer	Pig	Hex Ruin	Barbecue & Chilli	Enduring	Bamboozle
-Build	Killer	Pig	Hex Ruin	Barbecue & Chilli	Enduring	Brutal Strength
-Build	Killer	Pig	Hex Ruin	Barbecue & Chilli	Monitor & Abuse	A Nurse's Calling
-Build	Killer	Pig	Hex Ruin	Barbecue & Chilli	Monitor & Abuse	Discordance
-Build	Killer	Pig	Hex Ruin	Barbecue & Chilli	Monitor & Abuse	Surveillance
-Perkless	Killer	Pig	Undefined	Undefined	Undefined	Undefined
-################################# Killer - Clown #################################
-FavBuild	Killer	Clown	Hex Ruin	Brutal Strength	Whispers	Sloppy Butcher
-FavBuild	Killer	Clown	Hex Ruin	Brutal Strength	Whispers	Barbecue & Chilli
-Build	Killer	Clown	Hex Ruin	Brutal Strength	Whispers	Pop Goes The Weasel
-Build	Killer	Clown	Hex Ruin	Brutal Strength	Whispers	Make Your Choice
-Build	Killer	Clown	Hex Ruin	Brutal Strength	Whispers	Hex No One Escapes Death
-Build	Killer	Clown	Hex Ruin	Brutal Strength	Whispers	Bamboozle
-Build	Killer	Clown	Hex Ruin	Brutal Strength	Whispers	Enduring
-Build	Killer	Clown	Hex Ruin	Brutal Strength	Barbecue & Chilli	Sloppy Butcher
-Build	Killer	Clown	Hex Ruin	Brutal Strength	Barbecue & Chilli	Pop Goes The Weasel
-Build	Killer	Clown	Hex Ruin	Brutal Strength	Barbecue & Chilli	Hex No One Escapes Death
-Build	Killer	Clown	Hex Ruin	Brutal Strength	Barbecue & Chilli	Bamboozle
-Build	Killer	Clown	Hex Ruin	Brutal Strength	Barbecue & Chilli	Enduring
-FavBuild	Killer	Clown	Hex Ruin	Sloppy Butcher	Whispers	Barbecue & Chilli
-Build	Killer	Clown	Hex Ruin	Sloppy Butcher	Whispers	Pop Goes The Weasel
-Build	Killer	Clown	Hex Ruin	Sloppy Butcher	Whispers	Hex No One Escapes Death
-Build	Killer	Clown	Hex Ruin	Enduring	Whispers	Barbecue & Chilli
-Build	Killer	Clown	Hex Ruin	Enduring	Whispers	Pop Goes The Weasel
-Build	Killer	Clown	Hex Ruin	Enduring	Whispers	Hex No One Escapes Death
-Perkless	Killer	Clown	Undefined	Undefined	Undefined	Undefined
-################################# Killer - Spirit Rin #################################
-FavBuild	Killer	Spirit Rin	Hex Ruin	Whispers	A Nurse's Calling	Barbecue & Chilli
-Build	Killer	Spirit Rin	Hex Ruin	Whispers	A Nurse's Calling	Make Your Choice
-FavBuild	Killer	Spirit Rin	Hex Ruin	Whispers	A Nurse's Calling	Sloppy Butcher
-Build	Killer	Spirit Rin	Hex Ruin	Whispers	A Nurse's Calling	Stridor
-Build	Killer	Spirit Rin	Hex Ruin	Whispers	A Nurse's Calling	Predator
-Build	Killer	Spirit Rin	Hex Ruin	Whispers	A Nurse's Calling	Pop Goes The Weasel
-Build	Killer	Spirit Rin	Hex Ruin	Whispers	A Nurse's Calling	Spies From The Shadows
-Build	Killer	Spirit Rin	Hex Ruin	Whispers	A Nurse's Calling	Enduring
-Build	Killer	Spirit Rin	Hex Ruin	Whispers	A Nurse's Calling	Hex No One Escapes Death
-FavBuild	Killer	Spirit Rin	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Monitor & Abuse
-FavBuild	Killer	Spirit Rin	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Sloppy Butcher
-Build	Killer	Spirit Rin	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Stridor
-Build	Killer	Spirit Rin	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Predator
-Build	Killer	Spirit Rin	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Pop Goes The Weasel
-Build	Killer	Spirit Rin	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Spies From The Shadows
-Build	Killer	Spirit Rin	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Surveillance
-Build	Killer	Spirit Rin	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Enduring
-Build	Killer	Spirit Rin	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Hex No One Escapes Death
-Build	Killer	Spirit Rin	Pop Goes The Weasel	Whispers	A Nurse's Calling	Barbecue & Chilli
-Build	Killer	Spirit Rin	Pop Goes The Weasel	Whispers	A Nurse's Calling	Make Your Choice
-Build	Killer	Spirit Rin	Pop Goes The Weasel	Whispers	A Nurse's Calling	Sloppy Butcher
-Build	Killer	Spirit Rin	Pop Goes The Weasel	Whispers	A Nurse's Calling	Stridor
-Build	Killer	Spirit Rin	Pop Goes The Weasel	Whispers	A Nurse's Calling	Predator
-Build	Killer	Spirit Rin	Pop Goes The Weasel	Whispers	A Nurse's Calling	Spies From The Shadows
-Build	Killer	Spirit Rin	Pop Goes The Weasel	Whispers	A Nurse's Calling	Surveillance
-Build	Killer	Spirit Rin	Pop Goes The Weasel	Whispers	A Nurse's Calling	Hex No One Escapes Death
-Build	Killer	Spirit Rin	Pop Goes The Weasel	Barbecue & Chilli	A Nurse's Calling	Sloppy Butcher
-Build	Killer	Spirit Rin	Pop Goes The Weasel	Barbecue & Chilli	A Nurse's Calling	Stridor
-Build	Killer	Spirit Rin	Pop Goes The Weasel	Barbecue & Chilli	A Nurse's Calling	Predator
-Build	Killer	Spirit Rin	Pop Goes The Weasel	Barbecue & Chilli	A Nurse's Calling	Spies From The Shadows
-Build	Killer	Spirit Rin	Pop Goes The Weasel	Barbecue & Chilli	A Nurse's Calling	Surveillance
-Build	Killer	Spirit Rin	Pop Goes The Weasel	Barbecue & Chilli	A Nurse's Calling	Enduring
-Build	Killer	Spirit Rin	Pop Goes The Weasel	Barbecue & Chilli	A Nurse's Calling	Hex No One Escapes Death
-Totem-Addon	Killer	Spirit Rin	Hex Ruin	Hex Devour Hope	Hex Haunted Ground	Hex Thrill Of The Hunt
-Build-Addon	Killer	Spirit Rin	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Discordance
-Perkless	Killer	Spirit Rin	Undefined	Undefined	Undefined	Undefined
-################################# Killer - Legion #################################
-FavBuild	Killer	Legion	Hex Ruin	Monitor & Abuse	Thanatophobia	Bloodhound
-Build	Killer	Legion	Hex Ruin	Monitor & Abuse	Thanatophobia	Sloppy Butcher
-Build	Killer	Legion	Hex Ruin	Monitor & Abuse	Thanatophobia	Stridor
-FavBuild	Killer	Legion	Hex Ruin	Monitor & Abuse	Thanatophobia	Barbecue & Chilli
-Build	Killer	Legion	Hex Ruin	Monitor & Abuse	Thanatophobia	Whispers
-FavBuild	Killer	Legion	Hex Ruin	Sloppy Butcher	Thanatophobia	Bloodhound
-Build	Killer	Legion	Hex Ruin	Sloppy Butcher	Thanatophobia	Stridor
-Build	Killer	Legion	Hex Ruin	Sloppy Butcher	Thanatophobia	Barbecue & Chilli
-Build	Killer	Legion	Hex Ruin	Sloppy Butcher	Thanatophobia	Whispers
-Build	Killer	Legion	Hex Ruin	Whispers	Thanatophobia	Barbecue & Chilli
-Perkless	Killer	Legion	Undefined	Undefined	Undefined	Undefined
-################################# Killer - Perkless #################################
-Perkless	Killer	Undefined	Undefined	Undefined	Undefined	Undefined
 ################################# Survivors #################################
 Build	Survivor	Undefined	Adrenaline	Aftercare	Alert	Dead Hard
 Build	Survivor	Undefined	Adrenaline	Aftercare	Alert	Decisive Strike
@@ -1313,4 +841,476 @@ SaboSWF	Survivor	Jake	No Mither	Breakdown	Empathy	Resilience
 NoMither	Survivor	Bill Overbeck	No Mither	Dead Hard	Tenacity	Unbreakable
 NoMither	Survivor	Bill Overbeck	No Mither	Dead Hard	Tenacity	Resilience
 NoMither	Survivor	Bill Overbeck	No Mither	Dead Hard	Tenacity	Spine Chill
+################################# Killer - Perkless #################################
+Perkless	Killer	Undefined	Undefined	Undefined	Undefined	Undefined
+################################# Killer - Trapper #################################
+FavBuild	Killer	Trapper	Hex Ruin	Whispers	Enduring	Spirit Fury
+FavBuild	Killer	Trapper	Hex Ruin	Whispers	Enduring	Hex No One Escapes Death
+FavBuild	Killer	Trapper	Hex Ruin	Whispers	Enduring	Sloppy Butcher
+Build	Killer	Trapper	Hex Ruin	Whispers	Enduring	Barbecue & Chilli
+Build	Killer	Trapper	Hex Ruin	Whispers	Enduring	Agitation
+Build	Killer	Trapper	Hex Ruin	Whispers	Enduring	Bamboozle
+Build	Killer	Trapper	Hex Ruin	Whispers	Enduring	Brutal Strength
+Build	Killer	Trapper	Hex Ruin	Whispers	Enduring	Make Your Choice
+Build	Killer	Trapper	Hex Ruin	Whispers	Enduring	Pop Goes The Weasel
+Build	Killer	Trapper	Hex Ruin	Barbecue & Chilli	Enduring	Spirit Fury
+Build	Killer	Trapper	Hex Ruin	Barbecue & Chilli	Enduring	Hex No One Escapes Death
+Build	Killer	Trapper	Hex Ruin	Barbecue & Chilli	Enduring	Sloppy Butcher
+Build	Killer	Trapper	Hex Ruin	Barbecue & Chilli	Enduring	Bamboozle
+Build	Killer	Trapper	Hex Ruin	Barbecue & Chilli	Enduring	Brutal Strength
+Build	Killer	Trapper	Hex Ruin	Barbecue & Chilli	Enduring	Pop Goes The Weasel
+Build	Killer	Trapper	Hex Ruin	Brutal Strength	Enduring	Spirit Fury
+Build	Killer	Trapper	Hex Ruin	Brutal Strength	Enduring	Hex No One Escapes Death
+Build	Killer	Trapper	Hex Ruin	Brutal Strength	Enduring	Sloppy Butcher
+Build	Killer	Trapper	Hex Ruin	Spirit Fury	Enduring	Hex No One Escapes Death
+Build	Killer	Trapper	Hex Ruin	Spirit Fury	Enduring	Sloppy Butcher
+Build	Killer	Trapper	Hex Ruin	Bamboozle	Enduring	Hex No One Escapes Death
+Build	Killer	Trapper	Hex Ruin	Bamboozle	Enduring	Brutal Strength
+Build	Killer	Trapper	Hex Ruin	Bamboozle	Enduring	Sloppy Butcher
+Build	Killer	Trapper	Hex Ruin	Remember Me	Enduring	Hex No One Escapes Death
+Build	Killer	Trapper	Brutal Strength	Spirit Fury	Enduring	Hex No One Escapes Death
+Build	Killer	Trapper	Brutal Strength	Bamboozle	Enduring	Hex No One Escapes Death
+Build	Killer	Trapper	Hex Devour Hope	Whispers	Enduring	Hex No One Escapes Death
+Build	Killer	Trapper	Hex Devour Hope	Barbecue & Chilli	Enduring	Hex No One Escapes Death
+Build	Killer	Trapper	Hex Devour Hope	Spirit Fury	Enduring	Hex No One Escapes Death
+Build	Killer	Trapper	Hex Devour Hope	Brutal Strength	Enduring	Hex No One Escapes Death
+Build	Killer	Trapper	Hex Devour Hope	Bamboozle	Enduring	Hex No One Escapes Death
+Build	Killer	Trapper	Hex Devour Hope	Hex Haunted Ground	Enduring	Hex No One Escapes Death
+Perkless	Killer	Trapper	Undefined	Undefined	Undefined	Undefined
+################################# Killer - Wraith #################################
+FavBuild	Killer	Wraith	Hex Ruin	Enduring	Hex No One Escapes Death	Barbecue & Chilli
+FavBuild	Killer	Wraith	Hex Ruin	Enduring	Hex No One Escapes Death	Spirit Fury
+FavBuild	Killer	Wraith	Hex Ruin	Enduring	Hex No One Escapes Death	Sloppy Butcher
+Build	Killer	Wraith	Hex Ruin	Enduring	Hex No One Escapes Death	A Nurse's Calling
+Build	Killer	Wraith	Hex Ruin	Enduring	Hex No One Escapes Death	Remember Me
+Build	Killer	Wraith	Hex Ruin	Enduring	Hex No One Escapes Death	Make Your Choice
+Build	Killer	Wraith	Hex Ruin	Enduring	Hex No One Escapes Death	Bamboozle
+Build	Killer	Wraith	Hex Ruin	Enduring	Hex No One Escapes Death	Brutal Strength
+Build	Killer	Wraith	Hex Ruin	Enduring	Hex No One Escapes Death	Whispers
+FavBuild	Killer	Wraith	Hex Ruin	Enduring	Spirit Fury	Sloppy Butcher
+FavBuild	Killer	Wraith	Hex Ruin	Enduring	Spirit Fury	Barbecue & Chilli
+Build	Killer	Wraith	Hex Ruin	Enduring	Spirit Fury	Pop Goes The Weasel
+Build	Killer	Wraith	Hex Ruin	Enduring	Spirit Fury	A Nurse's Calling
+Build	Killer	Wraith	Hex Ruin	Enduring	Spirit Fury	Make Your Choice
+Build	Killer	Wraith	Hex Ruin	Enduring	Spirit Fury	Bamboozle
+Build	Killer	Wraith	Hex Ruin	Enduring	Spirit Fury	Brutal Strength
+Build	Killer	Wraith	Hex Ruin	Enduring	Whispers	Barbecue & Chilli
+Build	Killer	Wraith	Hex Ruin	Enduring	Sloppy Butcher	Barbecue & Chilli
+Build	Killer	Wraith	Hex Ruin	Enduring	Sloppy Butcher	Pop Goes The Weasel
+Build	Killer	Wraith	Hex Ruin	Enduring	Sloppy Butcher	A Nurse's Calling
+Build	Killer	Wraith	Hex Ruin	Enduring	Sloppy Butcher	Make Your Choice
+Build	Killer	Wraith	Hex Ruin	Enduring	Sloppy Butcher	Bamboozle
+Build	Killer	Wraith	Hex Ruin	Enduring	Brutal Strength	Sloppy Butcher
+Build	Killer	Wraith	Hex Ruin	Enduring	Brutal Strength	Barbecue & Chilli
+Build	Killer	Wraith	Hex Ruin	Enduring	Brutal Strength	Pop Goes The Weasel
+Build	Killer	Wraith	Hex Ruin	Enduring	Brutal Strength	A Nurse's Calling
+Build	Killer	Wraith	Hex Ruin	Enduring	Brutal Strength	Make Your Choice
+Build	Killer	Wraith	Hex Ruin	Enduring	Bamboozle	Barbecue & Chilli
+Build	Killer	Wraith	Hex Ruin	Enduring	Bamboozle	Brutal Strength
+Build	Killer	Wraith	Hex Ruin	Enduring	Bamboozle	Pop Goes The Weasel
+Build	Killer	Wraith	Hex Ruin	Enduring	Bamboozle	A Nurse's Calling
+Build	Killer	Wraith	Hex Ruin	Enduring	Bamboozle	Make Your Choice
+Perkless	Killer	Wraith	Undefined	Undefined	Undefined	Undefined
+################################# Killer - Hillbilly #################################
+FavBuild	Killer	Hillbilly	Whispers	Barbecue & Chilli	Enduring	Spirit Fury
+Build	Killer	Hillbilly	Whispers	Barbecue & Chilli	Enduring	Sloppy Butcher
+Build	Killer	Hillbilly	Whispers	Barbecue & Chilli	Enduring	Bamboozle
+Build	Killer	Hillbilly	Whispers	Barbecue & Chilli	Enduring	A Nurse's Calling
+Build	Killer	Hillbilly	Whispers	Barbecue & Chilli	Enduring	Brutal Strength
+Build	Killer	Hillbilly	Whispers	Barbecue & Chilli	Enduring	Pop Goes The Weasel
+Build	Killer	Hillbilly	Whispers	Barbecue & Chilli	Enduring	Discordance
+FavBuild	Killer	Hillbilly	Hex Ruin	Barbecue & Chilli	Enduring	Spirit Fury
+FavBuild	Killer	Hillbilly	Hex Ruin	Barbecue & Chilli	Enduring	Whispers
+Build	Killer	Hillbilly	Hex Ruin	Barbecue & Chilli	Enduring	Sloppy Butcher
+Build	Killer	Hillbilly	Hex Ruin	Barbecue & Chilli	Enduring	Bamboozle
+Build	Killer	Hillbilly	Hex Ruin	Barbecue & Chilli	Enduring	A Nurse's Calling
+Build	Killer	Hillbilly	Hex Ruin	Barbecue & Chilli	Enduring	Hex Thrill Of The Hunt
+Build	Killer	Hillbilly	Hex Ruin	Barbecue & Chilli	Enduring	Brutal Strength
+Build	Killer	Hillbilly	Hex Ruin	Barbecue & Chilli	Enduring	Pop Goes The Weasel
+Build	Killer	Hillbilly	Pop Goes The Weasel	Barbecue & Chilli	Enduring	Spirit Fury
+Build	Killer	Hillbilly	Pop Goes The Weasel	Barbecue & Chilli	Enduring	Sloppy Butcher
+Build	Killer	Hillbilly	Pop Goes The Weasel	Barbecue & Chilli	Enduring	Bamboozle
+Build	Killer	Hillbilly	Pop Goes The Weasel	Barbecue & Chilli	Enduring	A Nurse's Calling
+Build	Killer	Hillbilly	Pop Goes The Weasel	Barbecue & Chilli	Enduring	Hex Thrill Of The Hunt
+Build	Killer	Hillbilly	Pop Goes The Weasel	Barbecue & Chilli	Enduring	Brutal Strength
+Build	Killer	Hillbilly	Hex Devour Hope	Barbecue & Chilli	Enduring	Spirit Fury
+Build	Killer	Hillbilly	Hex Devour Hope	Barbecue & Chilli	Enduring	Whispers
+Build	Killer	Hillbilly	Hex Devour Hope	Barbecue & Chilli	Enduring	Sloppy Butcher
+Build	Killer	Hillbilly	Hex Devour Hope	Barbecue & Chilli	Enduring	Bamboozle
+Build	Killer	Hillbilly	Hex Devour Hope	Barbecue & Chilli	Enduring	A Nurse's Calling
+Build	Killer	Hillbilly	Hex Devour Hope	Barbecue & Chilli	Enduring	Hex Thrill Of The Hunt
+Build	Killer	Hillbilly	Hex Devour Hope	Barbecue & Chilli	Enduring	Brutal Strength
+Build	Killer	Hillbilly	Hex Devour Hope	Barbecue & Chilli	Enduring	Pop Goes The Weasel
+Totem	Killer	Hillbilly	Hex Ruin	Hex Devour Hope	Hex Haunted Ground	Hex Thrill Of The Hunt
+Troll	Killer	Hillbilly	Hex Devour Hope	Hex Haunted Ground	Make Your Choice	Hex No One Escapes Death
+OldBuild	Killer	Hillbilly	Whispers	Deerstalker	Enduring	A Nurse's Calling
+OldBuild	Killer	Hillbilly	Whispers	Deerstalker	Enduring	Brutal Strength
+Perkless	Killer	Hillbilly	Undefined	Undefined	Undefined	Undefined
+################################# Killer - Nurse Sally #################################
+FavBuild	Killer	Nurse Sally	Barbecue & Chilli	Whispers	A Nurse's Calling	Shadowborn
+FavBuild	Killer	Nurse Sally	Hex Ruin	Whispers	A Nurse's Calling	Shadowborn
+FavBuild	Killer	Nurse Sally	Hex Ruin	Whispers	A Nurse's Calling	Barbecue & Chilli
+Build	Killer	Nurse Sally	Hex Ruin	Whispers	A Nurse's Calling	Monitor & Abuse
+Build	Killer	Nurse Sally	Hex Ruin	Whispers	A Nurse's Calling	Make Your Choice
+Build	Killer	Nurse Sally	Hex Ruin	Whispers	A Nurse's Calling	Sloppy Butcher
+Build	Killer	Nurse Sally	Hex Ruin	Whispers	A Nurse's Calling	Hex No One Escapes Death
+Build	Killer	Nurse Sally	Hex Ruin	Whispers	A Nurse's Calling	Pop Goes The Weasel
+Build	Killer	Nurse Sally	Hex Ruin	Whispers	A Nurse's Calling	Stridor
+Build	Killer	Nurse Sally	Hex Ruin	Whispers	A Nurse's Calling	Discordance
+Build	Killer	Nurse Sally	Hex Ruin	Whispers	A Nurse's Calling	Spies From The Shadows
+FavBuild	Killer	Nurse Sally	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Shadowborn
+Build	Killer	Nurse Sally	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Monitor & Abuse
+Build	Killer	Nurse Sally	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Make Your Choice
+Build	Killer	Nurse Sally	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Sloppy Butcher
+Build	Killer	Nurse Sally	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Hex No One Escapes Death
+Build	Killer	Nurse Sally	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Pop Goes The Weasel
+Build	Killer	Nurse Sally	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Stridor
+Build	Killer	Nurse Sally	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Discordance
+Build	Killer	Nurse Sally	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Spies From The Shadows
+Build	Killer	Nurse Sally	Hex Devour Hope	Whispers	A Nurse's Calling	Shadowborn
+Build	Killer	Nurse Sally	Hex Devour Hope	Whispers	A Nurse's Calling	Barbecue & Chilli
+Build	Killer	Nurse Sally	Hex Devour Hope	Whispers	A Nurse's Calling	Monitor & Abuse
+Build	Killer	Nurse Sally	Hex Devour Hope	Whispers	A Nurse's Calling	Sloppy Butcher
+Build	Killer	Nurse Sally	Hex Devour Hope	Whispers	A Nurse's Calling	Pop Goes The Weasel
+Build	Killer	Nurse Sally	Hex Devour Hope	Barbecue & Chilli	A Nurse's Calling	Shadowborn
+Build	Killer	Nurse Sally	Hex Devour Hope	Barbecue & Chilli	A Nurse's Calling	Monitor & Abuse
+Build	Killer	Nurse Sally	Hex Devour Hope	Barbecue & Chilli	A Nurse's Calling	Sloppy Butcher
+Build	Killer	Nurse Sally	Hex Devour Hope	Barbecue & Chilli	A Nurse's Calling	Pop Goes The Weasel
+Build	Killer	Nurse Sally	Pop Goes The Weasel	Whispers	A Nurse's Calling	Shadowborn
+Build	Killer	Nurse Sally	Pop Goes The Weasel	Whispers	A Nurse's Calling	Barbecue & Chilli
+Build	Killer	Nurse Sally	Pop Goes The Weasel	Whispers	A Nurse's Calling	Monitor & Abuse
+Build	Killer	Nurse Sally	Pop Goes The Weasel	Whispers	A Nurse's Calling	Make Your Choice
+Build	Killer	Nurse Sally	Pop Goes The Weasel	Whispers	A Nurse's Calling	Sloppy Butcher
+Build	Killer	Nurse Sally	Pop Goes The Weasel	Whispers	A Nurse's Calling	Hex No One Escapes Death
+Build	Killer	Nurse Sally	Pop Goes The Weasel	Whispers	A Nurse's Calling	Stridor
+Build	Killer	Nurse Sally	Pop Goes The Weasel	Whispers	A Nurse's Calling	Discordance
+Totem	Killer	Nurse Sally	Hex Ruin	Hex Devour Hope	Hex Haunted Ground	Hex Thrill Of The Hunt
+Troll	Killer	Nurse Sally	Enduring	Spirit Fury	Brutal Strength	Bamboozle
+Troll	Killer	Nurse Sally	Hex Ruin	Spirit Fury	Brutal Strength	Bamboozle
+OldBuild	Killer	Nurse Sally	Whispers	A Nurse's Calling	Shadowborn	Deerstalker
+OldBuild	Killer	Nurse Sally	Whispers	A Nurse's Calling	Shadowborn	Hex No One Escapes Death
+Perkless	Killer	Nurse Sally	Undefined	Undefined	Undefined	Undefined
+################################# Killer - Huntress #################################
+FavBuild	Killer	Huntress	Hex Ruin	Whispers	Barbecue & Chilli	A Nurse's Calling
+FavBuild	Killer	Huntress	Hex Ruin	Whispers	Barbecue & Chilli	Shadowborn
+Build	Killer	Huntress	Hex Ruin	Whispers	Barbecue & Chilli	Sloppy Butcher
+Build	Killer	Huntress	Hex Ruin	Whispers	Barbecue & Chilli	Enduring
+Build	Killer	Huntress	Hex Ruin	Whispers	Barbecue & Chilli	Pop Goes The Weasel
+Build	Killer	Huntress	Hex Ruin	Whispers	Barbecue & Chilli	Iron Maiden
+Build	Killer	Huntress	Hex Ruin	Whispers	Barbecue & Chilli	Bitter Murmur
+Build	Killer	Huntress	Hex Ruin	Whispers	Barbecue & Chilli	Spies From The Shadows
+Build	Killer	Huntress	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Sloppy Butcher
+Build	Killer	Huntress	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Shadowborn
+Build	Killer	Huntress	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Enduring
+Build	Killer	Huntress	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Pop Goes The Weasel
+Build	Killer	Huntress	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Iron Maiden
+Build	Killer	Huntress	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Bitter Murmur
+Build	Killer	Huntress	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Spies From The Shadows
+Build	Killer	Huntress	Hex Ruin	Deerstalker	A Nurse's Calling	Sloppy Butcher
+Build	Killer	Huntress	Hex Ruin	Deerstalker	A Nurse's Calling	Enduring
+Build	Killer	Huntress	Pop Goes The Weasel	Whispers	Barbecue & Chilli	A Nurse's Calling
+Build	Killer	Huntress	Pop Goes The Weasel	Whispers	Barbecue & Chilli	Sloppy Butcher
+Build	Killer	Huntress	Pop Goes The Weasel	Whispers	Barbecue & Chilli	Shadowborn
+Build	Killer	Huntress	Pop Goes The Weasel	Whispers	Barbecue & Chilli	Enduring
+Build	Killer	Huntress	Pop Goes The Weasel	Whispers	Barbecue & Chilli	Iron Maiden
+Build	Killer	Huntress	Pop Goes The Weasel	Whispers	Barbecue & Chilli	Bitter Murmur
+Build	Killer	Huntress	Pop Goes The Weasel	Whispers	Barbecue & Chilli	Spies From The Shadows
+Build	Killer	Huntress	Pop Goes The Weasel	Barbecue & Chilli	A Nurse's Calling	Sloppy Butcher
+Build	Killer	Huntress	Pop Goes The Weasel	Barbecue & Chilli	A Nurse's Calling	Shadowborn
+Build	Killer	Huntress	Pop Goes The Weasel	Barbecue & Chilli	A Nurse's Calling	Enduring
+Build	Killer	Huntress	Pop Goes The Weasel	Barbecue & Chilli	A Nurse's Calling	Iron Maiden
+Build	Killer	Huntress	Pop Goes The Weasel	Barbecue & Chilli	A Nurse's Calling	Bitter Murmur
+Build	Killer	Huntress	Pop Goes The Weasel	Barbecue & Chilli	A Nurse's Calling	Spies From The Shadows
+Build	Killer	Huntress	Shadowborn	Whispers	Barbecue & Chilli	A Nurse's Calling
+Build	Killer	Huntress	Enduring	Whispers	Barbecue & Chilli	A Nurse's Calling
+Build	Killer	Huntress	Sloppy Butcher	Whispers	Barbecue & Chilli	A Nurse's Calling
+Perkless	Killer	Huntress	Undefined	Undefined	Undefined	Undefined
+################################# Killer - Myers #################################
+FavBuild	Killer	Myers	Hex Ruin	Monitor & Abuse	Enduring	Spirit Fury
+FavBuild	Killer	Myers	Hex Ruin	Monitor & Abuse	Enduring	A Nurse's Calling
+Build	Killer	Myers	Hex Ruin	Monitor & Abuse	Enduring	Sloppy Butcher
+Build	Killer	Myers	Hex Ruin	Monitor & Abuse	Enduring	Bamboozle
+Build	Killer	Myers	Hex Ruin	Monitor & Abuse	Enduring	Barbecue & Chilli
+Build	Killer	Myers	Hex Ruin	Monitor & Abuse	Enduring	Brutal Strength
+Build	Killer	Myers	Hex Ruin	Monitor & Abuse	Enduring	Pop Goes The Weasel
+Build	Killer	Myers	Hex Ruin	Monitor & Abuse	Enduring	Whispers
+Build	Killer	Myers	Hex Ruin	A Nurse's Calling	Enduring	Spirit Fury
+Build	Killer	Myers	Hex Ruin	A Nurse's Calling	Enduring	Bamboozle
+Build	Killer	Myers	Hex Ruin	A Nurse's Calling	Enduring	Brutal Strength
+FavBuild	Killer	Myers	Hex Ruin	Sloppy Butcher	Enduring	Spirit Fury
+FavBuild	Killer	Myers	Hex Ruin	Sloppy Butcher	Enduring	Bamboozle
+Build	Killer	Myers	Hex Ruin	Sloppy Butcher	Enduring	Brutal Strength
+Build	Killer	Myers	Hex Ruin	Whispers	Enduring	Barbecue & Chilli
+Build	Killer	Myers	Hex Ruin	Whispers	Enduring	Spirit Fury
+Build	Killer	Myers	Hex Ruin	Whispers	Enduring	Bamboozle
+Build	Killer	Myers	Hex Ruin	Whispers	Enduring	Brutal Strength
+Build	Killer	Myers	Hex Ruin	Bamboozle	Enduring	Spirit Fury
+Build	Killer	Myers	Hex Ruin	Bamboozle	Enduring	Brutal Strength
+Build	Killer	Myers	Hex Ruin	Brutal Strength	Enduring	Spirit Fury
+Build	Killer	Myers	Pop Goes The Weasel	Monitor & Abuse	Enduring	Spirit Fury
+Build	Killer	Myers	Pop Goes The Weasel	Monitor & Abuse	Enduring	A Nurse's Calling
+Build	Killer	Myers	Pop Goes The Weasel	Monitor & Abuse	Enduring	Sloppy Butcher
+Build	Killer	Myers	Pop Goes The Weasel	Monitor & Abuse	Enduring	Bamboozle
+Build	Killer	Myers	Pop Goes The Weasel	Monitor & Abuse	Enduring	Barbecue & Chilli
+Build	Killer	Myers	Pop Goes The Weasel	Monitor & Abuse	Enduring	Brutal Strength
+Build	Killer	Myers	Pop Goes The Weasel	Monitor & Abuse	Enduring	Whispers
+Build	Killer	Myers	Pop Goes The Weasel	A Nurse's Calling	Enduring	Spirit Fury
+Build	Killer	Myers	Pop Goes The Weasel	A Nurse's Calling	Enduring	Bamboozle
+Build	Killer	Myers	Pop Goes The Weasel	A Nurse's Calling	Enduring	Brutal Strength
+Build	Killer	Myers	Pop Goes The Weasel	Sloppy Butcher	Enduring	Spirit Fury
+Build	Killer	Myers	Pop Goes The Weasel	Sloppy Butcher	Enduring	Bamboozle
+Build	Killer	Myers	Pop Goes The Weasel	Sloppy Butcher	Enduring	Brutal Strength
+Build	Killer	Myers	Pop Goes The Weasel	Whispers	Enduring	Spirit Fury
+Build	Killer	Myers	Pop Goes The Weasel	Whispers	Enduring	Bamboozle
+Build	Killer	Myers	Pop Goes The Weasel	Whispers	Enduring	Brutal Strength
+Build	Killer	Myers	Pop Goes The Weasel	Bamboozle	Enduring	Spirit Fury
+Build	Killer	Myers	Pop Goes The Weasel	Bamboozle	Enduring	Brutal Strength
+Build	Killer	Myers	Pop Goes The Weasel	Brutal Strength	Enduring	Spirit Fury
+Build	Killer	Myers	Barbecue & Chilli	A Nurse's Calling	Enduring	Spirit Fury
+Build	Killer	Myers	Barbecue & Chilli	A Nurse's Calling	Enduring	Sloppy Butcher
+Build	Killer	Myers	Barbecue & Chilli	A Nurse's Calling	Enduring	Bamboozle
+Build	Killer	Myers	Barbecue & Chilli	A Nurse's Calling	Enduring	Brutal Strength
+Build	Killer	Myers	Barbecue & Chilli	Whispers	Enduring	Spirit Fury
+Build	Killer	Myers	Barbecue & Chilli	Whispers	Enduring	Sloppy Butcher
+Build	Killer	Myers	Barbecue & Chilli	Whispers	Enduring	Bamboozle
+Build	Killer	Myers	Barbecue & Chilli	Whispers	Enduring	Brutal Strength
+Build	Killer	Myers	Barbecue & Chilli	Brutal Strength	Enduring	Spirit Fury
+Build	Killer	Myers	Barbecue & Chilli	Brutal Strength	Enduring	Bamboozle
+Build	Killer	Myers	Whispers	Brutal Strength	Enduring	Spirit Fury
+Build	Killer	Myers	Whispers	Bamboozle	Enduring	Spirit Fury
+Build	Killer	Myers	Whispers	Bamboozle	Enduring	Brutal Strength
+Troll	Killer	Myers	Hex Haunted Ground	Distressing	Make Your Choice	Hex No One Escapes Death
+Perkless	Killer	Myers	Undefined	Undefined	Undefined	Undefined
+################################# Killer - Hag #################################
+FavBuild	Killer	Hag	Hex Ruin	Monitor & Abuse	Make Your Choice	Sloppy Butcher
+FavBuild	Killer	Hag	Hex Ruin	Monitor & Abuse	Make Your Choice	Enduring
+Build	Killer	Hag	Hex Ruin	Monitor & Abuse	Make Your Choice	Hex No One Escapes Death
+Build	Killer	Hag	Hex Ruin	Monitor & Abuse	Make Your Choice	Barbecue & Chilli
+Build	Killer	Hag	Hex Ruin	Monitor & Abuse	Make Your Choice	Pop Goes The Weasel
+Build	Killer	Hag	Hex Ruin	Monitor & Abuse	Make Your Choice	Whispers
+FavBuild	Killer	Hag	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Enduring
+FavBuild	Killer	Hag	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Hex No One Escapes Death
+Build	Killer	Hag	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Barbecue & Chilli
+Build	Killer	Hag	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Whispers
+Build	Killer	Hag	Hex Ruin	Monitor & Abuse	Whispers	Barbecue & Chilli
+Build	Killer	Hag	Pop Goes The Weasel	Monitor & Abuse	Make Your Choice	Sloppy Butcher
+Build	Killer	Hag	Pop Goes The Weasel	Monitor & Abuse	Make Your Choice	Enduring
+Build	Killer	Hag	Pop Goes The Weasel	Monitor & Abuse	Make Your Choice	Hex No One Escapes Death
+Build	Killer	Hag	Pop Goes The Weasel	Monitor & Abuse	Make Your Choice	Barbecue & Chilli
+Build	Killer	Hag	Pop Goes The Weasel	Monitor & Abuse	Make Your Choice	Agitation
+Build	Killer	Hag	Pop Goes The Weasel	Monitor & Abuse	Make Your Choice	Whispers
+Build	Killer	Hag	Pop Goes The Weasel	Monitor & Abuse	Sloppy Butcher	Enduring
+Build	Killer	Hag	Pop Goes The Weasel	Monitor & Abuse	Sloppy Butcher	Hex No One Escapes Death
+Build	Killer	Hag	Pop Goes The Weasel	Monitor & Abuse	Sloppy Butcher	Barbecue & Chilli
+Build	Killer	Hag	Pop Goes The Weasel	Monitor & Abuse	Sloppy Butcher	Whispers
+Totem	Killer	Hag	Hex Ruin	Hex Devour Hope	Hex Haunted Ground	Hex Thrill Of The Hunt
+Defense	Killer	Hag	Hex Ruin	Monitor & Abuse	Pop Goes The Weasel	Surveillance
+Defense	Killer	Hag	Hex Ruin	Monitor & Abuse	Pop Goes The Weasel	Discordance
+Defense	Killer	Hag	Hex Ruin	Monitor & Abuse	Overcharge	Surveillance
+Defense	Killer	Hag	Hex Ruin	Monitor & Abuse	Overcharge	Discordance
+Dungeon	Killer	Hag	Hex Ruin	Monitor & Abuse	Make Your Choice	Agitation
+Perkless	Killer	Hag	Undefined	Undefined	Undefined	Undefined
+################################# Killer - Leatherface #################################
+FavBuild	Killer	Leatherface	Hex Ruin	Enduring	Spirit Fury	Monitor & Abuse
+FavBuild	Killer	Leatherface	Hex Ruin	Enduring	Spirit Fury	Play With Your Food
+Build	Killer	Leatherface	Hex Ruin	Enduring	Bamboozle	Monitor & Abuse
+Build	Killer	Leatherface	Hex Ruin	Enduring	Bamboozle	Play With Your Food
+Build	Killer	Leatherface	Hex Ruin	Enduring	Bamboozle	Spirit Fury
+Build	Killer	Leatherface	Hex Ruin	Enduring	Bamboozle	Brutal Strength
+Build	Killer	Leatherface	Hex Ruin	Enduring	Brutal Strength	Monitor & Abuse
+Build	Killer	Leatherface	Hex Ruin	Enduring	Brutal Strength	Play With Your Food
+Build	Killer	Leatherface	Hex Ruin	Enduring	Monitor & Abuse	Play With Your Food
+FavBuild	Killer	Leatherface	Hex Ruin	Enduring	Whispers	Barbecue & Chilli
+FavBuild	Killer	Leatherface	Hex Ruin	Enduring	Whispers	Spirit Fury
+Build	Killer	Leatherface	Hex Ruin	Enduring	Whispers	Play With Your Food
+Build	Killer	Leatherface	Hex Ruin	Enduring	Whispers	Monitor & Abuse
+Build	Killer	Leatherface	Hex Ruin	Enduring	Whispers	Sloppy Butcher
+Build	Killer	Leatherface	Hex Ruin	Enduring	Whispers	Bamboozle
+Build	Killer	Leatherface	Hex Ruin	Enduring	Whispers	Brutal Strength
+Build	Killer	Leatherface	Hex Ruin	Enduring	Barbecue & Chilli	Spirit Fury
+Build	Killer	Leatherface	Hex Ruin	Enduring	Barbecue & Chilli	Play With Your Food
+Build	Killer	Leatherface	Hex Ruin	Enduring	Barbecue & Chilli	Monitor & Abuse
+Build	Killer	Leatherface	Hex Ruin	Enduring	Barbecue & Chilli	Sloppy Butcher
+Build	Killer	Leatherface	Hex Ruin	Enduring	Barbecue & Chilli	Bamboozle
+Build	Killer	Leatherface	Hex Ruin	Enduring	Barbecue & Chilli	Brutal Strength
+Build	Killer	Leatherface	Hex Ruin	Enduring	Barbecue & Chilli	Pop Goes The Weasel
+Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Spirit Fury	Monitor & Abuse
+Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Spirit Fury	Play With Your Food
+Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Bamboozle	Monitor & Abuse
+Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Bamboozle	Play With Your Food
+Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Bamboozle	Spirit Fury
+Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Bamboozle	Brutal Strength
+Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Brutal Strength	Monitor & Abuse
+Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Brutal Strength	Play With Your Food
+Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Monitor & Abuse	Play With Your Food
+Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Whispers	Barbecue & Chilli
+Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Whispers	Spirit Fury
+Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Whispers	Play With Your Food
+Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Whispers	Monitor & Abuse
+Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Whispers	Sloppy Butcher
+Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Whispers	Bamboozle
+Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Whispers	Brutal Strength
+Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Barbecue & Chilli	Spirit Fury
+Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Barbecue & Chilli	Play With Your Food
+Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Barbecue & Chilli	Monitor & Abuse
+Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Barbecue & Chilli	Sloppy Butcher
+Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Barbecue & Chilli	Bamboozle
+Build	Killer	Leatherface	Pop Goes The Weasel	Enduring	Barbecue & Chilli	Brutal Strength
+Dungeon	Killer	Leatherface	Hex Ruin	Enduring	Agitation	Insidious
+Dungeon	Killer	Leatherface	Hex Ruin	Enduring	Agitation	Territorial Imperative
+Dungeon	Killer	Leatherface	Agitation	Insidious	Iron Grasp	Hex No One Escapes Death
+Dungeon	Killer	Leatherface	Agitation	Insidious	Iron Grasp	Mad Grit
+Dungeon	Killer	Leatherface	Agitation	Insidious	Iron Grasp	Monstrous Shrine
+Perkless	Killer	Leatherface	Undefined	Undefined	Undefined	Undefined
+################################# Killer - Doctor #################################
+FavBuild	Killer	Doctor	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Hex No One Escapes Death
+Build	Killer	Doctor	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Barbecue & Chilli
+FavBuild	Killer	Doctor	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Brutal Strength
+Build	Killer	Doctor	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Enduring
+Build	Killer	Doctor	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Pop Goes The Weasel
+Build	Killer	Doctor	Hex Ruin	Monitor & Abuse	Whispers	Barbecue & Chilli
+FavBuild	Killer	Doctor	Hex Ruin	Distressing	Sloppy Butcher	Hex No One Escapes Death
+Build	Killer	Doctor	Hex Ruin	Distressing	Sloppy Butcher	Barbecue & Chilli
+FavBuild	Killer	Doctor	Hex Ruin	Distressing	Sloppy Butcher	Brutal Strength
+Build	Killer	Doctor	Hex Ruin	Distressing	Sloppy Butcher	Enduring
+Build	Killer	Doctor	Hex Ruin	Distressing	Sloppy Butcher	Pop Goes The Weasel
+Build	Killer	Doctor	Hex Ruin	Distressing	Unnerving Presence	Hex No One Escapes Death
+Build	Killer	Doctor	Hex Ruin	Distressing	Unnerving Presence	Sloppy Butcher
+Build	Killer	Doctor	Hex Ruin	Distressing	Unnerving Presence	Barbecue & Chilli
+Build	Killer	Doctor	Hex Ruin	Distressing	Unnerving Presence	Brutal Strength
+Build	Killer	Doctor	Hex Ruin	Distressing	Unnerving Presence	Enduring
+Build	Killer	Doctor	Hex Ruin	Distressing	Unnerving Presence	Pop Goes The Weasel
+Build	Killer	Doctor	Hex Ruin	Monitor & Abuse	Make Your Choice	Sloppy Butcher
+Build	Killer	Doctor	Hex Ruin	Monitor & Abuse	Make Your Choice	Brutal Strength
+Build	Killer	Doctor	Hex Ruin	Monitor & Abuse	Make Your Choice	Enduring
+Defense	Killer	Doctor	Hex Ruin	Distressing	Unnerving Presence	Overcharge
+Defense	Killer	Doctor	Hex Ruin	Discordance	Unnerving Presence	Overcharge
+Defense	Killer	Doctor	Hex Ruin	Surveillance	Unnerving Presence	Overcharge
+Totem-Tape	Killer	Doctor	Hex Ruin	Hex Devour Hope	Hex Haunted Ground	Hex Thrill Of The Hunt
+Perkless	Killer	Doctor	Undefined	Undefined	Undefined	Undefined
+################################# Killer - Freddy #################################
+FavBuild	Killer	Freddy	Hex No One Escapes Death	Remember Me	Enduring	Hex Ruin
+FavBuild	Killer	Freddy	Hex No One Escapes Death	Remember Me	Enduring	Monitor & Abuse
+Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Enduring	Spirit Fury
+Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Enduring	Sloppy Butcher
+Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Enduring	Dying Light
+Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Enduring	Blood Warden
+Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Enduring	Barbecue & Chilli
+Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Enduring	Whispers
+Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Enduring	Pop Goes The Weasel
+Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Enduring	Bamboozle
+Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Enduring	Brutal Strength
+Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Hex Ruin	Monitor & Abuse
+Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Hex Ruin	Sloppy Butcher
+Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Hex Ruin	Blood Warden
+Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Hex Ruin	Barbecue & Chilli
+Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Hex Ruin	Whispers
+Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Hex Ruin	Pop Goes The Weasel
+Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Barbecue & Chilli	Monitor & Abuse
+Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Barbecue & Chilli	Sloppy Butcher
+Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Barbecue & Chilli	Blood Warden
+Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Barbecue & Chilli	Whispers
+FavBuild	Killer	Freddy	Hex No One Escapes Death	Barbecue & Chilli	Enduring	Hex Ruin
+FavBuild	Killer	Freddy	Hex No One Escapes Death	Barbecue & Chilli	Enduring	Monitor & Abuse
+Build	Killer	Freddy	Hex No One Escapes Death	Barbecue & Chilli	Enduring	Spirit Fury
+Build	Killer	Freddy	Hex No One Escapes Death	Barbecue & Chilli	Enduring	Sloppy Butcher
+Build	Killer	Freddy	Hex No One Escapes Death	Barbecue & Chilli	Enduring	Dying Light
+Build	Killer	Freddy	Hex No One Escapes Death	Barbecue & Chilli	Enduring	Blood Warden
+Build	Killer	Freddy	Hex No One Escapes Death	Barbecue & Chilli	Enduring	Whispers
+Build	Killer	Freddy	Hex No One Escapes Death	Barbecue & Chilli	Enduring	Pop Goes The Weasel
+Build	Killer	Freddy	Hex No One Escapes Death	Barbecue & Chilli	Enduring	Bamboozle
+Build	Killer	Freddy	Hex No One Escapes Death	Barbecue & Chilli	Enduring	Brutal Strength
+Troll	Killer	Freddy	Deerstalker	Overcharge	Unnerving Presence	Insidious
+Perkless	Killer	Freddy	Undefined	Undefined	Undefined	Undefined
+################################# Killer - Pig #################################
+FavBuild	Killer	Pig	Hex Ruin	Whispers	Enduring	Monitor & Abuse
+FavBuild	Killer	Pig	Hex Ruin	Whispers	Enduring	Barbecue & Chilli
+Build	Killer	Pig	Hex Ruin	Whispers	Enduring	Spirit Fury
+Build	Killer	Pig	Hex Ruin	Whispers	Enduring	Sloppy Butcher
+Build	Killer	Pig	Hex Ruin	Whispers	Enduring	Pop Goes The Weasel
+Build	Killer	Pig	Hex Ruin	Whispers	Enduring	Make Your Choice
+Build	Killer	Pig	Hex Ruin	Whispers	Enduring	Hex No One Escapes Death
+Build	Killer	Pig	Hex Ruin	Whispers	Enduring	Bamboozle
+Build	Killer	Pig	Hex Ruin	Whispers	Enduring	Brutal Strength
+Build	Killer	Pig	Hex Ruin	Whispers	Monitor & Abuse	A Nurse's Calling
+FavBuild	Killer	Pig	Hex Ruin	Barbecue & Chilli	Enduring	Monitor & Abuse
+Build	Killer	Pig	Hex Ruin	Barbecue & Chilli	Enduring	Spirit Fury
+Build	Killer	Pig	Hex Ruin	Barbecue & Chilli	Enduring	Sloppy Butcher
+Build	Killer	Pig	Hex Ruin	Barbecue & Chilli	Enduring	Pop Goes The Weasel
+Build	Killer	Pig	Hex Ruin	Barbecue & Chilli	Enduring	Hex No One Escapes Death
+Build	Killer	Pig	Hex Ruin	Barbecue & Chilli	Enduring	Bamboozle
+Build	Killer	Pig	Hex Ruin	Barbecue & Chilli	Enduring	Brutal Strength
+Build	Killer	Pig	Hex Ruin	Barbecue & Chilli	Monitor & Abuse	A Nurse's Calling
+Build	Killer	Pig	Hex Ruin	Barbecue & Chilli	Monitor & Abuse	Discordance
+Build	Killer	Pig	Hex Ruin	Barbecue & Chilli	Monitor & Abuse	Surveillance
+Perkless	Killer	Pig	Undefined	Undefined	Undefined	Undefined
+################################# Killer - Clown #################################
+FavBuild	Killer	Clown	Hex Ruin	Brutal Strength	Whispers	Sloppy Butcher
+FavBuild	Killer	Clown	Hex Ruin	Brutal Strength	Whispers	Barbecue & Chilli
+Build	Killer	Clown	Hex Ruin	Brutal Strength	Whispers	Pop Goes The Weasel
+Build	Killer	Clown	Hex Ruin	Brutal Strength	Whispers	Make Your Choice
+Build	Killer	Clown	Hex Ruin	Brutal Strength	Whispers	Hex No One Escapes Death
+Build	Killer	Clown	Hex Ruin	Brutal Strength	Whispers	Bamboozle
+Build	Killer	Clown	Hex Ruin	Brutal Strength	Whispers	Enduring
+Build	Killer	Clown	Hex Ruin	Brutal Strength	Barbecue & Chilli	Sloppy Butcher
+Build	Killer	Clown	Hex Ruin	Brutal Strength	Barbecue & Chilli	Pop Goes The Weasel
+Build	Killer	Clown	Hex Ruin	Brutal Strength	Barbecue & Chilli	Hex No One Escapes Death
+Build	Killer	Clown	Hex Ruin	Brutal Strength	Barbecue & Chilli	Bamboozle
+Build	Killer	Clown	Hex Ruin	Brutal Strength	Barbecue & Chilli	Enduring
+FavBuild	Killer	Clown	Hex Ruin	Sloppy Butcher	Whispers	Barbecue & Chilli
+Build	Killer	Clown	Hex Ruin	Sloppy Butcher	Whispers	Pop Goes The Weasel
+Build	Killer	Clown	Hex Ruin	Sloppy Butcher	Whispers	Hex No One Escapes Death
+Build	Killer	Clown	Hex Ruin	Enduring	Whispers	Barbecue & Chilli
+Build	Killer	Clown	Hex Ruin	Enduring	Whispers	Pop Goes The Weasel
+Build	Killer	Clown	Hex Ruin	Enduring	Whispers	Hex No One Escapes Death
+Perkless	Killer	Clown	Undefined	Undefined	Undefined	Undefined
+################################# Killer - Spirit Rin #################################
+FavBuild	Killer	Spirit Rin	Hex Ruin	Whispers	A Nurse's Calling	Barbecue & Chilli
+Build	Killer	Spirit Rin	Hex Ruin	Whispers	A Nurse's Calling	Make Your Choice
+FavBuild	Killer	Spirit Rin	Hex Ruin	Whispers	A Nurse's Calling	Sloppy Butcher
+Build	Killer	Spirit Rin	Hex Ruin	Whispers	A Nurse's Calling	Stridor
+Build	Killer	Spirit Rin	Hex Ruin	Whispers	A Nurse's Calling	Predator
+Build	Killer	Spirit Rin	Hex Ruin	Whispers	A Nurse's Calling	Pop Goes The Weasel
+Build	Killer	Spirit Rin	Hex Ruin	Whispers	A Nurse's Calling	Spies From The Shadows
+Build	Killer	Spirit Rin	Hex Ruin	Whispers	A Nurse's Calling	Enduring
+Build	Killer	Spirit Rin	Hex Ruin	Whispers	A Nurse's Calling	Hex No One Escapes Death
+FavBuild	Killer	Spirit Rin	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Monitor & Abuse
+FavBuild	Killer	Spirit Rin	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Sloppy Butcher
+Build	Killer	Spirit Rin	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Stridor
+Build	Killer	Spirit Rin	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Predator
+Build	Killer	Spirit Rin	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Pop Goes The Weasel
+Build	Killer	Spirit Rin	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Spies From The Shadows
+Build	Killer	Spirit Rin	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Surveillance
+Build	Killer	Spirit Rin	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Enduring
+Build	Killer	Spirit Rin	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Hex No One Escapes Death
+Build	Killer	Spirit Rin	Pop Goes The Weasel	Whispers	A Nurse's Calling	Barbecue & Chilli
+Build	Killer	Spirit Rin	Pop Goes The Weasel	Whispers	A Nurse's Calling	Make Your Choice
+Build	Killer	Spirit Rin	Pop Goes The Weasel	Whispers	A Nurse's Calling	Sloppy Butcher
+Build	Killer	Spirit Rin	Pop Goes The Weasel	Whispers	A Nurse's Calling	Stridor
+Build	Killer	Spirit Rin	Pop Goes The Weasel	Whispers	A Nurse's Calling	Predator
+Build	Killer	Spirit Rin	Pop Goes The Weasel	Whispers	A Nurse's Calling	Spies From The Shadows
+Build	Killer	Spirit Rin	Pop Goes The Weasel	Whispers	A Nurse's Calling	Surveillance
+Build	Killer	Spirit Rin	Pop Goes The Weasel	Whispers	A Nurse's Calling	Hex No One Escapes Death
+Build	Killer	Spirit Rin	Pop Goes The Weasel	Barbecue & Chilli	A Nurse's Calling	Sloppy Butcher
+Build	Killer	Spirit Rin	Pop Goes The Weasel	Barbecue & Chilli	A Nurse's Calling	Stridor
+Build	Killer	Spirit Rin	Pop Goes The Weasel	Barbecue & Chilli	A Nurse's Calling	Predator
+Build	Killer	Spirit Rin	Pop Goes The Weasel	Barbecue & Chilli	A Nurse's Calling	Spies From The Shadows
+Build	Killer	Spirit Rin	Pop Goes The Weasel	Barbecue & Chilli	A Nurse's Calling	Surveillance
+Build	Killer	Spirit Rin	Pop Goes The Weasel	Barbecue & Chilli	A Nurse's Calling	Enduring
+Build	Killer	Spirit Rin	Pop Goes The Weasel	Barbecue & Chilli	A Nurse's Calling	Hex No One Escapes Death
+Totem-Addon	Killer	Spirit Rin	Hex Ruin	Hex Devour Hope	Hex Haunted Ground	Hex Thrill Of The Hunt
+Build-Addon	Killer	Spirit Rin	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Discordance
+Perkless	Killer	Spirit Rin	Undefined	Undefined	Undefined	Undefined
+################################# Killer - Legion #################################
+FavBuild	Killer	Legion	Hex Ruin	Monitor & Abuse	Thanatophobia	Bloodhound
+Build	Killer	Legion	Hex Ruin	Monitor & Abuse	Thanatophobia	Sloppy Butcher
+Build	Killer	Legion	Hex Ruin	Monitor & Abuse	Thanatophobia	Stridor
+FavBuild	Killer	Legion	Hex Ruin	Monitor & Abuse	Thanatophobia	Barbecue & Chilli
+Build	Killer	Legion	Hex Ruin	Monitor & Abuse	Thanatophobia	Whispers
+FavBuild	Killer	Legion	Hex Ruin	Sloppy Butcher	Thanatophobia	Bloodhound
+Build	Killer	Legion	Hex Ruin	Sloppy Butcher	Thanatophobia	Stridor
+Build	Killer	Legion	Hex Ruin	Sloppy Butcher	Thanatophobia	Barbecue & Chilli
+Build	Killer	Legion	Hex Ruin	Sloppy Butcher	Thanatophobia	Whispers
+Build	Killer	Legion	Hex Ruin	Whispers	Thanatophobia	Barbecue & Chilli
+Perkless	Killer	Legion	Undefined	Undefined	Undefined	Undefined
 ################################# End #################################
