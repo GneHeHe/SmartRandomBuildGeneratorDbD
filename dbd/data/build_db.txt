@@ -747,10 +747,10 @@ Build	Survivor	Undefined	Lithe	Quick & Quiet	Self-Care	Urban Evasion
 Build	Survivor	Undefined	Lithe	Quick & Quiet	Self-Care	Windows Of Opportunity
 Build	Survivor	Undefined	Lithe	Self-Care	Tenacity	Unbreakable
 Build	Survivor	Undefined	Lithe	Self-Care	Unbreakable	Urban Evasion
-Build	Survivor	Undefined	Object Of Obsession	Balanced Landing	Adrenaline	Sole Survivor
-Build	Survivor	Undefined	Object Of Obsession	Dead Hard	Adrenaline	Sole Survivor
-Build	Survivor	Undefined	Object Of Obsession	Lithe	Adrenaline	Sole Survivor
-Build	Survivor	Undefined	Object Of Obsession	Sprint Burst	Adrenaline	Sole Survivor
+OoO	Survivor	Undefined	Object Of Obsession	Balanced Landing	Adrenaline	Sole Survivor
+OoO	Survivor	Undefined	Object Of Obsession	Dead Hard	Adrenaline	Sole Survivor
+OoO	Survivor	Undefined	Object Of Obsession	Lithe	Adrenaline	Sole Survivor
+OoO	Survivor	Undefined	Object Of Obsession	Sprint Burst	Adrenaline	Sole Survivor
 Build	Survivor	Undefined	Quick & Quiet	Self-Care	Sprint Burst	Unbreakable
 Build	Survivor	Undefined	Quick & Quiet	Self-Care	Sprint Burst	Urban Evasion
 Build	Survivor	Undefined	Self-Care	Adrenaline	Botany Knowledge	We'll Make It
@@ -835,12 +835,14 @@ Perkless	Survivor	Undefined	Undefined	Undefined	Undefined	Undefined
 MegHEAD	Survivor	Meg	No Mither	Self-Care	Botany Knowledge	Object Of Obsession
 MegHEAD	Survivor	Meg	No Mither	Self-Care	Botany Knowledge	Vigil
 MegHEAD	Survivor	Meg	No Mither	Self-Care	Sprint Burst	Dead Hard
-SaboSWF	Survivor	Jake	No Mither	Breakdown	Empathy	Saboteur
-SaboSWF	Survivor	Jake	No Mither	Breakdown	Empathy	Unbreakable
-SaboSWF	Survivor	Jake	No Mither	Breakdown	Empathy	Resilience
-NoMither	Survivor	Bill Overbeck	No Mither	Dead Hard	Tenacity	Unbreakable
-NoMither	Survivor	Bill Overbeck	No Mither	Dead Hard	Tenacity	Resilience
-NoMither	Survivor	Bill Overbeck	No Mither	Dead Hard	Tenacity	Spine Chill
+SaboSWF	Survivor	Undefined	No Mither	Breakdown	Empathy	Saboteur
+SaboSWF	Survivor	Undefined	No Mither	Breakdown	Empathy	Unbreakable
+SaboSWF	Survivor	Undefined	No Mither	Breakdown	Empathy	Resilience
+NoMith	Survivor	Undefined	No Mither	Dead Hard	Tenacity	Unbreakable
+NoMith	Survivor	Undefined	No Mither	Dead Hard	Tenacity	Resilience
+NoMith	Survivor	Undefined	No Mither	Dead Hard	Tenacity	Spine Chill
+NoMithHard	Survivor	Undefined	No Mither	Dead Hard	Object Of Obsession	We're Gonna Live Forever
+NoMithHard	Survivor	Undefined	No Mither	Tenacity	Object Of Obsession	We're Gonna Live Forever
 ################################# Killer - Perkless #################################
 Perkless	Killer	Undefined	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Trapper #################################
