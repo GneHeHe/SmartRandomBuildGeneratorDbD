@@ -61,7 +61,7 @@ public class SmartRandBuildGen {
     private boolean verbose;
     private final String MYSPACER = "##########";
     // Version & Title of Tool
-    public final static double VERSION = 1.4;
+    public final static double VERSION = 1.5;
     public final static String TITLE = "Smart Random Build Generator for Dead by Daylight " + VERSION;
     // GitHub User/Repos
     public final static String GIT_USER = "GneHeHe";
@@ -715,6 +715,11 @@ public class SmartRandBuildGen {
             System.err.println(ex.getMessage());
             System.exit(0);
         }
+        // Sort Lists
+        Collections.sort(this.l_perks_all);
+        Collections.sort(this.l_perks_all_string);
+        Collections.sort(this.l_perks_survivor);
+        Collections.sort(this.l_perks_killer);
         // Set Nb of Perks
         this.nb_perks_all = this.l_perks_all.size();
         // Update Nb of Active Perks

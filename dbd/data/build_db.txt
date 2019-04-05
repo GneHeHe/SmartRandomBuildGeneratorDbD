@@ -1304,12 +1304,12 @@ Totem-Addon	Killer	Spirit Rin	Hex Ruin	Hex Devour Hope	Hex Haunted Ground	Hex Th
 Build-Addon	Killer	Spirit Rin	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Discordance
 Perkless	Killer	Spirit Rin	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Legion #################################
+FavBuild	Killer	Legion	Hex Ruin	Monitor & Abuse	Thanatophobia	Barbecue & Chilli
 FavBuild	Killer	Legion	Hex Ruin	Monitor & Abuse	Thanatophobia	Bloodhound
 Build	Killer	Legion	Hex Ruin	Monitor & Abuse	Thanatophobia	Sloppy Butcher
 Build	Killer	Legion	Hex Ruin	Monitor & Abuse	Thanatophobia	Stridor
-FavBuild	Killer	Legion	Hex Ruin	Monitor & Abuse	Thanatophobia	Barbecue & Chilli
 Build	Killer	Legion	Hex Ruin	Monitor & Abuse	Thanatophobia	Whispers
-FavBuild	Killer	Legion	Hex Ruin	Sloppy Butcher	Thanatophobia	Bloodhound
+Build	Killer	Legion	Hex Ruin	Sloppy Butcher	Thanatophobia	Bloodhound
 Build	Killer	Legion	Hex Ruin	Sloppy Butcher	Thanatophobia	Stridor
 Build	Killer	Legion	Hex Ruin	Sloppy Butcher	Thanatophobia	Barbecue & Chilli
 Build	Killer	Legion	Hex Ruin	Sloppy Butcher	Thanatophobia	Whispers

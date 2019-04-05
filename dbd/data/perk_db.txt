@@ -111,3 +111,12 @@ We'll Make It	Survivor	iconPerks_wellMakeIt	75
 We're Gonna Live Forever	Survivor	iconPerks_WereGonnaLiveForever	50
 Whispers	Killer	iconPerks_whispers	175
 Windows Of Opportunity	Survivor	iconPerks_windowsOfOpportunity	75
+Solidarity	Survivor	iconPerks_solidarity	25
+Poised	Survivor	iconPerks_poised	75
+Head On	Survivor	iconPerks_headOn	75
+Corrupt Intervention	Killer	iconPerks_corruptIntervention	175
+Infectious Fright	Killer	iconPerks_infectiousFright	50
+Dark Devotion	Killer	iconPerks_darkDevotion	25
+Mettle Of Man	Survivor	iconPerks_mettleOfMan	100
+Buckle Up	Survivor	iconPerks_buckleUp	5
+Flip-Flop	Survivor	iconPerks_flipFlop	100

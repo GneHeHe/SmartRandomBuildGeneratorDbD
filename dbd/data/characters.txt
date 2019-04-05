@@ -27,3 +27,6 @@ Pig	Killer	FK_charSelect_portrait
 Clown	Killer	GK_charSelect_portrait
 Spirit Rin	Killer	HK_charSelect_portrait
 Legion	Killer	KK_charSelect_portrait
+Plague	Killer	MK_charSelect_portrait
+Jane	Survivor	MS_charSelect_portrait
+Ash	Survivor	MS2_charSelect_portrait
