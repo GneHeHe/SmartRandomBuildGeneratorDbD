@@ -1,6 +1,6 @@
 Ace In The Hole	Survivor	iconPerks_aceInTheHole	75
 Adrenaline	Survivor	iconPerks_adrenaline	175
-Aftercare	Survivor	iconPerks_aftercare	175
+Aftercare	Survivor	iconPerks_aftercare	125
 Agitation	Killer	iconPerks_agitation	50
 Alert	Survivor	iconPerks_alert	125
 A Nurse's Calling	Killer	iconPerks_aNursesCalling	125
@@ -11,10 +11,10 @@ Barbecue & Chilli	Killer	iconPerks_BBQAndChili	200
 Beast Of Prey	Killer	iconPerks_BeastOfPrey	10
 Bitter Murmur	Killer	iconPerks_bitterMurmur	50
 Bloodhound	Killer	iconPerks_bloodhound	75
-Blood Warden	Killer	iconPerks_bloodWarden	75
+Blood Warden	Killer	iconPerks_bloodWarden	125
 Boil Over	Survivor	iconPerks_boilOver	10
-Bond	Survivor	iconPerks_bond	125
-Borrowed Time	Survivor	iconPerks_borrowedTime	125
+Bond	Survivor	iconPerks_bond	175
+Borrowed Time	Survivor	iconPerks_borrowedTime	150
 Botany Knowledge	Survivor	iconPerks_botanyKnowledge	50
 Breakdown	Survivor	iconPerks_breakdown	10
 Brutal Strength	Killer	iconPerks_brutalStrength	100
@@ -26,12 +26,12 @@ Dead Hard	Survivor	iconPerks_DeadHard	200
 Decisive Strike	Survivor	iconPerks_decisiveStrike	150
 Deerstalker	Killer	iconPerks_deerstalker	50
 Deja Vu	Survivor	iconPerks_dejaVu	1
-Deliverance	Survivor	iconPerks_deliverance	125
+Deliverance	Survivor	iconPerks_deliverance	100
 Detective's Hunch	Survivor	iconPerks_detectivesHunch	10
 Discordance	Killer	iconPerks_discordance	125
 Distortion	Survivor	iconPerks_distortion	50
 Distressing	Killer	iconPerks_distressing	10
-Diversion	Survivor	iconPerks_diversion	150
+Diversion	Survivor	iconPerks_diversion	100
 Dying Light	Killer	iconPerks_dyingLight	10
 Empathy	Survivor	iconPerks_empathy	75
 Enduring	Killer	iconPerks_enduring	175
@@ -41,7 +41,7 @@ Hangman's Trick	Killer	iconPerks_hangmansTrick	1
 Hex Devour Hope	Killer	iconPerks_devourHope	100
 Hex Haunted Ground	Killer	iconPerks_hauntedGround	75
 Hex Huntress Lullaby	Killer	iconPerks_HuntressLullaby	25
-Hex No One Escapes Death	Killer	iconPerks_noOneEscapesDeath	150
+Hex No One Escapes Death	Killer	iconPerks_noOneEscapesDeath	125
 Hex Ruin	Killer	iconPerks_ruin	200
 Hex The Third Seal	Killer	iconPerks_theThirdSeal	10
 Hex Thrill Of The Hunt	Killer	iconPerks_thrillOfTheHunt	50
@@ -49,7 +49,7 @@ Hope	Survivor	iconPerks_hope	100
 Insidious	Killer	iconPerks_insidious	50
 Iron Grasp	Killer	iconPerks_ironGrasp	25
 Iron Maiden	Killer	iconPerks_ironMaiden	25
-Iron Will	Survivor	iconPerks_ironWill	150
+Iron Will	Survivor	iconPerks_ironWill	175
 Kindred	Survivor	iconPerks_kindred	75
 Knock Out	Killer	iconPerks_knockOut	50
 Leader	Survivor	iconPerks_leader	25
@@ -74,7 +74,7 @@ Pop Goes The Weasel	Killer	iconPerks_popGoesTheWeasel	150
 Predator	Killer	iconPerks_predator	5
 Premonition	Survivor	iconPerks_premonition	25
 Prove Thyself	Survivor	iconPerks_proveThyself	50
-Quick & Quiet	Survivor	iconPerks_quickAndQuiet	150
+Quick & Quiet	Survivor	iconPerks_quickAndQuiet	125
 Rancor	Killer	iconPerks_hatred	50
 Remember Me	Killer	iconPerks_rememberMe	100
 Resilience	Survivor	iconPerks_resilience	50
@@ -83,7 +83,7 @@ Save The Best For Last	Killer	iconPerks_saveTheBestForLast	75
 Self-Care	Survivor	iconPerks_selfCare	200
 Shadowborn	Killer	iconPerks_shadowborn	100
 Slippery Meat	Survivor	iconPerks_slipperyMeat	25
-Sloppy Butcher	Killer	iconPerks_sloppyButcher	150
+Sloppy Butcher	Killer	iconPerks_sloppyButcher	125
 Small Game	Survivor	iconPerks_smallGame	50
 Sole Survivor	Survivor	iconPerks_soleSurvivor	5
 Spies From The Shadows	Killer	iconPerks_spiesFromTheShadows	75
@@ -93,7 +93,7 @@ Sprint Burst	Survivor	iconPerks_sprintBurst	100
 Stake Out	Survivor	iconPerks_stakeOut	5
 Streetwise	Survivor	iconPerks_streetwise	1
 Stridor	Killer	iconPerks_stridor	75
-Surveillance	Killer	iconPerks_surveillance	10
+Surveillance	Killer	iconPerks_surveillance	75
 Technician	Survivor	iconPerks_technician	50
 Tenacity	Survivor	iconPerks_tenacity	100
 Territorial Imperative	Killer	iconPerks_TerritorialImperative	25
@@ -104,19 +104,22 @@ Unbreakable	Survivor	iconPerks_unbreakable	125
 Unnerving Presence	Killer	iconPerks_unnervingPresence	5
 Unrelenting	Killer	iconPerks_unrelenting	5
 Up The Ante	Survivor	iconPerks_upTheAnte	5
-Urban Evasion	Survivor	iconPerks_urbanEvasion	150
+Urban Evasion	Survivor	iconPerks_urbanEvasion	100
 Vigil	Survivor	iconPerks_vigil	5
-Wake Up!	Survivor	iconPerks_wakeUp	5
+Wake Up!	Survivor	iconPerks_wakeUp	25
 We'll Make It	Survivor	iconPerks_wellMakeIt	75
 We're Gonna Live Forever	Survivor	iconPerks_WereGonnaLiveForever	50
-Whispers	Killer	iconPerks_whispers	175
+Whispers	Killer	iconPerks_whispers	150
 Windows Of Opportunity	Survivor	iconPerks_windowsOfOpportunity	75
 Solidarity	Survivor	iconPerks_solidarity	25
 Poised	Survivor	iconPerks_poised	75
-Head On	Survivor	iconPerks_headOn	75
-Corrupt Intervention	Killer	iconPerks_corruptIntervention	175
-Infectious Fright	Killer	iconPerks_infectiousFright	50
-Dark Devotion	Killer	iconPerks_darkDevotion	25
-Mettle Of Man	Survivor	iconPerks_mettleOfMan	100
+Head On	Survivor	iconPerks_headOn	100
+Corrupt Intervention	Killer	iconPerks_corruptIntervention	125
+Infectious Fright	Killer	iconPerks_infectiousFright	100
+Dark Devotion	Killer	iconPerks_darkDevotion	10
+Mettle Of Man	Survivor	iconPerks_mettleOfMan	75
 Buckle Up	Survivor	iconPerks_buckleUp	5
 Flip-Flop	Survivor	iconPerks_flipFlop	100
+Furtive Chase	Killer	iconPerks_FurtiveChase	10
+Thrilling Tremors	Killer	iconPerks_ThrillingTremors	125
+I'm All Ears	Killer	iconPerks_ImAllEars	50

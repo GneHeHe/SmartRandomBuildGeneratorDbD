@@ -30,3 +30,4 @@ Legion	Killer	KK_charSelect_portrait
 Plague	Killer	MK_charSelect_portrait
 Jane	Survivor	MS_charSelect_portrait
 Ash	Survivor	MS2_charSelect_portrait
+Ghostface	Killer	OK_charSelect_portrait

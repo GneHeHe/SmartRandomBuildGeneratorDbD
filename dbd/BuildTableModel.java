@@ -247,18 +247,21 @@ public class BuildTableModel extends AbstractTableModel {
             f = "data/build_db.txt";
         }
         // Read build database
-        this.readData(f);
+        this.readData(f, true);
     }
 
     /**
      * Load Build Database
      *
      * @param input
+     * @param reset
      */
-    public void readData(String input) {
+    public void readData(String input, boolean reset) {
         String spacer = "\t";
-        // Reset Model
-        this.l_builds.clear();
+        // Reset Model if needed
+        if (reset) {
+            this.l_builds.clear();
+        }
         try {
             // Define Reader
             BufferedReader br = null;

@@ -144,7 +144,7 @@ public class SmartRandBuildGenTabData extends JPanel {
         // Define JButton Objects
         this.b_rand = new JButton("Random Select");
         this.b_reload = new JButton("Reload DB");
-        this.b_reload_remote = new JButton("Reload remote DB");
+        this.b_reload_remote = new JButton("Update DB (GitHub)");
         this.b_load = new JButton("Open custom DB");
         this.b_save = new JButton("Save current DB");
         this.b_add = new JButton("Add current Build");
@@ -154,7 +154,7 @@ public class SmartRandBuildGenTabData extends JPanel {
         // Set Tooltips for Buttons
         this.b_rand.setToolTipText("Randomly select one build from database");
         this.b_reload.setToolTipText("Reload default build database");
-        this.b_reload_remote.setToolTipText("Reload last build database from GitHub");
+        this.b_reload_remote.setToolTipText("Merge current build database with last version from GitHub");
         this.b_load.setToolTipText("Open custom build database");
         this.b_save.setToolTipText("Save current build database");
         this.b_add.setToolTipText("Add current build in database");
@@ -241,7 +241,7 @@ public class SmartRandBuildGenTabData extends JPanel {
                     fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
                     if (new File(output).exists()) {
                         // Load remote build database from GitHub
-                        ((BuildTableModel) table.getModel()).readData(output);
+                        ((BuildTableModel) table.getModel()).readData(output, false);
                     } else {
                         Tools.getAlert("ERROR: Issues were encountered while downloading the last build database from GitHub", "Warning", JOptionPane.ERROR_MESSAGE);
                     }
@@ -262,7 +262,7 @@ public class SmartRandBuildGenTabData extends JPanel {
                     if (new File(f).exists()) {
                         try {
                             // Load custom build database
-                            ((BuildTableModel) table.getModel()).readData(f);
+                            ((BuildTableModel) table.getModel()).readData(f,true);
                         } catch (Exception ex) {
                             Tools.getAlert("ERROR: Issues were encountered while processing the build database file " + f, "Warning", JOptionPane.ERROR_MESSAGE);
                         }

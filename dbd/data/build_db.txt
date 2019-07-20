@@ -832,6 +832,7 @@ Build	Survivor	Undefined	Sprint Burst	Quick & Quiet	Self-Care	Windows Of Opportu
 Build	Survivor	Undefined	Sprint Burst	Self-Care	Unbreakable	Urban Evasion
 ################################# Survivors - Fun #################################
 Perkless	Survivor	Undefined	Undefined	Undefined	Undefined	Undefined
+FarmBPs	Survivor	Undefined	Borrowed Time	We're Gonna Live Forever	Bond	Prove Thyself
 MegHEAD	Survivor	Meg	No Mither	Self-Care	Botany Knowledge	Object Of Obsession
 MegHEAD	Survivor	Meg	No Mither	Self-Care	Botany Knowledge	Vigil
 MegHEAD	Survivor	Meg	No Mither	Self-Care	Sprint Burst	Dead Hard
@@ -843,18 +844,36 @@ NoMith	Survivor	Undefined	No Mither	Dead Hard	Tenacity	Resilience
 NoMith	Survivor	Undefined	No Mither	Dead Hard	Tenacity	Spine Chill
 NoMithHard	Survivor	Undefined	No Mither	Dead Hard	Object Of Obsession	We're Gonna Live Forever
 NoMithHard	Survivor	Undefined	No Mither	Tenacity	Object Of Obsession	We're Gonna Live Forever
+################################# Survivors - New #################################
+Build	Survivor	Undefined	Adrenaline	Iron Will	Bond	Prove Thyself
+Build	Survivor	Undefined	Adrenaline	Quick & Quiet	Bond	Head On
+Build	Survivor	Undefined	Adrenaline	Quick & Quiet	Iron Will	Head On
+Build	Survivor	Undefined	Adrenaline	Quick & Quiet	Decisive Strike	Head On
+Build	Survivor	Undefined	Adrenaline	Quick & Quiet	Balanced Landing	Head On
+Build	Survivor	Undefined	Adrenaline	Quick & Quiet	Sprint Burst	Head On
+Build	Survivor	Undefined	Adrenaline	Quick & Quiet	Lithe	Head On
+Build	Survivor	Undefined	Adrenaline	Quick & Quiet	Dead Hard	Head On
+Build	Survivor	Undefined	Bond	Unbreakable	Tenacity	Flip-Flop
+Build	Survivor	Undefined	Decisive Strike	Unbreakable	Tenacity	Flip-Flop
+Build	Survivor	Undefined	Adrenaline	Unbreakable	Tenacity	Flip-Flop
+Build	Survivor	Undefined	Deliverance	Unbreakable	Tenacity	Flip-Flop
+Build	Survivor	Undefined	Dance With Me	Iron Will	Lithe	Quick & Quiet
+Build	Survivor	Undefined	Dance With Me	Iron Will	Lithe	Spine Chill
+Build	Survivor	Undefined	Spine Chill	Iron Will	Lithe	Quick & Quiet
 ################################# Killer - Perkless #################################
 Perkless	Killer	Undefined	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Trapper #################################
 FavBuild	Killer	Trapper	Hex Ruin	Whispers	Enduring	Spirit Fury
-FavBuild	Killer	Trapper	Hex Ruin	Whispers	Enduring	Hex No One Escapes Death
-FavBuild	Killer	Trapper	Hex Ruin	Whispers	Enduring	Sloppy Butcher
+FavBuild	Killer	Trapper	Hex Ruin	Whispers	Enduring	Pop Goes The Weasel
+FavBuild	Killer	Trapper	Corrupt Intervention	Whispers	Enduring	Spirit Fury
+FavBuild	Killer	Trapper	Corrupt Intervention	Whispers	Enduring	Pop Goes The Weasel
+Build	Killer	Trapper	Hex Ruin	Whispers	Enduring	Hex No One Escapes Death
+Build	Killer	Trapper	Hex Ruin	Whispers	Enduring	Sloppy Butcher
 Build	Killer	Trapper	Hex Ruin	Whispers	Enduring	Barbecue & Chilli
 Build	Killer	Trapper	Hex Ruin	Whispers	Enduring	Agitation
 Build	Killer	Trapper	Hex Ruin	Whispers	Enduring	Bamboozle
 Build	Killer	Trapper	Hex Ruin	Whispers	Enduring	Brutal Strength
 Build	Killer	Trapper	Hex Ruin	Whispers	Enduring	Make Your Choice
-Build	Killer	Trapper	Hex Ruin	Whispers	Enduring	Pop Goes The Weasel
 Build	Killer	Trapper	Hex Ruin	Barbecue & Chilli	Enduring	Spirit Fury
 Build	Killer	Trapper	Hex Ruin	Barbecue & Chilli	Enduring	Hex No One Escapes Death
 Build	Killer	Trapper	Hex Ruin	Barbecue & Chilli	Enduring	Sloppy Butcher
@@ -880,18 +899,20 @@ Build	Killer	Trapper	Hex Devour Hope	Bamboozle	Enduring	Hex No One Escapes Death
 Build	Killer	Trapper	Hex Devour Hope	Hex Haunted Ground	Enduring	Hex No One Escapes Death
 Perkless	Killer	Trapper	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Wraith #################################
-FavBuild	Killer	Wraith	Hex Ruin	Enduring	Hex No One Escapes Death	Barbecue & Chilli
-FavBuild	Killer	Wraith	Hex Ruin	Enduring	Hex No One Escapes Death	Spirit Fury
-FavBuild	Killer	Wraith	Hex Ruin	Enduring	Hex No One Escapes Death	Sloppy Butcher
+Build	Killer	Wraith	Hex Ruin	Enduring	Hex No One Escapes Death	Barbecue & Chilli
+Build	Killer	Wraith	Hex Ruin	Enduring	Hex No One Escapes Death	Spirit Fury
+Build	Killer	Wraith	Hex Ruin	Enduring	Hex No One Escapes Death	Sloppy Butcher
 Build	Killer	Wraith	Hex Ruin	Enduring	Hex No One Escapes Death	A Nurse's Calling
 Build	Killer	Wraith	Hex Ruin	Enduring	Hex No One Escapes Death	Remember Me
 Build	Killer	Wraith	Hex Ruin	Enduring	Hex No One Escapes Death	Make Your Choice
 Build	Killer	Wraith	Hex Ruin	Enduring	Hex No One Escapes Death	Bamboozle
 Build	Killer	Wraith	Hex Ruin	Enduring	Hex No One Escapes Death	Brutal Strength
 Build	Killer	Wraith	Hex Ruin	Enduring	Hex No One Escapes Death	Whispers
-FavBuild	Killer	Wraith	Hex Ruin	Enduring	Spirit Fury	Sloppy Butcher
+Build	Killer	Wraith	Hex Ruin	Enduring	Spirit Fury	Sloppy Butcher
 FavBuild	Killer	Wraith	Hex Ruin	Enduring	Spirit Fury	Barbecue & Chilli
-Build	Killer	Wraith	Hex Ruin	Enduring	Spirit Fury	Pop Goes The Weasel
+FavBuild	Killer	Wraith	Hex Ruin	Enduring	Spirit Fury	Pop Goes The Weasel
+FavBuild	Killer	Wraith	Corrupt Intervention	Enduring	Spirit Fury	Barbecue & Chilli
+FavBuild	Killer	Wraith	Corrupt Intervention	Enduring	Spirit Fury	Pop Goes The Weasel
 Build	Killer	Wraith	Hex Ruin	Enduring	Spirit Fury	A Nurse's Calling
 Build	Killer	Wraith	Hex Ruin	Enduring	Spirit Fury	Make Your Choice
 Build	Killer	Wraith	Hex Ruin	Enduring	Spirit Fury	Bamboozle
@@ -952,6 +973,7 @@ Perkless	Killer	Hillbilly	Undefined	Undefined	Undefined	Undefined
 FavBuild	Killer	Nurse Sally	Barbecue & Chilli	Whispers	A Nurse's Calling	Shadowborn
 FavBuild	Killer	Nurse Sally	Hex Ruin	Whispers	A Nurse's Calling	Shadowborn
 FavBuild	Killer	Nurse Sally	Hex Ruin	Whispers	A Nurse's Calling	Barbecue & Chilli
+Build	Killer	Nurse Sally	Barbecue & Chilli	Whispers	I'm All Ears	Shadowborn
 Build	Killer	Nurse Sally	Hex Ruin	Whispers	A Nurse's Calling	Monitor & Abuse
 Build	Killer	Nurse Sally	Hex Ruin	Whispers	A Nurse's Calling	Make Your Choice
 Build	Killer	Nurse Sally	Hex Ruin	Whispers	A Nurse's Calling	Sloppy Butcher
@@ -995,6 +1017,10 @@ Perkless	Killer	Nurse Sally	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Huntress #################################
 FavBuild	Killer	Huntress	Hex Ruin	Whispers	Barbecue & Chilli	A Nurse's Calling
 FavBuild	Killer	Huntress	Hex Ruin	Whispers	Barbecue & Chilli	Shadowborn
+FavBuild	Killer	Huntress	Hex Ruin	Discordance	Barbecue & Chilli	Pop Goes The Weasel
+FavBuild	Killer	Huntress	Corrupt Intervention	Whispers	Barbecue & Chilli	A Nurse's Calling
+FavBuild	Killer	Huntress	Corrupt Intervention	Whispers	Barbecue & Chilli	Shadowborn
+FavBuild	Killer	Huntress	Corrupt Intervention	Discordance	Barbecue & Chilli	Pop Goes The Weasel
 Build	Killer	Huntress	Hex Ruin	Whispers	Barbecue & Chilli	Sloppy Butcher
 Build	Killer	Huntress	Hex Ruin	Whispers	Barbecue & Chilli	Enduring
 Build	Killer	Huntress	Hex Ruin	Whispers	Barbecue & Chilli	Pop Goes The Weasel
@@ -1030,17 +1056,20 @@ Perkless	Killer	Huntress	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Myers #################################
 FavBuild	Killer	Myers	Hex Ruin	Monitor & Abuse	Enduring	Spirit Fury
 FavBuild	Killer	Myers	Hex Ruin	Monitor & Abuse	Enduring	A Nurse's Calling
+FavBuild	Killer	Myers	Hex Ruin	Monitor & Abuse	Enduring	Pop Goes The Weasel
+FavBuild	Killer	Myers	Corrupt Intervention	Monitor & Abuse	Enduring	Spirit Fury
+FavBuild	Killer	Myers	Corrupt Intervention	Monitor & Abuse	Enduring	A Nurse's Calling
+FavBuild	Killer	Myers	Corrupt Intervention	Monitor & Abuse	Enduring	Pop Goes The Weasel
 Build	Killer	Myers	Hex Ruin	Monitor & Abuse	Enduring	Sloppy Butcher
 Build	Killer	Myers	Hex Ruin	Monitor & Abuse	Enduring	Bamboozle
 Build	Killer	Myers	Hex Ruin	Monitor & Abuse	Enduring	Barbecue & Chilli
 Build	Killer	Myers	Hex Ruin	Monitor & Abuse	Enduring	Brutal Strength
-Build	Killer	Myers	Hex Ruin	Monitor & Abuse	Enduring	Pop Goes The Weasel
 Build	Killer	Myers	Hex Ruin	Monitor & Abuse	Enduring	Whispers
 Build	Killer	Myers	Hex Ruin	A Nurse's Calling	Enduring	Spirit Fury
 Build	Killer	Myers	Hex Ruin	A Nurse's Calling	Enduring	Bamboozle
 Build	Killer	Myers	Hex Ruin	A Nurse's Calling	Enduring	Brutal Strength
-FavBuild	Killer	Myers	Hex Ruin	Sloppy Butcher	Enduring	Spirit Fury
-FavBuild	Killer	Myers	Hex Ruin	Sloppy Butcher	Enduring	Bamboozle
+Build	Killer	Myers	Hex Ruin	Sloppy Butcher	Enduring	Spirit Fury
+Build	Killer	Myers	Hex Ruin	Sloppy Butcher	Enduring	Bamboozle
 Build	Killer	Myers	Hex Ruin	Sloppy Butcher	Enduring	Brutal Strength
 Build	Killer	Myers	Hex Ruin	Whispers	Enduring	Barbecue & Chilli
 Build	Killer	Myers	Hex Ruin	Whispers	Enduring	Spirit Fury
@@ -1084,14 +1113,16 @@ Build	Killer	Myers	Whispers	Bamboozle	Enduring	Brutal Strength
 Troll	Killer	Myers	Hex Haunted Ground	Distressing	Make Your Choice	Hex No One Escapes Death
 Perkless	Killer	Myers	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Hag #################################
-FavBuild	Killer	Hag	Hex Ruin	Monitor & Abuse	Make Your Choice	Sloppy Butcher
 FavBuild	Killer	Hag	Hex Ruin	Monitor & Abuse	Make Your Choice	Enduring
+FavBuild	Killer	Hag	Hex Ruin	Monitor & Abuse	Pop Goes The Weasel	Enduring
+FavBuild	Killer	Hag	Corrupt Intervention	Monitor & Abuse	Pop Goes The Weasel	Enduring
+Build	Killer	Hag	Hex Ruin	Monitor & Abuse	Make Your Choice	Sloppy Butcher
 Build	Killer	Hag	Hex Ruin	Monitor & Abuse	Make Your Choice	Hex No One Escapes Death
 Build	Killer	Hag	Hex Ruin	Monitor & Abuse	Make Your Choice	Barbecue & Chilli
 Build	Killer	Hag	Hex Ruin	Monitor & Abuse	Make Your Choice	Pop Goes The Weasel
 Build	Killer	Hag	Hex Ruin	Monitor & Abuse	Make Your Choice	Whispers
-FavBuild	Killer	Hag	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Enduring
-FavBuild	Killer	Hag	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Hex No One Escapes Death
+Build	Killer	Hag	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Enduring
+Build	Killer	Hag	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Hex No One Escapes Death
 Build	Killer	Hag	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Barbecue & Chilli
 Build	Killer	Hag	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Whispers
 Build	Killer	Hag	Hex Ruin	Monitor & Abuse	Whispers	Barbecue & Chilli
@@ -1113,8 +1144,12 @@ Defense	Killer	Hag	Hex Ruin	Monitor & Abuse	Overcharge	Discordance
 Dungeon	Killer	Hag	Hex Ruin	Monitor & Abuse	Make Your Choice	Agitation
 Perkless	Killer	Hag	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Leatherface #################################
-FavBuild	Killer	Leatherface	Hex Ruin	Enduring	Spirit Fury	Monitor & Abuse
+Build	Killer	Leatherface	Hex Ruin	Enduring	Spirit Fury	Monitor & Abuse
 FavBuild	Killer	Leatherface	Hex Ruin	Enduring	Spirit Fury	Play With Your Food
+FavBuild	Killer	Leatherface	Hex Ruin	Enduring	Spirit Fury	Pop Goes The Weasel
+Build	Killer	Leatherface	Corrupt Intervention	Enduring	Spirit Fury	Monitor & Abuse
+FavBuild	Killer	Leatherface	Corrupt Intervention	Enduring	Spirit Fury	Play With Your Food
+FavBuild	Killer	Leatherface	Corrupt Intervention	Enduring	Spirit Fury	Pop Goes The Weasel
 Build	Killer	Leatherface	Hex Ruin	Enduring	Bamboozle	Monitor & Abuse
 Build	Killer	Leatherface	Hex Ruin	Enduring	Bamboozle	Play With Your Food
 Build	Killer	Leatherface	Hex Ruin	Enduring	Bamboozle	Spirit Fury
@@ -1122,8 +1157,8 @@ Build	Killer	Leatherface	Hex Ruin	Enduring	Bamboozle	Brutal Strength
 Build	Killer	Leatherface	Hex Ruin	Enduring	Brutal Strength	Monitor & Abuse
 Build	Killer	Leatherface	Hex Ruin	Enduring	Brutal Strength	Play With Your Food
 Build	Killer	Leatherface	Hex Ruin	Enduring	Monitor & Abuse	Play With Your Food
-FavBuild	Killer	Leatherface	Hex Ruin	Enduring	Whispers	Barbecue & Chilli
-FavBuild	Killer	Leatherface	Hex Ruin	Enduring	Whispers	Spirit Fury
+Build	Killer	Leatherface	Hex Ruin	Enduring	Whispers	Barbecue & Chilli
+Build	Killer	Leatherface	Hex Ruin	Enduring	Whispers	Spirit Fury
 Build	Killer	Leatherface	Hex Ruin	Enduring	Whispers	Play With Your Food
 Build	Killer	Leatherface	Hex Ruin	Enduring	Whispers	Monitor & Abuse
 Build	Killer	Leatherface	Hex Ruin	Enduring	Whispers	Sloppy Butcher
@@ -1165,15 +1200,19 @@ Dungeon	Killer	Leatherface	Agitation	Insidious	Iron Grasp	Mad Grit
 Dungeon	Killer	Leatherface	Agitation	Insidious	Iron Grasp	Monstrous Shrine
 Perkless	Killer	Leatherface	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Doctor #################################
-FavBuild	Killer	Doctor	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Hex No One Escapes Death
+FavBuild	Killer	Doctor	Hex Ruin	Enduring	Brutal Strength	Pop Goes The Weasel
+Build	Killer	Doctor	Hex Ruin	Enduring	Spirit Fury	Pop Goes The Weasel
+FavBuild	Killer	Doctor	Corrupt Intervention	Enduring	Brutal Strength	Pop Goes The Weasel
+Build	Killer	Doctor	Corrupt Intervention	Enduring	Spirit Fury	Pop Goes The Weasel
+Build	Killer	Doctor	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Hex No One Escapes Death
 Build	Killer	Doctor	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Barbecue & Chilli
-FavBuild	Killer	Doctor	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Brutal Strength
+Build	Killer	Doctor	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Brutal Strength
 Build	Killer	Doctor	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Enduring
 Build	Killer	Doctor	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Pop Goes The Weasel
 Build	Killer	Doctor	Hex Ruin	Monitor & Abuse	Whispers	Barbecue & Chilli
-FavBuild	Killer	Doctor	Hex Ruin	Distressing	Sloppy Butcher	Hex No One Escapes Death
+Build	Killer	Doctor	Hex Ruin	Distressing	Sloppy Butcher	Hex No One Escapes Death
 Build	Killer	Doctor	Hex Ruin	Distressing	Sloppy Butcher	Barbecue & Chilli
-FavBuild	Killer	Doctor	Hex Ruin	Distressing	Sloppy Butcher	Brutal Strength
+Build	Killer	Doctor	Hex Ruin	Distressing	Sloppy Butcher	Brutal Strength
 Build	Killer	Doctor	Hex Ruin	Distressing	Sloppy Butcher	Enduring
 Build	Killer	Doctor	Hex Ruin	Distressing	Sloppy Butcher	Pop Goes The Weasel
 Build	Killer	Doctor	Hex Ruin	Distressing	Unnerving Presence	Hex No One Escapes Death
@@ -1191,8 +1230,10 @@ Defense	Killer	Doctor	Hex Ruin	Surveillance	Unnerving Presence	Overcharge
 Totem-Tape	Killer	Doctor	Hex Ruin	Hex Devour Hope	Hex Haunted Ground	Hex Thrill Of The Hunt
 Perkless	Killer	Doctor	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Freddy #################################
-FavBuild	Killer	Freddy	Hex No One Escapes Death	Remember Me	Enduring	Hex Ruin
-FavBuild	Killer	Freddy	Hex No One Escapes Death	Remember Me	Enduring	Monitor & Abuse
+FavBuild	Killer	Freddy	Hex Ruin	Monitor & Abuse	Enduring	Pop Goes The Weasel
+FavBuild	Killer	Freddy	Corrupt Intervention	Monitor & Abuse	Enduring	Pop Goes The Weasel
+Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Enduring	Hex Ruin
+Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Enduring	Monitor & Abuse
 Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Enduring	Spirit Fury
 Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Enduring	Sloppy Butcher
 Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Enduring	Dying Light
@@ -1213,7 +1254,7 @@ Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Barbecue & Chilli	Slopp
 Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Barbecue & Chilli	Blood Warden
 Build	Killer	Freddy	Hex No One Escapes Death	Remember Me	Barbecue & Chilli	Whispers
 FavBuild	Killer	Freddy	Hex No One Escapes Death	Barbecue & Chilli	Enduring	Hex Ruin
-FavBuild	Killer	Freddy	Hex No One Escapes Death	Barbecue & Chilli	Enduring	Monitor & Abuse
+Build	Killer	Freddy	Hex No One Escapes Death	Barbecue & Chilli	Enduring	Monitor & Abuse
 Build	Killer	Freddy	Hex No One Escapes Death	Barbecue & Chilli	Enduring	Spirit Fury
 Build	Killer	Freddy	Hex No One Escapes Death	Barbecue & Chilli	Enduring	Sloppy Butcher
 Build	Killer	Freddy	Hex No One Escapes Death	Barbecue & Chilli	Enduring	Dying Light
@@ -1225,17 +1266,20 @@ Build	Killer	Freddy	Hex No One Escapes Death	Barbecue & Chilli	Enduring	Brutal S
 Troll	Killer	Freddy	Deerstalker	Overcharge	Unnerving Presence	Insidious
 Perkless	Killer	Freddy	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Pig #################################
+FavBuild	Killer	Pig	Hex Ruin	Whispers	Enduring	Pop Goes The Weasel
+FavBuild	Killer	Pig	Corrupt Intervention	Whispers	Enduring	Pop Goes The Weasel
 FavBuild	Killer	Pig	Hex Ruin	Whispers	Enduring	Monitor & Abuse
 FavBuild	Killer	Pig	Hex Ruin	Whispers	Enduring	Barbecue & Chilli
+FavBuild	Killer	Pig	Corrupt Intervention	Whispers	Enduring	Monitor & Abuse
+FavBuild	Killer	Pig	Corrupt Intervention	Whispers	Enduring	Barbecue & Chilli
 Build	Killer	Pig	Hex Ruin	Whispers	Enduring	Spirit Fury
 Build	Killer	Pig	Hex Ruin	Whispers	Enduring	Sloppy Butcher
-Build	Killer	Pig	Hex Ruin	Whispers	Enduring	Pop Goes The Weasel
 Build	Killer	Pig	Hex Ruin	Whispers	Enduring	Make Your Choice
 Build	Killer	Pig	Hex Ruin	Whispers	Enduring	Hex No One Escapes Death
 Build	Killer	Pig	Hex Ruin	Whispers	Enduring	Bamboozle
 Build	Killer	Pig	Hex Ruin	Whispers	Enduring	Brutal Strength
 Build	Killer	Pig	Hex Ruin	Whispers	Monitor & Abuse	A Nurse's Calling
-FavBuild	Killer	Pig	Hex Ruin	Barbecue & Chilli	Enduring	Monitor & Abuse
+Build	Killer	Pig	Hex Ruin	Barbecue & Chilli	Enduring	Monitor & Abuse
 Build	Killer	Pig	Hex Ruin	Barbecue & Chilli	Enduring	Spirit Fury
 Build	Killer	Pig	Hex Ruin	Barbecue & Chilli	Enduring	Sloppy Butcher
 Build	Killer	Pig	Hex Ruin	Barbecue & Chilli	Enduring	Pop Goes The Weasel
@@ -1245,21 +1289,28 @@ Build	Killer	Pig	Hex Ruin	Barbecue & Chilli	Enduring	Brutal Strength
 Build	Killer	Pig	Hex Ruin	Barbecue & Chilli	Monitor & Abuse	A Nurse's Calling
 Build	Killer	Pig	Hex Ruin	Barbecue & Chilli	Monitor & Abuse	Discordance
 Build	Killer	Pig	Hex Ruin	Barbecue & Chilli	Monitor & Abuse	Surveillance
+Build	Killer	Pig	Enduring	Whispers	Monitor & Abuse	Brutal Strength
+Build	Killer	Pig	Enduring	Whispers	Monitor & Abuse	I'm All Ears
+Build	Killer	Pig	Enduring	Barbecue & Chilli	Monitor & Abuse	Brutal Strength
+Build	Killer	Pig	Enduring	Barbecue & Chilli	Monitor & Abuse	I'm All Ears
 Perkless	Killer	Pig	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Clown #################################
-FavBuild	Killer	Clown	Hex Ruin	Brutal Strength	Whispers	Sloppy Butcher
-FavBuild	Killer	Clown	Hex Ruin	Brutal Strength	Whispers	Barbecue & Chilli
+FavBuild	Killer	Clown	Hex Ruin	Brutal Strength	Save The Best For Last	Pop Goes The Weasel
+FavBuild	Killer	Clown	Hex Ruin	Brutal Strength	Barbecue & Chilli	Pop Goes The Weasel
+FavBuild	Killer	Clown	Corrupt Intervention	Brutal Strength	Save The Best For Last	Pop Goes The Weasel
+FavBuild	Killer	Clown	Corrupt Intervention	Brutal Strength	Barbecue & Chilli	Pop Goes The Weasel
+Build	Killer	Clown	Hex Ruin	Brutal Strength	Whispers	Sloppy Butcher
+Build	Killer	Clown	Hex Ruin	Brutal Strength	Whispers	Barbecue & Chilli
 Build	Killer	Clown	Hex Ruin	Brutal Strength	Whispers	Pop Goes The Weasel
 Build	Killer	Clown	Hex Ruin	Brutal Strength	Whispers	Make Your Choice
 Build	Killer	Clown	Hex Ruin	Brutal Strength	Whispers	Hex No One Escapes Death
 Build	Killer	Clown	Hex Ruin	Brutal Strength	Whispers	Bamboozle
 Build	Killer	Clown	Hex Ruin	Brutal Strength	Whispers	Enduring
 Build	Killer	Clown	Hex Ruin	Brutal Strength	Barbecue & Chilli	Sloppy Butcher
-Build	Killer	Clown	Hex Ruin	Brutal Strength	Barbecue & Chilli	Pop Goes The Weasel
 Build	Killer	Clown	Hex Ruin	Brutal Strength	Barbecue & Chilli	Hex No One Escapes Death
 Build	Killer	Clown	Hex Ruin	Brutal Strength	Barbecue & Chilli	Bamboozle
 Build	Killer	Clown	Hex Ruin	Brutal Strength	Barbecue & Chilli	Enduring
-FavBuild	Killer	Clown	Hex Ruin	Sloppy Butcher	Whispers	Barbecue & Chilli
+Build	Killer	Clown	Hex Ruin	Sloppy Butcher	Whispers	Barbecue & Chilli
 Build	Killer	Clown	Hex Ruin	Sloppy Butcher	Whispers	Pop Goes The Weasel
 Build	Killer	Clown	Hex Ruin	Sloppy Butcher	Whispers	Hex No One Escapes Death
 Build	Killer	Clown	Hex Ruin	Enduring	Whispers	Barbecue & Chilli
@@ -1267,16 +1318,18 @@ Build	Killer	Clown	Hex Ruin	Enduring	Whispers	Pop Goes The Weasel
 Build	Killer	Clown	Hex Ruin	Enduring	Whispers	Hex No One Escapes Death
 Perkless	Killer	Clown	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Spirit Rin #################################
-FavBuild	Killer	Spirit Rin	Hex Ruin	Whispers	A Nurse's Calling	Barbecue & Chilli
+FavBuild	Killer	Spirit Rin	Hex Ruin	Barbecue & Chilli	Discordance	Pop Goes The Weasel
+FavBuild	Killer	Spirit Rin	Corrupt Intervention	Barbecue & Chilli	Discordance	Pop Goes The Weasel
+Build	Killer	Spirit Rin	Hex Ruin	Whispers	A Nurse's Calling	Barbecue & Chilli
 Build	Killer	Spirit Rin	Hex Ruin	Whispers	A Nurse's Calling	Make Your Choice
-FavBuild	Killer	Spirit Rin	Hex Ruin	Whispers	A Nurse's Calling	Sloppy Butcher
+Build	Killer	Spirit Rin	Hex Ruin	Whispers	A Nurse's Calling	Sloppy Butcher
 Build	Killer	Spirit Rin	Hex Ruin	Whispers	A Nurse's Calling	Stridor
 Build	Killer	Spirit Rin	Hex Ruin	Whispers	A Nurse's Calling	Predator
 Build	Killer	Spirit Rin	Hex Ruin	Whispers	A Nurse's Calling	Pop Goes The Weasel
 Build	Killer	Spirit Rin	Hex Ruin	Whispers	A Nurse's Calling	Spies From The Shadows
 Build	Killer	Spirit Rin	Hex Ruin	Whispers	A Nurse's Calling	Enduring
 Build	Killer	Spirit Rin	Hex Ruin	Whispers	A Nurse's Calling	Hex No One Escapes Death
-FavBuild	Killer	Spirit Rin	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Monitor & Abuse
+Build	Killer	Spirit Rin	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Monitor & Abuse
 FavBuild	Killer	Spirit Rin	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Sloppy Butcher
 Build	Killer	Spirit Rin	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Stridor
 Build	Killer	Spirit Rin	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Predator
@@ -1287,7 +1340,7 @@ Build	Killer	Spirit Rin	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Enduring
 Build	Killer	Spirit Rin	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Hex No One Escapes Death
 Build	Killer	Spirit Rin	Pop Goes The Weasel	Whispers	A Nurse's Calling	Barbecue & Chilli
 Build	Killer	Spirit Rin	Pop Goes The Weasel	Whispers	A Nurse's Calling	Make Your Choice
-Build	Killer	Spirit Rin	Pop Goes The Weasel	Whispers	A Nurse's Calling	Sloppy Butcher
+FavBuild	Killer	Spirit Rin	Pop Goes The Weasel	Whispers	A Nurse's Calling	Sloppy Butcher
 Build	Killer	Spirit Rin	Pop Goes The Weasel	Whispers	A Nurse's Calling	Stridor
 Build	Killer	Spirit Rin	Pop Goes The Weasel	Whispers	A Nurse's Calling	Predator
 Build	Killer	Spirit Rin	Pop Goes The Weasel	Whispers	A Nurse's Calling	Spies From The Shadows
@@ -1301,18 +1354,73 @@ Build	Killer	Spirit Rin	Pop Goes The Weasel	Barbecue & Chilli	A Nurse's Calling	
 Build	Killer	Spirit Rin	Pop Goes The Weasel	Barbecue & Chilli	A Nurse's Calling	Enduring
 Build	Killer	Spirit Rin	Pop Goes The Weasel	Barbecue & Chilli	A Nurse's Calling	Hex No One Escapes Death
 Totem-Addon	Killer	Spirit Rin	Hex Ruin	Hex Devour Hope	Hex Haunted Ground	Hex Thrill Of The Hunt
-Build-Addon	Killer	Spirit Rin	Hex Ruin	Barbecue & Chilli	A Nurse's Calling	Discordance
+Build-Addon	Killer	Spirit Rin	Hex Ruin	Barbecue & Chilli	Whispers	Discordance
+Build-Addon	Killer	Spirit Rin	Hex Ruin	Barbecue & Chilli	Whispers	Surveillance
+Build-Addon	Killer	Spirit Rin	Pop Goes The Weasel	Barbecue & Chilli	Whispers	Discordance
+Build-Addon	Killer	Spirit Rin	Pop Goes The Weasel	Barbecue & Chilli	Whispers	Surveillance
 Perkless	Killer	Spirit Rin	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Legion #################################
 FavBuild	Killer	Legion	Hex Ruin	Monitor & Abuse	Thanatophobia	Barbecue & Chilli
-FavBuild	Killer	Legion	Hex Ruin	Monitor & Abuse	Thanatophobia	Bloodhound
+FavBuild	Killer	Legion	Hex Ruin	Enduring	Pop Goes The Weasel	Barbecue & Chilli
+FavBuild	Killer	Legion	Corrupt Intervention	Monitor & Abuse	Thanatophobia	Barbecue & Chilli
+FavBuild	Killer	Legion	Corrupt Intervention	Enduring	Pop Goes The Weasel	Barbecue & Chilli
 Build	Killer	Legion	Hex Ruin	Monitor & Abuse	Thanatophobia	Sloppy Butcher
 Build	Killer	Legion	Hex Ruin	Monitor & Abuse	Thanatophobia	Stridor
 Build	Killer	Legion	Hex Ruin	Monitor & Abuse	Thanatophobia	Whispers
-Build	Killer	Legion	Hex Ruin	Sloppy Butcher	Thanatophobia	Bloodhound
 Build	Killer	Legion	Hex Ruin	Sloppy Butcher	Thanatophobia	Stridor
 Build	Killer	Legion	Hex Ruin	Sloppy Butcher	Thanatophobia	Barbecue & Chilli
 Build	Killer	Legion	Hex Ruin	Sloppy Butcher	Thanatophobia	Whispers
 Build	Killer	Legion	Hex Ruin	Whispers	Thanatophobia	Barbecue & Chilli
 Perkless	Killer	Legion	Undefined	Undefined	Undefined	Undefined
+################################# Killer - Ghostface #################################
+FavBuild	Killer	Ghostface	Hex Ruin	Pop Goes The Weasel	Discordance	Whispers
+FavBuild	Killer	Ghostface	Corrupt Intervention	Pop Goes The Weasel	Discordance	Whispers
+FavBuild	Killer	Ghostface	Hex Ruin	Pop Goes The Weasel	Discordance	Barbecue & Chilli
+FavBuild	Killer	Ghostface	Corrupt Intervention	Pop Goes The Weasel	Enduring	Barbecue & Chilli
+FavBuild	Killer	Ghostface	Hex Ruin	Pop Goes The Weasel	Enduring	Spirit Fury
+Build	Killer	Ghostface	Hex Ruin	Pop Goes The Weasel	Enduring	Barbecue & Chilli
+Build	Killer	Ghostface	Hex Ruin	Pop Goes The Weasel	Enduring	A Nurse's Calling
+Build	Killer	Ghostface	Hex Ruin	Pop Goes The Weasel	Enduring	Whispers
+Build	Killer	Ghostface	Corrupt Intervention	Pop Goes The Weasel	Enduring	Spirit Fury
+Build	Killer	Ghostface	Corrupt Intervention	Pop Goes The Weasel	Enduring	A Nurse's Calling
+Build	Killer	Ghostface	Corrupt Intervention	Pop Goes The Weasel	Enduring	Whispers
+Build	Killer	Ghostface	Hex Ruin	A Nurse's Calling	Enduring	Spirit Fury
+Build	Killer	Ghostface	Hex Ruin	A Nurse's Calling	Enduring	Bamboozle
+Build	Killer	Ghostface	Hex Ruin	A Nurse's Calling	Enduring	Brutal Strength
+Build	Killer	Ghostface	Hex Ruin	Sloppy Butcher	Enduring	Spirit Fury
+Build	Killer	Ghostface	Hex Ruin	Sloppy Butcher	Enduring	Bamboozle
+Build	Killer	Ghostface	Hex Ruin	Sloppy Butcher	Enduring	Brutal Strength
+Build	Killer	Ghostface	Hex Ruin	Whispers	Enduring	Barbecue & Chilli
+Build	Killer	Ghostface	Hex Ruin	Whispers	Enduring	Spirit Fury
+Build	Killer	Ghostface	Hex Ruin	Whispers	Enduring	Bamboozle
+Build	Killer	Ghostface	Hex Ruin	Whispers	Enduring	Brutal Strength
+Build	Killer	Ghostface	Hex Ruin	Bamboozle	Enduring	Spirit Fury
+Build	Killer	Ghostface	Hex Ruin	Bamboozle	Enduring	Brutal Strength
+Build	Killer	Ghostface	Hex Ruin	Brutal Strength	Enduring	Spirit Fury
+Build	Killer	Ghostface	Pop Goes The Weasel	A Nurse's Calling	Enduring	Spirit Fury
+Build	Killer	Ghostface	Pop Goes The Weasel	A Nurse's Calling	Enduring	Bamboozle
+Build	Killer	Ghostface	Pop Goes The Weasel	A Nurse's Calling	Enduring	Brutal Strength
+Build	Killer	Ghostface	Pop Goes The Weasel	Sloppy Butcher	Enduring	Spirit Fury
+Build	Killer	Ghostface	Pop Goes The Weasel	Sloppy Butcher	Enduring	Bamboozle
+Build	Killer	Ghostface	Pop Goes The Weasel	Sloppy Butcher	Enduring	Brutal Strength
+Build	Killer	Ghostface	Pop Goes The Weasel	Whispers	Enduring	Spirit Fury
+Build	Killer	Ghostface	Pop Goes The Weasel	Whispers	Enduring	Bamboozle
+Build	Killer	Ghostface	Pop Goes The Weasel	Whispers	Enduring	Brutal Strength
+Build	Killer	Ghostface	Pop Goes The Weasel	Bamboozle	Enduring	Spirit Fury
+Build	Killer	Ghostface	Pop Goes The Weasel	Bamboozle	Enduring	Brutal Strength
+Build	Killer	Ghostface	Pop Goes The Weasel	Brutal Strength	Enduring	Spirit Fury
+Build	Killer	Ghostface	Barbecue & Chilli	A Nurse's Calling	Enduring	Spirit Fury
+Build	Killer	Ghostface	Barbecue & Chilli	A Nurse's Calling	Enduring	Sloppy Butcher
+Build	Killer	Ghostface	Barbecue & Chilli	A Nurse's Calling	Enduring	Bamboozle
+Build	Killer	Ghostface	Barbecue & Chilli	A Nurse's Calling	Enduring	Brutal Strength
+Build	Killer	Ghostface	Barbecue & Chilli	Whispers	Enduring	Spirit Fury
+Build	Killer	Ghostface	Barbecue & Chilli	Whispers	Enduring	Sloppy Butcher
+Build	Killer	Ghostface	Barbecue & Chilli	Whispers	Enduring	Bamboozle
+Build	Killer	Ghostface	Barbecue & Chilli	Whispers	Enduring	Brutal Strength
+Build	Killer	Ghostface	Barbecue & Chilli	Brutal Strength	Enduring	Spirit Fury
+Build	Killer	Ghostface	Barbecue & Chilli	Brutal Strength	Enduring	Bamboozle
+Build	Killer	Ghostface	Whispers	Brutal Strength	Enduring	Spirit Fury
+Build	Killer	Ghostface	Whispers	Bamboozle	Enduring	Spirit Fury
+Build	Killer	Ghostface	Whispers	Bamboozle	Enduring	Brutal Strength
+Perkless	Killer	Ghostface	Undefined	Undefined	Undefined	Undefined
 ################################# End #################################
