@@ -32,7 +32,7 @@ Discordance	Killer	iconPerks_discordance	125
 Distortion	Survivor	iconPerks_distortion	50
 Distressing	Killer	iconPerks_distressing	10
 Diversion	Survivor	iconPerks_diversion	100
-Dying Light	Killer	iconPerks_dyingLight	10
+Dying Light	Killer	iconPerks_dyingLight	125
 Empathy	Survivor	iconPerks_empathy	75
 Enduring	Killer	iconPerks_enduring	175
 Fire Up	Killer	iconPerks_fireUp	5
@@ -113,13 +113,22 @@ Whispers	Killer	iconPerks_whispers	150
 Windows Of Opportunity	Survivor	iconPerks_windowsOfOpportunity	75
 Solidarity	Survivor	iconPerks_solidarity	25
 Poised	Survivor	iconPerks_poised	75
-Head On	Survivor	iconPerks_headOn	100
+Head On	Survivor	iconPerks_headOn	125
 Corrupt Intervention	Killer	iconPerks_corruptIntervention	125
 Infectious Fright	Killer	iconPerks_infectiousFright	100
-Dark Devotion	Killer	iconPerks_darkDevotion	10
+Dark Devotion	Killer	iconPerks_darkDevotion	25
 Mettle Of Man	Survivor	iconPerks_mettleOfMan	75
 Buckle Up	Survivor	iconPerks_buckleUp	5
 Flip-Flop	Survivor	iconPerks_flipFlop	100
 Furtive Chase	Killer	iconPerks_FurtiveChase	10
 Thrilling Tremors	Killer	iconPerks_ThrillingTremors	125
 I'm All Ears	Killer	iconPerks_ImAllEars	50
+Surge	Killer	iconPerks_Surge	125
+Mindbreaker	Killer	iconPerks_Mindbreaker	25
+Cruel Limits	Killer	iconPerks_CruelLimits	10
+Second Wind	Survivor	iconPerks_SecondWind	50
+Inner Strength	Survivor	iconPerks_InnerStrength	125
+Fixated	Survivor	iconPerks_Fixated	75
+Camaraderie	Survivor	iconPerks_Camaraderie	5
+BetterTogether	Survivor	iconPerks_BetterTogether	50
+Babysitter	Survivor	iconPerks_Babysitter	25

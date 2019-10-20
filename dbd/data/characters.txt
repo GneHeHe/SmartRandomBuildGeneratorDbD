@@ -31,3 +31,6 @@ Plague	Killer	MK_charSelect_portrait
 Jane	Survivor	MS_charSelect_portrait
 Ash	Survivor	MS2_charSelect_portrait
 Ghostface	Killer	OK_charSelect_portrait
+Nancy	Survivor	QF_charSelect_portrait
+Steve	Survivor	QM_charSelect_portrait
+Demogorgon	Killer	QK_charSelect_portrait
