@@ -32,9 +32,9 @@ Besides, **generated builds** can be easily **saved in a build database** for fu
 
 
 ### Interesting features can also be enabled on both sides:
-* ** perk constraints** (required perk from varied classes, see below)
-* ** perk-based synergy rules**
-* ** character-based synergy rules**
+* **perk constraints** (required perk from varied classes, see below)
+* **perk-based synergy rules**
+* **character-based synergy rules**
 
 
 <u>**Example of Perk Constraints for Survivor Side**</u>:
