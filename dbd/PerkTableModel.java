@@ -9,7 +9,7 @@ import javax.swing.JLabel;
  *
  * PerkTableModel
  *
- * @author GneHeHe (2018)
+ * @author GneHeHe (2019)
  *
  */
 public class PerkTableModel extends AbstractTableModel {
@@ -34,7 +34,7 @@ public class PerkTableModel extends AbstractTableModel {
     }
 
     /**
-     * Get Number of Rows
+     * Get Nb of Rows
      *
      * @return
      */
@@ -44,7 +44,7 @@ public class PerkTableModel extends AbstractTableModel {
     }
 
     /**
-     * Get Number of Columns
+     * Get Nb of Columns
      *
      * @return
      */
@@ -54,7 +54,7 @@ public class PerkTableModel extends AbstractTableModel {
     }
 
     /**
-     * Get Name of a Column
+     * Get Name of a given Column
      *
      * @param columnIndex
      * @return
@@ -65,7 +65,7 @@ public class PerkTableModel extends AbstractTableModel {
     }
 
     /**
-     * Get Class of a Column
+     * Get Class of a given Column
      *
      * @param columnIndex
      * @return
@@ -109,7 +109,7 @@ public class PerkTableModel extends AbstractTableModel {
     }
 
     /**
-     * Is this Cell Editable ?
+     * Is the Cell Editable ?
      *
      * @param rowIndex
      * @param columnIndex
@@ -142,7 +142,7 @@ public class PerkTableModel extends AbstractTableModel {
             Perk p = l_perks.get(rowIndex);
             if (columnIndex == 2) {
                 // Update Weight for given Perk
-                p.setWeight(Integer.parseInt(aValue.toString()));
+                p.setWeight(Integer.parseInt(aValue.toString()), true);
                 System.out.println("# Updated Perk '" + p.getName() + "' => New Value is '" + p.getWeight() + "'");
             }
             // Update SmartRandBuildGen Object
@@ -151,16 +151,17 @@ public class PerkTableModel extends AbstractTableModel {
     }
 
     /**
-     * Update Table according to SmartRandBuildGen Object
+     * Update Table according to SmartRandBuildGen Object & Throw Event
      *
+     * @param side
      */
-    public void updateTable() {
+    public void updateTable(String side) {
         // Reset Data
         l_perks.clear();
         // Loop over Perks from SmartRandBuildGen Object
         List<Perk> allperks = srbg.getPerks();
         for (Perk p : allperks) {
-            if (p.getSide().equals(srbg.getSide())) {
+            if (p.getSide().equals(side)) {
                 l_perks.add(p);
             }
         }
@@ -179,7 +180,7 @@ public class PerkTableModel extends AbstractTableModel {
             // Retrieve Perk from SmartRandBuildGen Object
             Perk p_builder = srbg.getPerk(p_table.getName());
             // Update Value
-            p_builder.setWeight(p_table.getWeight());
+            p_builder.setWeight(p_table.getWeight(), true);
         }
         // Update Pool of Perks
         srbg.setUpdatePerkPool(true);

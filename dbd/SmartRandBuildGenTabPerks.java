@@ -11,7 +11,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
  *
  * SmartRandBuildGenTabPerks
  *
- * @author GneHeHe (2018)
+ * @author GneHeHe (2019)
  *
  */
 public class SmartRandBuildGenTabPerks extends JPanel {
@@ -23,7 +23,6 @@ public class SmartRandBuildGenTabPerks extends JPanel {
     private JLabel lab_side;
     private JComboBox cb_side;
     private JFileChooser fileChooser;
-    private JTextField tf_perks;
     private PerkTable table;
     // SmartRandBuildGen Object 
     private SmartRandBuildGen srbg;
@@ -45,7 +44,6 @@ public class SmartRandBuildGenTabPerks extends JPanel {
         this.pan_side = new JPanel(new FlowLayout(FlowLayout.CENTER));
         this.pan_side.add(this.lab_side);
         this.pan_side.add(this.cb_side);
-        this.pan_side.add(this.tf_perks);
 
         this.pan_button = new JPanel(new FlowLayout(FlowLayout.CENTER));
         this.pan_button.add(this.b_default);
@@ -69,32 +67,21 @@ public class SmartRandBuildGenTabPerks extends JPanel {
      */
     private void addComponents() {
 
-        // Create Table
-        this.table = new PerkTable();
-        this.table.setModel(new PerkTableModel(this.srbg));
-        this.table.setRowHeight(58);
-        this.table.centerText();
-        this.table.setIconColumn(1);
-        this.table.setColumnWeight(2);
-        this.table.setShowVerticalLines(false);
-        // Update Table
-        ((PerkTableModel) this.table.getModel()).updateTable();
-
         // Define JLabel Objects
-        this.lab_side = new JLabel("Set active Side");
-
-        // Define JTextField Objects
-        this.tf_perks = new JTextField(24);
-        this.tf_perks.setHorizontalAlignment(JTextField.CENTER);
-        this.tf_perks.setEditable(false);
-        this.updateText();
+        this.lab_side = new JLabel("Display Perks from this Side: ");
 
         // Define JButton Objects
-        this.b_load = new JButton("Open custom Perk Distribution");
-        this.b_save = new JButton("Save current Perk Distribution");
+        this.b_load = new JButton("Open custom Weight File");
+        this.b_save = new JButton("Save current Weight Table");
         this.b_same = new JButton("Set identical Weights");
         this.b_default = new JButton("Reload original Weights");
 
+        // Add Tooltips
+        this.b_load.setToolTipText("Load a custom weight distribution for each perk");
+        this.b_save.setToolTipText("Save the current weight distribution from the table in an output file");
+        this.b_same.setToolTipText("Pure random builds will be generated (same weight for each perk, no perk constraint and no synergy rules)");
+        this.b_default.setToolTipText("Reset each weight to its original value");
+        
         // Define JFileChooser Objects
         this.fileChooser = new JFileChooser();
         this.fileChooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
@@ -112,6 +99,22 @@ public class SmartRandBuildGenTabPerks extends JPanel {
             this.cb_side.setSelectedIndex(1);
         }
 
+        // Create Table
+        this.table = new PerkTable();
+        this.table.setModel(new PerkTableModel(this.srbg));
+        this.table.setRowHeight(58);
+        this.table.centerText();
+        this.table.setIconColumn(1);
+        this.table.setColumnWeight(2);
+        // Update Table
+        ((PerkTableModel) this.table.getModel()).updateTable(this.cb_side.getSelectedItem().toString());
+
+        // Check
+        if (this.table.getWeightMax() >= this.srbg.weight_perk_max) {
+            Tools.getAlert("ERROR: Synergy Feature is impossible because the highest tolerated Weight for Perks is too small ( " + this.srbg.weight_perk_max + " vs " + this.table.getWeightMax() + " ) => Exit", "Warning", JOptionPane.ERROR_MESSAGE);
+            System.exit(0);
+        }
+
         // Define ActionListener
         this.b_load.addActionListener(new ActionListener() {
             @Override
@@ -123,10 +126,8 @@ public class SmartRandBuildGenTabPerks extends JPanel {
                             System.out.println("# Loading custom weight distribution from " + f);
                             // Load a custom Configuration File
                             srbg.readConfigFile(f);
-                            // Update Fields
-                            updateText();
                             // Update Model & Table
-                            ((PerkTableModel) table.getModel()).updateTable();
+                            ((PerkTableModel) table.getModel()).updateTable(cb_side.getSelectedItem().toString());
                         } catch (Exception ex) {
                             Tools.getAlert("ERROR: Issues were encountered while processing the configuration file " + f, "Warning", JOptionPane.ERROR_MESSAGE);
                         }
@@ -141,8 +142,14 @@ public class SmartRandBuildGenTabPerks extends JPanel {
             public void actionPerformed(ActionEvent e) {
                 // Set same Weight for Perks
                 srbg.setSameWeight(1);
+                // Disable Synergy & all Constraints
+                srbg.setSynergy(false);
+                srbg.setConstraintsPerks(1, false);
+                srbg.setConstraintsPerks(2, false);
+                srbg.setConstraintsPerks(3, false);
+                srbg.setConstraintsPerks(4, false);
                 // Update Model & Table
-                ((PerkTableModel) table.getModel()).updateTable();
+                ((PerkTableModel) table.getModel()).updateTable(cb_side.getSelectedItem().toString());
             }
         });
 
@@ -153,10 +160,8 @@ public class SmartRandBuildGenTabPerks extends JPanel {
                 System.out.println("# All perks have loaded weights from start");
                 // Load default Configuration File
                 srbg.initConfigFile();
-                // Update Fields
-                updateText();
                 // Update Model & Table
-                ((PerkTableModel) table.getModel()).updateTable();
+                ((PerkTableModel) table.getModel()).updateTable(cb_side.getSelectedItem().toString());
             }
         });
 
@@ -183,16 +188,9 @@ public class SmartRandBuildGenTabPerks extends JPanel {
                 JComboBox combo = (JComboBox) e.getSource();
                 // Retrieve & Define Side
                 String value = combo.getSelectedItem().toString();
-                srbg.setSide(value);
-                // Update Field
-                updateText();
-                if (value.equals("Killer")) {
-                    // Update Values
-                    srbg.setNeedCare(false);
-                    srbg.setNeedSprint(false);
-                }
+                //srbg.setSide(value);
                 // Update Table => Only Display Perks from active Side
-                ((PerkTableModel) table.getModel()).updateTable();
+                ((PerkTableModel) table.getModel()).updateTable(value);
             }
         });
 
@@ -222,14 +220,6 @@ public class SmartRandBuildGenTabPerks extends JPanel {
         } else {
             return null;
         }
-    }
-
-    /**
-     * Update Text Field
-     *
-     */
-    private void updateText() {
-        tf_perks.setText(srbg.getNbPerksAll() + " loaded Perks (" + srbg.getNbPerksSide() + " active Perks)");
     }
 
 }

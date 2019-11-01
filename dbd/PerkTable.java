@@ -18,7 +18,7 @@ import javax.swing.table.TableColumn;
  *
  * PerkTable
  *
- * @author GneHeHe (2018)
+ * @author GneHeHe (2019)
  *
  */
 public class PerkTable extends JTable {
@@ -52,12 +52,11 @@ public class PerkTable extends JTable {
         this.l_weights.add(10);
         this.l_weights.add(25);
         this.l_weights.add(50);
-        this.l_weights.add(75);
         this.l_weights.add(100);
-        this.l_weights.add(125);
         this.l_weights.add(150);
-        this.l_weights.add(175);
         this.l_weights.add(200);
+        this.l_weights.add(250);
+        this.l_weights.add(300);
         this.weight_max = getWeightMax();
     }
 
@@ -144,7 +143,7 @@ public class PerkTable extends JTable {
      *
      * @return
      */
-    private int getWeightMax() {
+    public final int getWeightMax() {
         int max = 0;
         for (Integer v : l_weights) {
             if (v > max) {

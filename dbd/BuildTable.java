@@ -12,7 +12,7 @@ import javax.swing.table.TableRowSorter;
  *
  * BuildTable
  *
- * @author GneHeHe (2018)
+ * @author GneHeHe (2019)
  *
  */
 public class BuildTable extends JTable {
@@ -38,19 +38,7 @@ public class BuildTable extends JTable {
     }
 
     /**
-     * Center Text in all Columns
-     *
-     */
-    public void centerText() {
-        for (int i = 0; i < getColumnCount(); i++) {
-            DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
-            centerRenderer.setHorizontalAlignment(JLabel.CENTER);
-            getColumnModel().getColumn(i).setCellRenderer(centerRenderer);
-        }
-    }
-
-    /**
-     * Center Text in a Column
+     * Center Text in a given Column
      *
      * @param column
      */
@@ -58,6 +46,16 @@ public class BuildTable extends JTable {
         DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
         centerRenderer.setHorizontalAlignment(JLabel.CENTER);
         getColumnModel().getColumn(column).setCellRenderer(centerRenderer);
+    }
+
+    /**
+     * Center Text in all Columns
+     *
+     */
+    public void centerText() {
+        for (int i = 0; i < getColumnCount(); i++) {
+            this.centerText(i);
+        }
     }
 
     /**
@@ -73,7 +71,7 @@ public class BuildTable extends JTable {
     /**
      * Remove Selected Rows from Table
      *
-     * @return 
+     * @return
      */
     public boolean removeSelectedRows() {
         BuildTableModel model = (BuildTableModel) this.getModel();

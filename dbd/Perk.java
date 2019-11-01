@@ -9,7 +9,7 @@ import javax.swing.SwingConstants;
  *
  * Perk
  *
- * @author GneHeHe (2018)
+ * @author GneHeHe (2019)
  *
  */
 public class Perk implements Comparable<Perk> {
@@ -18,6 +18,7 @@ public class Perk implements Comparable<Perk> {
     private String name;
     // Weight of Perk
     private int weight;
+    private int weight_ref;
     // Side of Perk
     private String side;
     // Icon of Perk (as String)
@@ -44,7 +45,7 @@ public class Perk implements Comparable<Perk> {
     public Perk(String name, int weight, String side, String icon) {
         this.setName(name);
         this.setSide(side);
-        this.setWeight(weight);
+        this.setWeight(weight, true);
         this.lab_img_small = new JLabel("", SwingConstants.CENTER);
         this.lab_img_medium = new JLabel("", SwingConstants.CENTER);
         this.lab_img_large = new JLabel("", SwingConstants.CENTER);
@@ -64,7 +65,7 @@ public class Perk implements Comparable<Perk> {
     public Perk() {
         this.setName(Perk.GENERIC);
         this.side = Perk.GENERIC;
-        this.setWeight(0);
+        this.setWeight(0, true);
         // Set Default Icon
         String icon = "iconPerks_default";
         this.lab_img_small = new JLabel("", SwingConstants.CENTER);
@@ -171,7 +172,6 @@ public class Perk implements Comparable<Perk> {
         } else {
             // Try to use default Icon Picture
             s_icon = "iconPerks_default";
-            System.err.println("# WARNING: Icon File '" + path + "' was not found for Perk '" + this.name + "' => using default Icon File ('" + s_icon + "') from data directory");
             path = "icons_perks/" + s_icon + ".png";
             if (this.getClass().getResourceAsStream(path) != null) {
                 // Set Default Icon in JLabel
@@ -199,12 +199,25 @@ public class Perk implements Comparable<Perk> {
     }
 
     /**
+     * Get Perk Weight (Reference)
+     *
+     * @return
+     */
+    public int getWeightRef() {
+        return this.weight_ref;
+    }
+
+    /**
      * Set Perk Weight
      *
      * @param weight
+     * @param init
      */
-    public final void setWeight(int weight) {
+    public final void setWeight(int weight, boolean init) {
         this.weight = weight;
+        if (init) {
+            this.weight_ref = weight;
+        }
     }
 
     /**
@@ -215,9 +228,9 @@ public class Perk implements Comparable<Perk> {
      */
     public String show(boolean detail) {
         if (detail) {
-            return "# Perk = '" + this.name + "' | Side = " + this.side + " | Icon = " + this.icon_string + " | Weight = " + this.getWeight();
+            return "# - Perk '" + this.name + "' | " + this.side + " Side | Icon = " + this.icon_string + " | Weight = " + this.getWeight();
         } else {
-            return "# Perk = '" + this.name + "' | Side = " + this.side + " | Weight = " + this.getWeight();
+            return "# - Perk '" + this.name + "' | " + this.side + " Side | Weight = " + this.getWeight();
         }
     }
 

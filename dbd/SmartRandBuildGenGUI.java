@@ -8,7 +8,7 @@ import javax.swing.UIManager.*;
  *
  * SmartRandBuildGenGUI
  *
- * @author GneHeHe (2018)
+ * @author GneHeHe (2019)
  *
  */
 public class SmartRandBuildGenGUI extends JFrame {
@@ -50,20 +50,20 @@ public class SmartRandBuildGenGUI extends JFrame {
         this.tabbedPane.addTab("Contact & Help", this.pan_info);
 
         // Add Tooltips on Tabs
-        this.tabbedPane.setToolTipTextAt(0, "Set the Weights for all Perks");
-        this.tabbedPane.setToolTipTextAt(1, "Get Random Builds (Side, Character, Perks)");
-        this.tabbedPane.setToolTipTextAt(2, "Save favorite Builds in Database");
-        this.tabbedPane.setToolTipTextAt(3, "Contact Author & Help/Tutorial");
+        this.tabbedPane.setToolTipTextAt(0, "Define the weights for all perks");
+        this.tabbedPane.setToolTipTextAt(1, "Generate random builds (Main tab of SRBG)");
+        this.tabbedPane.setToolTipTextAt(2, "Save favorite builds in database");
+        this.tabbedPane.setToolTipTextAt(3, "Contact author & read help");
 
         // Set favorite Tab
-        this.tabbedPane.setSelectedIndex(0);
+        this.tabbedPane.setSelectedIndex(1);
 
         // Add Main Panel to Frame
         this.getContentPane().add(this.tabbedPane);
 
         // Set Frame
         this.setTitle(SmartRandBuildGen.TITLE);
-        this.setSize(new Dimension(1000, 750));
+        this.setSize(new Dimension(1100, 750));
         this.setResizable(false);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         //this.pack();
@@ -79,8 +79,12 @@ public class SmartRandBuildGenGUI extends JFrame {
      */
     public static void main(String[] args) {
 
-        // Build Object
-        SmartRandBuildGen mysrbg = new SmartRandBuildGen();
+        // Build Object (No Verbose Mode in GUI)
+        SmartRandBuildGen mysrbg = new SmartRandBuildGen(false);
+        mysrbg.setConstraintsPerks(1, true);
+        mysrbg.setConstraintsPerks(2, true);
+        mysrbg.setConstraintsPerks(3, true);
+        System.out.println("");
 
         // Define Tabs
         SmartRandBuildGenTabPerks myPerks = new SmartRandBuildGenTabPerks(mysrbg);

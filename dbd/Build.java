@@ -1,24 +1,27 @@
 package dbd;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
  * Build
  *
- * @author GneHeHe (2018)
- * 
+ * @author GneHeHe (2019)
+ *
  */
 public class Build {
 
-    // Name of Build
+    // Name
     private String name;
-    // Side of Build
+    // Side
     private String side;
-    // Character of Build
+    // Character
     private Character character;
     // List of Perks
     private ArrayList<Perk> l_perks;
+    // Score
+    private int score;
 
     /**
      * Default Constructor
@@ -29,6 +32,7 @@ public class Build {
         this.side = "";
         this.character = null;
         this.l_perks = new ArrayList<>();
+        this.score = 0;
     }
 
     /**
@@ -44,6 +48,24 @@ public class Build {
         this.side = side;
         this.character = c;
         this.l_perks = l;
+        this.score = 0;
+    }
+
+    /**
+     * Constructor
+     *
+     * @param name
+     * @param side
+     * @param c
+     * @param l
+     * @param score
+     */
+    public Build(String name, String side, Character c, ArrayList<Perk> l, int score) {
+        this.name = name;
+        this.side = side;
+        this.character = c;
+        this.l_perks = l;
+        this.score = score;
     }
 
     /**
@@ -100,10 +122,28 @@ public class Build {
     /**
      * Set Character
      *
-     * @param name
+     * @param character
      */
-    public void setCharacter(Character name) {
-        this.character = name;
+    public void setCharacter(Character character) {
+        this.character = character;
+    }
+
+    /**
+     * Get Score
+     *
+     * @return
+     */
+    public int getScore() {
+        return this.score;
+    }
+
+    /**
+     * Set Score
+     *
+     * @param s
+     */
+    public void setScore(int s) {
+        this.score = s;
     }
 
     /**
@@ -142,7 +182,7 @@ public class Build {
     }
 
     /**
-     * Get Number of Perks
+     * Get Nb of Perks
      *
      * @return
      */
@@ -153,21 +193,21 @@ public class Build {
     /**
      * Display Build as String
      *
-     * @param showDetail
+     * @param showDetails
      * @param spacer
      * @return
      */
-    public String show(boolean showDetail, String spacer) {
+    public String show(boolean showDetails, String spacer) {
         String s = "";
-        if (showDetail) {
-            s = "Name = '" + this.name + "'" + spacer + "| Side = '" + this.side + "'" + spacer + "| Character = '" + this.character + "'" + spacer;
+        if (showDetails) {
+            s = "Name = '" + this.name + "'" + spacer + "| Score = " + this.score + " | Side = '" + this.side + "'" + spacer + "| Character = '" + this.character + "'" + spacer;
         } else {
-            s = this.name + spacer;
+            s = this.name + spacer + this.score + spacer + this.side + spacer + this.character + spacer;
         }
         int nb = 1;
         for (Perk p : this.l_perks) {
-            if (showDetail) {
-                s = s + "| Perk " + nb + " = '" + p.getName() + "'";
+            if (showDetails) {
+                s = s + "| Perk" + nb + " = '" + p.getName() + "'";
             } else {
                 s = s + p.getName();
             }
@@ -196,6 +236,7 @@ public class Build {
      * @return
      */
     public boolean isDuplicate(Build b) {
+        // Current Build as List
         ArrayList<String> l1 = new ArrayList<>();
         l1.add(this.getSide());
         l1.add(this.getCharacter().getName());
@@ -203,6 +244,7 @@ public class Build {
         l1.add(this.getPerk(2).getName());
         l1.add(this.getPerk(3).getName());
         l1.add(this.getPerk(4).getName());
+        // Argument Build as List
         ArrayList<String> l2 = new ArrayList<>();
         l2.add(b.getSide());
         l2.add(b.getCharacter().getName());
@@ -210,7 +252,26 @@ public class Build {
         l2.add(b.getPerk(2).getName());
         l2.add(b.getPerk(3).getName());
         l2.add(b.getPerk(4).getName());
+        // Are they Identical?
         return Tools.isDuplicate(l1, l2, true);
+    }
+
+    /**
+     * Get the Build with Highest Score
+     *
+     * @param l_builds
+     * @return
+     */
+    public static Build getBestBuild(List<Build> l_builds) {
+        // Generic Build (Score=0)
+        Build b = new Build();
+        // Find Best Build
+        for (Build current : l_builds) {
+            if (current.getScore() > b.getScore()) {
+                b = current;
+            }
+        }
+        return b;
     }
 
 }

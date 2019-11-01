@@ -1,0 +1,271 @@
+############# Clown #############
+Clown	Bamboozle	100
+Clown	Brutal Strength	300
+Clown	Enduring	100
+Clown	Hex Ruin	200
+Clown	Make Your Choice	100
+Clown	Pop Goes The Weasel	100
+Clown	Save The Best For Last	100
+############# Demogorgon #############
+Demogorgon	Bamboozle	100
+Demogorgon	Barbecue & Chilli	100
+Demogorgon	Brutal Strength	-50
+Demogorgon	Enduring	100
+Demogorgon	Hex Ruin	100
+Demogorgon	Make Your Choice	100
+Demogorgon	Pop Goes The Weasel	200
+Demogorgon	Save The Best For Last	100
+Demogorgon	Surge	-50
+Demogorgon	Territorial Imperative	100
+############# Doctor #############
+Doctor	Brutal Strength	300
+Doctor	Deerstalker	-500
+Doctor	Distressing	200
+Doctor	Enduring	100
+Doctor	Hex Devour Hope	100
+Doctor	Hex Huntress Lullaby	100
+Doctor	Hex Ruin	200
+Doctor	Hex Thrill Of The Hunt	100
+Doctor	Iron Maiden	100
+Doctor	Make Your Choice	100
+Doctor	Overcharge	100
+Doctor	Pop Goes The Weasel	100
+Doctor	Unnerving Presence	100
+Doctor	Whispers	-50
+############# Freddy #############
+Freddy	Bamboozle	100
+Freddy	Barbecue & Chilli	200
+Freddy	Enduring	100
+Freddy	Hex Huntress Lullaby	100
+Freddy	Hex Ruin	100
+Freddy	Insidious	-500
+Freddy	Make Your Choice	100
+Freddy	Overcharge	-500
+Freddy	Pop Goes The Weasel	200
+Freddy	Thrilling Tremors	100
+############# Ghostface #############
+Ghostface	A Nurse's Calling	300
+Ghostface	Bamboozle	100
+Ghostface	Corrupt Intervention	100
+Ghostface	Dark Devotion	-50
+Ghostface	Discordance	200
+Ghostface	Distressing	-500
+Ghostface	Enduring	100
+Ghostface	Hex Devour Hope	100
+Ghostface	Hex Haunted Ground	100
+Ghostface	Hex No One Escapes Death	100
+Ghostface	Hex Ruin	200
+Ghostface	Insidious	-500
+Ghostface	Make Your Choice	-100
+Ghostface	Pop Goes The Weasel	100
+Ghostface	Surveillance	100
+Ghostface	Whispers	200
+############# Hag #############
+Hag	Agitation	100
+Hag	Corrupt Intervention	200
+Hag	Distressing	-500
+Hag	Enduring	100
+Hag	Hex Devour Hope	100
+Hag	Hex Haunted Ground	100
+Hag	Hex Ruin	200
+Hag	Hex Thrill Of The Hunt	100
+Hag	Make Your Choice	100
+Hag	Monitor & Abuse	300
+Hag	Pop Goes The Weasel	100
+Hag	Surveillance	100
+############# Hillbilly #############
+Hillbilly	Bamboozle	100
+Hillbilly	Barbecue & Chilli	200
+Hillbilly	Bloodhound	-50
+Hillbilly	Dark Devotion	100
+Hillbilly	Deerstalker	100
+Hillbilly	Discordance	100
+Hillbilly	Enduring	200
+Hillbilly	Hex Devour Hope	100
+Hillbilly	Hex Haunted Ground	-100
+Hillbilly	Hex No One Escapes Death	-100
+Hillbilly	Hex Ruin	100
+Hillbilly	Hex Thrill Of The Hunt	100
+Hillbilly	Infectious Fright	100
+Hillbilly	Make Your Choice	-300
+Hillbilly	Pop Goes The Weasel	200
+Hillbilly	Save The Best For Last	-300
+Hillbilly	Surge	-50
+Hillbilly	Territorial Imperative	100
+Hillbilly	Tinkerer	100
+Hillbilly	Whispers	100
+############# Huntress #############
+Huntress	A Nurse's Calling	200
+Huntress	Barbecue & Chilli	200
+Huntress	Bitter Murmur	100
+Huntress	Brutal Strength	-50
+Huntress	Deerstalker	100
+Huntress	Discordance	100
+Huntress	Hex Devour Hope	100
+Huntress	Hex No One Escapes Death	-50
+Huntress	Hex Ruin	200
+Huntress	Hex Thrill Of The Hunt	100
+Huntress	Insidious	-500
+Huntress	Iron Maiden	300
+Huntress	Pop Goes The Weasel	100
+Huntress	Save The Best For Last	-300
+Huntress	Shadowborn	300
+Huntress	Spies From The Shadows	100
+Huntress	Surge	-50
+Huntress	Whispers	200
+############# Leatherface #############
+Leatherface	Agitation	100
+Leatherface	Bamboozle	100
+Leatherface	Bloodhound	-50
+Leatherface	Brutal Strength	-50
+Leatherface	Dark Devotion	100
+Leatherface	Deerstalker	100
+Leatherface	Enduring	100
+Leatherface	Hex Haunted Ground	-100
+Leatherface	Hex No One Escapes Death	-100
+Leatherface	Hex Ruin	200
+Leatherface	Insidious	100
+Leatherface	Make Your Choice	-300
+Leatherface	Play With Your Food	300
+Leatherface	Pop Goes The Weasel	100
+Leatherface	Save The Best For Last	-300
+Leatherface	Surge	-50
+Leatherface	Territorial Imperative	100
+Leatherface	Tinkerer	100
+############# Legion #############
+Legion	Bamboozle	200
+Legion	Dark Devotion	100
+Legion	Discordance	100
+Legion	Hex No One Escapes Death	-100
+Legion	Hex Ruin	200
+Legion	Monitor & Abuse	100
+Legion	Pop Goes The Weasel	100
+Legion	Save The Best For Last	100
+Legion	Sloppy Butcher	100
+Legion	Thanatophobia	300
+############# Myers #############
+Myers	Agitation	100
+Myers	A Nurse's Calling	100
+Myers	Bamboozle	200
+Myers	Corrupt Intervention	100
+Myers	Dark Devotion	100
+Myers	Deerstalker	100
+Myers	Distressing	-500
+Myers	Enduring	200
+Myers	Hex Devour Hope	100
+Myers	Hex No One Escapes Death	-100
+Myers	Hex Ruin	200
+Myers	Infectious Fright	100
+Myers	Insidious	-500
+Myers	Make Your Choice	-300
+Myers	Monitor & Abuse	300
+Myers	Play With Your Food	100
+Myers	Pop Goes The Weasel	100
+Myers	Tinkerer	100
+Myers	Whispers	100
+############# Nurse Sally #############
+Nurse Sally	A Nurse's Calling	300
+Nurse Sally	Bamboozle	-500
+Nurse Sally	Barbecue & Chilli	200
+Nurse Sally	Brutal Strength	-500
+Nurse Sally	Deerstalker	100
+Nurse Sally	Discordance	100
+Nurse Sally	Enduring	-500
+Nurse Sally	Hex Devour Hope	200
+Nurse Sally	Hex Haunted Ground	100
+Nurse Sally	Hex Ruin	100
+Nurse Sally	Hex Thrill Of The Hunt	100
+Nurse Sally	I'm All Ears	100
+Nurse Sally	Infectious Fright	100
+Nurse Sally	Make Your Choice	100
+Nurse Sally	Play With Your Food	-100
+Nurse Sally	Pop Goes The Weasel	200
+Nurse Sally	Save The Best For Last	-500
+Nurse Sally	Shadowborn	300
+Nurse Sally	Sloppy Butcher	100
+Nurse Sally	Spies From The Shadows	100
+Nurse Sally	Stridor	100
+Nurse Sally	Whispers	200
+############# Pig #############
+Pig	A Nurse's Calling	100
+Pig	Bamboozle	100
+Pig	Barbecue & Chilli	100
+Pig	Discordance	100
+Pig	Distressing	-500
+Pig	Enduring	200
+Pig	Hex Devour Hope	100
+Pig	Hex Haunted Ground	100
+Pig	Hex No One Escapes Death	100
+Pig	Hex Ruin	200
+Pig	I'm All Ears	100
+Pig	Insidious	-500
+Pig	Make Your Choice	100
+Pig	Monitor & Abuse	200
+Pig	Pop Goes The Weasel	100
+Pig	Save The Best For Last	100
+Pig	Surveillance	100
+Pig	Whispers	300
+############# Plague #############
+Plague	A Nurse's Calling	-500
+Plague	Bamboozle	100
+Plague	Enduring	100
+Plague	Hex Ruin	200
+Plague	Infectious Fright	100
+Plague	Make Your Choice	-100
+Plague	Play With Your Food	100
+Plague	Pop Goes The Weasel	100
+Plague	Save The Best For Last	-300
+Plague	Sloppy Butcher	-500
+Plague	Thanatophobia	300
+############# Spirit Rin #############
+Spirit Rin	A Nurse's Calling	100
+Spirit Rin	Barbecue & Chilli	100
+Spirit Rin	Bloodhound	-50
+Spirit Rin	Deerstalker	100
+Spirit Rin	Discordance	100
+Spirit Rin	Distressing	-500
+Spirit Rin	Hex Devour Hope	200
+Spirit Rin	Hex Haunted Ground	100
+Spirit Rin	Hex Ruin	100
+Spirit Rin	Hex Thrill Of The Hunt	100
+Spirit Rin	Make Your Choice	100
+Spirit Rin	Pop Goes The Weasel	200
+Spirit Rin	Predator	100
+Spirit Rin	Shadowborn	100
+Spirit Rin	Sloppy Butcher	100
+Spirit Rin	Spies From The Shadows	100
+Spirit Rin	Stridor	300
+Spirit Rin	Surveillance	100
+Spirit Rin	Whispers	100
+############# Trapper #############
+Trapper	Agitation	100
+Trapper	Bamboozle	100
+Trapper	Brutal Strength	200
+Trapper	Corrupt Intervention	200
+Trapper	Enduring	200
+Trapper	Hangman's Trick	100
+Trapper	Hex Devour Hope	100
+Trapper	Hex No One Escapes Death	100
+Trapper	Hex Ruin	200
+Trapper	Hex Thrill Of The Hunt	100
+Trapper	Make Your Choice	100
+Trapper	Pop Goes The Weasel	100
+Trapper	Save The Best For Last	100
+Trapper	Whispers	300
+############# Wraith #############
+Wraith	A Nurse's Calling	100
+Wraith	Bamboozle	100
+Wraith	Brutal Strength	200
+Wraith	Discordance	100
+Wraith	Distressing	-500
+Wraith	Enduring	200
+Wraith	Hex Devour Hope	100
+Wraith	Hex Haunted Ground	100
+Wraith	Hex No One Escapes Death	100
+Wraith	Hex Ruin	200
+Wraith	Insidious	-500
+Wraith	Lightborn	100
+Wraith	Make Your Choice	300
+Wraith	Play With Your Food	100
+Wraith	Pop Goes The Weasel	100
+Wraith	Save The Best For Last	100

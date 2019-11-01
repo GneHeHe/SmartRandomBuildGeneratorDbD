@@ -1,0 +1,115 @@
+KILLER_1_SLOWDOWN	Corrupt Intervention
+KILLER_1_SLOWDOWN	Coulrophobia
+KILLER_1_SLOWDOWN	Dying Light
+KILLER_1_SLOWDOWN	Hex Ruin
+KILLER_1_SLOWDOWN	Knock Out
+KILLER_1_SLOWDOWN	Overcharge
+KILLER_1_SLOWDOWN	Pop Goes The Weasel
+KILLER_1_SLOWDOWN	Sloppy Butcher
+KILLER_1_SLOWDOWN	Surge
+KILLER_1_SLOWDOWN	Thanatophobia
+KILLER_1_SLOWDOWN	Thrilling Tremors
+KILLER_2_CHASE	Bamboozle
+KILLER_2_CHASE	Beast Of Prey
+KILLER_2_CHASE	Brutal Strength
+KILLER_2_CHASE	Cruel Limits
+KILLER_2_CHASE	Dark Devotion
+KILLER_2_CHASE	Enduring
+KILLER_2_CHASE	Furtive Chase
+KILLER_2_CHASE	Hex Devour Hope
+KILLER_2_CHASE	Hex Haunted Ground
+KILLER_2_CHASE	Make Your Choice
+KILLER_2_CHASE	Monitor & Abuse
+KILLER_2_CHASE	Play With Your Food
+KILLER_2_CHASE	Predator
+KILLER_2_CHASE	Save The Best For Last
+KILLER_2_CHASE	Spirit Fury
+KILLER_2_CHASE	Unrelenting
+KILLER_3_DETECT	A Nurse's Calling
+KILLER_3_DETECT	Barbecue & Chilli
+KILLER_3_DETECT	Bitter Murmur
+KILLER_3_DETECT	Bloodhound
+KILLER_3_DETECT	Blood Warden
+KILLER_3_DETECT	Discordance
+KILLER_3_DETECT	Hex Huntress Lullaby
+KILLER_3_DETECT	Hex Thrill Of The Hunt
+KILLER_3_DETECT	I'm All Ears
+KILLER_3_DETECT	Infectious Fright
+KILLER_3_DETECT	Iron Maiden
+KILLER_3_DETECT	Rancor
+KILLER_3_DETECT	Shadowborn
+KILLER_3_DETECT	Spies From The Shadows
+KILLER_3_DETECT	Stridor
+KILLER_3_DETECT	Surveillance
+KILLER_3_DETECT	Territorial Imperative
+KILLER_3_DETECT	Thrilling Tremors
+KILLER_3_DETECT	Tinkerer
+KILLER_3_DETECT	Whispers
+KILLER_4_ENDGAME	Bitter Murmur
+KILLER_4_ENDGAME	Blood Warden
+KILLER_4_ENDGAME	Fire Up
+KILLER_4_ENDGAME	Hex No One Escapes Death
+KILLER_4_ENDGAME	Rancor
+KILLER_4_ENDGAME	Remember Me
+KILLER_4_ENDGAME	Whispers
+SURV_1_CARE	Adrenaline
+SURV_1_CARE	Aftercare
+SURV_1_CARE	Autodidact
+SURV_1_CARE	Better Together
+SURV_1_CARE	Bond
+SURV_1_CARE	Botany Knowledge
+SURV_1_CARE	Empathy
+SURV_1_CARE	Inner Strength
+SURV_1_CARE	Pharmacy
+SURV_1_CARE	Second Wind
+SURV_1_CARE	Self-Care
+SURV_1_CARE	Solidarity
+SURV_1_CARE	We'll Make It
+SURV_2_SURVIVAL	Adrenaline
+SURV_2_SURVIVAL	Boil Over
+SURV_2_SURVIVAL	Borrowed Time
+SURV_2_SURVIVAL	Breakdown
+SURV_2_SURVIVAL	Calm Spirit
+SURV_2_SURVIVAL	Camaraderie
+SURV_2_SURVIVAL	Decisive Strike
+SURV_2_SURVIVAL	Deliverance
+SURV_2_SURVIVAL	Distortion
+SURV_2_SURVIVAL	Diversion
+SURV_2_SURVIVAL	Flip-Flop
+SURV_2_SURVIVAL	Head On
+SURV_2_SURVIVAL	Hope
+SURV_2_SURVIVAL	Iron Will
+SURV_2_SURVIVAL	Kindred
+SURV_2_SURVIVAL	Left Behind
+SURV_2_SURVIVAL	Mettle Of Man
+SURV_2_SURVIVAL	Premonition
+SURV_2_SURVIVAL	Saboteur
+SURV_2_SURVIVAL	Slippery Meat
+SURV_2_SURVIVAL	Spine Chill
+SURV_2_SURVIVAL	Tenacity
+SURV_2_SURVIVAL	Unbreakable
+SURV_2_SURVIVAL	Urban Evasion
+SURV_2_SURVIVAL	Wake Up!
+SURV_3_CHASE	Balanced Landing
+SURV_3_CHASE	Dance With Me
+SURV_3_CHASE	Dead Hard
+SURV_3_CHASE	Diversion
+SURV_3_CHASE	Fixated
+SURV_3_CHASE	Hope
+SURV_3_CHASE	Lightweight
+SURV_3_CHASE	Lithe
+SURV_3_CHASE	Poised
+SURV_3_CHASE	Quick & Quiet
+SURV_3_CHASE	Sprint Burst
+SURV_3_CHASE	Windows Of Opportunity
+SURV_4_DETECT	Alert
+SURV_4_DETECT	Babysitter
+SURV_4_DETECT	Buckle Up
+SURV_4_DETECT	Dark Sense
+SURV_4_DETECT	Deja Vu
+SURV_4_DETECT	Detective's Hunch
+SURV_4_DETECT	Empathy
+SURV_4_DETECT	Kindred
+SURV_4_DETECT	Object Of Obsession
+SURV_4_DETECT	Plunderer's Instinct
+SURV_4_DETECT	Small Game

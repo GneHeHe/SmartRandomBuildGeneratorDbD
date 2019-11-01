@@ -15,7 +15,7 @@ import javax.swing.event.HyperlinkListener;
  *
  * SmartRandBuildGenTabInfo
  *
- * @author GneHeHe (2018)
+ * @author GneHeHe (2019)
  *
  */
 public class SmartRandBuildGenTabInfo extends JPanel {
@@ -101,7 +101,7 @@ public class SmartRandBuildGenTabInfo extends JPanel {
         this.lab_author = new JLabel("<html><u>Author</u></html>", SwingConstants.CENTER);
         this.lab_author.setFont(new Font("Helvetica", Font.BOLD, 18));
         this.lab_author.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        this.lab_author.setToolTipText("Go to GneHeHe's STEAM Profile");
+        this.lab_author.setToolTipText("Go to GneHeHe's STEAM profile");
 
         // Define JLabel Email
         this.lab_email = new JLabel("<html><u>Contact</u></html>", SwingConstants.CENTER);
@@ -113,7 +113,7 @@ public class SmartRandBuildGenTabInfo extends JPanel {
         this.lab_git = new JLabel("<html><u>GitHub</u></html>", SwingConstants.CENTER);
         this.lab_git.setFont(new Font("Helvetica", Font.BOLD, 18));
         this.lab_git.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        this.lab_git.setToolTipText("Go to GitHub Repository to download last Version of SRBG ('SmartRandBuildGen.jar' File)");
+        this.lab_git.setToolTipText("Go to GitHub repository to download the last version of SRBG ('SmartRandBuildGen.jar' file)");
 
         // Define MouseListener
         this.lab_author.addMouseListener(new MouseAdapter() {

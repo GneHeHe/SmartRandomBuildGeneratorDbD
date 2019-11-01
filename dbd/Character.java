@@ -9,7 +9,7 @@ import javax.swing.SwingConstants;
  *
  * Character
  *
- * @author GneHeHe (2018)
+ * @author GneHeHe (2019)
  *
  */
 public class Character implements Comparable<Character> {
@@ -26,8 +26,9 @@ public class Character implements Comparable<Character> {
     // Size of Icon Pictures
     private final static int SIZE_SMALL = 55;
     private final static int SIZE_LARGE = 175;
-    // Generic Character
-    public final static String GENERIC = "Undefined";
+    // Generic Characters
+    public final static String GENERIC_SURVIVOR = "GenSurv";
+    public final static String GENERIC_KILLER = "GenKiller";
 
     /**
      * Constructor
@@ -56,7 +57,14 @@ public class Character implements Comparable<Character> {
      * @param side
      */
     public Character(String side) {
-        this.setName(Character.GENERIC);
+        if (side.equals("Survivor")) {
+            this.setName(Character.GENERIC_SURVIVOR);
+        } else if (side.equals("Killer")) {
+            this.setName(Character.GENERIC_KILLER);
+        } else {
+            System.err.println("ERROR while creating generic Character");
+            System.exit(0);
+        }
         this.setSide(side);
         this.lab_img_small = new JLabel("", SwingConstants.CENTER);
         this.lab_img_large = new JLabel("", SwingConstants.CENTER);
@@ -168,7 +176,6 @@ public class Character implements Comparable<Character> {
             } else if (side.equals("Killer")) {
                 s_icon = "iconHelpLoading_killer";
             }
-            //System.err.println("# WARNING: Icon File '" + path + "' was not found for Character '" + this.name + "' => using default Icon File ('" + s_icon + "') from data directory");
             path = "icons_char/" + s_icon + ".png";
             if (this.getClass().getResourceAsStream(path) != null) {
                 // Set Default Icon in JLabel

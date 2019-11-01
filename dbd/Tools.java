@@ -18,7 +18,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * Tools
+ * Tools (Generic Class with static Methods)
  *
  * @author GneHeHe (2018)
  *
@@ -123,7 +123,7 @@ public class Tools {
     }
 
     /**
-     * Any Duplicate Elements ?
+     * Any Duplicate Elements?
      *
      * @param l
      * @return
