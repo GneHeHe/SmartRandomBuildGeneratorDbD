@@ -4,7 +4,7 @@
 * **generate useful random builds** using varied features
 * **store and manipulate builds** (4000+ predefined builds loaded at start)
 
-Most related tools generate pure random builds which are hardly ever interesting/efficient ... because lots of perks are more or less trash or just incompatible
+Most related tools generate pure random builds which are hardly ever interesting/efficient because lots of perks are either trash or just incompatible.
 
 <br>
 By contrast, **SRBG** will create **useful random builds** if desired
