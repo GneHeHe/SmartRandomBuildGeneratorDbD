@@ -8,6 +8,7 @@ Most related tools generate pure random builds which are hardly ever interesting
 
 <br> 
 By contrast, **SRBG** will create **useful random builds** if desired
+
 **SRBG** can also randomly chose the **side** ('**_Survivor_**' or '**_Killer_**') for your next game
 
 <br> 
