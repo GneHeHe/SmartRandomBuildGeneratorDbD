@@ -9,13 +9,14 @@ Most related tools generate pure random builds which are hardly ever interesting
 <br> 
 By contrast, **SRBG** will create **useful random builds** if desired
 
-**SRBG** can also randomly chose the **side** ('**_Survivor_**' or '**_Killer_**') for your next game
-
 <br> 
 ![SRBG](dbd/data/tuto_build.jpg)
 
 <br> 
 The '**_number of perks in each build_**' and the '**_number of builds to generate_**' can also be **fine tuned**
+
+<br>
+**SRBG** can also randomly chose the **side** ('**_Survivor_**' or '**_Killer_**') for your next game
 
 <br> 
 Briefly, a **weight** is assigned to each **perk**, and random builds are subsequently designed with **bias toward perks with higher weights**
