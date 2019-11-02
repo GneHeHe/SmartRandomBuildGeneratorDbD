@@ -185,7 +185,7 @@ Agitation	Territorial Imperative	50
 A Nurse's Calling	Coulrophobia	50
 A Nurse's Calling	Dark Devotion	50
 A Nurse's Calling	Deerstalker	50
-A Nurse's Calling	Monitor & Abuse	100
+A Nurse's Calling	Monitor & Abuse	200
 A Nurse's Calling	Sloppy Butcher	200
 A Nurse's Calling	Thanatophobia	100
 A Nurse's Calling	Tinkerer	50
@@ -245,7 +245,7 @@ Hex Ruin	Pop Goes The Weasel	-100
 Hex Ruin	Surge	-100
 Hex The Third Seal	Hex Thrill Of The Hunt	200
 Infectious Fright	Knock Out	50
-Infectious Fright	Monitor & Abuse	100
+Infectious Fright	Monitor & Abuse	200
 Infectious Fright	Save The Best For Last	100
 Iron Grasp	Mad Grit	100
 Iron Grasp	Monstrous Shrine	50
@@ -254,6 +254,7 @@ Make Your Choice	Territorial Imperative	100
 Make Your Choice	Tinkerer	50
 Make Your Choice	Whispers	50
 Monitor & Abuse	Shadowborn	-500
+Monitor & Abuse	Whispers	200
 Overcharge	Pop Goes The Weasel	50
 Overcharge	Surge	-100
 Overcharge	Surveillance	50
