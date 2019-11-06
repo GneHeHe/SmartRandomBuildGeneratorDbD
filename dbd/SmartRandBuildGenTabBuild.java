@@ -45,36 +45,36 @@ public class SmartRandBuildGenTabBuild extends JPanel {
         this.srbg = srbg;
 
         // Add Swing Components
-        this.addComponents();
+        addComponents();
 
         // Create Subpanels
-        this.pan_config = new JPanel(new FlowLayout(FlowLayout.CENTER));
-        this.pan_config.add(this.lab_nbperks);
-        this.pan_config.add(this.cb_nbperks);
-        this.pan_config.add(this.lab_nbbuilds);
-        this.pan_config.add(this.cb_nbbuilds);
-        this.pan_config.add(this.cb_side);
-        this.pan_config.add(this.cb_char);
-        this.pan_config.add(this.check_cons1);
-        this.pan_config.add(this.check_cons2);
-        this.pan_config.add(this.check_cons3);
-        this.pan_config.add(this.check_cons4);
-        this.pan_config.add(this.check_syn);
-        this.pan_config.add(this.b_build);
+        pan_config = new JPanel(new FlowLayout(FlowLayout.CENTER));
+        pan_config.add(lab_nbperks);
+        pan_config.add(cb_nbperks);
+        pan_config.add(lab_nbbuilds);
+        pan_config.add(cb_nbbuilds);
+        pan_config.add(cb_side);
+        pan_config.add(cb_char);
+        pan_config.add(check_cons1);
+        pan_config.add(check_cons2);
+        pan_config.add(check_cons3);
+        pan_config.add(check_cons4);
+        pan_config.add(check_syn);
+        pan_config.add(b_build);
 
-        this.pan_table = new JPanel(new FlowLayout(FlowLayout.CENTER));
-        this.pan_table.add(this.table);
+        pan_table = new JPanel(new FlowLayout(FlowLayout.CENTER));
+        pan_table.add(table);
 
         // Create JScrollPane (hide bars)
-        this.scrollPane = new JScrollPane(this.text);
-        this.scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER);
-        this.scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+        scrollPane = new JScrollPane(text);
+        scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER);
+        scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 
         // Set Layout & add Subpanels
-        this.setLayout(new BorderLayout());
-        this.add(this.pan_config, BorderLayout.NORTH);
-        this.add(this.pan_table, BorderLayout.SOUTH);
-        this.add(this.scrollPane, BorderLayout.CENTER);
+        setLayout(new BorderLayout());
+        add(pan_config, BorderLayout.NORTH);
+        add(pan_table, BorderLayout.SOUTH);
+        add(scrollPane, BorderLayout.CENTER);
     }
 
     /**
@@ -84,69 +84,69 @@ public class SmartRandBuildGenTabBuild extends JPanel {
 
         // Define JTable Objects
         int size = 220;
-        this.table = new JTable(1, 5);
-        this.table.setRowHeight(size);
-        this.table.setShowHorizontalLines(false);
-        this.table.setShowVerticalLines(false);
-        for (int i = 0; i < this.table.getColumnCount(); i++) {
-            TableColumn column = this.table.getColumnModel().getColumn(i);
+        table = new JTable(1, 5);
+        table.setRowHeight(size);
+        table.setShowHorizontalLines(false);
+        table.setShowVerticalLines(false);
+        for (int i = 0; i < table.getColumnCount(); i++) {
+            TableColumn column = table.getColumnModel().getColumn(i);
             column.setCellRenderer(new IconTableCellRenderer());
             column.setPreferredWidth(size);
         }
 
         // Define JButton Objects
-        this.b_build = new JButton("Generate Builds");
-        this.b_build.setToolTipText("Generate random builds that match parameters");
+        b_build = new JButton("Generate Builds");
+        b_build.setToolTipText("Generate random builds that match parameters");
 
         // Define JLabel Objects
-        this.lab_nbperks = new JLabel("  Nb Perks ");
-        this.lab_nbbuilds = new JLabel("  Nb Builds ");
+        lab_nbperks = new JLabel("  Nb Perks ");
+        lab_nbbuilds = new JLabel("  Nb Builds ");
 
         // Define JTextArea Objects
-        this.text = new JTextArea(30, 20);
-        this.text.setEditable(false);
-        this.text.setFont(new Font("Helvetica", Font.PLAIN, 16));
+        text = new JTextArea(30, 20);
+        text.setEditable(false);
+        text.setFont(new Font("Helvetica", Font.PLAIN, 16));
 
         // Define JComboBox Object for Perks
-        this.cb_nbperks = new JComboBox(new Integer[]{1, 2, 3, 4});
-        this.cb_nbperks.setPreferredSize(new Dimension(50, 20));
-        this.cb_nbperks.setToolTipText("Define the number of perks in a build");
-        ((JLabel) this.cb_nbperks.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
-        this.cb_nbperks.setSelectedItem(this.srbg.getNbPerksBuild());
+        cb_nbperks = new JComboBox(new Integer[]{1, 2, 3, 4});
+        cb_nbperks.setPreferredSize(new Dimension(50, 20));
+        cb_nbperks.setToolTipText("Define the number of perks in a build");
+        ((JLabel) cb_nbperks.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
+        cb_nbperks.setSelectedItem(srbg.getNbPerksBuild());
 
         // Define JComboBox Object for Nb of Builds
-        this.cb_nbbuilds = new JComboBox(new Integer[]{1, 3, 5, 7, 9});
-        this.cb_nbbuilds.setPreferredSize(new Dimension(50, 20));
-        this.cb_nbbuilds.setToolTipText("Define the number of builds to generate");
-        ((JLabel) this.cb_nbbuilds.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
-        this.cb_nbbuilds.setSelectedIndex(1);
-        this.nbbuilds = Integer.parseInt(this.cb_nbbuilds.getSelectedItem().toString());
+        cb_nbbuilds = new JComboBox(new Integer[]{1, 3, 5, 7, 9});
+        cb_nbbuilds.setPreferredSize(new Dimension(50, 20));
+        cb_nbbuilds.setToolTipText("Define the number of builds to generate");
+        ((JLabel) cb_nbbuilds.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
+        cb_nbbuilds.setSelectedIndex(1);
+        nbbuilds = Integer.parseInt(cb_nbbuilds.getSelectedItem().toString());
 
         // Define JComboBox Object for Side
-        this.cb_side = new JComboBox(new String[]{"Random", "Survivor", "Killer"});
-        this.cb_side.setSelectedIndex(0);
-        this.cb_side.setPreferredSize(new Dimension(100, 25));
-        this.cb_side.setToolTipText("Define the active side");
-        ((JLabel) this.cb_side.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
+        cb_side = new JComboBox(new String[]{"Random", "Survivor", "Killer"});
+        cb_side.setSelectedIndex(0);
+        cb_side.setPreferredSize(new Dimension(100, 25));
+        cb_side.setToolTipText("Define the active side");
+        ((JLabel) cb_side.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
 
         // Define JComboBox Object for Character
-        this.cb_char = new JComboBox();
-        this.cb_char.setPreferredSize(new Dimension(130, 25));
-        this.cb_char.setToolTipText("Define the character (generic or specific character)");
-        ((JLabel) this.cb_char.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
+        cb_char = new JComboBox();
+        cb_char.setPreferredSize(new Dimension(130, 25));
+        cb_char.setToolTipText("Define the character (generic or specific character)");
+        ((JLabel) cb_char.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
         updateComboBoxes();
 
         // Define JCheckBox Objects
-        this.check_cons1 = new JCheckBox("Cons1");
-        this.check_cons2 = new JCheckBox("Cons2");
-        this.check_cons3 = new JCheckBox("Cons3");
-        this.check_cons4 = new JCheckBox("Cons4");
-        this.check_syn = new JCheckBox("Synergy");
-        this.check_syn.setToolTipText("Define the synergy rules status");
+        check_cons1 = new JCheckBox("Cons1");
+        check_cons2 = new JCheckBox("Cons2");
+        check_cons3 = new JCheckBox("Cons3");
+        check_cons4 = new JCheckBox("Cons4");
+        check_syn = new JCheckBox("Synergy");
+        check_syn.setToolTipText("Define the synergy rules status");
         updateCheckBoxes();
 
         // Define ActionListener
-        this.cb_nbperks.addActionListener(new ActionListener() {
+        cb_nbperks.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JComboBox combo = (JComboBox) e.getSource();
@@ -167,7 +167,7 @@ public class SmartRandBuildGenTabBuild extends JPanel {
         });
 
         // Define ActionListener
-        this.cb_nbbuilds.addActionListener(new ActionListener() {
+        cb_nbbuilds.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JComboBox combo = (JComboBox) e.getSource();
@@ -178,7 +178,7 @@ public class SmartRandBuildGenTabBuild extends JPanel {
         });
 
         // Define ActionListener
-        this.cb_side.addActionListener(new ActionListener() {
+        cb_side.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JComboBox combo = (JComboBox) e.getSource();
@@ -189,7 +189,7 @@ public class SmartRandBuildGenTabBuild extends JPanel {
         });
 
         // Define ActionListener
-        this.cb_char.addActionListener(new ActionListener() {
+        cb_char.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JComboBox combo = (JComboBox) e.getSource();
@@ -200,9 +200,10 @@ public class SmartRandBuildGenTabBuild extends JPanel {
         });
 
         // Define ActionListener
-        this.b_build.addActionListener(new ActionListener() {
+        b_build.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                srbg.verbose = false;
                 // Update JCheckBoxes
                 updateCheckBoxes();
                 // Monitor Random Feature
@@ -215,7 +216,7 @@ public class SmartRandBuildGenTabBuild extends JPanel {
                     updateComboBoxes();
                 }
                 // Display loaded Parameters
-                srbg.showParams();
+                srbg.showParams(false);
                 // Reset TextArea
                 text.setText("");
                 // Reset Table => Remove Data in TableModel (RowCount = 0)
@@ -260,7 +261,7 @@ public class SmartRandBuildGenTabBuild extends JPanel {
         });
 
         // Define ItemListener
-        this.check_syn.addItemListener(new ItemListener() {
+        check_syn.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
                 // Update Synergy Status
@@ -273,7 +274,7 @@ public class SmartRandBuildGenTabBuild extends JPanel {
         });
 
         // Define ItemListener
-        this.check_cons1.addItemListener(new ItemListener() {
+        check_cons1.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
                 // Update Constraint Status
@@ -288,7 +289,7 @@ public class SmartRandBuildGenTabBuild extends JPanel {
         });
 
         // Define ItemListener
-        this.check_cons2.addItemListener(new ItemListener() {
+        check_cons2.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
                 // Update Constraint Status
@@ -303,7 +304,7 @@ public class SmartRandBuildGenTabBuild extends JPanel {
         });
 
         // Define ItemListener
-        this.check_cons3.addItemListener(new ItemListener() {
+        check_cons3.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
                 // Update Constraint Status
@@ -318,7 +319,7 @@ public class SmartRandBuildGenTabBuild extends JPanel {
         });
 
         // Define ItemListener
-        this.check_cons4.addItemListener(new ItemListener() {
+        check_cons4.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
                 // Update Constraint Status
@@ -376,25 +377,25 @@ public class SmartRandBuildGenTabBuild extends JPanel {
      *
      */
     public void updateComboBoxes() {
-        if (this.cb_side.getSelectedItem().equals("Survivor")) {
+        if (cb_side.getSelectedItem().equals("Survivor")) {
             // All Survivors
-            this.cb_char.setModel(new DefaultComboBoxModel(this.srbg.getCharacterList("Survivor", false).toArray()));
-        } else if (this.cb_side.getSelectedItem().equals("Killer")) {
+            cb_char.setModel(new DefaultComboBoxModel(srbg.getCharacterList("Survivor", false).toArray()));
+        } else if (cb_side.getSelectedItem().equals("Killer")) {
             // All Killers
-            this.cb_char.setModel(new DefaultComboBoxModel(this.srbg.getCharacterList("Killer", false).toArray()));
-        } else if (this.cb_side.getSelectedItem().equals("Random")) {
-            if (this.srbg.getSide().equals("Survivor")) {
+            cb_char.setModel(new DefaultComboBoxModel(srbg.getCharacterList("Killer", false).toArray()));
+        } else if (cb_side.getSelectedItem().equals("Random")) {
+            if (srbg.getSide().equals("Survivor")) {
                 // Generic Survivor
-                this.cb_char.setModel(new DefaultComboBoxModel(this.srbg.getCharacterList("Survivor", true).toArray()));
+                cb_char.setModel(new DefaultComboBoxModel(srbg.getCharacterList("Survivor", true).toArray()));
             } else {
                 // Generic Killer
-                this.cb_char.setModel(new DefaultComboBoxModel(this.srbg.getCharacterList("Killer", true).toArray()));
+                cb_char.setModel(new DefaultComboBoxModel(srbg.getCharacterList("Killer", true).toArray()));
             }
         }
         // Select 1st Item
-        this.cb_char.setSelectedIndex(0);
+        cb_char.setSelectedIndex(0);
         // Update Character
-        this.srbg.setCharacter(this.cb_char.getSelectedItem().toString());
+        srbg.setCharacter(cb_char.getSelectedItem().toString());
     }
 
 }

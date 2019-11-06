@@ -85,19 +85,24 @@ public class SmartRandBuildGen {
     private boolean b_synergy;
     // Update Pool of Perks
     private boolean b_update_pool_perks;
-
     // Path of Configuration File
     private String config;
     // Verbose Level
     public boolean verbose;
-    // Min Weight for Perk after Synergy
+    // Min Weight for Perks (normal)
     public final int weight_perk_min = 0;
-    // Max Weight for Perk after Synergy
+    // Max Weight for Perks (normal and after synergy)
     public final int weight_perk_max = 500;
     // Max Nb of Loops
     private final int maxloop = 5000;
-    // Default Constraint  File
+    // Character File
+    private final String s_char = "data/characters.txt";
+    // Perk DB Files
+    private final String s_perk = "data/perk_db.txt";
+    public final String s_perk_custom = "perk_db_custom.txt";
+    // Constraint Files
     private final String s_cons = "data/perk_cons.txt";
+    private final String s_cons_custom = "perk_cons_custom.txt";
     // String Spacer
     private final String MYSPACER = "##########";
     // Version & Title of Tool
@@ -111,77 +116,83 @@ public class SmartRandBuildGen {
     /**
      * Default Constructor
      *
-     * @param verbose
+     * @param v
      */
-    public SmartRandBuildGen(boolean verbose) {
+    public SmartRandBuildGen(boolean v) {
 
-        System.out.println("\n" + MYSPACER + " " + TITLE + " " + MYSPACER + "\n");
+        System.out.println("\n" + MYSPACER + " " + TITLE + " " + MYSPACER);
 
-        // Set Verbose Mode
-        this.verbose = verbose;
+        // Verbose is ON at start
+        verbose = true;
 
         // Set Reference Lists
-        this.l_perks_all = new ArrayList<>();
-        this.l_perks_all_string = new ArrayList<>();
-        this.l_perks_pool = new ArrayList<>();
-        this.l_perks_survivor = new ArrayList<>();
-        this.l_perks_killer = new ArrayList<>();
-        this.l_char_survivor = new ArrayList<>();
-        this.l_char_survivor_generic = new ArrayList<>();
-        this.l_char_killer = new ArrayList<>();
-        this.l_char_killer_generic = new ArrayList<>();
-        this.l_char_all_string = new ArrayList<>();
+        l_perks_all = new ArrayList<>();
+        l_perks_all_string = new ArrayList<>();
+        l_perks_pool = new ArrayList<>();
+        l_perks_survivor = new ArrayList<>();
+        l_perks_killer = new ArrayList<>();
+        l_char_survivor = new ArrayList<>();
+        l_char_survivor_generic = new ArrayList<>();
+        l_char_killer = new ArrayList<>();
+        l_char_killer_generic = new ArrayList<>();
+        l_char_all_string = new ArrayList<>();
 
         // Define both default Side & Nb of Perks
-        this.side = "";
-        this.setSide("Random");
-        this.setNbPerksBuild(4);
+        side = "";
+        setSide("Random");
+        setNbPerksBuild(4);
 
         // Read default Weight Distribution File
-        this.initConfigFile();
-        this.initCharacters();
+        initConfigFile();
+        initCharacters();
 
         // Init Synergy
-        this.b_synergy = true;
-        this.synergy = new Synergy(l_perks_all_string, l_char_all_string, this.verbose);
+        b_synergy = true;
+        synergy = new Synergy(l_perks_all_string, l_char_all_string, verbose);
 
         // Set Constraints
-        this.b_cons_warn = false;
-        this.setConstraintsPerks(1, false);
-        this.setConstraintsPerks(2, false);
-        this.setConstraintsPerks(3, false);
-        this.setConstraintsPerks(4, false);
+        b_cons_warn = false;
+        setConstraintsPerks(1, false);
+        setConstraintsPerks(2, false);
+        setConstraintsPerks(3, false);
+        setConstraintsPerks(4, false);
 
         // Init Constraints for Perks
-        this.l_cons1 = new ArrayList<>();
-        this.l_cons2 = new ArrayList<>();
-        this.l_cons3 = new ArrayList<>();
-        this.l_cons4 = new ArrayList<>();
-        this.l_cons1_surv = new ArrayList<>();
-        this.l_cons2_surv = new ArrayList<>();
-        this.l_cons3_surv = new ArrayList<>();
-        this.l_cons4_surv = new ArrayList<>();
-        this.l_cons1_killer = new ArrayList<>();
-        this.l_cons2_killer = new ArrayList<>();
-        this.l_cons3_killer = new ArrayList<>();
-        this.l_cons4_killer = new ArrayList<>();
-        this.initPerkConstraints();
+        l_cons1 = new ArrayList<>();
+        l_cons2 = new ArrayList<>();
+        l_cons3 = new ArrayList<>();
+        l_cons4 = new ArrayList<>();
+        l_cons1_surv = new ArrayList<>();
+        l_cons2_surv = new ArrayList<>();
+        l_cons3_surv = new ArrayList<>();
+        l_cons4_surv = new ArrayList<>();
+        l_cons1_killer = new ArrayList<>();
+        l_cons2_killer = new ArrayList<>();
+        l_cons3_killer = new ArrayList<>();
+        l_cons4_killer = new ArrayList<>();
+        initPerkConstraints();
 
         // Set Character Status
-        this.b_character_random = false;
-        if (this.side.equals("Killer")) {
-            this.character = l_char_killer.get(0);
+        b_character_random = false;
+        if (side.equals("Killer")) {
+            character = l_char_killer.get(0);
         } else {
-            this.character = l_char_survivor.get(0);
+            character = l_char_survivor.get(0);
         }
 
         // Update Pool of Perks
-        this.setUpdatePerkPool(true);
+        setUpdatePerkPool(true);
         // Update Pool of Perks if needed
-        this.updatePerkPool(false);
+        updatePerkPool(false);
 
         // Define best generated Build
-        this.best_build = null;
+        best_build = null;
+
+        // Display loaded Parameters
+        showParams(true);
+
+        // Set Verbose Mode
+        this.verbose = v;
 
     }
 
@@ -192,11 +203,11 @@ public class SmartRandBuildGen {
      */
     public void setSameWeight(int value) {
         System.out.println("# All perks now have the same weight = " + value + "\n");
-        for (Perk p : this.l_perks_all) {
+        for (Perk p : l_perks_all) {
             p.setWeight(value, true);
         }
         // Update Pool of Perks
-        this.setUpdatePerkPool(true);
+        setUpdatePerkPool(true);
         // Display Perks
         showPerks(false);
     }
@@ -206,11 +217,11 @@ public class SmartRandBuildGen {
      *
      */
     public void setWeightRef() {
-        for (Perk p : this.l_perks_all) {
+        for (Perk p : l_perks_all) {
             p.setWeight(p.getWeightRef(), false);
         }
         // Update Pool of Perks
-        this.setUpdatePerkPool(true);
+        setUpdatePerkPool(true);
     }
 
     /**
@@ -219,7 +230,7 @@ public class SmartRandBuildGen {
      * @return
      */
     public List getPerks() {
-        return this.l_perks_all;
+        return l_perks_all;
     }
 
     /**
@@ -231,9 +242,9 @@ public class SmartRandBuildGen {
     public List getPerks(String side) {
         switch (side) {
             case "Survivor":
-                return this.l_perks_survivor;
+                return l_perks_survivor;
             case "Killer":
-                return this.l_perks_killer;
+                return l_perks_killer;
             default:
                 return null;
         }
@@ -246,7 +257,7 @@ public class SmartRandBuildGen {
      * @return
      */
     public Perk getPerk(String name) {
-        for (Perk p : this.l_perks_all) {
+        for (Perk p : l_perks_all) {
             if (p.getName().equals(name)) {
                 return p;
             }
@@ -261,12 +272,12 @@ public class SmartRandBuildGen {
      * @return
      */
     public Character retrieveCharacter(String name) {
-        for (Character c : this.l_char_survivor) {
+        for (Character c : l_char_survivor) {
             if (c.getName().equals(name)) {
                 return c;
             }
         }
-        for (Character c : this.l_char_killer) {
+        for (Character c : l_char_killer) {
             if (c.getName().equals(name)) {
                 return c;
             }
@@ -281,17 +292,17 @@ public class SmartRandBuildGen {
      */
     public void setCharacter(String name) {
         // Retrieve Character
-        this.character = retrieveCharacter(name);
-        if (this.character == null) {
-            System.err.println("\n# ERROR: Wrong Character Name '" + name + "' with current Side '" + this.side + "' \n");
+        character = retrieveCharacter(name);
+        if (character == null) {
+            System.err.println("\n# ERROR: Wrong Character Name '" + name + "' with current Side '" + side + "' \n");
             System.exit(0);
         }
         // Update Side
-        setSide(this.character.getSide());
+        setSide(character.getSide());
         // Update Character Status
         setCharacterRandomStatus(false);
 
-        System.out.println("# Defined Character = " + this.character.getName() + " | Side = " + this.side);
+        System.out.println("# Defined Character = " + character.getName() + " | Side = " + side);
     }
 
     /**
@@ -302,13 +313,13 @@ public class SmartRandBuildGen {
     public void setCharacter(Character character) {
         // Set Character
         this.character = character;
-        if (!this.character.getSide().equals(this.side)) {
-            System.err.println("\n# ERROR: Wrong Character Name '" + character.getName() + "' with current Side '" + this.side + "' \n");
+        if (!character.getSide().equals(side)) {
+            System.err.println("\n# ERROR: Wrong Character Name '" + character.getName() + "' with current Side '" + side + "' \n");
             System.exit(0);
         }
         // Update Character Status
         setCharacterRandomStatus(false);
-        System.out.println("# Defined Character = " + this.character.getName() + " | Side = " + this.side);
+        System.out.println("# Defined Character = " + character.getName() + " | Side = " + side);
     }
 
     /**
@@ -317,7 +328,7 @@ public class SmartRandBuildGen {
      * @return
      */
     public Character getCharacter() {
-        return this.character;
+        return character;
     }
 
     /**
@@ -327,19 +338,19 @@ public class SmartRandBuildGen {
      */
     public final Character getCharacterRandom() {
         // Get Generic Character
-        Character c = getCharacterList(this.side, true).get(0);
-        if (this.b_character_random) {
+        Character c = getCharacterList(side, true).get(0);
+        if (b_character_random) {
             // Get Random non-generic Character
             int rand;
-            if (this.side.equals("Survivor")) {
-                rand = Math.max(1, (int) (this.l_char_survivor.size() * Math.random()));
-                c = this.l_char_survivor.get(rand);
-            } else if (this.side.equals("Killer")) {
-                rand = Math.max(1, (int) (this.l_char_killer.size() * Math.random()));
+            if (side.equals("Survivor")) {
+                rand = Math.max(1, (int) (l_char_survivor.size() * Math.random()));
+                c = l_char_survivor.get(rand);
+            } else if (side.equals("Killer")) {
+                rand = Math.max(1, (int) (l_char_killer.size() * Math.random()));
                 c = l_char_killer.get(rand);
             }
         }
-        System.out.println("# Random Character = " + c.getName() + " | Side = " + this.side + "\n");
+        System.out.println("# Random Character = " + c.getName() + " | Side = " + side + "\n");
         return c;
     }
 
@@ -353,15 +364,15 @@ public class SmartRandBuildGen {
     public ArrayList<Character> getCharacterList(String side, boolean generic) {
         if (side.equals("Survivor")) {
             if (generic) {
-                return this.l_char_survivor_generic;
+                return l_char_survivor_generic;
             } else {
-                return this.l_char_survivor;
+                return l_char_survivor;
             }
         } else if (side.equals("Killer")) {
             if (generic) {
-                return this.l_char_killer_generic;
+                return l_char_killer_generic;
             } else {
-                return this.l_char_killer;
+                return l_char_killer;
             }
         } else {
             return null;
@@ -374,7 +385,7 @@ public class SmartRandBuildGen {
      * @return
      */
     public int getNbPerksBuild() {
-        return this.nb_perks_build;
+        return nb_perks_build;
     }
 
     /**
@@ -383,8 +394,8 @@ public class SmartRandBuildGen {
      * @param n
      */
     public final void setNbPerksBuild(int n) {
-        this.nb_perks_build = n;
-        System.out.println("# Nb of Perks per Build = " + this.nb_perks_build + "\n");
+        nb_perks_build = n;
+        System.out.println("# Nb of Perks per Build = " + nb_perks_build + "\n");
     }
 
     /**
@@ -393,7 +404,7 @@ public class SmartRandBuildGen {
      * @return
      */
     public int getNbPerksAll() {
-        return this.nb_perks_all;
+        return nb_perks_all;
     }
 
     /**
@@ -402,7 +413,7 @@ public class SmartRandBuildGen {
      * @return
      */
     public int getNbPerksSide() {
-        return this.nb_perks_side;
+        return nb_perks_side;
     }
 
     /**
@@ -411,7 +422,7 @@ public class SmartRandBuildGen {
      * @return
      */
     public boolean getCharacterRandomStatus() {
-        return this.b_character_random;
+        return b_character_random;
     }
 
     /**
@@ -420,9 +431,9 @@ public class SmartRandBuildGen {
      * @param b
      */
     public final void setCharacterRandomStatus(boolean b) {
-        this.b_character_random = b;
-        if (this.verbose) {
-            System.out.println("# Random Character Selection = " + this.b_character_random + "\n");
+        b_character_random = b;
+        if (verbose) {
+            System.out.println("# Random Character Selection = " + b_character_random + "\n");
         }
     }
 
@@ -432,7 +443,7 @@ public class SmartRandBuildGen {
      * @return
      */
     public String getConfigFile() {
-        return this.config;
+        return config;
     }
 
     /**
@@ -441,8 +452,8 @@ public class SmartRandBuildGen {
      * @param s
      */
     public void setConfigFile(String s) {
-        this.config = s;
-        System.out.println("# Current configuration file = " + this.config + "\n");
+        config = s;
+        System.out.println("# Current configuration file = " + config + "\n");
     }
 
     /**
@@ -451,7 +462,7 @@ public class SmartRandBuildGen {
      * @return
      */
     public Build getBestBuild() {
-        return this.best_build;
+        return best_build;
     }
 
     /**
@@ -460,7 +471,7 @@ public class SmartRandBuildGen {
      * @param b
      */
     public void setBestBuild(Build b) {
-        this.best_build = b;
+        best_build = b;
     }
 
     /**
@@ -475,34 +486,34 @@ public class SmartRandBuildGen {
         }
         // Update Nb Perks on Active Side
         if (s.equals("Survivor")) {
-            this.nb_perks_side = l_perks_survivor.size();
-            this.l_cons1 = this.l_cons1_surv;
-            this.l_cons2 = this.l_cons2_surv;
-            this.l_cons3 = this.l_cons3_surv;
-            this.l_cons4 = this.l_cons4_surv;
+            nb_perks_side = l_perks_survivor.size();
+            l_cons1 = l_cons1_surv;
+            l_cons2 = l_cons2_surv;
+            l_cons3 = l_cons3_surv;
+            l_cons4 = l_cons4_surv;
         } else if (s.equals("Killer")) {
-            this.nb_perks_side = l_perks_killer.size();
-            this.l_cons1 = this.l_cons1_killer;
-            this.l_cons2 = this.l_cons2_killer;
-            this.l_cons3 = this.l_cons3_killer;
-            this.l_cons4 = this.l_cons4_killer;
+            nb_perks_side = l_perks_killer.size();
+            l_cons1 = l_cons1_killer;
+            l_cons2 = l_cons2_killer;
+            l_cons3 = l_cons3_killer;
+            l_cons4 = l_cons4_killer;
         } else {
             System.err.println("\n# ERROR: The side must be either 'Survivor' OR 'Killer' OR 'Random'\n");
             System.exit(0);
         }
         // Copy current Side & Update Active Side
-        String side_old = this.side;
-        this.side = s;
-        if (this.verbose) {
-            System.out.println("# Active Side = " + this.side + "\n");
+        String side_old = side;
+        side = s;
+        if (verbose) {
+            System.out.println("# Active Side = " + side + "\n");
         }
         // Update Pool of Perks if needed
-        if (!this.side.equals(side_old)) {
-            this.setUpdatePerkPool(true);
+        if (!side.equals(side_old)) {
+            setUpdatePerkPool(true);
         } else {
-            this.setUpdatePerkPool(false);
+            setUpdatePerkPool(false);
         }
-        this.updatePerkPool(true);
+        updatePerkPool(true);
     }
 
     /**
@@ -511,7 +522,7 @@ public class SmartRandBuildGen {
      * @return
      */
     public String getSide() {
-        return this.side;
+        return side;
     }
 
     /**
@@ -522,50 +533,50 @@ public class SmartRandBuildGen {
      */
     public final void setConstraintsPerks(int n, boolean b) {
         int cons = 0;
-        if (this.b_cons1_perks || ((n == 1) && b)) {
+        if (b_cons1_perks || ((n == 1) && b)) {
             cons++;
         }
-        if (this.b_cons2_perks || ((n == 2) && b)) {
+        if (b_cons2_perks || ((n == 2) && b)) {
             cons++;
         }
-        if (this.b_cons3_perks || ((n == 3) && b)) {
+        if (b_cons3_perks || ((n == 3) && b)) {
             cons++;
         }
-        if (this.b_cons4_perks || ((n == 4) && b)) {
+        if (b_cons4_perks || ((n == 4) && b)) {
             cons++;
         }
         // Disable Constraints in this Case
-        if (cons > this.nb_perks_build) {
+        if (cons > nb_perks_build) {
             System.out.println("# WARNING: Not enough Perks in desired Build to activate so many Constraints => all Constraints are Reseted");
-            this.b_cons_warn = true;
-            this.b_cons1_perks = false;
-            this.b_cons2_perks = false;
-            this.b_cons3_perks = false;
-            this.b_cons4_perks = false;
-            //System.out.println("# Constraints on Set of Perks 1 = " + this.b_cons1_perks);
-            //System.out.println("# Constraints on Set of Perks 2 = " + this.b_cons2_perks);
-            //System.out.println("# Constraints on Set of Perks 3 = " + this.b_cons3_perks);
-            //System.out.println("# Constraints on Set of Perks 4 = " + this.b_cons4_perks);
+            b_cons_warn = true;
+            b_cons1_perks = false;
+            b_cons2_perks = false;
+            b_cons3_perks = false;
+            b_cons4_perks = false;
+            //System.out.println("# Constraints on Set of Perks 1 = " + b_cons1_perks);
+            //System.out.println("# Constraints on Set of Perks 2 = " + b_cons2_perks);
+            //System.out.println("# Constraints on Set of Perks 3 = " + b_cons3_perks);
+            //System.out.println("# Constraints on Set of Perks 4 = " + b_cons4_perks);
         } else {
-            this.b_cons_warn = false;
+            b_cons_warn = false;
         }
-        if (!this.b_cons_warn) {
+        if (!b_cons_warn) {
             switch (n) {
                 case 1:
-                    this.b_cons1_perks = b;
-                    System.out.println("# Constraints on Set of Perks 1 = " + this.b_cons1_perks);
+                    b_cons1_perks = b;
+                    System.out.println("# Constraints on Set of Perks 1 = " + b_cons1_perks);
                     break;
                 case 2:
-                    this.b_cons2_perks = b;
-                    System.out.println("# Constraints on Set of Perks 2 = " + this.b_cons2_perks);
+                    b_cons2_perks = b;
+                    System.out.println("# Constraints on Set of Perks 2 = " + b_cons2_perks);
                     break;
                 case 3:
-                    this.b_cons3_perks = b;
-                    System.out.println("# Constraints on Set of Perks 3 = " + this.b_cons3_perks);
+                    b_cons3_perks = b;
+                    System.out.println("# Constraints on Set of Perks 3 = " + b_cons3_perks);
                     break;
                 case 4:
-                    this.b_cons4_perks = b;
-                    System.out.println("# Constraints on Set of Perks 4 = " + this.b_cons4_perks);
+                    b_cons4_perks = b;
+                    System.out.println("# Constraints on Set of Perks 4 = " + b_cons4_perks);
                     break;
                 default:
                     System.err.println("\n# Wrong Constraint Class => Exit");
@@ -583,13 +594,13 @@ public class SmartRandBuildGen {
     public boolean getConstraintsPerks(int n) {
         switch (n) {
             case 1:
-                return this.b_cons1_perks;
+                return b_cons1_perks;
             case 2:
-                return this.b_cons2_perks;
+                return b_cons2_perks;
             case 3:
-                return this.b_cons3_perks;
+                return b_cons3_perks;
             case 4:
-                return this.b_cons4_perks;
+                return b_cons4_perks;
             default:
                 System.err.println("\n# Generic ERROR => Exit");
                 System.exit(0);
@@ -608,16 +619,16 @@ public class SmartRandBuildGen {
         List<String> l = null;
         switch (n) {
             case 1:
-                l = this.l_cons1;
+                l = l_cons1;
                 break;
             case 2:
-                l = this.l_cons2;
+                l = l_cons2;
                 break;
             case 3:
-                l = this.l_cons3;
+                l = l_cons3;
                 break;
             case 4:
-                l = this.l_cons4;
+                l = l_cons4;
                 break;
             default:
                 System.err.println("\n# Generic ERROR => Exit");
@@ -650,48 +661,48 @@ public class SmartRandBuildGen {
             case 1:
                 switch (side) {
                     case "Survivor":
-                        l = this.l_cons1_surv;
-                        s = this.s_cons1_surv;
+                        l = l_cons1_surv;
+                        s = s_cons1_surv;
                         break;
                     case "Killer":
-                        l = this.l_cons1_killer;
-                        s = this.s_cons1_killer;
+                        l = l_cons1_killer;
+                        s = s_cons1_killer;
                         break;
                 }
                 break;
             case 2:
                 switch (side) {
                     case "Survivor":
-                        l = this.l_cons2_surv;
-                        s = this.s_cons2_surv;
+                        l = l_cons2_surv;
+                        s = s_cons2_surv;
                         break;
                     case "Killer":
-                        l = this.l_cons2_killer;
-                        s = this.s_cons2_killer;
+                        l = l_cons2_killer;
+                        s = s_cons2_killer;
                         break;
                 }
                 break;
             case 3:
                 switch (side) {
                     case "Survivor":
-                        l = this.l_cons3_surv;
-                        s = this.s_cons3_surv;
+                        l = l_cons3_surv;
+                        s = s_cons3_surv;
                         break;
                     case "Killer":
-                        l = this.l_cons3_killer;
-                        s = this.s_cons3_killer;
+                        l = l_cons3_killer;
+                        s = s_cons3_killer;
                         break;
                 }
                 break;
             case 4:
                 switch (side) {
                     case "Survivor":
-                        l = this.l_cons4_surv;
-                        s = this.s_cons4_surv;
+                        l = l_cons4_surv;
+                        s = s_cons4_surv;
                         break;
                     case "Killer":
-                        l = this.l_cons4_killer;
-                        s = this.s_cons4_killer;
+                        l = l_cons4_killer;
+                        s = s_cons4_killer;
                         break;
                 }
                 break;
@@ -715,8 +726,8 @@ public class SmartRandBuildGen {
      * @param detail
      */
     public void showPerks(boolean detail) {
-        System.out.println("# All Loaded Perks (" + this.nb_perks_all + " Perks)\n");
-        for (Perk p : this.l_perks_all) {
+        System.out.println("# All Loaded Perks (" + nb_perks_all + " Perks)\n");
+        for (Perk p : l_perks_all) {
             System.out.println(p.show(detail));
         }
         System.out.println("");
@@ -728,9 +739,9 @@ public class SmartRandBuildGen {
      * @param detail
      */
     public void showPerksSide(boolean detail) {
-        System.out.println("\n# Active Perks from '" + this.side + "' Side (" + this.nb_perks_side + " Perks)\n");
-        for (Perk p : this.l_perks_all) {
-            if (p.getSide().equals(this.side)) {
+        System.out.println("\n# Active Perks from '" + side + "' Side (" + nb_perks_side + " Perks)\n");
+        for (Perk p : l_perks_all) {
+            if (p.getSide().equals(side)) {
                 System.out.println(p.show(detail));
             }
         }
@@ -743,8 +754,8 @@ public class SmartRandBuildGen {
      * @param b
      */
     public void setSynergy(boolean b) {
-        this.b_synergy = b;
-        System.out.println("\n# Synergy Mode = " + this.b_synergy + "\n");
+        b_synergy = b;
+        System.out.println("\n# Synergy Mode = " + b_synergy + "\n");
     }
 
     /**
@@ -753,7 +764,7 @@ public class SmartRandBuildGen {
      * @return
      */
     public boolean getSynergy() {
-        return this.b_synergy;
+        return b_synergy;
     }
 
     /**
@@ -762,7 +773,7 @@ public class SmartRandBuildGen {
      * @return
      */
     public boolean getUpdatePerkPool() {
-        return this.b_update_pool_perks;
+        return b_update_pool_perks;
     }
 
     /**
@@ -771,8 +782,8 @@ public class SmartRandBuildGen {
      * @param b
      */
     public final void setUpdatePerkPool(boolean b) {
-        this.b_update_pool_perks = b;
-        //System.out.println("# Update Pool of Perks = " + this.b_update_pool_perks + "\n");
+        b_update_pool_perks = b;
+        //System.out.println("# Update Pool of Perks = " + b_update_pool_perks + "\n");
     }
 
     /**
@@ -786,19 +797,19 @@ public class SmartRandBuildGen {
             setWeightRef();
         }
         if (getUpdatePerkPool()) {
-            //System.out.print("# Orig Pool Size = " + this.l_perks_pool.size());
+            //System.out.print("# Orig Pool Size = " + l_perks_pool.size());
             // Reset Pool of Perks 
-            this.l_perks_pool.clear();
+            l_perks_pool.clear();
             // Rebuild Pool of Perks 
-            for (Perk perk : this.l_perks_all) {
-                if (perk.getSide().equals(this.side)) {
+            for (Perk perk : l_perks_all) {
+                if (perk.getSide().equals(side)) {
                     int value = perk.getWeight();
                     for (int i = 0; i < value; i++) {
-                        this.l_perks_pool.add(perk.getName());
+                        l_perks_pool.add(perk.getName());
                     }
                 }
             }
-            //System.out.println(" | New Pool Size = " + this.l_perks_pool.size());
+            //System.out.println(" | New Pool Size = " + l_perks_pool.size());
             setUpdatePerkPool(false);
         }
     }
@@ -813,12 +824,12 @@ public class SmartRandBuildGen {
         // Define Random Build
         Build b = new Build();
         b.setName(buildname);
-        b.setSide(this.side);
+        b.setSide(side);
         // Get Random Character if desired
         if (getCharacterRandomStatus()) {
-            b.setCharacter(this.getCharacterRandom());
+            b.setCharacter(getCharacterRandom());
         } else {
-            b.setCharacter(this.character);
+            b.setCharacter(character);
         }
         // Define List of current Perk
         List<String> l_perk_ok = new ArrayList<>();
@@ -826,14 +837,14 @@ public class SmartRandBuildGen {
         int nbloop = 1;
         while (true) {
             // Loop until either valid Build was generated or max loops reached
-            if (this.verbose) {
+            if (verbose) {
                 System.out.print("# Loop " + nbloop);
             }
             // Restore reference Weights
             setWeightRef();
             // Apply Synergy Rules with current Character
-            if (this.b_synergy) {
-                this.synergy.update_weights(b.getCharacter().getName(), null, this);
+            if (b_synergy) {
+                synergy.update_weights(b.getCharacter().getName(), null, this);
             }
             // Update Pool of Perks
             updatePerkPool(false);
@@ -847,12 +858,12 @@ public class SmartRandBuildGen {
                 if (!l_perk_ok.contains(random_perk)) {
                     // New Perk found => added to the Build
                     l_perk_ok.add(random_perk);
-                    if (this.verbose) {
+                    if (verbose) {
                         System.out.print(" | " + random_perk);
                     }
                     // Apply Synergy Rules with current Perk & Update Pool of Perks if needed
-                    if (this.b_synergy && (l_perk_ok.size() < getNbPerksBuild())) {
-                        if (this.synergy.update_weights(null, random_perk, this)) {
+                    if (b_synergy && (l_perk_ok.size() < getNbPerksBuild())) {
+                        if (synergy.update_weights(null, random_perk, this)) {
                             setUpdatePerkPool(true);
                             updatePerkPool(false);
                         }
@@ -865,28 +876,28 @@ public class SmartRandBuildGen {
             boolean b_cons3_found = false;
             boolean b_cons4_found = false;
             for (String p : l_perk_ok) {
-                if (this.l_cons1.contains(p)) {
+                if (l_cons1.contains(p)) {
                     // Perk from Set1 Found => Update Boolean
                     b_cons1_found = true;
                     break;
                 }
             }
             for (String p : l_perk_ok) {
-                if (this.l_cons2.contains(p)) {
+                if (l_cons2.contains(p)) {
                     // Perk from Set1 Found => Update Boolean
                     b_cons2_found = true;
                     break;
                 }
             }
             for (String p : l_perk_ok) {
-                if (this.l_cons3.contains(p)) {
+                if (l_cons3.contains(p)) {
                     // Perk from Set1 Found => Update Boolean
                     b_cons3_found = true;
                     break;
                 }
             }
             for (String p : l_perk_ok) {
-                if (this.l_cons4.contains(p)) {
+                if (l_cons4.contains(p)) {
                     // Perk from Set1 Found => Update Boolean
                     b_cons4_found = true;
                     break;
@@ -894,21 +905,21 @@ public class SmartRandBuildGen {
             }
             //System.out.println("\n# BOOLEANS: " + b_cons1_found + " " + b_cons2_found + " " + b_cons3_found + " " + b_cons4_found);
             // Check all Criteria to validate current Build
-            boolean b_cons1_check = (!this.b_cons1_perks) || (this.b_cons1_perks && b_cons1_found);
-            boolean b_cons2_check = (!this.b_cons2_perks) || (this.b_cons2_perks && b_cons2_found);
-            boolean b_cons3_check = (!this.b_cons3_perks) || (this.b_cons3_perks && b_cons3_found);
-            boolean b_cons4_check = (!this.b_cons4_perks) || (this.b_cons4_perks && b_cons4_found);
+            boolean b_cons1_check = (!b_cons1_perks) || (b_cons1_perks && b_cons1_found);
+            boolean b_cons2_check = (!b_cons2_perks) || (b_cons2_perks && b_cons2_found);
+            boolean b_cons3_check = (!b_cons3_perks) || (b_cons3_perks && b_cons3_found);
+            boolean b_cons4_check = (!b_cons4_perks) || (b_cons4_perks && b_cons4_found);
             if (b_cons1_check && b_cons2_check && b_cons3_check && b_cons4_check) {
                 // All Criteria are Ok
                 break;
             }
             nbloop++;
-            if (nbloop >= this.maxloop) {
+            if (nbloop >= maxloop) {
                 // Max Loop Reached
-                System.out.println("\n# WARNING: Max loop (" + this.maxloop + ") reached !\n");
+                System.out.println("\n# WARNING: Max loop (" + maxloop + ") reached !\n");
                 return b;
             }
-            if (this.verbose) {
+            if (verbose) {
                 System.out.println("");
             }
         }
@@ -931,15 +942,15 @@ public class SmartRandBuildGen {
      */
     public final void initConfigFile() {
         // Try to detect a custom Configuration File in the current Directory
-        String f = System.getProperty("user.dir") + File.separator + "perk_db_custom.txt";
+        String f = System.getProperty("user.dir") + File.separator + s_perk_custom;
         if (new File(f).exists()) {
-            this.config = new File(f).getAbsolutePath();
+            config = new File(f).getAbsolutePath();
         } else {
             // Or use the default Configuration File
-            this.config = "data/perk_db.txt";
+            config = s_perk;
         }
         // Read the Configuration File
-        readConfigFile(this.config);
+        readConfigFile(config);
     }
 
     /**
@@ -949,16 +960,16 @@ public class SmartRandBuildGen {
      */
     public void readConfigFile(String input) {
         String spacer = "\t";
-        this.l_perks_all.clear();
-        this.l_perks_all_string.clear();
-        this.l_perks_survivor.clear();
-        this.l_perks_killer.clear();
+        l_perks_all.clear();
+        l_perks_all_string.clear();
+        l_perks_survivor.clear();
+        l_perks_killer.clear();
         // Add generic Perk
         Perk p = new Perk();
-        this.l_perks_all.add(p);
-        this.l_perks_all_string.add(p.getName());
-        this.l_perks_survivor.add(p.getName());
-        this.l_perks_killer.add(p.getName());
+        l_perks_all.add(p);
+        l_perks_all_string.add(p.getName());
+        l_perks_survivor.add(p.getName());
+        l_perks_killer.add(p.getName());
 
         try {
             // Define the Reader
@@ -996,13 +1007,13 @@ public class SmartRandBuildGen {
                     // Create Perk Object
                     p = new Perk(myname, myweight, myside, myicon);
                     // Add Perk to the List
-                    this.l_perks_all.add(p);
+                    l_perks_all.add(p);
                     // Add Perk Name to Perk List
-                    this.l_perks_all_string.add(myname);
+                    l_perks_all_string.add(myname);
                     if (myside.equals("Survivor")) {
-                        this.l_perks_survivor.add(myname);
+                        l_perks_survivor.add(myname);
                     } else {
-                        this.l_perks_killer.add(myname);
+                        l_perks_killer.add(myname);
                     }
                 } else {
                     System.err.println("\n# ERROR: corrupted configuration file => Exit [ wrong line : >" + line + "< from input file ]\n");
@@ -1017,24 +1028,24 @@ public class SmartRandBuildGen {
             System.exit(0);
         }
         // Sort Lists
-        Collections.sort(this.l_perks_all);
-        Collections.sort(this.l_perks_all_string);
-        Collections.sort(this.l_perks_survivor);
-        Collections.sort(this.l_perks_killer);
+        Collections.sort(l_perks_all);
+        Collections.sort(l_perks_all_string);
+        Collections.sort(l_perks_survivor);
+        Collections.sort(l_perks_killer);
         // Set Nb of Perks
-        this.nb_perks_all = this.l_perks_all.size();
+        nb_perks_all = l_perks_all.size();
         // Update Nb of Active Perks
-        if (this.side.equals("Survivor")) {
-            this.nb_perks_side = l_perks_survivor.size();
-        } else if (this.side.equals("Killer")) {
-            this.nb_perks_side = l_perks_killer.size();
+        if (side.equals("Survivor")) {
+            nb_perks_side = l_perks_survivor.size();
+        } else if (side.equals("Killer")) {
+            nb_perks_side = l_perks_killer.size();
         }
-        // Display Perks        
-        if (this.verbose) {
+        // Display Perks
+        if (verbose) {
             showPerks(false);
         }
         // Update Pool of Perks
-        this.setUpdatePerkPool(true);
+        setUpdatePerkPool(true);
     }
 
     /**
@@ -1043,19 +1054,19 @@ public class SmartRandBuildGen {
      */
     private void initCharacters() {
         String spacer = "\t";
-        this.l_char_survivor.clear();
-        this.l_char_killer.clear();
+        l_char_survivor.clear();
+        l_char_killer.clear();
         // Add generic Characters
         Character c = new Character("Survivor");
-        this.l_char_survivor.add(c);
-        this.l_char_survivor_generic.add(c);
+        l_char_survivor.add(c);
+        l_char_survivor_generic.add(c);
         c = new Character("Killer");
-        this.l_char_killer.add(c);
-        this.l_char_killer_generic.add(c);
+        l_char_killer.add(c);
+        l_char_killer_generic.add(c);
         try {
             // Define the Reader
             BufferedReader br = null;
-            String input = "data/characters.txt";
+            String input = s_char;
             InputStream is = getClass().getResourceAsStream(input);
             System.out.println("# Loading Characters from " + input + "\n");
             br = new BufferedReader(new InputStreamReader(is));
@@ -1078,11 +1089,11 @@ public class SmartRandBuildGen {
                     c = new Character(myname, myside, myicon);
                     // Add Character to related List
                     if (myside.equals("Survivor")) {
-                        this.l_char_survivor.add(c);
+                        l_char_survivor.add(c);
                     } else {
-                        this.l_char_killer.add(c);
+                        l_char_killer.add(c);
                     }
-                    this.l_char_all_string.add(myname);
+                    l_char_all_string.add(myname);
                 } else {
                     System.err.println("\n# ERROR: corrupted character file => Exit [ wrong line : >" + line + "< from input file ]\n");
                     System.exit(0);
@@ -1107,7 +1118,7 @@ public class SmartRandBuildGen {
         BufferedWriter bw;
         try {
             bw = new BufferedWriter(new FileWriter(new File(filename)));
-            for (Perk p : this.l_perks_all) {
+            for (Perk p : l_perks_all) {
                 bw.write(p.getName() + spacer + p.getSide() + spacer + p.getIconString() + spacer + p.getWeight() + "\n");
             }
             System.out.println("# Saving current weight distribution in " + filename);
@@ -1130,13 +1141,13 @@ public class SmartRandBuildGen {
             // Define the Reader
             BufferedReader br = null;
             // Try to detect a custom Perk Synergy File in the current Directory
-            String f = System.getProperty("user.dir") + File.separator + "perk_constraints_custom.txt";
+            String f = System.getProperty("user.dir") + File.separator + s_cons_custom;
             if (new File(f).exists()) {
                 System.out.println("\n# Loading custom Perk Constraints from " + f);
                 br = new BufferedReader(new FileReader(new File(f).getAbsolutePath()));
             } else {
-                System.out.println("\n# Loading default Perk Constraints from " + this.s_cons);
-                InputStream is = getClass().getResourceAsStream(this.s_cons);
+                System.out.println("\n# Loading default Perk Constraints from " + s_cons);
+                InputStream is = getClass().getResourceAsStream(s_cons);
                 br = new BufferedReader(new InputStreamReader(is));
             }
             line = br.readLine();
@@ -1146,21 +1157,21 @@ public class SmartRandBuildGen {
                     // Check Perk
                     if (l_perks_all_string.contains(perk)) {
                         // Add Perk to reference List
-                        if (line.startsWith(this.s_cons1_surv)) {
+                        if (line.startsWith(s_cons1_surv)) {
                             l_cons1_surv.add(perk);
-                        } else if (line.startsWith(this.s_cons2_surv)) {
+                        } else if (line.startsWith(s_cons2_surv)) {
                             l_cons2_surv.add(perk);
-                        } else if (line.startsWith(this.s_cons3_surv)) {
+                        } else if (line.startsWith(s_cons3_surv)) {
                             l_cons3_surv.add(perk);
-                        } else if (line.startsWith(this.s_cons4_surv)) {
+                        } else if (line.startsWith(s_cons4_surv)) {
                             l_cons4_surv.add(perk);
-                        } else if (line.startsWith(this.s_cons1_killer)) {
+                        } else if (line.startsWith(s_cons1_killer)) {
                             l_cons1_killer.add(perk);
-                        } else if (line.startsWith(this.s_cons2_killer)) {
+                        } else if (line.startsWith(s_cons2_killer)) {
                             l_cons2_killer.add(perk);
-                        } else if (line.startsWith(this.s_cons3_killer)) {
+                        } else if (line.startsWith(s_cons3_killer)) {
                             l_cons3_killer.add(perk);
-                        } else if (line.startsWith(this.s_cons4_killer)) {
+                        } else if (line.startsWith(s_cons4_killer)) {
                             l_cons4_killer.add(perk);
                         } else {
                             System.err.println("\n# ERROR: Issues with the constraints File on Line >" + line + "<\n");
@@ -1208,31 +1219,40 @@ public class SmartRandBuildGen {
         System.out.println("# Set of Perks 1 = " + getConstraints(1, "Killer"));
         System.out.println("# Set of Perks 2 = " + getConstraints(2, "Killer"));
         System.out.println("# Set of Perks 3 = " + getConstraints(3, "Killer"));
-        System.out.println("# Set of Perks 4 = " + getConstraints(4, "Killer") + "\n");
+        System.out.println("# Set of Perks 4 = " + getConstraints(4, "Killer"));
     }
 
     /**
      * Display Parameters
      *
+     * @param detail
      */
-    public void showParams() {
+    public final void showParams(boolean detail) {
         System.out.println("\n" + MYSPACER + " Input Parameters " + MYSPACER + "\n");
-        System.out.println("# Nb of Loaded Perks = " + this.nb_perks_all);
-        System.out.println("# Active Side = " + this.side);
-        System.out.println("# Nb of Perks on Active Side = " + this.nb_perks_side);
-        System.out.println("# Active Character = " + this.character.getName());
-        System.out.println("# Random Character Selection = " + this.b_character_random);
-        System.out.println("# Nb of Perks per Build = " + this.nb_perks_build);
-        System.out.println("# Perk from Set 1 is Required = " + this.b_cons1_perks);
-        //System.out.println("# Perk from Set 1 = " + getConstraints(1, this.side));
-        System.out.println("# Perk from Set 2 is Required = " + this.b_cons2_perks);
-        //System.out.println("# Perk from Set 2 = " + getConstraints(2, this.side));
-        System.out.println("# Perk from Set 3 is Required = " + this.b_cons3_perks);
-        //System.out.println("# Perk from Set 3 = " + getConstraints(3, this.side));
-        System.out.println("# Perk from Set 4 is Required = " + this.b_cons4_perks);
-        //System.out.println("# Perk from Set 4 = " + getConstraints(4, this.side));
-        System.out.println("# Synergy Mode = " + this.b_synergy);
-        System.out.println("# Verbose Mode = " + this.verbose);
+        if (detail) {
+            System.out.println("# Nb of Loaded Perks = " + nb_perks_all);
+            System.out.println("# Min/Max Weight Values = " + weight_perk_min + "/" + weight_perk_max);
+        }
+        System.out.println("# Active Side = " + side);
+        if (detail) {
+            System.out.println("# Nb of Perks on Active Side = " + nb_perks_side);
+        }
+        System.out.println("# Active Character = " + character.getName());
+        System.out.println("# Random Character Selection = " + b_character_random);
+        System.out.println("# Nb of Perks per Build = " + nb_perks_build);
+        System.out.println("# Perk from Set 1 is Required = " + b_cons1_perks);
+        //System.out.println("# Perk from Set 1 = " + getConstraints(1, side));
+        System.out.println("# Perk from Set 2 is Required = " + b_cons2_perks);
+        //System.out.println("# Perk from Set 2 = " + getConstraints(2, side));
+        System.out.println("# Perk from Set 3 is Required = " + b_cons3_perks);
+        //System.out.println("# Perk from Set 3 = " + getConstraints(3, side));
+        System.out.println("# Perk from Set 4 is Required = " + b_cons4_perks);
+        //System.out.println("# Perk from Set 4 = " + getConstraints(4, side));
+        System.out.println("# Synergy Mode = " + b_synergy);
+        if (detail) {
+            System.out.println("# Verbose Mode = " + verbose);
+        }
+        System.out.println("");
     }
 
     /**
@@ -1241,17 +1261,17 @@ public class SmartRandBuildGen {
      */
     public void displayHelp() {
         System.out.println(MYSPACER + " Available Options in Smart Random Build Generator " + MYSPACER + "\n");
-        System.out.println("#  -conf : load custom weight distribution file (all perks)");
-        System.out.println("#  -side : set active side ('Survivor' OR 'Killer' OR 'Random')");
-        System.out.println("#  -perk : set number of perks per build");
-        System.out.println("#  -build : set number of builds to generate");
-        System.out.println("#  -char : define the desired character");
-        System.out.println("#  -cons1 : enable constraints for 1st set of perks");
-        System.out.println("#  -cons2 : enable constraints for 2nd set of perks");
-        System.out.println("#  -cons3 : enable constraints for 3rd set of perks");
-        System.out.println("#  -cons4 : enable constraints for 4th set of perks");
-        System.out.println("#  -nosyn : disable synergy rules");
-        System.out.println("#  -h : print this help and quit\n");
+        System.out.println("# -conf : load custom weight distribution file (predefined weight for each perk)");
+        System.out.println("# -side : define the active side ('Survivor' OR 'Killer' OR 'Random')");
+        System.out.println("# -perk : define the number of perks in a build");
+        System.out.println("# -build : define the number of builds to generate");
+        System.out.println("# -char : define the desired character");
+        System.out.println("# -cons1 : enable constraints for set of perks 1 (at least one perk from set is required in the build)");
+        System.out.println("# -cons2 : enable constraints for set of perks 2 (at least one perk from set is required in the build)");
+        System.out.println("# -cons3 : enable constraints for set of perks 3 (at least one perk from set is required in the build)");
+        System.out.println("# -cons4 : enable constraints for set of perks 4 (at least one perk from set is required in the build)");
+        System.out.println("# -nosyn : disable synergy rules");
+        System.out.println("# -h : print this help and quit");
         showPerkConstraints();
         System.exit(0);
     }
@@ -1262,14 +1282,14 @@ public class SmartRandBuildGen {
      * @return
      */
     public String choseSideRandom() {
-        System.out.println("# Random Side Selection\n");
+        System.out.println("\n# Random Side Selection\n");
         // Get random Number
         double p = Math.random();
         // Add Bias toward the other Side
         double offset = 0.20;
-        if (this.side.equals("Survivor")) {
+        if (side.equals("Survivor")) {
             p = p - offset;
-        } else if (this.side.equals("Killer")) {
+        } else if (side.equals("Killer")) {
             p = p + offset;
         }
         // Select Side according to Random Value
@@ -1293,7 +1313,7 @@ public class SmartRandBuildGen {
             update_new = true;
             System.out.println("# Remote Version = " + gitversion + "\n# Local Version = " + SmartRandBuildGen.VERSION + "\n# An Update is available from https://github.com/" + SmartRandBuildGen.GIT_USER + "/" + SmartRandBuildGen.GIT_REPO + "/releases\n");
         } else if (gitversion > 0) {
-            System.out.println("# You already have the last Version (" + SmartRandBuildGen.VERSION + ")\n");
+            System.out.println("# You already have the last Version (" + SmartRandBuildGen.VERSION + ")");
         }
         return update_new;
     }
@@ -1424,11 +1444,11 @@ public class SmartRandBuildGen {
         }
 
         // Display loaded Parameters
-        srbg.showParams();
+        srbg.showParams(true);
 
         // Generate Random Builds
         List l = new ArrayList();
-        System.out.println("\n" + srbg.MYSPACER + " " + nbbuilds + " Random Builds with " + srbg.getNbPerksBuild() + " Perks per Build " + srbg.MYSPACER + "\n");
+        System.out.println(srbg.MYSPACER + " " + nbbuilds + " Random Builds with " + srbg.getNbPerksBuild() + " Perks per Build " + srbg.MYSPACER + "\n");
         Build b = null;
         for (int k = 1; k <= nbbuilds; k++) {
             b = srbg.genRandomBuild("Random Build " + k);

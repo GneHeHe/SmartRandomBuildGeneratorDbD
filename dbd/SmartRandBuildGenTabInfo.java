@@ -38,33 +38,33 @@ public class SmartRandBuildGenTabInfo extends JPanel {
     public SmartRandBuildGenTabInfo(SmartRandBuildGen srbg) {
 
         // Define Git String
-        this.url_git = "https://github.com/" + SmartRandBuildGen.GIT_USER + "/" + SmartRandBuildGen.GIT_REPO + "/releases";
+        url_git = "https://github.com/" + SmartRandBuildGen.GIT_USER + "/" + SmartRandBuildGen.GIT_REPO + "/releases";
 
         // Create JEditorPane for HTML Tutorial
-        this.editor = new JEditorPane();
+        editor = new JEditorPane();
 
         // Add Swing Components
-        this.addComponents();
+        addComponents();
 
         // Create Subpanels
-        this.pan_author = new JPanel(new FlowLayout());
-        this.pan_author.setLayout(new BoxLayout(this.pan_author, BoxLayout.X_AXIS));
-        this.pan_author.add(this.lab_author);
-        this.pan_author.add(this.lab_email);
-        this.pan_author.add(this.lab_git);
+        pan_author = new JPanel(new FlowLayout());
+        pan_author.setLayout(new BoxLayout(pan_author, BoxLayout.X_AXIS));
+        pan_author.add(lab_author);
+        pan_author.add(lab_email);
+        pan_author.add(lab_git);
 
-        this.pan_header = new JPanel();
-        this.pan_header.setLayout(new BorderLayout());
-        this.pan_header.add(new JLabel(this.pict), BorderLayout.CENTER);
-        this.pan_header.add(this.pan_author, BorderLayout.SOUTH);
+        pan_header = new JPanel();
+        pan_header.setLayout(new BorderLayout());
+        pan_header.add(new JLabel(pict), BorderLayout.CENTER);
+        pan_header.add(pan_author, BorderLayout.SOUTH);
 
         // Add Tutorial to Panel
-        this.scrollPane = new JScrollPane(this.editor);
+        scrollPane = new JScrollPane(editor);
 
         // Set Layout & add Subpanels
-        this.setLayout(new BorderLayout());
-        this.add(this.pan_header, BorderLayout.NORTH);
-        this.add(this.scrollPane, BorderLayout.CENTER);
+        setLayout(new BorderLayout());
+        add(pan_header, BorderLayout.NORTH);
+        add(scrollPane, BorderLayout.CENTER);
 
     }
 
@@ -76,18 +76,18 @@ public class SmartRandBuildGenTabInfo extends JPanel {
         // Define ImageIcon Picture
         String s_logo = "data/logo.png";
         if (getClass().getResourceAsStream(s_logo) != null) {
-            this.pict = new ImageIcon(Tools.resizePicture(s_logo, 45));
+            pict = new ImageIcon(Tools.resizePicture(s_logo, 45));
         } else {
             System.err.println("# WARNING: " + s_logo + " not found !");
         }
 
         // Define JEditorPane
-        this.editor.setEditable(false);
-        this.editor.setContentType("text/html");
+        editor.setEditable(false);
+        editor.setContentType("text/html");
         URL url_tuto = getClass().getResource("data/tuto.html");
         if (url_tuto != null) {
             try {
-                this.editor.setPage(url_tuto);
+                editor.setPage(url_tuto);
             } catch (IOException e) {
                 Tools.getAlert("ERROR: The tutorial file was not found !", "Warning", JOptionPane.ERROR_MESSAGE);
                 System.exit(0);
@@ -98,25 +98,25 @@ public class SmartRandBuildGenTabInfo extends JPanel {
         }
 
         // Define JLabel Name
-        this.lab_author = new JLabel("<html><u>Author</u></html>", SwingConstants.CENTER);
-        this.lab_author.setFont(new Font("Helvetica", Font.BOLD, 18));
-        this.lab_author.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        this.lab_author.setToolTipText("Go to GneHeHe's STEAM profile");
+        lab_author = new JLabel("<html><u>Author</u></html>", SwingConstants.CENTER);
+        lab_author.setFont(new Font("Helvetica", Font.BOLD, 18));
+        lab_author.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        lab_author.setToolTipText("Go to GneHeHe's STEAM profile");
 
         // Define JLabel Email
-        this.lab_email = new JLabel("<html><u>Contact</u></html>", SwingConstants.CENTER);
-        this.lab_email.setFont(new Font("Helvetica", Font.BOLD, 18));
-        this.lab_email.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        this.lab_email.setToolTipText("Send an email to GneHeHe");
+        lab_email = new JLabel("<html><u>Contact</u></html>", SwingConstants.CENTER);
+        lab_email.setFont(new Font("Helvetica", Font.BOLD, 18));
+        lab_email.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        lab_email.setToolTipText("Send an email to GneHeHe");
 
         // Define JLabel Git
-        this.lab_git = new JLabel("<html><u>GitHub</u></html>", SwingConstants.CENTER);
-        this.lab_git.setFont(new Font("Helvetica", Font.BOLD, 18));
-        this.lab_git.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        this.lab_git.setToolTipText("Go to GitHub repository to download the last version of SRBG ('SmartRandBuildGen.jar' file)");
+        lab_git = new JLabel("<html><u>GitHub</u></html>", SwingConstants.CENTER);
+        lab_git.setFont(new Font("Helvetica", Font.BOLD, 18));
+        lab_git.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        lab_git.setToolTipText("Go to GitHub repository to download the last version of SRBG ('SmartRandBuildGen.jar' file)");
 
         // Define MouseListener
-        this.lab_author.addMouseListener(new MouseAdapter() {
+        lab_author.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 try {
@@ -130,7 +130,7 @@ public class SmartRandBuildGenTabInfo extends JPanel {
         });
 
         // Define MouseListener
-        this.lab_email.addMouseListener(new MouseAdapter() {
+        lab_email.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 try {
@@ -145,7 +145,7 @@ public class SmartRandBuildGenTabInfo extends JPanel {
         });
 
         // Define MouseListener
-        this.lab_git.addMouseListener(new MouseAdapter() {
+        lab_git.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 try {
@@ -159,7 +159,7 @@ public class SmartRandBuildGenTabInfo extends JPanel {
         });
 
         // Define HyperlinkListener
-        this.editor.addHyperlinkListener(new HyperlinkListener() {
+        editor.addHyperlinkListener(new HyperlinkListener() {
             @Override
             public void hyperlinkUpdate(HyperlinkEvent e) {
                 if (HyperlinkEvent.EventType.ACTIVATED.equals(e.getEventType())) {

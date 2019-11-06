@@ -28,11 +28,11 @@ public class Build {
      *
      */
     public Build() {
-        this.name = "";
-        this.side = "";
-        this.character = null;
-        this.l_perks = new ArrayList<>();
-        this.score = 0;
+        name = "";
+        side = "";
+        character = null;
+        l_perks = new ArrayList<>();
+        score = 0;
     }
 
     /**
@@ -46,9 +46,9 @@ public class Build {
     public Build(String name, String side, Character c, ArrayList<Perk> l) {
         this.name = name;
         this.side = side;
-        this.character = c;
-        this.l_perks = l;
-        this.score = 0;
+        character = c;
+        l_perks = l;
+        score = 0;
     }
 
     /**
@@ -63,8 +63,8 @@ public class Build {
     public Build(String name, String side, Character c, ArrayList<Perk> l, int score) {
         this.name = name;
         this.side = side;
-        this.character = c;
-        this.l_perks = l;
+        character = c;
+        l_perks = l;
         this.score = score;
     }
 
@@ -74,7 +74,7 @@ public class Build {
      * @return
      */
     public String getName() {
-        return this.name;
+        return name;
     }
 
     /**
@@ -92,7 +92,7 @@ public class Build {
      * @return
      */
     public String getSide() {
-        return this.side;
+        return side;
     }
 
     /**
@@ -116,7 +116,7 @@ public class Build {
      * @return
      */
     public Character getCharacter() {
-        return this.character;
+        return character;
     }
 
     /**
@@ -134,7 +134,7 @@ public class Build {
      * @return
      */
     public int getScore() {
-        return this.score;
+        return score;
     }
 
     /**
@@ -143,7 +143,7 @@ public class Build {
      * @param s
      */
     public void setScore(int s) {
-        this.score = s;
+        score = s;
     }
 
     /**
@@ -152,7 +152,7 @@ public class Build {
      * @param p
      */
     public void addPerk(Perk p) {
-        this.l_perks.add(p);
+        l_perks.add(p);
     }
 
     /**
@@ -161,7 +161,7 @@ public class Build {
      * @return
      */
     public ArrayList<Perk> getPerks() {
-        return this.l_perks;
+        return l_perks;
     }
 
     /**
@@ -172,7 +172,7 @@ public class Build {
      */
     public Perk getPerk(int i) {
         int nb = 1;
-        for (Perk p : this.l_perks) {
+        for (Perk p : l_perks) {
             if (nb == i) {
                 return p;
             }
@@ -187,7 +187,7 @@ public class Build {
      * @return
      */
     public int getNbPerks() {
-        return this.l_perks.size();
+        return l_perks.size();
     }
 
     /**
@@ -200,18 +200,18 @@ public class Build {
     public String show(boolean showDetails, String spacer) {
         String s = "";
         if (showDetails) {
-            s = "Name = '" + this.name + "'" + spacer + "| Score = " + this.score + " | Side = '" + this.side + "'" + spacer + "| Character = '" + this.character + "'" + spacer;
+            s = "Name = '" + name + "'" + spacer + "| Score = " + score + " | Side = '" + side + "'" + spacer + "| Character = '" + character + "'" + spacer;
         } else {
-            s = this.name + spacer + this.score + spacer + this.side + spacer + this.character + spacer;
+            s = name + spacer + score + spacer + side + spacer + character + spacer;
         }
         int nb = 1;
-        for (Perk p : this.l_perks) {
+        for (Perk p : l_perks) {
             if (showDetails) {
                 s = s + "| Perk" + nb + " = '" + p.getName() + "'";
             } else {
                 s = s + p.getName();
             }
-            if (nb < this.getNbPerks()) {
+            if (nb < getNbPerks()) {
                 s = s + spacer;
             }
             nb++;
@@ -226,7 +226,7 @@ public class Build {
      */
     @Override
     public String toString() {
-        return this.name;
+        return name;
     }
 
     /**
@@ -238,12 +238,12 @@ public class Build {
     public boolean isDuplicate(Build b) {
         // Current Build as List
         ArrayList<String> l1 = new ArrayList<>();
-        l1.add(this.getSide());
-        l1.add(this.getCharacter().getName());
-        l1.add(this.getPerk(1).getName());
-        l1.add(this.getPerk(2).getName());
-        l1.add(this.getPerk(3).getName());
-        l1.add(this.getPerk(4).getName());
+        l1.add(getSide());
+        l1.add(getCharacter().getName());
+        l1.add(getPerk(1).getName());
+        l1.add(getPerk(2).getName());
+        l1.add(getPerk(3).getName());
+        l1.add(getPerk(4).getName());
         // Argument Build as List
         ArrayList<String> l2 = new ArrayList<>();
         l2.add(b.getSide());

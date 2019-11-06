@@ -34,6 +34,8 @@ public class SmartRandBuildGenTabData extends JPanel {
     private JFileChooser fileChooser;
     private JTextField tf_name, tf_expr, tf_build;
     private BuildTable table;
+    private final String s_build_remote = "build_db_remote.txt";
+    private final String s_build_custom = "build_db_custom.txt";
     // SmartRandBuildGen Object 
     private SmartRandBuildGen srbg;
 
@@ -48,53 +50,53 @@ public class SmartRandBuildGenTabData extends JPanel {
         this.srbg = srbg;
 
         // Add Swing Components
-        this.addComponents();
+        addComponents();
 
         // Create Subpanels
-        this.pan_all = new JPanel();
-        this.pan_all.setLayout(new BoxLayout(this.pan_all, BoxLayout.Y_AXIS));
+        pan_all = new JPanel();
+        pan_all.setLayout(new BoxLayout(pan_all, BoxLayout.Y_AXIS));
 
-        this.pan_button = new JPanel(new FlowLayout(FlowLayout.CENTER));
-        this.pan_button.add(this.tf_build);
-        this.pan_button.add(this.lab_filter);
-        this.pan_button.add(this.tf_expr);
-        this.pan_button.add(this.b_rand);
-        this.pan_button.add(this.b_reload);
-        this.pan_button.add(this.b_reload_remote);
-        this.pan_button.add(this.b_load);
-        this.pan_button.add(this.b_save);
+        pan_button = new JPanel(new FlowLayout(FlowLayout.CENTER));
+        pan_button.add(tf_build);
+        pan_button.add(lab_filter);
+        pan_button.add(tf_expr);
+        pan_button.add(b_rand);
+        pan_button.add(b_reload);
+        pan_button.add(b_reload_remote);
+        pan_button.add(b_load);
+        pan_button.add(b_save);
 
-        this.pan_build = new JPanel(new FlowLayout(FlowLayout.CENTER));
-        this.pan_build.add(this.tf_name);
-        this.pan_build.add(this.lab_side);
-        this.pan_build.add(this.cb_side);
-        this.pan_build.add(this.lab_char);
-        this.pan_build.add(this.cb_char);
-        this.pan_build.add(this.b_add_last);
-        this.pan_build.add(this.b_add);
-        this.pan_build.add(this.b_remove);
+        pan_build = new JPanel(new FlowLayout(FlowLayout.CENTER));
+        pan_build.add(tf_name);
+        pan_build.add(lab_side);
+        pan_build.add(cb_side);
+        pan_build.add(lab_char);
+        pan_build.add(cb_char);
+        pan_build.add(b_add_last);
+        pan_build.add(b_add);
+        pan_build.add(b_remove);
 
-        this.pan_perks = new JPanel(new FlowLayout(FlowLayout.CENTER));
-        this.pan_perks.add(this.lab_perk1);
-        this.pan_perks.add(this.cb_perk1);
-        this.pan_perks.add(this.lab_perk2);
-        this.pan_perks.add(this.cb_perk2);
-        this.pan_perks.add(this.lab_perk3);
-        this.pan_perks.add(this.cb_perk3);
-        this.pan_perks.add(this.lab_perk4);
-        this.pan_perks.add(this.cb_perk4);
+        pan_perks = new JPanel(new FlowLayout(FlowLayout.CENTER));
+        pan_perks.add(lab_perk1);
+        pan_perks.add(cb_perk1);
+        pan_perks.add(lab_perk2);
+        pan_perks.add(cb_perk2);
+        pan_perks.add(lab_perk3);
+        pan_perks.add(cb_perk3);
+        pan_perks.add(lab_perk4);
+        pan_perks.add(cb_perk4);
 
-        this.pan_all.add(this.pan_build);
-        this.pan_all.add(this.pan_perks);
+        pan_all.add(pan_build);
+        pan_all.add(pan_perks);
 
         // Add Table to Panel
-        this.scrollPane = new JScrollPane(this.table);
+        scrollPane = new JScrollPane(table);
 
         // Set Layout & add Subpanels
-        this.setLayout(new BorderLayout());
-        this.add(this.pan_button, BorderLayout.NORTH);
-        this.add(this.pan_all, BorderLayout.SOUTH);
-        this.add(this.scrollPane, BorderLayout.CENTER);
+        setLayout(new BorderLayout());
+        add(pan_button, BorderLayout.NORTH);
+        add(pan_all, BorderLayout.SOUTH);
+        add(scrollPane, BorderLayout.CENTER);
 
     }
 
@@ -104,119 +106,119 @@ public class SmartRandBuildGenTabData extends JPanel {
     private void addComponents() {
 
         // Create Table & Model
-        this.table = new BuildTable();
-        this.table.setModel(new BuildTableModel(this.srbg));
-        this.table.setSorter();
-        this.table.setRowHeight(69);
-        this.table.centerText();
-        this.table.setIconColumn(3);
-        this.table.setIconColumn(4);
-        this.table.setIconColumn(5);
-        this.table.setIconColumn(6);
-        this.table.setIconColumn(7);
-        this.table.setShowVerticalLines(false);
+        table = new BuildTable();
+        table.setModel(new BuildTableModel(srbg));
+        table.setSorter();
+        table.setRowHeight(69);
+        table.centerText();
+        table.setIconColumn(3);
+        table.setIconColumn(4);
+        table.setIconColumn(5);
+        table.setIconColumn(6);
+        table.setIconColumn(7);
+        table.setShowVerticalLines(false);
 
         // Define JLabel Objects
-        this.lab_filter = new JLabel(" Filter Rows ");
-        this.lab_side = new JLabel(" Side ");
-        this.lab_char = new JLabel(" Character ");
-        this.lab_perk1 = new JLabel(" Perk 1 ");
-        this.lab_perk2 = new JLabel("  Perk 2 ");
-        this.lab_perk3 = new JLabel("  Perk 3 ");
-        this.lab_perk4 = new JLabel("  Perk 4 ");
+        lab_filter = new JLabel(" Filter Rows ");
+        lab_side = new JLabel(" Side ");
+        lab_char = new JLabel(" Character ");
+        lab_perk1 = new JLabel(" Perk 1 ");
+        lab_perk2 = new JLabel("  Perk 2 ");
+        lab_perk3 = new JLabel("  Perk 3 ");
+        lab_perk4 = new JLabel("  Perk 4 ");
 
         // Define JTextField Objects
-        this.tf_name = new JTextField(12);
-        this.tf_name.setText("MyBuild");
-        this.tf_name.setHorizontalAlignment(JTextField.CENTER);
-        this.tf_name.setEditable(true);
-        this.tf_name.setToolTipText("Define name of build");
-        this.tf_expr = new JTextField(8);
-        this.tf_expr.setText("");
-        this.tf_expr.setHorizontalAlignment(JTextField.CENTER);
-        this.tf_expr.setEditable(true);
-        this.tf_expr.setToolTipText("Case insensitive search (regular expressions can be used)");
-        this.tf_build = new JTextField(8);
-        this.tf_build.setText(table.getRowCount() + " Builds");
-        this.tf_build.setHorizontalAlignment(JTextField.CENTER);
-        this.tf_build.setEditable(false);
+        tf_name = new JTextField(12);
+        tf_name.setText("MyBuild");
+        tf_name.setHorizontalAlignment(JTextField.CENTER);
+        tf_name.setEditable(true);
+        tf_name.setToolTipText("Define name of build");
+        tf_expr = new JTextField(8);
+        tf_expr.setText("");
+        tf_expr.setHorizontalAlignment(JTextField.CENTER);
+        tf_expr.setEditable(true);
+        tf_expr.setToolTipText("Case insensitive search (regular expressions can be used)");
+        tf_build = new JTextField(8);
+        tf_build.setText(table.getRowCount() + " Builds");
+        tf_build.setHorizontalAlignment(JTextField.CENTER);
+        tf_build.setEditable(false);
 
         // Define JButton Objects
-        this.b_rand = new JButton("Random Select");
-        this.b_reload = new JButton("Reload DB");
-        this.b_reload_remote = new JButton("Update DB (GitHub)");
-        this.b_load = new JButton("Open custom DB");
-        this.b_save = new JButton("Save current DB");
-        this.b_add = new JButton("Add current Build");
-        this.b_add_last = new JButton("Add random Build");
-        this.b_remove = new JButton("Delete Builds");
+        b_rand = new JButton("Random Select");
+        b_reload = new JButton("Reload DB");
+        b_reload_remote = new JButton("Update DB (GitHub)");
+        b_load = new JButton("Open custom DB");
+        b_save = new JButton("Save current DB");
+        b_add = new JButton("Add current Build");
+        b_add_last = new JButton("Add random Build");
+        b_remove = new JButton("Delete Builds");
 
         // Set Tooltips for Buttons
-        this.b_rand.setToolTipText("Randomly select one build from database");
-        this.b_reload.setToolTipText("Reload default build database");
-        this.b_reload_remote.setToolTipText("Merge current build database with remote version from GitHub");
-        this.b_load.setToolTipText("Open custom build database");
-        this.b_save.setToolTipText("Save current build database");
-        this.b_add.setToolTipText("Add current build in database");
-        this.b_add_last.setToolTipText("Add generated build from other tab in database");
-        this.b_remove.setToolTipText("Delete selected builds from database");
+        b_rand.setToolTipText("Randomly select one build from database");
+        b_reload.setToolTipText("Reload default build database");
+        b_reload_remote.setToolTipText("Merge current build database with remote version from GitHub");
+        b_load.setToolTipText("Open custom build database");
+        b_save.setToolTipText("Save current build database");
+        b_add.setToolTipText("Add current build in database");
+        b_add_last.setToolTipText("Add generated build from other tab in database");
+        b_remove.setToolTipText("Delete selected builds from database");
 
         // Define Colors for Buttons
-        this.b_add_last.setBackground(Color.BLUE);
-        this.b_add_last.setOpaque(true);
-        this.b_add_last.setForeground(Color.WHITE);
-        this.b_add.setBackground(Color.WHITE);
-        this.b_add.setOpaque(true);
-        this.b_add.setForeground(Color.BLACK);
-        this.b_remove.setBackground(Color.RED);
-        this.b_remove.setOpaque(true);
-        this.b_remove.setForeground(Color.WHITE);
+        b_add_last.setBackground(Color.BLUE);
+        b_add_last.setOpaque(true);
+        b_add_last.setForeground(Color.WHITE);
+        b_add.setBackground(Color.WHITE);
+        b_add.setOpaque(true);
+        b_add.setForeground(Color.BLACK);
+        b_remove.setBackground(Color.RED);
+        b_remove.setOpaque(true);
+        b_remove.setForeground(Color.WHITE);
 
         // Define JFileChooser Objects
-        this.fileChooser = new JFileChooser();
-        this.fileChooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
-        this.fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+        fileChooser = new JFileChooser();
+        fileChooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
+        fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
         FileNameExtensionFilter filter = new FileNameExtensionFilter("Text Files", "txt", "ini");
-        this.fileChooser.setFileFilter(filter);
+        fileChooser.setFileFilter(filter);
 
         // Define JComboBox Objects for Character & Perks
-        this.cb_char = new JComboBox();
-        this.cb_perk1 = new JComboBox();
-        this.cb_perk2 = new JComboBox();
-        this.cb_perk3 = new JComboBox();
-        this.cb_perk4 = new JComboBox();
-        this.cb_char.setPreferredSize(new Dimension(150, 25));
-        this.cb_perk1.setPreferredSize(new Dimension(190, 25));
-        this.cb_perk2.setPreferredSize(new Dimension(190, 25));
-        this.cb_perk3.setPreferredSize(new Dimension(190, 25));
-        this.cb_perk4.setPreferredSize(new Dimension(190, 25));
-        ((JLabel) this.cb_char.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
-        ((JLabel) this.cb_perk1.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
-        ((JLabel) this.cb_perk2.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
-        ((JLabel) this.cb_perk3.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
-        ((JLabel) this.cb_perk4.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
+        cb_char = new JComboBox();
+        cb_perk1 = new JComboBox();
+        cb_perk2 = new JComboBox();
+        cb_perk3 = new JComboBox();
+        cb_perk4 = new JComboBox();
+        cb_char.setPreferredSize(new Dimension(150, 25));
+        cb_perk1.setPreferredSize(new Dimension(190, 25));
+        cb_perk2.setPreferredSize(new Dimension(190, 25));
+        cb_perk3.setPreferredSize(new Dimension(190, 25));
+        cb_perk4.setPreferredSize(new Dimension(190, 25));
+        ((JLabel) cb_char.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
+        ((JLabel) cb_perk1.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
+        ((JLabel) cb_perk2.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
+        ((JLabel) cb_perk3.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
+        ((JLabel) cb_perk4.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
 
         // Define JComboBox Objects for Side
-        this.cb_side = new JComboBox(new String[]{"Survivor", "Killer"});
-        this.cb_side.setSelectedIndex(0);
-        this.cb_side.setPreferredSize(new Dimension(130, 25));
-        ((JLabel) this.cb_side.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
-        if (this.cb_side.getSelectedItem().toString().equals("Survivor")) {
-            this.cb_char.setModel(new DefaultComboBoxModel(this.srbg.getCharacterList("Survivor",false).toArray()));
-            this.cb_perk1.setModel(new DefaultComboBoxModel(this.srbg.getPerks("Survivor").toArray()));
-            this.cb_perk2.setModel(new DefaultComboBoxModel(this.srbg.getPerks("Survivor").toArray()));
-            this.cb_perk3.setModel(new DefaultComboBoxModel(this.srbg.getPerks("Survivor").toArray()));
-            this.cb_perk4.setModel(new DefaultComboBoxModel(this.srbg.getPerks("Survivor").toArray()));
+        cb_side = new JComboBox(new String[]{"Survivor", "Killer"});
+        cb_side.setSelectedIndex(0);
+        cb_side.setPreferredSize(new Dimension(130, 25));
+        ((JLabel) cb_side.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
+        if (cb_side.getSelectedItem().toString().equals("Survivor")) {
+            cb_char.setModel(new DefaultComboBoxModel(srbg.getCharacterList("Survivor",false).toArray()));
+            cb_perk1.setModel(new DefaultComboBoxModel(srbg.getPerks("Survivor").toArray()));
+            cb_perk2.setModel(new DefaultComboBoxModel(srbg.getPerks("Survivor").toArray()));
+            cb_perk3.setModel(new DefaultComboBoxModel(srbg.getPerks("Survivor").toArray()));
+            cb_perk4.setModel(new DefaultComboBoxModel(srbg.getPerks("Survivor").toArray()));
         } else {
-            this.cb_char.setModel(new DefaultComboBoxModel(this.srbg.getCharacterList("Killer",false).toArray()));
-            this.cb_perk1.setModel(new DefaultComboBoxModel(this.srbg.getPerks("Killer").toArray()));
-            this.cb_perk2.setModel(new DefaultComboBoxModel(this.srbg.getPerks("Killer").toArray()));
-            this.cb_perk3.setModel(new DefaultComboBoxModel(this.srbg.getPerks("Killer").toArray()));
-            this.cb_perk4.setModel(new DefaultComboBoxModel(this.srbg.getPerks("Killer").toArray()));
+            cb_char.setModel(new DefaultComboBoxModel(srbg.getCharacterList("Killer",false).toArray()));
+            cb_perk1.setModel(new DefaultComboBoxModel(srbg.getPerks("Killer").toArray()));
+            cb_perk2.setModel(new DefaultComboBoxModel(srbg.getPerks("Killer").toArray()));
+            cb_perk3.setModel(new DefaultComboBoxModel(srbg.getPerks("Killer").toArray()));
+            cb_perk4.setModel(new DefaultComboBoxModel(srbg.getPerks("Killer").toArray()));
         }
 
         // Define ActionListener
-        this.b_reload.addActionListener(new ActionListener() {
+        b_reload.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 // Reset Filter
@@ -227,14 +229,14 @@ public class SmartRandBuildGenTabData extends JPanel {
         });
 
         // Define ActionListener
-        this.b_reload_remote.addActionListener(new ActionListener() {
+        b_reload_remote.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 // Reset Filter
                 tf_expr.setText("");
                 // Download remote build database from GitHub (last version)
                 try {
-                    String output = "build_db_remote.txt";
+                    String output = s_build_remote;
                     URL website = new URL(SmartRandBuildGen.GIT_DB_REMOTE);
                     ReadableByteChannel rbc = Channels.newChannel(website.openStream());
                     FileOutputStream fos = new FileOutputStream(output);
@@ -252,7 +254,7 @@ public class SmartRandBuildGenTabData extends JPanel {
         });
 
         // Define ActionListener
-        this.b_load.addActionListener(new ActionListener() {
+        b_load.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String f = chooseFile(true);
@@ -272,7 +274,7 @@ public class SmartRandBuildGenTabData extends JPanel {
         });
 
         // Define ActionListener
-        this.b_save.addActionListener(new ActionListener() {
+        b_save.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String f = chooseFile(false);
@@ -290,7 +292,7 @@ public class SmartRandBuildGenTabData extends JPanel {
         });
 
         // Define ActionListener
-        this.b_rand.addActionListener(new ActionListener() {
+        b_rand.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 tf_expr.setText("");
@@ -310,7 +312,7 @@ public class SmartRandBuildGenTabData extends JPanel {
         });
 
         // Define ActionListener
-        this.cb_side.addActionListener(new ActionListener() {
+        cb_side.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JComboBox combo = (JComboBox) e.getSource();
@@ -333,7 +335,7 @@ public class SmartRandBuildGenTabData extends JPanel {
         });
 
         // Define ActionListener
-        this.b_add.addActionListener(new ActionListener() {
+        b_add.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 // Define Build Object
@@ -364,7 +366,7 @@ public class SmartRandBuildGenTabData extends JPanel {
         });
 
         // Define ActionListener
-        this.b_add_last.addActionListener(new ActionListener() {
+        b_add_last.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 // Retrieve last saved Build
@@ -393,7 +395,7 @@ public class SmartRandBuildGenTabData extends JPanel {
         });
 
         // Define ActionListener
-        this.b_remove.addActionListener(new ActionListener() {
+        b_remove.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 // Filter Mode must be disabled
@@ -409,7 +411,7 @@ public class SmartRandBuildGenTabData extends JPanel {
         });
 
         // Define DocumentListener
-        this.tf_expr.getDocument().addDocumentListener(new DocumentListener() {
+        tf_expr.getDocument().addDocumentListener(new DocumentListener() {
             @Override
             public void changedUpdate(DocumentEvent e) {
                 filterRows();
@@ -427,7 +429,7 @@ public class SmartRandBuildGenTabData extends JPanel {
         });
 
         // Define ModelListener
-        this.table.getModel().addTableModelListener(new TableModelListener() {
+        table.getModel().addTableModelListener(new TableModelListener() {
             @Override
             public void tableChanged(TableModelEvent e) {
                 String s = table.getRowCount() + " Builds";
@@ -438,7 +440,7 @@ public class SmartRandBuildGenTabData extends JPanel {
         });
 
         // Define MouseListener
-        this.table.addMouseListener(new java.awt.event.MouseAdapter() {
+        table.addMouseListener(new java.awt.event.MouseAdapter() {
             @Override
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 // Get Row & Column
@@ -481,11 +483,11 @@ public class SmartRandBuildGenTabData extends JPanel {
         RowFilter rf = null;
         try {
             // Case insensitive Search
-            rf = RowFilter.regexFilter("(?i)" + this.tf_expr.getText());
+            rf = RowFilter.regexFilter("(?i)" + tf_expr.getText());
         } catch (PatternSyntaxException e) {
             return;
         }
-        this.table.getSorter().setRowFilter(rf);
+        table.getSorter().setRowFilter(rf);
     }
 
     /**
@@ -495,20 +497,20 @@ public class SmartRandBuildGenTabData extends JPanel {
     private String chooseFile(boolean b) {
         // Set Default Directory
         String dir = System.getProperty("user.dir");
-        this.fileChooser.setCurrentDirectory(new File(dir));
+        fileChooser.setCurrentDirectory(new File(dir));
         // Set Default Output Filename
-        String file = dir + File.separator + "build_db_custom.txt";
-        this.fileChooser.setSelectedFile(new File(file));
+        String file = dir + File.separator + s_build_custom;
+        fileChooser.setSelectedFile(new File(file));
         int status;
         if (b) {
             // Open File Dialog
-            status = this.fileChooser.showOpenDialog(this);
+            status = fileChooser.showOpenDialog(this);
         } else {
             // Saving File Dialog
-            status = this.fileChooser.showSaveDialog(this);
+            status = fileChooser.showSaveDialog(this);
         }
         if (status == JFileChooser.APPROVE_OPTION) {
-            return this.fileChooser.getSelectedFile().getAbsolutePath();
+            return fileChooser.getSelectedFile().getAbsolutePath();
         } else {
             return null;
         }

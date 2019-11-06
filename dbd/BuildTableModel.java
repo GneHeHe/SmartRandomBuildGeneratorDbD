@@ -27,6 +27,9 @@ public class BuildTableModel extends AbstractTableModel {
     private ArrayList<Build> l_builds;
     // SmartRandBuildGen Object
     private SmartRandBuildGen srbg;
+    // Database Files
+    private final String s_build = "data/build_db.txt";
+    private final String s_build_custom = "build_db_custom.txt";
 
     /**
      * Constructor
@@ -35,11 +38,11 @@ public class BuildTableModel extends AbstractTableModel {
      */
     public BuildTableModel(SmartRandBuildGen srbg) {
         // Define List
-        this.l_builds = new ArrayList<>();
+        l_builds = new ArrayList<>();
         // Set SmartRandBuildGen Object
         this.srbg = srbg;
         // Read default Build Database
-        this.initDatabase();
+        initDatabase();
     }
 
     /**
@@ -49,7 +52,7 @@ public class BuildTableModel extends AbstractTableModel {
      */
     @Override
     public int getRowCount() {
-        return this.l_builds.size();
+        return l_builds.size();
     }
 
     /**
@@ -59,7 +62,7 @@ public class BuildTableModel extends AbstractTableModel {
      */
     @Override
     public int getColumnCount() {
-        return this.columns.length;
+        return columns.length;
     }
 
     /**
@@ -70,7 +73,7 @@ public class BuildTableModel extends AbstractTableModel {
      */
     @Override
     public String getColumnName(int columnIndex) {
-        return this.columns[columnIndex];
+        return columns[columnIndex];
     }
 
     /**
@@ -118,25 +121,25 @@ public class BuildTableModel extends AbstractTableModel {
                 return "#" + (rowIndex + 1);
             case 1:
                 //System.out.println(l_builds.get(rowIndex).getName());
-                return this.l_builds.get(rowIndex).getName();
+                return l_builds.get(rowIndex).getName();
             case 2:
                 //System.out.println(l_builds.get(rowIndex).getSide());
-                return this.l_builds.get(rowIndex).getSide();
+                return l_builds.get(rowIndex).getSide();
             case 3:
                 //System.out.println(l_builds.get(rowIndex).getCharacter().getIconImage(1).getName());
-                return this.l_builds.get(rowIndex).getCharacter().getIconImage(1);
+                return l_builds.get(rowIndex).getCharacter().getIconImage(1);
             case 4:
                 //System.out.println(l_builds.get(rowIndex).getPerk(1).getIconImage(2).getName());
-                return this.l_builds.get(rowIndex).getPerk(1).getIconImage(2);
+                return l_builds.get(rowIndex).getPerk(1).getIconImage(2);
             case 5:
                 //System.out.println(l_builds.get(rowIndex).getPerk(2).getIconImage(2).getName());
-                return this.l_builds.get(rowIndex).getPerk(2).getIconImage(2);
+                return l_builds.get(rowIndex).getPerk(2).getIconImage(2);
             case 6:
                 //System.out.println(l_builds.get(rowIndex).getPerk(3).getIconImage(2).getName());
-                return this.l_builds.get(rowIndex).getPerk(3).getIconImage(2);
+                return l_builds.get(rowIndex).getPerk(3).getIconImage(2);
             case 7:
                 //System.out.println(l_builds.get(rowIndex).getPerk(4).getIconImage(2).getName());
-                return this.l_builds.get(rowIndex).getPerk(4).getIconImage(2);
+                return l_builds.get(rowIndex).getPerk(4).getIconImage(2);
             default:
                 return null;
         }
@@ -170,7 +173,7 @@ public class BuildTableModel extends AbstractTableModel {
     public void setValueAt(Object aValue, int rowIndex, int columnIndex) {
         if (aValue != null) {
             // Get current Object
-            Build b = this.l_builds.get(rowIndex);
+            Build b = l_builds.get(rowIndex);
             if (columnIndex == 1) {
                 b.setName((String) aValue);
                 System.out.println("# Updated Row " + (rowIndex + 1) + " | " + b.show(false, "   "));
@@ -187,19 +190,19 @@ public class BuildTableModel extends AbstractTableModel {
      */
     public boolean addBuild(Build newbuild, boolean verbose) {
         // Check if Build is already known
-        for (Build b : this.l_builds) {
+        for (Build b : l_builds) {
             if (b.isDuplicate(newbuild)) {
                 System.out.println("# Skipped Build | " + newbuild.show(false, "   "));
                 return false;
             }
         }
         // Add Build
-        this.l_builds.add(newbuild);
+        l_builds.add(newbuild);
         if (verbose) {
             System.out.println("# Added Build | " + newbuild.show(false, "   "));
         }
         // Update JTable using an Event
-        this.fireTableDataChanged();
+        fireTableDataChanged();
         return true;
     }
 
@@ -210,10 +213,10 @@ public class BuildTableModel extends AbstractTableModel {
      */
     public void removeBuild(int row) {
         // Remove a Build
-        Build b = this.l_builds.remove(row);
+        Build b = l_builds.remove(row);
         System.out.println("# Removed Build | " + b.show(false, "   "));
         // Update JTable using an Event
-        this.fireTableRowsDeleted(row, row);
+        fireTableRowsDeleted(row, row);
     }
 
     /**
@@ -226,7 +229,7 @@ public class BuildTableModel extends AbstractTableModel {
         BufferedWriter bw;
         try {
             bw = new BufferedWriter(new FileWriter(new File(filename)));
-            for (Build p : this.l_builds) {
+            for (Build p : l_builds) {
                 bw.write(p.getName() + spacer + p.getSide() + spacer + p.getCharacter() + spacer + p.getPerk(1).getName() + spacer + p.getPerk(2).getName() + spacer + p.getPerk(3).getName() + spacer + p.getPerk(4).getName() + "\n");
             }
             System.out.println("# Saving Build Database in " + filename);
@@ -244,13 +247,13 @@ public class BuildTableModel extends AbstractTableModel {
      */
     public final void initDatabase() {
         // Try to detect a custom build Database in current Directory
-        String f = System.getProperty("user.dir") + File.separator + "build_db_custom.txt";
+        String f = System.getProperty("user.dir") + File.separator + s_build_custom;
         if (!new File(f).exists()) {
             // Or use default build Database
-            f = "data/build_db.txt";
+            f = s_build;
         }
         // Read build database
-        this.readData(f, true);
+        readData(f, true);
     }
 
     /**
@@ -263,7 +266,7 @@ public class BuildTableModel extends AbstractTableModel {
         String spacer = "\t";
         // Reset Model if needed
         if (reset) {
-            this.l_builds.clear();
+            l_builds.clear();
         }
         try {
             // Define Reader
@@ -290,11 +293,11 @@ public class BuildTableModel extends AbstractTableModel {
                         String myname = tab[0];
                         String myside = tab[1];
                         String mychar_s = tab[2];
-                        Character mychar = this.srbg.retrieveCharacter(mychar_s);
-                        Perk p1 = this.srbg.getPerk(tab[3]);
-                        Perk p2 = this.srbg.getPerk(tab[4]);
-                        Perk p3 = this.srbg.getPerk(tab[5]);
-                        Perk p4 = this.srbg.getPerk(tab[6]);
+                        Character mychar = srbg.retrieveCharacter(mychar_s);
+                        Perk p1 = srbg.getPerk(tab[3]);
+                        Perk p2 = srbg.getPerk(tab[4]);
+                        Perk p3 = srbg.getPerk(tab[5]);
+                        Perk p4 = srbg.getPerk(tab[6]);
                         if (!((myside.equals("Survivor")) || (myside.equals("Killer")))) {
                             // Check if Side is Ok
                             System.err.println("# ERROR: wrong side ('" + myside + "') => skipped line " + nb_lines + " : >" + line + "< from input file");
@@ -325,7 +328,7 @@ public class BuildTableModel extends AbstractTableModel {
                                 b.addPerk(p3);
                                 b.addPerk(p4);
                                 // Add Build to Model
-                                this.addBuild(b, false);
+                                addBuild(b, false);
                             } else {
                                 System.err.println("# ERROR: duplicate perks in build ('" + p1.getName() + "'/'" + p2.getName() + "'/'" + p3.getName() + "'/'" + p4.getName() + "') => skipped line " + nb_lines + " : >" + line + "< from input file");
                             }
@@ -351,7 +354,7 @@ public class BuildTableModel extends AbstractTableModel {
             System.exit(0);
         }
         // Update JTable using an Event
-        this.fireTableDataChanged();
+        fireTableDataChanged();
     }
 
     /**
@@ -361,7 +364,7 @@ public class BuildTableModel extends AbstractTableModel {
      * @return
      */
     public Build getBuildFromRow(int row) {
-        return this.l_builds.get(row);
+        return l_builds.get(row);
     }
 
 }

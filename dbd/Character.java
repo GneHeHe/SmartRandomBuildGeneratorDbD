@@ -38,12 +38,12 @@ public class Character implements Comparable<Character> {
      * @param icon
      */
     public Character(String name, String side, String icon) {
-        this.setName(name);
-        this.setSide(side);
-        this.lab_img_small = new JLabel("", SwingConstants.CENTER);
-        this.lab_img_large = new JLabel("", SwingConstants.CENTER);
+        setName(name);
+        setSide(side);
+        lab_img_small = new JLabel("", SwingConstants.CENTER);
+        lab_img_large = new JLabel("", SwingConstants.CENTER);
         try {
-            this.setIconPicture(icon);
+            setIconPicture(icon);
         } catch (IOException ex) {
             System.err.println("ERROR while creating Character " + name);
             System.err.println(ex.getMessage());
@@ -58,25 +58,25 @@ public class Character implements Comparable<Character> {
      */
     public Character(String side) {
         if (side.equals("Survivor")) {
-            this.setName(Character.GENERIC_SURVIVOR);
+            setName(Character.GENERIC_SURVIVOR);
         } else if (side.equals("Killer")) {
-            this.setName(Character.GENERIC_KILLER);
+            setName(Character.GENERIC_KILLER);
         } else {
             System.err.println("ERROR while creating generic Character");
             System.exit(0);
         }
-        this.setSide(side);
-        this.lab_img_small = new JLabel("", SwingConstants.CENTER);
-        this.lab_img_large = new JLabel("", SwingConstants.CENTER);
+        setSide(side);
+        lab_img_small = new JLabel("", SwingConstants.CENTER);
+        lab_img_large = new JLabel("", SwingConstants.CENTER);
         // Set Default Icon
         String icon = "";
-        if (this.side.equals("Survivor")) {
+        if (side.equals("Survivor")) {
             icon = "iconHelpLoading_survivor";
-        } else if (this.side.equals("Killer")) {
+        } else if (side.equals("Killer")) {
             icon = "iconHelpLoading_killer";
         }
         try {
-            this.setIconPicture(icon);
+            setIconPicture(icon);
         } catch (IOException ex) {
             System.err.println("ERROR while creating Character " + name);
             System.err.println(ex.getMessage());
@@ -90,7 +90,7 @@ public class Character implements Comparable<Character> {
      * @return
      */
     public String getName() {
-        return this.name;
+        return name;
     }
 
     /**
@@ -108,7 +108,7 @@ public class Character implements Comparable<Character> {
      * @return
      */
     public String getSide() {
-        return this.side;
+        return side;
     }
 
     /**
@@ -139,7 +139,7 @@ public class Character implements Comparable<Character> {
             case 2:
                 return lab_img_large;
             default:
-                return new JLabel(this.name, SwingConstants.CENTER);
+                return new JLabel(name, SwingConstants.CENTER);
         }
     }
 
@@ -149,7 +149,7 @@ public class Character implements Comparable<Character> {
      * @return
      */
     public String getIconString() {
-        return this.icon_string;
+        return icon_string;
     }
 
     /**
@@ -160,15 +160,15 @@ public class Character implements Comparable<Character> {
      */
     private void setIconPicture(String s_icon) throws IOException {
         // Try to set given Icon Picture
-        this.icon_string = s_icon;
+        icon_string = s_icon;
         String path = "icons_char/" + s_icon + ".png";
-        if (this.getClass().getResourceAsStream(path) != null) {
+        if (getClass().getResourceAsStream(path) != null) {
             // Set Icons in JLabel
-            this.lab_img_small.setIcon(new ImageIcon(Tools.resizePicture(path, Character.SIZE_SMALL, Character.SIZE_SMALL)));
-            this.lab_img_large.setIcon(new ImageIcon(Tools.resizePicture(path, Character.SIZE_LARGE, Character.SIZE_LARGE)));
+            lab_img_small.setIcon(new ImageIcon(Tools.resizePicture(path, Character.SIZE_SMALL, Character.SIZE_SMALL)));
+            lab_img_large.setIcon(new ImageIcon(Tools.resizePicture(path, Character.SIZE_LARGE, Character.SIZE_LARGE)));
             // Set Name for Tooltip
-            this.lab_img_small.setName(this.name);
-            this.lab_img_large.setName(this.name);
+            lab_img_small.setName(name);
+            lab_img_large.setName(name);
         } else {
             // Try to use default Icon Picture
             if (side.equals("Survivor")) {
@@ -177,15 +177,15 @@ public class Character implements Comparable<Character> {
                 s_icon = "iconHelpLoading_killer";
             }
             path = "icons_char/" + s_icon + ".png";
-            if (this.getClass().getResourceAsStream(path) != null) {
+            if (getClass().getResourceAsStream(path) != null) {
                 // Set Default Icon in JLabel
-                this.lab_img_small.setIcon(new ImageIcon(Tools.resizePicture(path, Character.SIZE_SMALL, Character.SIZE_SMALL)));
-                this.lab_img_large.setIcon(new ImageIcon(Tools.resizePicture(path, Character.SIZE_LARGE, Character.SIZE_LARGE)));
+                lab_img_small.setIcon(new ImageIcon(Tools.resizePicture(path, Character.SIZE_SMALL, Character.SIZE_SMALL)));
+                lab_img_large.setIcon(new ImageIcon(Tools.resizePicture(path, Character.SIZE_LARGE, Character.SIZE_LARGE)));
                 // Set Name for Tooltip
-                this.lab_img_small.setName(this.name);
-                this.lab_img_large.setName(this.name);
+                lab_img_small.setName(name);
+                lab_img_large.setName(name);
             } else {
-                System.err.println("# WARNING: Both expected and default Icon Files were not found for Character '" + this.name + "' => Exit");
+                System.err.println("# WARNING: Both expected and default Icon Files were not found for Character '" + name + "' => Exit");
                 System.exit(0);
             }
         }
@@ -199,9 +199,9 @@ public class Character implements Comparable<Character> {
      */
     public String show(boolean detail) {
         if (detail) {
-            return "# Character = '" + this.name + "' | Side = " + this.side + " | Icon = " + this.icon_string;
+            return "# Character = '" + name + "' | Side = " + side + " | Icon = " + icon_string;
         } else {
-            return "# Character = '" + this.name + "' | Side = " + this.side;
+            return "# Character = '" + name + "' | Side = " + side;
         }
     }
 
@@ -212,7 +212,7 @@ public class Character implements Comparable<Character> {
      * @return
      */
     public boolean checkSide(String side) {
-        return this.side.equals(side);
+        return side.equals(side);
     }
 
     /**
@@ -223,7 +223,7 @@ public class Character implements Comparable<Character> {
      */
     @Override
     public int compareTo(Character p) {
-        return this.name.compareTo(p.name);
+        return name.compareTo(p.name);
     }
 
     /**
@@ -233,7 +233,7 @@ public class Character implements Comparable<Character> {
      */
     @Override
     public String toString() {
-        return this.name;
+        return name;
     }
 
 }

@@ -33,31 +33,31 @@ public class PerkTable extends JTable {
      */
     public PerkTable() {
         // Default Dimension of Header
-        this.getTableHeader().setPreferredSize(new Dimension(30, 30));
+        getTableHeader().setPreferredSize(new Dimension(30, 30));
         // Set Reordering/Resizing Status
-        this.getTableHeader().setReorderingAllowed(false);
-        this.getTableHeader().setResizingAllowed(false);
+        getTableHeader().setReorderingAllowed(false);
+        getTableHeader().setResizingAllowed(false);
         // Set Fonts
-        this.getTableHeader().setFont(new Font("Helvetica", Font.BOLD, 16));
-        this.setFont(new Font("Helvetica", Font.BOLD, 14));
+        getTableHeader().setFont(new Font("Helvetica", Font.BOLD, 16));
+        setFont(new Font("Helvetica", Font.BOLD, 14));
         // No Manual Sorting
-        this.getTableHeader().setEnabled(false);
+        getTableHeader().setEnabled(false);
         // Only select 1 Line
         setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         // Set Available Weights
-        this.l_weights = new ArrayList<>();
-        this.l_weights.add(0);
-        this.l_weights.add(1);
-        this.l_weights.add(5);
-        this.l_weights.add(10);
-        this.l_weights.add(25);
-        this.l_weights.add(50);
-        this.l_weights.add(100);
-        this.l_weights.add(150);
-        this.l_weights.add(200);
-        this.l_weights.add(250);
-        this.l_weights.add(300);
-        this.weight_max = getWeightMax();
+        l_weights = new ArrayList<>();
+        l_weights.add(0);
+        l_weights.add(1);
+        l_weights.add(5);
+        l_weights.add(10);
+        l_weights.add(25);
+        l_weights.add(50);
+        l_weights.add(100);
+        l_weights.add(150);
+        l_weights.add(200);
+        l_weights.add(250);
+        l_weights.add(300);
+        weight_max = getWeightMax();
     }
 
     /**
@@ -130,7 +130,7 @@ public class PerkTable extends JTable {
                 //float h2 = Color.RGBtoHSB(Color.BLUE.getRed(), Color.BLUE.getGreen(), Color.BLUE.getBlue(), null)[0];
                 float h2 = 210.0f / 360;
                 // Use of HSB Model | Set third Hue to Intermediate Color
-                float h3 = h1 + (value / this.weight_max) * (h2 - h1);
+                float h3 = h1 + (value / weight_max) * (h2 - h1);
                 // Define Background according to third Hue with half Saturation & default Brightness
                 comp.setBackground(Color.getHSBColor(h3, 0.5f, 1));
             }

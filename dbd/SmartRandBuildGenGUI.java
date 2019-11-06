@@ -35,40 +35,40 @@ public class SmartRandBuildGenGUI extends JFrame {
         setlookandfeel();
 
         // Init Tabs
-        this.pan_perks = myperks;
-        this.pan_builds = mybuilds;
-        this.pan_info = myinfo;
-        this.pan_data = mydata;
+        pan_perks = myperks;
+        pan_builds = mybuilds;
+        pan_info = myinfo;
+        pan_data = mydata;
 
         // Main Panel
-        this.tabbedPane = new JTabbedPane();
+        tabbedPane = new JTabbedPane();
 
         // Add Tabs to Main Panel
-        this.tabbedPane.addTab("Configure Perks", this.pan_perks);
-        this.tabbedPane.addTab("Generate Random Builds", this.pan_builds);
-        this.tabbedPane.addTab("Database of Builds", this.pan_data);
-        this.tabbedPane.addTab("Contact & Help", this.pan_info);
+        tabbedPane.addTab("Configure Perks", pan_perks);
+        tabbedPane.addTab("Generate Random Builds", pan_builds);
+        tabbedPane.addTab("Database of Builds", pan_data);
+        tabbedPane.addTab("Contact & Help", pan_info);
 
         // Add Tooltips on Tabs
-        this.tabbedPane.setToolTipTextAt(0, "Define the weights for all perks");
-        this.tabbedPane.setToolTipTextAt(1, "Generate random builds (Main tab of SRBG)");
-        this.tabbedPane.setToolTipTextAt(2, "Save favorite builds in database");
-        this.tabbedPane.setToolTipTextAt(3, "Contact author & read help");
+        tabbedPane.setToolTipTextAt(0, "Define the weights for all perks");
+        tabbedPane.setToolTipTextAt(1, "Generate random builds (Main tab of SRBG)");
+        tabbedPane.setToolTipTextAt(2, "Save favorite builds in database");
+        tabbedPane.setToolTipTextAt(3, "Contact author & read help");
 
         // Set favorite Tab
-        this.tabbedPane.setSelectedIndex(1);
+        tabbedPane.setSelectedIndex(1);
 
         // Add Main Panel to Frame
-        this.getContentPane().add(this.tabbedPane);
+        getContentPane().add(tabbedPane);
 
         // Set Frame
-        this.setTitle(SmartRandBuildGen.TITLE);
-        this.setSize(new Dimension(1100, 750));
-        this.setResizable(false);
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        //this.pack();
-        this.setLocationRelativeTo(null);
-        this.setVisible(true);
+        setTitle(SmartRandBuildGen.TITLE);
+        setSize(new Dimension(1100, 750));
+        setResizable(false);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //pack();
+        setLocationRelativeTo(null);
+        setVisible(true);
 
     }
 

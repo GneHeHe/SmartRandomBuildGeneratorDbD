@@ -43,14 +43,14 @@ public class Perk implements Comparable<Perk> {
      * @param icon
      */
     public Perk(String name, int weight, String side, String icon) {
-        this.setName(name);
-        this.setSide(side);
-        this.setWeight(weight, true);
-        this.lab_img_small = new JLabel("", SwingConstants.CENTER);
-        this.lab_img_medium = new JLabel("", SwingConstants.CENTER);
-        this.lab_img_large = new JLabel("", SwingConstants.CENTER);
+        setName(name);
+        setSide(side);
+        setWeight(weight, true);
+        lab_img_small = new JLabel("", SwingConstants.CENTER);
+        lab_img_medium = new JLabel("", SwingConstants.CENTER);
+        lab_img_large = new JLabel("", SwingConstants.CENTER);
         try {
-            this.setIconPicture(icon);
+            setIconPicture(icon);
         } catch (IOException ex) {
             System.err.println("ERROR while creating Perk " + name);
             System.err.println(ex.getMessage());
@@ -63,16 +63,16 @@ public class Perk implements Comparable<Perk> {
      *
      */
     public Perk() {
-        this.setName(Perk.GENERIC);
-        this.side = Perk.GENERIC;
-        this.setWeight(0, true);
+        setName(Perk.GENERIC);
+        side = Perk.GENERIC;
+        setWeight(0, true);
         // Set Default Icon
         String icon = "iconPerks_default";
-        this.lab_img_small = new JLabel("", SwingConstants.CENTER);
-        this.lab_img_medium = new JLabel("", SwingConstants.CENTER);
-        this.lab_img_large = new JLabel("", SwingConstants.CENTER);
+        lab_img_small = new JLabel("", SwingConstants.CENTER);
+        lab_img_medium = new JLabel("", SwingConstants.CENTER);
+        lab_img_large = new JLabel("", SwingConstants.CENTER);
         try {
-            this.setIconPicture(icon);
+            setIconPicture(icon);
         } catch (IOException ex) {
             System.err.println("ERROR while creating Perk " + name);
             System.err.println(ex.getMessage());
@@ -86,7 +86,7 @@ public class Perk implements Comparable<Perk> {
      * @return
      */
     public String getName() {
-        return this.name;
+        return name;
     }
 
     /**
@@ -104,7 +104,7 @@ public class Perk implements Comparable<Perk> {
      * @return
      */
     public String getSide() {
-        return this.side;
+        return side;
     }
 
     /**
@@ -137,7 +137,7 @@ public class Perk implements Comparable<Perk> {
             case 3:
                 return lab_img_large;
             default:
-                return new JLabel(this.name);
+                return new JLabel(name);
         }
     }
 
@@ -147,7 +147,7 @@ public class Perk implements Comparable<Perk> {
      * @return
      */
     public String getIconString() {
-        return this.icon_string;
+        return icon_string;
     }
 
     /**
@@ -158,32 +158,32 @@ public class Perk implements Comparable<Perk> {
      */
     private void setIconPicture(String s_icon) throws IOException {
         // Try to set given Icon Picture
-        this.icon_string = s_icon;
+        icon_string = s_icon;
         String path = "icons_perks/" + s_icon + ".png";
-        if (this.getClass().getResourceAsStream(path) != null) {
+        if (getClass().getResourceAsStream(path) != null) {
             // Set Icons in JLabel
-            this.lab_img_small.setIcon(new ImageIcon(Tools.resizePicture(path, Perk.SIZE_SMALL, Perk.SIZE_SMALL)));
-            this.lab_img_medium.setIcon(new ImageIcon(Tools.resizePicture(path, Perk.SIZE_MEDIUM, Perk.SIZE_MEDIUM)));
-            this.lab_img_large.setIcon(new ImageIcon(Tools.resizePicture(path, Perk.SIZE_LARGE, Perk.SIZE_LARGE)));
+            lab_img_small.setIcon(new ImageIcon(Tools.resizePicture(path, Perk.SIZE_SMALL, Perk.SIZE_SMALL)));
+            lab_img_medium.setIcon(new ImageIcon(Tools.resizePicture(path, Perk.SIZE_MEDIUM, Perk.SIZE_MEDIUM)));
+            lab_img_large.setIcon(new ImageIcon(Tools.resizePicture(path, Perk.SIZE_LARGE, Perk.SIZE_LARGE)));
             // Set Name for Tooltip
-            this.lab_img_small.setName(this.name);
-            this.lab_img_medium.setName(this.name);
-            this.lab_img_large.setName(this.name);
+            lab_img_small.setName(name);
+            lab_img_medium.setName(name);
+            lab_img_large.setName(name);
         } else {
             // Try to use default Icon Picture
             s_icon = "iconPerks_default";
             path = "icons_perks/" + s_icon + ".png";
-            if (this.getClass().getResourceAsStream(path) != null) {
+            if (getClass().getResourceAsStream(path) != null) {
                 // Set Default Icon in JLabel
-                this.lab_img_small.setIcon(new ImageIcon(Tools.resizePicture(path, Perk.SIZE_SMALL, Perk.SIZE_SMALL)));
-                this.lab_img_medium.setIcon(new ImageIcon(Tools.resizePicture(path, Perk.SIZE_MEDIUM, Perk.SIZE_MEDIUM)));
-                this.lab_img_large.setIcon(new ImageIcon(Tools.resizePicture(path, Perk.SIZE_LARGE, Perk.SIZE_LARGE)));
+                lab_img_small.setIcon(new ImageIcon(Tools.resizePicture(path, Perk.SIZE_SMALL, Perk.SIZE_SMALL)));
+                lab_img_medium.setIcon(new ImageIcon(Tools.resizePicture(path, Perk.SIZE_MEDIUM, Perk.SIZE_MEDIUM)));
+                lab_img_large.setIcon(new ImageIcon(Tools.resizePicture(path, Perk.SIZE_LARGE, Perk.SIZE_LARGE)));
                 // Set Name for Tooltip
-                this.lab_img_small.setName(this.name);
-                this.lab_img_medium.setName(this.name);
-                this.lab_img_large.setName(this.name);
+                lab_img_small.setName(name);
+                lab_img_medium.setName(name);
+                lab_img_large.setName(name);
             } else {
-                System.err.println("# WARNING: Both expected and default Icon Files were not found for Perk '" + this.name + "' => Exit");
+                System.err.println("# WARNING: Both expected and default Icon Files were not found for Perk '" + name + "' => Exit");
                 System.exit(0);
             }
         }
@@ -195,7 +195,7 @@ public class Perk implements Comparable<Perk> {
      * @return
      */
     public int getWeight() {
-        return this.weight;
+        return weight;
     }
 
     /**
@@ -204,7 +204,7 @@ public class Perk implements Comparable<Perk> {
      * @return
      */
     public int getWeightRef() {
-        return this.weight_ref;
+        return weight_ref;
     }
 
     /**
@@ -216,7 +216,7 @@ public class Perk implements Comparable<Perk> {
     public final void setWeight(int weight, boolean init) {
         this.weight = weight;
         if (init) {
-            this.weight_ref = weight;
+            weight_ref = weight;
         }
     }
 
@@ -228,9 +228,9 @@ public class Perk implements Comparable<Perk> {
      */
     public String show(boolean detail) {
         if (detail) {
-            return "# - Perk '" + this.name + "' | " + this.side + " Side | Icon = " + this.icon_string + " | Weight = " + this.getWeight();
+            return "# - Perk '" + name + "' | " + side + " Side | Icon = " + icon_string + " | Weight = " + getWeight();
         } else {
-            return "# - Perk '" + this.name + "' | " + this.side + " Side | Weight = " + this.getWeight();
+            return "# - Perk '" + name + "' | " + side + " Side | Weight = " + getWeight();
         }
     }
 
@@ -241,10 +241,10 @@ public class Perk implements Comparable<Perk> {
      * @return
      */
     public boolean checkSide(String side) {
-        if (this.side.equals(Perk.GENERIC)) {
+        if (side.equals(Perk.GENERIC)) {
             return true;
         } else {
-            return this.side.equals(side);
+            return side.equals(side);
         }
     }
 
@@ -256,7 +256,7 @@ public class Perk implements Comparable<Perk> {
      */
     @Override
     public int compareTo(Perk p) {
-        return this.name.compareTo(p.name);
+        return name.compareTo(p.name);
     }
 
     /**
@@ -266,7 +266,7 @@ public class Perk implements Comparable<Perk> {
      */
     @Override
     public String toString() {
-        return this.name;
+        return name;
     }
 
 }

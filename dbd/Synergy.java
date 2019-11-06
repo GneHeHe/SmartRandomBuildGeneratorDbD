@@ -6,8 +6,8 @@ import java.io.FileReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 /**
  *
@@ -19,31 +19,33 @@ import java.util.Map;
 public class Synergy {
 
     // Synergy Maps
-    private HashMap<String, ArrayList> m_synergy_chars;
-    private HashMap<String, ArrayList> m_synergy_perks;
+    private TreeMap<String, ArrayList> m_synergy_chars;
+    private TreeMap<String, ArrayList> m_synergy_perks;
     // List of all Perks
     private ArrayList<String> l_perks;
     // List of all Characters
     private ArrayList<String> l_chars;
     // Default Synergy Files
     private final String s_perks = "data/syn_perks.txt";
+    private final String s_perks_custom = "syn_perks_custom.txt";
     private final String s_chars = "data/syn_chars.txt";
+    private final String s_chars_custom = "syn_chars_custom.txt";
 
     /**
      * Constructor
      *
      * @param l_perks
-     * @param l_char
+     * @param l_chars
      * @param verbose
      */
-    public Synergy(ArrayList<String> l_perks, ArrayList<String> l_char, boolean verbose) {
-        this.m_synergy_chars = new HashMap<>();
-        this.m_synergy_perks = new HashMap<>();
+    public Synergy(ArrayList<String> l_perks, ArrayList<String> l_chars, boolean verbose) {
+        m_synergy_chars = new TreeMap<>();
+        m_synergy_perks = new TreeMap<>();
         this.l_perks = l_perks;
-        this.l_chars = l_char;
+        this.l_chars = l_chars;
         // Read Synergy Rules
-        this.readSynergyRulesChars(verbose);
-        this.readSynergyRulesPerks(verbose);
+        readSynergyRulesChars(verbose);
+        readSynergyRulesPerks(verbose);
     }
 
     /**
@@ -57,13 +59,13 @@ public class Synergy {
             // Define the Reader
             BufferedReader br = null;
             // Try to detect a custom Character Synergy File in the current Directory
-            String f = System.getProperty("user.dir") + File.separator + "syn_chars_custom.txt";
+            String f = System.getProperty("user.dir") + File.separator + s_chars_custom;
             if (new File(f).exists()) {
                 System.out.print("# Loading custom Character Synergy Rules from " + f + ": ");
                 br = new BufferedReader(new FileReader(new File(f).getAbsolutePath()));
             } else {
-                InputStream is = getClass().getResourceAsStream(this.s_chars);
-                System.out.print("# Loading default Character Synergy Rules from " + this.s_chars + ": ");
+                InputStream is = getClass().getResourceAsStream(s_chars);
+                System.out.print("# Loading default Character Synergy Rules from " + s_chars + ": ");
                 br = new BufferedReader(new InputStreamReader(is));
             }
             // Loop over the Reader
@@ -95,13 +97,13 @@ public class Synergy {
                         l_val = new ArrayList();
                         l_val.add(synperk);
                         l_val.add(synweight);
-                        if (this.m_synergy_chars.containsKey(chars)) {
-                            l_current = this.m_synergy_chars.get(chars);
+                        if (m_synergy_chars.containsKey(chars)) {
+                            l_current = m_synergy_chars.get(chars);
                             l_current.add(l_val);
                         } else {
                             l_current = new ArrayList();
                             l_current.add(l_val);
-                            this.m_synergy_chars.put(chars, l_current);
+                            m_synergy_chars.put(chars, l_current);
                         }
                         nb++;
                     } else {
@@ -117,10 +119,10 @@ public class Synergy {
             System.err.println(ex.getMessage());
             System.exit(0);
         }
-        System.out.println(nb + " Synergy Rules were loaded over " + this.m_synergy_chars.size() + " Characters\n");
+        System.out.println(nb + " Synergy Rules were loaded over " + m_synergy_chars.size() + " Characters\n");
         if (verbose) {
             // Display Synergy Map
-            showSynergy(this.m_synergy_chars, "Character");
+            showSynergy(m_synergy_chars, "Character");
         }
     }
 
@@ -135,13 +137,13 @@ public class Synergy {
             // Define the Reader
             BufferedReader br = null;
             // Try to detect a custom Perk Synergy File in the current Directory
-            String f = System.getProperty("user.dir") + File.separator + "syn_perks_custom.txt";
+            String f = System.getProperty("user.dir") + File.separator + s_perks_custom;
             if (new File(f).exists()) {
                 System.out.print("# Loading custom Perk Synergy Rules from " + f + ": ");
                 br = new BufferedReader(new FileReader(new File(f).getAbsolutePath()));
             } else {
-                InputStream is = getClass().getResourceAsStream(this.s_perks);
-                System.out.print("# Loading default Perk Synergy Rules from " + this.s_perks + ": ");
+                InputStream is = getClass().getResourceAsStream(s_perks);
+                System.out.print("# Loading default Perk Synergy Rules from " + s_perks + ": ");
                 br = new BufferedReader(new InputStreamReader(is));
             }
             // Loop over the Reader
@@ -173,25 +175,25 @@ public class Synergy {
                         l_val = new ArrayList();
                         l_val.add(synperk2);
                         l_val.add(synweight);
-                        if (this.m_synergy_perks.containsKey(synperk1)) {
-                            l_current = this.m_synergy_perks.get(synperk1);
+                        if (m_synergy_perks.containsKey(synperk1)) {
+                            l_current = m_synergy_perks.get(synperk1);
                             l_current.add(l_val);
                         } else {
                             l_current = new ArrayList();
                             l_current.add(l_val);
-                            this.m_synergy_perks.put(synperk1, l_current);
+                            m_synergy_perks.put(synperk1, l_current);
                         }
                         // Add Synergy Rules for Perk2->Perk1 (Update or Create new Entry)
                         l_val = new ArrayList();
                         l_val.add(synperk1);
                         l_val.add(synweight);
-                        if (this.m_synergy_perks.containsKey(synperk2)) {
-                            l_current = this.m_synergy_perks.get(synperk2);
+                        if (m_synergy_perks.containsKey(synperk2)) {
+                            l_current = m_synergy_perks.get(synperk2);
                             l_current.add(l_val);
                         } else {
                             l_current = new ArrayList();
                             l_current.add(l_val);
-                            this.m_synergy_perks.put(synperk2, l_current);
+                            m_synergy_perks.put(synperk2, l_current);
                         }
                         nb = nb + 2;
                     } else {
@@ -207,10 +209,10 @@ public class Synergy {
             System.err.println(ex.getMessage());
             System.exit(0);
         }
-        System.out.println(nb + " Synergy Rules were loaded over " + this.m_synergy_perks.size() + " Perks\n");
+        System.out.println(nb + " Synergy Rules were loaded over " + m_synergy_perks.size() + " Perks\n");
         if (verbose) {
             // Display Synergy Map
-            showSynergy(this.m_synergy_perks, "Perk");
+            showSynergy(m_synergy_perks, "Perk");
         }
     }
 
@@ -218,7 +220,7 @@ public class Synergy {
      * Display loaded Synergy Rules
      *
      */
-    private void showSynergy(HashMap<String, ArrayList> syn, String type) {
+    private void showSynergy(TreeMap<String, ArrayList> syn, String type) {
         for (Map.Entry<String, ArrayList> entry : syn.entrySet()) {
             String key = entry.getKey();
             ArrayList<ArrayList> value = entry.getValue();
@@ -242,8 +244,8 @@ public class Synergy {
         boolean update = false;
         // Update Perk Weights according to Characters Synergy Rules
         if (refchar != null) {
-            if (this.m_synergy_chars.containsKey(refchar)) {
-                ArrayList<ArrayList> value = this.m_synergy_chars.get(refchar);
+            if (m_synergy_chars.containsKey(refchar)) {
+                ArrayList<ArrayList> value = m_synergy_chars.get(refchar);
                 // Loop over Rules for this Character
                 for (ArrayList perk_weight : value) {
                     String perk = perk_weight.get(0).toString();
@@ -251,18 +253,20 @@ public class Synergy {
                     // Get concerned Perk
                     Perk p = srbg.getPerk(perk);
                     if (p != null) {
-                        // Update Weight (min/max values allowed)
+                        // Update Weight (max value is strict, min value can be negative here)
                         int weight_orig = p.getWeight();
                         int weight_tmp = p.getWeight() + weight;
+                        /*
                         if (weight_tmp < srbg.weight_perk_min) {
                             p.setWeight(Math.max(srbg.weight_perk_min, weight_tmp), false);
-                        } else if (weight_tmp > srbg.weight_perk_max) {
+                        } else*/
+                        if (weight_tmp > srbg.weight_perk_max) {
                             p.setWeight(Math.min(srbg.weight_perk_max, weight_tmp), false);
                         } else {
                             p.setWeight(weight_tmp, false);
                         }
                         if (srbg.verbose) {
-                            System.out.println("\n# Synergy with Character '" + refchar + "' => Updated Weight for Perk '" + p.getName() + "': from " + weight_orig + " to " + p.getWeight());
+                            System.out.print("\n# Synergy with Character '" + refchar + "' => Updated Weight for Perk '" + p.getName() + "': from " + weight_orig + " to " + p.getWeight());
                         }
                         // Modifications were encountered
                         update = true;
@@ -275,8 +279,8 @@ public class Synergy {
         }
         // Update Perk Weights according to Perk Synergy Rules
         if (refperk != null) {
-            if (this.m_synergy_perks.containsKey(refperk)) {
-                ArrayList<ArrayList> value = this.m_synergy_perks.get(refperk);
+            if (m_synergy_perks.containsKey(refperk)) {
+                ArrayList<ArrayList> value = m_synergy_perks.get(refperk);
                 // Loop over Rules for this Perk
                 for (ArrayList perk_weight : value) {
                     String perk = perk_weight.get(0).toString();
@@ -284,18 +288,20 @@ public class Synergy {
                     // Get concerned Perk
                     Perk p = srbg.getPerk(perk);
                     if (p != null) {
-                        // Update Weight (min/max values allowed)
+                        // Update Weight (max value is strict, min value can be negative here)
                         int weight_orig = p.getWeight();
                         int weight_tmp = p.getWeight() + weight;
+                        /*
                         if (weight_tmp < srbg.weight_perk_min) {
                             p.setWeight(Math.max(srbg.weight_perk_min, weight_tmp), false);
-                        } else if (weight_tmp > srbg.weight_perk_max) {
+                        } else*/
+                        if (weight_tmp > srbg.weight_perk_max) {
                             p.setWeight(Math.min(srbg.weight_perk_max, weight_tmp), false);
                         } else {
                             p.setWeight(weight_tmp, false);
                         }
                         if (srbg.verbose) {
-                            System.out.println("\n# Synergy with Perk '" + refperk + "' => Updated Weight for Perk '" + p.getName() + "': from " + weight_orig + " to " + p.getWeight());
+                            System.out.print("\n# Synergy with Perk '" + refperk + "' => Updated Weight for Perk '" + p.getName() + "': from " + weight_orig + " to " + p.getWeight());
                         }
                         // Modifications were encountered
                         update = true;
@@ -305,6 +311,9 @@ public class Synergy {
                     }
                 }
             }
+        }
+        if (update && srbg.verbose) {
+            System.out.println("");
         }
         return update;
     }

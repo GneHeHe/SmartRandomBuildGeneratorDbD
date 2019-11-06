@@ -1,34 +1,25 @@
-# What is 'Smart Random Build Generator' ?
+# What is 'Smart Random Build Generator' and Why should I use It?
 
-**Smart Random Build Generator** (SRBG) is a user-friendly tool for the **Dead by Daylight** game that can be used to:
+**Smart Random Build Generator** (SRBG) is a user-friendly tool for **Dead by Daylight** game that can be used to:
 * **generate useful random builds** using varied features
 * **store and manipulate builds** (4000+ predefined builds loaded at start)
 
 Most related tools generate pure random builds which are hardly ever interesting/efficient because lots of perks are either trash or just incompatible.
 
 
-By contrast, **SRBG** will create **useful random builds** if desired
+By contrast, **SRBG** will create **useful random builds** if desired:
 
 
 ![SRBG](dbd/data/tuto_build.jpg)
 
+**SRBG** can randomly chose the **side** ('**_Survivor_**' or '**_Killer_**') for your next game
 
-The '**_number of perks in each build_**' and the '**_number of builds to generate_**' can also be **fine tuned**
-
-
-**SRBG** can also randomly chose the **side** ('**_Survivor_**' or '**_Killer_**') for your next game
-
+Both '**_number of perks in each build_**' and the '**_number of builds to generate_**' can be **fine tuned**
 
 Briefly, a **weight** is assigned to each **perk**, and random builds are subsequently designed with **bias toward perks with higher weights**
 
 
 ![SRBG](dbd/data/tuto_perks.jpg)
-
-
-Besides, **generated builds** can be easily **saved in a build database** for future use
-
-
-![SRBG](dbd/data/tuto_db-1.jpg)
 
 
 ### Interesting features can also be enabled on both sides:
@@ -78,9 +69,17 @@ There are no **survivor-based synergy rules** because **survivors are just skins
 
 ![SRBG](dbd/data/tuto_build_rand.jpg)
 
+**User-defined configuration files for perk weights, perk sets, synergy rules and build database can also be loaded at start**
+
+
+**Generated builds** can be easily **saved in a build database** for future use
+
+
+![SRBG](dbd/data/tuto_db-1.jpg)
 
 Finally, a **built-in tutorial** is also included in **SRBG**
 
+![SRBG](dbd/data/tuto_help.jpg)
 
 ### [Click here for Steam Guide](https://steamcommunity.com/sharedfiles/filedetails/?id=1641511649)
 

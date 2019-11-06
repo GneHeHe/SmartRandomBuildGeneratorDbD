@@ -28,7 +28,7 @@ public class PerkTableModel extends AbstractTableModel {
      */
     public PerkTableModel(SmartRandBuildGen srbg) {
         // Define List
-        this.l_perks = new ArrayList();
+        l_perks = new ArrayList();
         // Set SmartRandBuildGen Object
         this.srbg = srbg;
     }
@@ -146,7 +146,7 @@ public class PerkTableModel extends AbstractTableModel {
                 System.out.println("# Updated Perk '" + p.getName() + "' => New Value is '" + p.getWeight() + "'");
             }
             // Update SmartRandBuildGen Object
-            this.updateBuilder();
+            updateBuilder();
         }
     }
 
@@ -166,7 +166,7 @@ public class PerkTableModel extends AbstractTableModel {
             }
         }
         // Update JTable using an Event
-        this.fireTableDataChanged();
+        fireTableDataChanged();
     }
 
     /**

@@ -1,4 +1,4 @@
-Ace In The Hole	Survivor	iconPerks_aceInTheHole	50
+Ace In The Hole	Survivor	iconPerks_aceInTheHole	10
 Adrenaline	Survivor	iconPerks_adrenaline	250
 Aftercare	Survivor	iconPerks_aftercare	100
 Agitation	Killer	iconPerks_agitation	100
@@ -7,7 +7,7 @@ A Nurse's Calling	Killer	iconPerks_aNursesCalling	200
 Autodidact	Survivor	iconPerks_autodidact	25
 Babysitter	Survivor	iconPerks_Babysitter	25
 Balanced Landing	Survivor	iconPerks_balancedLanding	200
-Bamboozle	Killer	iconPerks_bamboozle	150
+Bamboozle	Killer	iconPerks_bamboozle	100
 Barbecue & Chilli	Killer	iconPerks_BBQAndChili	300
 Beast Of Prey	Killer	iconPerks_BeastOfPrey	5
 Better Together	Survivor	iconPerks_BetterTogether	25
@@ -19,7 +19,7 @@ Bond	Survivor	iconPerks_bond	200
 Borrowed Time	Survivor	iconPerks_borrowedTime	250
 Botany Knowledge	Survivor	iconPerks_botanyKnowledge	50
 Breakdown	Survivor	iconPerks_breakdown	10
-Brutal Strength	Killer	iconPerks_brutalStrength	150
+Brutal Strength	Killer	iconPerks_brutalStrength	100
 Buckle Up	Survivor	iconPerks_buckleUp	5
 Calm Spirit	Survivor	iconPerks_calmSpirit	10
 Camaraderie	Survivor	iconPerks_Camaraderie	10
@@ -39,7 +39,7 @@ Discordance	Killer	iconPerks_discordance	200
 Distortion	Survivor	iconPerks_distortion	50
 Distressing	Killer	iconPerks_distressing	5
 Diversion	Survivor	iconPerks_diversion	100
-Dying Light	Killer	iconPerks_dyingLight	100
+Dying Light	Killer	iconPerks_dyingLight	50
 Empathy	Survivor	iconPerks_empathy	100
 Enduring	Killer	iconPerks_enduring	250
 Fire Up	Killer	iconPerks_fireUp	10
@@ -72,7 +72,7 @@ Lightborn	Killer	iconPerks_lightborn	25
 Lightweight	Survivor	iconPerks_lightweight	50
 Lithe	Survivor	iconPerks_lithe	150
 Mad Grit	Killer	iconPerks_madGrit	25
-Make Your Choice	Killer	iconPerks_makeYourChoice	150
+Make Your Choice	Killer	iconPerks_makeYourChoice	100
 Mettle Of Man	Survivor	iconPerks_mettleOfMan	50
 Mindbreaker	Killer	iconPerks_Mindbreaker	10
 Monitor & Abuse	Killer	iconPerks_monitorAndAbuse	200
@@ -96,12 +96,12 @@ Rancor	Killer	iconPerks_hatred	50
 Remember Me	Killer	iconPerks_rememberMe	25
 Resilience	Survivor	iconPerks_resilience	50
 Saboteur	Survivor	iconPerks_saboteur	50
-Save The Best For Last	Killer	iconPerks_saveTheBestForLast	150
+Save The Best For Last	Killer	iconPerks_saveTheBestForLast	100
 Second Wind	Survivor	iconPerks_SecondWind	50
 Self-Care	Survivor	iconPerks_selfCare	150
 Shadowborn	Killer	iconPerks_shadowborn	50
 Slippery Meat	Survivor	iconPerks_slipperyMeat	25
-Sloppy Butcher	Killer	iconPerks_sloppyButcher	200
+Sloppy Butcher	Killer	iconPerks_sloppyButcher	150
 Small Game	Survivor	iconPerks_smallGame	50
 Sole Survivor	Survivor	iconPerks_soleSurvivor	1
 Solidarity	Survivor	iconPerks_solidarity	25
@@ -112,14 +112,14 @@ Sprint Burst	Survivor	iconPerks_sprintBurst	150
 Stake Out	Survivor	iconPerks_stakeOut	10
 Streetwise	Survivor	iconPerks_streetwise	1
 Stridor	Killer	iconPerks_stridor	100
-Surge	Killer	iconPerks_Surge	100
-Surveillance	Killer	iconPerks_surveillance	150
+Surge	Killer	iconPerks_Surge	50
+Surveillance	Killer	iconPerks_surveillance	100
 Technician	Survivor	iconPerks_technician	50
 Tenacity	Survivor	iconPerks_tenacity	50
 Territorial Imperative	Killer	iconPerks_TerritorialImperative	25
-Thanatophobia	Killer	iconPerks_thatanophobia	100
+Thanatophobia	Killer	iconPerks_thatanophobia	50
 This Is Not Happening	Survivor	iconPerks_thisIsNotHappening	1
-Thrilling Tremors	Killer	iconPerks_ThrillingTremors	200
+Thrilling Tremors	Killer	iconPerks_ThrillingTremors	150
 Tinkerer	Killer	iconPerks_tinkerer	50
 Unbreakable	Survivor	iconPerks_unbreakable	100
 Unnerving Presence	Killer	iconPerks_unnervingPresence	5

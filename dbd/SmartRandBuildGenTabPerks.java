@@ -38,27 +38,27 @@ public class SmartRandBuildGenTabPerks extends JPanel {
         this.srbg = srbg;
 
         // Add Swing Components
-        this.addComponents();
+        addComponents();
 
         // Create Subpanels
-        this.pan_side = new JPanel(new FlowLayout(FlowLayout.CENTER));
-        this.pan_side.add(this.lab_side);
-        this.pan_side.add(this.cb_side);
+        pan_side = new JPanel(new FlowLayout(FlowLayout.CENTER));
+        pan_side.add(lab_side);
+        pan_side.add(cb_side);
 
-        this.pan_button = new JPanel(new FlowLayout(FlowLayout.CENTER));
-        this.pan_button.add(this.b_default);
-        this.pan_button.add(this.b_same);
-        this.pan_button.add(this.b_load);
-        this.pan_button.add(this.b_save);
+        pan_button = new JPanel(new FlowLayout(FlowLayout.CENTER));
+        pan_button.add(b_default);
+        pan_button.add(b_same);
+        pan_button.add(b_load);
+        pan_button.add(b_save);
 
         // Add Table to Panel
-        this.scrollPane = new JScrollPane(this.table);
+        scrollPane = new JScrollPane(table);
 
         // Set Layout & add Subpanels
-        this.setLayout(new BorderLayout());
-        this.add(this.pan_side, BorderLayout.NORTH);
-        this.add(this.pan_button, BorderLayout.SOUTH);
-        this.add(this.scrollPane, BorderLayout.CENTER);
+        setLayout(new BorderLayout());
+        add(pan_side, BorderLayout.NORTH);
+        add(pan_button, BorderLayout.SOUTH);
+        add(scrollPane, BorderLayout.CENTER);
 
     }
 
@@ -68,55 +68,55 @@ public class SmartRandBuildGenTabPerks extends JPanel {
     private void addComponents() {
 
         // Define JLabel Objects
-        this.lab_side = new JLabel("Display Perks from this Side: ");
+        lab_side = new JLabel("Display Perks from this Side: ");
 
         // Define JButton Objects
-        this.b_load = new JButton("Open custom Weight File");
-        this.b_save = new JButton("Save current Weight Table");
-        this.b_same = new JButton("Set identical Weights");
-        this.b_default = new JButton("Reload original Weights");
+        b_load = new JButton("Open custom Weight File");
+        b_save = new JButton("Save current Weight Table");
+        b_same = new JButton("Set identical Weights");
+        b_default = new JButton("Reload original Weights");
 
         // Add Tooltips
-        this.b_load.setToolTipText("Load a custom weight distribution for each perk");
-        this.b_save.setToolTipText("Save the current weight distribution from the table in an output file");
-        this.b_same.setToolTipText("Pure random builds will be generated (same weight for each perk, no perk constraint and no synergy rules)");
-        this.b_default.setToolTipText("Reset each weight to its original value");
+        b_load.setToolTipText("Load a custom weight distribution for each perk");
+        b_save.setToolTipText("Save the current weight distribution from the table in an output file");
+        b_same.setToolTipText("Pure random builds will be generated (same weight for each perk, no perk constraint and no synergy rules)");
+        b_default.setToolTipText("Reset each weight to its original value");
         
         // Define JFileChooser Objects
-        this.fileChooser = new JFileChooser();
-        this.fileChooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
-        this.fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+        fileChooser = new JFileChooser();
+        fileChooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
+        fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
         FileNameExtensionFilter filter = new FileNameExtensionFilter("Text Files", "txt", "ini");
-        this.fileChooser.setFileFilter(filter);
+        fileChooser.setFileFilter(filter);
 
         // Define JComboBox Objects for Side
-        this.cb_side = new JComboBox(new String[]{"Survivor", "Killer"});
-        this.cb_side.setPreferredSize(new Dimension(125, 25));
-        ((JLabel) this.cb_side.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
-        if (this.srbg.getSide().equals("Survivor")) {
-            this.cb_side.setSelectedIndex(0);
+        cb_side = new JComboBox(new String[]{"Survivor", "Killer"});
+        cb_side.setPreferredSize(new Dimension(125, 25));
+        ((JLabel) cb_side.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
+        if (srbg.getSide().equals("Survivor")) {
+            cb_side.setSelectedIndex(0);
         } else {
-            this.cb_side.setSelectedIndex(1);
+            cb_side.setSelectedIndex(1);
         }
 
         // Create Table
-        this.table = new PerkTable();
-        this.table.setModel(new PerkTableModel(this.srbg));
-        this.table.setRowHeight(58);
-        this.table.centerText();
-        this.table.setIconColumn(1);
-        this.table.setColumnWeight(2);
+        table = new PerkTable();
+        table.setModel(new PerkTableModel(srbg));
+        table.setRowHeight(58);
+        table.centerText();
+        table.setIconColumn(1);
+        table.setColumnWeight(2);
         // Update Table
-        ((PerkTableModel) this.table.getModel()).updateTable(this.cb_side.getSelectedItem().toString());
+        ((PerkTableModel) table.getModel()).updateTable(cb_side.getSelectedItem().toString());
 
         // Check
-        if (this.table.getWeightMax() >= this.srbg.weight_perk_max) {
-            Tools.getAlert("ERROR: Synergy Feature is impossible because the highest tolerated Weight for Perks is too small ( " + this.srbg.weight_perk_max + " vs " + this.table.getWeightMax() + " ) => Exit", "Warning", JOptionPane.ERROR_MESSAGE);
+        if (table.getWeightMax() >= srbg.weight_perk_max) {
+            Tools.getAlert("ERROR: Synergy Feature is impossible because the highest tolerated Weight for Perks is too small ( " + srbg.weight_perk_max + " vs " + table.getWeightMax() + " ) => Exit", "Warning", JOptionPane.ERROR_MESSAGE);
             System.exit(0);
         }
 
         // Define ActionListener
-        this.b_load.addActionListener(new ActionListener() {
+        b_load.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String f = chooseFile(true);
@@ -137,7 +137,7 @@ public class SmartRandBuildGenTabPerks extends JPanel {
         });
 
         // Define ActionListener
-        this.b_same.addActionListener(new ActionListener() {
+        b_same.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 // Set same Weight for Perks
@@ -154,7 +154,7 @@ public class SmartRandBuildGenTabPerks extends JPanel {
         });
 
         // Define ActionListener
-        this.b_default.addActionListener(new ActionListener() {
+        b_default.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 System.out.println("# All perks have loaded weights from start");
@@ -166,7 +166,7 @@ public class SmartRandBuildGenTabPerks extends JPanel {
         });
 
         // Define ActionListener
-        this.b_save.addActionListener(new ActionListener() {
+        b_save.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String f = chooseFile(false);
@@ -182,7 +182,7 @@ public class SmartRandBuildGenTabPerks extends JPanel {
         });
 
         // Define ActionListener
-        this.cb_side.addActionListener(new ActionListener() {
+        cb_side.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JComboBox combo = (JComboBox) e.getSource();
@@ -203,20 +203,20 @@ public class SmartRandBuildGenTabPerks extends JPanel {
     private String chooseFile(boolean b) {
         // Set Default Directory
         String dir = System.getProperty("user.dir");
-        this.fileChooser.setCurrentDirectory(new File(dir));
+        fileChooser.setCurrentDirectory(new File(dir));
         // Set Default Output Filename
-        String file = dir + File.separator + "perk_db_custom.txt";
-        this.fileChooser.setSelectedFile(new File(file));
+        String file = dir + File.separator + srbg.s_perk_custom;
+        fileChooser.setSelectedFile(new File(file));
         int status;
         if (b) {
             // Open File Dialog
-            status = this.fileChooser.showOpenDialog(this);
+            status = fileChooser.showOpenDialog(this);
         } else {
             // Saving File Dialog
-            status = this.fileChooser.showSaveDialog(this);
+            status = fileChooser.showSaveDialog(this);
         }
         if (status == JFileChooser.APPROVE_OPTION) {
-            return this.fileChooser.getSelectedFile().getAbsolutePath();
+            return fileChooser.getSelectedFile().getAbsolutePath();
         } else {
             return null;
         }

@@ -26,15 +26,15 @@ public class BuildTable extends JTable {
      */
     public BuildTable() {
         // Default Dimension of Header
-        this.getTableHeader().setPreferredSize(new Dimension(30, 30));
+        getTableHeader().setPreferredSize(new Dimension(30, 30));
         // Set Reordering/Resizing Status
-        this.getTableHeader().setReorderingAllowed(false);
-        this.getTableHeader().setResizingAllowed(false);
+        getTableHeader().setReorderingAllowed(false);
+        getTableHeader().setResizingAllowed(false);
         // Set Fonts
-        this.getTableHeader().setFont(new Font("Helvetica", Font.BOLD, 16));
-        this.setFont(new Font("Helvetica", Font.BOLD, 14));
+        getTableHeader().setFont(new Font("Helvetica", Font.BOLD, 16));
+        setFont(new Font("Helvetica", Font.BOLD, 14));
         // No Manual Sorting
-        this.getTableHeader().setEnabled(false);
+        getTableHeader().setEnabled(false);
     }
 
     /**
@@ -54,7 +54,7 @@ public class BuildTable extends JTable {
      */
     public void centerText() {
         for (int i = 0; i < getColumnCount(); i++) {
-            this.centerText(i);
+            centerText(i);
         }
     }
 
@@ -74,7 +74,7 @@ public class BuildTable extends JTable {
      * @return
      */
     public boolean removeSelectedRows() {
-        BuildTableModel model = (BuildTableModel) this.getModel();
+        BuildTableModel model = (BuildTableModel) getModel();
         int[] rows = getSelectedRows();
         if (rows.length == 0) {
             return false;
@@ -91,7 +91,7 @@ public class BuildTable extends JTable {
      * @return
      */
     public TableRowSorter getSorter() {
-        return this.sorter;
+        return sorter;
     }
 
     /**

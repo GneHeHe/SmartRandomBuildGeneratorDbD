@@ -1,7 +1,7 @@
 ############# Survivors #############
 Ace In The Hole	Detective's Hunch	50
 Ace In The Hole	Pharmacy	100
-Ace In The Hole	Plunderer's Instinct	500
+Ace In The Hole	Plunderer's Instinct	200
 Ace In The Hole	Up The Ante	50
 Adrenaline	Balanced Landing	-50
 Adrenaline	Dead Hard	-50
@@ -68,7 +68,7 @@ Dance With Me	Iron Will	50
 Dance With Me	Lightweight	50
 Dance With Me	Lithe	200
 Dance With Me	Poised	-100
-Dance With Me	Quick & Quiet	200
+Dance With Me	Quick & Quiet	100
 Dance With Me	Urban Evasion	50
 Dance With Me	Windows Of Opportunity	50
 Dark Sense	Wake Up!	100
@@ -78,20 +78,20 @@ Dead Hard	No Mither	50
 Dead Hard	Sprint Burst	-500
 Dead Hard	Vigil	50
 Dead Hard	Windows Of Opportunity	50
-Decisive Strike	Deliverance	200
+Decisive Strike	Deliverance	100
 Decisive Strike	Flip-Flop	50
 Decisive Strike	Head On	200
 Decisive Strike	Inner Strength	50
 Decisive Strike	Object Of Obsession	100
 Decisive Strike	Tenacity	100
-Decisive Strike	Unbreakable	200
+Decisive Strike	Unbreakable	100
 Deliverance	Flip-Flop	50
 Deliverance	Tenacity	50
 Deliverance	Unbreakable	50
 Detective's Hunch	Inner Strength	100
 Detective's Hunch	Open-Handed	50
-Detective's Hunch	Plunderer's Instinct	-500
-Detective's Hunch	Small Game	-500
+Detective's Hunch	Plunderer's Instinct	-300
+Detective's Hunch	Small Game	-300
 Distortion	Self-Care	50
 Diversion	Iron Will	100
 Diversion	Quick & Quiet	50
@@ -107,8 +107,8 @@ Fixated	Lithe	50
 Fixated	Quick & Quiet	50
 Fixated	Urban Evasion	-50
 Flip-Flop	Saboteur	50
-Flip-Flop	Tenacity	200
-Flip-Flop	Unbreakable	200
+Flip-Flop	Tenacity	100
+Flip-Flop	Unbreakable	100
 Head On	Inner Strength	100
 Head On	Lightweight	50
 Head On	Lithe	-50
@@ -116,7 +116,7 @@ Head On	Quick & Quiet	100
 Head On	Sprint Burst	-500
 Head On	Vigil	50
 Hope	Left Behind	50
-Inner Strength	Iron Will	200
+Inner Strength	Iron Will	100
 Inner Strength	No Mither	-500
 Inner Strength	Quick & Quiet	100
 Inner Strength	Small Game	100
@@ -137,7 +137,7 @@ Lightweight	Lithe	50
 Lightweight	Poised	-100
 Lightweight	Quick & Quiet	50
 Lightweight	Sprint Burst	50
-Lithe	Quick & Quiet	200
+Lithe	Quick & Quiet	100
 Lithe	Sprint Burst	-500
 Lithe	Vigil	50
 Lithe	Windows Of Opportunity	50
@@ -155,12 +155,12 @@ No Mither	Sprint Burst	50
 No Mither	Tenacity	50
 No Mither	Unbreakable	50
 No Mither	Urban Evasion	50
-Object Of Obsession	Sole Survivor	300
-Open-Handed	Plunderer's Instinct	100
-Pharmacy	Plunderer's Instinct	300
+Object Of Obsession	Sole Survivor	200
+Open-Handed	Plunderer's Instinct	50
+Pharmacy	Plunderer's Instinct	100
 Pharmacy	Self-Care	-300
 Plunderer's Instinct	Up The Ante	50
-Premonition	Spine Chill	-500
+Premonition	Spine Chill	-300
 Premonition	Stake Out	50
 Premonition	Urban Evasion	100
 Prove Thyself	We're Gonna Live Forever	100
@@ -173,28 +173,28 @@ Spine Chill	Stake Out	50
 Spine Chill	Urban Evasion	100
 Sprint Burst	Vigil	50
 Sprint Burst	Windows Of Opportunity	50
-Tenacity	Unbreakable	300
+Tenacity	Unbreakable	200
 We'll Make It	We're Gonna Live Forever	50
 ############# Killers #############
 Agitation	Iron Grasp	100
 Agitation	Mad Grit	100
 Agitation	Make Your Choice	100
 Agitation	Monstrous Shrine	50
-Agitation	Save The Best For Last	50
 Agitation	Territorial Imperative	50
 A Nurse's Calling	Coulrophobia	50
 A Nurse's Calling	Dark Devotion	50
 A Nurse's Calling	Deerstalker	50
-A Nurse's Calling	Monitor & Abuse	200
+A Nurse's Calling	Monitor & Abuse	100
 A Nurse's Calling	Sloppy Butcher	200
 A Nurse's Calling	Thanatophobia	100
 A Nurse's Calling	Tinkerer	50
-Bamboozle	Brutal Strength	50
-Bamboozle	Enduring	100
+Bamboozle	Brutal Strength	100
+Bamboozle	Enduring	50
 Bamboozle	Fire Up	50
-Barbecue & Chilli	Deerstalker	-500
+Barbecue & Chilli	Deerstalker	-300
 Barbecue & Chilli	Iron Maiden	50
-Barbecue & Chilli	Thrilling Tremors	-500
+Barbecue & Chilli	Pop Goes The Weasel	100
+Barbecue & Chilli	Thrilling Tremors	-300
 Beast Of Prey	I'm All Ears	50
 Bitter Murmur	Hex No One Escapes Death	200
 Bitter Murmur	Make Your Choice	50
@@ -203,66 +203,72 @@ Bloodhound	Sloppy Butcher	100
 Blood Warden	Deerstalker	50
 Blood Warden	Hex No One Escapes Death	200
 Blood Warden	Remember Me	100
-Brutal Strength	Enduring	100
+Brutal Strength	Enduring	50
 Brutal Strength	Fire Up	50
 Brutal Strength	Overcharge	50
 Brutal Strength	Pop Goes The Weasel	50
 Brutal Strength	Surveillance	50
 Corrupt Intervention	Discordance	100
 Corrupt Intervention	Hex Ruin	-100
+Corrupt Intervention	Pop Goes The Weasel	-100
 Corrupt Intervention	Whispers	50
 Coulrophobia	Deerstalker	50
 Coulrophobia	Distressing	100
 Coulrophobia	Sloppy Butcher	50
-Dark Devotion	Tinkerer	-500
+Dark Devotion	Tinkerer	-300
 Deerstalker	Infectious Fright	100
 Deerstalker	Knock Out	200
 Deerstalker	Sloppy Butcher	50
 Discordance	Surveillance	-50
+Discordance	Whispers	-100
 Distressing	Infectious Fright	100
 Distressing	Monitor & Abuse	-500
 Distressing	Overcharge	100
 Distressing	Unnerving Presence	100
-Enduring	Spirit Fury	500
+Distressing	Overwhelming Presence	50
+Enduring	Spirit Fury	400
 Franklin's Demise	Lightborn	-300
-Hex Devour Hope	Hex Haunted Ground	200
-Hex Devour Hope	Hex Huntress Lullaby	-100
-Hex Devour Hope	Hex Ruin	-100
-Hex Devour Hope	Hex The Third Seal	-100
-Hex Devour Hope	Hex Thrill Of The Hunt	200
-Hex Haunted Ground	Hex Huntress Lullaby	200
+Hex Devour Hope	Hex Haunted Ground	100
+Hex Devour Hope	Hex Huntress Lullaby	-300
+Hex Devour Hope	Hex Ruin	-200
+Hex Devour Hope	Hex The Third Seal	-300
+Hex Devour Hope	Hex Thrill Of The Hunt	100
+Hex Devour Hope	Pop Goes The Weasel	200
+Hex Devour Hope	Make Your Choice	-300
+Hex Haunted Ground	Hex Huntress Lullaby	100
 Hex Haunted Ground	Hex Ruin	200
-Hex Haunted Ground	Hex The Third Seal	200
+Hex Haunted Ground	Hex The Third Seal	100
 Hex Haunted Ground	Hex Thrill Of The Hunt	100
-Hex Huntress Lullaby	Hex Thrill Of The Hunt	200
+Hex Huntress Lullaby	Hex Thrill Of The Hunt	100
 Hex Huntress Lullaby	Overcharge	50
 Hex No One Escapes Death	Hex Thrill Of The Hunt	100
 Hex No One Escapes Death	Rancor	100
 Hex No One Escapes Death	Remember Me	100
 Hex No One Escapes Death	Whispers	100
-Hex Ruin	Hex Thrill Of The Hunt	200
+Hex Ruin	Hex Thrill Of The Hunt	100
 Hex Ruin	Pop Goes The Weasel	-100
 Hex Ruin	Surge	-100
-Hex The Third Seal	Hex Thrill Of The Hunt	200
+Hex The Third Seal	Hex Thrill Of The Hunt	100
 Infectious Fright	Knock Out	50
-Infectious Fright	Monitor & Abuse	200
+Infectious Fright	Monitor & Abuse	100
 Infectious Fright	Save The Best For Last	100
+Infectious Fright	Whispers	-50
 Iron Grasp	Mad Grit	100
 Iron Grasp	Monstrous Shrine	50
-Make Your Choice	Play With Your Food	100
+Make Your Choice	Play With Your Food	200
 Make Your Choice	Territorial Imperative	100
 Make Your Choice	Tinkerer	50
 Make Your Choice	Whispers	50
 Monitor & Abuse	Shadowborn	-500
-Monitor & Abuse	Whispers	200
+Monitor & Abuse	Whispers	100
 Overcharge	Pop Goes The Weasel	50
 Overcharge	Surge	-100
 Overcharge	Surveillance	50
 Overcharge	Unnerving Presence	100
 Pop Goes The Weasel	Surge	-100
-Pop Goes The Weasel	Surveillance	50
+Pop Goes The Weasel	Surveillance	100
 Pop Goes The Weasel	Thrilling Tremors	200
 Rancor	Remember Me	50
 Sloppy Butcher	Thanatophobia	100
-Spies From The Shadows	Whispers	-500
+Spies From The Shadows	Whispers	-300
 Surge	Surveillance	100
