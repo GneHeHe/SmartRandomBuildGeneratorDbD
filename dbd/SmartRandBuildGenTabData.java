@@ -199,22 +199,22 @@ public class SmartRandBuildGenTabData extends JPanel {
         ((JLabel) cb_perk4.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
 
         // Define JComboBox Objects for Side
-        cb_side = new JComboBox(new String[]{"Survivor", "Killer"});
+        cb_side = new JComboBox(new String[]{srbg.s_side_surv, srbg.s_side_killer});
         cb_side.setSelectedIndex(0);
         cb_side.setPreferredSize(new Dimension(130, 25));
         ((JLabel) cb_side.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
-        if (cb_side.getSelectedItem().toString().equals("Survivor")) {
-            cb_char.setModel(new DefaultComboBoxModel(srbg.getCharacterList("Survivor",false).toArray()));
-            cb_perk1.setModel(new DefaultComboBoxModel(srbg.getPerks("Survivor").toArray()));
-            cb_perk2.setModel(new DefaultComboBoxModel(srbg.getPerks("Survivor").toArray()));
-            cb_perk3.setModel(new DefaultComboBoxModel(srbg.getPerks("Survivor").toArray()));
-            cb_perk4.setModel(new DefaultComboBoxModel(srbg.getPerks("Survivor").toArray()));
+        if (cb_side.getSelectedItem().toString().equals(srbg.s_side_surv)) {
+            cb_char.setModel(new DefaultComboBoxModel(srbg.getCharacterList(srbg.s_side_surv,false).toArray()));
+            cb_perk1.setModel(new DefaultComboBoxModel(srbg.getPerks(srbg.s_side_surv).toArray()));
+            cb_perk2.setModel(new DefaultComboBoxModel(srbg.getPerks(srbg.s_side_surv).toArray()));
+            cb_perk3.setModel(new DefaultComboBoxModel(srbg.getPerks(srbg.s_side_surv).toArray()));
+            cb_perk4.setModel(new DefaultComboBoxModel(srbg.getPerks(srbg.s_side_surv).toArray()));
         } else {
-            cb_char.setModel(new DefaultComboBoxModel(srbg.getCharacterList("Killer",false).toArray()));
-            cb_perk1.setModel(new DefaultComboBoxModel(srbg.getPerks("Killer").toArray()));
-            cb_perk2.setModel(new DefaultComboBoxModel(srbg.getPerks("Killer").toArray()));
-            cb_perk3.setModel(new DefaultComboBoxModel(srbg.getPerks("Killer").toArray()));
-            cb_perk4.setModel(new DefaultComboBoxModel(srbg.getPerks("Killer").toArray()));
+            cb_char.setModel(new DefaultComboBoxModel(srbg.getCharacterList(srbg.s_side_killer,false).toArray()));
+            cb_perk1.setModel(new DefaultComboBoxModel(srbg.getPerks(srbg.s_side_killer).toArray()));
+            cb_perk2.setModel(new DefaultComboBoxModel(srbg.getPerks(srbg.s_side_killer).toArray()));
+            cb_perk3.setModel(new DefaultComboBoxModel(srbg.getPerks(srbg.s_side_killer).toArray()));
+            cb_perk4.setModel(new DefaultComboBoxModel(srbg.getPerks(srbg.s_side_killer).toArray()));
         }
 
         // Define ActionListener
@@ -318,18 +318,18 @@ public class SmartRandBuildGenTabData extends JPanel {
                 JComboBox combo = (JComboBox) e.getSource();
                 // Retrieve & Define active Side
                 String value = combo.getSelectedItem().toString();
-                if (value.equals("Survivor")) {
-                    cb_char.setModel(new DefaultComboBoxModel(srbg.getCharacterList("Survivor",false).toArray()));
-                    cb_perk1.setModel(new DefaultComboBoxModel(srbg.getPerks("Survivor").toArray()));
-                    cb_perk2.setModel(new DefaultComboBoxModel(srbg.getPerks("Survivor").toArray()));
-                    cb_perk3.setModel(new DefaultComboBoxModel(srbg.getPerks("Survivor").toArray()));
-                    cb_perk4.setModel(new DefaultComboBoxModel(srbg.getPerks("Survivor").toArray()));
-                } else if (value.equals("Killer")) {
-                    cb_char.setModel(new DefaultComboBoxModel(srbg.getCharacterList("Killer",false).toArray()));
-                    cb_perk1.setModel(new DefaultComboBoxModel(srbg.getPerks("Killer").toArray()));
-                    cb_perk2.setModel(new DefaultComboBoxModel(srbg.getPerks("Killer").toArray()));
-                    cb_perk3.setModel(new DefaultComboBoxModel(srbg.getPerks("Killer").toArray()));
-                    cb_perk4.setModel(new DefaultComboBoxModel(srbg.getPerks("Killer").toArray()));
+                if (value.equals(srbg.s_side_surv)) {
+                    cb_char.setModel(new DefaultComboBoxModel(srbg.getCharacterList(srbg.s_side_surv,false).toArray()));
+                    cb_perk1.setModel(new DefaultComboBoxModel(srbg.getPerks(srbg.s_side_surv).toArray()));
+                    cb_perk2.setModel(new DefaultComboBoxModel(srbg.getPerks(srbg.s_side_surv).toArray()));
+                    cb_perk3.setModel(new DefaultComboBoxModel(srbg.getPerks(srbg.s_side_surv).toArray()));
+                    cb_perk4.setModel(new DefaultComboBoxModel(srbg.getPerks(srbg.s_side_surv).toArray()));
+                } else if (value.equals(srbg.s_side_killer)) {
+                    cb_char.setModel(new DefaultComboBoxModel(srbg.getCharacterList(srbg.s_side_killer,false).toArray()));
+                    cb_perk1.setModel(new DefaultComboBoxModel(srbg.getPerks(srbg.s_side_killer).toArray()));
+                    cb_perk2.setModel(new DefaultComboBoxModel(srbg.getPerks(srbg.s_side_killer).toArray()));
+                    cb_perk3.setModel(new DefaultComboBoxModel(srbg.getPerks(srbg.s_side_killer).toArray()));
+                    cb_perk4.setModel(new DefaultComboBoxModel(srbg.getPerks(srbg.s_side_killer).toArray()));
                 }
             }
         });
@@ -373,7 +373,7 @@ public class SmartRandBuildGenTabData extends JPanel {
                 Build b = srbg.getBestBuild();
                 if (b != null) {
                     // Generic Character if Survivor
-                    if (b.getSide().equals("Survivor")) {
+                    if (b.getSide().equals(srbg.s_side_surv)) {
                         b.setCharacter(new Character(b.getSide()));
                     }
                     // Fill Build with generic Perks if needed

@@ -105,6 +105,7 @@ Empathy	We'll Make It	50
 Fixated	Iron Will	-50
 Fixated	Lithe	50
 Fixated	Quick & Quiet	50
+Fixated	Sprint Burst	100
 Fixated	Urban Evasion	-50
 Flip-Flop	Saboteur	50
 Flip-Flop	Tenacity	100
@@ -120,6 +121,7 @@ Inner Strength	Iron Will	100
 Inner Strength	No Mither	-500
 Inner Strength	Quick & Quiet	100
 Inner Strength	Small Game	100
+Inner Strength	Solidarity	-300
 Iron Will	Lightweight	50
 Iron Will	No Mither	50
 Iron Will	Pharmacy	50
@@ -221,20 +223,26 @@ Deerstalker	Knock Out	200
 Deerstalker	Sloppy Butcher	50
 Discordance	Surveillance	-50
 Discordance	Whispers	-100
+Distressing	Furtive Chase	-200
 Distressing	Infectious Fright	100
 Distressing	Monitor & Abuse	-500
 Distressing	Overcharge	100
-Distressing	Unnerving Presence	100
 Distressing	Overwhelming Presence	50
+Distressing	Unnerving Presence	100
+Dying Light	Save The Best For Last	50
+Dying Light	Sloppy Butcher	-100
 Enduring	Spirit Fury	400
 Franklin's Demise	Lightborn	-300
+Furtive Chase	Monitor & Abuse	-200
+Furtive Chase	Play With Your Food	50
+Furtive Chase	Save The Best For Last	-200
 Hex Devour Hope	Hex Haunted Ground	100
 Hex Devour Hope	Hex Huntress Lullaby	-300
 Hex Devour Hope	Hex Ruin	-200
 Hex Devour Hope	Hex The Third Seal	-300
 Hex Devour Hope	Hex Thrill Of The Hunt	100
-Hex Devour Hope	Pop Goes The Weasel	200
 Hex Devour Hope	Make Your Choice	-300
+Hex Devour Hope	Pop Goes The Weasel	100
 Hex Haunted Ground	Hex Huntress Lullaby	100
 Hex Haunted Ground	Hex Ruin	200
 Hex Haunted Ground	Hex The Third Seal	100
@@ -259,6 +267,7 @@ Make Your Choice	Play With Your Food	200
 Make Your Choice	Territorial Imperative	100
 Make Your Choice	Tinkerer	50
 Make Your Choice	Whispers	50
+Mindbreaker	Tinkerer	-300
 Monitor & Abuse	Shadowborn	-500
 Monitor & Abuse	Whispers	100
 Overcharge	Pop Goes The Weasel	50
@@ -269,6 +278,7 @@ Pop Goes The Weasel	Surge	-100
 Pop Goes The Weasel	Surveillance	100
 Pop Goes The Weasel	Thrilling Tremors	200
 Rancor	Remember Me	50
+Remember Me	Save The Best For Last	-200
 Sloppy Butcher	Thanatophobia	100
 Spies From The Shadows	Whispers	-300
 Surge	Surveillance	100

@@ -53,7 +53,6 @@ public class SmartRandBuildGenGUI extends JFrame {
         tabbedPane.setToolTipTextAt(0, "Define the weights for all perks");
         tabbedPane.setToolTipTextAt(1, "Generate random builds (Main tab of SRBG)");
         tabbedPane.setToolTipTextAt(2, "Save favorite builds in database");
-        tabbedPane.setToolTipTextAt(3, "Contact author & read help");
 
         // Set favorite Tab
         tabbedPane.setSelectedIndex(1);

@@ -45,6 +45,9 @@ public class Synergy {
         this.l_chars = l_chars;
         // Read Synergy Rules
         readSynergyRulesChars(verbose);
+        if (verbose) {
+            System.out.println("");
+        }
         readSynergyRulesPerks(verbose);
     }
 
@@ -119,7 +122,7 @@ public class Synergy {
             System.err.println(ex.getMessage());
             System.exit(0);
         }
-        System.out.println(nb + " Synergy Rules were loaded over " + m_synergy_chars.size() + " Characters\n");
+        System.out.println(nb + " Synergy Rules were loaded over " + m_synergy_chars.size() + " Characters");
         if (verbose) {
             // Display Synergy Map
             showSynergy(m_synergy_chars, "Character");
@@ -209,7 +212,7 @@ public class Synergy {
             System.err.println(ex.getMessage());
             System.exit(0);
         }
-        System.out.println(nb + " Synergy Rules were loaded over " + m_synergy_perks.size() + " Perks\n");
+        System.out.println(nb + " Synergy Rules were loaded over " + m_synergy_perks.size() + " Perks");
         if (verbose) {
             // Display Synergy Map
             showSynergy(m_synergy_perks, "Perk");
@@ -228,7 +231,6 @@ public class Synergy {
                 System.out.println("# - Synergy Rule between " + type + " '" + key + "' and Perk '" + perk_weight.get(0) + "' with Weight = " + perk_weight.get(1));
             }
         }
-        System.out.println("");
     }
 
     /**
@@ -257,15 +259,15 @@ public class Synergy {
                         int weight_orig = p.getWeight();
                         int weight_tmp = p.getWeight() + weight;
                         /*
-                        if (weight_tmp < srbg.weight_perk_min) {
-                            p.setWeight(Math.max(srbg.weight_perk_min, weight_tmp), false);
-                        } else*/
+                         if (weight_tmp < srbg.weight_perk_min) {
+                         p.setWeight(Math.max(srbg.weight_perk_min, weight_tmp), false);
+                         } else*/
                         if (weight_tmp > srbg.weight_perk_max) {
                             p.setWeight(Math.min(srbg.weight_perk_max, weight_tmp), false);
                         } else {
                             p.setWeight(weight_tmp, false);
                         }
-                        if (srbg.verbose) {
+                        if (srbg.b_verbose) {
                             System.out.print("\n# Synergy with Character '" + refchar + "' => Updated Weight for Perk '" + p.getName() + "': from " + weight_orig + " to " + p.getWeight());
                         }
                         // Modifications were encountered
@@ -292,15 +294,15 @@ public class Synergy {
                         int weight_orig = p.getWeight();
                         int weight_tmp = p.getWeight() + weight;
                         /*
-                        if (weight_tmp < srbg.weight_perk_min) {
-                            p.setWeight(Math.max(srbg.weight_perk_min, weight_tmp), false);
-                        } else*/
+                         if (weight_tmp < srbg.weight_perk_min) {
+                         p.setWeight(Math.max(srbg.weight_perk_min, weight_tmp), false);
+                         } else*/
                         if (weight_tmp > srbg.weight_perk_max) {
                             p.setWeight(Math.min(srbg.weight_perk_max, weight_tmp), false);
                         } else {
                             p.setWeight(weight_tmp, false);
                         }
-                        if (srbg.verbose) {
+                        if (srbg.b_verbose) {
                             System.out.print("\n# Synergy with Perk '" + refperk + "' => Updated Weight for Perk '" + p.getName() + "': from " + weight_orig + " to " + p.getWeight());
                         }
                         // Modifications were encountered
@@ -312,7 +314,7 @@ public class Synergy {
                 }
             }
         }
-        if (update && srbg.verbose) {
+        if (update && srbg.b_verbose) {
             System.out.println("");
         }
         return update;

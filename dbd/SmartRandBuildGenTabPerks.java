@@ -90,10 +90,10 @@ public class SmartRandBuildGenTabPerks extends JPanel {
         fileChooser.setFileFilter(filter);
 
         // Define JComboBox Objects for Side
-        cb_side = new JComboBox(new String[]{"Survivor", "Killer"});
+        cb_side = new JComboBox(new String[]{srbg.s_side_surv, srbg.s_side_killer});
         cb_side.setPreferredSize(new Dimension(125, 25));
         ((JLabel) cb_side.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
-        if (srbg.getSide().equals("Survivor")) {
+        if (srbg.getSide().equals(srbg.s_side_surv)) {
             cb_side.setSelectedIndex(0);
         } else {
             cb_side.setSelectedIndex(1);

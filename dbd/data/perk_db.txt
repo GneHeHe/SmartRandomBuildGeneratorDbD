@@ -29,7 +29,7 @@ Cruel Limits	Killer	iconPerks_CruelLimits	5
 Dance With Me	Survivor	iconPerks_danceWithMe	100
 Dark Devotion	Killer	iconPerks_darkDevotion	25
 Dark Sense	Survivor	iconPerks_darkSense	25
-Dead Hard	Survivor	iconPerks_DeadHard	250
+Dead Hard	Survivor	iconPerks_DeadHard	200
 Decisive Strike	Survivor	iconPerks_decisiveStrike	250
 Deerstalker	Killer	iconPerks_deerstalker	50
 Deja Vu	Survivor	iconPerks_dejaVu	1
@@ -70,7 +70,7 @@ Leader	Survivor	iconPerks_leader	25
 Left Behind	Survivor	iconPerks_leftBehind	25
 Lightborn	Killer	iconPerks_lightborn	25
 Lightweight	Survivor	iconPerks_lightweight	50
-Lithe	Survivor	iconPerks_lithe	150
+Lithe	Survivor	iconPerks_lithe	200
 Mad Grit	Killer	iconPerks_madGrit	25
 Make Your Choice	Killer	iconPerks_makeYourChoice	100
 Mettle Of Man	Survivor	iconPerks_mettleOfMan	50
@@ -108,7 +108,7 @@ Solidarity	Survivor	iconPerks_solidarity	25
 Spies From The Shadows	Killer	iconPerks_spiesFromTheShadows	25
 Spine Chill	Survivor	iconPerks_spineChill	50
 Spirit Fury	Killer	iconPerks_spiritFury	1
-Sprint Burst	Survivor	iconPerks_sprintBurst	150
+Sprint Burst	Survivor	iconPerks_sprintBurst	200
 Stake Out	Survivor	iconPerks_stakeOut	10
 Streetwise	Survivor	iconPerks_streetwise	1
 Stridor	Killer	iconPerks_stridor	100

@@ -12,19 +12,20 @@ Demogorgon	Hex Ruin	100
 Demogorgon	Make Your Choice	100
 Demogorgon	Pop Goes The Weasel	200
 Demogorgon	Save The Best For Last	100
+Demogorgon	Sloppy Butcher	-100
 Demogorgon	Surge	-100
 Demogorgon	Surveillance	100
 Demogorgon	Territorial Imperative	100
 Demogorgon	Thrilling Tremors	200
 ############# Doctor #############
 Doctor	Brutal Strength	100
-Doctor	Coulrophobia	50
+Doctor	Corrupt Intervention	100
+Doctor	Coulrophobia	100
 Doctor	Deerstalker	-500
 Doctor	Distressing	200
 Doctor	Hex Devour Hope	100
 Doctor	Hex Huntress Lullaby	100
 Doctor	Hex Ruin	200
-Doctor	Hex Thrill Of The Hunt	100
 Doctor	Iron Maiden	100
 Doctor	Make Your Choice	100
 Doctor	Monitor & Abuse	200
@@ -36,6 +37,7 @@ Doctor	Whispers	-100
 ############# Freddy #############
 Freddy	Barbecue & Chilli	100
 Freddy	Discordance	100
+Freddy	Hex Devour Hope	100
 Freddy	Hex Huntress Lullaby	100
 Freddy	Hex Ruin	100
 Freddy	Insidious	-500
@@ -75,10 +77,10 @@ Hag	Enduring	-100
 Hag	Hex Devour Hope	100
 Hag	Hex Haunted Ground	100
 Hag	Hex Ruin	200
-Hag	Hex Thrill Of The Hunt	100
 Hag	Make Your Choice	200
 Hag	Monitor & Abuse	200
 Hag	Pop Goes The Weasel	100
+Hag	Save The Best For Last	100
 Hag	Surveillance	100
 ############# Hillbilly #############
 Hillbilly	Barbecue & Chilli	200
@@ -91,21 +93,23 @@ Hillbilly	Hex Devour Hope	100
 Hillbilly	Hex Haunted Ground	-100
 Hillbilly	Hex No One Escapes Death	-100
 Hillbilly	Hex Ruin	100
-Hillbilly	Hex Thrill Of The Hunt	100
 Hillbilly	Infectious Fright	100
 Hillbilly	Make Your Choice	-300
 Hillbilly	Pop Goes The Weasel	200
 Hillbilly	Save The Best For Last	-300
+Hillbilly	Sloppy Butcher	-300
 Hillbilly	Surge	-100
+Hillbilly	Surveillance	100
 Hillbilly	Territorial Imperative	100
+Hillbilly	Thrilling Tremors	100
 Hillbilly	Tinkerer	100
 Hillbilly	Whispers	200
 ############# Huntress #############
 Huntress	A Nurse's Calling	200
 Huntress	Bamboozle	-50
 Huntress	Barbecue & Chilli	200
-Huntress	Brutal Strength	-50
 Huntress	Bitter Murmur	200
+Huntress	Brutal Strength	-50
 Huntress	Corrupt Intervention	200
 Huntress	Deerstalker	100
 Huntress	Discordance	200
@@ -113,12 +117,13 @@ Huntress	Enduring	-100
 Huntress	Hex Devour Hope	100
 Huntress	Hex No One Escapes Death	-100
 Huntress	Hex Ruin	200
-Huntress	Hex Thrill Of The Hunt	100
 Huntress	Insidious	-500
 Huntress	Iron Maiden	300
+Huntress	Make Your Choice	-100
 Huntress	Pop Goes The Weasel	100
 Huntress	Save The Best For Last	-300
 Huntress	Shadowborn	300
+Huntress	Sloppy Butcher	-300
 Huntress	Spies From The Shadows	100
 Huntress	Surge	-100
 Huntress	Whispers	200
@@ -135,15 +140,16 @@ Leatherface	Hex Ruin	200
 Leatherface	Infectious Fright	100
 Leatherface	Insidious	200
 Leatherface	Make Your Choice	-300
+Leatherface	Monitor & Abuse	100
 Leatherface	Play With Your Food	300
 Leatherface	Pop Goes The Weasel	100
 Leatherface	Save The Best For Last	-300
+Leatherface	Sloppy Butcher	-300
 Leatherface	Surge	-100
 Leatherface	Territorial Imperative	200
 Leatherface	Tinkerer	100
 ############# Legion #############
 Legion	Bamboozle	100
-Legion	Barbecue & Chilli	100
 Legion	Dark Devotion	100
 Legion	Discordance	100
 Legion	Hex No One Escapes Death	-100
@@ -175,6 +181,7 @@ Myers	Monitor & Abuse	200
 Myers	Overwhelming Presence	-100
 Myers	Play With Your Food	100
 Myers	Pop Goes The Weasel	100
+Myers	Surveillance	100
 Myers	Tinkerer	-100
 Myers	Unnerving Presence	-100
 Myers	Whispers	100
@@ -189,7 +196,6 @@ Nurse Sally	Enduring	-500
 Nurse Sally	Hex Devour Hope	200
 Nurse Sally	Hex Haunted Ground	100
 Nurse Sally	Hex Ruin	100
-Nurse Sally	Hex Thrill Of The Hunt	100
 Nurse Sally	I'm All Ears	100
 Nurse Sally	Infectious Fright	100
 Nurse Sally	Make Your Choice	100
@@ -200,6 +206,8 @@ Nurse Sally	Shadowborn	300
 Nurse Sally	Sloppy Butcher	100
 Nurse Sally	Spies From The Shadows	100
 Nurse Sally	Stridor	100
+Nurse Sally	Surveillance	100
+Nurse Sally	Thrilling Tremors	100
 Nurse Sally	Whispers	200
 ############# Pig #############
 Pig	A Nurse's Calling	100
@@ -224,6 +232,7 @@ Pig	Whispers	200
 ############# Plague #############
 Plague	A Nurse's Calling	-500
 Plague	Corrupt Intervention	200
+Plague	Coulrophobia	-500
 Plague	Discordance	100
 Plague	Hex Ruin	100
 Plague	Infectious Fright	100
@@ -246,7 +255,6 @@ Spirit Rin	Enduring	-100
 Spirit Rin	Hex Devour Hope	200
 Spirit Rin	Hex Haunted Ground	100
 Spirit Rin	Hex Ruin	100
-Spirit Rin	Hex Thrill Of The Hunt	100
 Spirit Rin	Infectious Fright	100
 Spirit Rin	Make Your Choice	100
 Spirit Rin	Monitor & Abuse	100
@@ -257,15 +265,15 @@ Spirit Rin	Sloppy Butcher	100
 Spirit Rin	Spies From The Shadows	100
 Spirit Rin	Stridor	200
 Spirit Rin	Surveillance	100
+Spirit Rin	Thrilling Tremors	100
 Spirit Rin	Whispers	100
 ############# Trapper #############
 Trapper	Agitation	100
-Trapper	Corrupt Intervention	200
+Trapper	Corrupt Intervention	300
 Trapper	Hangman's Trick	100
 Trapper	Hex Devour Hope	100
 Trapper	Hex No One Escapes Death	100
-Trapper	Hex Ruin	200
-Trapper	Hex Thrill Of The Hunt	100
+Trapper	Hex Ruin	300
 Trapper	Make Your Choice	100
 Trapper	Pop Goes The Weasel	100
 Trapper	Save The Best For Last	200
@@ -278,7 +286,7 @@ Wraith	Distressing	-500
 Wraith	Hex Devour Hope	100
 Wraith	Hex Haunted Ground	100
 Wraith	Hex No One Escapes Death	100
-Wraith	Hex Ruin	200
+Wraith	Hex Ruin	300
 Wraith	Insidious	-500
 Wraith	Lightborn	100
 Wraith	Make Your Choice	200
@@ -286,5 +294,6 @@ Wraith	Overwhelming Presence	-100
 Wraith	Play With Your Food	100
 Wraith	Pop Goes The Weasel	100
 Wraith	Save The Best For Last	100
+Wraith	Surveillance	100
 Wraith	Unnerving Presence	-100
 Wraith	Whispers	100

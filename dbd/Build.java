@@ -1,7 +1,6 @@
 package dbd;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  *
@@ -10,7 +9,7 @@ import java.util.List;
  * @author GneHeHe (2019)
  *
  */
-public class Build {
+public class Build implements Comparable<Build> {
 
     // Name
     private String name;
@@ -22,6 +21,9 @@ public class Build {
     private ArrayList<Perk> l_perks;
     // Score
     private int score;
+    // Strings
+    public final static String SURVIVOR = "Survivor";
+    public final static String KILLER = "Killer";
 
     /**
      * Default Constructor
@@ -102,7 +104,7 @@ public class Build {
      */
     public void setSide(String side) {
         // Only 2 Sides are Available
-        if (side.equals("Killer") || side.equals("Survivor")) {
+        if (side.equals(KILLER) || side.equals(SURVIVOR)) {
             this.side = side;
         } else {
             System.err.println("# ERROR: This side " + side + " is wrong (expected value = 'Killer' or 'Survivor'");
@@ -257,21 +259,20 @@ public class Build {
     }
 
     /**
-     * Get the Build with Highest Score
+     * Compare two Builds
      *
-     * @param l_builds
+     * @param o
      * @return
      */
-    public static Build getBestBuild(List<Build> l_builds) {
-        // Generic Build (Score=0)
-        Build b = new Build();
-        // Find Best Build
-        for (Build current : l_builds) {
-            if (current.getScore() > b.getScore()) {
-                b = current;
-            }
+    @Override
+    public int compareTo(Build o) {
+        if (score > o.score) {
+            return -1;
+        } else if (score < o.score) {
+            return 1;
+        } else {
+            return 0;
         }
-        return b;
     }
-
+    
 }

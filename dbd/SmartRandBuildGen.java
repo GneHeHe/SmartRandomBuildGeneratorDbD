@@ -42,7 +42,11 @@ public class SmartRandBuildGen {
     // Saved Build
     private Build best_build;
     // Active Side
-    private String side;
+    private String side = "";
+    // Strings for Sides
+    public final String s_side_surv = "Survivor";
+    public final String s_side_killer = "Killer";
+    public final String s_side_rand = "Random";
     // Active Character
     private Character character;
     // Prefix for Constraints
@@ -79,22 +83,20 @@ public class SmartRandBuildGen {
     private int nb_perks_all;
     // Nb of active Perks
     private int nb_perks_side;
-    // Random Character Status
-    private boolean b_character_random;
     // Enable Synergy Rules
     private boolean b_synergy;
     // Update Pool of Perks
-    private boolean b_update_pool_perks;
+    private boolean b_perkpool_changed;
     // Path of Configuration File
     private String config;
     // Verbose Level
-    public boolean verbose;
+    public boolean b_verbose;
     // Min Weight for Perks (normal)
     public final int weight_perk_min = 0;
     // Max Weight for Perks (normal and after synergy)
     public final int weight_perk_max = 500;
     // Max Nb of Loops
-    private final int maxloop = 5000;
+    private final int maxloop = 1000;
     // Character File
     private final String s_char = "data/characters.txt";
     // Perk DB Files
@@ -122,10 +124,10 @@ public class SmartRandBuildGen {
 
         System.out.println("\n" + MYSPACER + " " + TITLE + " " + MYSPACER);
 
-        // Verbose is ON at start
-        verbose = true;
+        // Define Verbose Mode (ON at start)
+        b_verbose = true;
 
-        // Set Reference Lists
+        // Define Reference Lists
         l_perks_all = new ArrayList<>();
         l_perks_all_string = new ArrayList<>();
         l_perks_pool = new ArrayList<>();
@@ -137,18 +139,15 @@ public class SmartRandBuildGen {
         l_char_killer_generic = new ArrayList<>();
         l_char_all_string = new ArrayList<>();
 
-        // Define both default Side & Nb of Perks
-        side = "";
-        setSide("Random");
-        setNbPerksBuild(4);
-
-        // Read default Weight Distribution File
-        initConfigFile();
+        // Init Characters
         initCharacters();
+
+        // Init Weights
+        initConfigFile();
 
         // Init Synergy
         b_synergy = true;
-        synergy = new Synergy(l_perks_all_string, l_char_all_string, verbose);
+        synergy = new Synergy(l_perks_all_string, l_char_all_string, b_verbose);
 
         // Set Constraints
         b_cons_warn = false;
@@ -172,27 +171,20 @@ public class SmartRandBuildGen {
         l_cons4_killer = new ArrayList<>();
         initPerkConstraints();
 
-        // Set Character Status
-        b_character_random = false;
-        if (side.equals("Killer")) {
-            character = l_char_killer.get(0);
-        } else {
-            character = l_char_survivor.get(0);
-        }
+        // Define side
+        setSide(s_side_rand);
+
+        // Define Nb Perks
+        setNbPerksBuild(4);
 
         // Update Pool of Perks
-        setUpdatePerkPool(true);
-        // Update Pool of Perks if needed
         updatePerkPool(false);
 
         // Define best generated Build
         best_build = null;
 
-        // Display loaded Parameters
-        showParams(true);
-
-        // Set Verbose Mode
-        this.verbose = v;
+        // Define Verbose Mode (ON at start)
+        this.b_verbose = v;
 
     }
 
@@ -207,9 +199,11 @@ public class SmartRandBuildGen {
             p.setWeight(value, true);
         }
         // Update Pool of Perks
-        setUpdatePerkPool(true);
-        // Display Perks
-        showPerks(false);
+        setPerkPoolChanged(true);
+        if (b_verbose) {
+            // Display Perks
+            showPerks(false);
+        }
     }
 
     /**
@@ -221,7 +215,7 @@ public class SmartRandBuildGen {
             p.setWeight(p.getWeightRef(), false);
         }
         // Update Pool of Perks
-        setUpdatePerkPool(true);
+        setPerkPoolChanged(true);
     }
 
     /**
@@ -241,9 +235,9 @@ public class SmartRandBuildGen {
      */
     public List getPerks(String side) {
         switch (side) {
-            case "Survivor":
+            case s_side_surv:
                 return l_perks_survivor;
-            case "Killer":
+            case s_side_killer:
                 return l_perks_killer;
             default:
                 return null;
@@ -292,33 +286,16 @@ public class SmartRandBuildGen {
      */
     public void setCharacter(String name) {
         // Retrieve Character
-        character = retrieveCharacter(name);
-        if (character == null) {
-            System.err.println("\n# ERROR: Wrong Character Name '" + name + "' with current Side '" + side + "' \n");
+        Character c = retrieveCharacter(name);
+        if (c == null) {
+            System.err.println("\n# ERROR: Unknown Character Name '" + name + "\n");
             System.exit(0);
         }
-        // Update Side
-        setSide(character.getSide());
-        // Update Character Status
-        setCharacterRandomStatus(false);
-
-        System.out.println("# Defined Character = " + character.getName() + " | Side = " + side);
-    }
-
-    /**
-     * Set active Character
-     *
-     * @param character
-     */
-    public void setCharacter(Character character) {
-        // Set Character
-        this.character = character;
-        if (!character.getSide().equals(side)) {
-            System.err.println("\n# ERROR: Wrong Character Name '" + character.getName() + "' with current Side '" + side + "' \n");
-            System.exit(0);
+        // Check if active Side is Ok
+        if (!side.equals(c.getSide())) {
+            setSide(c.getSide());
         }
-        // Update Character Status
-        setCharacterRandomStatus(false);
+        character = c;
         System.out.println("# Defined Character = " + character.getName() + " | Side = " + side);
     }
 
@@ -337,20 +314,33 @@ public class SmartRandBuildGen {
      * @return
      */
     public final Character getCharacterRandom() {
-        // Get Generic Character
-        Character c = getCharacterList(side, true).get(0);
-        if (b_character_random) {
-            // Get Random non-generic Character
-            int rand;
-            if (side.equals("Survivor")) {
-                rand = Math.max(1, (int) (l_char_survivor.size() * Math.random()));
-                c = l_char_survivor.get(rand);
-            } else if (side.equals("Killer")) {
-                rand = Math.max(1, (int) (l_char_killer.size() * Math.random()));
-                c = l_char_killer.get(rand);
-            }
+        Character c = null;
+        // Get Random non-generic Character
+        int rand;
+        if (side.equals(s_side_surv)) {
+            rand = Math.max(1, (int) (l_char_survivor.size() * Math.random()));
+            c = l_char_survivor.get(rand);
+        } else if (side.equals(s_side_killer)) {
+            rand = Math.max(1, (int) (l_char_killer.size() * Math.random()));
+            c = l_char_killer.get(rand);
         }
-        System.out.println("# Random Character = " + c.getName() + " | Side = " + side + "\n");
+        System.out.println("# Random Character = " + c.getName() + " | Side = " + side);
+        return c;
+    }
+
+    /**
+     * Get a generic Character
+     *
+     * @return
+     */
+    public final Character getCharacterGeneric() {
+        Character c = null;
+        if (side.equals(s_side_surv)) {
+            c = l_char_survivor_generic.get(0);
+        } else if (side.equals(s_side_killer)) {
+            c = l_char_killer_generic.get(0);
+        }
+        System.out.println("# Generic Character = " + c.getName() + " | Side = " + side);
         return c;
     }
 
@@ -362,13 +352,13 @@ public class SmartRandBuildGen {
      * @return
      */
     public ArrayList<Character> getCharacterList(String side, boolean generic) {
-        if (side.equals("Survivor")) {
+        if (side.equals(s_side_surv)) {
             if (generic) {
                 return l_char_survivor_generic;
             } else {
                 return l_char_survivor;
             }
-        } else if (side.equals("Killer")) {
+        } else if (side.equals(s_side_killer)) {
             if (generic) {
                 return l_char_killer_generic;
             } else {
@@ -395,7 +385,7 @@ public class SmartRandBuildGen {
      */
     public final void setNbPerksBuild(int n) {
         nb_perks_build = n;
-        System.out.println("# Nb of Perks per Build = " + nb_perks_build + "\n");
+        System.out.println("\n# Nb of Perks per Build = " + nb_perks_build);
     }
 
     /**
@@ -414,27 +404,6 @@ public class SmartRandBuildGen {
      */
     public int getNbPerksSide() {
         return nb_perks_side;
-    }
-
-    /**
-     * Get Random Character Status
-     *
-     * @return
-     */
-    public boolean getCharacterRandomStatus() {
-        return b_character_random;
-    }
-
-    /**
-     * Set Random Character Status
-     *
-     * @param b
-     */
-    public final void setCharacterRandomStatus(boolean b) {
-        b_character_random = b;
-        if (verbose) {
-            System.out.println("# Random Character Selection = " + b_character_random + "\n");
-        }
     }
 
     /**
@@ -480,18 +449,25 @@ public class SmartRandBuildGen {
      * @param s
      */
     public final void setSide(String s) {
+        // Copy current Side & Update Active Side
+        String side_old = this.side;
+        side = s;
+        boolean char_generic = true;
         // Random Selection Case
-        if (s.equals("Random")) {
-            s = choseSideRandom();
+        if (s.equals(s_side_rand)) {
+            side = choseSideRandom();
+            // Define Generic Character
+            character = getCharacterRandom();
+            char_generic = false;
         }
         // Update Nb Perks on Active Side
-        if (s.equals("Survivor")) {
+        if (side.equals(s_side_surv)) {
             nb_perks_side = l_perks_survivor.size();
             l_cons1 = l_cons1_surv;
             l_cons2 = l_cons2_surv;
             l_cons3 = l_cons3_surv;
             l_cons4 = l_cons4_surv;
-        } else if (s.equals("Killer")) {
+        } else if (side.equals(s_side_killer)) {
             nb_perks_side = l_perks_killer.size();
             l_cons1 = l_cons1_killer;
             l_cons2 = l_cons2_killer;
@@ -501,19 +477,15 @@ public class SmartRandBuildGen {
             System.err.println("\n# ERROR: The side must be either 'Survivor' OR 'Killer' OR 'Random'\n");
             System.exit(0);
         }
-        // Copy current Side & Update Active Side
-        String side_old = side;
-        side = s;
-        if (verbose) {
-            System.out.println("# Active Side = " + side + "\n");
+        if (char_generic) {
+            character = getCharacterGeneric();
         }
         // Update Pool of Perks if needed
         if (!side.equals(side_old)) {
-            setUpdatePerkPool(true);
+            setPerkPoolChanged(true);
         } else {
-            setUpdatePerkPool(false);
+            setPerkPoolChanged(false);
         }
-        updatePerkPool(true);
     }
 
     /**
@@ -547,16 +519,12 @@ public class SmartRandBuildGen {
         }
         // Disable Constraints in this Case
         if (cons > nb_perks_build) {
-            System.out.println("# WARNING: Not enough Perks in desired Build to activate so many Constraints => all Constraints are Reseted");
+            System.out.println("\n# WARNING: Not enough Perks in desired Build to activate so many Constraints => all Constraints are Reseted");
             b_cons_warn = true;
             b_cons1_perks = false;
             b_cons2_perks = false;
             b_cons3_perks = false;
             b_cons4_perks = false;
-            //System.out.println("# Constraints on Set of Perks 1 = " + b_cons1_perks);
-            //System.out.println("# Constraints on Set of Perks 2 = " + b_cons2_perks);
-            //System.out.println("# Constraints on Set of Perks 3 = " + b_cons3_perks);
-            //System.out.println("# Constraints on Set of Perks 4 = " + b_cons4_perks);
         } else {
             b_cons_warn = false;
         }
@@ -564,19 +532,19 @@ public class SmartRandBuildGen {
             switch (n) {
                 case 1:
                     b_cons1_perks = b;
-                    System.out.println("# Constraints on Set of Perks 1 = " + b_cons1_perks);
+                    System.out.println("\n# Constraints on Set of Perks 1 = " + b_cons1_perks);
                     break;
                 case 2:
                     b_cons2_perks = b;
-                    System.out.println("# Constraints on Set of Perks 2 = " + b_cons2_perks);
+                    System.out.println("\n# Constraints on Set of Perks 2 = " + b_cons2_perks);
                     break;
                 case 3:
                     b_cons3_perks = b;
-                    System.out.println("# Constraints on Set of Perks 3 = " + b_cons3_perks);
+                    System.out.println("\n# Constraints on Set of Perks 3 = " + b_cons3_perks);
                     break;
                 case 4:
                     b_cons4_perks = b;
-                    System.out.println("# Constraints on Set of Perks 4 = " + b_cons4_perks);
+                    System.out.println("\n# Constraints on Set of Perks 4 = " + b_cons4_perks);
                     break;
                 default:
                     System.err.println("\n# Wrong Constraint Class => Exit");
@@ -651,7 +619,7 @@ public class SmartRandBuildGen {
      * @return
      */
     public String getConstraints(int n, String side) {
-        if ((!side.equals("Survivor")) && (!side.equals("Killer"))) {
+        if ((!side.equals(s_side_surv)) && (!side.equals(s_side_killer))) {
             System.err.println("\n# ERROR: Wrong side\n");
             System.exit(0);
         }
@@ -660,11 +628,11 @@ public class SmartRandBuildGen {
         switch (n) {
             case 1:
                 switch (side) {
-                    case "Survivor":
+                    case s_side_surv:
                         l = l_cons1_surv;
                         s = s_cons1_surv;
                         break;
-                    case "Killer":
+                    case s_side_killer:
                         l = l_cons1_killer;
                         s = s_cons1_killer;
                         break;
@@ -672,11 +640,11 @@ public class SmartRandBuildGen {
                 break;
             case 2:
                 switch (side) {
-                    case "Survivor":
+                    case s_side_surv:
                         l = l_cons2_surv;
                         s = s_cons2_surv;
                         break;
-                    case "Killer":
+                    case s_side_killer:
                         l = l_cons2_killer;
                         s = s_cons2_killer;
                         break;
@@ -684,11 +652,11 @@ public class SmartRandBuildGen {
                 break;
             case 3:
                 switch (side) {
-                    case "Survivor":
+                    case s_side_surv:
                         l = l_cons3_surv;
                         s = s_cons3_surv;
                         break;
-                    case "Killer":
+                    case s_side_killer:
                         l = l_cons3_killer;
                         s = s_cons3_killer;
                         break;
@@ -696,11 +664,11 @@ public class SmartRandBuildGen {
                 break;
             case 4:
                 switch (side) {
-                    case "Survivor":
+                    case s_side_surv:
                         l = l_cons4_surv;
                         s = s_cons4_surv;
                         break;
-                    case "Killer":
+                    case s_side_killer:
                         l = l_cons4_killer;
                         s = s_cons4_killer;
                         break;
@@ -726,24 +694,9 @@ public class SmartRandBuildGen {
      * @param detail
      */
     public void showPerks(boolean detail) {
-        System.out.println("# All Loaded Perks (" + nb_perks_all + " Perks)\n");
+        System.out.println("# Table of Perks ( Total = " + nb_perks_all + " )");
         for (Perk p : l_perks_all) {
             System.out.println(p.show(detail));
-        }
-        System.out.println("");
-    }
-
-    /**
-     * Display active Perks & Features
-     *
-     * @param detail
-     */
-    public void showPerksSide(boolean detail) {
-        System.out.println("\n# Active Perks from '" + side + "' Side (" + nb_perks_side + " Perks)\n");
-        for (Perk p : l_perks_all) {
-            if (p.getSide().equals(side)) {
-                System.out.println(p.show(detail));
-            }
         }
         System.out.println("");
     }
@@ -772,8 +725,8 @@ public class SmartRandBuildGen {
      *
      * @return
      */
-    public boolean getUpdatePerkPool() {
-        return b_update_pool_perks;
+    public boolean getPerkPoolChanged() {
+        return b_perkpool_changed;
     }
 
     /**
@@ -781,9 +734,8 @@ public class SmartRandBuildGen {
      *
      * @param b
      */
-    public final void setUpdatePerkPool(boolean b) {
-        b_update_pool_perks = b;
-        //System.out.println("# Update Pool of Perks = " + b_update_pool_perks + "\n");
+    public final void setPerkPoolChanged(boolean b) {
+        b_perkpool_changed = b;
     }
 
     /**
@@ -796,22 +748,18 @@ public class SmartRandBuildGen {
             // Restore reference Weights
             setWeightRef();
         }
-        if (getUpdatePerkPool()) {
-            //System.out.print("# Orig Pool Size = " + l_perks_pool.size());
-            // Reset Pool of Perks 
-            l_perks_pool.clear();
-            // Rebuild Pool of Perks 
-            for (Perk perk : l_perks_all) {
-                if (perk.getSide().equals(side)) {
-                    int value = perk.getWeight();
-                    for (int i = 0; i < value; i++) {
-                        l_perks_pool.add(perk.getName());
-                    }
+        // Reset Pool of Perks 
+        l_perks_pool.clear();
+        // Rebuild Pool of Perks 
+        for (Perk perk : l_perks_all) {
+            if (perk.getSide().equals(side)) {
+                int value = perk.getWeight();
+                for (int i = 0; i < value; i++) {
+                    l_perks_pool.add(perk.getName());
                 }
             }
-            //System.out.println(" | New Pool Size = " + l_perks_pool.size());
-            setUpdatePerkPool(false);
         }
+        setPerkPoolChanged(false);
     }
 
     /**
@@ -824,21 +772,22 @@ public class SmartRandBuildGen {
         // Define Random Build
         Build b = new Build();
         b.setName(buildname);
+        // Define Side
         b.setSide(side);
-        // Get Random Character if desired
-        if (getCharacterRandomStatus()) {
-            b.setCharacter(getCharacterRandom());
-        } else {
-            b.setCharacter(character);
-        }
+        // Define Character
+        b.setCharacter(character);
         // Define List of current Perk
         List<String> l_perk_ok = new ArrayList<>();
         // Several Loops may be required if Constraints are enabled
         int nbloop = 1;
         while (true) {
             // Loop until either valid Build was generated or max loops reached
-            if (verbose) {
-                System.out.print("# Loop " + nbloop);
+            if (b_verbose) {
+                if (b_synergy && (nbloop > 1)) {
+                    System.out.print("\n# Loop " + nbloop);
+                } else {
+                    System.out.print("# Loop " + nbloop);
+                }
             }
             // Restore reference Weights
             setWeightRef();
@@ -846,7 +795,7 @@ public class SmartRandBuildGen {
             if (b_synergy) {
                 synergy.update_weights(b.getCharacter().getName(), null, this);
             }
-            // Update Pool of Perks
+            // Update Pool of Perks Anyway
             updatePerkPool(false);
             // Reset List of selected Perks
             l_perk_ok.clear();
@@ -858,13 +807,12 @@ public class SmartRandBuildGen {
                 if (!l_perk_ok.contains(random_perk)) {
                     // New Perk found => added to the Build
                     l_perk_ok.add(random_perk);
-                    if (verbose) {
+                    if (b_verbose) {
                         System.out.print(" | " + random_perk);
                     }
                     // Apply Synergy Rules with current Perk & Update Pool of Perks if needed
                     if (b_synergy && (l_perk_ok.size() < getNbPerksBuild())) {
                         if (synergy.update_weights(null, random_perk, this)) {
-                            setUpdatePerkPool(true);
                             updatePerkPool(false);
                         }
                     }
@@ -903,7 +851,6 @@ public class SmartRandBuildGen {
                     break;
                 }
             }
-            //System.out.println("\n# BOOLEANS: " + b_cons1_found + " " + b_cons2_found + " " + b_cons3_found + " " + b_cons4_found);
             // Check all Criteria to validate current Build
             boolean b_cons1_check = (!b_cons1_perks) || (b_cons1_perks && b_cons1_found);
             boolean b_cons2_check = (!b_cons2_perks) || (b_cons2_perks && b_cons2_found);
@@ -919,7 +866,7 @@ public class SmartRandBuildGen {
                 System.out.println("\n# WARNING: Max loop (" + maxloop + ") reached !\n");
                 return b;
             }
-            if (verbose) {
+            if (b_verbose) {
                 System.out.println("");
             }
         }
@@ -975,11 +922,11 @@ public class SmartRandBuildGen {
             // Define the Reader
             BufferedReader br = null;
             if (new File(input).exists()) {
-                System.out.println("# Loading custom Weight Distribution from " + input + "\n");
+                System.out.println("\n# Loading custom Weights from " + input + "\n");
                 br = new BufferedReader(new FileReader(new File(input)));
             } else {
                 InputStream is = getClass().getResourceAsStream(input);
-                System.out.println("# Loading default Weight Distribution from " + input + "\n");
+                System.out.println("\n# Loading default Weights from " + input + "\n");
                 br = new BufferedReader(new InputStreamReader(is));
             }
             // Loop over the Reader
@@ -992,7 +939,7 @@ public class SmartRandBuildGen {
                     // Get Data (4 Fields are expected)
                     String myname = tab[0];
                     String myside = tab[1];
-                    if (!((myside.equals("Survivor")) || (myside.equals("Killer")))) {
+                    if (!((myside.equals(s_side_surv)) || (myside.equals(s_side_killer)))) {
                         System.err.println("\n# ERROR: wrong side ('" + myside + "') => Exit [ wrong line : >" + line + "< from input file ]\n");
                         System.exit(0);
                     }
@@ -1010,7 +957,7 @@ public class SmartRandBuildGen {
                     l_perks_all.add(p);
                     // Add Perk Name to Perk List
                     l_perks_all_string.add(myname);
-                    if (myside.equals("Survivor")) {
+                    if (myside.equals(s_side_surv)) {
                         l_perks_survivor.add(myname);
                     } else {
                         l_perks_killer.add(myname);
@@ -1035,17 +982,15 @@ public class SmartRandBuildGen {
         // Set Nb of Perks
         nb_perks_all = l_perks_all.size();
         // Update Nb of Active Perks
-        if (side.equals("Survivor")) {
+        if (side.equals(s_side_surv)) {
             nb_perks_side = l_perks_survivor.size();
-        } else if (side.equals("Killer")) {
+        } else if (side.equals(s_side_killer)) {
             nb_perks_side = l_perks_killer.size();
         }
         // Display Perks
-        if (verbose) {
+        if (b_verbose) {
             showPerks(false);
         }
-        // Update Pool of Perks
-        setUpdatePerkPool(true);
     }
 
     /**
@@ -1057,10 +1002,10 @@ public class SmartRandBuildGen {
         l_char_survivor.clear();
         l_char_killer.clear();
         // Add generic Characters
-        Character c = new Character("Survivor");
+        Character c = new Character(s_side_surv);
         l_char_survivor.add(c);
         l_char_survivor_generic.add(c);
-        c = new Character("Killer");
+        c = new Character(s_side_killer);
         l_char_killer.add(c);
         l_char_killer_generic.add(c);
         try {
@@ -1068,7 +1013,7 @@ public class SmartRandBuildGen {
             BufferedReader br = null;
             String input = s_char;
             InputStream is = getClass().getResourceAsStream(input);
-            System.out.println("# Loading Characters from " + input + "\n");
+            System.out.println("\n# Loading Characters from " + input);
             br = new BufferedReader(new InputStreamReader(is));
             // Loop over the Reader
             String line = "";
@@ -1080,7 +1025,7 @@ public class SmartRandBuildGen {
                     // Get Data (4 Fields are expected)
                     String myname = tab[0];
                     String myside = tab[1];
-                    if (!((myside.equals("Survivor")) || (myside.equals("Killer")))) {
+                    if (!((myside.equals(s_side_surv)) || (myside.equals(s_side_killer)))) {
                         System.err.println("\n# ERROR: wrong side ('" + myside + "') => Exit [ wrong line : >" + line + "< from input file ]\n");
                         System.exit(0);
                     }
@@ -1088,7 +1033,7 @@ public class SmartRandBuildGen {
                     // Create Character Object
                     c = new Character(myname, myside, myicon);
                     // Add Character to related List
-                    if (myside.equals("Survivor")) {
+                    if (myside.equals(s_side_surv)) {
                         l_char_survivor.add(c);
                     } else {
                         l_char_killer.add(c);
@@ -1210,16 +1155,16 @@ public class SmartRandBuildGen {
      *
      */
     private void showPerkConstraints() {
-        System.out.println("\n# Perk Constraints on Survivor Side");
-        System.out.println("# Set of Perks 1 = " + getConstraints(1, "Survivor"));
-        System.out.println("# Set of Perks 2 = " + getConstraints(2, "Survivor"));
-        System.out.println("# Set of Perks 3 = " + getConstraints(3, "Survivor"));
-        System.out.println("# Set of Perks 4 = " + getConstraints(4, "Survivor") + "\n");
-        System.out.println("# Perk Constraints on Killer Side");
-        System.out.println("# Set of Perks 1 = " + getConstraints(1, "Killer"));
-        System.out.println("# Set of Perks 2 = " + getConstraints(2, "Killer"));
-        System.out.println("# Set of Perks 3 = " + getConstraints(3, "Killer"));
-        System.out.println("# Set of Perks 4 = " + getConstraints(4, "Killer"));
+        System.out.println("\n# Perk Constraints on Survivor Side:");
+        System.out.println("# - Set of Perks 1 = " + getConstraints(1, s_side_surv));
+        System.out.println("# - Set of Perks 2 = " + getConstraints(2, s_side_surv));
+        System.out.println("# - Set of Perks 3 = " + getConstraints(3, s_side_surv));
+        System.out.println("# - Set of Perks 4 = " + getConstraints(4, s_side_surv) + "\n");
+        System.out.println("# Perk Constraints on Killer Side:");
+        System.out.println("# - Set of Perks 1 = " + getConstraints(1, s_side_killer));
+        System.out.println("# - Set of Perks 2 = " + getConstraints(2, s_side_killer));
+        System.out.println("# - Set of Perks 3 = " + getConstraints(3, s_side_killer));
+        System.out.println("# - Set of Perks 4 = " + getConstraints(4, s_side_killer) + "\n");
     }
 
     /**
@@ -1230,15 +1175,11 @@ public class SmartRandBuildGen {
     public final void showParams(boolean detail) {
         System.out.println("\n" + MYSPACER + " Input Parameters " + MYSPACER + "\n");
         if (detail) {
-            System.out.println("# Nb of Loaded Perks = " + nb_perks_all);
             System.out.println("# Min/Max Weight Values = " + weight_perk_min + "/" + weight_perk_max);
+            System.out.println("# Total Perks = " + nb_perks_all + " ( Active Perks = " + nb_perks_side + " )");
         }
         System.out.println("# Active Side = " + side);
-        if (detail) {
-            System.out.println("# Nb of Perks on Active Side = " + nb_perks_side);
-        }
         System.out.println("# Active Character = " + character.getName());
-        System.out.println("# Random Character Selection = " + b_character_random);
         System.out.println("# Nb of Perks per Build = " + nb_perks_build);
         System.out.println("# Perk from Set 1 is Required = " + b_cons1_perks);
         //System.out.println("# Perk from Set 1 = " + getConstraints(1, side));
@@ -1250,7 +1191,7 @@ public class SmartRandBuildGen {
         //System.out.println("# Perk from Set 4 = " + getConstraints(4, side));
         System.out.println("# Synergy Mode = " + b_synergy);
         if (detail) {
-            System.out.println("# Verbose Mode = " + verbose);
+            System.out.println("# Verbose Mode = " + b_verbose);
         }
         System.out.println("");
     }
@@ -1271,8 +1212,8 @@ public class SmartRandBuildGen {
         System.out.println("# -cons3 : enable constraints for set of perks 3 (at least one perk from set is required in the build)");
         System.out.println("# -cons4 : enable constraints for set of perks 4 (at least one perk from set is required in the build)");
         System.out.println("# -nosyn : disable synergy rules");
-        System.out.println("# -h : print this help and quit");
-        showPerkConstraints();
+        System.out.println("# -best : define the top build list to display");
+        System.out.println("# -h : print this help and quit\n");
         System.exit(0);
     }
 
@@ -1282,22 +1223,25 @@ public class SmartRandBuildGen {
      * @return
      */
     public String choseSideRandom() {
-        System.out.println("\n# Random Side Selection\n");
+        System.out.print("# Random Side Selection");
         // Get random Number
         double p = Math.random();
         // Add Bias toward the other Side
         double offset = 0.20;
-        if (side.equals("Survivor")) {
+        if (side.equals(s_side_surv)) {
             p = p - offset;
-        } else if (side.equals("Killer")) {
+        } else if (side.equals(s_side_killer)) {
             p = p + offset;
         }
         // Select Side according to Random Value
+        String randside = "";
         if (p > 0.5) {
-            return "Survivor";
+            randside = s_side_surv;
         } else {
-            return "Killer";
+            randside = s_side_killer;
         }
+        System.out.println(" = " + randside + "\n");
+        return randside;
     }
 
     /**
@@ -1306,14 +1250,14 @@ public class SmartRandBuildGen {
      * @return
      */
     public boolean checkUpdate() {
-        System.out.print("# Checking Update from remote GitHub Repository\n# ");
+        System.out.print("\n# Checking Update from remote GitHub Repository\n# ");
         boolean update_new = false;
         double gitversion = Tools.getLastVersionGitHub(SmartRandBuildGen.GIT_USER, SmartRandBuildGen.GIT_REPO);
         if (gitversion > SmartRandBuildGen.VERSION) {
             update_new = true;
             System.out.println("# Remote Version = " + gitversion + "\n# Local Version = " + SmartRandBuildGen.VERSION + "\n# An Update is available from https://github.com/" + SmartRandBuildGen.GIT_USER + "/" + SmartRandBuildGen.GIT_REPO + "/releases\n");
         } else if (gitversion > 0) {
-            System.out.println("# You already have the last Version (" + SmartRandBuildGen.VERSION + ")");
+            System.out.println("# You already have the last Version (" + SmartRandBuildGen.VERSION + ")\n");
         }
         return update_new;
     }
@@ -1339,10 +1283,12 @@ public class SmartRandBuildGen {
         // Define default Nb of Random Builds
         int nbbuilds = 10;
 
+        // Define default Nb of Best Builds to Display
+        int nbbest = 10;
+
         // Process User-defined Arguments
-        System.out.println(srbg.MYSPACER + " Parsing Arguments from User " + srbg.MYSPACER + "\n");
+        System.out.println(srbg.MYSPACER + " Parsing Arguments from User " + srbg.MYSPACER);
         String val = "";
-        boolean valb = true;
         int valn = 0;
         int argn = args.length;
         for (int i = 0; i < argn; i++) {
@@ -1379,7 +1325,6 @@ public class SmartRandBuildGen {
                     if (!args[i + 1].startsWith("-")) {
                         val = args[i + 1];
                         srbg.setCharacter(val);
-                        srbg.setCharacterRandomStatus(false);
                     } else {
                         System.err.println("\n# ERROR: The '-char' option requires an argument\n");
                         System.exit(0);
@@ -1418,9 +1363,8 @@ public class SmartRandBuildGen {
                 if ((i + 1) < argn) {
                     if (!args[i + 1].startsWith("-")) {
                         try {
-                            valn = Integer.parseInt(args[i + 1]);
-                            nbbuilds = valn;
-                            System.out.println("# Number of desired Builds = " + nbbuilds + "\n");
+                            nbbuilds = Integer.parseInt(args[i + 1]);
+                            System.out.println("\n# Number of desired Builds = " + nbbuilds + "\n");
                         } catch (Exception ex) {
                             System.err.println("\n# ERROR: The '-build' option requires an integer value\n");
                             System.exit(0);
@@ -1433,8 +1377,26 @@ public class SmartRandBuildGen {
                     System.err.println("\n# ERROR: The '-build' option requires an argument\n");
                     System.exit(0);
                 }
+            } else if (args[i].equals("-best")) {
+                if ((i + 1) < argn) {
+                    if (!args[i + 1].startsWith("-")) {
+                        try {
+                            nbbest = Integer.parseInt(args[i + 1]);
+                            System.out.println("\n# Top Build List to Display = " + nbbest + "\n");
+                        } catch (Exception ex) {
+                            System.err.println("\n# ERROR: The '-best' option requires an integer value\n");
+                            System.exit(0);
+                        }
+                    } else {
+                        System.err.println("\n# ERROR: The '-best' option requires an argument\n");
+                        System.exit(0);
+                    }
+                } else {
+                    System.err.println("\n# ERROR: The '-best' option requires an argument\n");
+                    System.exit(0);
+                }
             } else if (args[i].equals("-v")) {
-                srbg.verbose = true;
+                srbg.b_verbose = true;
             } else if (args[i].equals("-h")) {
                 srbg.displayHelp();
             } else if (args[i].startsWith("-")) {
@@ -1447,19 +1409,34 @@ public class SmartRandBuildGen {
         srbg.showParams(true);
 
         // Generate Random Builds
-        List l = new ArrayList();
+        List<Build> l = new ArrayList<>();
         System.out.println(srbg.MYSPACER + " " + nbbuilds + " Random Builds with " + srbg.getNbPerksBuild() + " Perks per Build " + srbg.MYSPACER + "\n");
         Build b = null;
         for (int k = 1; k <= nbbuilds; k++) {
             b = srbg.genRandomBuild("Random Build " + k);
             l.add(b);
-            System.out.println("\n# " + b.show(true, " ") + "\n");
+            if (srbg.b_verbose) {
+                System.out.println("");
+            }
+            System.out.println("# " + b.show(false, " | "));
+            if ((k < nbbuilds) && srbg.b_verbose) {
+                System.out.println("");
+            }
         }
 
-        // Display Best Build
-        srbg.setBestBuild(Build.getBestBuild(l));
-        System.out.println("# Best Build over Generated Builds\n" + srbg.getBestBuild().show(true, " ") + "\n");
+        // Sort Builds
+        Collections.sort(l);
+        srbg.setBestBuild(l.get(0));
 
+        // Display Top Build List
+        if (l.size() < nbbest) {
+            nbbest = l.size();
+        }
+        System.out.println("\n" + srbg.MYSPACER + " Top " + nbbest + " Builds over " + l.size() + " Generated Builds " + srbg.MYSPACER + "\n");
+        for (int i = 0; i < nbbest; i++) {
+            System.out.println("# " + l.get(i).show(false, " | "));
+        }
+        System.out.println("");
     }
 
 }

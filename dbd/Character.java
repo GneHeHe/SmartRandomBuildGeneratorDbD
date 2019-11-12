@@ -26,6 +26,9 @@ public class Character implements Comparable<Character> {
     // Size of Icon Pictures
     private final static int SIZE_SMALL = 55;
     private final static int SIZE_LARGE = 175;
+    // Strings
+    public final static String SURVIVOR = "Survivor";
+    public final static String KILLER = "Killer";
     // Generic Characters
     public final static String GENERIC_SURVIVOR = "GenSurv";
     public final static String GENERIC_KILLER = "GenKiller";
@@ -57,9 +60,9 @@ public class Character implements Comparable<Character> {
      * @param side
      */
     public Character(String side) {
-        if (side.equals("Survivor")) {
+        if (side.equals(SURVIVOR)) {
             setName(Character.GENERIC_SURVIVOR);
-        } else if (side.equals("Killer")) {
+        } else if (side.equals(KILLER)) {
             setName(Character.GENERIC_KILLER);
         } else {
             System.err.println("ERROR while creating generic Character");
@@ -70,9 +73,9 @@ public class Character implements Comparable<Character> {
         lab_img_large = new JLabel("", SwingConstants.CENTER);
         // Set Default Icon
         String icon = "";
-        if (side.equals("Survivor")) {
+        if (side.equals(SURVIVOR)) {
             icon = "iconHelpLoading_survivor";
-        } else if (side.equals("Killer")) {
+        } else if (side.equals(KILLER)) {
             icon = "iconHelpLoading_killer";
         }
         try {
@@ -118,7 +121,7 @@ public class Character implements Comparable<Character> {
      */
     public final void setSide(String side) {
         // Only 2 Sides are Available
-        if (side.equals("Killer") || side.equals("Survivor")) {
+        if (side.equals(KILLER) || side.equals(SURVIVOR)) {
             this.side = side;
         } else {
             System.err.println("# ERROR: This side " + side + " is wrong (expected value = 'Killer' or 'Survivor'");
@@ -171,9 +174,9 @@ public class Character implements Comparable<Character> {
             lab_img_large.setName(name);
         } else {
             // Try to use default Icon Picture
-            if (side.equals("Survivor")) {
+            if (side.equals(SURVIVOR)) {
                 s_icon = "iconHelpLoading_survivor";
-            } else if (side.equals("Killer")) {
+            } else if (side.equals(KILLER)) {
                 s_icon = "iconHelpLoading_killer";
             }
             path = "icons_char/" + s_icon + ".png";

@@ -183,7 +183,7 @@ public class PerkTableModel extends AbstractTableModel {
             p_builder.setWeight(p_table.getWeight(), true);
         }
         // Update Pool of Perks
-        srbg.setUpdatePerkPool(true);
+        srbg.setPerkPoolChanged(true);
     }
 
 }

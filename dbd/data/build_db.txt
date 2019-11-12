@@ -1165,12 +1165,14 @@ Build	Killer	Trapper	Agitation	Enduring	Hex Ruin	Whispers
 Build	Killer	Trapper	Agitation	Enduring	Make Your Choice	Whispers
 Build	Killer	Trapper	Agitation	Enduring	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Trapper	Agitation	Hex Ruin	Hex Thrill Of The Hunt	Whispers
+Build	Killer	Trapper	Agitation	Hex Ruin	Make Your Choice	Play With Your Food
 Build	Killer	Trapper	Agitation	Hex Ruin	Make Your Choice	Whispers
 Build	Killer	Trapper	Agitation	Hex Ruin	Save The Best For Last	Whispers
 Build	Killer	Trapper	Agitation	Make Your Choice	Pop Goes The Weasel	Whispers
 Build	Killer	Trapper	A Nurse's Calling	Bamboozle	Enduring	Sloppy Butcher
 Build	Killer	Trapper	A Nurse's Calling	Bamboozle	Enduring	Whispers
 Build	Killer	Trapper	A Nurse's Calling	Bamboozle	Hex Ruin	Sloppy Butcher
+Build	Killer	Trapper	A Nurse's Calling	Barbecue & Chilli	Hex Ruin	Sloppy Butcher
 Build	Killer	Trapper	A Nurse's Calling	Brutal Strength	Corrupt Intervention	Enduring
 Build	Killer	Trapper	A Nurse's Calling	Brutal Strength	Corrupt Intervention	Sloppy Butcher
 Build	Killer	Trapper	A Nurse's Calling	Brutal Strength	Enduring	Hex Ruin
@@ -1182,6 +1184,7 @@ Build	Killer	Trapper	A Nurse's Calling	Brutal Strength	Sloppy Butcher	Whispers
 Build	Killer	Trapper	A Nurse's Calling	Corrupt Intervention	Enduring	Whispers
 Build	Killer	Trapper	A Nurse's Calling	Corrupt Intervention	Hex Ruin	Sloppy Butcher
 Build	Killer	Trapper	A Nurse's Calling	Corrupt Intervention	Hex Ruin	Whispers
+Build	Killer	Trapper	A Nurse's Calling	Corrupt Intervention	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Trapper	A Nurse's Calling	Corrupt Intervention	Monitor & Abuse	Whispers
 Build	Killer	Trapper	A Nurse's Calling	Corrupt Intervention	Sloppy Butcher	Thanatophobia
 Build	Killer	Trapper	A Nurse's Calling	Corrupt Intervention	Sloppy Butcher	Whispers
@@ -1196,12 +1199,16 @@ Build	Killer	Trapper	A Nurse's Calling	Enduring	Spirit Fury	Whispers
 Build	Killer	Trapper	A Nurse's Calling	Hex Ruin	Hex Thrill Of The Hunt	Sloppy Butcher
 Build	Killer	Trapper	A Nurse's Calling	Hex Ruin	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Trapper	A Nurse's Calling	Hex Ruin	Monitor & Abuse	Whispers
+Build	Killer	Trapper	A Nurse's Calling	Hex Ruin	Save The Best For Last	Sloppy Butcher
 Build	Killer	Trapper	A Nurse's Calling	Hex Ruin	Sloppy Butcher	Thanatophobia
 Build	Killer	Trapper	A Nurse's Calling	Hex Ruin	Sloppy Butcher	Whispers
+Build	Killer	Trapper	A Nurse's Calling	Monitor & Abuse	Pop Goes The Weasel	Whispers
 Build	Killer	Trapper	A Nurse's Calling	Monitor & Abuse	Sloppy Butcher	Whispers
+Build	Killer	Trapper	A Nurse's Calling	Pop Goes The Weasel	Sloppy Butcher	Thanatophobia
 Build	Killer	Trapper	A Nurse's Calling	Pop Goes The Weasel	Sloppy Butcher	Whispers
 Build	Killer	Trapper	A Nurse's Calling	Pop Goes The Weasel	Thrilling Tremors	Whispers
 Build	Killer	Trapper	A Nurse's Calling	Save The Best For Last	Sloppy Butcher	Whispers
+Build	Killer	Trapper	A Nurse's Calling	Sloppy Butcher	Thanatophobia	Whispers
 Build	Killer	Trapper	Bamboozle	Barbecue & Chilli	Brutal Strength	Enduring
 Build	Killer	Trapper	Bamboozle	Barbecue & Chilli	Corrupt Intervention	Enduring
 Build	Killer	Trapper	Bamboozle	Barbecue & Chilli	Enduring	Hex Ruin
@@ -1251,6 +1258,8 @@ Build	Killer	Trapper	Bamboozle	Hex No One Escapes Death	Hex Ruin	Whispers
 Build	Killer	Trapper	Bamboozle	Hex Ruin	Hex Thrill Of The Hunt	Whispers
 Build	Killer	Trapper	Bamboozle	Hex Ruin	Make Your Choice	Whispers
 Build	Killer	Trapper	Bamboozle	Pop Goes The Weasel	Thrilling Tremors	Whispers
+Build	Killer	Trapper	Barbecue & Chilli	Bitter Murmur	Hex No One Escapes Death	Whispers
+Build	Killer	Trapper	Barbecue & Chilli	Blood Warden	Hex No One Escapes Death	Whispers
 Build	Killer	Trapper	Barbecue & Chilli	Brutal Strength	Corrupt Intervention	Enduring
 Build	Killer	Trapper	Barbecue & Chilli	Brutal Strength	Corrupt Intervention	Whispers
 Build	Killer	Trapper	Barbecue & Chilli	Brutal Strength	Enduring	Hex Ruin
@@ -1266,6 +1275,7 @@ Build	Killer	Trapper	Barbecue & Chilli	Corrupt Intervention	Enduring	Whispers
 Build	Killer	Trapper	Barbecue & Chilli	Corrupt Intervention	Hex No One Escapes Death	Whispers
 Build	Killer	Trapper	Barbecue & Chilli	Corrupt Intervention	Hex Ruin	Whispers
 Build	Killer	Trapper	Barbecue & Chilli	Corrupt Intervention	Make Your Choice	Whispers
+Build	Killer	Trapper	Barbecue & Chilli	Corrupt Intervention	Monitor & Abuse	Whispers
 Build	Killer	Trapper	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Whispers
 Build	Killer	Trapper	Barbecue & Chilli	Enduring	Hex Devour Hope	Hex No One Escapes Death
 Build	Killer	Trapper	Barbecue & Chilli	Enduring	Hex No One Escapes Death	Hex Ruin
@@ -1283,17 +1293,30 @@ Build	Killer	Trapper	Barbecue & Chilli	Hex Devour Hope	Hex Thrill Of The Hunt	Po
 Build	Killer	Trapper	Barbecue & Chilli	Hex Devour Hope	Pop Goes The Weasel	Whispers
 Build	Killer	Trapper	Barbecue & Chilli	Hex Huntress Lullaby	Hex Ruin	Hex Thrill Of The Hunt
 Build	Killer	Trapper	Barbecue & Chilli	Hex No One Escapes Death	Hex Ruin	Whispers
+Build	Killer	Trapper	Barbecue & Chilli	Hex No One Escapes Death	Pop Goes The Weasel	Whispers
 Build	Killer	Trapper	Barbecue & Chilli	Hex Ruin	Hex Thrill Of The Hunt	Whispers
 Build	Killer	Trapper	Barbecue & Chilli	Hex Ruin	Make Your Choice	Whispers
+Build	Killer	Trapper	Barbecue & Chilli	Hex Ruin	Monitor & Abuse	Whispers
+Build	Killer	Trapper	Barbecue & Chilli	Hex Ruin	Pop Goes The Weasel	Save The Best For Last
 Build	Killer	Trapper	Barbecue & Chilli	Hex Ruin	Pop Goes The Weasel	Whispers
 Build	Killer	Trapper	Barbecue & Chilli	Hex Ruin	Save The Best For Last	Whispers
+Build	Killer	Trapper	Barbecue & Chilli	Monitor & Abuse	Pop Goes The Weasel	Whispers
+Build	Killer	Trapper	Barbecue & Chilli	Pop Goes The Weasel	Save The Best For Last	Whispers
 Build	Killer	Trapper	Bitter Murmur	Corrupt Intervention	Hex No One Escapes Death	Whispers
 Build	Killer	Trapper	Bitter Murmur	Enduring	Hex No One Escapes Death	Hex Ruin
 Build	Killer	Trapper	Bitter Murmur	Enduring	Hex No One Escapes Death	Whispers
 Build	Killer	Trapper	Bitter Murmur	Hex No One Escapes Death	Hex Ruin	Whispers
+Build	Killer	Trapper	Bitter Murmur	Hex No One Escapes Death	Make Your Choice	Whispers
+Build	Killer	Trapper	Bitter Murmur	Hex No One Escapes Death	Monitor & Abuse	Whispers
+Build	Killer	Trapper	Bitter Murmur	Hex No One Escapes Death	Pop Goes The Weasel	Whispers
+Build	Killer	Trapper	Bitter Murmur	Hex No One Escapes Death	Save The Best For Last	Whispers
 Build	Killer	Trapper	Blood Warden	Corrupt Intervention	Hex No One Escapes Death	Whispers
 Build	Killer	Trapper	Blood Warden	Hex No One Escapes Death	Hex Ruin	Hex Thrill Of The Hunt
+Build	Killer	Trapper	Blood Warden	Hex No One Escapes Death	Hex Ruin	Remember Me
 Build	Killer	Trapper	Blood Warden	Hex No One Escapes Death	Hex Ruin	Whispers
+Build	Killer	Trapper	Blood Warden	Hex No One Escapes Death	Monitor & Abuse	Whispers
+Build	Killer	Trapper	Blood Warden	Hex No One Escapes Death	Pop Goes The Weasel	Whispers
+Build	Killer	Trapper	Blood Warden	Hex No One Escapes Death	Remember Me	Whispers
 Build	Killer	Trapper	Brutal Strength	Corrupt Intervention	Discordance	Enduring
 Build	Killer	Trapper	Brutal Strength	Corrupt Intervention	Discordance	Hex Ruin
 Build	Killer	Trapper	Brutal Strength	Corrupt Intervention	Discordance	Whispers
@@ -1384,6 +1407,7 @@ Build	Killer	Trapper	Corrupt Intervention	Enduring	Hex Ruin	Whispers
 Build	Killer	Trapper	Corrupt Intervention	Enduring	Hex Thrill Of The Hunt	Whispers
 Build	Killer	Trapper	Corrupt Intervention	Enduring	Make Your Choice	Whispers
 Build	Killer	Trapper	Corrupt Intervention	Enduring	Monitor & Abuse	Whispers
+Build	Killer	Trapper	Corrupt Intervention	Enduring	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Trapper	Corrupt Intervention	Enduring	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Trapper	Corrupt Intervention	Enduring	Pop Goes The Weasel	Whispers
 Build	Killer	Trapper	Corrupt Intervention	Enduring	Save The Best For Last	Spirit Fury
@@ -1397,14 +1421,18 @@ Build	Killer	Trapper	Corrupt Intervention	Hex Devour Hope	Pop Goes The Weasel	Wh
 Build	Killer	Trapper	Corrupt Intervention	Hex Haunted Ground	Hex Ruin	Whispers
 Build	Killer	Trapper	Corrupt Intervention	Hex No One Escapes Death	Hex Ruin	Whispers
 Build	Killer	Trapper	Corrupt Intervention	Hex No One Escapes Death	Make Your Choice	Whispers
+Build	Killer	Trapper	Corrupt Intervention	Hex No One Escapes Death	Monitor & Abuse	Whispers
 Build	Killer	Trapper	Corrupt Intervention	Hex No One Escapes Death	Pop Goes The Weasel	Whispers
+Build	Killer	Trapper	Corrupt Intervention	Hex No One Escapes Death	Save The Best For Last	Whispers
 Build	Killer	Trapper	Corrupt Intervention	Hex Ruin	Hex Thrill Of The Hunt	Whispers
 Build	Killer	Trapper	Corrupt Intervention	Hex Ruin	Make Your Choice	Whispers
 Build	Killer	Trapper	Corrupt Intervention	Hex Ruin	Monitor & Abuse	Whispers
 Build	Killer	Trapper	Corrupt Intervention	Hex Ruin	Save The Best For Last	Whispers
 Build	Killer	Trapper	Corrupt Intervention	Hex Ruin	Sloppy Butcher	Whispers
+Build	Killer	Trapper	Corrupt Intervention	Make Your Choice	Play With Your Food	Whispers
 Build	Killer	Trapper	Corrupt Intervention	Make Your Choice	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Trapper	Corrupt Intervention	Make Your Choice	Pop Goes The Weasel	Whispers
+Build	Killer	Trapper	Corrupt Intervention	Monitor & Abuse	Save The Best For Last	Whispers
 Build	Killer	Trapper	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last	Thrilling Tremors
 Build	Killer	Trapper	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last	Whispers
 Build	Killer	Trapper	Corrupt Intervention	Pop Goes The Weasel	Thrilling Tremors	Whispers
@@ -1447,11 +1475,14 @@ Build	Killer	Trapper	Enduring	Hex Ruin	Save The Best For Last	Spirit Fury
 Build	Killer	Trapper	Enduring	Hex Ruin	Save The Best For Last	Whispers
 Build	Killer	Trapper	Enduring	Hex Ruin	Sloppy Butcher	Spirit Fury
 Build	Killer	Trapper	Enduring	Hex Ruin	Sloppy Butcher	Whispers
+Build	Killer	Trapper	Enduring	Hex Ruin	Spirit Fury	Thrilling Tremors
 Build	Killer	Trapper	Enduring	Hex Ruin	Spirit Fury	Whispers
 Build	Killer	Trapper	Enduring	Hex Ruin	Surveillance	Whispers
 Build	Killer	Trapper	Enduring	Hex Ruin	Thanatophobia	Whispers
 Build	Killer	Trapper	Enduring	Make Your Choice	Pop Goes The Weasel	Whispers
+Build	Killer	Trapper	Enduring	Make Your Choice	Spirit Fury	Whispers
 Build	Killer	Trapper	Enduring	Monitor & Abuse	Spirit Fury	Whispers
+Build	Killer	Trapper	Enduring	Pop Goes The Weasel	Save The Best For Last	Spirit Fury
 Build	Killer	Trapper	Enduring	Pop Goes The Weasel	Save The Best For Last	Thrilling Tremors
 Build	Killer	Trapper	Enduring	Pop Goes The Weasel	Save The Best For Last	Whispers
 Build	Killer	Trapper	Enduring	Pop Goes The Weasel	Sloppy Butcher	Thrilling Tremors
@@ -1473,11 +1504,15 @@ Build	Killer	Trapper	Hex Haunted Ground	Hex Huntress Lullaby	Hex Thrill Of The H
 Build	Killer	Trapper	Hex Haunted Ground	Hex No One Escapes Death	Hex Ruin	Whispers
 Build	Killer	Trapper	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The Hunt	Whispers
 Build	Killer	Trapper	Hex Haunted Ground	Hex Ruin	Make Your Choice	Whispers
+Build	Killer	Trapper	Hex Haunted Ground	Hex Ruin	Monitor & Abuse	Whispers
 Build	Killer	Trapper	Hex Huntress Lullaby	Hex Ruin	Hex Thrill Of The Hunt	Whispers
 Build	Killer	Trapper	Hex No One Escapes Death	Hex Ruin	Hex Thrill Of The Hunt	Whispers
 Build	Killer	Trapper	Hex No One Escapes Death	Hex Ruin	Make Your Choice	Whispers
+Build	Killer	Trapper	Hex No One Escapes Death	Hex Ruin	Monitor & Abuse	Whispers
 Build	Killer	Trapper	Hex No One Escapes Death	Hex Ruin	Pop Goes The Weasel	Whispers
+Build	Killer	Trapper	Hex No One Escapes Death	Hex Ruin	Rancor	Whispers
 Build	Killer	Trapper	Hex No One Escapes Death	Hex Ruin	Save The Best For Last	Whispers
+Build	Killer	Trapper	Hex No One Escapes Death	Pop Goes The Weasel	Thrilling Tremors	Whispers
 Build	Killer	Trapper	Hex Ruin	Hex Thrill Of The Hunt	Make Your Choice	Whispers
 Build	Killer	Trapper	Hex Ruin	Hex Thrill Of The Hunt	Monitor & Abuse	Whispers
 Build	Killer	Trapper	Hex Ruin	Hex Thrill Of The Hunt	Pop Goes The Weasel	Whispers
@@ -1485,10 +1520,14 @@ Build	Killer	Trapper	Hex Ruin	Hex Thrill Of The Hunt	Save The Best For Last	Whis
 Build	Killer	Trapper	Hex Ruin	Hex Thrill Of The Hunt	Sloppy Butcher	Whispers
 Build	Killer	Trapper	Hex Ruin	Hex Thrill Of The Hunt	Thrilling Tremors	Whispers
 Build	Killer	Trapper	Hex Ruin	Infectious Fright	Save The Best For Last	Whispers
+Build	Killer	Trapper	Hex Ruin	Make Your Choice	Monitor & Abuse	Whispers
 Build	Killer	Trapper	Hex Ruin	Make Your Choice	Play With Your Food	Whispers
 Build	Killer	Trapper	Hex Ruin	Make Your Choice	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Trapper	Hex Ruin	Make Your Choice	Pop Goes The Weasel	Whispers
 Build	Killer	Trapper	Hex Ruin	Make Your Choice	Save The Best For Last	Whispers
+Build	Killer	Trapper	Hex Ruin	Monitor & Abuse	Pop Goes The Weasel	Whispers
+Build	Killer	Trapper	Hex Ruin	Monitor & Abuse	Save The Best For Last	Whispers
+Build	Killer	Trapper	Hex Ruin	Pop Goes The Weasel	Save The Best For Last	Thrilling Tremors
 Build	Killer	Trapper	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors	Whispers
 Build	Killer	Trapper	Make Your Choice	Pop Goes The Weasel	Thrilling Tremors	Whispers
 Build	Killer	Trapper	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors	Whispers
@@ -1499,6 +1538,9 @@ Perkless	Killer	Trapper	Undefined	Undefined	Undefined	Undefined
 Build	Killer	Wraith	Agitation	Brutal Strength	Enduring	Hex Ruin
 Build	Killer	Wraith	Agitation	Brutal Strength	Hex Ruin	Make Your Choice
 Build	Killer	Wraith	Agitation	Enduring	Hex Ruin	Make Your Choice
+Build	Killer	Wraith	Agitation	Enduring	Hex Ruin	Spirit Fury
+Build	Killer	Wraith	Agitation	Hex Ruin	Make Your Choice	Play With Your Food
+Build	Killer	Wraith	Agitation	Hex Ruin	Make Your Choice	Whispers
 Build	Killer	Wraith	A Nurse's Calling	Agitation	Make Your Choice	Sloppy Butcher
 Build	Killer	Wraith	A Nurse's Calling	Bamboozle	Enduring	Hex Ruin
 Build	Killer	Wraith	A Nurse's Calling	Bamboozle	Enduring	Sloppy Butcher
@@ -1508,10 +1550,17 @@ Build	Killer	Wraith	A Nurse's Calling	Barbecue & Chilli	Brutal Strength	Enduring
 Build	Killer	Wraith	A Nurse's Calling	Barbecue & Chilli	Brutal Strength	Sloppy Butcher
 Build	Killer	Wraith	A Nurse's Calling	Barbecue & Chilli	Enduring	Hex Ruin
 Build	Killer	Wraith	A Nurse's Calling	Barbecue & Chilli	Enduring	Sloppy Butcher
+Build	Killer	Wraith	A Nurse's Calling	Barbecue & Chilli	Enduring	Spirit Fury
+Build	Killer	Wraith	A Nurse's Calling	Barbecue & Chilli	Hex Devour Hope	Pop Goes The Weasel
 Build	Killer	Wraith	A Nurse's Calling	Barbecue & Chilli	Hex Ruin	Make Your Choice
+Build	Killer	Wraith	A Nurse's Calling	Barbecue & Chilli	Hex Ruin	Monitor & Abuse
+Build	Killer	Wraith	A Nurse's Calling	Barbecue & Chilli	Hex Ruin	Pop Goes The Weasel
 Build	Killer	Wraith	A Nurse's Calling	Barbecue & Chilli	Hex Ruin	Sloppy Butcher
 Build	Killer	Wraith	A Nurse's Calling	Barbecue & Chilli	Make Your Choice	Sloppy Butcher
+Build	Killer	Wraith	A Nurse's Calling	Barbecue & Chilli	Monitor & Abuse	Whispers
 Build	Killer	Wraith	A Nurse's Calling	Barbecue & Chilli	Pop Goes The Weasel	Sloppy Butcher
+Build	Killer	Wraith	A Nurse's Calling	Barbecue & Chilli	Pop Goes The Weasel	Surveillance
+Build	Killer	Wraith	A Nurse's Calling	Barbecue & Chilli	Sloppy Butcher	Thanatophobia
 Build	Killer	Wraith	A Nurse's Calling	Bloodhound	Hex Ruin	Sloppy Butcher
 Build	Killer	Wraith	A Nurse's Calling	Brutal Strength	Discordance	Enduring
 Build	Killer	Wraith	A Nurse's Calling	Brutal Strength	Discordance	Sloppy Butcher
@@ -1526,11 +1575,15 @@ Build	Killer	Wraith	A Nurse's Calling	Brutal Strength	Hex Ruin	Sloppy Butcher
 Build	Killer	Wraith	A Nurse's Calling	Brutal Strength	Make Your Choice	Pop Goes The Weasel
 Build	Killer	Wraith	A Nurse's Calling	Brutal Strength	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Wraith	A Nurse's Calling	Corrupt Intervention	Enduring	Sloppy Butcher
+Build	Killer	Wraith	A Nurse's Calling	Deerstalker	Hex Ruin	Sloppy Butcher
 Build	Killer	Wraith	A Nurse's Calling	Discordance	Enduring	Hex Ruin
+Build	Killer	Wraith	A Nurse's Calling	Discordance	Enduring	Spirit Fury
 Build	Killer	Wraith	A Nurse's Calling	Discordance	Hex Ruin	Make Your Choice
+Build	Killer	Wraith	A Nurse's Calling	Discordance	Hex Ruin	Monitor & Abuse
 Build	Killer	Wraith	A Nurse's Calling	Discordance	Hex Ruin	Sloppy Butcher
 Build	Killer	Wraith	A Nurse's Calling	Discordance	Make Your Choice	Sloppy Butcher
 Build	Killer	Wraith	A Nurse's Calling	Discordance	Pop Goes The Weasel	Sloppy Butcher
+Build	Killer	Wraith	A Nurse's Calling	Discordance	Sloppy Butcher	Thanatophobia
 Build	Killer	Wraith	A Nurse's Calling	Enduring	Hex Devour Hope	Sloppy Butcher
 Build	Killer	Wraith	A Nurse's Calling	Enduring	Hex No One Escapes Death	Hex Ruin
 Build	Killer	Wraith	A Nurse's Calling	Enduring	Hex Ruin	Make Your Choice
@@ -1539,14 +1592,23 @@ Build	Killer	Wraith	A Nurse's Calling	Enduring	Hex Ruin	Sloppy Butcher
 Build	Killer	Wraith	A Nurse's Calling	Enduring	Hex Ruin	Spirit Fury
 Build	Killer	Wraith	A Nurse's Calling	Enduring	Make Your Choice	Pop Goes The Weasel
 Build	Killer	Wraith	A Nurse's Calling	Enduring	Make Your Choice	Sloppy Butcher
+Build	Killer	Wraith	A Nurse's Calling	Enduring	Make Your Choice	Spirit Fury
+Build	Killer	Wraith	A Nurse's Calling	Enduring	Monitor & Abuse	Spirit Fury
 Build	Killer	Wraith	A Nurse's Calling	Enduring	Pop Goes The Weasel	Sloppy Butcher
+Build	Killer	Wraith	A Nurse's Calling	Enduring	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Wraith	A Nurse's Calling	Enduring	Sloppy Butcher	Spirit Fury
 Build	Killer	Wraith	A Nurse's Calling	Enduring	Sloppy Butcher	Thanatophobia
 Build	Killer	Wraith	A Nurse's Calling	Enduring	Sloppy Butcher	Whispers
+Build	Killer	Wraith	A Nurse's Calling	Enduring	Spirit Fury	Whispers
+Build	Killer	Wraith	A Nurse's Calling	Hex Devour Hope	Pop Goes The Weasel	Sloppy Butcher
 Build	Killer	Wraith	A Nurse's Calling	Hex Haunted Ground	Hex Ruin	Make Your Choice
 Build	Killer	Wraith	A Nurse's Calling	Hex Haunted Ground	Hex Ruin	Monitor & Abuse
 Build	Killer	Wraith	A Nurse's Calling	Hex Haunted Ground	Hex Ruin	Sloppy Butcher
+Build	Killer	Wraith	A Nurse's Calling	Hex No One Escapes Death	Hex Ruin	Sloppy Butcher
+Build	Killer	Wraith	A Nurse's Calling	Hex No One Escapes Death	Hex Ruin	Whispers
+Build	Killer	Wraith	A Nurse's Calling	Hex No One Escapes Death	Monitor & Abuse	Whispers
 Build	Killer	Wraith	A Nurse's Calling	Hex Ruin	Hex Thrill Of The Hunt	Sloppy Butcher
+Build	Killer	Wraith	A Nurse's Calling	Hex Ruin	Infectious Fright	Monitor & Abuse
 Build	Killer	Wraith	A Nurse's Calling	Hex Ruin	Make Your Choice	Monitor & Abuse
 Build	Killer	Wraith	A Nurse's Calling	Hex Ruin	Make Your Choice	Play With Your Food
 Build	Killer	Wraith	A Nurse's Calling	Hex Ruin	Make Your Choice	Sloppy Butcher
@@ -1563,11 +1625,22 @@ Build	Killer	Wraith	A Nurse's Calling	Hex Ruin	Sloppy Butcher	Thanatophobia
 Build	Killer	Wraith	A Nurse's Calling	Hex Ruin	Sloppy Butcher	Thrilling Tremors
 Build	Killer	Wraith	A Nurse's Calling	Hex Ruin	Sloppy Butcher	Whispers
 Build	Killer	Wraith	A Nurse's Calling	Make Your Choice	Monitor & Abuse	Sloppy Butcher
+Build	Killer	Wraith	A Nurse's Calling	Make Your Choice	Monitor & Abuse	Whispers
+Build	Killer	Wraith	A Nurse's Calling	Make Your Choice	Play With Your Food	Pop Goes The Weasel
+Build	Killer	Wraith	A Nurse's Calling	Make Your Choice	Play With Your Food	Sloppy Butcher
+Build	Killer	Wraith	A Nurse's Calling	Make Your Choice	Play With Your Food	Whispers
 Build	Killer	Wraith	A Nurse's Calling	Make Your Choice	Pop Goes The Weasel	Sloppy Butcher
 Build	Killer	Wraith	A Nurse's Calling	Make Your Choice	Save The Best For Last	Sloppy Butcher
 Build	Killer	Wraith	A Nurse's Calling	Make Your Choice	Sloppy Butcher	Thanatophobia
 Build	Killer	Wraith	A Nurse's Calling	Make Your Choice	Sloppy Butcher	Whispers
+Build	Killer	Wraith	A Nurse's Calling	Monitor & Abuse	Pop Goes The Weasel	Sloppy Butcher
+Build	Killer	Wraith	A Nurse's Calling	Monitor & Abuse	Pop Goes The Weasel	Whispers
+Build	Killer	Wraith	A Nurse's Calling	Monitor & Abuse	Sloppy Butcher	Thanatophobia
+Build	Killer	Wraith	A Nurse's Calling	Monitor & Abuse	Sloppy Butcher	Whispers
+Build	Killer	Wraith	A Nurse's Calling	Pop Goes The Weasel	Sloppy Butcher	Surveillance
+Build	Killer	Wraith	A Nurse's Calling	Pop Goes The Weasel	Sloppy Butcher	Thanatophobia
 Build	Killer	Wraith	A Nurse's Calling	Pop Goes The Weasel	Sloppy Butcher	Thrilling Tremors
+Build	Killer	Wraith	A Nurse's Calling	Pop Goes The Weasel	Sloppy Butcher	Whispers
 Build	Killer	Wraith	Bamboozle	Barbecue & Chilli	Brutal Strength	Enduring
 Build	Killer	Wraith	Bamboozle	Barbecue & Chilli	Enduring	Hex Ruin
 Build	Killer	Wraith	Bamboozle	Barbecue & Chilli	Enduring	Make Your Choice
@@ -1609,26 +1682,50 @@ Build	Killer	Wraith	Barbecue & Chilli	Brutal Strength	Enduring	Pop Goes The Weas
 Build	Killer	Wraith	Barbecue & Chilli	Brutal Strength	Hex Ruin	Make Your Choice
 Build	Killer	Wraith	Barbecue & Chilli	Corrupt Intervention	Enduring	Spirit Fury
 Build	Killer	Wraith	Barbecue & Chilli	Discordance	Enduring	Hex Ruin
+Build	Killer	Wraith	Barbecue & Chilli	Discordance	Enduring	Spirit Fury
+Build	Killer	Wraith	Barbecue & Chilli	Discordance	Hex Devour Hope	Pop Goes The Weasel
 Build	Killer	Wraith	Barbecue & Chilli	Discordance	Hex Ruin	Make Your Choice
+Build	Killer	Wraith	Barbecue & Chilli	Discordance	Hex Ruin	Pop Goes The Weasel
 Build	Killer	Wraith	Barbecue & Chilli	Enduring	Hex Haunted Ground	Hex Ruin
 Build	Killer	Wraith	Barbecue & Chilli	Enduring	Hex No One Escapes Death	Hex Ruin
 Build	Killer	Wraith	Barbecue & Chilli	Enduring	Hex Ruin	Make Your Choice
+Build	Killer	Wraith	Barbecue & Chilli	Enduring	Hex Ruin	Pop Goes The Weasel
 Build	Killer	Wraith	Barbecue & Chilli	Enduring	Hex Ruin	Sloppy Butcher
 Build	Killer	Wraith	Barbecue & Chilli	Enduring	Hex Ruin	Spirit Fury
 Build	Killer	Wraith	Barbecue & Chilli	Enduring	Hex Ruin	Whispers
 Build	Killer	Wraith	Barbecue & Chilli	Enduring	Make Your Choice	Pop Goes The Weasel
 Build	Killer	Wraith	Barbecue & Chilli	Enduring	Make Your Choice	Spirit Fury
 Build	Killer	Wraith	Barbecue & Chilli	Enduring	Pop Goes The Weasel	Spirit Fury
+Build	Killer	Wraith	Barbecue & Chilli	Enduring	Spirit Fury	Whispers
 Build	Killer	Wraith	Barbecue & Chilli	Hex Devour Hope	Hex Haunted Ground	Hex Ruin
 Build	Killer	Wraith	Barbecue & Chilli	Hex Devour Hope	Hex Haunted Ground	Pop Goes The Weasel
+Build	Killer	Wraith	Barbecue & Chilli	Hex Devour Hope	Pop Goes The Weasel	Surveillance
+Build	Killer	Wraith	Barbecue & Chilli	Hex Devour Hope	Pop Goes The Weasel	Whispers
 Build	Killer	Wraith	Barbecue & Chilli	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The Hunt
 Build	Killer	Wraith	Barbecue & Chilli	Hex Haunted Ground	Hex Ruin	Make Your Choice
+Build	Killer	Wraith	Barbecue & Chilli	Hex Haunted Ground	Hex Ruin	Pop Goes The Weasel
+Build	Killer	Wraith	Barbecue & Chilli	Hex No One Escapes Death	Hex Ruin	Whispers
 Build	Killer	Wraith	Barbecue & Chilli	Hex Ruin	Make Your Choice	Play With Your Food
+Build	Killer	Wraith	Barbecue & Chilli	Hex Ruin	Make Your Choice	Pop Goes The Weasel
+Build	Killer	Wraith	Barbecue & Chilli	Hex Ruin	Make Your Choice	Whispers
+Build	Killer	Wraith	Barbecue & Chilli	Hex Ruin	Monitor & Abuse	Whispers
+Build	Killer	Wraith	Barbecue & Chilli	Hex Ruin	Pop Goes The Weasel	Surveillance
+Build	Killer	Wraith	Barbecue & Chilli	Hex Ruin	Pop Goes The Weasel	Whispers
+Build	Killer	Wraith	Barbecue & Chilli	Make Your Choice	Play With Your Food	Pop Goes The Weasel
+Build	Killer	Wraith	Barbecue & Chilli	Make Your Choice	Play With Your Food	Whispers
+Build	Killer	Wraith	Barbecue & Chilli	Make Your Choice	Pop Goes The Weasel	Surveillance
+Build	Killer	Wraith	Barbecue & Chilli	Make Your Choice	Pop Goes The Weasel	Whispers
+Build	Killer	Wraith	Barbecue & Chilli	Pop Goes The Weasel	Surveillance	Whispers
 Build	Killer	Wraith	Bitter Murmur	Enduring	Hex Ruin	Make Your Choice
+Build	Killer	Wraith	Bitter Murmur	Hex Haunted Ground	Hex No One Escapes Death	Hex Ruin
+Build	Killer	Wraith	Bitter Murmur	Hex No One Escapes Death	Hex Ruin	Make Your Choice
 Build	Killer	Wraith	Bitter Murmur	Hex No One Escapes Death	Hex Ruin	Whispers
+Build	Killer	Wraith	Bitter Murmur	Hex No One Escapes Death	Make Your Choice	Whispers
 Build	Killer	Wraith	Blood Warden	Enduring	Hex No One Escapes Death	Make Your Choice
 Build	Killer	Wraith	Blood Warden	Enduring	Hex No One Escapes Death	Remember Me
+Build	Killer	Wraith	Blood Warden	Hex Haunted Ground	Hex No One Escapes Death	Hex Ruin
 Build	Killer	Wraith	Blood Warden	Hex No One Escapes Death	Hex Ruin	Whispers
+Build	Killer	Wraith	Blood Warden	Hex No One Escapes Death	Make Your Choice	Whispers
 Build	Killer	Wraith	Brutal Strength	Corrupt Intervention	Discordance	Enduring
 Build	Killer	Wraith	Brutal Strength	Corrupt Intervention	Enduring	Hex Ruin
 Build	Killer	Wraith	Brutal Strength	Discordance	Enduring	Hex Ruin
@@ -1684,6 +1781,8 @@ Build	Killer	Wraith	Brutal Strength	Hex Ruin	Pop Goes The Weasel	Thrilling Tremo
 Build	Killer	Wraith	Brutal Strength	Make Your Choice	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Wraith	Corrupt Intervention	Discordance	Enduring	Hex Ruin
 Build	Killer	Wraith	Corrupt Intervention	Discordance	Enduring	Make Your Choice
+Build	Killer	Wraith	Corrupt Intervention	Discordance	Enduring	Spirit Fury
+Build	Killer	Wraith	Corrupt Intervention	Enduring	Hex Ruin	Spirit Fury
 Build	Killer	Wraith	Corrupt Intervention	Enduring	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Wraith	Corrupt Intervention	Enduring	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Wraith	Discordance	Enduring	Hex Haunted Ground	Hex Ruin
@@ -1691,11 +1790,13 @@ Build	Killer	Wraith	Discordance	Enduring	Hex Ruin	Make Your Choice
 Build	Killer	Wraith	Discordance	Enduring	Hex Ruin	Spirit Fury
 Build	Killer	Wraith	Discordance	Enduring	Make Your Choice	Pop Goes The Weasel
 Build	Killer	Wraith	Discordance	Enduring	Make Your Choice	Spirit Fury
+Build	Killer	Wraith	Discordance	Enduring	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Wraith	Discordance	Enduring	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Wraith	Discordance	Hex Haunted Ground	Hex Ruin	Make Your Choice
 Build	Killer	Wraith	Discordance	Hex Ruin	Make Your Choice	Play With Your Food
 Build	Killer	Wraith	Discordance	Hex Ruin	Make Your Choice	Whispers
 Build	Killer	Wraith	Discordance	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Wraith	Discordance	Make Your Choice	Play With Your Food	Pop Goes The Weasel
 Build	Killer	Wraith	Enduring	Hex Devour Hope	Hex Haunted Ground	Hex Ruin
 Build	Killer	Wraith	Enduring	Hex Devour Hope	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Wraith	Enduring	Hex Devour Hope	Pop Goes The Weasel	Thrilling Tremors
@@ -1707,8 +1808,12 @@ Build	Killer	Wraith	Enduring	Hex No One Escapes Death	Hex Ruin	Remember Me
 Build	Killer	Wraith	Enduring	Hex No One Escapes Death	Hex Ruin	Sloppy Butcher
 Build	Killer	Wraith	Enduring	Hex No One Escapes Death	Hex Ruin	Spirit Fury
 Build	Killer	Wraith	Enduring	Hex No One Escapes Death	Hex Ruin	Whispers
+Build	Killer	Wraith	Enduring	Hex No One Escapes Death	Spirit Fury	Whispers
 Build	Killer	Wraith	Enduring	Hex Ruin	Hex Thrill Of The Hunt	Make Your Choice
+Build	Killer	Wraith	Enduring	Hex Ruin	Hex Thrill Of The Hunt	Spirit Fury
+Build	Killer	Wraith	Enduring	Hex Ruin	Infectious Fright	Spirit Fury
 Build	Killer	Wraith	Enduring	Hex Ruin	Lightborn	Make Your Choice
+Build	Killer	Wraith	Enduring	Hex Ruin	Lightborn	Spirit Fury
 Build	Killer	Wraith	Enduring	Hex Ruin	Make Your Choice	Monitor & Abuse
 Build	Killer	Wraith	Enduring	Hex Ruin	Make Your Choice	Play With Your Food
 Build	Killer	Wraith	Enduring	Hex Ruin	Make Your Choice	Pop Goes The Weasel
@@ -1719,11 +1824,15 @@ Build	Killer	Wraith	Enduring	Hex Ruin	Make Your Choice	Surveillance
 Build	Killer	Wraith	Enduring	Hex Ruin	Make Your Choice	Territorial Imperative
 Build	Killer	Wraith	Enduring	Hex Ruin	Make Your Choice	Whispers
 Build	Killer	Wraith	Enduring	Hex Ruin	Monitor & Abuse	Spirit Fury
+Build	Killer	Wraith	Enduring	Hex Ruin	Play With Your Food	Spirit Fury
 Build	Killer	Wraith	Enduring	Hex Ruin	Pop Goes The Weasel	Sloppy Butcher
 Build	Killer	Wraith	Enduring	Hex Ruin	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Wraith	Enduring	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Wraith	Enduring	Hex Ruin	Save The Best For Last	Spirit Fury
 Build	Killer	Wraith	Enduring	Hex Ruin	Sloppy Butcher	Spirit Fury
+Build	Killer	Wraith	Enduring	Hex Ruin	Spirit Fury	Stridor
+Build	Killer	Wraith	Enduring	Hex Ruin	Spirit Fury	Surveillance
+Build	Killer	Wraith	Enduring	Hex Ruin	Spirit Fury	Thrilling Tremors
 Build	Killer	Wraith	Enduring	Hex Ruin	Spirit Fury	Whispers
 Build	Killer	Wraith	Enduring	Make Your Choice	Play With Your Food	Pop Goes The Weasel
 Build	Killer	Wraith	Enduring	Make Your Choice	Play With Your Food	Spirit Fury
@@ -1731,23 +1840,45 @@ Build	Killer	Wraith	Enduring	Make Your Choice	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Wraith	Enduring	Make Your Choice	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Wraith	Enduring	Make Your Choice	Pop Goes The Weasel	Whispers
 Build	Killer	Wraith	Enduring	Make Your Choice	Spirit Fury	Whispers
+Build	Killer	Wraith	Enduring	Monitor & Abuse	Spirit Fury	Whispers
+Build	Killer	Wraith	Enduring	Pop Goes The Weasel	Spirit Fury	Surveillance
 Build	Killer	Wraith	Enduring	Pop Goes The Weasel	Spirit Fury	Thrilling Tremors
+Build	Killer	Wraith	Enduring	Pop Goes The Weasel	Spirit Fury	Whispers
 Build	Killer	Wraith	Hex Devour Hope	Hex Haunted Ground	Hex Huntress Lullaby	Hex Thrill Of The Hunt
 Build	Killer	Wraith	Hex Devour Hope	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The Hunt
 Build	Killer	Wraith	Hex Devour Hope	Hex Haunted Ground	Hex Ruin	Pop Goes The Weasel
 Build	Killer	Wraith	Hex Devour Hope	Hex Haunted Ground	Hex Thrill Of The Hunt	Pop Goes The Weasel
 Build	Killer	Wraith	Hex Devour Hope	Hex Haunted Ground	Make Your Choice	Pop Goes The Weasel
 Build	Killer	Wraith	Hex Haunted Ground	Hex No One Escapes Death	Hex Ruin	Hex Thrill Of The Hunt
+Build	Killer	Wraith	Hex Haunted Ground	Hex No One Escapes Death	Hex Ruin	Whispers
 Build	Killer	Wraith	Hex Haunted Ground	Hex Ruin	Hex The Third Seal	Hex Thrill Of The Hunt
 Build	Killer	Wraith	Hex Haunted Ground	Hex Ruin	Hex The Third Seal	Make Your Choice
 Build	Killer	Wraith	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The Hunt	Make Your Choice
 Build	Killer	Wraith	Hex Haunted Ground	Hex Ruin	Make Your Choice	Play With Your Food
 Build	Killer	Wraith	Hex Haunted Ground	Hex Ruin	Make Your Choice	Pop Goes The Weasel
+Build	Killer	Wraith	Hex Haunted Ground	Hex Ruin	Make Your Choice	Whispers
+Build	Killer	Wraith	Hex Haunted Ground	Hex Ruin	Monitor & Abuse	Whispers
 Build	Killer	Wraith	Hex Haunted Ground	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Wraith	Hex No One Escapes Death	Hex Ruin	Make Your Choice	Play With Your Food
 Build	Killer	Wraith	Hex No One Escapes Death	Hex Ruin	Make Your Choice	Whispers
+Build	Killer	Wraith	Hex No One Escapes Death	Hex Ruin	Monitor & Abuse	Whispers
+Build	Killer	Wraith	Hex No One Escapes Death	Make Your Choice	Play With Your Food	Whispers
 Build	Killer	Wraith	Hex No One Escapes Death	Make Your Choice	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Wraith	Hex Ruin	Make Your Choice	Monitor & Abuse	Play With Your Food
+Build	Killer	Wraith	Hex Ruin	Make Your Choice	Monitor & Abuse	Whispers
+Build	Killer	Wraith	Hex Ruin	Make Your Choice	Play With Your Food	Pop Goes The Weasel
+Build	Killer	Wraith	Hex Ruin	Make Your Choice	Play With Your Food	Save The Best For Last
+Build	Killer	Wraith	Hex Ruin	Make Your Choice	Play With Your Food	Surveillance
+Build	Killer	Wraith	Hex Ruin	Make Your Choice	Play With Your Food	Thrilling Tremors
 Build	Killer	Wraith	Hex Ruin	Make Your Choice	Play With Your Food	Whispers
+Build	Killer	Wraith	Hex Ruin	Make Your Choice	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Wraith	Hex Ruin	Pop Goes The Weasel	Save The Best For Last	Thrilling Tremors
+Build	Killer	Wraith	Hex Ruin	Pop Goes The Weasel	Surveillance	Thrilling Tremors
+Build	Killer	Wraith	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors	Whispers
+Build	Killer	Wraith	Make Your Choice	Monitor & Abuse	Play With Your Food	Whispers
+Build	Killer	Wraith	Make Your Choice	Play With Your Food	Pop Goes The Weasel	Surveillance
+Build	Killer	Wraith	Make Your Choice	Play With Your Food	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Wraith	Make Your Choice	Play With Your Food	Pop Goes The Weasel	Whispers
 Build	Killer	Wraith	Make Your Choice	Pop Goes The Weasel	Save The Best For Last	Thrilling Tremors
 Build	Killer	Wraith	Make Your Choice	Pop Goes The Weasel	Sloppy Butcher	Thrilling Tremors
 Build	Killer	Wraith	Make Your Choice	Pop Goes The Weasel	Thrilling Tremors	Whispers
@@ -1878,6 +2009,8 @@ Build	Killer	Hillbilly	Barbecue & Chilli	Hex Ruin	Monitor & Abuse	Whispers
 Build	Killer	Hillbilly	Barbecue & Chilli	Hex Ruin	Pop Goes The Weasel	Whispers
 Build	Killer	Hillbilly	Barbecue & Chilli	Infectious Fright	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Hillbilly	Barbecue & Chilli	Monitor & Abuse	Pop Goes The Weasel	Whispers
+Build	Killer	Hillbilly	Barbecue & Chilli	Pop Goes The Weasel	Surveillance	Whispers
+Build	Killer	Hillbilly	Barbecue & Chilli	Pop Goes The Weasel	Thrilling Tremors	Whispers
 Build	Killer	Hillbilly	Brutal Strength	Discordance	Enduring	Pop Goes The Weasel
 Build	Killer	Hillbilly	Brutal Strength	Enduring	Hex Ruin	Pop Goes The Weasel
 Build	Killer	Hillbilly	Brutal Strength	Enduring	Pop Goes The Weasel	Spirit Fury
@@ -1902,6 +2035,7 @@ Build	Killer	Hillbilly	Enduring	Hex Ruin	Spirit Fury	Whispers
 Build	Killer	Hillbilly	Enduring	Infectious Fright	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Hillbilly	Enduring	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Hillbilly	Enduring	Monitor & Abuse	Spirit Fury	Whispers
+Build	Killer	Hillbilly	Enduring	Pop Goes The Weasel	Spirit Fury	Surveillance
 Build	Killer	Hillbilly	Enduring	Pop Goes The Weasel	Spirit Fury	Thrilling Tremors
 Build	Killer	Hillbilly	Enduring	Pop Goes The Weasel	Spirit Fury	Whispers
 Build	Killer	Hillbilly	Enduring	Pop Goes The Weasel	Surveillance	Thrilling Tremors
@@ -1917,6 +2051,9 @@ Build	Killer	Hillbilly	Hex Haunted Ground	Hex Ruin	Hex The Third Seal	Hex Thrill
 Build	Killer	Hillbilly	Hex Huntress Lullaby	Hex Ruin	Hex Thrill Of The Hunt	Whispers
 Build	Killer	Hillbilly	Hex Ruin	Hex The Third Seal	Hex Thrill Of The Hunt	Pop Goes The Weasel
 Build	Killer	Hillbilly	Hex Ruin	Hex Thrill Of The Hunt	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Hillbilly	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors	Whispers
+Build	Killer	Hillbilly	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors	Whispers
+Build	Killer	Hillbilly	Pop Goes The Weasel	Surveillance	Thrilling Tremors	Whispers
 Perkless	Killer	Hillbilly	Undefined	Undefined	Undefined	Undefined
 Troll	Killer	Hillbilly	Hex Devour Hope	Hex Haunted Ground	Hex No One Escapes Death	Make Your Choice
 ################################# Killer - Nurse Sally #################################
@@ -2302,6 +2439,7 @@ Build	Killer	Nurse Sally	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The Hunt	Thri
 Build	Killer	Nurse Sally	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The Hunt	Whispers
 Build	Killer	Nurse Sally	Hex Haunted Ground	Hex Ruin	Make Your Choice	Whispers
 Build	Killer	Nurse Sally	Hex Haunted Ground	Hex Ruin	Pop Goes The Weasel	Shadowborn
+Build	Killer	Nurse Sally	Hex Haunted Ground	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Nurse Sally	Hex Haunted Ground	Hex Ruin	Pop Goes The Weasel	Whispers
 Build	Killer	Nurse Sally	Hex Haunted Ground	Hex Ruin	Sloppy Butcher	Whispers
 Build	Killer	Nurse Sally	Hex Haunted Ground	Hex The Third Seal	Hex Thrill Of The Hunt	Whispers
@@ -2350,6 +2488,7 @@ Build	Killer	Myers	A Nurse's Calling	Barbecue & Chilli	Enduring	Monitor & Abuse
 Build	Killer	Myers	A Nurse's Calling	Barbecue & Chilli	Enduring	Sloppy Butcher
 Build	Killer	Myers	A Nurse's Calling	Barbecue & Chilli	Enduring	Spirit Fury
 Build	Killer	Myers	A Nurse's Calling	Barbecue & Chilli	Hex Ruin	Monitor & Abuse
+Build	Killer	Myers	A Nurse's Calling	Barbecue & Chilli	Hex Ruin	Sloppy Butcher
 Build	Killer	Myers	A Nurse's Calling	Barbecue & Chilli	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Myers	A Nurse's Calling	Barbecue & Chilli	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Myers	A Nurse's Calling	Barbecue & Chilli	Pop Goes The Weasel	Sloppy Butcher
@@ -2357,8 +2496,10 @@ Build	Killer	Myers	A Nurse's Calling	Brutal Strength	Enduring	Hex Ruin
 Build	Killer	Myers	A Nurse's Calling	Brutal Strength	Enduring	Monitor & Abuse
 Build	Killer	Myers	A Nurse's Calling	Brutal Strength	Enduring	Pop Goes The Weasel
 Build	Killer	Myers	A Nurse's Calling	Corrupt Intervention	Discordance	Monitor & Abuse
+Build	Killer	Myers	A Nurse's Calling	Corrupt Intervention	Discordance	Sloppy Butcher
 Build	Killer	Myers	A Nurse's Calling	Corrupt Intervention	Enduring	Monitor & Abuse
 Build	Killer	Myers	A Nurse's Calling	Corrupt Intervention	Enduring	Sloppy Butcher
+Build	Killer	Myers	A Nurse's Calling	Corrupt Intervention	Enduring	Spirit Fury
 Build	Killer	Myers	A Nurse's Calling	Corrupt Intervention	Hex Ruin	Monitor & Abuse
 Build	Killer	Myers	A Nurse's Calling	Corrupt Intervention	Hex Ruin	Sloppy Butcher
 Build	Killer	Myers	A Nurse's Calling	Corrupt Intervention	Monitor & Abuse	Pop Goes The Weasel
@@ -2402,6 +2543,7 @@ Build	Killer	Myers	A Nurse's Calling	Enduring	Sloppy Butcher	Whispers
 Build	Killer	Myers	A Nurse's Calling	Hex Devour Hope	Hex Thrill Of The Hunt	Monitor & Abuse
 Build	Killer	Myers	A Nurse's Calling	Hex Devour Hope	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Myers	A Nurse's Calling	Hex Devour Hope	Monitor & Abuse	Sloppy Butcher
+Build	Killer	Myers	A Nurse's Calling	Hex Haunted Ground	Hex Ruin	Monitor & Abuse
 Build	Killer	Myers	A Nurse's Calling	Hex Haunted Ground	Hex Ruin	Sloppy Butcher
 Build	Killer	Myers	A Nurse's Calling	Hex Ruin	Hex Thrill Of The Hunt	Monitor & Abuse
 Build	Killer	Myers	A Nurse's Calling	Hex Ruin	Infectious Fright	Monitor & Abuse
@@ -2422,6 +2564,7 @@ Build	Killer	Myers	A Nurse's Calling	Hex Ruin	Sloppy Butcher	Thrilling Tremors
 Build	Killer	Myers	A Nurse's Calling	Hex Ruin	Sloppy Butcher	Tinkerer
 Build	Killer	Myers	A Nurse's Calling	Hex Ruin	Sloppy Butcher	Whispers
 Build	Killer	Myers	A Nurse's Calling	Infectious Fright	Monitor & Abuse	Pop Goes The Weasel
+Build	Killer	Myers	A Nurse's Calling	Infectious Fright	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Myers	A Nurse's Calling	Monitor & Abuse	Play With Your Food	Sloppy Butcher
 Build	Killer	Myers	A Nurse's Calling	Monitor & Abuse	Pop Goes The Weasel	Sloppy Butcher
 Build	Killer	Myers	A Nurse's Calling	Monitor & Abuse	Pop Goes The Weasel	Thanatophobia
@@ -2452,6 +2595,7 @@ Build	Killer	Myers	Bamboozle	Corrupt Intervention	Enduring	Pop Goes The Weasel
 Build	Killer	Myers	Bamboozle	Corrupt Intervention	Enduring	Spirit Fury
 Build	Killer	Myers	Bamboozle	Corrupt Intervention	Enduring	Whispers
 Build	Killer	Myers	Bamboozle	Corrupt Intervention	Hex Ruin	Monitor & Abuse
+Build	Killer	Myers	Bamboozle	Corrupt Intervention	Monitor & Abuse	Whispers
 Build	Killer	Myers	Bamboozle	Dark Devotion	Enduring	Monitor & Abuse
 Build	Killer	Myers	Bamboozle	Deerstalker	Enduring	Hex Ruin
 Build	Killer	Myers	Bamboozle	Deerstalker	Enduring	Monitor & Abuse
@@ -2500,6 +2644,7 @@ Build	Killer	Myers	Barbecue & Chilli	Brutal Strength	Enduring	Monitor & Abuse
 Build	Killer	Myers	Barbecue & Chilli	Brutal Strength	Enduring	Spirit Fury
 Build	Killer	Myers	Barbecue & Chilli	Brutal Strength	Enduring	Whispers
 Build	Killer	Myers	Barbecue & Chilli	Corrupt Intervention	Enduring	Monitor & Abuse
+Build	Killer	Myers	Barbecue & Chilli	Corrupt Intervention	Enduring	Spirit Fury
 Build	Killer	Myers	Barbecue & Chilli	Corrupt Intervention	Monitor & Abuse	Whispers
 Build	Killer	Myers	Barbecue & Chilli	Enduring	Hex Ruin	Monitor & Abuse
 Build	Killer	Myers	Barbecue & Chilli	Enduring	Hex Ruin	Spirit Fury
@@ -2516,6 +2661,7 @@ Build	Killer	Myers	Barbecue & Chilli	Hex Haunted Ground	Hex Ruin	Monitor & Abuse
 Build	Killer	Myers	Barbecue & Chilli	Hex Ruin	Hex Thrill Of The Hunt	Monitor & Abuse
 Build	Killer	Myers	Barbecue & Chilli	Hex Ruin	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Myers	Barbecue & Chilli	Hex Ruin	Monitor & Abuse	Whispers
+Build	Killer	Myers	Barbecue & Chilli	Monitor & Abuse	Pop Goes The Weasel	Whispers
 Build	Killer	Myers	Brutal Strength	Corrupt Intervention	Enduring	Monitor & Abuse
 Build	Killer	Myers	Brutal Strength	Enduring	Hex Ruin	Monitor & Abuse
 Build	Killer	Myers	Brutal Strength	Enduring	Hex Ruin	Sloppy Butcher
@@ -2544,6 +2690,7 @@ Build	Killer	Myers	Corrupt Intervention	Enduring	Monitor & Abuse	Spirit Fury
 Build	Killer	Myers	Corrupt Intervention	Enduring	Monitor & Abuse	Whispers
 Build	Killer	Myers	Corrupt Intervention	Enduring	Spirit Fury	Whispers
 Build	Killer	Myers	Corrupt Intervention	Hex Ruin	Monitor & Abuse	Whispers
+Build	Killer	Myers	Corrupt Intervention	Infectious Fright	Monitor & Abuse	Whispers
 Build	Killer	Myers	Corrupt Intervention	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Myers	Corrupt Intervention	Monitor & Abuse	Pop Goes The Weasel	Whispers
 Build	Killer	Myers	Dark Devotion	Enduring	Hex Ruin	Monitor & Abuse
@@ -2563,6 +2710,7 @@ Build	Killer	Myers	Enduring	Hex Haunted Ground	Hex Ruin	Spirit Fury
 Build	Killer	Myers	Enduring	Hex Ruin	Hex The Third Seal	Hex Thrill Of The Hunt
 Build	Killer	Myers	Enduring	Hex Ruin	Hex Thrill Of The Hunt	Monitor & Abuse
 Build	Killer	Myers	Enduring	Hex Ruin	Infectious Fright	Monitor & Abuse
+Build	Killer	Myers	Enduring	Hex Ruin	Infectious Fright	Spirit Fury
 Build	Killer	Myers	Enduring	Hex Ruin	Monitor & Abuse	Play With Your Food
 Build	Killer	Myers	Enduring	Hex Ruin	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Myers	Enduring	Hex Ruin	Monitor & Abuse	Save The Best For Last
@@ -2577,6 +2725,7 @@ Build	Killer	Myers	Enduring	Hex Ruin	Monitor & Abuse	Whispers
 Build	Killer	Myers	Enduring	Hex Ruin	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Myers	Enduring	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Myers	Enduring	Hex Ruin	Sloppy Butcher	Spirit Fury
+Build	Killer	Myers	Enduring	Hex Ruin	Spirit Fury	Surveillance
 Build	Killer	Myers	Enduring	Hex Ruin	Spirit Fury	Thrilling Tremors
 Build	Killer	Myers	Enduring	Hex Ruin	Spirit Fury	Whispers
 Build	Killer	Myers	Enduring	Infectious Fright	Monitor & Abuse	Pop Goes The Weasel
@@ -2601,6 +2750,8 @@ Build	Killer	Myers	Hex Devour Hope	Monitor & Abuse	Pop Goes The Weasel	Whispers
 Build	Killer	Myers	Hex Haunted Ground	Hex Huntress Lullaby	Hex Ruin	Hex Thrill Of The Hunt
 Build	Killer	Myers	Hex Haunted Ground	Hex Ruin	Hex The Third Seal	Hex Thrill Of The Hunt
 Build	Killer	Myers	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The Hunt	Monitor & Abuse
+Build	Killer	Myers	Hex Haunted Ground	Hex Ruin	Infectious Fright	Monitor & Abuse
+Build	Killer	Myers	Hex Haunted Ground	Hex Ruin	Monitor & Abuse	Whispers
 Build	Killer	Myers	Hex Ruin	Hex Thrill Of The Hunt	Infectious Fright	Monitor & Abuse
 Build	Killer	Myers	Hex Ruin	Hex Thrill Of The Hunt	Monitor & Abuse	Whispers
 Build	Killer	Myers	Hex Ruin	Infectious Fright	Monitor & Abuse	Pop Goes The Weasel
@@ -2617,12 +2768,17 @@ Troll	Killer	Myers	Distressing	Hex Haunted Ground	Hex No One Escapes Death	Make 
 ################################# Killer - Hag #################################
 Build	Killer	Hag	Agitation	Enduring	Hex Ruin	Monitor & Abuse
 Build	Killer	Hag	Agitation	Enduring	Hex Ruin	Spirit Fury
+Build	Killer	Hag	Agitation	Hex Haunted Ground	Hex Ruin	Make Your Choice
 Build	Killer	Hag	Agitation	Hex Haunted Ground	Hex Ruin	Monitor & Abuse
 Build	Killer	Hag	Agitation	Hex Ruin	Hex Thrill Of The Hunt	Monitor & Abuse
 Build	Killer	Hag	Agitation	Hex Ruin	Make Your Choice	Monitor & Abuse
+Build	Killer	Hag	Agitation	Hex Ruin	Make Your Choice	Play With Your Food
 Build	Killer	Hag	Agitation	Make Your Choice	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Hag	Agitation	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Hag	A Nurse's Calling	Agitation	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Hag	A Nurse's Calling	Barbecue & Chilli	Hex Ruin	Monitor & Abuse
+Build	Killer	Hag	A Nurse's Calling	Barbecue & Chilli	Hex Ruin	Sloppy Butcher
+Build	Killer	Hag	A Nurse's Calling	Barbecue & Chilli	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Hag	A Nurse's Calling	Barbecue & Chilli	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Hag	A Nurse's Calling	Bloodhound	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Hag	A Nurse's Calling	Corrupt Intervention	Discordance	Monitor & Abuse
@@ -2632,24 +2788,34 @@ Build	Killer	Hag	A Nurse's Calling	Corrupt Intervention	Hex Ruin	Monitor & Abuse
 Build	Killer	Hag	A Nurse's Calling	Corrupt Intervention	Hex Ruin	Sloppy Butcher
 Build	Killer	Hag	A Nurse's Calling	Corrupt Intervention	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Hag	A Nurse's Calling	Corrupt Intervention	Monitor & Abuse	Sloppy Butcher
+Build	Killer	Hag	A Nurse's Calling	Corrupt Intervention	Monitor & Abuse	Whispers
+Build	Killer	Hag	A Nurse's Calling	Corrupt Intervention	Sloppy Butcher	Thanatophobia
 Build	Killer	Hag	A Nurse's Calling	Discordance	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Hag	A Nurse's Calling	Enduring	Hex Ruin	Monitor & Abuse
 Build	Killer	Hag	A Nurse's Calling	Enduring	Hex Ruin	Spirit Fury
 Build	Killer	Hag	A Nurse's Calling	Enduring	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Hag	A Nurse's Calling	Enduring	Monitor & Abuse	Spirit Fury
 Build	Killer	Hag	A Nurse's Calling	Hex Devour Hope	Hex Haunted Ground	Monitor & Abuse
+Build	Killer	Hag	A Nurse's Calling	Hex Devour Hope	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Hag	A Nurse's Calling	Hex Haunted Ground	Hex Ruin	Monitor & Abuse
 Build	Killer	Hag	A Nurse's Calling	Hex Haunted Ground	Hex Ruin	Sloppy Butcher
 Build	Killer	Hag	A Nurse's Calling	Hex Ruin	Make Your Choice	Monitor & Abuse
+Build	Killer	Hag	A Nurse's Calling	Hex Ruin	Make Your Choice	Sloppy Butcher
 Build	Killer	Hag	A Nurse's Calling	Hex Ruin	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Hag	A Nurse's Calling	Hex Ruin	Monitor & Abuse	Sloppy Butcher
+Build	Killer	Hag	A Nurse's Calling	Hex Ruin	Monitor & Abuse	Thanatophobia
+Build	Killer	Hag	A Nurse's Calling	Hex Ruin	Monitor & Abuse	Whispers
 Build	Killer	Hag	A Nurse's Calling	Hex Ruin	Sloppy Butcher	Thanatophobia
+Build	Killer	Hag	A Nurse's Calling	Infectious Fright	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Hag	A Nurse's Calling	Make Your Choice	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Hag	A Nurse's Calling	Monitor & Abuse	Pop Goes The Weasel	Sloppy Butcher
 Build	Killer	Hag	A Nurse's Calling	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Hag	A Nurse's Calling	Monitor & Abuse	Save The Best For Last	Sloppy Butcher
+Build	Killer	Hag	A Nurse's Calling	Monitor & Abuse	Sloppy Butcher	Surveillance
 Build	Killer	Hag	A Nurse's Calling	Monitor & Abuse	Sloppy Butcher	Thanatophobia
 Build	Killer	Hag	A Nurse's Calling	Monitor & Abuse	Sloppy Butcher	Thrilling Tremors
 Build	Killer	Hag	A Nurse's Calling	Monitor & Abuse	Sloppy Butcher	Whispers
+Build	Killer	Hag	A Nurse's Calling	Pop Goes The Weasel	Sloppy Butcher	Thanatophobia
 Build	Killer	Hag	A Nurse's Calling	Pop Goes The Weasel	Sloppy Butcher	Thrilling Tremors
 Build	Killer	Hag	Bamboozle	Brutal Strength	Enduring	Hex Ruin
 Build	Killer	Hag	Bamboozle	Corrupt Intervention	Enduring	Monitor & Abuse
@@ -2662,6 +2828,7 @@ Build	Killer	Hag	Barbecue & Chilli	Corrupt Intervention	Enduring	Monitor & Abuse
 Build	Killer	Hag	Barbecue & Chilli	Corrupt Intervention	Enduring	Spirit Fury
 Build	Killer	Hag	Barbecue & Chilli	Corrupt Intervention	Hex Ruin	Monitor & Abuse
 Build	Killer	Hag	Barbecue & Chilli	Corrupt Intervention	Monitor & Abuse	Pop Goes The Weasel
+Build	Killer	Hag	Barbecue & Chilli	Corrupt Intervention	Monitor & Abuse	Whispers
 Build	Killer	Hag	Barbecue & Chilli	Enduring	Hex Ruin	Monitor & Abuse
 Build	Killer	Hag	Barbecue & Chilli	Enduring	Hex Ruin	Spirit Fury
 Build	Killer	Hag	Barbecue & Chilli	Enduring	Monitor & Abuse	Spirit Fury
@@ -2675,12 +2842,17 @@ Build	Killer	Hag	Barbecue & Chilli	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The
 Build	Killer	Hag	Barbecue & Chilli	Hex Haunted Ground	Hex Ruin	Monitor & Abuse
 Build	Killer	Hag	Barbecue & Chilli	Hex Ruin	Hex Thrill Of The Hunt	Monitor & Abuse
 Build	Killer	Hag	Barbecue & Chilli	Hex Ruin	Make Your Choice	Monitor & Abuse
+Build	Killer	Hag	Barbecue & Chilli	Hex Ruin	Make Your Choice	Play With Your Food
+Build	Killer	Hag	Barbecue & Chilli	Hex Ruin	Make Your Choice	Pop Goes The Weasel
 Build	Killer	Hag	Barbecue & Chilli	Hex Ruin	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Hag	Barbecue & Chilli	Hex Ruin	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Hag	Barbecue & Chilli	Hex Ruin	Monitor & Abuse	Surveillance
 Build	Killer	Hag	Barbecue & Chilli	Hex Ruin	Monitor & Abuse	Whispers
+Build	Killer	Hag	Barbecue & Chilli	Hex Ruin	Pop Goes The Weasel	Surveillance
 Build	Killer	Hag	Barbecue & Chilli	Make Your Choice	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Hag	Barbecue & Chilli	Monitor & Abuse	Pop Goes The Weasel	Sloppy Butcher
+Build	Killer	Hag	Barbecue & Chilli	Monitor & Abuse	Pop Goes The Weasel	Surveillance
+Build	Killer	Hag	Barbecue & Chilli	Monitor & Abuse	Pop Goes The Weasel	Whispers
 Build	Killer	Hag	Brutal Strength	Corrupt Intervention	Enduring	Monitor & Abuse
 Build	Killer	Hag	Brutal Strength	Enduring	Hex Haunted Ground	Hex Ruin
 Build	Killer	Hag	Brutal Strength	Enduring	Hex Ruin	Monitor & Abuse
@@ -2702,16 +2874,21 @@ Build	Killer	Hag	Corrupt Intervention	Enduring	Hex Ruin	Spirit Fury
 Build	Killer	Hag	Corrupt Intervention	Enduring	Make Your Choice	Spirit Fury
 Build	Killer	Hag	Corrupt Intervention	Enduring	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Hag	Corrupt Intervention	Enduring	Monitor & Abuse	Spirit Fury
+Build	Killer	Hag	Corrupt Intervention	Enduring	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Hag	Corrupt Intervention	Enduring	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Hag	Corrupt Intervention	Enduring	Spirit Fury	Whispers
 Build	Killer	Hag	Corrupt Intervention	Hex Devour Hope	Hex Ruin	Hex Thrill Of The Hunt
 Build	Killer	Hag	Corrupt Intervention	Hex Devour Hope	Hex Thrill Of The Hunt	Monitor & Abuse
 Build	Killer	Hag	Corrupt Intervention	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The Hunt
 Build	Killer	Hag	Corrupt Intervention	Hex Haunted Ground	Hex Ruin	Monitor & Abuse
+Build	Killer	Hag	Corrupt Intervention	Hex No One Escapes Death	Monitor & Abuse	Whispers
 Build	Killer	Hag	Corrupt Intervention	Hex Ruin	Hex Thrill Of The Hunt	Monitor & Abuse
 Build	Killer	Hag	Corrupt Intervention	Hex Ruin	Make Your Choice	Monitor & Abuse
+Build	Killer	Hag	Corrupt Intervention	Hex Ruin	Make Your Choice	Play With Your Food
 Build	Killer	Hag	Corrupt Intervention	Hex Ruin	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Hag	Corrupt Intervention	Hex Ruin	Monitor & Abuse	Whispers
 Build	Killer	Hag	Corrupt Intervention	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Hag	Corrupt Intervention	Make Your Choice	Monitor & Abuse	Play With Your Food
 Build	Killer	Hag	Corrupt Intervention	Make Your Choice	Monitor & Abuse	Whispers
 Build	Killer	Hag	Corrupt Intervention	Make Your Choice	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Hag	Corrupt Intervention	Monitor & Abuse	Pop Goes The Weasel	Surveillance
@@ -2749,16 +2926,21 @@ Build	Killer	Hag	Enduring	Hex Ruin	Monitor & Abuse	Surveillance
 Build	Killer	Hag	Enduring	Hex Ruin	Monitor & Abuse	Thrilling Tremors
 Build	Killer	Hag	Enduring	Hex Ruin	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Hag	Enduring	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Hag	Enduring	Hex Ruin	Save The Best For Last	Spirit Fury
+Build	Killer	Hag	Enduring	Hex Ruin	Sloppy Butcher	Spirit Fury
 Build	Killer	Hag	Enduring	Hex Ruin	Spirit Fury	Surveillance
+Build	Killer	Hag	Enduring	Hex Ruin	Spirit Fury	Thrilling Tremors
 Build	Killer	Hag	Enduring	Hex Ruin	Spirit Fury	Whispers
 Build	Killer	Hag	Enduring	Make Your Choice	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Hag	Enduring	Make Your Choice	Monitor & Abuse	Spirit Fury
+Build	Killer	Hag	Enduring	Make Your Choice	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Hag	Enduring	Monitor & Abuse	Pop Goes The Weasel	Sloppy Butcher
 Build	Killer	Hag	Enduring	Monitor & Abuse	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Hag	Enduring	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Hag	Enduring	Monitor & Abuse	Sloppy Butcher	Spirit Fury
 Build	Killer	Hag	Enduring	Monitor & Abuse	Spirit Fury	Thrilling Tremors
 Build	Killer	Hag	Enduring	Monitor & Abuse	Spirit Fury	Whispers
+Build	Killer	Hag	Enduring	Pop Goes The Weasel	Spirit Fury	Surveillance
 Build	Killer	Hag	Enduring	Pop Goes The Weasel	Spirit Fury	Thrilling Tremors
 Build	Killer	Hag	Enduring	Pop Goes The Weasel	Surveillance	Thrilling Tremors
 Build	Killer	Hag	Hex Devour Hope	Hex Haunted Ground	Hex Huntress Lullaby	Hex Thrill Of The Hunt
@@ -2776,7 +2958,9 @@ Build	Killer	Hag	Hex Haunted Ground	Hex Huntress Lullaby	Hex Ruin	Hex Thrill Of 
 Build	Killer	Hag	Hex Haunted Ground	Hex Huntress Lullaby	Hex Ruin	Monitor & Abuse
 Build	Killer	Hag	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The Hunt	Monitor & Abuse
 Build	Killer	Hag	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The Hunt	Pop Goes The Weasel
+Build	Killer	Hag	Hex Haunted Ground	Hex Ruin	Infectious Fright	Monitor & Abuse
 Build	Killer	Hag	Hex Haunted Ground	Hex Ruin	Make Your Choice	Monitor & Abuse
+Build	Killer	Hag	Hex Haunted Ground	Hex Ruin	Make Your Choice	Play With Your Food
 Build	Killer	Hag	Hex Haunted Ground	Hex Ruin	Monitor & Abuse	Surveillance
 Build	Killer	Hag	Hex Haunted Ground	Hex Ruin	Monitor & Abuse	Thrilling Tremors
 Build	Killer	Hag	Hex Haunted Ground	Hex Ruin	Monitor & Abuse	Whispers
@@ -2787,6 +2971,7 @@ Build	Killer	Hag	Hex Haunted Ground	Monitor & Abuse	Pop Goes The Weasel	Thrillin
 Build	Killer	Hag	Hex Huntress Lullaby	Hex Ruin	Hex Thrill Of The Hunt	Monitor & Abuse
 Build	Killer	Hag	Hex No One Escapes Death	Hex Ruin	Make Your Choice	Monitor & Abuse
 Build	Killer	Hag	Hex No One Escapes Death	Hex Ruin	Monitor & Abuse	Sloppy Butcher
+Build	Killer	Hag	Hex No One Escapes Death	Hex Ruin	Monitor & Abuse	Whispers
 Build	Killer	Hag	Hex No One Escapes Death	Make Your Choice	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Hag	Hex No One Escapes Death	Monitor & Abuse	Pop Goes The Weasel	Sloppy Butcher
 Build	Killer	Hag	Hex Ruin	Hex Thrill Of The Hunt	Make Your Choice	Monitor & Abuse
@@ -2794,13 +2979,16 @@ Build	Killer	Hag	Hex Ruin	Hex Thrill Of The Hunt	Monitor & Abuse	Surveillance
 Build	Killer	Hag	Hex Ruin	Hex Thrill Of The Hunt	Monitor & Abuse	Thrilling Tremors
 Build	Killer	Hag	Hex Ruin	Hex Thrill Of The Hunt	Monitor & Abuse	Whispers
 Build	Killer	Hag	Hex Ruin	Hex Thrill Of The Hunt	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Hag	Hex Ruin	Infectious Fright	Monitor & Abuse	Save The Best For Last
 Build	Killer	Hag	Hex Ruin	Make Your Choice	Monitor & Abuse	Play With Your Food
 Build	Killer	Hag	Hex Ruin	Make Your Choice	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Hag	Hex Ruin	Make Your Choice	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Hag	Hex Ruin	Make Your Choice	Monitor & Abuse	Whispers
+Build	Killer	Hag	Hex Ruin	Make Your Choice	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Hag	Hex Ruin	Monitor & Abuse	Overcharge	Surveillance
 Build	Killer	Hag	Hex Ruin	Monitor & Abuse	Pop Goes The Weasel	Surveillance
 Build	Killer	Hag	Hex Ruin	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Hag	Hex Ruin	Monitor & Abuse	Pop Goes The Weasel	Whispers
 Build	Killer	Hag	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Whispers
 Build	Killer	Hag	Hex Ruin	Pop Goes The Weasel	Surveillance	Thrilling Tremors
 Build	Killer	Hag	Infectious Fright	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors
@@ -2814,7 +3002,15 @@ Build	Killer	Hag	Monitor & Abuse	Pop Goes The Weasel	Surveillance	Thrilling Trem
 Build	Killer	Hag	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors	Whispers
 Perkless	Killer	Hag	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Doctor #################################
+Build	Killer	Doctor	Agitation	Enduring	Hex Ruin	Spirit Fury
+Build	Killer	Doctor	A Nurse's Calling	Barbecue & Chilli	Hex Ruin	Monitor & Abuse
+Build	Killer	Doctor	A Nurse's Calling	Barbecue & Chilli	Hex Ruin	Sloppy Butcher
+Build	Killer	Doctor	A Nurse's Calling	Barbecue & Chilli	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Doctor	A Nurse's Calling	Barbecue & Chilli	Monitor & Abuse	Sloppy Butcher
+Build	Killer	Doctor	A Nurse's Calling	Barbecue & Chilli	Pop Goes The Weasel	Sloppy Butcher
+Build	Killer	Doctor	A Nurse's Calling	Barbecue & Chilli	Sloppy Butcher	Thanatophobia
+Build	Killer	Doctor	A Nurse's Calling	Bloodhound	Hex Ruin	Sloppy Butcher
+Build	Killer	Doctor	A Nurse's Calling	Bloodhound	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Doctor	A Nurse's Calling	Brutal Strength	Enduring	Hex Ruin
 Build	Killer	Doctor	A Nurse's Calling	Brutal Strength	Enduring	Pop Goes The Weasel
 Build	Killer	Doctor	A Nurse's Calling	Brutal Strength	Enduring	Sloppy Butcher
@@ -2823,15 +3019,48 @@ Build	Killer	Doctor	A Nurse's Calling	Brutal Strength	Hex Ruin	Sloppy Butcher
 Build	Killer	Doctor	A Nurse's Calling	Brutal Strength	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Doctor	A Nurse's Calling	Brutal Strength	Pop Goes The Weasel	Sloppy Butcher
 Build	Killer	Doctor	A Nurse's Calling	Brutal Strength	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Doctor	A Nurse's Calling	Corrupt Intervention	Hex Ruin	Monitor & Abuse
+Build	Killer	Doctor	A Nurse's Calling	Corrupt Intervention	Monitor & Abuse	Sloppy Butcher
+Build	Killer	Doctor	A Nurse's Calling	Corrupt Intervention	Sloppy Butcher	Thanatophobia
+Build	Killer	Doctor	A Nurse's Calling	Coulrophobia	Hex Ruin	Monitor & Abuse
+Build	Killer	Doctor	A Nurse's Calling	Coulrophobia	Hex Ruin	Sloppy Butcher
+Build	Killer	Doctor	A Nurse's Calling	Coulrophobia	Monitor & Abuse	Sloppy Butcher
+Build	Killer	Doctor	A Nurse's Calling	Discordance	Hex Ruin	Monitor & Abuse
+Build	Killer	Doctor	A Nurse's Calling	Discordance	Monitor & Abuse	Sloppy Butcher
+Build	Killer	Doctor	A Nurse's Calling	Distressing	Hex Ruin	Sloppy Butcher
+Build	Killer	Doctor	A Nurse's Calling	Enduring	Hex Ruin	Monitor & Abuse
 Build	Killer	Doctor	A Nurse's Calling	Enduring	Hex Ruin	Sloppy Butcher
 Build	Killer	Doctor	A Nurse's Calling	Enduring	Hex Ruin	Spirit Fury
+Build	Killer	Doctor	A Nurse's Calling	Enduring	Monitor & Abuse	Sloppy Butcher
+Build	Killer	Doctor	A Nurse's Calling	Enduring	Monitor & Abuse	Spirit Fury
+Build	Killer	Doctor	A Nurse's Calling	Hex Devour Hope	Monitor & Abuse	Sloppy Butcher
+Build	Killer	Doctor	A Nurse's Calling	Hex Haunted Ground	Hex Ruin	Monitor & Abuse
+Build	Killer	Doctor	A Nurse's Calling	Hex Haunted Ground	Hex Ruin	Sloppy Butcher
 Build	Killer	Doctor	A Nurse's Calling	Hex Huntress Lullaby	Hex Ruin	Hex Thrill Of The Hunt
+Build	Killer	Doctor	A Nurse's Calling	Hex Huntress Lullaby	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Doctor	A Nurse's Calling	Hex Ruin	Hex Thrill Of The Hunt	Sloppy Butcher
+Build	Killer	Doctor	A Nurse's Calling	Hex Ruin	Infectious Fright	Monitor & Abuse
+Build	Killer	Doctor	A Nurse's Calling	Hex Ruin	Make Your Choice	Monitor & Abuse
+Build	Killer	Doctor	A Nurse's Calling	Hex Ruin	Monitor & Abuse	Pop Goes The Weasel
+Build	Killer	Doctor	A Nurse's Calling	Hex Ruin	Monitor & Abuse	Save The Best For Last
 Build	Killer	Doctor	A Nurse's Calling	Hex Ruin	Monitor & Abuse	Sloppy Butcher
+Build	Killer	Doctor	A Nurse's Calling	Hex Ruin	Monitor & Abuse	Thanatophobia
+Build	Killer	Doctor	A Nurse's Calling	Hex Ruin	Monitor & Abuse	Whispers
+Build	Killer	Doctor	A Nurse's Calling	Hex Ruin	Pop Goes The Weasel	Sloppy Butcher
 Build	Killer	Doctor	A Nurse's Calling	Hex Ruin	Sloppy Butcher	Thanatophobia
+Build	Killer	Doctor	A Nurse's Calling	Infectious Fright	Monitor & Abuse	Sloppy Butcher
+Build	Killer	Doctor	A Nurse's Calling	Iron Maiden	Monitor & Abuse	Sloppy Butcher
+Build	Killer	Doctor	A Nurse's Calling	Make Your Choice	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Doctor	A Nurse's Calling	Make Your Choice	Sloppy Butcher	Thanatophobia
+Build	Killer	Doctor	A Nurse's Calling	Monitor & Abuse	Overcharge	Sloppy Butcher
 Build	Killer	Doctor	A Nurse's Calling	Monitor & Abuse	Pop Goes The Weasel	Sloppy Butcher
+Build	Killer	Doctor	A Nurse's Calling	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Doctor	A Nurse's Calling	Monitor & Abuse	Save The Best For Last	Sloppy Butcher
 Build	Killer	Doctor	A Nurse's Calling	Monitor & Abuse	Sloppy Butcher	Thanatophobia
+Build	Killer	Doctor	A Nurse's Calling	Monitor & Abuse	Sloppy Butcher	Thrilling Tremors
+Build	Killer	Doctor	A Nurse's Calling	Monitor & Abuse	Sloppy Butcher	Unnerving Presence
+Build	Killer	Doctor	A Nurse's Calling	Monitor & Abuse	Sloppy Butcher	Whispers
+Build	Killer	Doctor	A Nurse's Calling	Pop Goes The Weasel	Sloppy Butcher	Thanatophobia
 Build	Killer	Doctor	Bamboozle	Brutal Strength	Enduring	Hex Ruin
 Build	Killer	Doctor	Bamboozle	Brutal Strength	Enduring	Make Your Choice
 Build	Killer	Doctor	Bamboozle	Brutal Strength	Enduring	Pop Goes The Weasel
@@ -2844,16 +3073,30 @@ Build	Killer	Doctor	Barbecue & Chilli	Brutal Strength	Enduring	Pop Goes The Weas
 Build	Killer	Doctor	Barbecue & Chilli	Brutal Strength	Enduring	Spirit Fury
 Build	Killer	Doctor	Barbecue & Chilli	Brutal Strength	Hex Ruin	Hex Thrill Of The Hunt
 Build	Killer	Doctor	Barbecue & Chilli	Brutal Strength	Hex Ruin	Pop Goes The Weasel
+Build	Killer	Doctor	Barbecue & Chilli	Brutal Strength	Monitor & Abuse	Pop Goes The Weasel
+Build	Killer	Doctor	Barbecue & Chilli	Corrupt Intervention	Enduring	Spirit Fury
+Build	Killer	Doctor	Barbecue & Chilli	Distressing	Hex Ruin	Pop Goes The Weasel
 Build	Killer	Doctor	Barbecue & Chilli	Distressing	Hex Ruin	Sloppy Butcher
 Build	Killer	Doctor	Barbecue & Chilli	Distressing	Hex Ruin	Unnerving Presence
+Build	Killer	Doctor	Barbecue & Chilli	Enduring	Hex Ruin	Pop Goes The Weasel
 Build	Killer	Doctor	Barbecue & Chilli	Enduring	Hex Ruin	Spirit Fury
+Build	Killer	Doctor	Barbecue & Chilli	Enduring	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Doctor	Barbecue & Chilli	Enduring	Monitor & Abuse	Spirit Fury
 Build	Killer	Doctor	Barbecue & Chilli	Enduring	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Doctor	Barbecue & Chilli	Hex Devour Hope	Hex Thrill Of The Hunt	Pop Goes The Weasel
 Build	Killer	Doctor	Barbecue & Chilli	Hex Devour Hope	Monitor & Abuse	Pop Goes The Weasel
+Build	Killer	Doctor	Barbecue & Chilli	Hex Ruin	Infectious Fright	Monitor & Abuse
+Build	Killer	Doctor	Barbecue & Chilli	Hex Ruin	Iron Maiden	Pop Goes The Weasel
 Build	Killer	Doctor	Barbecue & Chilli	Hex Ruin	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Doctor	Barbecue & Chilli	Hex Ruin	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Doctor	Barbecue & Chilli	Hex Ruin	Monitor & Abuse	Whispers
+Build	Killer	Doctor	Barbecue & Chilli	Hex Ruin	Overcharge	Pop Goes The Weasel
+Build	Killer	Doctor	Barbecue & Chilli	Hex Ruin	Pop Goes The Weasel	Surveillance
+Build	Killer	Doctor	Barbecue & Chilli	Iron Maiden	Monitor & Abuse	Pop Goes The Weasel
+Build	Killer	Doctor	Barbecue & Chilli	Monitor & Abuse	Overcharge	Pop Goes The Weasel
+Build	Killer	Doctor	Barbecue & Chilli	Monitor & Abuse	Pop Goes The Weasel	Surveillance
+Build	Killer	Doctor	Bitter Murmur	Blood Warden	Hex No One Escapes Death	Hex Ruin
+Build	Killer	Doctor	Blood Warden	Hex No One Escapes Death	Hex Ruin	Remember Me
 Build	Killer	Doctor	Brutal Strength	Corrupt Intervention	Enduring	Pop Goes The Weasel
 Build	Killer	Doctor	Brutal Strength	Corrupt Intervention	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Doctor	Brutal Strength	Discordance	Enduring	Hex Ruin
@@ -2906,34 +3149,58 @@ Build	Killer	Doctor	Brutal Strength	Monitor & Abuse	Pop Goes The Weasel	Thrillin
 Build	Killer	Doctor	Brutal Strength	Overcharge	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Doctor	Brutal Strength	Pop Goes The Weasel	Surveillance	Thrilling Tremors
 Build	Killer	Doctor	Brutal Strength	Pop Goes The Weasel	Thrilling Tremors	Unnerving Presence
+Build	Killer	Doctor	Corrupt Intervention	Discordance	Enduring	Spirit Fury
+Build	Killer	Doctor	Corrupt Intervention	Discordance	Hex Ruin	Monitor & Abuse
+Build	Killer	Doctor	Corrupt Intervention	Enduring	Hex Ruin	Spirit Fury
+Build	Killer	Doctor	Corrupt Intervention	Enduring	Monitor & Abuse	Spirit Fury
 Build	Killer	Doctor	Corrupt Intervention	Enduring	Pop Goes The Weasel	Spirit Fury
+Build	Killer	Doctor	Corrupt Intervention	Hex Ruin	Monitor & Abuse	Whispers
+Build	Killer	Doctor	Coulrophobia	Enduring	Hex Ruin	Spirit Fury
 Build	Killer	Doctor	Discordance	Enduring	Hex Ruin	Spirit Fury
+Build	Killer	Doctor	Discordance	Enduring	Monitor & Abuse	Spirit Fury
 Build	Killer	Doctor	Discordance	Hex Ruin	Overcharge	Unnerving Presence
 Build	Killer	Doctor	Distressing	Enduring	Hex Ruin	Sloppy Butcher
 Build	Killer	Doctor	Distressing	Enduring	Hex Ruin	Spirit Fury
 Build	Killer	Doctor	Distressing	Enduring	Hex Ruin	Unnerving Presence
+Build	Killer	Doctor	Distressing	Enduring	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Doctor	Distressing	Hex No One Escapes Death	Hex Ruin	Sloppy Butcher
 Build	Killer	Doctor	Distressing	Hex No One Escapes Death	Hex Ruin	Unnerving Presence
 Build	Killer	Doctor	Distressing	Hex Ruin	Overcharge	Unnerving Presence
 Build	Killer	Doctor	Distressing	Hex Ruin	Pop Goes The Weasel	Sloppy Butcher
+Build	Killer	Doctor	Distressing	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Doctor	Distressing	Hex Ruin	Pop Goes The Weasel	Unnerving Presence
 Build	Killer	Doctor	Distressing	Hex Ruin	Sloppy Butcher	Unnerving Presence
 Build	Killer	Doctor	Enduring	Hex Devour Hope	Hex Ruin	Hex Thrill Of The Hunt
+Build	Killer	Doctor	Enduring	Hex Devour Hope	Monitor & Abuse	Spirit Fury
 Build	Killer	Doctor	Enduring	Hex Devour Hope	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Doctor	Enduring	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The Hunt
 Build	Killer	Doctor	Enduring	Hex Haunted Ground	Hex Ruin	Spirit Fury
+Build	Killer	Doctor	Enduring	Hex Huntress Lullaby	Hex Ruin	Spirit Fury
+Build	Killer	Doctor	Enduring	Hex No One Escapes Death	Hex Ruin	Spirit Fury
 Build	Killer	Doctor	Enduring	Hex Ruin	Hex The Third Seal	Hex Thrill Of The Hunt
 Build	Killer	Doctor	Enduring	Hex Ruin	Hex Thrill Of The Hunt	Spirit Fury
+Build	Killer	Doctor	Enduring	Hex Ruin	Infectious Fright	Spirit Fury
+Build	Killer	Doctor	Enduring	Hex Ruin	Iron Maiden	Spirit Fury
 Build	Killer	Doctor	Enduring	Hex Ruin	Make Your Choice	Monitor & Abuse
 Build	Killer	Doctor	Enduring	Hex Ruin	Make Your Choice	Spirit Fury
 Build	Killer	Doctor	Enduring	Hex Ruin	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Doctor	Enduring	Hex Ruin	Monitor & Abuse	Spirit Fury
+Build	Killer	Doctor	Enduring	Hex Ruin	Overcharge	Spirit Fury
 Build	Killer	Doctor	Enduring	Hex Ruin	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Doctor	Enduring	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Doctor	Enduring	Hex Ruin	Save The Best For Last	Spirit Fury
 Build	Killer	Doctor	Enduring	Hex Ruin	Sloppy Butcher	Spirit Fury
+Build	Killer	Doctor	Enduring	Hex Ruin	Spirit Fury	Stridor
+Build	Killer	Doctor	Enduring	Hex Ruin	Spirit Fury	Surveillance
 Build	Killer	Doctor	Enduring	Hex Ruin	Spirit Fury	Thrilling Tremors
+Build	Killer	Doctor	Enduring	Hex Ruin	Spirit Fury	Unnerving Presence
+Build	Killer	Doctor	Enduring	Hex Ruin	Spirit Fury	Whispers
+Build	Killer	Doctor	Enduring	Infectious Fright	Monitor & Abuse	Spirit Fury
+Build	Killer	Doctor	Enduring	Make Your Choice	Monitor & Abuse	Spirit Fury
 Build	Killer	Doctor	Enduring	Monitor & Abuse	Pop Goes The Weasel	Spirit Fury
+Build	Killer	Doctor	Enduring	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Doctor	Enduring	Monitor & Abuse	Save The Best For Last	Spirit Fury
+Build	Killer	Doctor	Enduring	Monitor & Abuse	Spirit Fury	Whispers
 Build	Killer	Doctor	Enduring	Pop Goes The Weasel	Spirit Fury	Thrilling Tremors
 Build	Killer	Doctor	Hex Devour Hope	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The Hunt
 Build	Killer	Doctor	Hex Devour Hope	Hex Haunted Ground	Hex The Third Seal	Hex Thrill Of The Hunt
@@ -2942,6 +3209,7 @@ Build	Killer	Doctor	Hex Devour Hope	Hex Thrill Of The Hunt	Monitor & Abuse	Pop G
 Build	Killer	Doctor	Hex Devour Hope	Hex Thrill Of The Hunt	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Doctor	Hex Devour Hope	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Doctor	Hex Haunted Ground	Hex Huntress Lullaby	Hex Ruin	Hex Thrill Of The Hunt
+Build	Killer	Doctor	Hex Haunted Ground	Hex Huntress Lullaby	Hex Ruin	Monitor & Abuse
 Build	Killer	Doctor	Hex Haunted Ground	Hex Ruin	Hex The Third Seal	Hex Thrill Of The Hunt
 Build	Killer	Doctor	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The Hunt	Make Your Choice
 Build	Killer	Doctor	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The Hunt	Monitor & Abuse
@@ -2949,8 +3217,11 @@ Build	Killer	Doctor	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The Hunt	Pop Goes 
 Build	Killer	Doctor	Hex Huntress Lullaby	Hex No One Escapes Death	Hex Ruin	Hex Thrill Of The Hunt
 Build	Killer	Doctor	Hex Huntress Lullaby	Hex Ruin	Hex Thrill Of The Hunt	Pop Goes The Weasel
 Build	Killer	Doctor	Hex No One Escapes Death	Hex Ruin	Monitor & Abuse	Sloppy Butcher
+Build	Killer	Doctor	Hex No One Escapes Death	Hex Ruin	Monitor & Abuse	Whispers
 Build	Killer	Doctor	Hex Ruin	Infectious Fright	Monitor & Abuse	Save The Best For Last
+Build	Killer	Doctor	Hex Ruin	Make Your Choice	Monitor & Abuse	Play With Your Food
 Build	Killer	Doctor	Hex Ruin	Make Your Choice	Monitor & Abuse	Sloppy Butcher
+Build	Killer	Doctor	Hex Ruin	Make Your Choice	Monitor & Abuse	Whispers
 Build	Killer	Doctor	Hex Ruin	Make Your Choice	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Doctor	Hex Ruin	Monitor & Abuse	Pop Goes The Weasel	Sloppy Butcher
 Build	Killer	Doctor	Hex Ruin	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors
@@ -3019,6 +3290,7 @@ Build	Killer	Huntress	A Nurse's Calling	Bitter Murmur	Hex Ruin	Sloppy Butcher
 Build	Killer	Huntress	A Nurse's Calling	Bloodhound	Hex Ruin	Sloppy Butcher
 Build	Killer	Huntress	A Nurse's Calling	Corrupt Intervention	Discordance	Hex Ruin
 Build	Killer	Huntress	A Nurse's Calling	Corrupt Intervention	Discordance	Whispers
+Build	Killer	Huntress	A Nurse's Calling	Corrupt Intervention	Enduring	Spirit Fury
 Build	Killer	Huntress	A Nurse's Calling	Corrupt Intervention	Monitor & Abuse	Whispers
 Build	Killer	Huntress	A Nurse's Calling	Deerstalker	Enduring	Hex Ruin
 Build	Killer	Huntress	A Nurse's Calling	Deerstalker	Hex Ruin	Sloppy Butcher
@@ -3037,6 +3309,7 @@ Build	Killer	Huntress	A Nurse's Calling	Discordance	Sloppy Butcher	Whispers
 Build	Killer	Huntress	A Nurse's Calling	Enduring	Hex Ruin	Monitor & Abuse
 Build	Killer	Huntress	A Nurse's Calling	Enduring	Hex Ruin	Spirit Fury
 Build	Killer	Huntress	A Nurse's Calling	Enduring	Hex Ruin	Whispers
+Build	Killer	Huntress	A Nurse's Calling	Enduring	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Huntress	A Nurse's Calling	Enduring	Sloppy Butcher	Thanatophobia
 Build	Killer	Huntress	A Nurse's Calling	Enduring	Sloppy Butcher	Whispers
 Build	Killer	Huntress	A Nurse's Calling	Enduring	Spirit Fury	Whispers
@@ -3082,6 +3355,7 @@ Build	Killer	Huntress	Barbecue & Chilli	Bitter Murmur	Hex No One Escapes Death	H
 Build	Killer	Huntress	Barbecue & Chilli	Bitter Murmur	Hex Ruin	Iron Maiden
 Build	Killer	Huntress	Barbecue & Chilli	Bitter Murmur	Hex Ruin	Whispers
 Build	Killer	Huntress	Barbecue & Chilli	Bitter Murmur	Pop Goes The Weasel	Whispers
+Build	Killer	Huntress	Barbecue & Chilli	Corrupt Intervention	Discordance	Enduring
 Build	Killer	Huntress	Barbecue & Chilli	Corrupt Intervention	Discordance	Hex Ruin
 Build	Killer	Huntress	Barbecue & Chilli	Corrupt Intervention	Discordance	Iron Maiden
 Build	Killer	Huntress	Barbecue & Chilli	Corrupt Intervention	Discordance	Pop Goes The Weasel
@@ -3161,13 +3435,16 @@ Build	Killer	Huntress	Barbecue & Chilli	Iron Maiden	Shadowborn	Whispers
 Build	Killer	Huntress	Barbecue & Chilli	Pop Goes The Weasel	Shadowborn	Whispers
 Build	Killer	Huntress	Barbecue & Chilli	Pop Goes The Weasel	Sloppy Butcher	Whispers
 Build	Killer	Huntress	Barbecue & Chilli	Pop Goes The Weasel	Spies From The Shadows	Whispers
+Build	Killer	Huntress	Bitter Murmur	Enduring	Hex Ruin	Spirit Fury
 Build	Killer	Huntress	Brutal Strength	Enduring	Hex Ruin	Spirit Fury
 Build	Killer	Huntress	Corrupt Intervention	Discordance	Enduring	Spirit Fury
 Build	Killer	Huntress	Corrupt Intervention	Discordance	Iron Maiden	Whispers
 Build	Killer	Huntress	Corrupt Intervention	Discordance	Pop Goes The Weasel	Whispers
+Build	Killer	Huntress	Corrupt Intervention	Enduring	Shadowborn	Spirit Fury
 Build	Killer	Huntress	Corrupt Intervention	Enduring	Spirit Fury	Whispers
 Build	Killer	Huntress	Corrupt Intervention	Pop Goes The Weasel	Thrilling Tremors	Whispers
 Build	Killer	Huntress	Discordance	Enduring	Hex Ruin	Spirit Fury
+Build	Killer	Huntress	Discordance	Enduring	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Huntress	Discordance	Hex Ruin	Iron Maiden	Whispers
 Build	Killer	Huntress	Discordance	Hex Ruin	Shadowborn	Whispers
 Build	Killer	Huntress	Discordance	Pop Goes The Weasel	Shadowborn	Thrilling Tremors
@@ -3175,11 +3452,13 @@ Build	Killer	Huntress	Discordance	Pop Goes The Weasel	Thrilling Tremors	Whispers
 Build	Killer	Huntress	Enduring	Hex Devour Hope	Hex Haunted Ground	Hex Thrill Of The Hunt
 Build	Killer	Huntress	Enduring	Hex Haunted Ground	Hex Ruin	Spirit Fury
 Build	Killer	Huntress	Enduring	Hex Ruin	Hex Thrill Of The Hunt	Spirit Fury
+Build	Killer	Huntress	Enduring	Hex Ruin	Iron Maiden	Spirit Fury
 Build	Killer	Huntress	Enduring	Hex Ruin	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Huntress	Enduring	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Huntress	Enduring	Hex Ruin	Shadowborn	Spirit Fury
 Build	Killer	Huntress	Enduring	Hex Ruin	Spirit Fury	Whispers
 Build	Killer	Huntress	Enduring	Pop Goes The Weasel	Spirit Fury	Thrilling Tremors
+Build	Killer	Huntress	Enduring	Pop Goes The Weasel	Spirit Fury	Whispers
 Build	Killer	Huntress	Hex Devour Hope	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The Hunt
 Build	Killer	Huntress	Hex Devour Hope	Hex Haunted Ground	Hex Thrill Of The Hunt	Shadowborn
 Build	Killer	Huntress	Hex Devour Hope	Hex Ruin	Hex Thrill Of The Hunt	Iron Maiden
@@ -3202,23 +3481,38 @@ Perkless	Killer	Huntress	Undefined	Undefined	Undefined	Undefined
 Build	Killer	Leatherface	Agitation	Enduring	Hex Ruin	Insidious
 Build	Killer	Leatherface	Agitation	Enduring	Hex Ruin	Spirit Fury
 Build	Killer	Leatherface	Agitation	Enduring	Hex Ruin	Territorial Imperative
+Build	Killer	Leatherface	Agitation	Enduring	Play With Your Food	Spirit Fury
+Build	Killer	Leatherface	Agitation	Enduring	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Leatherface	Agitation	Hex No One Escapes Death	Insidious	Iron Grasp
 Build	Killer	Leatherface	Agitation	Hex Ruin	Make Your Choice	Play With Your Food
 Build	Killer	Leatherface	Agitation	Insidious	Iron Grasp	Mad Grit
 Build	Killer	Leatherface	Agitation	Insidious	Iron Grasp	Monstrous Shrine
 Build	Killer	Leatherface	A Nurse's Calling	Bamboozle	Hex Ruin	Sloppy Butcher
 Build	Killer	Leatherface	A Nurse's Calling	Bamboozle	Sloppy Butcher	Thanatophobia
+Build	Killer	Leatherface	A Nurse's Calling	Barbecue & Chilli	Hex Ruin	Monitor & Abuse
 Build	Killer	Leatherface	A Nurse's Calling	Barbecue & Chilli	Hex Ruin	Sloppy Butcher
+Build	Killer	Leatherface	A Nurse's Calling	Barbecue & Chilli	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Leatherface	A Nurse's Calling	Dark Devotion	Hex Ruin	Sloppy Butcher
 Build	Killer	Leatherface	A Nurse's Calling	Deerstalker	Hex Ruin	Sloppy Butcher
+Build	Killer	Leatherface	A Nurse's Calling	Discordance	Hex Ruin	Monitor & Abuse
 Build	Killer	Leatherface	A Nurse's Calling	Discordance	Hex Ruin	Sloppy Butcher
 Build	Killer	Leatherface	A Nurse's Calling	Enduring	Hex Ruin	Sloppy Butcher
 Build	Killer	Leatherface	A Nurse's Calling	Enduring	Hex Ruin	Spirit Fury
+Build	Killer	Leatherface	A Nurse's Calling	Enduring	Monitor & Abuse	Spirit Fury
+Build	Killer	Leatherface	A Nurse's Calling	Enduring	Play With Your Food	Spirit Fury
+Build	Killer	Leatherface	A Nurse's Calling	Enduring	Pop Goes The Weasel	Spirit Fury
+Build	Killer	Leatherface	A Nurse's Calling	Hex Ruin	Infectious Fright	Monitor & Abuse
+Build	Killer	Leatherface	A Nurse's Calling	Hex Ruin	Monitor & Abuse	Play With Your Food
 Build	Killer	Leatherface	A Nurse's Calling	Hex Ruin	Monitor & Abuse	Sloppy Butcher
+Build	Killer	Leatherface	A Nurse's Calling	Hex Ruin	Monitor & Abuse	Thanatophobia
+Build	Killer	Leatherface	A Nurse's Calling	Hex Ruin	Monitor & Abuse	Whispers
 Build	Killer	Leatherface	A Nurse's Calling	Hex Ruin	Play With Your Food	Sloppy Butcher
 Build	Killer	Leatherface	A Nurse's Calling	Hex Ruin	Pop Goes The Weasel	Sloppy Butcher
+Build	Killer	Leatherface	A Nurse's Calling	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Leatherface	A Nurse's Calling	Hex Ruin	Sloppy Butcher	Thanatophobia
 Build	Killer	Leatherface	A Nurse's Calling	Hex Ruin	Sloppy Butcher	Tinkerer
+Build	Killer	Leatherface	A Nurse's Calling	Infectious Fright	Monitor & Abuse	Play With Your Food
+Build	Killer	Leatherface	A Nurse's Calling	Monitor & Abuse	Play With Your Food	Whispers
 Build	Killer	Leatherface	A Nurse's Calling	Play With Your Food	Sloppy Butcher	Thanatophobia
 Build	Killer	Leatherface	A Nurse's Calling	Pop Goes The Weasel	Sloppy Butcher	Thanatophobia
 Build	Killer	Leatherface	Bamboozle	Barbecue & Chilli	Enduring	Hex Ruin
@@ -3237,7 +3531,10 @@ Build	Killer	Leatherface	Bamboozle	Enduring	Pop Goes The Weasel	Whispers
 Build	Killer	Leatherface	Barbecue & Chilli	Brutal Strength	Enduring	Hex Ruin
 Build	Killer	Leatherface	Barbecue & Chilli	Brutal Strength	Enduring	Pop Goes The Weasel
 Build	Killer	Leatherface	Barbecue & Chilli	Discordance	Enduring	Spirit Fury
+Build	Killer	Leatherface	Barbecue & Chilli	Discordance	Hex Ruin	Play With Your Food
 Build	Killer	Leatherface	Barbecue & Chilli	Discordance	Hex Ruin	Pop Goes The Weasel
+Build	Killer	Leatherface	Barbecue & Chilli	Discordance	Monitor & Abuse	Pop Goes The Weasel
+Build	Killer	Leatherface	Barbecue & Chilli	Discordance	Play With Your Food	Pop Goes The Weasel
 Build	Killer	Leatherface	Barbecue & Chilli	Enduring	Hex Ruin	Monitor & Abuse
 Build	Killer	Leatherface	Barbecue & Chilli	Enduring	Hex Ruin	Play With Your Food
 Build	Killer	Leatherface	Barbecue & Chilli	Enduring	Hex Ruin	Pop Goes The Weasel
@@ -3245,13 +3542,28 @@ Build	Killer	Leatherface	Barbecue & Chilli	Enduring	Hex Ruin	Sloppy Butcher
 Build	Killer	Leatherface	Barbecue & Chilli	Enduring	Hex Ruin	Spirit Fury
 Build	Killer	Leatherface	Barbecue & Chilli	Enduring	Hex Ruin	Whispers
 Build	Killer	Leatherface	Barbecue & Chilli	Enduring	Monitor & Abuse	Pop Goes The Weasel
+Build	Killer	Leatherface	Barbecue & Chilli	Enduring	Monitor & Abuse	Spirit Fury
 Build	Killer	Leatherface	Barbecue & Chilli	Enduring	Play With Your Food	Pop Goes The Weasel
 Build	Killer	Leatherface	Barbecue & Chilli	Enduring	Play With Your Food	Spirit Fury
 Build	Killer	Leatherface	Barbecue & Chilli	Enduring	Pop Goes The Weasel	Sloppy Butcher
 Build	Killer	Leatherface	Barbecue & Chilli	Enduring	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Leatherface	Barbecue & Chilli	Enduring	Pop Goes The Weasel	Whispers
 Build	Killer	Leatherface	Barbecue & Chilli	Hex Devour Hope	Play With Your Food	Pop Goes The Weasel
+Build	Killer	Leatherface	Barbecue & Chilli	Hex Ruin	Infectious Fright	Monitor & Abuse
+Build	Killer	Leatherface	Barbecue & Chilli	Hex Ruin	Infectious Fright	Pop Goes The Weasel
+Build	Killer	Leatherface	Barbecue & Chilli	Hex Ruin	Insidious	Pop Goes The Weasel
+Build	Killer	Leatherface	Barbecue & Chilli	Hex Ruin	Monitor & Abuse	Play With Your Food
+Build	Killer	Leatherface	Barbecue & Chilli	Hex Ruin	Monitor & Abuse	Pop Goes The Weasel
+Build	Killer	Leatherface	Barbecue & Chilli	Hex Ruin	Monitor & Abuse	Whispers
 Build	Killer	Leatherface	Barbecue & Chilli	Hex Ruin	Play With Your Food	Pop Goes The Weasel
+Build	Killer	Leatherface	Barbecue & Chilli	Hex Ruin	Pop Goes The Weasel	Surveillance
+Build	Killer	Leatherface	Barbecue & Chilli	Hex Ruin	Pop Goes The Weasel	Territorial Imperative
+Build	Killer	Leatherface	Barbecue & Chilli	Hex Ruin	Pop Goes The Weasel	Whispers
+Build	Killer	Leatherface	Barbecue & Chilli	Infectious Fright	Monitor & Abuse	Pop Goes The Weasel
+Build	Killer	Leatherface	Barbecue & Chilli	Monitor & Abuse	Play With Your Food	Pop Goes The Weasel
+Build	Killer	Leatherface	Barbecue & Chilli	Monitor & Abuse	Pop Goes The Weasel	Whispers
+Build	Killer	Leatherface	Bitter Murmur	Enduring	Hex Ruin	Spirit Fury
+Build	Killer	Leatherface	Blood Warden	Enduring	Hex Ruin	Spirit Fury
 Build	Killer	Leatherface	Brutal Strength	Enduring	Hex Ruin	Monitor & Abuse
 Build	Killer	Leatherface	Brutal Strength	Enduring	Hex Ruin	Play With Your Food
 Build	Killer	Leatherface	Brutal Strength	Enduring	Hex Ruin	Spirit Fury
@@ -3267,13 +3579,22 @@ Build	Killer	Leatherface	Corrupt Intervention	Enduring	Pop Goes The Weasel	Spiri
 Build	Killer	Leatherface	Dark Devotion	Enduring	Hex Ruin	Spirit Fury
 Build	Killer	Leatherface	Deerstalker	Enduring	Hex Ruin	Spirit Fury
 Build	Killer	Leatherface	Deerstalker	Hex Ruin	Infectious Fright	Knock Out
+Build	Killer	Leatherface	Deerstalker	Hex Ruin	Infectious Fright	Monitor & Abuse
+Build	Killer	Leatherface	Deerstalker	Infectious Fright	Knock Out	Monitor & Abuse
 Build	Killer	Leatherface	Discordance	Enduring	Hex Ruin	Spirit Fury
+Build	Killer	Leatherface	Discordance	Enduring	Monitor & Abuse	Spirit Fury
 Build	Killer	Leatherface	Discordance	Enduring	Play With Your Food	Spirit Fury
 Build	Killer	Leatherface	Discordance	Enduring	Pop Goes The Weasel	Spirit Fury
+Build	Killer	Leatherface	Discordance	Hex Ruin	Infectious Fright	Monitor & Abuse
+Build	Killer	Leatherface	Discordance	Hex Ruin	Monitor & Abuse	Play With Your Food
 Build	Killer	Leatherface	Discordance	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Leatherface	Discordance	Play With Your Food	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Leatherface	Dying Light	Enduring	Hex Ruin	Spirit Fury
+Build	Killer	Leatherface	Enduring	Franklin's Demise	Hex Ruin	Spirit Fury
 Build	Killer	Leatherface	Enduring	Hex Devour Hope	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Leatherface	Enduring	Hex Haunted Ground	Hex Ruin	Spirit Fury
 Build	Killer	Leatherface	Enduring	Hex Ruin	Hex Thrill Of The Hunt	Spirit Fury
+Build	Killer	Leatherface	Enduring	Hex Ruin	Infectious Fright	Monitor & Abuse
 Build	Killer	Leatherface	Enduring	Hex Ruin	Infectious Fright	Spirit Fury
 Build	Killer	Leatherface	Enduring	Hex Ruin	Insidious	Spirit Fury
 Build	Killer	Leatherface	Enduring	Hex Ruin	Monitor & Abuse	Play With Your Food
@@ -3283,32 +3604,56 @@ Build	Killer	Leatherface	Enduring	Hex Ruin	Play With Your Food	Spirit Fury
 Build	Killer	Leatherface	Enduring	Hex Ruin	Play With Your Food	Whispers
 Build	Killer	Leatherface	Enduring	Hex Ruin	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Leatherface	Enduring	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Leatherface	Enduring	Hex Ruin	Rancor	Spirit Fury
+Build	Killer	Leatherface	Enduring	Hex Ruin	Shadowborn	Spirit Fury
 Build	Killer	Leatherface	Enduring	Hex Ruin	Sloppy Butcher	Spirit Fury
 Build	Killer	Leatherface	Enduring	Hex Ruin	Sloppy Butcher	Whispers
 Build	Killer	Leatherface	Enduring	Hex Ruin	Spirit Fury	Stridor
 Build	Killer	Leatherface	Enduring	Hex Ruin	Spirit Fury	Surveillance
 Build	Killer	Leatherface	Enduring	Hex Ruin	Spirit Fury	Territorial Imperative
+Build	Killer	Leatherface	Enduring	Hex Ruin	Spirit Fury	Thanatophobia
 Build	Killer	Leatherface	Enduring	Hex Ruin	Spirit Fury	Thrilling Tremors
 Build	Killer	Leatherface	Enduring	Hex Ruin	Spirit Fury	Tinkerer
 Build	Killer	Leatherface	Enduring	Hex Ruin	Spirit Fury	Whispers
+Build	Killer	Leatherface	Enduring	Infectious Fright	Monitor & Abuse	Spirit Fury
+Build	Killer	Leatherface	Enduring	Infectious Fright	Play With Your Food	Spirit Fury
+Build	Killer	Leatherface	Enduring	Infectious Fright	Pop Goes The Weasel	Spirit Fury
+Build	Killer	Leatherface	Enduring	Insidious	Play With Your Food	Spirit Fury
+Build	Killer	Leatherface	Enduring	Insidious	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Leatherface	Enduring	Monitor & Abuse	Play With Your Food	Pop Goes The Weasel
+Build	Killer	Leatherface	Enduring	Monitor & Abuse	Play With Your Food	Spirit Fury
 Build	Killer	Leatherface	Enduring	Monitor & Abuse	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Leatherface	Enduring	Monitor & Abuse	Pop Goes The Weasel	Whispers
+Build	Killer	Leatherface	Enduring	Monitor & Abuse	Spirit Fury	Whispers
 Build	Killer	Leatherface	Enduring	Play With Your Food	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Leatherface	Enduring	Play With Your Food	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Leatherface	Enduring	Play With Your Food	Pop Goes The Weasel	Whispers
+Build	Killer	Leatherface	Enduring	Play With Your Food	Spirit Fury	Territorial Imperative
+Build	Killer	Leatherface	Enduring	Play With Your Food	Spirit Fury	Whispers
 Build	Killer	Leatherface	Enduring	Pop Goes The Weasel	Sloppy Butcher	Whispers
+Build	Killer	Leatherface	Enduring	Pop Goes The Weasel	Spirit Fury	Surveillance
+Build	Killer	Leatherface	Enduring	Pop Goes The Weasel	Spirit Fury	Territorial Imperative
 Build	Killer	Leatherface	Enduring	Pop Goes The Weasel	Spirit Fury	Thrilling Tremors
 Build	Killer	Leatherface	Enduring	Pop Goes The Weasel	Spirit Fury	Whispers
 Build	Killer	Leatherface	Hex Haunted Ground	Hex Huntress Lullaby	Hex Ruin	Hex Thrill Of The Hunt
 Build	Killer	Leatherface	Hex Haunted Ground	Hex Ruin	Hex The Third Seal	Hex Thrill Of The Hunt
+Build	Killer	Leatherface	Hex Ruin	Infectious Fright	Monitor & Abuse	Play With Your Food
+Build	Killer	Leatherface	Hex Ruin	Infectious Fright	Monitor & Abuse	Whispers
+Build	Killer	Leatherface	Hex Ruin	Insidious	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Leatherface	Hex Ruin	Make Your Choice	Play With Your Food	Territorial Imperative
+Build	Killer	Leatherface	Hex Ruin	Monitor & Abuse	Play With Your Food	Whispers
+Build	Killer	Leatherface	Hex Ruin	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Leatherface	Hex Ruin	Play With Your Food	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Leatherface	Hex Ruin	Pop Goes The Weasel	Territorial Imperative	Thrilling Tremors
+Build	Killer	Leatherface	Monitor & Abuse	Play With Your Food	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Leatherface	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors	Whispers
 Perkless	Killer	Leatherface	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Freddy #################################
 Build	Killer	Freddy	A Nurse's Calling	Bamboozle	Barbecue & Chilli	Sloppy Butcher
 Build	Killer	Freddy	A Nurse's Calling	Barbecue & Chilli	Enduring	Sloppy Butcher
+Build	Killer	Freddy	A Nurse's Calling	Barbecue & Chilli	Hex Ruin	Sloppy Butcher
 Build	Killer	Freddy	A Nurse's Calling	Barbecue & Chilli	Make Your Choice	Sloppy Butcher
+Build	Killer	Freddy	A Nurse's Calling	Barbecue & Chilli	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Freddy	A Nurse's Calling	Barbecue & Chilli	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Freddy	A Nurse's Calling	Barbecue & Chilli	Pop Goes The Weasel	Sloppy Butcher
 Build	Killer	Freddy	A Nurse's Calling	Barbecue & Chilli	Sloppy Butcher	Thanatophobia
@@ -3316,12 +3661,15 @@ Build	Killer	Freddy	A Nurse's Calling	Enduring	Hex Ruin	Sloppy Butcher
 Build	Killer	Freddy	A Nurse's Calling	Enduring	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Freddy	A Nurse's Calling	Enduring	Pop Goes The Weasel	Sloppy Butcher
 Build	Killer	Freddy	A Nurse's Calling	Enduring	Pop Goes The Weasel	Spirit Fury
+Build	Killer	Freddy	A Nurse's Calling	Hex Ruin	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Freddy	A Nurse's Calling	Hex Ruin	Pop Goes The Weasel	Sloppy Butcher
 Build	Killer	Freddy	A Nurse's Calling	Hex Ruin	Sloppy Butcher	Thanatophobia
 Build	Killer	Freddy	A Nurse's Calling	Make Your Choice	Sloppy Butcher	Thanatophobia
 Build	Killer	Freddy	A Nurse's Calling	Monitor & Abuse	Pop Goes The Weasel	Sloppy Butcher
+Build	Killer	Freddy	A Nurse's Calling	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Freddy	A Nurse's Calling	Pop Goes The Weasel	Sloppy Butcher	Thanatophobia
 Build	Killer	Freddy	A Nurse's Calling	Pop Goes The Weasel	Sloppy Butcher	Thrilling Tremors
+Build	Killer	Freddy	A Nurse's Calling	Sloppy Butcher	Thanatophobia	Thrilling Tremors
 Build	Killer	Freddy	Bamboozle	Barbecue & Chilli	Brutal Strength	Enduring
 Build	Killer	Freddy	Bamboozle	Barbecue & Chilli	Enduring	Hex No One Escapes Death
 Build	Killer	Freddy	Bamboozle	Barbecue & Chilli	Enduring	Hex Ruin
@@ -3343,12 +3691,17 @@ Build	Killer	Freddy	Barbecue & Chilli	Blood Warden	Hex No One Escapes Death	Reme
 Build	Killer	Freddy	Barbecue & Chilli	Brutal Strength	Enduring	Hex No One Escapes Death
 Build	Killer	Freddy	Barbecue & Chilli	Brutal Strength	Enduring	Hex Ruin
 Build	Killer	Freddy	Barbecue & Chilli	Brutal Strength	Enduring	Pop Goes The Weasel
+Build	Killer	Freddy	Barbecue & Chilli	Brutal Strength	Pop Goes The Weasel	Surveillance
 Build	Killer	Freddy	Barbecue & Chilli	Corrupt Intervention	Discordance	Pop Goes The Weasel
 Build	Killer	Freddy	Barbecue & Chilli	Corrupt Intervention	Enduring	Spirit Fury
+Build	Killer	Freddy	Barbecue & Chilli	Discordance	Enduring	Pop Goes The Weasel
 Build	Killer	Freddy	Barbecue & Chilli	Discordance	Enduring	Spirit Fury
 Build	Killer	Freddy	Barbecue & Chilli	Discordance	Hex Devour Hope	Pop Goes The Weasel
 Build	Killer	Freddy	Barbecue & Chilli	Discordance	Hex Ruin	Pop Goes The Weasel
+Build	Killer	Freddy	Barbecue & Chilli	Discordance	Pop Goes The Weasel	Surveillance
+Build	Killer	Freddy	Barbecue & Chilli	Discordance	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Freddy	Barbecue & Chilli	Dying Light	Enduring	Hex No One Escapes Death
+Build	Killer	Freddy	Barbecue & Chilli	Enduring	Hex Devour Hope	Pop Goes The Weasel
 Build	Killer	Freddy	Barbecue & Chilli	Enduring	Hex No One Escapes Death	Hex Ruin
 Build	Killer	Freddy	Barbecue & Chilli	Enduring	Hex No One Escapes Death	Monitor & Abuse
 Build	Killer	Freddy	Barbecue & Chilli	Enduring	Hex No One Escapes Death	Pop Goes The Weasel
@@ -3366,7 +3719,9 @@ Build	Killer	Freddy	Barbecue & Chilli	Enduring	Pop Goes The Weasel	Surveillance
 Build	Killer	Freddy	Barbecue & Chilli	Enduring	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Freddy	Barbecue & Chilli	Enduring	Sloppy Butcher	Spirit Fury
 Build	Killer	Freddy	Barbecue & Chilli	Hex Devour Hope	Hex Haunted Ground	Hex Ruin
+Build	Killer	Freddy	Barbecue & Chilli	Hex Devour Hope	Hex Haunted Ground	Pop Goes The Weasel
 Build	Killer	Freddy	Barbecue & Chilli	Hex Devour Hope	Pop Goes The Weasel	Surveillance
+Build	Killer	Freddy	Barbecue & Chilli	Hex Devour Hope	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Freddy	Barbecue & Chilli	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The Hunt
 Build	Killer	Freddy	Barbecue & Chilli	Hex Haunted Ground	Hex Ruin	Pop Goes The Weasel
 Build	Killer	Freddy	Barbecue & Chilli	Hex No One Escapes Death	Hex Ruin	Remember Me
@@ -3378,11 +3733,15 @@ Build	Killer	Freddy	Barbecue & Chilli	Hex Ruin	Pop Goes The Weasel	Surveillance
 Build	Killer	Freddy	Barbecue & Chilli	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Freddy	Barbecue & Chilli	Make Your Choice	Play With Your Food	Pop Goes The Weasel
 Build	Killer	Freddy	Barbecue & Chilli	Make Your Choice	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Freddy	Barbecue & Chilli	Monitor & Abuse	Pop Goes The Weasel	Whispers
+Build	Killer	Freddy	Barbecue & Chilli	Pop Goes The Weasel	Surveillance	Thrilling Tremors
 Build	Killer	Freddy	Blood Warden	Enduring	Hex No One Escapes Death	Remember Me
 Build	Killer	Freddy	Blood Warden	Hex No One Escapes Death	Hex Ruin	Remember Me
 Build	Killer	Freddy	Brutal Strength	Enduring	Hex No One Escapes Death	Remember Me
 Build	Killer	Freddy	Brutal Strength	Enduring	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Freddy	Brutal Strength	Enduring	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Freddy	Brutal Strength	Pop Goes The Weasel	Surveillance	Thrilling Tremors
+Build	Killer	Freddy	Corrupt Intervention	Discordance	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Freddy	Corrupt Intervention	Enduring	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Freddy	Corrupt Intervention	Enduring	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Freddy	Discordance	Enduring	Hex Ruin	Spirit Fury
@@ -3391,8 +3750,10 @@ Build	Killer	Freddy	Discordance	Enduring	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Freddy	Discordance	Enduring	Spirit Fury	Thrilling Tremors
 Build	Killer	Freddy	Discordance	Hex Devour Hope	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Freddy	Discordance	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Freddy	Discordance	Pop Goes The Weasel	Surveillance	Thrilling Tremors
 Build	Killer	Freddy	Dying Light	Enduring	Hex No One Escapes Death	Remember Me
 Build	Killer	Freddy	Enduring	Hex Devour Hope	Pop Goes The Weasel	Spirit Fury
+Build	Killer	Freddy	Enduring	Hex Devour Hope	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Freddy	Enduring	Hex Haunted Ground	Hex Ruin	Hex The Third Seal
 Build	Killer	Freddy	Enduring	Hex Haunted Ground	Hex Ruin	Spirit Fury
 Build	Killer	Freddy	Enduring	Hex No One Escapes Death	Hex Ruin	Remember Me
@@ -3415,6 +3776,7 @@ Build	Killer	Freddy	Enduring	Pop Goes The Weasel	Surveillance	Thrilling Tremors
 Build	Killer	Freddy	Enduring	Pop Goes The Weasel	Thrilling Tremors	Whispers
 Build	Killer	Freddy	Hex Devour Hope	Hex Haunted Ground	Hex Huntress Lullaby	Hex Thrill Of The Hunt
 Build	Killer	Freddy	Hex Devour Hope	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The Hunt
+Build	Killer	Freddy	Hex Devour Hope	Hex Haunted Ground	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Freddy	Hex Devour Hope	Pop Goes The Weasel	Surveillance	Thrilling Tremors
 Build	Killer	Freddy	Hex Haunted Ground	Hex Huntress Lullaby	Hex Ruin	Hex Thrill Of The Hunt
 Build	Killer	Freddy	Hex Haunted Ground	Hex Huntress Lullaby	Hex Ruin	Thrilling Tremors
@@ -3426,6 +3788,7 @@ Build	Killer	Freddy	Hex No One Escapes Death	Hex Ruin	Remember Me	Whispers
 Build	Killer	Freddy	Hex Ruin	Make Your Choice	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Freddy	Hex Ruin	Pop Goes The Weasel	Surveillance	Thrilling Tremors
 Build	Killer	Freddy	Make Your Choice	Play With Your Food	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Freddy	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors	Whispers
 Perkless	Killer	Freddy	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Pig #################################
 Build	Killer	Pig	Agitation	Enduring	Hex Ruin	Whispers
@@ -3454,6 +3817,7 @@ Build	Killer	Pig	A Nurse's Calling	Barbecue & Chilli	Monitor & Abuse	Pop Goes Th
 Build	Killer	Pig	A Nurse's Calling	Barbecue & Chilli	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Pig	A Nurse's Calling	Barbecue & Chilli	Monitor & Abuse	Thanatophobia
 Build	Killer	Pig	A Nurse's Calling	Barbecue & Chilli	Monitor & Abuse	Whispers
+Build	Killer	Pig	A Nurse's Calling	Barbecue & Chilli	Pop Goes The Weasel	Sloppy Butcher
 Build	Killer	Pig	A Nurse's Calling	Barbecue & Chilli	Pop Goes The Weasel	Whispers
 Build	Killer	Pig	A Nurse's Calling	Barbecue & Chilli	Sloppy Butcher	Surveillance
 Build	Killer	Pig	A Nurse's Calling	Barbecue & Chilli	Sloppy Butcher	Whispers
@@ -3530,6 +3894,7 @@ Build	Killer	Pig	A Nurse's Calling	Monitor & Abuse	Pop Goes The Weasel	Whispers
 Build	Killer	Pig	A Nurse's Calling	Monitor & Abuse	Save The Best For Last	Sloppy Butcher
 Build	Killer	Pig	A Nurse's Calling	Monitor & Abuse	Save The Best For Last	Whispers
 Build	Killer	Pig	A Nurse's Calling	Monitor & Abuse	Sloppy Butcher	Surveillance
+Build	Killer	Pig	A Nurse's Calling	Monitor & Abuse	Sloppy Butcher	Thanatophobia
 Build	Killer	Pig	A Nurse's Calling	Monitor & Abuse	Sloppy Butcher	Whispers
 Build	Killer	Pig	A Nurse's Calling	Pop Goes The Weasel	Sloppy Butcher	Thrilling Tremors
 Build	Killer	Pig	A Nurse's Calling	Pop Goes The Weasel	Sloppy Butcher	Whispers
@@ -3642,6 +4007,7 @@ Build	Killer	Pig	Barbecue & Chilli	Hex Ruin	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Pig	Barbecue & Chilli	Hex Ruin	Monitor & Abuse	Save The Best For Last
 Build	Killer	Pig	Barbecue & Chilli	Hex Ruin	Monitor & Abuse	Surveillance
 Build	Killer	Pig	Barbecue & Chilli	Hex Ruin	Monitor & Abuse	Whispers
+Build	Killer	Pig	Barbecue & Chilli	Hex Ruin	Pop Goes The Weasel	Surveillance
 Build	Killer	Pig	Barbecue & Chilli	Hex Ruin	Pop Goes The Weasel	Whispers
 Build	Killer	Pig	Barbecue & Chilli	Hex Ruin	Save The Best For Last	Whispers
 Build	Killer	Pig	Barbecue & Chilli	Hex Ruin	Sloppy Butcher	Whispers
@@ -3649,6 +4015,7 @@ Build	Killer	Pig	Barbecue & Chilli	Hex Ruin	Surveillance	Whispers
 Build	Killer	Pig	Barbecue & Chilli	Infectious Fright	Monitor & Abuse	Whispers
 Build	Killer	Pig	Barbecue & Chilli	Make Your Choice	Monitor & Abuse	Whispers
 Build	Killer	Pig	Barbecue & Chilli	Make Your Choice	Pop Goes The Weasel	Whispers
+Build	Killer	Pig	Barbecue & Chilli	Monitor & Abuse	Pop Goes The Weasel	Surveillance
 Build	Killer	Pig	Barbecue & Chilli	Monitor & Abuse	Pop Goes The Weasel	Whispers
 Build	Killer	Pig	Barbecue & Chilli	Monitor & Abuse	Save The Best For Last	Whispers
 Build	Killer	Pig	Barbecue & Chilli	Monitor & Abuse	Surveillance	Whispers
@@ -3789,6 +4156,7 @@ Build	Killer	Pig	Hex Ruin	I'm All Ears	Monitor & Abuse	Whispers
 Build	Killer	Pig	Hex Ruin	Infectious Fright	Monitor & Abuse	Save The Best For Last
 Build	Killer	Pig	Hex Ruin	Infectious Fright	Save The Best For Last	Whispers
 Build	Killer	Pig	Hex Ruin	Make Your Choice	Monitor & Abuse	Whispers
+Build	Killer	Pig	Hex Ruin	Make Your Choice	Play With Your Food	Whispers
 Build	Killer	Pig	Hex Ruin	Make Your Choice	Surveillance	Whispers
 Build	Killer	Pig	Hex Ruin	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Pig	Hex Ruin	Monitor & Abuse	Pop Goes The Weasel	Whispers
@@ -3812,9 +4180,16 @@ Perkless	Killer	Pig	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Clown #################################
 Build	Killer	Clown	Agitation	Brutal Strength	Enduring	Hex Ruin
 Build	Killer	Clown	Agitation	Enduring	Hex Ruin	Spirit Fury
+Build	Killer	Clown	Agitation	Hex Ruin	Make Your Choice	Play With Your Food
 Build	Killer	Clown	A Nurse's Calling	Barbecue & Chilli	Brutal Strength	Sloppy Butcher
+Build	Killer	Clown	A Nurse's Calling	Barbecue & Chilli	Enduring	Spirit Fury
+Build	Killer	Clown	A Nurse's Calling	Barbecue & Chilli	Hex Ruin	Monitor & Abuse
+Build	Killer	Clown	A Nurse's Calling	Barbecue & Chilli	Hex Ruin	Pop Goes The Weasel
 Build	Killer	Clown	A Nurse's Calling	Barbecue & Chilli	Hex Ruin	Sloppy Butcher
+Build	Killer	Clown	A Nurse's Calling	Barbecue & Chilli	Monitor & Abuse	Sloppy Butcher
+Build	Killer	Clown	A Nurse's Calling	Barbecue & Chilli	Pop Goes The Weasel	Sloppy Butcher
 Build	Killer	Clown	A Nurse's Calling	Barbecue & Chilli	Sloppy Butcher	Thanatophobia
+Build	Killer	Clown	A Nurse's Calling	Bloodhound	Hex Ruin	Sloppy Butcher
 Build	Killer	Clown	A Nurse's Calling	Brutal Strength	Enduring	Hex Ruin
 Build	Killer	Clown	A Nurse's Calling	Brutal Strength	Enduring	Pop Goes The Weasel
 Build	Killer	Clown	A Nurse's Calling	Brutal Strength	Enduring	Sloppy Butcher
@@ -3822,14 +4197,35 @@ Build	Killer	Clown	A Nurse's Calling	Brutal Strength	Enduring	Spirit Fury
 Build	Killer	Clown	A Nurse's Calling	Brutal Strength	Hex Ruin	Monitor & Abuse
 Build	Killer	Clown	A Nurse's Calling	Brutal Strength	Hex Ruin	Sloppy Butcher
 Build	Killer	Clown	A Nurse's Calling	Brutal Strength	Monitor & Abuse	Sloppy Butcher
+Build	Killer	Clown	A Nurse's Calling	Corrupt Intervention	Sloppy Butcher	Thanatophobia
+Build	Killer	Clown	A Nurse's Calling	Coulrophobia	Hex Ruin	Sloppy Butcher
+Build	Killer	Clown	A Nurse's Calling	Deerstalker	Hex Ruin	Sloppy Butcher
+Build	Killer	Clown	A Nurse's Calling	Discordance	Hex Ruin	Sloppy Butcher
 Build	Killer	Clown	A Nurse's Calling	Enduring	Hex Ruin	Sloppy Butcher
 Build	Killer	Clown	A Nurse's Calling	Enduring	Hex Ruin	Spirit Fury
+Build	Killer	Clown	A Nurse's Calling	Enduring	Monitor & Abuse	Spirit Fury
+Build	Killer	Clown	A Nurse's Calling	Enduring	Pop Goes The Weasel	Spirit Fury
+Build	Killer	Clown	A Nurse's Calling	Enduring	Sloppy Butcher	Spirit Fury
+Build	Killer	Clown	A Nurse's Calling	Enduring	Sloppy Butcher	Thanatophobia
+Build	Killer	Clown	A Nurse's Calling	Hex Haunted Ground	Hex Ruin	Sloppy Butcher
+Build	Killer	Clown	A Nurse's Calling	Hex Ruin	Infectious Fright	Monitor & Abuse
 Build	Killer	Clown	A Nurse's Calling	Hex Ruin	Make Your Choice	Sloppy Butcher
 Build	Killer	Clown	A Nurse's Calling	Hex Ruin	Monitor & Abuse	Sloppy Butcher
+Build	Killer	Clown	A Nurse's Calling	Hex Ruin	Monitor & Abuse	Whispers
+Build	Killer	Clown	A Nurse's Calling	Hex Ruin	Pop Goes The Weasel	Sloppy Butcher
+Build	Killer	Clown	A Nurse's Calling	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Clown	A Nurse's Calling	Hex Ruin	Save The Best For Last	Sloppy Butcher
 Build	Killer	Clown	A Nurse's Calling	Hex Ruin	Sloppy Butcher	Thanatophobia
+Build	Killer	Clown	A Nurse's Calling	Hex Ruin	Sloppy Butcher	Thrilling Tremors
+Build	Killer	Clown	A Nurse's Calling	Hex Ruin	Sloppy Butcher	Tinkerer
+Build	Killer	Clown	A Nurse's Calling	Hex Ruin	Sloppy Butcher	Whispers
 Build	Killer	Clown	A Nurse's Calling	Make Your Choice	Sloppy Butcher	Thanatophobia
+Build	Killer	Clown	A Nurse's Calling	Monitor & Abuse	Pop Goes The Weasel	Sloppy Butcher
+Build	Killer	Clown	A Nurse's Calling	Monitor & Abuse	Sloppy Butcher	Thanatophobia
+Build	Killer	Clown	A Nurse's Calling	Monitor & Abuse	Sloppy Butcher	Whispers
 Build	Killer	Clown	A Nurse's Calling	Pop Goes The Weasel	Sloppy Butcher	Thanatophobia
 Build	Killer	Clown	A Nurse's Calling	Pop Goes The Weasel	Sloppy Butcher	Thrilling Tremors
+Build	Killer	Clown	A Nurse's Calling	Save The Best For Last	Sloppy Butcher	Thanatophobia
 Build	Killer	Clown	Bamboozle	Barbecue & Chilli	Brutal Strength	Enduring
 Build	Killer	Clown	Bamboozle	Barbecue & Chilli	Brutal Strength	Hex Ruin
 Build	Killer	Clown	Bamboozle	Barbecue & Chilli	Enduring	Hex Ruin
@@ -3854,6 +4250,7 @@ Build	Killer	Clown	Bamboozle	Enduring	Hex Ruin	Make Your Choice
 Build	Killer	Clown	Bamboozle	Enduring	Hex Ruin	Pop Goes The Weasel
 Build	Killer	Clown	Bamboozle	Enduring	Hex Ruin	Save The Best For Last
 Build	Killer	Clown	Bamboozle	Enduring	Hex Ruin	Spirit Fury
+Build	Killer	Clown	Bamboozle	Enduring	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Clown	Bamboozle	Enduring	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Clown	Bamboozle	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Clown	Barbecue & Chilli	Brutal Strength	Corrupt Intervention	Pop Goes The Weasel
@@ -3864,10 +4261,37 @@ Build	Killer	Clown	Barbecue & Chilli	Brutal Strength	Hex No One Escapes Death	He
 Build	Killer	Clown	Barbecue & Chilli	Brutal Strength	Hex Ruin	Pop Goes The Weasel
 Build	Killer	Clown	Barbecue & Chilli	Brutal Strength	Hex Ruin	Sloppy Butcher
 Build	Killer	Clown	Barbecue & Chilli	Brutal Strength	Hex Ruin	Whispers
+Build	Killer	Clown	Barbecue & Chilli	Brutal Strength	Pop Goes The Weasel	Surveillance
+Build	Killer	Clown	Barbecue & Chilli	Corrupt Intervention	Enduring	Spirit Fury
+Build	Killer	Clown	Barbecue & Chilli	Discordance	Enduring	Spirit Fury
+Build	Killer	Clown	Barbecue & Chilli	Discordance	Hex Ruin	Pop Goes The Weasel
+Build	Killer	Clown	Barbecue & Chilli	Enduring	Hex Ruin	Pop Goes The Weasel
 Build	Killer	Clown	Barbecue & Chilli	Enduring	Hex Ruin	Spirit Fury
 Build	Killer	Clown	Barbecue & Chilli	Enduring	Hex Ruin	Whispers
+Build	Killer	Clown	Barbecue & Chilli	Enduring	Make Your Choice	Spirit Fury
+Build	Killer	Clown	Barbecue & Chilli	Enduring	Monitor & Abuse	Spirit Fury
 Build	Killer	Clown	Barbecue & Chilli	Enduring	Pop Goes The Weasel	Spirit Fury
+Build	Killer	Clown	Barbecue & Chilli	Enduring	Save The Best For Last	Spirit Fury
+Build	Killer	Clown	Barbecue & Chilli	Enduring	Spirit Fury	Whispers
+Build	Killer	Clown	Barbecue & Chilli	Hex Haunted Ground	Hex Ruin	Pop Goes The Weasel
+Build	Killer	Clown	Barbecue & Chilli	Hex Ruin	Make Your Choice	Play With Your Food
+Build	Killer	Clown	Barbecue & Chilli	Hex Ruin	Make Your Choice	Pop Goes The Weasel
+Build	Killer	Clown	Barbecue & Chilli	Hex Ruin	Monitor & Abuse	Pop Goes The Weasel
+Build	Killer	Clown	Barbecue & Chilli	Hex Ruin	Monitor & Abuse	Whispers
+Build	Killer	Clown	Barbecue & Chilli	Hex Ruin	Pop Goes The Weasel	Save The Best For Last
+Build	Killer	Clown	Barbecue & Chilli	Hex Ruin	Pop Goes The Weasel	Sloppy Butcher
+Build	Killer	Clown	Barbecue & Chilli	Hex Ruin	Pop Goes The Weasel	Surveillance
+Build	Killer	Clown	Barbecue & Chilli	Hex Ruin	Pop Goes The Weasel	Whispers
 Build	Killer	Clown	Barbecue & Chilli	Hex Ruin	Sloppy Butcher	Whispers
+Build	Killer	Clown	Barbecue & Chilli	Make Your Choice	Play With Your Food	Pop Goes The Weasel
+Build	Killer	Clown	Beast Of Prey	Enduring	Hex Ruin	Spirit Fury
+Build	Killer	Clown	Bitter Murmur	Blood Warden	Hex No One Escapes Death	Hex Ruin
+Build	Killer	Clown	Bitter Murmur	Enduring	Hex Ruin	Spirit Fury
+Build	Killer	Clown	Bitter Murmur	Hex No One Escapes Death	Hex Ruin	Whispers
+Build	Killer	Clown	Bloodhound	Enduring	Hex Ruin	Spirit Fury
+Build	Killer	Clown	Blood Warden	Enduring	Hex Ruin	Spirit Fury
+Build	Killer	Clown	Blood Warden	Hex No One Escapes Death	Hex Ruin	Remember Me
+Build	Killer	Clown	Blood Warden	Hex No One Escapes Death	Hex Ruin	Whispers
 Build	Killer	Clown	Brutal Strength	Corrupt Intervention	Enduring	Hex Ruin
 Build	Killer	Clown	Brutal Strength	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last
 Build	Killer	Clown	Brutal Strength	Corrupt Intervention	Pop Goes The Weasel	Thrilling Tremors
@@ -3916,29 +4340,78 @@ Build	Killer	Clown	Brutal Strength	Pop Goes The Weasel	Save The Best For Last	Th
 Build	Killer	Clown	Brutal Strength	Pop Goes The Weasel	Sloppy Butcher	Thrilling Tremors
 Build	Killer	Clown	Brutal Strength	Pop Goes The Weasel	Surveillance	Thrilling Tremors
 Build	Killer	Clown	Brutal Strength	Pop Goes The Weasel	Thrilling Tremors	Whispers
+Build	Killer	Clown	Corrupt Intervention	Discordance	Enduring	Spirit Fury
 Build	Killer	Clown	Corrupt Intervention	Enduring	Hex Ruin	Spirit Fury
+Build	Killer	Clown	Cruel Limits	Enduring	Hex Ruin	Spirit Fury
+Build	Killer	Clown	Dark Devotion	Enduring	Hex Ruin	Spirit Fury
+Build	Killer	Clown	Deerstalker	Enduring	Hex Ruin	Spirit Fury
 Build	Killer	Clown	Discordance	Enduring	Hex Ruin	Spirit Fury
+Build	Killer	Clown	Discordance	Enduring	Pop Goes The Weasel	Spirit Fury
+Build	Killer	Clown	Discordance	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Clown	Dying Light	Enduring	Hex Ruin	Spirit Fury
+Build	Killer	Clown	Enduring	Fire Up	Hex Ruin	Spirit Fury
+Build	Killer	Clown	Enduring	Franklin's Demise	Hex Ruin	Spirit Fury
+Build	Killer	Clown	Enduring	Furtive Chase	Hex Ruin	Spirit Fury
 Build	Killer	Clown	Enduring	Hex Devour Hope	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Clown	Enduring	Hex Haunted Ground	Hex Ruin	Spirit Fury
+Build	Killer	Clown	Enduring	Hex Huntress Lullaby	Hex Ruin	Spirit Fury
 Build	Killer	Clown	Enduring	Hex No One Escapes Death	Hex Ruin	Spirit Fury
 Build	Killer	Clown	Enduring	Hex No One Escapes Death	Hex Ruin	Whispers
+Build	Killer	Clown	Enduring	Hex Ruin	Hex The Third Seal	Spirit Fury
 Build	Killer	Clown	Enduring	Hex Ruin	Hex Thrill Of The Hunt	Spirit Fury
+Build	Killer	Clown	Enduring	Hex Ruin	I'm All Ears	Spirit Fury
 Build	Killer	Clown	Enduring	Hex Ruin	Infectious Fright	Spirit Fury
+Build	Killer	Clown	Enduring	Hex Ruin	Insidious	Spirit Fury
+Build	Killer	Clown	Enduring	Hex Ruin	Iron Grasp	Spirit Fury
+Build	Killer	Clown	Enduring	Hex Ruin	Iron Maiden	Spirit Fury
+Build	Killer	Clown	Enduring	Hex Ruin	Knock Out	Spirit Fury
+Build	Killer	Clown	Enduring	Hex Ruin	Lightborn	Spirit Fury
+Build	Killer	Clown	Enduring	Hex Ruin	Mad Grit	Spirit Fury
+Build	Killer	Clown	Enduring	Hex Ruin	Make Your Choice	Play With Your Food
 Build	Killer	Clown	Enduring	Hex Ruin	Make Your Choice	Spirit Fury
 Build	Killer	Clown	Enduring	Hex Ruin	Monitor & Abuse	Spirit Fury
+Build	Killer	Clown	Enduring	Hex Ruin	Overcharge	Spirit Fury
+Build	Killer	Clown	Enduring	Hex Ruin	Play With Your Food	Spirit Fury
 Build	Killer	Clown	Enduring	Hex Ruin	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Clown	Enduring	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Clown	Enduring	Hex Ruin	Pop Goes The Weasel	Whispers
+Build	Killer	Clown	Enduring	Hex Ruin	Predator	Spirit Fury
+Build	Killer	Clown	Enduring	Hex Ruin	Rancor	Spirit Fury
+Build	Killer	Clown	Enduring	Hex Ruin	Remember Me	Spirit Fury
 Build	Killer	Clown	Enduring	Hex Ruin	Save The Best For Last	Spirit Fury
+Build	Killer	Clown	Enduring	Hex Ruin	Shadowborn	Spirit Fury
 Build	Killer	Clown	Enduring	Hex Ruin	Sloppy Butcher	Spirit Fury
 Build	Killer	Clown	Enduring	Hex Ruin	Spirit Fury	Stridor
 Build	Killer	Clown	Enduring	Hex Ruin	Spirit Fury	Surveillance
+Build	Killer	Clown	Enduring	Hex Ruin	Spirit Fury	Territorial Imperative
+Build	Killer	Clown	Enduring	Hex Ruin	Spirit Fury	Thanatophobia
 Build	Killer	Clown	Enduring	Hex Ruin	Spirit Fury	Thrilling Tremors
+Build	Killer	Clown	Enduring	Hex Ruin	Spirit Fury	Tinkerer
 Build	Killer	Clown	Enduring	Hex Ruin	Spirit Fury	Whispers
+Build	Killer	Clown	Enduring	Make Your Choice	Pop Goes The Weasel	Spirit Fury
+Build	Killer	Clown	Enduring	Monitor & Abuse	Pop Goes The Weasel	Spirit Fury
+Build	Killer	Clown	Enduring	Monitor & Abuse	Spirit Fury	Whispers
+Build	Killer	Clown	Enduring	Pop Goes The Weasel	Save The Best For Last	Spirit Fury
+Build	Killer	Clown	Enduring	Pop Goes The Weasel	Sloppy Butcher	Spirit Fury
+Build	Killer	Clown	Enduring	Pop Goes The Weasel	Spirit Fury	Surveillance
 Build	Killer	Clown	Enduring	Pop Goes The Weasel	Spirit Fury	Thrilling Tremors
+Build	Killer	Clown	Enduring	Pop Goes The Weasel	Spirit Fury	Whispers
 Build	Killer	Clown	Hex Devour Hope	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The Hunt
+Build	Killer	Clown	Hex Haunted Ground	Hex Ruin	Make Your Choice	Play With Your Food
+Build	Killer	Clown	Hex Haunted Ground	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Clown	Hex No One Escapes Death	Hex Ruin	Monitor & Abuse	Whispers
 Build	Killer	Clown	Hex No One Escapes Death	Hex Ruin	Sloppy Butcher	Whispers
+Build	Killer	Clown	Hex Ruin	Infectious Fright	Monitor & Abuse	Save The Best For Last
+Build	Killer	Clown	Hex Ruin	Make Your Choice	Monitor & Abuse	Whispers
+Build	Killer	Clown	Hex Ruin	Make Your Choice	Play With Your Food	Pop Goes The Weasel
+Build	Killer	Clown	Hex Ruin	Make Your Choice	Play With Your Food	Whispers
+Build	Killer	Clown	Hex Ruin	Make Your Choice	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Clown	Hex Ruin	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Clown	Hex Ruin	Pop Goes The Weasel	Save The Best For Last	Thrilling Tremors
+Build	Killer	Clown	Hex Ruin	Pop Goes The Weasel	Sloppy Butcher	Thrilling Tremors
 Build	Killer	Clown	Hex Ruin	Pop Goes The Weasel	Sloppy Butcher	Whispers
+Build	Killer	Clown	Hex Ruin	Pop Goes The Weasel	Surveillance	Thrilling Tremors
+Build	Killer	Clown	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors	Whispers
 Perkless	Killer	Clown	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Spirit Rin #################################
 Build	Killer	Spirit Rin	A Nurse's Calling	Bamboozle	Barbecue & Chilli	Sloppy Butcher
@@ -3946,10 +4419,12 @@ Build	Killer	Spirit Rin	A Nurse's Calling	Bamboozle	Hex Ruin	Sloppy Butcher
 Build	Killer	Spirit Rin	A Nurse's Calling	Bamboozle	Pop Goes The Weasel	Sloppy Butcher
 Build	Killer	Spirit Rin	A Nurse's Calling	Barbecue & Chilli	Brutal Strength	Sloppy Butcher
 Build	Killer	Spirit Rin	A Nurse's Calling	Barbecue & Chilli	Corrupt Intervention	Sloppy Butcher
+Build	Killer	Spirit Rin	A Nurse's Calling	Barbecue & Chilli	Discordance	Sloppy Butcher
 Build	Killer	Spirit Rin	A Nurse's Calling	Barbecue & Chilli	Enduring	Hex Ruin
 Build	Killer	Spirit Rin	A Nurse's Calling	Barbecue & Chilli	Enduring	Pop Goes The Weasel
 Build	Killer	Spirit Rin	A Nurse's Calling	Barbecue & Chilli	Enduring	Sloppy Butcher
 Build	Killer	Spirit Rin	A Nurse's Calling	Barbecue & Chilli	Hex Devour Hope	Pop Goes The Weasel
+Build	Killer	Spirit Rin	A Nurse's Calling	Barbecue & Chilli	Hex Devour Hope	Sloppy Butcher
 Build	Killer	Spirit Rin	A Nurse's Calling	Barbecue & Chilli	Hex Haunted Ground	Hex Ruin
 Build	Killer	Spirit Rin	A Nurse's Calling	Barbecue & Chilli	Hex No One Escapes Death	Hex Ruin
 Build	Killer	Spirit Rin	A Nurse's Calling	Barbecue & Chilli	Hex No One Escapes Death	Pop Goes The Weasel
@@ -3962,6 +4437,7 @@ Build	Killer	Spirit Rin	A Nurse's Calling	Barbecue & Chilli	Hex Ruin	Spies From 
 Build	Killer	Spirit Rin	A Nurse's Calling	Barbecue & Chilli	Hex Ruin	Stridor
 Build	Killer	Spirit Rin	A Nurse's Calling	Barbecue & Chilli	Hex Ruin	Surveillance
 Build	Killer	Spirit Rin	A Nurse's Calling	Barbecue & Chilli	Hex Ruin	Whispers
+Build	Killer	Spirit Rin	A Nurse's Calling	Barbecue & Chilli	Make Your Choice	Sloppy Butcher
 Build	Killer	Spirit Rin	A Nurse's Calling	Barbecue & Chilli	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Spirit Rin	A Nurse's Calling	Barbecue & Chilli	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Spirit Rin	A Nurse's Calling	Barbecue & Chilli	Monitor & Abuse	Whispers
@@ -3974,6 +4450,8 @@ Build	Killer	Spirit Rin	A Nurse's Calling	Barbecue & Chilli	Pop Goes The Weasel	
 Build	Killer	Spirit Rin	A Nurse's Calling	Barbecue & Chilli	Predator	Sloppy Butcher
 Build	Killer	Spirit Rin	A Nurse's Calling	Barbecue & Chilli	Sloppy Butcher	Spies From The Shadows
 Build	Killer	Spirit Rin	A Nurse's Calling	Barbecue & Chilli	Sloppy Butcher	Stridor
+Build	Killer	Spirit Rin	A Nurse's Calling	Barbecue & Chilli	Sloppy Butcher	Thanatophobia
+Build	Killer	Spirit Rin	A Nurse's Calling	Barbecue & Chilli	Sloppy Butcher	Whispers
 Build	Killer	Spirit Rin	A Nurse's Calling	Brutal Strength	Sloppy Butcher	Stridor
 Build	Killer	Spirit Rin	A Nurse's Calling	Corrupt Intervention	Discordance	Sloppy Butcher
 Build	Killer	Spirit Rin	A Nurse's Calling	Corrupt Intervention	Pop Goes The Weasel	Sloppy Butcher
@@ -3993,12 +4471,14 @@ Build	Killer	Spirit Rin	A Nurse's Calling	Discordance	Pop Goes The Weasel	Sloppy
 Build	Killer	Spirit Rin	A Nurse's Calling	Discordance	Sloppy Butcher	Whispers
 Build	Killer	Spirit Rin	A Nurse's Calling	Enduring	Hex Devour Hope	Sloppy Butcher
 Build	Killer	Spirit Rin	A Nurse's Calling	Enduring	Hex Ruin	Sloppy Butcher
+Build	Killer	Spirit Rin	A Nurse's Calling	Enduring	Hex Ruin	Spirit Fury
 Build	Killer	Spirit Rin	A Nurse's Calling	Enduring	Hex Ruin	Whispers
 Build	Killer	Spirit Rin	A Nurse's Calling	Enduring	Pop Goes The Weasel	Sloppy Butcher
 Build	Killer	Spirit Rin	A Nurse's Calling	Enduring	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Spirit Rin	A Nurse's Calling	Enduring	Sloppy Butcher	Spirit Fury
 Build	Killer	Spirit Rin	A Nurse's Calling	Enduring	Spirit Fury	Stridor
 Build	Killer	Spirit Rin	A Nurse's Calling	Hex Devour Hope	Hex Haunted Ground	Hex Ruin
+Build	Killer	Spirit Rin	A Nurse's Calling	Hex Devour Hope	Hex Haunted Ground	Pop Goes The Weasel
 Build	Killer	Spirit Rin	A Nurse's Calling	Hex Devour Hope	Hex Haunted Ground	Sloppy Butcher
 Build	Killer	Spirit Rin	A Nurse's Calling	Hex Devour Hope	Hex Ruin	Hex Thrill Of The Hunt
 Build	Killer	Spirit Rin	A Nurse's Calling	Hex Devour Hope	Hex Thrill Of The Hunt	Pop Goes The Weasel
@@ -4006,11 +4486,14 @@ Build	Killer	Spirit Rin	A Nurse's Calling	Hex Devour Hope	Hex Thrill Of The Hunt
 Build	Killer	Spirit Rin	A Nurse's Calling	Hex Devour Hope	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Spirit Rin	A Nurse's Calling	Hex Devour Hope	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Spirit Rin	A Nurse's Calling	Hex Devour Hope	Pop Goes The Weasel	Sloppy Butcher
+Build	Killer	Spirit Rin	A Nurse's Calling	Hex Devour Hope	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Spirit Rin	A Nurse's Calling	Hex Devour Hope	Sloppy Butcher	Stridor
 Build	Killer	Spirit Rin	A Nurse's Calling	Hex Devour Hope	Sloppy Butcher	Surveillance
 Build	Killer	Spirit Rin	A Nurse's Calling	Hex Devour Hope	Sloppy Butcher	Thanatophobia
 Build	Killer	Spirit Rin	A Nurse's Calling	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The Hunt
+Build	Killer	Spirit Rin	A Nurse's Calling	Hex Haunted Ground	Hex Ruin	Monitor & Abuse
 Build	Killer	Spirit Rin	A Nurse's Calling	Hex Haunted Ground	Hex Ruin	Sloppy Butcher
+Build	Killer	Spirit Rin	A Nurse's Calling	Hex Haunted Ground	Pop Goes The Weasel	Sloppy Butcher
 Build	Killer	Spirit Rin	A Nurse's Calling	Hex Haunted Ground	Sloppy Butcher	Stridor
 Build	Killer	Spirit Rin	A Nurse's Calling	Hex No One Escapes Death	Hex Ruin	Whispers
 Build	Killer	Spirit Rin	A Nurse's Calling	Hex No One Escapes Death	Pop Goes The Weasel	Sloppy Butcher
@@ -4026,14 +4509,19 @@ Build	Killer	Spirit Rin	A Nurse's Calling	Hex Ruin	Pop Goes The Weasel	Whispers
 Build	Killer	Spirit Rin	A Nurse's Calling	Hex Ruin	Predator	Sloppy Butcher
 Build	Killer	Spirit Rin	A Nurse's Calling	Hex Ruin	Predator	Whispers
 Build	Killer	Spirit Rin	A Nurse's Calling	Hex Ruin	Sloppy Butcher	Stridor
+Build	Killer	Spirit Rin	A Nurse's Calling	Hex Ruin	Sloppy Butcher	Thanatophobia
 Build	Killer	Spirit Rin	A Nurse's Calling	Hex Ruin	Sloppy Butcher	Whispers
 Build	Killer	Spirit Rin	A Nurse's Calling	Hex Ruin	Spies From The Shadows	Whispers
 Build	Killer	Spirit Rin	A Nurse's Calling	Hex Ruin	Stridor	Whispers
 Build	Killer	Spirit Rin	A Nurse's Calling	Hex Thrill Of The Hunt	Sloppy Butcher	Stridor
+Build	Killer	Spirit Rin	A Nurse's Calling	Infectious Fright	Monitor & Abuse	Pop Goes The Weasel
+Build	Killer	Spirit Rin	A Nurse's Calling	Infectious Fright	Monitor & Abuse	Sloppy Butcher
+Build	Killer	Spirit Rin	A Nurse's Calling	Make Your Choice	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Spirit Rin	A Nurse's Calling	Make Your Choice	Pop Goes The Weasel	Sloppy Butcher
 Build	Killer	Spirit Rin	A Nurse's Calling	Make Your Choice	Pop Goes The Weasel	Whispers
 Build	Killer	Spirit Rin	A Nurse's Calling	Make Your Choice	Sloppy Butcher	Whispers
 Build	Killer	Spirit Rin	A Nurse's Calling	Monitor & Abuse	Pop Goes The Weasel	Sloppy Butcher
+Build	Killer	Spirit Rin	A Nurse's Calling	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Spirit Rin	A Nurse's Calling	Monitor & Abuse	Pop Goes The Weasel	Whispers
 Build	Killer	Spirit Rin	A Nurse's Calling	Monitor & Abuse	Sloppy Butcher	Stridor
 Build	Killer	Spirit Rin	A Nurse's Calling	Monitor & Abuse	Sloppy Butcher	Thanatophobia
@@ -4063,8 +4551,10 @@ Build	Killer	Spirit Rin	Barbecue & Chilli	Discordance	Hex Ruin	Pop Goes The Weas
 Build	Killer	Spirit Rin	Barbecue & Chilli	Discordance	Hex Ruin	Whispers
 Build	Killer	Spirit Rin	Barbecue & Chilli	Discordance	Pop Goes The Weasel	Stridor
 Build	Killer	Spirit Rin	Barbecue & Chilli	Discordance	Pop Goes The Weasel	Whispers
+Build	Killer	Spirit Rin	Barbecue & Chilli	Enduring	Hex Devour Hope	Pop Goes The Weasel
 Build	Killer	Spirit Rin	Barbecue & Chilli	Enduring	Hex Ruin	Spirit Fury
 Build	Killer	Spirit Rin	Barbecue & Chilli	Enduring	Pop Goes The Weasel	Spirit Fury
+Build	Killer	Spirit Rin	Barbecue & Chilli	Enduring	Sloppy Butcher	Spirit Fury
 Build	Killer	Spirit Rin	Barbecue & Chilli	Hex Devour Hope	Hex Haunted Ground	Hex Ruin
 Build	Killer	Spirit Rin	Barbecue & Chilli	Hex Devour Hope	Hex Haunted Ground	Pop Goes The Weasel
 Build	Killer	Spirit Rin	Barbecue & Chilli	Hex Devour Hope	Hex Ruin	Hex Thrill Of The Hunt
@@ -4078,6 +4568,7 @@ Build	Killer	Spirit Rin	Barbecue & Chilli	Hex Devour Hope	Pop Goes The Weasel	Su
 Build	Killer	Spirit Rin	Barbecue & Chilli	Hex Devour Hope	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Spirit Rin	Barbecue & Chilli	Hex Devour Hope	Pop Goes The Weasel	Whispers
 Build	Killer	Spirit Rin	Barbecue & Chilli	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The Hunt
+Build	Killer	Spirit Rin	Barbecue & Chilli	Hex Haunted Ground	Hex Ruin	Monitor & Abuse
 Build	Killer	Spirit Rin	Barbecue & Chilli	Hex Haunted Ground	Hex Ruin	Pop Goes The Weasel
 Build	Killer	Spirit Rin	Barbecue & Chilli	Hex Haunted Ground	Hex Ruin	Sloppy Butcher
 Build	Killer	Spirit Rin	Barbecue & Chilli	Hex Haunted Ground	Hex Ruin	Stridor
@@ -4086,6 +4577,9 @@ Build	Killer	Spirit Rin	Barbecue & Chilli	Hex Ruin	Hex Thrill Of The Hunt	Sloppy
 Build	Killer	Spirit Rin	Barbecue & Chilli	Hex Ruin	Hex Thrill Of The Hunt	Stridor
 Build	Killer	Spirit Rin	Barbecue & Chilli	Hex Ruin	Pop Goes The Weasel	Stridor
 Build	Killer	Spirit Rin	Barbecue & Chilli	Hex Ruin	Surveillance	Whispers
+Build	Killer	Spirit Rin	Barbecue & Chilli	Infectious Fright	Monitor & Abuse	Pop Goes The Weasel
+Build	Killer	Spirit Rin	Barbecue & Chilli	Make Your Choice	Play With Your Food	Pop Goes The Weasel
+Build	Killer	Spirit Rin	Barbecue & Chilli	Make Your Choice	Pop Goes The Weasel	Whispers
 Build	Killer	Spirit Rin	Barbecue & Chilli	Monitor & Abuse	Pop Goes The Weasel	Whispers
 Build	Killer	Spirit Rin	Barbecue & Chilli	Pop Goes The Weasel	Sloppy Butcher	Stridor
 Build	Killer	Spirit Rin	Barbecue & Chilli	Pop Goes The Weasel	Stridor	Surveillance
@@ -4094,11 +4588,13 @@ Build	Killer	Spirit Rin	Barbecue & Chilli	Pop Goes The Weasel	Surveillance	Whisp
 Build	Killer	Spirit Rin	Brutal Strength	Enduring	Pop Goes The Weasel	Stridor
 Build	Killer	Spirit Rin	Corrupt Intervention	Discordance	Pop Goes The Weasel	Stridor
 Build	Killer	Spirit Rin	Deerstalker	Hex Devour Hope	Hex Ruin	Hex Thrill Of The Hunt
+Build	Killer	Spirit Rin	Discordance	Enduring	Hex Ruin	Spirit Fury
 Build	Killer	Spirit Rin	Discordance	Enduring	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Spirit Rin	Discordance	Hex Devour Hope	Hex Haunted Ground	Hex Ruin
 Build	Killer	Spirit Rin	Discordance	Hex Devour Hope	Hex Haunted Ground	Pop Goes The Weasel
 Build	Killer	Spirit Rin	Discordance	Hex Devour Hope	Hex Ruin	Hex Thrill Of The Hunt
 Build	Killer	Spirit Rin	Discordance	Hex Devour Hope	Hex Thrill Of The Hunt	Pop Goes The Weasel
+Build	Killer	Spirit Rin	Discordance	Hex Devour Hope	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Spirit Rin	Discordance	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The Hunt
 Build	Killer	Spirit Rin	Discordance	Pop Goes The Weasel	Stridor	Thrilling Tremors
 Build	Killer	Spirit Rin	Enduring	Hex Devour Hope	Hex Thrill Of The Hunt	Pop Goes The Weasel
@@ -4107,10 +4603,14 @@ Build	Killer	Spirit Rin	Enduring	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The H
 Build	Killer	Spirit Rin	Enduring	Hex Haunted Ground	Hex Ruin	Spirit Fury
 Build	Killer	Spirit Rin	Enduring	Hex Ruin	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Spirit Rin	Enduring	Hex Ruin	Spirit Fury	Stridor
+Build	Killer	Spirit Rin	Enduring	Hex Ruin	Spirit Fury	Thrilling Tremors
+Build	Killer	Spirit Rin	Enduring	Hex Ruin	Spirit Fury	Whispers
+Build	Killer	Spirit Rin	Enduring	Infectious Fright	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Spirit Rin	Enduring	Make Your Choice	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Spirit Rin	Enduring	Monitor & Abuse	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Spirit Rin	Enduring	Pop Goes The Weasel	Spirit Fury	Stridor
 Build	Killer	Spirit Rin	Enduring	Pop Goes The Weasel	Spirit Fury	Surveillance
+Build	Killer	Spirit Rin	Enduring	Pop Goes The Weasel	Spirit Fury	Thrilling Tremors
 Build	Killer	Spirit Rin	Enduring	Pop Goes The Weasel	Spirit Fury	Whispers
 Build	Killer	Spirit Rin	Enduring	Spirit Fury	Stridor	Whispers
 Build	Killer	Spirit Rin	Hex Devour Hope	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The Hunt
@@ -4119,8 +4619,10 @@ Build	Killer	Spirit Rin	Hex Devour Hope	Hex Haunted Ground	Hex Ruin	Sloppy Butch
 Build	Killer	Spirit Rin	Hex Devour Hope	Hex Haunted Ground	Hex Ruin	Stridor
 Build	Killer	Spirit Rin	Hex Devour Hope	Hex Haunted Ground	Hex Thrill Of The Hunt	Pop Goes The Weasel
 Build	Killer	Spirit Rin	Hex Devour Hope	Hex Haunted Ground	Hex Thrill Of The Hunt	Surveillance
+Build	Killer	Spirit Rin	Hex Devour Hope	Hex Haunted Ground	Pop Goes The Weasel	Stridor
 Build	Killer	Spirit Rin	Hex Devour Hope	Hex Haunted Ground	Pop Goes The Weasel	Surveillance
 Build	Killer	Spirit Rin	Hex Devour Hope	Hex Haunted Ground	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Spirit Rin	Hex Devour Hope	Hex Haunted Ground	Pop Goes The Weasel	Whispers
 Build	Killer	Spirit Rin	Hex Devour Hope	Hex Haunted Ground	Sloppy Butcher	Stridor
 Build	Killer	Spirit Rin	Hex Devour Hope	Hex Haunted Ground	Stridor	Whispers
 Build	Killer	Spirit Rin	Hex Devour Hope	Hex Ruin	Hex Thrill Of The Hunt	Make Your Choice
@@ -4128,8 +4630,11 @@ Build	Killer	Spirit Rin	Hex Devour Hope	Hex Ruin	Hex Thrill Of The Hunt	Monitor 
 Build	Killer	Spirit Rin	Hex Devour Hope	Hex Ruin	Hex Thrill Of The Hunt	Stridor
 Build	Killer	Spirit Rin	Hex Devour Hope	Hex Ruin	Hex Thrill Of The Hunt	Whispers
 Build	Killer	Spirit Rin	Hex Devour Hope	Hex Thrill Of The Hunt	Pop Goes The Weasel	Sloppy Butcher
+Build	Killer	Spirit Rin	Hex Devour Hope	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Spirit Rin	Hex Devour Hope	Monitor & Abuse	Pop Goes The Weasel	Whispers
 Build	Killer	Spirit Rin	Hex Devour Hope	Pop Goes The Weasel	Stridor	Thrilling Tremors
+Build	Killer	Spirit Rin	Hex Devour Hope	Pop Goes The Weasel	Surveillance	Thrilling Tremors
+Build	Killer	Spirit Rin	Hex Devour Hope	Pop Goes The Weasel	Thrilling Tremors	Whispers
 Build	Killer	Spirit Rin	Hex Haunted Ground	Hex Huntress Lullaby	Hex Ruin	Whispers
 Build	Killer	Spirit Rin	Hex Haunted Ground	Hex No One Escapes Death	Hex Ruin	Hex Thrill Of The Hunt
 Build	Killer	Spirit Rin	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The Hunt	Pop Goes The Weasel
@@ -4137,18 +4642,24 @@ Build	Killer	Spirit Rin	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The Hunt	Strid
 Build	Killer	Spirit Rin	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The Hunt	Surveillance
 Build	Killer	Spirit Rin	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The Hunt	Thrilling Tremors
 Build	Killer	Spirit Rin	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The Hunt	Whispers
+Build	Killer	Spirit Rin	Hex Haunted Ground	Hex Ruin	Monitor & Abuse	Whispers
 Build	Killer	Spirit Rin	Hex Haunted Ground	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Spirit Rin	Hex Haunted Ground	Hex Ruin	Sloppy Butcher	Stridor
 Build	Killer	Spirit Rin	Hex Huntress Lullaby	Hex Ruin	Hex Thrill Of The Hunt	Whispers
 Build	Killer	Spirit Rin	Hex Ruin	Hex Thrill Of The Hunt	Pop Goes The Weasel	Stridor
 Build	Killer	Spirit Rin	Hex Ruin	Hex Thrill Of The Hunt	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Spirit Rin	Hex Ruin	Hex Thrill Of The Hunt	Stridor	Whispers
+Build	Killer	Spirit Rin	Make Your Choice	Monitor & Abuse	Pop Goes The Weasel	Whispers
+Build	Killer	Spirit Rin	Make Your Choice	Play With Your Food	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Spirit Rin	Make Your Choice	Pop Goes The Weasel	Stridor	Thrilling Tremors
+Build	Killer	Spirit Rin	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors	Whispers
 Build	Killer	Spirit Rin	Pop Goes The Weasel	Sloppy Butcher	Stridor	Thrilling Tremors
 Build	Killer	Spirit Rin	Pop Goes The Weasel	Stridor	Surveillance	Thrilling Tremors
 Build	Killer	Spirit Rin	Pop Goes The Weasel	Stridor	Thrilling Tremors	Whispers
 Perkless	Killer	Spirit Rin	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Legion #################################
+Build	Killer	Legion	Agitation	Enduring	Hex Ruin	Spirit Fury
+Build	Killer	Legion	A Nurse's Calling	Agitation	Sloppy Butcher	Thanatophobia
 Build	Killer	Legion	A Nurse's Calling	Bamboozle	Barbecue & Chilli	Sloppy Butcher
 Build	Killer	Legion	A Nurse's Calling	Bamboozle	Discordance	Sloppy Butcher
 Build	Killer	Legion	A Nurse's Calling	Bamboozle	Enduring	Sloppy Butcher
@@ -4159,17 +4670,26 @@ Build	Killer	Legion	A Nurse's Calling	Bamboozle	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Legion	A Nurse's Calling	Bamboozle	Monitor & Abuse	Thanatophobia
 Build	Killer	Legion	A Nurse's Calling	Bamboozle	Pop Goes The Weasel	Sloppy Butcher
 Build	Killer	Legion	A Nurse's Calling	Bamboozle	Sloppy Butcher	Thanatophobia
+Build	Killer	Legion	A Nurse's Calling	Barbecue & Chilli	Hex Ruin	Monitor & Abuse
 Build	Killer	Legion	A Nurse's Calling	Barbecue & Chilli	Hex Ruin	Sloppy Butcher
 Build	Killer	Legion	A Nurse's Calling	Barbecue & Chilli	Hex Ruin	Thanatophobia
 Build	Killer	Legion	A Nurse's Calling	Barbecue & Chilli	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Legion	A Nurse's Calling	Barbecue & Chilli	Pop Goes The Weasel	Sloppy Butcher
 Build	Killer	Legion	A Nurse's Calling	Barbecue & Chilli	Sloppy Butcher	Thanatophobia
 Build	Killer	Legion	A Nurse's Calling	Bloodhound	Hex Ruin	Sloppy Butcher
+Build	Killer	Legion	A Nurse's Calling	Bloodhound	Sloppy Butcher	Thanatophobia
 Build	Killer	Legion	A Nurse's Calling	Brutal Strength	Hex Ruin	Sloppy Butcher
 Build	Killer	Legion	A Nurse's Calling	Brutal Strength	Sloppy Butcher	Thanatophobia
+Build	Killer	Legion	A Nurse's Calling	Corrupt Intervention	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Legion	A Nurse's Calling	Corrupt Intervention	Sloppy Butcher	Thanatophobia
+Build	Killer	Legion	A Nurse's Calling	Coulrophobia	Hex Ruin	Sloppy Butcher
+Build	Killer	Legion	A Nurse's Calling	Coulrophobia	Sloppy Butcher	Thanatophobia
+Build	Killer	Legion	A Nurse's Calling	Dark Devotion	Hex Ruin	Sloppy Butcher
 Build	Killer	Legion	A Nurse's Calling	Dark Devotion	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Legion	A Nurse's Calling	Dark Devotion	Sloppy Butcher	Thanatophobia
+Build	Killer	Legion	A Nurse's Calling	Deerstalker	Hex Ruin	Sloppy Butcher
+Build	Killer	Legion	A Nurse's Calling	Deerstalker	Sloppy Butcher	Thanatophobia
+Build	Killer	Legion	A Nurse's Calling	Discordance	Hex Ruin	Monitor & Abuse
 Build	Killer	Legion	A Nurse's Calling	Discordance	Hex Ruin	Sloppy Butcher
 Build	Killer	Legion	A Nurse's Calling	Discordance	Hex Ruin	Thanatophobia
 Build	Killer	Legion	A Nurse's Calling	Discordance	Monitor & Abuse	Sloppy Butcher
@@ -4180,25 +4700,42 @@ Build	Killer	Legion	A Nurse's Calling	Enduring	Hex Ruin	Sloppy Butcher
 Build	Killer	Legion	A Nurse's Calling	Enduring	Hex Ruin	Spirit Fury
 Build	Killer	Legion	A Nurse's Calling	Enduring	Hex Ruin	Thanatophobia
 Build	Killer	Legion	A Nurse's Calling	Enduring	Monitor & Abuse	Sloppy Butcher
+Build	Killer	Legion	A Nurse's Calling	Enduring	Monitor & Abuse	Spirit Fury
+Build	Killer	Legion	A Nurse's Calling	Enduring	Sloppy Butcher	Spirit Fury
 Build	Killer	Legion	A Nurse's Calling	Enduring	Sloppy Butcher	Thanatophobia
+Build	Killer	Legion	A Nurse's Calling	Hex Devour Hope	Sloppy Butcher	Thanatophobia
 Build	Killer	Legion	A Nurse's Calling	Hex Haunted Ground	Hex Ruin	Sloppy Butcher
+Build	Killer	Legion	A Nurse's Calling	Hex Haunted Ground	Sloppy Butcher	Thanatophobia
 Build	Killer	Legion	A Nurse's Calling	Hex Ruin	Make Your Choice	Sloppy Butcher
+Build	Killer	Legion	A Nurse's Calling	Hex Ruin	Monitor & Abuse	Save The Best For Last
 Build	Killer	Legion	A Nurse's Calling	Hex Ruin	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Legion	A Nurse's Calling	Hex Ruin	Monitor & Abuse	Thanatophobia
+Build	Killer	Legion	A Nurse's Calling	Hex Ruin	Monitor & Abuse	Whispers
 Build	Killer	Legion	A Nurse's Calling	Hex Ruin	Pop Goes The Weasel	Sloppy Butcher
 Build	Killer	Legion	A Nurse's Calling	Hex Ruin	Pop Goes The Weasel	Thanatophobia
 Build	Killer	Legion	A Nurse's Calling	Hex Ruin	Save The Best For Last	Sloppy Butcher
 Build	Killer	Legion	A Nurse's Calling	Hex Ruin	Sloppy Butcher	Surveillance
 Build	Killer	Legion	A Nurse's Calling	Hex Ruin	Sloppy Butcher	Thanatophobia
+Build	Killer	Legion	A Nurse's Calling	Hex Ruin	Sloppy Butcher	Thrilling Tremors
+Build	Killer	Legion	A Nurse's Calling	Hex Ruin	Sloppy Butcher	Tinkerer
+Build	Killer	Legion	A Nurse's Calling	Hex Ruin	Sloppy Butcher	Whispers
+Build	Killer	Legion	A Nurse's Calling	Infectious Fright	Monitor & Abuse	Sloppy Butcher
+Build	Killer	Legion	A Nurse's Calling	Infectious Fright	Sloppy Butcher	Thanatophobia
 Build	Killer	Legion	A Nurse's Calling	Make Your Choice	Sloppy Butcher	Thanatophobia
 Build	Killer	Legion	A Nurse's Calling	Monitor & Abuse	Pop Goes The Weasel	Sloppy Butcher
+Build	Killer	Legion	A Nurse's Calling	Monitor & Abuse	Pop Goes The Weasel	Thanatophobia
 Build	Killer	Legion	A Nurse's Calling	Monitor & Abuse	Save The Best For Last	Sloppy Butcher
 Build	Killer	Legion	A Nurse's Calling	Monitor & Abuse	Sloppy Butcher	Surveillance
 Build	Killer	Legion	A Nurse's Calling	Monitor & Abuse	Sloppy Butcher	Thanatophobia
 Build	Killer	Legion	A Nurse's Calling	Monitor & Abuse	Sloppy Butcher	Whispers
+Build	Killer	Legion	A Nurse's Calling	Play With Your Food	Sloppy Butcher	Thanatophobia
+Build	Killer	Legion	A Nurse's Calling	Pop Goes The Weasel	Save The Best For Last	Sloppy Butcher
 Build	Killer	Legion	A Nurse's Calling	Pop Goes The Weasel	Sloppy Butcher	Thanatophobia
 Build	Killer	Legion	A Nurse's Calling	Pop Goes The Weasel	Sloppy Butcher	Thrilling Tremors
 Build	Killer	Legion	A Nurse's Calling	Save The Best For Last	Sloppy Butcher	Thanatophobia
+Build	Killer	Legion	A Nurse's Calling	Shadowborn	Sloppy Butcher	Thanatophobia
+Build	Killer	Legion	A Nurse's Calling	Sloppy Butcher	Stridor	Thanatophobia
+Build	Killer	Legion	A Nurse's Calling	Sloppy Butcher	Surveillance	Thanatophobia
 Build	Killer	Legion	A Nurse's Calling	Sloppy Butcher	Thanatophobia	Thrilling Tremors
 Build	Killer	Legion	A Nurse's Calling	Sloppy Butcher	Thanatophobia	Tinkerer
 Build	Killer	Legion	A Nurse's Calling	Sloppy Butcher	Thanatophobia	Whispers
@@ -4222,6 +4759,7 @@ Build	Killer	Legion	Bamboozle	Enduring	Hex Ruin	Sloppy Butcher
 Build	Killer	Legion	Bamboozle	Enduring	Hex Ruin	Spirit Fury
 Build	Killer	Legion	Bamboozle	Enduring	Hex Ruin	Thanatophobia
 Build	Killer	Legion	Bamboozle	Enduring	Monitor & Abuse	Spirit Fury
+Build	Killer	Legion	Bamboozle	Enduring	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Legion	Bamboozle	Enduring	Pop Goes The Weasel	Thanatophobia
 Build	Killer	Legion	Bamboozle	Enduring	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Legion	Bamboozle	Enduring	Sloppy Butcher	Spirit Fury
@@ -4244,24 +4782,48 @@ Build	Killer	Legion	Barbecue & Chilli	Enduring	Save The Best For Last	Spirit Fur
 Build	Killer	Legion	Barbecue & Chilli	Enduring	Spirit Fury	Thanatophobia
 Build	Killer	Legion	Barbecue & Chilli	Hex Ruin	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Legion	Barbecue & Chilli	Hex Ruin	Monitor & Abuse	Thanatophobia
+Build	Killer	Legion	Barbecue & Chilli	Hex Ruin	Monitor & Abuse	Whispers
 Build	Killer	Legion	Barbecue & Chilli	Hex Ruin	Pop Goes The Weasel	Save The Best For Last
+Build	Killer	Legion	Barbecue & Chilli	Hex Ruin	Pop Goes The Weasel	Sloppy Butcher
+Build	Killer	Legion	Barbecue & Chilli	Hex Ruin	Pop Goes The Weasel	Surveillance
+Build	Killer	Legion	Barbecue & Chilli	Hex Ruin	Pop Goes The Weasel	Thanatophobia
 Build	Killer	Legion	Barbecue & Chilli	Hex Ruin	Sloppy Butcher	Thanatophobia
 Build	Killer	Legion	Barbecue & Chilli	Hex Ruin	Thanatophobia	Whispers
 Build	Killer	Legion	Barbecue & Chilli	Pop Goes The Weasel	Sloppy Butcher	Thanatophobia
 Build	Killer	Legion	Bloodhound	Hex Ruin	Sloppy Butcher	Thanatophobia
+Build	Killer	Legion	Brutal Strength	Enduring	Hex Ruin	Spirit Fury
 Build	Killer	Legion	Brutal Strength	Hex Ruin	Sloppy Butcher	Thanatophobia
+Build	Killer	Legion	Corrupt Intervention	Discordance	Enduring	Spirit Fury
+Build	Killer	Legion	Corrupt Intervention	Enduring	Hex Ruin	Spirit Fury
+Build	Killer	Legion	Dark Devotion	Enduring	Hex Ruin	Spirit Fury
 Build	Killer	Legion	Deerstalker	Hex Ruin	Sloppy Butcher	Thanatophobia
 Build	Killer	Legion	Discordance	Enduring	Hex Ruin	Spirit Fury
+Build	Killer	Legion	Discordance	Enduring	Monitor & Abuse	Spirit Fury
+Build	Killer	Legion	Discordance	Enduring	Pop Goes The Weasel	Spirit Fury
+Build	Killer	Legion	Discordance	Enduring	Save The Best For Last	Spirit Fury
 Build	Killer	Legion	Discordance	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Legion	Discordance	Hex Ruin	Sloppy Butcher	Thanatophobia
 Build	Killer	Legion	Enduring	Hex Haunted Ground	Hex Ruin	Spirit Fury
+Build	Killer	Legion	Enduring	Hex Ruin	Hex Thrill Of The Hunt	Spirit Fury
+Build	Killer	Legion	Enduring	Hex Ruin	Infectious Fright	Spirit Fury
+Build	Killer	Legion	Enduring	Hex Ruin	Make Your Choice	Spirit Fury
 Build	Killer	Legion	Enduring	Hex Ruin	Monitor & Abuse	Spirit Fury
 Build	Killer	Legion	Enduring	Hex Ruin	Pop Goes The Weasel	Spirit Fury
+Build	Killer	Legion	Enduring	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Legion	Enduring	Hex Ruin	Save The Best For Last	Spirit Fury
 Build	Killer	Legion	Enduring	Hex Ruin	Sloppy Butcher	Spirit Fury
 Build	Killer	Legion	Enduring	Hex Ruin	Sloppy Butcher	Thanatophobia
+Build	Killer	Legion	Enduring	Hex Ruin	Spirit Fury	Stridor
+Build	Killer	Legion	Enduring	Hex Ruin	Spirit Fury	Surveillance
 Build	Killer	Legion	Enduring	Hex Ruin	Spirit Fury	Thanatophobia
+Build	Killer	Legion	Enduring	Hex Ruin	Spirit Fury	Thrilling Tremors
 Build	Killer	Legion	Enduring	Hex Ruin	Spirit Fury	Whispers
+Build	Killer	Legion	Enduring	Monitor & Abuse	Pop Goes The Weasel	Spirit Fury
+Build	Killer	Legion	Enduring	Monitor & Abuse	Save The Best For Last	Spirit Fury
+Build	Killer	Legion	Enduring	Monitor & Abuse	Spirit Fury	Whispers
+Build	Killer	Legion	Enduring	Pop Goes The Weasel	Save The Best For Last	Spirit Fury
+Build	Killer	Legion	Enduring	Pop Goes The Weasel	Sloppy Butcher	Spirit Fury
+Build	Killer	Legion	Enduring	Pop Goes The Weasel	Spirit Fury	Thanatophobia
 Build	Killer	Legion	Enduring	Pop Goes The Weasel	Spirit Fury	Thrilling Tremors
 Build	Killer	Legion	Enduring	Pop Goes The Weasel	Thanatophobia	Thrilling Tremors
 Build	Killer	Legion	Enduring	Sloppy Butcher	Spirit Fury	Thanatophobia
@@ -4272,12 +4834,15 @@ Build	Killer	Legion	Hex Haunted Ground	Hex Ruin	Hex The Third Seal	Thanatophobia
 Build	Killer	Legion	Hex Haunted Ground	Hex Ruin	Sloppy Butcher	Thanatophobia
 Build	Killer	Legion	Hex Ruin	Hex Thrill Of The Hunt	Sloppy Butcher	Thanatophobia
 Build	Killer	Legion	Hex Ruin	Infectious Fright	Monitor & Abuse	Save The Best For Last
+Build	Killer	Legion	Hex Ruin	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Legion	Hex Ruin	Monitor & Abuse	Save The Best For Last	Whispers
 Build	Killer	Legion	Hex Ruin	Monitor & Abuse	Sloppy Butcher	Thanatophobia
 Build	Killer	Legion	Hex Ruin	Monitor & Abuse	Stridor	Thanatophobia
 Build	Killer	Legion	Hex Ruin	Monitor & Abuse	Thanatophobia	Whispers
 Build	Killer	Legion	Hex Ruin	Pop Goes The Weasel	Save The Best For Last	Thrilling Tremors
 Build	Killer	Legion	Hex Ruin	Pop Goes The Weasel	Sloppy Butcher	Thanatophobia
 Build	Killer	Legion	Hex Ruin	Pop Goes The Weasel	Sloppy Butcher	Thrilling Tremors
+Build	Killer	Legion	Hex Ruin	Pop Goes The Weasel	Thanatophobia	Thrilling Tremors
 Build	Killer	Legion	Hex Ruin	Save The Best For Last	Sloppy Butcher	Thanatophobia
 Build	Killer	Legion	Hex Ruin	Sloppy Butcher	Stridor	Thanatophobia
 Build	Killer	Legion	Hex Ruin	Sloppy Butcher	Surveillance	Thanatophobia
@@ -4289,6 +4854,8 @@ Build	Killer	Legion	Pop Goes The Weasel	Save The Best For Last	Thanatophobia	Thr
 Build	Killer	Legion	Pop Goes The Weasel	Sloppy Butcher	Thanatophobia	Thrilling Tremors
 Perkless	Killer	Legion	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Plague #################################
+Build	Killer	Plague	Agitation	Corrupt Intervention	Enduring	Spirit Fury
+Build	Killer	Plague	Agitation	Enduring	Hex Ruin	Spirit Fury
 Build	Killer	Plague	Bamboozle	Barbecue & Chilli	Enduring	Hex Ruin
 Build	Killer	Plague	Bamboozle	Brutal Strength	Enduring	Hex Ruin
 Build	Killer	Plague	Bamboozle	Brutal Strength	Enduring	Pop Goes The Weasel
@@ -4297,21 +4864,35 @@ Build	Killer	Plague	Bamboozle	Corrupt Intervention	Enduring	Spirit Fury
 Build	Killer	Plague	Bamboozle	Enduring	Hex Haunted Ground	Hex Ruin
 Build	Killer	Plague	Bamboozle	Enduring	Hex Ruin	Spirit Fury
 Build	Killer	Plague	Bamboozle	Enduring	Hex Ruin	Thanatophobia
+Build	Killer	Plague	Bamboozle	Enduring	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Plague	Bamboozle	Enduring	Pop Goes The Weasel	Thanatophobia
 Build	Killer	Plague	Bamboozle	Enduring	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Plague	Bamboozle	Enduring	Spirit Fury	Thanatophobia
 Build	Killer	Plague	Bamboozle	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Plague	Bamboozle	Pop Goes The Weasel	Thanatophobia	Thrilling Tremors
+Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Discordance	Enduring
 Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Discordance	Hex Ruin
+Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Discordance	Infectious Fright
+Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Discordance	Monitor & Abuse
 Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Discordance	Pop Goes The Weasel
+Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Discordance	Thanatophobia
+Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Enduring	Pop Goes The Weasel
 Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Enduring	Spirit Fury
 Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Hex Devour Hope	Pop Goes The Weasel
+Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Thanatophobia
+Build	Killer	Plague	Barbecue & Chilli	Discordance	Enduring	Pop Goes The Weasel
 Build	Killer	Plague	Barbecue & Chilli	Discordance	Enduring	Spirit Fury
 Build	Killer	Plague	Barbecue & Chilli	Discordance	Hex Devour Hope	Pop Goes The Weasel
+Build	Killer	Plague	Barbecue & Chilli	Discordance	Hex Ruin	Pop Goes The Weasel
+Build	Killer	Plague	Barbecue & Chilli	Discordance	Pop Goes The Weasel	Thanatophobia
 Build	Killer	Plague	Barbecue & Chilli	Enduring	Hex Ruin	Spirit Fury
 Build	Killer	Plague	Barbecue & Chilli	Enduring	Hex Ruin	Thanatophobia
+Build	Killer	Plague	Barbecue & Chilli	Enduring	Infectious Fright	Spirit Fury
+Build	Killer	Plague	Barbecue & Chilli	Enduring	Monitor & Abuse	Spirit Fury
 Build	Killer	Plague	Barbecue & Chilli	Enduring	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Plague	Barbecue & Chilli	Enduring	Spirit Fury	Thanatophobia
+Build	Killer	Plague	Barbecue & Chilli	Hex Ruin	Pop Goes The Weasel	Surveillance
+Build	Killer	Plague	Barbecue & Chilli	Hex Ruin	Pop Goes The Weasel	Thanatophobia
 Build	Killer	Plague	Brutal Strength	Corrupt Intervention	Enduring	Spirit Fury
 Build	Killer	Plague	Brutal Strength	Enduring	Hex Ruin	Pop Goes The Weasel
 Build	Killer	Plague	Brutal Strength	Enduring	Hex Ruin	Spirit Fury
@@ -4319,33 +4900,54 @@ Build	Killer	Plague	Brutal Strength	Enduring	Hex Ruin	Thanatophobia
 Build	Killer	Plague	Brutal Strength	Enduring	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Plague	Brutal Strength	Enduring	Pop Goes The Weasel	Thanatophobia
 Build	Killer	Plague	Brutal Strength	Enduring	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Plague	Corrupt Intervention	Discordance	Enduring	Hex Ruin
 Build	Killer	Plague	Corrupt Intervention	Discordance	Enduring	Spirit Fury
+Build	Killer	Plague	Corrupt Intervention	Discordance	Enduring	Thanatophobia
 Build	Killer	Plague	Corrupt Intervention	Discordance	Hex Devour Hope	Pop Goes The Weasel
+Build	Killer	Plague	Corrupt Intervention	Discordance	Hex Haunted Ground	Hex Ruin
+Build	Killer	Plague	Corrupt Intervention	Discordance	Hex Ruin	Monitor & Abuse
+Build	Killer	Plague	Corrupt Intervention	Discordance	Hex Ruin	Thanatophobia
+Build	Killer	Plague	Corrupt Intervention	Discordance	Infectious Fright	Monitor & Abuse
 Build	Killer	Plague	Corrupt Intervention	Discordance	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Plague	Corrupt Intervention	Enduring	Hex Devour Hope	Spirit Fury
+Build	Killer	Plague	Corrupt Intervention	Enduring	Hex No One Escapes Death	Spirit Fury
 Build	Killer	Plague	Corrupt Intervention	Enduring	Hex Ruin	Spirit Fury
 Build	Killer	Plague	Corrupt Intervention	Enduring	Infectious Fright	Spirit Fury
 Build	Killer	Plague	Corrupt Intervention	Enduring	Monitor & Abuse	Spirit Fury
 Build	Killer	Plague	Corrupt Intervention	Enduring	Play With Your Food	Spirit Fury
 Build	Killer	Plague	Corrupt Intervention	Enduring	Pop Goes The Weasel	Spirit Fury
+Build	Killer	Plague	Corrupt Intervention	Enduring	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Plague	Corrupt Intervention	Enduring	Spirit Fury	Stridor
+Build	Killer	Plague	Corrupt Intervention	Enduring	Spirit Fury	Surveillance
 Build	Killer	Plague	Corrupt Intervention	Enduring	Spirit Fury	Thanatophobia
 Build	Killer	Plague	Corrupt Intervention	Enduring	Spirit Fury	Thrilling Tremors
 Build	Killer	Plague	Corrupt Intervention	Enduring	Spirit Fury	Whispers
 Build	Killer	Plague	Discordance	Enduring	Hex Ruin	Spirit Fury
+Build	Killer	Plague	Discordance	Enduring	Infectious Fright	Spirit Fury
+Build	Killer	Plague	Discordance	Enduring	Monitor & Abuse	Spirit Fury
 Build	Killer	Plague	Discordance	Enduring	Pop Goes The Weasel	Spirit Fury
+Build	Killer	Plague	Discordance	Enduring	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Plague	Discordance	Enduring	Spirit Fury	Thanatophobia
+Build	Killer	Plague	Discordance	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Plague	Enduring	Hex Devour Hope	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Plague	Enduring	Hex Haunted Ground	Hex Ruin	Hex The Third Seal
 Build	Killer	Plague	Enduring	Hex Haunted Ground	Hex Ruin	Spirit Fury
+Build	Killer	Plague	Enduring	Hex No One Escapes Death	Hex Ruin	Spirit Fury
 Build	Killer	Plague	Enduring	Hex Ruin	Hex Thrill Of The Hunt	Spirit Fury
 Build	Killer	Plague	Enduring	Hex Ruin	Infectious Fright	Spirit Fury
 Build	Killer	Plague	Enduring	Hex Ruin	Monitor & Abuse	Spirit Fury
 Build	Killer	Plague	Enduring	Hex Ruin	Play With Your Food	Spirit Fury
 Build	Killer	Plague	Enduring	Hex Ruin	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Plague	Enduring	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Plague	Enduring	Hex Ruin	Spirit Fury	Stridor
+Build	Killer	Plague	Enduring	Hex Ruin	Spirit Fury	Surveillance
 Build	Killer	Plague	Enduring	Hex Ruin	Spirit Fury	Thanatophobia
+Build	Killer	Plague	Enduring	Hex Ruin	Spirit Fury	Thrilling Tremors
 Build	Killer	Plague	Enduring	Hex Ruin	Spirit Fury	Whispers
+Build	Killer	Plague	Enduring	Infectious Fright	Monitor & Abuse	Spirit Fury
 Build	Killer	Plague	Enduring	Infectious Fright	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Plague	Enduring	Monitor & Abuse	Pop Goes The Weasel	Spirit Fury
+Build	Killer	Plague	Enduring	Play With Your Food	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Plague	Enduring	Pop Goes The Weasel	Spirit Fury	Surveillance
 Build	Killer	Plague	Enduring	Pop Goes The Weasel	Spirit Fury	Thanatophobia
 Build	Killer	Plague	Enduring	Pop Goes The Weasel	Spirit Fury	Thrilling Tremors
@@ -4406,6 +5008,7 @@ Build	Killer	Ghostface	A Nurse's Calling	Barbecue & Chilli	Sloppy Butcher	Thanat
 Build	Killer	Ghostface	A Nurse's Calling	Barbecue & Chilli	Sloppy Butcher	Whispers
 Build	Killer	Ghostface	A Nurse's Calling	Bitter Murmur	Hex No One Escapes Death	Hex Ruin
 Build	Killer	Ghostface	A Nurse's Calling	Bitter Murmur	Hex No One Escapes Death	Sloppy Butcher
+Build	Killer	Ghostface	A Nurse's Calling	Bitter Murmur	Hex No One Escapes Death	Whispers
 Build	Killer	Ghostface	A Nurse's Calling	Bloodhound	Discordance	Sloppy Butcher
 Build	Killer	Ghostface	A Nurse's Calling	Bloodhound	Hex Ruin	Sloppy Butcher
 Build	Killer	Ghostface	A Nurse's Calling	Bloodhound	Sloppy Butcher	Whispers
@@ -4595,6 +5198,7 @@ Build	Killer	Ghostface	Barbecue & Chilli	Hex Devour Hope	Hex Haunted Ground	Pop 
 Build	Killer	Ghostface	Barbecue & Chilli	Hex Devour Hope	Pop Goes The Weasel	Whispers
 Build	Killer	Ghostface	Barbecue & Chilli	Hex Haunted Ground	Hex Ruin	Whispers
 Build	Killer	Ghostface	Barbecue & Chilli	Hex No One Escapes Death	Hex Ruin	Whispers
+Build	Killer	Ghostface	Barbecue & Chilli	Hex Ruin	Pop Goes The Weasel	Whispers
 Build	Killer	Ghostface	Bitter Murmur	Hex No One Escapes Death	Hex Ruin	Whispers
 Build	Killer	Ghostface	Blood Warden	Discordance	Hex No One Escapes Death	Hex Ruin
 Build	Killer	Ghostface	Blood Warden	Hex No One Escapes Death	Hex Ruin	Remember Me
@@ -4612,6 +5216,7 @@ Build	Killer	Ghostface	Corrupt Intervention	Discordance	Enduring	Hex Ruin
 Build	Killer	Ghostface	Corrupt Intervention	Discordance	Enduring	Pop Goes The Weasel
 Build	Killer	Ghostface	Corrupt Intervention	Discordance	Enduring	Spirit Fury
 Build	Killer	Ghostface	Corrupt Intervention	Discordance	Enduring	Whispers
+Build	Killer	Ghostface	Corrupt Intervention	Discordance	Hex Haunted Ground	Hex Ruin
 Build	Killer	Ghostface	Corrupt Intervention	Discordance	Hex No One Escapes Death	Whispers
 Build	Killer	Ghostface	Corrupt Intervention	Discordance	Hex Ruin	Whispers
 Build	Killer	Ghostface	Corrupt Intervention	Discordance	Monitor & Abuse	Whispers
@@ -4640,6 +5245,7 @@ Build	Killer	Ghostface	Discordance	Hex Haunted Ground	Hex Ruin	Whispers
 Build	Killer	Ghostface	Discordance	Hex No One Escapes Death	Hex Ruin	Whispers
 Build	Killer	Ghostface	Discordance	Hex Ruin	Hex The Third Seal	Hex Thrill Of The Hunt
 Build	Killer	Ghostface	Discordance	Hex Ruin	Hex Thrill Of The Hunt	Whispers
+Build	Killer	Ghostface	Discordance	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Ghostface	Discordance	Hex Ruin	Pop Goes The Weasel	Whispers
 Build	Killer	Ghostface	Enduring	Hex Devour Hope	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Ghostface	Enduring	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The Hunt
@@ -4665,6 +5271,7 @@ Build	Killer	Ghostface	Hex Haunted Ground	Hex No One Escapes Death	Hex Ruin	Hex 
 Build	Killer	Ghostface	Hex Haunted Ground	Hex No One Escapes Death	Hex Ruin	Whispers
 Build	Killer	Ghostface	Hex Haunted Ground	Hex Ruin	Hex The Third Seal	Whispers
 Build	Killer	Ghostface	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The Hunt	Whispers
+Build	Killer	Ghostface	Hex Haunted Ground	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Ghostface	Hex Huntress Lullaby	Hex Ruin	Hex Thrill Of The Hunt	Whispers
 Build	Killer	Ghostface	Hex No One Escapes Death	Hex Ruin	Hex Thrill Of The Hunt	Whispers
 Build	Killer	Ghostface	Hex No One Escapes Death	Hex Ruin	Pop Goes The Weasel	Whispers
@@ -4673,20 +5280,30 @@ Build	Killer	Ghostface	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors	Whispers
 Build	Killer	Ghostface	Pop Goes The Weasel	Surveillance	Thrilling Tremors	Whispers
 Perkless	Killer	Ghostface	Undefined	Undefined	Undefined	Undefined
 ################################# Killer - Demogorgon #################################
+Build	Killer	Demogorgon	A Nurse's Calling	Barbecue & Chilli	Discordance	Pop Goes The Weasel
 Build	Killer	Demogorgon	A Nurse's Calling	Barbecue & Chilli	Enduring	Sloppy Butcher
+Build	Killer	Demogorgon	A Nurse's Calling	Barbecue & Chilli	Enduring	Spirit Fury
+Build	Killer	Demogorgon	A Nurse's Calling	Barbecue & Chilli	Hex Ruin	Pop Goes The Weasel
 Build	Killer	Demogorgon	A Nurse's Calling	Barbecue & Chilli	Hex Ruin	Sloppy Butcher
+Build	Killer	Demogorgon	A Nurse's Calling	Barbecue & Chilli	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Demogorgon	A Nurse's Calling	Barbecue & Chilli	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Demogorgon	A Nurse's Calling	Barbecue & Chilli	Pop Goes The Weasel	Sloppy Butcher
+Build	Killer	Demogorgon	A Nurse's Calling	Barbecue & Chilli	Pop Goes The Weasel	Surveillance
 Build	Killer	Demogorgon	A Nurse's Calling	Barbecue & Chilli	Sloppy Butcher	Thanatophobia
+Build	Killer	Demogorgon	A Nurse's Calling	Discordance	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Demogorgon	A Nurse's Calling	Enduring	Hex Ruin	Spirit Fury
 Build	Killer	Demogorgon	A Nurse's Calling	Enduring	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Demogorgon	A Nurse's Calling	Enduring	Pop Goes The Weasel	Sloppy Butcher
 Build	Killer	Demogorgon	A Nurse's Calling	Enduring	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Demogorgon	A Nurse's Calling	Hex Ruin	Pop Goes The Weasel	Sloppy Butcher
+Build	Killer	Demogorgon	A Nurse's Calling	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Demogorgon	A Nurse's Calling	Hex Ruin	Sloppy Butcher	Thanatophobia
 Build	Killer	Demogorgon	A Nurse's Calling	Monitor & Abuse	Pop Goes The Weasel	Sloppy Butcher
+Build	Killer	Demogorgon	A Nurse's Calling	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Demogorgon	A Nurse's Calling	Monitor & Abuse	Sloppy Butcher	Thanatophobia
 Build	Killer	Demogorgon	A Nurse's Calling	Pop Goes The Weasel	Sloppy Butcher	Thanatophobia
 Build	Killer	Demogorgon	A Nurse's Calling	Pop Goes The Weasel	Sloppy Butcher	Thrilling Tremors
+Build	Killer	Demogorgon	A Nurse's Calling	Pop Goes The Weasel	Surveillance	Thrilling Tremors
 Build	Killer	Demogorgon	A Nurse's Calling	Save The Best For Last	Sloppy Butcher	Thanatophobia
 Build	Killer	Demogorgon	Bamboozle	Barbecue & Chilli	Enduring	Hex Ruin
 Build	Killer	Demogorgon	Bamboozle	Barbecue & Chilli	Enduring	Pop Goes The Weasel
@@ -4696,39 +5313,89 @@ Build	Killer	Demogorgon	Bamboozle	Enduring	Hex Ruin	Pop Goes The Weasel
 Build	Killer	Demogorgon	Bamboozle	Enduring	Hex Ruin	Spirit Fury
 Build	Killer	Demogorgon	Bamboozle	Enduring	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Demogorgon	Bamboozle	Enduring	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Demogorgon	Barbecue & Chilli	Bitter Murmur	Hex No One Escapes Death	Pop Goes The Weasel
+Build	Killer	Demogorgon	Barbecue & Chilli	Blood Warden	Hex No One Escapes Death	Pop Goes The Weasel
 Build	Killer	Demogorgon	Barbecue & Chilli	Brutal Strength	Enduring	Pop Goes The Weasel
+Build	Killer	Demogorgon	Barbecue & Chilli	Corrupt Intervention	Discordance	Pop Goes The Weasel
+Build	Killer	Demogorgon	Barbecue & Chilli	Corrupt Intervention	Enduring	Spirit Fury
+Build	Killer	Demogorgon	Barbecue & Chilli	Discordance	Enduring	Pop Goes The Weasel
 Build	Killer	Demogorgon	Barbecue & Chilli	Discordance	Enduring	Spirit Fury
 Build	Killer	Demogorgon	Barbecue & Chilli	Discordance	Hex Devour Hope	Pop Goes The Weasel
 Build	Killer	Demogorgon	Barbecue & Chilli	Discordance	Hex Ruin	Pop Goes The Weasel
+Build	Killer	Demogorgon	Barbecue & Chilli	Discordance	Make Your Choice	Pop Goes The Weasel
+Build	Killer	Demogorgon	Barbecue & Chilli	Discordance	Monitor & Abuse	Pop Goes The Weasel
+Build	Killer	Demogorgon	Barbecue & Chilli	Discordance	Pop Goes The Weasel	Save The Best For Last
+Build	Killer	Demogorgon	Barbecue & Chilli	Discordance	Pop Goes The Weasel	Surveillance
+Build	Killer	Demogorgon	Barbecue & Chilli	Discordance	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Demogorgon	Barbecue & Chilli	Enduring	Hex Ruin	Pop Goes The Weasel
 Build	Killer	Demogorgon	Barbecue & Chilli	Enduring	Hex Ruin	Spirit Fury
+Build	Killer	Demogorgon	Barbecue & Chilli	Enduring	Make Your Choice	Spirit Fury
+Build	Killer	Demogorgon	Barbecue & Chilli	Enduring	Monitor & Abuse	Spirit Fury
 Build	Killer	Demogorgon	Barbecue & Chilli	Enduring	Pop Goes The Weasel	Spirit Fury
+Build	Killer	Demogorgon	Barbecue & Chilli	Enduring	Pop Goes The Weasel	Surveillance
+Build	Killer	Demogorgon	Barbecue & Chilli	Enduring	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Demogorgon	Barbecue & Chilli	Enduring	Save The Best For Last	Spirit Fury
+Build	Killer	Demogorgon	Barbecue & Chilli	Enduring	Spirit Fury	Surveillance
+Build	Killer	Demogorgon	Barbecue & Chilli	Enduring	Spirit Fury	Whispers
 Build	Killer	Demogorgon	Barbecue & Chilli	Hex Devour Hope	Pop Goes The Weasel	Surveillance
 Build	Killer	Demogorgon	Barbecue & Chilli	Hex Haunted Ground	Hex Ruin	Pop Goes The Weasel
+Build	Killer	Demogorgon	Barbecue & Chilli	Hex Ruin	Make Your Choice	Pop Goes The Weasel
+Build	Killer	Demogorgon	Barbecue & Chilli	Hex Ruin	Monitor & Abuse	Pop Goes The Weasel
+Build	Killer	Demogorgon	Barbecue & Chilli	Hex Ruin	Pop Goes The Weasel	Save The Best For Last
 Build	Killer	Demogorgon	Barbecue & Chilli	Hex Ruin	Pop Goes The Weasel	Surveillance
+Build	Killer	Demogorgon	Barbecue & Chilli	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Demogorgon	Barbecue & Chilli	Make Your Choice	Play With Your Food	Pop Goes The Weasel
+Build	Killer	Demogorgon	Barbecue & Chilli	Make Your Choice	Pop Goes The Weasel	Surveillance
+Build	Killer	Demogorgon	Barbecue & Chilli	Monitor & Abuse	Pop Goes The Weasel	Surveillance
+Build	Killer	Demogorgon	Barbecue & Chilli	Monitor & Abuse	Pop Goes The Weasel	Whispers
+Build	Killer	Demogorgon	Barbecue & Chilli	Pop Goes The Weasel	Save The Best For Last	Surveillance
+Build	Killer	Demogorgon	Barbecue & Chilli	Pop Goes The Weasel	Surveillance	Thrilling Tremors
+Build	Killer	Demogorgon	Barbecue & Chilli	Pop Goes The Weasel	Surveillance	Whispers
 Build	Killer	Demogorgon	Brutal Strength	Enduring	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Demogorgon	Brutal Strength	Enduring	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Demogorgon	Corrupt Intervention	Discordance	Enduring	Spirit Fury
+Build	Killer	Demogorgon	Corrupt Intervention	Discordance	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Demogorgon	Discordance	Enduring	Hex Ruin	Spirit Fury
 Build	Killer	Demogorgon	Discordance	Enduring	Pop Goes The Weasel	Spirit Fury
+Build	Killer	Demogorgon	Discordance	Enduring	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Demogorgon	Discordance	Enduring	Spirit Fury	Thrilling Tremors
 Build	Killer	Demogorgon	Discordance	Hex Devour Hope	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Demogorgon	Discordance	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Demogorgon	Discordance	Make Your Choice	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Demogorgon	Discordance	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Demogorgon	Discordance	Pop Goes The Weasel	Save The Best For Last	Thrilling Tremors
+Build	Killer	Demogorgon	Discordance	Pop Goes The Weasel	Surveillance	Thrilling Tremors
 Build	Killer	Demogorgon	Enduring	Hex Devour Hope	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Demogorgon	Enduring	Hex Haunted Ground	Hex Ruin	Spirit Fury
+Build	Killer	Demogorgon	Enduring	Hex Ruin	Make Your Choice	Spirit Fury
+Build	Killer	Demogorgon	Enduring	Hex Ruin	Monitor & Abuse	Spirit Fury
 Build	Killer	Demogorgon	Enduring	Hex Ruin	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Demogorgon	Enduring	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Demogorgon	Enduring	Hex Ruin	Save The Best For Last	Spirit Fury
+Build	Killer	Demogorgon	Enduring	Hex Ruin	Spirit Fury	Surveillance
 Build	Killer	Demogorgon	Enduring	Hex Ruin	Spirit Fury	Thrilling Tremors
+Build	Killer	Demogorgon	Enduring	Hex Ruin	Spirit Fury	Whispers
 Build	Killer	Demogorgon	Enduring	Make Your Choice	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Demogorgon	Enduring	Monitor & Abuse	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Demogorgon	Enduring	Pop Goes The Weasel	Save The Best For Last	Spirit Fury
 Build	Killer	Demogorgon	Enduring	Pop Goes The Weasel	Spirit Fury	Surveillance
 Build	Killer	Demogorgon	Enduring	Pop Goes The Weasel	Spirit Fury	Thrilling Tremors
 Build	Killer	Demogorgon	Enduring	Pop Goes The Weasel	Spirit Fury	Whispers
+Build	Killer	Demogorgon	Enduring	Pop Goes The Weasel	Surveillance	Thrilling Tremors
 Build	Killer	Demogorgon	Hex Devour Hope	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The Hunt
 Build	Killer	Demogorgon	Hex Devour Hope	Pop Goes The Weasel	Surveillance	Thrilling Tremors
 Build	Killer	Demogorgon	Hex Haunted Ground	Hex Ruin	Hex The Third Seal	Hex Thrill Of The Hunt
 Build	Killer	Demogorgon	Hex Haunted Ground	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Demogorgon	Hex Ruin	Make Your Choice	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Demogorgon	Hex Ruin	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Demogorgon	Hex Ruin	Pop Goes The Weasel	Save The Best For Last	Thrilling Tremors
 Build	Killer	Demogorgon	Hex Ruin	Pop Goes The Weasel	Surveillance	Thrilling Tremors
+Build	Killer	Demogorgon	Hex Ruin	Pop Goes The Weasel	Thrilling Tremors	Whispers
 Build	Killer	Demogorgon	Make Your Choice	Play With Your Food	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Demogorgon	Make Your Choice	Pop Goes The Weasel	Surveillance	Thrilling Tremors
+Build	Killer	Demogorgon	Monitor & Abuse	Pop Goes The Weasel	Surveillance	Thrilling Tremors
+Build	Killer	Demogorgon	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors	Whispers
+Build	Killer	Demogorgon	Pop Goes The Weasel	Save The Best For Last	Surveillance	Thrilling Tremors
+Build	Killer	Demogorgon	Pop Goes The Weasel	Surveillance	Thrilling Tremors	Whispers
 Perkless	Killer	Demogorgon	Undefined	Undefined	Undefined	Undefined
 ################################# End of Database #################################

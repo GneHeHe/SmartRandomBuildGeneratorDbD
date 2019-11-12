@@ -32,6 +32,8 @@ public class Perk implements Comparable<Perk> {
     private final static int SIZE_MEDIUM = 60;
     private final static int SIZE_LARGE = 160;
     // Generic Perk
+    public final static String SURVIVOR = "Survivor";
+    public final static String KILLER = "Killer";
     public final static String GENERIC = "Undefined";
 
     /**
@@ -114,7 +116,7 @@ public class Perk implements Comparable<Perk> {
      */
     public final void setSide(String side) {
         // Only 2 Sides are Available
-        if (side.equals("Killer") || side.equals("Survivor")) {
+        if (side.equals(KILLER) || side.equals(SURVIVOR)) {
             this.side = side;
         } else {
             System.err.println("# ERROR: This side " + side + " is wrong (expected value = 'Killer' or 'Survivor'");

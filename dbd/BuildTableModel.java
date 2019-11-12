@@ -298,7 +298,7 @@ public class BuildTableModel extends AbstractTableModel {
                         Perk p2 = srbg.getPerk(tab[4]);
                         Perk p3 = srbg.getPerk(tab[5]);
                         Perk p4 = srbg.getPerk(tab[6]);
-                        if (!((myside.equals("Survivor")) || (myside.equals("Killer")))) {
+                        if (!((myside.equals(srbg.s_side_surv)) || (myside.equals(srbg.s_side_killer)))) {
                             // Check if Side is Ok
                             System.err.println("# ERROR: wrong side ('" + myside + "') => skipped line " + nb_lines + " : >" + line + "< from input file");
                         } else if (!mychar.getSide().equals(myside)) {
@@ -328,7 +328,9 @@ public class BuildTableModel extends AbstractTableModel {
                                 b.addPerk(p3);
                                 b.addPerk(p4);
                                 // Add Build to Model
-                                addBuild(b, false);
+                                if (addBuild(b, false)) {
+                                    nb_builds++;
+                                }
                             } else {
                                 System.err.println("# ERROR: duplicate perks in build ('" + p1.getName() + "'/'" + p2.getName() + "'/'" + p3.getName() + "'/'" + p4.getName() + "') => skipped line " + nb_lines + " : >" + line + "< from input file");
                             }
@@ -336,7 +338,6 @@ public class BuildTableModel extends AbstractTableModel {
                     } else {
                         System.err.println("# ERROR: corrupted build database => skipped line " + nb_lines + " : >" + line + "< from input file");
                     }
-                    nb_builds++;
                 }
                 nb_lines++;
                 line = br.readLine();
@@ -347,7 +348,6 @@ public class BuildTableModel extends AbstractTableModel {
             }
             System.out.println("# " + nb_builds + " Builds were Loaded");
             br.close();
-            System.out.println("");
         } catch (Exception ex) {
             System.err.println("\n# ERROR: Issues with the Build Database");
             System.err.println(ex.getMessage());
