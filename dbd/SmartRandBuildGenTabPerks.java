@@ -4,6 +4,11 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.*;
+import java.net.URL;
+import java.nio.channels.Channels;
+import java.nio.channels.ReadableByteChannel;
+import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
@@ -19,13 +24,16 @@ public class SmartRandBuildGenTabPerks extends JPanel {
     // Swing Components
     private JPanel pan_side, pan_button;
     private JScrollPane scrollPane;
-    private JButton b_load, b_save, b_default, b_same;
+    private JButton b_load, b_save, b_default, b_same, b_remote_syn;
     private JLabel lab_side;
     private JComboBox cb_side;
     private JFileChooser fileChooser;
     private PerkTable table;
     // SmartRandBuildGen Object 
     private SmartRandBuildGen srbg;
+    // Synergy Filenames
+    private final String s_syn_chars = "/master/dbd/data/syn_chars.txt";
+    private final String s_syn_perks = "/master/dbd/data/syn_perks.txt";
 
     /**
      * Default Constructor
@@ -50,6 +58,7 @@ public class SmartRandBuildGenTabPerks extends JPanel {
         pan_button.add(b_same);
         pan_button.add(b_load);
         pan_button.add(b_save);
+        pan_button.add(b_remote_syn);
 
         // Add Table to Panel
         scrollPane = new JScrollPane(table);
@@ -75,13 +84,15 @@ public class SmartRandBuildGenTabPerks extends JPanel {
         b_save = new JButton("Save current Weight Table");
         b_same = new JButton("Set identical Weights");
         b_default = new JButton("Reload original Weights");
+        b_remote_syn = new JButton("Update Synergy Rules");
 
         // Add Tooltips
         b_load.setToolTipText("Load a custom weight distribution for each perk");
         b_save.setToolTipText("Save the current weight distribution from the table in an output file");
         b_same.setToolTipText("Pure random builds will be generated (same weight for each perk, no perk constraint and no synergy rules)");
         b_default.setToolTipText("Reset each weight to its original value");
-        
+        b_remote_syn.setToolTipText("<html>Download last version of synergy rules from GitHub, then reload them<br>Backup is performed if custom synergy files were already present</html>");
+
         // Define JFileChooser Objects
         fileChooser = new JFileChooser();
         fileChooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
@@ -100,7 +111,7 @@ public class SmartRandBuildGenTabPerks extends JPanel {
         }
 
         // Create Table
-        table = new PerkTable();
+        table = new PerkTable(srbg.weight_perk_max);
         table.setModel(new PerkTableModel(srbg));
         table.setRowHeight(58);
         table.centerText();
@@ -108,12 +119,6 @@ public class SmartRandBuildGenTabPerks extends JPanel {
         table.setColumnWeight(2);
         // Update Table
         ((PerkTableModel) table.getModel()).updateTable(cb_side.getSelectedItem().toString());
-
-        // Check
-        if (table.getWeightMax() >= srbg.weight_perk_max) {
-            Tools.getAlert("ERROR: Synergy Feature is impossible because the highest tolerated Weight for Perks is too small ( " + srbg.weight_perk_max + " vs " + table.getWeightMax() + " ) => Exit", "Warning", JOptionPane.ERROR_MESSAGE);
-            System.exit(0);
-        }
 
         // Define ActionListener
         b_load.addActionListener(new ActionListener() {
@@ -143,7 +148,7 @@ public class SmartRandBuildGenTabPerks extends JPanel {
                 // Set same Weight for Perks
                 srbg.setSameWeight(1);
                 // Disable Synergy & all Constraints
-                srbg.setSynergy(false);
+                srbg.setSynergyStatus(false);
                 srbg.setConstraintsPerks(1, false);
                 srbg.setConstraintsPerks(2, false);
                 srbg.setConstraintsPerks(3, false);
@@ -177,6 +182,55 @@ public class SmartRandBuildGenTabPerks extends JPanel {
                     } catch (Exception ex) {
                         Tools.getAlert("ERROR: Issues were encountered while saving the configuration file " + f, "Warning", JOptionPane.ERROR_MESSAGE);
                     }
+                }
+            }
+        });
+
+        // Define ActionListener
+        b_remote_syn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // Download last synergy rule files from GitHub
+                try {
+                    // Character-based Synergy File
+                    boolean ok1 = false;
+                    String output = srbg.getSynergy().s_chars_custom;
+                    // Backup previous custom Synergy File
+                    if (new File(output).exists()) {
+                        System.out.println("# Moving existing File '" + new File(output).toPath() + "' to '" + new File("bak_" + output).toPath() + "' target File");
+                        Files.move(new File(output).toPath(), new File("bak_" + output).toPath(), StandardCopyOption.REPLACE_EXISTING);
+                    }
+                    URL website = new URL(SmartRandBuildGen.GIT_URL_RAW + s_syn_chars);
+                    ReadableByteChannel rbc = Channels.newChannel(website.openStream());
+                    FileOutputStream fos = new FileOutputStream(output);
+                    fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
+                    if (new File(output).exists()) {
+                        ok1 = true;
+                    }
+                    // Perk-based Synergy File
+                    boolean ok2 = false;
+                    output = srbg.getSynergy().s_perks_custom;
+                    // Backup previous custom Synergy File
+                    if (new File(output).exists()) {
+                        System.out.println("# Moving existing File '" + new File(output).toPath() + "' to '" + new File("bak_" + output).toPath() + "' target File");
+                        Files.move(new File(output).toPath(), new File("bak_" + output).toPath(), StandardCopyOption.REPLACE_EXISTING);
+                    }
+                    website = new URL(SmartRandBuildGen.GIT_URL_RAW + s_syn_perks);
+                    rbc = Channels.newChannel(website.openStream());
+                    fos = new FileOutputStream(output);
+                    fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
+                    if (new File(output).exists()) {
+                        ok2 = true;
+                    }
+                    // Check
+                    if (ok1 && ok2) {
+                        // Reload Synergy Rules
+                        srbg.getSynergy().readRulesAgain(srbg.b_verbose);
+                    } else {
+                        Tools.getAlert("ERROR: Issues were encountered while downloading the last synergy rules GitHub", "Warning", JOptionPane.ERROR_MESSAGE);
+                    }
+                } catch (Exception ex) {
+                    Tools.getAlert("ERROR: Issues were encountered while downloading the last synergy rules GitHub", "Warning", JOptionPane.ERROR_MESSAGE);
                 }
             }
         });

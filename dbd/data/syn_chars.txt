@@ -1,14 +1,16 @@
 ############# Clown #############
 Clown	Brutal Strength	100
+Clown	Hex No One Escapes Death	200
 Clown	Hex Ruin	200
 Clown	Make Your Choice	100
 Clown	Pop Goes The Weasel	100
 Clown	Save The Best For Last	100
 ############# Demogorgon #############
 Demogorgon	Barbecue & Chilli	100
-Demogorgon	Brutal Strength	-100
+Demogorgon	Brutal Strength	-300
 Demogorgon	Discordance	100
 Demogorgon	Hex Ruin	100
+Demogorgon	Hex No One Escapes Death	100
 Demogorgon	Make Your Choice	100
 Demogorgon	Pop Goes The Weasel	200
 Demogorgon	Save The Best For Last	100
@@ -26,6 +28,7 @@ Doctor	Distressing	200
 Doctor	Hex Devour Hope	100
 Doctor	Hex Huntress Lullaby	100
 Doctor	Hex Ruin	200
+Doctor	Hex No One Escapes Death	200
 Doctor	Iron Maiden	100
 Doctor	Make Your Choice	100
 Doctor	Monitor & Abuse	200
@@ -42,12 +45,14 @@ Freddy	Hex Huntress Lullaby	100
 Freddy	Hex Ruin	100
 Freddy	Insidious	-500
 Freddy	Make Your Choice	100
+Freddy	Monitor & Abuse	-200
 Freddy	Overcharge	-500
 Freddy	Pop Goes The Weasel	200
 Freddy	Surveillance	100
 Freddy	Thrilling Tremors	200
 ############# Ghostface #############
 Ghostface	A Nurse's Calling	200
+Ghostface	Beast Of Prey	-500
 Ghostface	Corrupt Intervention	100
 Ghostface	Coulrophobia	-100
 Ghostface	Dark Devotion	-100
@@ -74,8 +79,9 @@ Hag	Brutal Strength	-50
 Hag	Corrupt Intervention	200
 Hag	Distressing	-500
 Hag	Enduring	-100
+Hag	Iron Grasp	50
 Hag	Hex Devour Hope	100
-Hag	Hex Haunted Ground	100
+Hag	Hex No One Escapes Death	100
 Hag	Hex Ruin	200
 Hag	Make Your Choice	200
 Hag	Monitor & Abuse	200
@@ -85,19 +91,19 @@ Hag	Surveillance	100
 ############# Hillbilly #############
 Hillbilly	Barbecue & Chilli	200
 Hillbilly	Bloodhound	-100
+Hillbilly	Brutal Strength	-300
 Hillbilly	Dark Devotion	100
 Hillbilly	Deerstalker	100
 Hillbilly	Discordance	100
 Hillbilly	Enduring	100
 Hillbilly	Hex Devour Hope	100
-Hillbilly	Hex Haunted Ground	-100
-Hillbilly	Hex No One Escapes Death	-100
+Hillbilly	Hex No One Escapes Death	-500
 Hillbilly	Hex Ruin	100
 Hillbilly	Infectious Fright	100
 Hillbilly	Make Your Choice	-300
 Hillbilly	Pop Goes The Weasel	200
 Hillbilly	Save The Best For Last	-300
-Hillbilly	Sloppy Butcher	-300
+Hillbilly	Sloppy Butcher	-500
 Hillbilly	Surge	-100
 Hillbilly	Surveillance	100
 Hillbilly	Territorial Imperative	100
@@ -106,59 +112,58 @@ Hillbilly	Tinkerer	100
 Hillbilly	Whispers	200
 ############# Huntress #############
 Huntress	A Nurse's Calling	200
-Huntress	Bamboozle	-50
+Huntress	Bamboozle	-100
 Huntress	Barbecue & Chilli	200
 Huntress	Bitter Murmur	200
-Huntress	Brutal Strength	-50
+Huntress	Brutal Strength	-100
 Huntress	Corrupt Intervention	200
 Huntress	Deerstalker	100
 Huntress	Discordance	200
-Huntress	Enduring	-100
+Huntress	Enduring	-200
 Huntress	Hex Devour Hope	100
-Huntress	Hex No One Escapes Death	-100
+Huntress	Hex No One Escapes Death	-300
 Huntress	Hex Ruin	200
 Huntress	Insidious	-500
 Huntress	Iron Maiden	300
 Huntress	Make Your Choice	-100
+Huntress	Monitor & Abuse	-200
 Huntress	Pop Goes The Weasel	100
 Huntress	Save The Best For Last	-300
 Huntress	Shadowborn	300
-Huntress	Sloppy Butcher	-300
+Huntress	Sloppy Butcher	-500
 Huntress	Spies From The Shadows	100
 Huntress	Surge	-100
 Huntress	Whispers	200
 ############# Leatherface #############
 Leatherface	Agitation	100
 Leatherface	Bloodhound	-100
-Leatherface	Brutal Strength	-100
+Leatherface	Brutal Strength	-300
 Leatherface	Dark Devotion	100
 Leatherface	Deerstalker	100
 Leatherface	Discordance	100
-Leatherface	Hex Haunted Ground	-100
-Leatherface	Hex No One Escapes Death	-100
 Leatherface	Hex Ruin	200
 Leatherface	Infectious Fright	100
-Leatherface	Insidious	200
+Leatherface	Insidious	300
+Leatherface	Iron Grasp	50
 Leatherface	Make Your Choice	-300
 Leatherface	Monitor & Abuse	100
 Leatherface	Play With Your Food	300
 Leatherface	Pop Goes The Weasel	100
 Leatherface	Save The Best For Last	-300
-Leatherface	Sloppy Butcher	-300
+Leatherface	Sloppy Butcher	-500
 Leatherface	Surge	-100
 Leatherface	Territorial Imperative	200
 Leatherface	Tinkerer	100
 ############# Legion #############
 Legion	Bamboozle	100
 Legion	Dark Devotion	100
-Legion	Discordance	100
-Legion	Hex No One Escapes Death	-100
+Legion	Discordance	200
+Legion	Hex No One Escapes Death	-300
 Legion	Hex Ruin	200
 Legion	Monitor & Abuse	100
 Legion	Pop Goes The Weasel	100
-Legion	Save The Best For Last	200
-Legion	Sloppy Butcher	100
-Legion	Thanatophobia	200
+Legion	Sloppy Butcher	200
+Legion	Thanatophobia	300
 ############# Myers #############
 Myers	Agitation	100
 Myers	A Nurse's Calling	100
@@ -172,10 +177,11 @@ Myers	Distressing	-500
 Myers	Furtive Chase	-100
 Myers	Hex Devour Hope	100
 Myers	Hex Haunted Ground	100
-Myers	Hex No One Escapes Death	-100
+Myers	Hex No One Escapes Death	-300
 Myers	Hex Ruin	200
 Myers	Infectious Fright	100
 Myers	Insidious	-500
+Myers	Iron Grasp	50
 Myers	Make Your Choice	-300
 Myers	Monitor & Abuse	200
 Myers	Overwhelming Presence	-100
@@ -217,7 +223,7 @@ Pig	Discordance	100
 Pig	Distressing	-500
 Pig	Hex Devour Hope	100
 Pig	Hex Haunted Ground	100
-Pig	Hex No One Escapes Death	100
+Pig	Hex No One Escapes Death	200
 Pig	Hex Ruin	200
 Pig	I'm All Ears	100
 Pig	Insidious	-500
@@ -234,24 +240,25 @@ Plague	A Nurse's Calling	-500
 Plague	Corrupt Intervention	200
 Plague	Coulrophobia	-500
 Plague	Discordance	100
+Plague	Hex No One Escapes Death	-300
 Plague	Hex Ruin	100
 Plague	Infectious Fright	100
-Plague	Make Your Choice	-100
+Plague	Make Your Choice	-300
 Plague	Play With Your Food	100
 Plague	Pop Goes The Weasel	100
-Plague	Save The Best For Last	-100
+Plague	Save The Best For Last	-300
 Plague	Sloppy Butcher	-500
 Plague	Thanatophobia	200
 Plague	Whispers	-100
 ############# Spirit Rin #############
 Spirit Rin	A Nurse's Calling	100
-Spirit Rin	Bamboozle	-50
+Spirit Rin	Bamboozle	-100
 Spirit Rin	Barbecue & Chilli	100
-Spirit Rin	Brutal Strength	-50
+Spirit Rin	Brutal Strength	-100
 Spirit Rin	Deerstalker	100
 Spirit Rin	Discordance	100
 Spirit Rin	Distressing	-500
-Spirit Rin	Enduring	-100
+Spirit Rin	Enduring	-200
 Spirit Rin	Hex Devour Hope	200
 Spirit Rin	Hex Haunted Ground	100
 Spirit Rin	Hex Ruin	100
@@ -272,8 +279,9 @@ Trapper	Agitation	100
 Trapper	Corrupt Intervention	300
 Trapper	Hangman's Trick	100
 Trapper	Hex Devour Hope	100
-Trapper	Hex No One Escapes Death	100
+Trapper	Hex No One Escapes Death	200
 Trapper	Hex Ruin	300
+Trapper	Iron Grasp	50
 Trapper	Make Your Choice	100
 Trapper	Pop Goes The Weasel	100
 Trapper	Save The Best For Last	200
@@ -285,7 +293,7 @@ Wraith	Discordance	100
 Wraith	Distressing	-500
 Wraith	Hex Devour Hope	100
 Wraith	Hex Haunted Ground	100
-Wraith	Hex No One Escapes Death	100
+Wraith	Hex No One Escapes Death	200
 Wraith	Hex Ruin	300
 Wraith	Insidious	-500
 Wraith	Lightborn	100

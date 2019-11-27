@@ -26,19 +26,12 @@ public class SmartRandBuildGenTabInfo extends JPanel {
     private JEditorPane editor;
     private JLabel lab_author, lab_email, lab_git;
     private ImageIcon pict;
-    private String url_git;
-    private final String PROFILE = "http://steamcommunity.com/id/trna";
-    private final String EMAIL = "gnehehe70@gmail.com";
 
     /**
      * Constructor
      *
-     * @param srbg
      */
-    public SmartRandBuildGenTabInfo(SmartRandBuildGen srbg) {
-
-        // Define Git String
-        url_git = "https://github.com/" + SmartRandBuildGen.GIT_USER + "/" + SmartRandBuildGen.GIT_REPO + "/releases";
+    public SmartRandBuildGenTabInfo() {
 
         // Create JEditorPane for HTML Tutorial
         editor = new JEditorPane();
@@ -121,7 +114,7 @@ public class SmartRandBuildGenTabInfo extends JPanel {
             public void mouseClicked(MouseEvent e) {
                 try {
                     // Open default Browser & Go to STEAM Profile
-                    Desktop.getDesktop().browse(new URI(PROFILE));
+                    Desktop.getDesktop().browse(new URI(SmartRandBuildGen.STEAM));
                 } catch (IOException | URISyntaxException ex) {
                     System.err.println("WARNING_STEAM_PROFILE");
                     System.err.println(ex.getMessage());
@@ -135,7 +128,7 @@ public class SmartRandBuildGenTabInfo extends JPanel {
             public void mouseClicked(MouseEvent e) {
                 try {
                     // Open default Mail App
-                    URI mailto = new URI("mailto:" + EMAIL + "?subject=SRBG");
+                    URI mailto = new URI("mailto:" + SmartRandBuildGen.EMAIL + "?subject=SRBG");
                     Desktop.getDesktop().mail(mailto);
                 } catch (IOException | URISyntaxException ex) {
                     System.err.println("WARNING_EMAIL");
@@ -150,7 +143,7 @@ public class SmartRandBuildGenTabInfo extends JPanel {
             public void mouseClicked(MouseEvent e) {
                 try {
                     // Open default Browser & Go to GitHub
-                    Desktop.getDesktop().browse(new URI(url_git));
+                    Desktop.getDesktop().browse(new URI(SmartRandBuildGen.GIT_URL_RELEASE));
                 } catch (IOException | URISyntaxException ex) {
                     System.err.println("WARNING_GIT");
                     System.err.println(ex.getMessage());

@@ -8,6 +8,7 @@ import java.net.URL;
 import java.nio.channels.Channels;
 import java.nio.channels.ReadableByteChannel;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.regex.PatternSyntaxException;
 import javax.swing.*;
 import javax.swing.event.DocumentEvent;
@@ -34,7 +35,9 @@ public class SmartRandBuildGenTabData extends JPanel {
     private JFileChooser fileChooser;
     private JTextField tf_name, tf_expr, tf_build;
     private BuildTable table;
-    private final String s_build_remote = "build_db_remote.txt";
+    // Database Filenames
+    private final String s_build_github = "/master/dbd/data/build_db.txt";
+    private final String s_build_download = "build_db_remote.txt";
     private final String s_build_custom = "build_db_custom.txt";
     // SmartRandBuildGen Object 
     private SmartRandBuildGen srbg;
@@ -128,7 +131,7 @@ public class SmartRandBuildGenTabData extends JPanel {
         lab_perk4 = new JLabel("  Perk 4 ");
 
         // Define JTextField Objects
-        tf_name = new JTextField(12);
+        tf_name = new JTextField(10);
         tf_name.setText("MyBuild");
         tf_name.setHorizontalAlignment(JTextField.CENTER);
         tf_name.setEditable(true);
@@ -138,8 +141,8 @@ public class SmartRandBuildGenTabData extends JPanel {
         tf_expr.setHorizontalAlignment(JTextField.CENTER);
         tf_expr.setEditable(true);
         tf_expr.setToolTipText("Case insensitive search (regular expressions can be used)");
-        tf_build = new JTextField(8);
-        tf_build.setText(table.getRowCount() + " Builds");
+        tf_build = new JTextField(12);
+        tf_build.setText("Active Builds = " + table.getRowCount());
         tf_build.setHorizontalAlignment(JTextField.CENTER);
         tf_build.setEditable(false);
 
@@ -151,7 +154,7 @@ public class SmartRandBuildGenTabData extends JPanel {
         b_save = new JButton("Save current DB");
         b_add = new JButton("Add current Build");
         b_add_last = new JButton("Add random Build");
-        b_remove = new JButton("Delete Builds");
+        b_remove = new JButton("Delete selected Builds");
 
         // Set Tooltips for Buttons
         b_rand.setToolTipText("Randomly select one build from database");
@@ -159,9 +162,9 @@ public class SmartRandBuildGenTabData extends JPanel {
         b_reload_remote.setToolTipText("Merge current build database with remote version from GitHub");
         b_load.setToolTipText("Open custom build database");
         b_save.setToolTipText("Save current build database");
-        b_add.setToolTipText("Add current build in database");
-        b_add_last.setToolTipText("Add generated build from other tab in database");
-        b_remove.setToolTipText("Delete selected builds from database");
+        b_add.setToolTipText("<html>Add current build in database<br>Don't forget to save the build database before closing SRBG</html>");
+        b_add_last.setToolTipText("<html>Add generated build from other tab in database<br>Don't forget to save the build database before closing SRBG</html>");
+        b_remove.setToolTipText("<html>Delete selected builds from database<br>Don't forget to save the build database before closing SRBG</html>");
 
         // Define Colors for Buttons
         b_add_last.setBackground(Color.BLUE);
@@ -204,13 +207,13 @@ public class SmartRandBuildGenTabData extends JPanel {
         cb_side.setPreferredSize(new Dimension(130, 25));
         ((JLabel) cb_side.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
         if (cb_side.getSelectedItem().toString().equals(srbg.s_side_surv)) {
-            cb_char.setModel(new DefaultComboBoxModel(srbg.getCharacterList(srbg.s_side_surv,false).toArray()));
+            cb_char.setModel(new DefaultComboBoxModel(srbg.getCharacterList(srbg.s_side_surv, false).toArray()));
             cb_perk1.setModel(new DefaultComboBoxModel(srbg.getPerks(srbg.s_side_surv).toArray()));
             cb_perk2.setModel(new DefaultComboBoxModel(srbg.getPerks(srbg.s_side_surv).toArray()));
             cb_perk3.setModel(new DefaultComboBoxModel(srbg.getPerks(srbg.s_side_surv).toArray()));
             cb_perk4.setModel(new DefaultComboBoxModel(srbg.getPerks(srbg.s_side_surv).toArray()));
         } else {
-            cb_char.setModel(new DefaultComboBoxModel(srbg.getCharacterList(srbg.s_side_killer,false).toArray()));
+            cb_char.setModel(new DefaultComboBoxModel(srbg.getCharacterList(srbg.s_side_killer, false).toArray()));
             cb_perk1.setModel(new DefaultComboBoxModel(srbg.getPerks(srbg.s_side_killer).toArray()));
             cb_perk2.setModel(new DefaultComboBoxModel(srbg.getPerks(srbg.s_side_killer).toArray()));
             cb_perk3.setModel(new DefaultComboBoxModel(srbg.getPerks(srbg.s_side_killer).toArray()));
@@ -236,8 +239,8 @@ public class SmartRandBuildGenTabData extends JPanel {
                 tf_expr.setText("");
                 // Download remote build database from GitHub (last version)
                 try {
-                    String output = s_build_remote;
-                    URL website = new URL(SmartRandBuildGen.GIT_DB_REMOTE);
+                    String output = s_build_download;
+                    URL website = new URL(SmartRandBuildGen.GIT_URL_RAW + s_build_github);
                     ReadableByteChannel rbc = Channels.newChannel(website.openStream());
                     FileOutputStream fos = new FileOutputStream(output);
                     fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
@@ -264,7 +267,7 @@ public class SmartRandBuildGenTabData extends JPanel {
                     if (new File(f).exists()) {
                         try {
                             // Load custom build database
-                            ((BuildTableModel) table.getModel()).readData(f,true);
+                            ((BuildTableModel) table.getModel()).readData(f, true);
                         } catch (Exception ex) {
                             Tools.getAlert("ERROR: Issues were encountered while processing the build database file " + f, "Warning", JOptionPane.ERROR_MESSAGE);
                         }
@@ -319,13 +322,13 @@ public class SmartRandBuildGenTabData extends JPanel {
                 // Retrieve & Define active Side
                 String value = combo.getSelectedItem().toString();
                 if (value.equals(srbg.s_side_surv)) {
-                    cb_char.setModel(new DefaultComboBoxModel(srbg.getCharacterList(srbg.s_side_surv,false).toArray()));
+                    cb_char.setModel(new DefaultComboBoxModel(srbg.getCharacterList(srbg.s_side_surv, false).toArray()));
                     cb_perk1.setModel(new DefaultComboBoxModel(srbg.getPerks(srbg.s_side_surv).toArray()));
                     cb_perk2.setModel(new DefaultComboBoxModel(srbg.getPerks(srbg.s_side_surv).toArray()));
                     cb_perk3.setModel(new DefaultComboBoxModel(srbg.getPerks(srbg.s_side_surv).toArray()));
                     cb_perk4.setModel(new DefaultComboBoxModel(srbg.getPerks(srbg.s_side_surv).toArray()));
                 } else if (value.equals(srbg.s_side_killer)) {
-                    cb_char.setModel(new DefaultComboBoxModel(srbg.getCharacterList(srbg.s_side_killer,false).toArray()));
+                    cb_char.setModel(new DefaultComboBoxModel(srbg.getCharacterList(srbg.s_side_killer, false).toArray()));
                     cb_perk1.setModel(new DefaultComboBoxModel(srbg.getPerks(srbg.s_side_killer).toArray()));
                     cb_perk2.setModel(new DefaultComboBoxModel(srbg.getPerks(srbg.s_side_killer).toArray()));
                     cb_perk3.setModel(new DefaultComboBoxModel(srbg.getPerks(srbg.s_side_killer).toArray()));
@@ -348,14 +351,15 @@ public class SmartRandBuildGenTabData extends JPanel {
                 l.add(cb_perk2.getSelectedItem().toString());
                 l.add(cb_perk3.getSelectedItem().toString());
                 l.add(cb_perk4.getSelectedItem().toString());
+                Collections.sort(l);
                 // Check Build
-                if ((!Tools.hasDuplicateElements(l)) || (l.contains(Perk.GENERIC))) {
-                    b.addPerk(srbg.getPerk(cb_perk1.getSelectedItem().toString()));
-                    b.addPerk(srbg.getPerk(cb_perk2.getSelectedItem().toString()));
-                    b.addPerk(srbg.getPerk(cb_perk3.getSelectedItem().toString()));
-                    b.addPerk(srbg.getPerk(cb_perk4.getSelectedItem().toString()));
+                if (!Tools.hasDuplicateElements(l, Perk.GENERIC)) {
+                    b.addPerk(srbg.getPerk(l.get(0)));
+                    b.addPerk(srbg.getPerk(l.get(1)));
+                    b.addPerk(srbg.getPerk(l.get(2)));
+                    b.addPerk(srbg.getPerk(l.get(3)));
                     // Add Build
-                    boolean added = ((BuildTableModel) table.getModel()).addBuild(b,true);
+                    boolean added = ((BuildTableModel) table.getModel()).addBuild(b, true);
                     if (!added) {
                         Tools.getAlert("ERROR: This Build is already present in Database", "Warning", JOptionPane.ERROR_MESSAGE);
                     }
@@ -384,7 +388,7 @@ public class SmartRandBuildGenTabData extends JPanel {
                     // Update GUI
                     updateGUI(b);
                     // Add Build
-                    boolean added = ((BuildTableModel) table.getModel()).addBuild(b,true);
+                    boolean added = ((BuildTableModel) table.getModel()).addBuild(b, true);
                     if (!added) {
                         Tools.getAlert("ERROR: This Build is already present in Database", "Warning", JOptionPane.ERROR_MESSAGE);
                     }
@@ -432,7 +436,7 @@ public class SmartRandBuildGenTabData extends JPanel {
         table.getModel().addTableModelListener(new TableModelListener() {
             @Override
             public void tableChanged(TableModelEvent e) {
-                String s = table.getRowCount() + " Builds";
+                String s = "Active Builds = " + table.getRowCount();
                 // Update Field
                 System.out.println("# " + s);
                 tf_build.setText(s);
@@ -488,6 +492,8 @@ public class SmartRandBuildGenTabData extends JPanel {
             return;
         }
         table.getSorter().setRowFilter(rf);
+        // Update Field
+        tf_build.setText("Active Builds = " + table.getRowCount());
     }
 
     /**

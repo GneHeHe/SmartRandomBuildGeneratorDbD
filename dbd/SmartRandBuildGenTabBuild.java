@@ -36,6 +36,18 @@ public class SmartRandBuildGenTabBuild extends JPanel {
     private SmartRandBuildGen srbg;
     // Nb of Random Builds
     private int nbbuilds;
+    // Additional Modes
+    private String s_rand = "Rand";
+    private String s_rand_surv = s_rand + "_Surv";
+    private String s_rand_killer = s_rand + "_Killer";
+    // Animation
+    private SwingWorker<Void, Void> worker;
+    private final Perk perk_gen = new Perk();
+    private int anim_delay_trans = 500;
+    private int anim_delay_perk = 300;
+    private int anim_delay_char = 400;
+    private int anim_loop_perk = 5;
+    private int anim_loop_char = 4;
 
     /**
      * Default Constructor
@@ -99,7 +111,10 @@ public class SmartRandBuildGenTabBuild extends JPanel {
 
         // Define JButton Objects
         b_build = new JButton("Generate Builds");
-        b_build.setToolTipText("Generate random builds that match parameters and constraints");
+        b_build.setToolTipText("Generate random builds that match considered parameters and constraints");
+        b_build.setBackground(Color.BLUE);
+        b_build.setOpaque(true);
+        b_build.setForeground(Color.WHITE);
 
         // Define JLabel Objects
         lab_nbperks = new JLabel("  Nb Perks ");
@@ -124,15 +139,14 @@ public class SmartRandBuildGenTabBuild extends JPanel {
         cb_nbbuilds = new JComboBox(new Integer[]{1, 2, 3, 4, 5, 7, 9});
         cb_nbbuilds.setPreferredSize(new Dimension(50, 20));
         cb_nbbuilds.setToolTipText("<html>Define the number of builds to generate<br>The build with the highest score is graphically displayed<br>Meta builds or builds with combos perks (favorable synergy) are associated with high scores<br>They tend to be returned when the number of desired builds is larger than 1!</html>");
-
         ((JLabel) cb_nbbuilds.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
-        cb_nbbuilds.setSelectedIndex(1);
+        cb_nbbuilds.setSelectedIndex(0);
         nbbuilds = Integer.parseInt(cb_nbbuilds.getSelectedItem().toString());
 
         // Define JComboBox Object for Side
-        cb_side = new JComboBox(new String[]{srbg.s_side_rand, srbg.s_side_surv, srbg.s_side_killer});
+        cb_side = new JComboBox(new String[]{srbg.s_side_rand, s_rand_surv, s_rand_killer, srbg.s_side_surv, srbg.s_side_killer});
         cb_side.setSelectedIndex(0);
-        cb_side.setPreferredSize(new Dimension(100, 25));
+        cb_side.setPreferredSize(new Dimension(130, 25));
         cb_side.setToolTipText("Define the active side (random or specific side)");
         ((JLabel) cb_side.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
 
@@ -149,7 +163,7 @@ public class SmartRandBuildGenTabBuild extends JPanel {
         check_cons3 = new JCheckBox("Cons3");
         check_cons4 = new JCheckBox("Cons4");
         check_syn = new JCheckBox("Synergy");
-        check_syn.setToolTipText("Define the synergy rules status");
+        check_syn.setToolTipText("<html>Enable or disable the synergy rules<br>Perk weights are dynamically updated with respect to selected character and previous looted perks<br>The goal of 'perk constraints' and 'synergy rules' is to generate even better random builds</html>");
         updateCheckBoxes();
         check_cons1.setToolTipText("<html>Required perk from specific subset in generated builds:<br><ul><li>" + srbg.getConstraints(1, srbg.s_side_surv) + "</li><br><li>" + srbg.getConstraints(1, srbg.s_side_killer) + "</li></ul></html>");
         check_cons2.setToolTipText("<html>Required perk from specific subset in generated builds:<br><ul><li>" + srbg.getConstraints(2, srbg.s_side_surv) + "</li><br><li>" + srbg.getConstraints(2, srbg.s_side_killer) + "</li></ul></html>");
@@ -214,50 +228,86 @@ public class SmartRandBuildGenTabBuild extends JPanel {
                 updateCheckBoxes();
                 // Monitor Random Feature
                 boolean force_random = false;
-                if (cb_side.getSelectedItem().toString().equals(srbg.s_side_rand)) {
+                String mode = "";
+                // Test with 'Rand' substring is important to catch 3 random modes
+                if (cb_side.getSelectedItem().toString().startsWith(s_rand)) {
                     force_random = true;
+                    mode = cb_side.getSelectedItem().toString();
                     updateComboBoxes();
                 }
-                // Display loaded Parameters
-                srbg.showParams(false);
                 // Reset Table => Remove Data in TableModel (RowCount = 0)
                 model_default = (DefaultTableModel) table.getModel();
                 model_default.setRowCount(0);
                 // Add a new Line for 1st Build
                 model_default.setRowCount(1);
-                // Generate Random Builds
-                Build b = new Build();
-                List<Build> l = new ArrayList();
-                for (int i = 1; i <= nbbuilds; i++) {
-                    b = srbg.genRandomBuild("Build " + i);
-                    l.add(b);
-                }
-                // Sort Builds
-                Collections.sort(l);
-                // Generate Text
-                String fulltext = "";
-                for (int i = 0; i < nbbuilds; i++) {
-                    fulltext = fulltext + "\n " + l.get(i).show(false, "     ") + "\n";
-                }
-                // Display Builds in GUI
-                text.setText(fulltext);
-                // Display Builds in Shell
-                System.out.println("#" + fulltext.replaceAll("\n\n ", "\n# ").replaceFirst("\n", ""));
-                // Get & Display Best Build
-                b = l.get(0);
-                b.setName("Best Build");
-                srbg.setBestBuild(b);
-                // Display Best Build in Table
-                int nb = 0;
-                for (Perk p : b.getPerks()) {
-                    table.getModel().setValueAt(p.getIconImage(3), 0, nb);
-                    nb++;
-                }
-                // Display Character in Table
-                table.getModel().setValueAt(b.getCharacter().getIconImage(2), 0, 4);
+                // Define SwingWorker
+                worker = new SwingWorker<Void, Void>() {
+                    @Override
+                    protected Void doInBackground() throws Exception {
+                        // Reset Text
+                        String fulltext = "";
+                        text.setText(fulltext);
+                        // Display loaded Parameters
+                        srbg.showParams(false);
+                        // Generate Random Builds
+                        Build b = new Build();
+                        List<Build> l = new ArrayList();
+                        for (int i = 1; i <= nbbuilds; i++) {
+                            b = srbg.genRandomBuild("Build " + i);
+                            l.add(b);
+                        }
+                        // Sort Builds
+                        Collections.sort(l);
+                        // Generate Text
+                        for (int i = 0; i < nbbuilds; i++) {
+                            fulltext = fulltext + "\n " + l.get(i).show(false, "     ") + "\n";
+                        }
+                        // Get Best Build
+                        b = l.get(0);
+                        b.setName("RandomBuild");
+                        srbg.setBestBuild(b);
+                        l.clear();
+                        // Animation if Random Mode
+                        if (cb_side.getSelectedItem().toString().startsWith(s_rand)) {
+                            for (int i = 0; i < anim_loop_char; i++) {
+                                table.getModel().setValueAt(srbg.getCharacterRandom().getIconImage(2), 0, 4);
+                                Thread.sleep(anim_delay_char);
+                            }
+                            table.getModel().setValueAt(srbg.getCharacterGeneric().getIconImage(2), 0, 4);
+                            Thread.sleep(anim_delay_trans);
+                        }
+                        // Display Character
+                        table.getModel().setValueAt(b.getCharacter().getIconImage(2), 0, 4);
+                        // Always display animation for Perks
+                        for (int i = 0; i < anim_loop_perk; i++) {
+                            for (int j = 0; j < srbg.getNbPerksBuild(); j++) {
+                                table.getModel().setValueAt(srbg.getPerkRandom().getIconImage(3), 0, j);
+                            }
+                            Thread.sleep(anim_delay_perk);
+                        }
+                        for (int j = 0; j < srbg.getNbPerksBuild(); j++) {
+                            table.getModel().setValueAt(perk_gen.getIconImage(3), 0, j);
+                        }
+                        Thread.sleep(anim_delay_trans);
+                        // Display Best Build in Table
+                        int nb = 0;
+                        for (Perk p : b.getPerks()) {
+                            table.getModel().setValueAt(p.getIconImage(3), 0, nb);
+                            nb++;
+                        }
+                        // Display Builds in GUI
+                        text.setText(fulltext);
+                        // Display Builds in Shell
+                        System.out.println("\n#" + fulltext.replaceAll("\n\n ", "\n# ").replaceFirst("\n", ""));
+                        // End SwingWorker (doInBackground method)
+                        return null;
+                    }
+                };
+                // Execute SwingWorker
+                worker.execute();
                 // Back to Random Side if desired
                 if (force_random) {
-                    cb_side.setSelectedItem(srbg.s_side_rand);
+                    cb_side.setSelectedItem(mode);
                 }
             }
         });
@@ -268,12 +318,13 @@ public class SmartRandBuildGenTabBuild extends JPanel {
             public void itemStateChanged(ItemEvent e) {
                 // Update Synergy Status
                 if (check_syn.isSelected()) {
-                    srbg.setSynergy(true);
+                    srbg.setSynergyStatus(true);
                 } else {
-                    srbg.setSynergy(false);
+                    srbg.setSynergyStatus(false);
                 }
             }
-        });
+        }
+        );
 
         // Define ItemListener
         check_cons1.addItemListener(new ItemListener() {
@@ -362,7 +413,7 @@ public class SmartRandBuildGenTabBuild extends JPanel {
         } else {
             check_cons4.setSelected(false);
         }
-        if (srbg.getSynergy()) {
+        if (srbg.getSynergyStatus()) {
             check_syn.setSelected(true);
         } else {
             check_syn.setSelected(false);
@@ -378,10 +429,18 @@ public class SmartRandBuildGenTabBuild extends JPanel {
             srbg.setSide(srbg.s_side_surv);
             // All Survivors
             cb_char.setModel(new DefaultComboBoxModel(srbg.getCharacterList(srbg.s_side_surv, false).toArray()));
+        } else if (cb_side.getSelectedItem().equals(s_rand_surv)) {
+            srbg.setSide(srbg.s_side_surv);
+            cb_char.setModel(cbm_default);
+            srbg.setCharacter(srbg.getCharacterRandom().getName());
         } else if (cb_side.getSelectedItem().equals(srbg.s_side_killer)) {
             srbg.setSide(srbg.s_side_killer);
             // All Killers
             cb_char.setModel(new DefaultComboBoxModel(srbg.getCharacterList(srbg.s_side_killer, false).toArray()));
+        } else if (cb_side.getSelectedItem().equals(s_rand_killer)) {
+            srbg.setSide(srbg.s_side_killer);
+            cb_char.setModel(cbm_default);
+            srbg.setCharacter(srbg.getCharacterRandom().getName());
         } else if (cb_side.getSelectedItem().equals(srbg.s_side_rand)) {
             srbg.setSide(srbg.s_side_rand);
             cb_char.setModel(cbm_default);

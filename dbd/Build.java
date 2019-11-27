@@ -222,6 +222,24 @@ public class Build implements Comparable<Build> {
     }
 
     /**
+     * Display Build as String
+     *
+     * @return
+     */
+    public String show_other() {
+        String s = score + " | " + name + "\t" + side + "\t" + character + "\t";
+        int nb = 1;
+        for (Perk p : l_perks) {
+            s = s + p.getName();
+            if (nb < getNbPerks()) {
+                s = s + "\t";
+            }
+            nb++;
+        }
+        return s;
+    }
+
+    /**
      * toString() Method
      *
      * @return
@@ -274,5 +292,50 @@ public class Build implements Comparable<Build> {
             return 0;
         }
     }
-    
+
+    /**
+     * Rescore Build using Synergy-based Rules
+     *
+     * @param srbg
+     * @return
+     */
+    public int rescoreBuild(SmartRandBuildGen srbg) {
+        // Get Synergy Object
+        Synergy syn = srbg.getSynergy();
+        // Reevaluated Score
+        int score_syn = 0;
+        // Restore reference Weights
+        srbg.setWeightRef();
+        if (srbg.b_verbose) {
+            System.out.println("# Rescoring Build '" + name + "'\n");
+            // Display original Perk Weights
+            for (Perk p : getPerks()) {
+                System.out.println(p.show(false));
+            }
+        }
+        // Synergy Rules with current Character
+        syn.update_weights(getCharacter().getName(), null, srbg);
+        // Synergy Rules with all Perks
+        for (Perk p : getPerks()) {
+            syn.update_weights(null, p.getName(), srbg);
+        }
+        if (srbg.b_verbose) {
+            System.out.println("");
+        }
+        // Display updated Perk Weights
+        for (Perk p : getPerks()) {
+            if (srbg.b_verbose) {
+                System.out.println(p.show(false));
+            }
+            score_syn = score_syn + p.getWeight();
+        }
+        if (srbg.b_verbose) {
+            System.out.println("");
+        }
+        // Restore reference Weights
+        srbg.setWeightRef();
+        // Return reevaluated Score
+        return score_syn;
+    }
+
 }

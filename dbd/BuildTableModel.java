@@ -27,7 +27,7 @@ public class BuildTableModel extends AbstractTableModel {
     private ArrayList<Build> l_builds;
     // SmartRandBuildGen Object
     private SmartRandBuildGen srbg;
-    // Database Files
+    // Database Filenames
     private final String s_build = "data/build_db.txt";
     private final String s_build_custom = "build_db_custom.txt";
 
@@ -317,7 +317,7 @@ public class BuildTableModel extends AbstractTableModel {
                             l.add(p2.getName());
                             l.add(p3.getName());
                             l.add(p4.getName());
-                            if ((!Tools.hasDuplicateElements(l)) || (l.contains(Perk.GENERIC))) {
+                            if (!Tools.hasDuplicateElements(l, Perk.GENERIC)) {
                                 // Everything is OK => Create Build Object
                                 Build b = new Build();
                                 b.setName(myname);
@@ -343,10 +343,10 @@ public class BuildTableModel extends AbstractTableModel {
                 line = br.readLine();
                 // Display
                 if (((nb_builds % 1000) == 0) && (nb_builds > 0)) {
-                    System.out.println("# " + nb_builds + " Builds were Loaded");
+                    System.out.println("# " + nb_builds + " Builds were loaded");
                 }
             }
-            System.out.println("# " + nb_builds + " Builds were Loaded");
+            System.out.println("# " + nb_builds + " Builds were loaded");
             br.close();
         } catch (Exception ex) {
             System.err.println("\n# ERROR: Issues with the Build Database");
@@ -365,6 +365,27 @@ public class BuildTableModel extends AbstractTableModel {
      */
     public Build getBuildFromRow(int row) {
         return l_builds.get(row);
+    }
+
+    /**
+     * Rescore loaded Builds using Synergy-based Rules
+     *
+     */
+    public void rescoreDatabase() {
+        // Loop over loaded Builds
+        for (int i = 0; i < getRowCount(); i++) {
+            Build b = getBuildFromRow(i);
+            // Original Score
+            int val = 0;
+            for (Perk p : b.getPerks()) {
+                val = val + p.getWeight();
+            }
+            // Display Reevaluated Score and Build
+            System.out.println(b.rescoreBuild(srbg) + " | " + val + " | " + b.getName() + "\t" + b.getSide() + "\t" + b.getCharacter() + "\t" + b.getPerk(1) + "\t" + b.getPerk(2) + "\t" + b.getPerk(3) + "\t" + b.getPerk(4));
+            if (srbg.b_verbose) {
+                System.out.println("");
+            }
+        }
     }
 
 }

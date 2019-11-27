@@ -50,7 +50,7 @@ public class SmartRandBuildGenGUI extends JFrame {
         tabbedPane.addTab("Contact & Help", pan_info);
 
         // Add Tooltips on Tabs
-        tabbedPane.setToolTipTextAt(0, "Define the weights for all perks");
+        tabbedPane.setToolTipTextAt(0, "<html>Define the weights for all perks<br>Synergy rules may have impact on perk weights => values associated to last generated build are displayed in the table<br>Perk weights are always reseted before generating a new build</html>");
         tabbedPane.setToolTipTextAt(1, "Generate random builds (Main tab of SRBG)");
         tabbedPane.setToolTipTextAt(2, "Save favorite builds in database");
 
@@ -81,14 +81,13 @@ public class SmartRandBuildGenGUI extends JFrame {
         // Build Object (No Verbose Mode in GUI)
         SmartRandBuildGen mysrbg = new SmartRandBuildGen(false);
         mysrbg.setConstraintsPerks(1, true);
-        mysrbg.setConstraintsPerks(2, true);
         mysrbg.setConstraintsPerks(3, true);
         System.out.println("");
 
         // Define Tabs
         SmartRandBuildGenTabPerks myPerks = new SmartRandBuildGenTabPerks(mysrbg);
         SmartRandBuildGenTabBuild myBuilds = new SmartRandBuildGenTabBuild(mysrbg);
-        SmartRandBuildGenTabInfo myInfo = new SmartRandBuildGenTabInfo(mysrbg);
+        SmartRandBuildGenTabInfo myInfo = new SmartRandBuildGenTabInfo();
         SmartRandBuildGenTabData myData = new SmartRandBuildGenTabData(mysrbg);
 
         // Check Update

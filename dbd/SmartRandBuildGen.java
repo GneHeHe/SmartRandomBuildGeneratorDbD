@@ -11,6 +11,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.TreeSet;
 
 /**
  *
@@ -43,21 +44,21 @@ public class SmartRandBuildGen {
     private Build best_build;
     // Active Side
     private String side = "";
-    // Strings for Sides
+    // Different Sides
     public final String s_side_surv = "Survivor";
     public final String s_side_killer = "Killer";
     public final String s_side_rand = "Random";
     // Active Character
     private Character character;
     // Prefix for Constraints
-    private final String s_cons1_surv = "SURV_1_CARE";
-    private final String s_cons2_surv = "SURV_2_SURVIVAL";
-    private final String s_cons3_surv = "SURV_3_CHASE";
-    private final String s_cons4_surv = "SURV_4_DETECT";
-    private final String s_cons1_killer = "KILLER_1_SLOWDOWN";
-    private final String s_cons2_killer = "KILLER_2_CHASE";
-    private final String s_cons3_killer = "KILLER_3_DETECT";
-    private final String s_cons4_killer = "KILLER_4_ENDGAME";
+    private final String s_cons1_surv = "SURVIV_1";
+    private final String s_cons2_surv = "SURVIV_2";
+    private final String s_cons3_surv = "SURVIV_3";
+    private final String s_cons4_surv = "SURVIV_4";
+    private final String s_cons1_killer = "KILLER_1";
+    private final String s_cons2_killer = "KILLER_2";
+    private final String s_cons3_killer = "KILLER_3";
+    private final String s_cons4_killer = "KILLER_4";
     // List of Constraints for both Sides
     private List<String> l_cons1;
     private List<String> l_cons2;
@@ -96,7 +97,7 @@ public class SmartRandBuildGen {
     // Max Weight for Perks (normal and after synergy)
     public final int weight_perk_max = 500;
     // Max Nb of Loops
-    private final int maxloop = 1000;
+    private final int maxloop = 3000;
     // Character File
     private final String s_char = "data/characters.txt";
     // Perk DB Files
@@ -108,12 +109,17 @@ public class SmartRandBuildGen {
     // String Spacer
     private final String MYSPACER = "##########";
     // Version & Title of Tool
-    public final static double VERSION = 1.8;
+    public final static double VERSION = 1.9;
     public final static String TITLE = "Smart Random Build Generator for Dead by Daylight ( SRBG " + VERSION + " )";
-    // GitHub User/Repos
+    // GitHub
     public final static String GIT_USER = "GneHeHe";
     public final static String GIT_REPO = "SmartRandomBuildGeneratorDbD";
-    public final static String GIT_DB_REMOTE = "https://raw.githubusercontent.com/GneHeHe/SmartRandomBuildGeneratorDbD/master/dbd/data/build_db.txt";
+    public final static String GIT_URL = "https://github.com/" + GIT_USER + "/" + GIT_REPO;
+    public final static String GIT_URL_RELEASE = "https://github.com/" + GIT_USER + "/" + GIT_REPO + "/releases";
+    public final static String GIT_URL_RAW = "https://raw.githubusercontent.com/" + GIT_USER + "/" + GIT_REPO;
+    // Author Information
+    public final static String STEAM = "http://steamcommunity.com/id/trna";
+    public final static String EMAIL = "gnehehe70@gmail.com";
 
     /**
      * Default Constructor
@@ -138,6 +144,9 @@ public class SmartRandBuildGen {
         l_char_killer = new ArrayList<>();
         l_char_killer_generic = new ArrayList<>();
         l_char_all_string = new ArrayList<>();
+
+        // Define Nb of Perks in a Build
+        setNbPerksBuild(4);
 
         // Init Characters
         initCharacters();
@@ -173,9 +182,6 @@ public class SmartRandBuildGen {
 
         // Define side
         setSide(s_side_rand);
-
-        // Define Nb Perks
-        setNbPerksBuild(4);
 
         // Update Pool of Perks
         updatePerkPool(false);
@@ -223,8 +229,19 @@ public class SmartRandBuildGen {
      *
      * @return
      */
-    public List getPerks() {
+    public List<Perk> getPerks() {
         return l_perks_all;
+    }
+
+    /**
+     * Get Random Perk
+     *
+     * @return
+     */
+    public Perk getPerkRandom() {
+        List<String> l = getPerks(side);
+        int i = Math.max(1, ((int) (Math.random() * l.size())));
+        return getPerk(l.get(i));
     }
 
     /**
@@ -233,7 +250,7 @@ public class SmartRandBuildGen {
      * @param side
      * @return
      */
-    public List getPerks(String side) {
+    public List<String> getPerks(String side) {
         switch (side) {
             case s_side_surv:
                 return l_perks_survivor;
@@ -385,7 +402,7 @@ public class SmartRandBuildGen {
      */
     public final void setNbPerksBuild(int n) {
         nb_perks_build = n;
-        System.out.println("\n# Nb of Perks per Build = " + nb_perks_build);
+        System.out.println("\n# Nb of Perks in a Build = " + nb_perks_build + "\n");
     }
 
     /**
@@ -706,7 +723,7 @@ public class SmartRandBuildGen {
      *
      * @param b
      */
-    public void setSynergy(boolean b) {
+    public void setSynergyStatus(boolean b) {
         b_synergy = b;
         System.out.println("\n# Synergy Mode = " + b_synergy + "\n");
     }
@@ -716,8 +733,17 @@ public class SmartRandBuildGen {
      *
      * @return
      */
-    public boolean getSynergy() {
+    public boolean getSynergyStatus() {
         return b_synergy;
+    }
+
+    /**
+     * Get Synergy
+     *
+     * @return
+     */
+    public Synergy getSynergy() {
+        return synergy;
     }
 
     /**
@@ -783,11 +809,7 @@ public class SmartRandBuildGen {
         while (true) {
             // Loop until either valid Build was generated or max loops reached
             if (b_verbose) {
-                if (b_synergy && (nbloop > 1)) {
-                    System.out.print("\n# Loop " + nbloop);
-                } else {
-                    System.out.print("# Loop " + nbloop);
-                }
+                System.out.print("# Loop " + nbloop);
             }
             // Restore reference Weights
             setWeightRef();
@@ -811,7 +833,7 @@ public class SmartRandBuildGen {
                         System.out.print(" | " + random_perk);
                     }
                     // Apply Synergy Rules with current Perk & Update Pool of Perks if needed
-                    if (b_synergy && (l_perk_ok.size() < getNbPerksBuild())) {
+                    if (b_synergy) {
                         if (synergy.update_weights(null, random_perk, this)) {
                             updatePerkPool(false);
                         }
@@ -872,9 +894,17 @@ public class SmartRandBuildGen {
         }
         // All each validated Perk to the Build and Compute Score (Sum of Weights)
         int score = 0;
+        int nb = 0;
         Collections.sort(l_perk_ok);
         for (String s : l_perk_ok) {
+            nb++;
             Perk p = getPerk(s);
+            if (b_verbose) {
+                if (nb == 1) {
+                    System.out.println("");
+                }
+                System.out.println(p.show(false));
+            }
             b.addPerk(p);
             score = score + p.getWeight();
         }
@@ -977,8 +1007,8 @@ public class SmartRandBuildGen {
         // Sort Lists
         Collections.sort(l_perks_all);
         Collections.sort(l_perks_all_string);
-        Collections.sort(l_perks_survivor);
-        Collections.sort(l_perks_killer);
+        //Collections.sort(l_perks_survivor);
+        //Collections.sort(l_perks_killer);
         // Set Nb of Perks
         nb_perks_all = l_perks_all.size();
         // Update Nb of Active Perks
@@ -1013,7 +1043,7 @@ public class SmartRandBuildGen {
             BufferedReader br = null;
             String input = s_char;
             InputStream is = getClass().getResourceAsStream(input);
-            System.out.println("\n# Loading Characters from " + input);
+            System.out.println("# Loading Characters from " + input);
             br = new BufferedReader(new InputStreamReader(is));
             // Loop over the Reader
             String line = "";
@@ -1180,15 +1210,11 @@ public class SmartRandBuildGen {
         }
         System.out.println("# Active Side = " + side);
         System.out.println("# Active Character = " + character.getName());
-        System.out.println("# Nb of Perks per Build = " + nb_perks_build);
+        System.out.println("# Nb of Perks in a Build = " + nb_perks_build);
         System.out.println("# Perk from Set 1 is Required = " + b_cons1_perks);
-        //System.out.println("# Perk from Set 1 = " + getConstraints(1, side));
         System.out.println("# Perk from Set 2 is Required = " + b_cons2_perks);
-        //System.out.println("# Perk from Set 2 = " + getConstraints(2, side));
         System.out.println("# Perk from Set 3 is Required = " + b_cons3_perks);
-        //System.out.println("# Perk from Set 3 = " + getConstraints(3, side));
         System.out.println("# Perk from Set 4 is Required = " + b_cons4_perks);
-        //System.out.println("# Perk from Set 4 = " + getConstraints(4, side));
         System.out.println("# Synergy Mode = " + b_synergy);
         if (detail) {
             System.out.println("# Verbose Mode = " + b_verbose);
@@ -1201,18 +1227,20 @@ public class SmartRandBuildGen {
      *
      */
     public void displayHelp() {
-        System.out.println(MYSPACER + " Available Options in Smart Random Build Generator " + MYSPACER + "\n");
-        System.out.println("# -conf : load custom weight distribution file (predefined weight for each perk)");
-        System.out.println("# -side : define the active side ('Survivor' OR 'Killer' OR 'Random')");
+        System.out.println("\n" + MYSPACER + " Available Options in Smart Random Build Generator " + VERSION + " " + MYSPACER + "\n");
+        System.out.println("# -side : define the active side 'Survivor' / 'Killer' / 'Random' (before defining character)");
+        System.out.println("# -char : define the desired character (after defining side)");
         System.out.println("# -perk : define the number of perks in a build");
-        System.out.println("# -build : define the number of builds to generate");
-        System.out.println("# -char : define the desired character");
         System.out.println("# -cons1 : enable constraints for set of perks 1 (at least one perk from set is required in the build)");
         System.out.println("# -cons2 : enable constraints for set of perks 2 (at least one perk from set is required in the build)");
         System.out.println("# -cons3 : enable constraints for set of perks 3 (at least one perk from set is required in the build)");
         System.out.println("# -cons4 : enable constraints for set of perks 4 (at least one perk from set is required in the build)");
-        System.out.println("# -nosyn : disable synergy rules");
+        System.out.println("# -build : define the number of builds to generate");
         System.out.println("# -best : define the top build list to display");
+        System.out.println("# -nosyn : disable synergy rules");
+        System.out.println("# -conf : load custom weight distribution file (predefined weight for each perk)");
+        System.out.println("# -eval : reevaluate builds from reference database using synergy-based rules and quit (exclusive process)");
+        System.out.println("# -v : enable verbose mode");
         System.out.println("# -h : print this help and quit\n");
         System.exit(0);
     }
@@ -1280,14 +1308,17 @@ public class SmartRandBuildGen {
         // Check Update
         srbg.checkUpdate();
 
+        // Reevaluation Mode
+        boolean b_reeval = false;
+
         // Define default Nb of Random Builds
-        int nbbuilds = 10;
+        int nbbuilds = 5;
 
         // Define default Nb of Best Builds to Display
-        int nbbest = 10;
+        int nbbest = 3;
 
         // Process User-defined Arguments
-        System.out.println(srbg.MYSPACER + " Parsing Arguments from User " + srbg.MYSPACER);
+        System.out.println(srbg.MYSPACER + " Parsing Arguments from User " + srbg.MYSPACER + "\n");
         String val = "";
         int valn = 0;
         int argn = args.length;
@@ -1319,7 +1350,7 @@ public class SmartRandBuildGen {
                     System.exit(0);
                 }
             } else if (args[i].equals("-nosyn")) {
-                srbg.setSynergy(false);
+                srbg.setSynergyStatus(false);
             } else if (args[i].equals("-char")) {
                 if ((i + 1) < argn) {
                     if (!args[i + 1].startsWith("-")) {
@@ -1397,6 +1428,9 @@ public class SmartRandBuildGen {
                 }
             } else if (args[i].equals("-v")) {
                 srbg.b_verbose = true;
+            } else if (args[i].equals("-eval")) {
+                b_reeval = true;
+                System.out.println("\n# Reevaluation of Builds = " + b_reeval + " (exclusive process)");
             } else if (args[i].equals("-h")) {
                 srbg.displayHelp();
             } else if (args[i].startsWith("-")) {
@@ -1405,21 +1439,34 @@ public class SmartRandBuildGen {
             }
         }
 
+        // Exclusive Build Evaluation?
+        if (b_reeval) {
+            System.out.println("\n" + srbg.MYSPACER + " Reevaluation of Builds from Database using Synergy-based Rules " + srbg.MYSPACER);
+            // Force Synergy Mode
+            srbg.b_synergy = true;
+            // Load Builds from Reference Database
+            BuildTableModel btm = new BuildTableModel(srbg);
+            System.out.println("");
+            // Rescore Builds & Exit
+            btm.rescoreDatabase();
+            System.exit(0);
+        }
+
         // Display loaded Parameters
         srbg.showParams(true);
 
         // Generate Random Builds
         List<Build> l = new ArrayList<>();
-        System.out.println(srbg.MYSPACER + " " + nbbuilds + " Random Builds with " + srbg.getNbPerksBuild() + " Perks per Build " + srbg.MYSPACER + "\n");
+        System.out.println(srbg.MYSPACER + " Generating " + nbbuilds + " random Builds with " + srbg.getNbPerksBuild() + " Perks in each Build " + srbg.MYSPACER + "\n");
         Build b = null;
-        for (int k = 1; k <= nbbuilds; k++) {
-            b = srbg.genRandomBuild("Random Build " + k);
+        for (int i = 1; i <= nbbuilds; i++) {
+            b = srbg.genRandomBuild("Random Build " + i);
             l.add(b);
             if (srbg.b_verbose) {
                 System.out.println("");
             }
             System.out.println("# " + b.show(false, " | "));
-            if ((k < nbbuilds) && srbg.b_verbose) {
+            if ((i < nbbuilds) && srbg.b_verbose) {
                 System.out.println("");
             }
         }
@@ -1428,14 +1475,26 @@ public class SmartRandBuildGen {
         Collections.sort(l);
         srbg.setBestBuild(l.get(0));
 
-        // Display Top Build List
+        // Display Top unique Builds
         if (l.size() < nbbest) {
             nbbest = l.size();
         }
-        System.out.println("\n" + srbg.MYSPACER + " Top " + nbbest + " Builds over " + l.size() + " Generated Builds " + srbg.MYSPACER + "\n");
-        for (int i = 0; i < nbbest; i++) {
-            System.out.println("# " + l.get(i).show(false, " | "));
+        System.out.println("\n" + srbg.MYSPACER + " Top " + nbbest + " unique Builds over " + l.size() + " Generated Builds " + srbg.MYSPACER + "\n");
+        TreeSet<String> tree = new TreeSet<>();
+        int i = 0;
+        int nb = 0;
+        while (nb < nbbest) {
+            b = l.get(i);
+            b.setName("Build");
+            String s = b.show_other();
+            if (tree.add(s)) {
+                nb++;
+                System.out.println(s);
+            }
+            i++;
         }
+        tree.clear();
+        l.clear();
         System.out.println("");
     }
 

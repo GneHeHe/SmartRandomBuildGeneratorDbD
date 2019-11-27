@@ -142,6 +142,29 @@ public class Tools {
     }
 
     /**
+     * Any Duplicate Elements?
+     *
+     * @param l
+     * @param skip
+     * @return
+     */
+    public static boolean hasDuplicateElements(List<String> l, String skip) {
+        // Sets only contain non-duplicate elements
+        Set single = new HashSet();
+        for (String s : l) {
+            // Check skipped Line
+            if (!s.equals(skip)) {
+                if (!single.add(s)) {
+                    // Set.add() returns false if duplicate element
+                    return true;
+                }
+            }
+        }
+        // No duplicate at this Stage
+        return false;
+    }
+
+    /**
      * Duplicate Lists ?
      *
      * @param l1

@@ -43,7 +43,7 @@ Briefly, a **weight** is assigned to each **perk**, and random builds are subseq
 * <u>Set 1</u>: perks to **slow-down** the game (generators or healing)
 * <u>Set 2</u>: perks to help during **chases** (pallets, windows, higher speed, lower terror radius)
 * <u>Set 3</u>: perks to **detect** survivors
-* <u>Set 4</u>: perks to have some **advantage** during **late game**
+* <u>Set 4</u>: perks to have some **advantage during late game**
 
 
 <u>**Example of Perk-based Synergy Rules**</u>:
@@ -51,7 +51,7 @@ Briefly, a **weight** is assigned to each **perk**, and random builds are subseq
 * **Favorable synergy on survivor side**: draw **ace in the hole** perk will **increase** the probability to select **plunderer's instinct** for the next build slots
 * **Unfavorable synergy on survivor side**: draw **sprint burst** perk will **nullify** the probability to select **dead hard** for the next build slots
 * **Favorable synergy on killer side**: draw **enduring** perk will **increase** the probability to select **spirit fury** for the next build slots
-* **Unfavorable synergy on killer side**: draw **monitor & abuse** perk will **nullify** the probability to select **distressing** for the next build slots
+* **Unfavorable synergy on killer side**: draw **remember me** perk will **decrease** the probability to select **save the best for last** for the next build slots
 
 
 <u>**Example of Killer-based Synergy Rules**</u>:
@@ -87,7 +87,7 @@ Finally, a **built-in tutorial** is also included in **SRBG**
 
 # How to install and use SRBG ?
 
-Download the last compiled JAR file [here](https://github.com/GneHeHe/SmartRandomBuildGeneratorDbD/releases/download/1.8/SmartRandBuildGen.jar) (also available in '**releases**' tab)
+Download the last compiled JAR file [here](https://github.com/GneHeHe/SmartRandomBuildGeneratorDbD/releases/download/1.9/SmartRandBuildGen.jar) (also available in '**releases**' tab)
 
 System Requirements:
 

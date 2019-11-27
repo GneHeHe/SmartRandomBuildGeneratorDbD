@@ -5,6 +5,7 @@ import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.util.ArrayList;
+import java.util.Collections;
 import javax.swing.DefaultCellEditor;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
@@ -30,8 +31,15 @@ public class PerkTable extends JTable {
 
     /**
      * Default Constructor
+     *
+     * @param max
      */
-    public PerkTable() {
+    public PerkTable(int max) {
+        // Check Value
+        if (max <= 0) {
+            System.err.println("\n# ERROR: Wrong maximum weight value '" + max + "\n");
+            System.exit(0);
+        }
         // Default Dimension of Header
         getTableHeader().setPreferredSize(new Dimension(30, 30));
         // Set Reordering/Resizing Status
@@ -57,7 +65,14 @@ public class PerkTable extends JTable {
         l_weights.add(200);
         l_weights.add(250);
         l_weights.add(300);
-        weight_max = getWeightMax();
+        Collections.sort(l_weights);
+        int maxlocal = l_weights.get(l_weights.size() - 1);
+        // Check Value
+        if (maxlocal >= max) {
+            System.err.println("\n# ERROR: Maximum weight value '" + max + "' is expected to be larger than '" + maxlocal + "\n");
+            System.exit(0);
+        }
+        weight_max = max;
     }
 
     /**
@@ -119,15 +134,13 @@ public class PerkTable extends JTable {
         if (col == 2) {
             // Get Value (required double/float)
             float value = Float.parseFloat(getModel().getValueAt(row, col).toString());
-            if (value == 0) {
+            if (value <= 0) {
                 // No Weight => Red Background
                 comp.setBackground(Color.RED);
             } else {
                 // Use of HSB Model | Set first Hue to Orange Color
-                //float h1 = Color.RGBtoHSB(Color.RED.getRed(), Color.RED.getGreen(), Color.RED.getBlue(), null)[0];
                 float h1 = 30.0f / 360;
                 // Use of HSB Model | Set second Hue to Dark Cyan Color
-                //float h2 = Color.RGBtoHSB(Color.BLUE.getRed(), Color.BLUE.getGreen(), Color.BLUE.getBlue(), null)[0];
                 float h2 = 210.0f / 360;
                 // Use of HSB Model | Set third Hue to Intermediate Color
                 float h3 = h1 + (value / weight_max) * (h2 - h1);
@@ -136,21 +149,6 @@ public class PerkTable extends JTable {
             }
         }
         return comp;
-    }
-
-    /**
-     * Get largest Weight
-     *
-     * @return
-     */
-    public final int getWeightMax() {
-        int max = 0;
-        for (Integer v : l_weights) {
-            if (v > max) {
-                max = v;
-            }
-        }
-        return max;
     }
 
 }

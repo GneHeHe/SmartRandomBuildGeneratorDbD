@@ -25,11 +25,11 @@ public class Synergy {
     private ArrayList<String> l_perks;
     // List of all Characters
     private ArrayList<String> l_chars;
-    // Default Synergy Files
-    private final String s_perks = "data/syn_perks.txt";
-    private final String s_perks_custom = "syn_perks_custom.txt";
-    private final String s_chars = "data/syn_chars.txt";
-    private final String s_chars_custom = "syn_chars_custom.txt";
+    // Synergy Filenames
+    public final String s_perks = "syn_perks.txt";
+    public final String s_perks_custom = "syn_perks_custom.txt";
+    public final String s_chars = "syn_chars.txt";
+    public final String s_chars_custom = "syn_chars_custom.txt";
 
     /**
      * Constructor
@@ -52,6 +52,21 @@ public class Synergy {
     }
 
     /**
+     * Read Synergy Rules Again
+     *
+     * @param verbose
+     */
+    public void readRulesAgain(boolean verbose) {
+        // Clear Rules
+        m_synergy_chars.clear();
+        m_synergy_perks.clear();
+        // Read again Synergy Rules
+        readSynergyRulesChars(verbose);
+        readSynergyRulesPerks(verbose);
+        System.out.println("");
+    }
+
+    /**
      * Read Synergy Rules for Characters
      *
      */
@@ -67,8 +82,8 @@ public class Synergy {
                 System.out.print("# Loading custom Character Synergy Rules from " + f + ": ");
                 br = new BufferedReader(new FileReader(new File(f).getAbsolutePath()));
             } else {
-                InputStream is = getClass().getResourceAsStream(s_chars);
-                System.out.print("# Loading default Character Synergy Rules from " + s_chars + ": ");
+                InputStream is = getClass().getResourceAsStream("data/" + s_chars);
+                System.out.print("# Loading default Character Synergy Rules from data/" + s_chars + ": ");
                 br = new BufferedReader(new InputStreamReader(is));
             }
             // Loop over the Reader
@@ -145,8 +160,8 @@ public class Synergy {
                 System.out.print("# Loading custom Perk Synergy Rules from " + f + ": ");
                 br = new BufferedReader(new FileReader(new File(f).getAbsolutePath()));
             } else {
-                InputStream is = getClass().getResourceAsStream(s_perks);
-                System.out.print("# Loading default Perk Synergy Rules from " + s_perks + ": ");
+                InputStream is = getClass().getResourceAsStream("data/" + s_perks);
+                System.out.print("# Loading default Perk Synergy Rules from data/" + s_perks + ": ");
                 br = new BufferedReader(new InputStreamReader(is));
             }
             // Loop over the Reader
