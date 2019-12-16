@@ -27,10 +27,12 @@ public class Perk implements Comparable<Perk> {
     private JLabel lab_img_small;
     private JLabel lab_img_medium;
     private JLabel lab_img_large;
+    private JLabel lab_img_widget;
     // Size of Icon Pictures
     private final static int SIZE_SMALL = 50;
     private final static int SIZE_MEDIUM = 60;
     private final static int SIZE_LARGE = 160;
+    private final static int SIZE_WIDGET = 110;
     // Generic Perk
     public final static String SURVIVOR = "Survivor";
     public final static String KILLER = "Killer";
@@ -51,6 +53,7 @@ public class Perk implements Comparable<Perk> {
         lab_img_small = new JLabel("", SwingConstants.CENTER);
         lab_img_medium = new JLabel("", SwingConstants.CENTER);
         lab_img_large = new JLabel("", SwingConstants.CENTER);
+        lab_img_widget = new JLabel("", SwingConstants.CENTER);
         try {
             setIconPicture(icon);
         } catch (IOException ex) {
@@ -73,6 +76,7 @@ public class Perk implements Comparable<Perk> {
         lab_img_small = new JLabel("", SwingConstants.CENTER);
         lab_img_medium = new JLabel("", SwingConstants.CENTER);
         lab_img_large = new JLabel("", SwingConstants.CENTER);
+        lab_img_widget = new JLabel("", SwingConstants.CENTER);
         try {
             setIconPicture(icon);
         } catch (IOException ex) {
@@ -138,6 +142,8 @@ public class Perk implements Comparable<Perk> {
                 return lab_img_medium;
             case 3:
                 return lab_img_large;
+            case 4:
+                return lab_img_widget;
             default:
                 return new JLabel(name);
         }
@@ -167,10 +173,12 @@ public class Perk implements Comparable<Perk> {
             lab_img_small.setIcon(new ImageIcon(Tools.resizePicture(path, Perk.SIZE_SMALL, Perk.SIZE_SMALL)));
             lab_img_medium.setIcon(new ImageIcon(Tools.resizePicture(path, Perk.SIZE_MEDIUM, Perk.SIZE_MEDIUM)));
             lab_img_large.setIcon(new ImageIcon(Tools.resizePicture(path, Perk.SIZE_LARGE, Perk.SIZE_LARGE)));
+            lab_img_widget.setIcon(new ImageIcon(Tools.resizePicture(path, Perk.SIZE_WIDGET, Perk.SIZE_WIDGET)));
             // Set Name for Tooltip
             lab_img_small.setName(name);
             lab_img_medium.setName(name);
             lab_img_large.setName(name);
+            lab_img_widget.setName(name);
         } else {
             // Try to use default Icon Picture
             s_icon = "iconPerks_default";
@@ -180,10 +188,12 @@ public class Perk implements Comparable<Perk> {
                 lab_img_small.setIcon(new ImageIcon(Tools.resizePicture(path, Perk.SIZE_SMALL, Perk.SIZE_SMALL)));
                 lab_img_medium.setIcon(new ImageIcon(Tools.resizePicture(path, Perk.SIZE_MEDIUM, Perk.SIZE_MEDIUM)));
                 lab_img_large.setIcon(new ImageIcon(Tools.resizePicture(path, Perk.SIZE_LARGE, Perk.SIZE_LARGE)));
+                lab_img_widget.setIcon(new ImageIcon(Tools.resizePicture(path, Perk.SIZE_WIDGET, Perk.SIZE_WIDGET)));
                 // Set Name for Tooltip
                 lab_img_small.setName(name);
                 lab_img_medium.setName(name);
                 lab_img_large.setName(name);
+                lab_img_widget.setName(name);
             } else {
                 System.err.println("# WARNING: Both expected and default Icon Files were not found for Perk '" + name + "' => Exit");
                 System.exit(0);
@@ -239,14 +249,14 @@ public class Perk implements Comparable<Perk> {
     /**
      * Is Side Correct ?
      *
-     * @param side
+     * @param test_side
      * @return
      */
-    public boolean checkSide(String side) {
+    public boolean checkSide(String test_side) {
         if (side.equals(Perk.GENERIC)) {
             return true;
         } else {
-            return side.equals(side);
+            return side.equals(test_side);
         }
     }
 

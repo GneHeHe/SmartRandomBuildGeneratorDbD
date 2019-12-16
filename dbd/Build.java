@@ -299,7 +299,7 @@ public class Build implements Comparable<Build> {
      * @param srbg
      * @return
      */
-    public int rescoreBuild(SmartRandBuildGen srbg) {
+    public int rescoreBuild(SRBG srbg) {
         // Get Synergy Object
         Synergy syn = srbg.getSynergy();
         // Reevaluated Score

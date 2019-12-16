@@ -256,7 +256,7 @@ public class Synergy {
      * @param srbg
      * @return
      */
-    public boolean update_weights(String refchar, String refperk, SmartRandBuildGen srbg) {
+    public boolean update_weights(String refchar, String refperk, SRBG srbg) {
         // Monitor Modifications
         boolean update = false;
         // Update Perk Weights according to Characters Synergy Rules

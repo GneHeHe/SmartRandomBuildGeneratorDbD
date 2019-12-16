@@ -7,12 +7,15 @@ import com.google.gson.JsonParser;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.*;
+import java.net.URI;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javax.imageio.ImageIO;
 import javax.swing.JOptionPane;
 
@@ -81,45 +84,54 @@ public class Tools {
     }
 
     /**
-     * Get Last Version from Github
+     * Get remote Data as JSON Element
      *
-     * @param user
-     * @param proj
+     * @param s_url
      * @return
      */
-    public static double getLastVersionGitHub(String user, String proj) {
-        double version_git = -1;
-        double val = -1;
+    public static JsonElement getJSONdata(String s_url) {
+        JsonElement jsdata = null;
+        InputStream is = null;
         try {
-            // Create URL to Project (JSON Data)
-            URL url = new URL("https://api.github.com/repos/" + user + "/" + proj + "/releases");
-            System.out.println(url.toString());
+            // Create URL
+            URL url = new URL(s_url);
             // Get remote Data as InputStream
-            InputStream is;
             is = url.openStream();
             // Retrieve JSON Data
-            JsonElement jsdata = null;
             jsdata = new JsonParser().parse(new InputStreamReader(is));
             // Close InputStream
             is.close();
-            // Loop over JSON Data
-            if (jsdata != null) {
-                JsonArray arr = jsdata.getAsJsonArray();
-                for (int i = 0; i < arr.size(); i++) {
-                    // Get current JSON Object
-                    JsonObject obj = arr.get(i).getAsJsonObject();
-                    // Get Last Version of Tool on GitHub
-                    val = Double.parseDouble(obj.get("tag_name").getAsString());
-                    if (val > version_git) {
-                        version_git = val;
-                    }
-                }
-            }
-        } catch (IOException ex) {
+        } catch (Exception ex) {
             System.err.println("\n# ERROR while checking Update");
             System.err.println(ex.getMessage() + "\n");
         }
-        return version_git;
+        return jsdata;
+    }
+
+    /**
+     * Extract Data from JSON Element
+     *
+     * @param s_url
+     * @param field
+     * @return
+     */
+    public static String extractJSONdata(String s_url, String field) {
+        // Get JSON Data
+        JsonElement jsdata = getJSONdata(s_url);
+        if (jsdata != null) {
+            // JSON Data as Array
+            JsonArray arr = jsdata.getAsJsonArray();
+            // Loop over JSON Data            
+            for (int i = 0; i < arr.size(); i++) {
+                // Get current JSON Object
+                JsonObject obj = arr.get(i).getAsJsonObject();
+                if (obj.has(field)) {
+                    // Extract 1st encountered Data using Field name 
+                    return obj.get(field).getAsString();
+                }
+            }
+        }
+        return null;
     }
 
     /**
@@ -201,6 +213,29 @@ public class Tools {
      */
     public static void getAlert(String msg, String title, int type) {
         JOptionPane.showMessageDialog(null, msg, title, type);
+    }
+
+    /**
+     * Play Sound
+     *
+     * @param path
+     */
+    public static void playSound(String path) {
+        try {
+            // Create URI
+            URI uri = Tools.class.getResource(path).toURI();
+            // Create Media
+            Media media = new Media(uri.toString());
+            // Create Media Player
+            MediaPlayer mediaPlayer = new MediaPlayer(media);
+            // Set Volume Gain (Low Value)
+            mediaPlayer.setVolume(0.03);
+            // Play Sound
+            mediaPlayer.play();
+        } catch (Exception ex) {
+            System.err.println("\n# ERROR while loading Sound File from " + path);
+            System.err.println(ex.getMessage());
+        }
     }
 
 }

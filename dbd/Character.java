@@ -23,9 +23,11 @@ public class Character implements Comparable<Character> {
     // Icon of Character (as JLabel)
     private JLabel lab_img_small;
     private JLabel lab_img_large;
+    private JLabel lab_img_widget;
     // Size of Icon Pictures
     private final static int SIZE_SMALL = 55;
     private final static int SIZE_LARGE = 175;
+    private final static int SIZE_WIDGET = 130;
     // Strings
     public final static String SURVIVOR = "Survivor";
     public final static String KILLER = "Killer";
@@ -45,6 +47,7 @@ public class Character implements Comparable<Character> {
         setSide(side);
         lab_img_small = new JLabel("", SwingConstants.CENTER);
         lab_img_large = new JLabel("", SwingConstants.CENTER);
+        lab_img_widget = new JLabel("", SwingConstants.CENTER);
         try {
             setIconPicture(icon);
         } catch (IOException ex) {
@@ -71,6 +74,7 @@ public class Character implements Comparable<Character> {
         setSide(side);
         lab_img_small = new JLabel("", SwingConstants.CENTER);
         lab_img_large = new JLabel("", SwingConstants.CENTER);
+        lab_img_widget = new JLabel("", SwingConstants.CENTER);
         // Set Default Icon
         String icon = "";
         if (side.equals(SURVIVOR)) {
@@ -141,6 +145,8 @@ public class Character implements Comparable<Character> {
                 return lab_img_small;
             case 2:
                 return lab_img_large;
+            case 3:
+                return lab_img_widget;
             default:
                 return new JLabel(name, SwingConstants.CENTER);
         }
@@ -169,9 +175,11 @@ public class Character implements Comparable<Character> {
             // Set Icons in JLabel
             lab_img_small.setIcon(new ImageIcon(Tools.resizePicture(path, Character.SIZE_SMALL, Character.SIZE_SMALL)));
             lab_img_large.setIcon(new ImageIcon(Tools.resizePicture(path, Character.SIZE_LARGE, Character.SIZE_LARGE)));
+            lab_img_widget.setIcon(new ImageIcon(Tools.resizePicture(path, Character.SIZE_WIDGET, Character.SIZE_WIDGET)));
             // Set Name for Tooltip
             lab_img_small.setName(name);
             lab_img_large.setName(name);
+            lab_img_widget.setName(name);
         } else {
             // Try to use default Icon Picture
             if (side.equals(SURVIVOR)) {
@@ -184,9 +192,11 @@ public class Character implements Comparable<Character> {
                 // Set Default Icon in JLabel
                 lab_img_small.setIcon(new ImageIcon(Tools.resizePicture(path, Character.SIZE_SMALL, Character.SIZE_SMALL)));
                 lab_img_large.setIcon(new ImageIcon(Tools.resizePicture(path, Character.SIZE_LARGE, Character.SIZE_LARGE)));
+                lab_img_widget.setIcon(new ImageIcon(Tools.resizePicture(path, Character.SIZE_WIDGET, Character.SIZE_WIDGET)));
                 // Set Name for Tooltip
                 lab_img_small.setName(name);
                 lab_img_large.setName(name);
+                lab_img_widget.setName(name);
             } else {
                 System.err.println("# WARNING: Both expected and default Icon Files were not found for Character '" + name + "' => Exit");
                 System.exit(0);

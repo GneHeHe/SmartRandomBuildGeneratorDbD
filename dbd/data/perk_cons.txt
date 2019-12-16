@@ -15,6 +15,7 @@ KILLER_2	Make Your Choice
 KILLER_2	Play With Your Food
 KILLER_2	Save The Best For Last
 KILLER_2	Spirit Fury
+KILLER_2	Zanshin Tactics
 KILLER_3	A Nurse's Calling
 KILLER_3	Barbecue & Chilli
 KILLER_3	Bitter Murmur
@@ -37,21 +38,16 @@ KILLER_4	Fire Up
 KILLER_4	Hex No One Escapes Death
 KILLER_4	Remember Me
 SURVIV_1	Aftercare
-SURVIV_1	Autodidact
 SURVIV_1	Bond
-SURVIV_1	Botany Knowledge
 SURVIV_1	Empathy
 SURVIV_1	Inner Strength
 SURVIV_1	Pharmacy
 SURVIV_1	Second Wind
 SURVIV_1	Self-Care
 SURVIV_1	Solidarity
-SURVIV_1	We'll Make It
 SURVIV_2	Adrenaline
-SURVIV_2	Boil Over
 SURVIV_2	Borrowed Time
 SURVIV_2	Breakdown
-SURVIV_2	Camaraderie
 SURVIV_2	Decisive Strike
 SURVIV_2	Deliverance
 SURVIV_2	Distortion
@@ -60,10 +56,9 @@ SURVIV_2	Head On
 SURVIV_2	Hope
 SURVIV_2	Iron Will
 SURVIV_2	Left Behind
+SURVIV_2	Lucky Break
 SURVIV_2	Mettle Of Man
 SURVIV_2	Premonition
-SURVIV_2	Saboteur
-SURVIV_2	Slippery Meat
 SURVIV_2	Spine Chill
 SURVIV_2	Tenacity
 SURVIV_2	Unbreakable
@@ -80,9 +75,7 @@ SURVIV_3	Sprint Burst
 SURVIV_3	Windows Of Opportunity
 SURVIV_4	Alert
 SURVIV_4	Babysitter
-SURVIV_4	Buckle Up
 SURVIV_4	Dark Sense
-SURVIV_4	Deja Vu
 SURVIV_4	Detective's Hunch
 SURVIV_4	Kindred
 SURVIV_4	Object Of Obsession

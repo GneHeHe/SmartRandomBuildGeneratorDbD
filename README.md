@@ -11,8 +11,14 @@ Most related tools generate pure random builds which are hardly ever interesting
 
 By contrast, **SRBG** will create **useful random builds** if desired:
 
-
 ![SRBG](dbd/data/tuto_build.jpg)
+![SRBG](dbd/data/gif/SRBG_1.9.gif)
+
+**Widget feature is also available for more convenient use of SRBG within the game**
+
+![SRBG](dbd/data/tuto_widget.jpg)
+
+![SRBG](dbd/data/gif/SRBG_2.0_Killer.gif)
 
 **SRBG** can randomly chose the **side** ('**_Survivor_**' or '**_Killer_**') for your next game
 
@@ -87,7 +93,7 @@ Finally, a **built-in tutorial** is also included in **SRBG**
 
 # How to install and use SRBG ?
 
-Download the last compiled JAR file [here](https://github.com/GneHeHe/SmartRandomBuildGeneratorDbD/releases/download/1.9/SmartRandBuildGen.jar) (also available in '**releases**' tab)
+Download the last compiled JAR file [here](https://github.com/GneHeHe/SmartRandomBuildGeneratorDbD/releases/download/2.0/SmartRandBuildGen.jar) (also available in '**releases**' tab)
 
 System Requirements:
 
