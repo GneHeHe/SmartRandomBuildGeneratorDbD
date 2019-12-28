@@ -35,7 +35,7 @@ Briefly, a **weight** is assigned to each **perk**, and random builds are subseq
 * **perk-based synergy rules**
 * **character-based synergy rules**
 
-![SRBG](dbd/data/tuto_files/tuto_ex.png)
+![SRBG](dbd/data/tuto_files/tuto_ex2.png)
 
 <u>**Example of Perk Constraints for Survivor Side**</u>:
 
