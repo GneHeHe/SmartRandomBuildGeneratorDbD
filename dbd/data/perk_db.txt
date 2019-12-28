@@ -88,7 +88,7 @@ Dead Hard	Survivor	iconPerks_DeadHard	200
 Decisive Strike	Survivor	iconPerks_decisiveStrike	250
 Deja Vu	Survivor	iconPerks_dejaVu	1
 Deliverance	Survivor	iconPerks_deliverance	150
-Detective's Hunch	Survivor	iconPerks_detectivesHunch	100
+Detective's Hunch	Survivor	iconPerks_detectivesHunch	150
 Distortion	Survivor	iconPerks_distortion	50
 Diversion	Survivor	iconPerks_diversion	100
 Empathy	Survivor	iconPerks_empathy	100

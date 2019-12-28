@@ -253,27 +253,26 @@ public class Build implements Comparable<Build> {
      * Check if two Builds are Identical
      *
      * @param b
+     * @param sort
      * @return
      */
-    public boolean isDuplicate(Build b) {
+    public boolean isDuplicate(Build b, boolean sort) {
         // Current Build as List
         ArrayList<String> l1 = new ArrayList<>();
         l1.add(getSide());
         l1.add(getCharacter().getName());
-        l1.add(getPerk(1).getName());
-        l1.add(getPerk(2).getName());
-        l1.add(getPerk(3).getName());
-        l1.add(getPerk(4).getName());
+        for (Perk p : getPerks()) {
+            l1.add(p.getName());
+        }
         // Argument Build as List
         ArrayList<String> l2 = new ArrayList<>();
         l2.add(b.getSide());
         l2.add(b.getCharacter().getName());
-        l2.add(b.getPerk(1).getName());
-        l2.add(b.getPerk(2).getName());
-        l2.add(b.getPerk(3).getName());
-        l2.add(b.getPerk(4).getName());
+        for (Perk p : b.getPerks()) {
+            l2.add(p.getName());
+        }
         // Are they Identical?
-        return Tools.isDuplicate(l1, l2, true);
+        return Tools.isDuplicate(l1, l2, sort);
     }
 
     /**

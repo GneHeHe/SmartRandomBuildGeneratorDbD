@@ -191,7 +191,7 @@ public class TableModelBuild extends AbstractTableModel {
     public boolean addBuild(Build newbuild, boolean verbose) {
         // Check if Build is already known
         for (Build b : l_builds) {
-            if (b.isDuplicate(newbuild)) {
+            if (b.isDuplicate(newbuild, true)) {
                 System.out.println("# Skipped Build | " + newbuild.show(false, "   "));
                 return false;
             }

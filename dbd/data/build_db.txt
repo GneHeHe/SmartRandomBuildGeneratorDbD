@@ -5312,6 +5312,7 @@ Build	Survivor	GenSurv	Bond	Breakout	Dead Hard	Vigil
 Build	Survivor	GenSurv	Bond	Breakout	Decisive Strike	Iron Will
 Build	Survivor	GenSurv	Bond	Breakout	Diversion	Iron Will
 Build	Survivor	GenSurv	Bond	Breakout	Hope	Iron Will
+Build	Survivor	GenSurv	Bond	Breakout	Inner Strength	We're Gonna Live Forever
 Build	Survivor	GenSurv	Bond	Breakout	Iron Will	Lithe
 Build	Survivor	GenSurv	Bond	Breakout	Iron Will	Mettle Of Man
 Build	Survivor	GenSurv	Bond	Breakout	Iron Will	Plunderer's Instinct
@@ -5471,6 +5472,7 @@ Build	Survivor	GenSurv	Borrowed Time	Quick & Quiet	Self-Care	Sprint Burst
 Build	Survivor	GenSurv	Borrowed Time	Self-Care	Sprint Burst	Unbreakable
 Build	Survivor	GenSurv	Borrowed Time	Sprint Burst	Vigil	We're Gonna Live Forever
 Build	Survivor	GenSurv	Borrowed Time	Tenacity	Unbreakable	We're Gonna Live Forever
+Build	Survivor	GenSurv	Botany Knowledge	Breakout	Self-Care	We're Gonna Live Forever
 Build	Survivor	GenSurv	Botany Knowledge	Dead Hard	Self-Care	We'll Make It
 Build	Survivor	GenSurv	Botany Knowledge	Lithe	Self-Care	We'll Make It
 Build	Survivor	GenSurv	Botany Knowledge	Self-Care	Sprint Burst	We'll Make It
@@ -5480,6 +5482,7 @@ Build	Survivor	GenSurv	Breakout	Dead Hard	Mettle Of Man	Self-Care
 Build	Survivor	GenSurv	Breakout	Dead Hard	Self-Care	Vigil
 Build	Survivor	GenSurv	Breakout	Decisive Strike	Head On	Inner Strength
 Build	Survivor	GenSurv	Breakout	Decisive Strike	Mettle Of Man	Self-Care
+Build	Survivor	GenSurv	Breakout	Empathy	Inner Strength	We're Gonna Live Forever
 Build	Survivor	GenSurv	Breakout	Hope	Mettle Of Man	Self-Care
 Build	Survivor	GenSurv	Breakout	Mettle Of Man	Self-Care	We're Gonna Live Forever
 Build	Survivor	GenSurv	Dance With Me	Dead Hard	Head On	Quick & Quiet

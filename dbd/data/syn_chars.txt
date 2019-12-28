@@ -163,11 +163,12 @@ Legion	Dark Devotion	100
 Legion	Discordance	200
 Legion	Hex No One Escapes Death	-300
 Legion	Hex Ruin	200
-Legion	I'm All Ears	100
-Legion	Monitor & Abuse	100
+Legion	I'm All Ears	200
+Legion	Monitor & Abuse	200
+Legion	Play With Your Food	-300
 Legion	Pop Goes The Weasel	100
-Legion	Save The Best For Last	-100
-Legion	Sloppy Butcher	200
+Legion	Save The Best For Last	-500
+Legion	Sloppy Butcher	-300
 Legion	Thanatophobia	300
 ############# Myers #############
 Myers	Agitation	100

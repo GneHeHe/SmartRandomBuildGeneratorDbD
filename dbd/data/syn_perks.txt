@@ -1,7 +1,7 @@
 ############# Survivors #############
-Ace In The Hole	Detective's Hunch	50
+Ace In The Hole	Detective's Hunch	100
 Ace In The Hole	Pharmacy	100
-Ace In The Hole	Plunderer's Instinct	200
+Ace In The Hole	Plunderer's Instinct	300
 Ace In The Hole	Up The Ante	50
 Adrenaline	Balanced Landing	-50
 Adrenaline	Dead Hard	-50
@@ -35,10 +35,10 @@ Autodidact	Solidarity	50
 Autodidact	Spine Chill	100
 Autodidact	We'll Make It	50
 Babysitter	Distortion	-500
-Balanced Landing	Dead Hard	-200
-Balanced Landing	Head On	-200
+Balanced Landing	Dead Hard	-300
+Balanced Landing	Head On	-300
 Balanced Landing	Lightweight	50
-Balanced Landing	Lithe	-200
+Balanced Landing	Lithe	-300
 Balanced Landing	Sprint Burst	-500
 Balanced Landing	Vigil	300
 Balanced Landing	Windows Of Opportunity	50
@@ -76,18 +76,15 @@ Breakout	Self-Care	100
 Breakout	We're Gonna Live Forever	100
 Camaraderie	Kindred	50
 Dance With Me	Head On	100
-Dance With Me	Inner Strength	50
 Dance With Me	Iron Will	50
-Dance With Me	Lightweight	50
 Dance With Me	Lithe	200
 Dance With Me	Poised	-300
 Dance With Me	Quick & Quiet	100
-Dance With Me	Urban Evasion	50
 Dance With Me	Windows Of Opportunity	50
 Dark Sense	Poised	50
 Dark Sense	Wake Up!	100
-Dead Hard	Head On	-200
-Dead Hard	Lithe	-200
+Dead Hard	Head On	-300
+Dead Hard	Lithe	-300
 Dead Hard	No Mither	50
 Dead Hard	Sprint Burst	-500
 Dead Hard	Vigil	300
@@ -102,10 +99,10 @@ Decisive Strike	Unbreakable	100
 Deliverance	Flip-Flop	50
 Deliverance	Tenacity	50
 Deliverance	Unbreakable	50
-Detective's Hunch	Inner Strength	100
+Detective's Hunch	Inner Strength	300
 Detective's Hunch	Open-Handed	100
-Detective's Hunch	Plunderer's Instinct	-300
-Detective's Hunch	Small Game	-300
+Detective's Hunch	Plunderer's Instinct	-500
+Detective's Hunch	Small Game	-500
 Distortion	Mettle Of Man	-500
 Distortion	Object Of Obsession	-500
 Distortion	Self-Care	50
@@ -126,7 +123,7 @@ Flip-Flop	Tenacity	100
 Flip-Flop	Unbreakable	100
 Head On	Inner Strength	100
 Head On	Lightweight	50
-Head On	Lithe	-200
+Head On	Lithe	-300
 Head On	Quick & Quiet	100
 Head On	Sprint Burst	-500
 Head On	Vigil	100
@@ -135,7 +132,7 @@ Inner Strength	Iron Will	100
 Inner Strength	No Mither	-500
 Inner Strength	Pharmacy	-300
 Inner Strength	Quick & Quiet	100
-Inner Strength	Small Game	100
+Inner Strength	Small Game	300
 Inner Strength	Solidarity	-300
 Inner Strength	Self-Care	-300
 Iron Will	Lightweight	50

@@ -11,12 +11,12 @@ Most related tools generate pure random builds which are hardly ever interesting
 
 By contrast, **SRBG** will create **useful random builds** if desired:
 
-![SRBG](dbd/data/tuto_build.jpg)
+![SRBG](dbd/data/tuto_files/tuto_build.jpg)
 ![SRBG](dbd/data/gif/SRBG_1.9.gif)
 
 **Widget feature is also available for more convenient use of SRBG within the game**
 
-![SRBG](dbd/data/tuto_widget.jpg)
+![SRBG](dbd/data/tuto_files/tuto_widget.jpg)
 
 ![SRBG](dbd/data/gif/SRBG_2.0_Killer.gif)
 
@@ -27,7 +27,7 @@ Both '**_number of perks in each build_**' and the '**_number of builds to gener
 Briefly, a **weight** is assigned to each **perk**, and random builds are subsequently designed with **bias toward perks with higher weights**
 
 
-![SRBG](dbd/data/tuto_perks.jpg)
+![SRBG](dbd/data/tuto_files/tuto_perks.jpg)
 
 
 ### Interesting features can also be enabled on both sides:
@@ -35,37 +35,58 @@ Briefly, a **weight** is assigned to each **perk**, and random builds are subseq
 * **perk-based synergy rules**
 * **character-based synergy rules**
 
+![SRBG](dbd/data/tuto_files/tuto_ex.png)
 
 <u>**Example of Perk Constraints for Survivor Side**</u>:
 
-* <u>Set 1</u>: perks related to **healing** (self-care, healing efficiency, reading partner auras)
-* <u>Set 2</u>: perks to increase **survival** (anti-tunnel, anti-hook, anti-slug, avoid detection)
-* <u>Set 3</u>: perks to help during **chases** (exhaustion perks, quick vaults, pallet/window detection)
-* <u>Set 4</u>: perks to reveal **auras** (killer or environment)
+* <u>Set 1</u>: perks related to **healing**
+![SRBG](dbd/data/tuto_files/tuto_cons_s1.png)
+
+* <u>Set 2</u>: perks to increase **survival**
+![SRBG](dbd/data/tuto_files/tuto_cons_s2.png)
+
+* <u>Set 3</u>: perks to help during **chases**
+![SRBG](dbd/data/tuto_files/tuto_cons_s3.png)
+
+* <u>Set 4</u>: perks to reveal ** killer or environment auras**
+![SRBG](dbd/data/tuto_files/tuto_cons_s4.png)
 
 
 <u>**Example of Perk Constraints for Killer Side**</u>:
 
-* <u>Set 1</u>: perks to **slow-down** the game (generators or healing)
-* <u>Set 2</u>: perks to help during **chases** (pallets, windows, higher speed, lower terror radius)
+* <u>Set 1</u>: perks to **slow-down** the game
+![SRBG](dbd/data/tuto_files/tuto_cons_k1.png)
+
+* <u>Set 2</u>: perks to help during **chases**
+![SRBG](dbd/data/tuto_files/tuto_cons_k2.png)
+
 * <u>Set 3</u>: perks to **detect** survivors
+![SRBG](dbd/data/tuto_files/tuto_cons_k3.png)
+
 * <u>Set 4</u>: perks to have some **advantage during late game**
+![SRBG](dbd/data/tuto_files/tuto_cons_k4.png)
 
 
 <u>**Example of Perk-based Synergy Rules**</u>:
 
-* **Favorable synergy on survivor side**: draw **ace in the hole** perk will **increase** the probability to select **plunderer's instinct** for the next build slots
-* **Unfavorable synergy on survivor side**: draw **sprint burst** perk will **nullify** the probability to select **dead hard** for the next build slots
-* **Favorable synergy on killer side**: draw **enduring** perk will **increase** the probability to select **spirit fury** for the next build slots
-* **Unfavorable synergy on killer side**: draw **remember me** perk will **decrease** the probability to select **save the best for last** for the next build slots
+* **Favorable synergy rule on survivor side**
+![SRBG](dbd/data/tuto_files/tuto_syn_p1.png)
 
+* **Unfavorable synergy rule on survivor side**
+![SRBG](dbd/data/tuto_files/tuto_syn_p2.png)
+
+* ** Favorable synergy rule on killer side**
+![SRBG](dbd/data/tuto_files/tuto_syn_p3.png)
+
+* **Unfavorable synergy rule on killer side**
+![SRBG](dbd/data/tuto_files/tuto_syn_p4.png)
 
 <u>**Example of Killer-based Synergy Rules**</u>:
 
-* **Favorable synergy** with **spirit** killer: the probability to select **stridor** perk for the next build slots is **increased**
-* **Favorable synergy** with **myers** killer: the probability to select **monitor & abuse** perk for the next build slots is **increased**
-* **Unfavorable synergy** with **nurse** killer: the probability to select **brutal strength** perk for the next build slots is **decreased**
-* **Unfavorable synergy** with **hillbilly** killer: the probability to select **make your choice** perk for the next build slots is **decreased**
+![SRBG](dbd/data/tuto_files/tuto_syn_k1.png)
+![SRBG](dbd/data/tuto_files/tuto_syn_k2.png)
+![SRBG](dbd/data/tuto_files/tuto_syn_k3.png)
+![SRBG](dbd/data/tuto_files/tuto_syn_k4.png)
 
 #### The goal of **perk constraints** and **synergy rules** is to generate even **better random builds**
 
@@ -75,7 +96,7 @@ There are no **survivor-based synergy rules** because **survivors are just skins
 **It is also possible to generate pure random builds by disabling all these previous features**:
 
 
-![SRBG](dbd/data/tuto_build_rand.jpg)
+![SRBG](dbd/data/tuto_files/tuto_build_rand.jpg)
 
 **User-defined configuration files for perk weights, perk sets, synergy rules and build database can also be loaded at start**
 
@@ -83,11 +104,11 @@ There are no **survivor-based synergy rules** because **survivors are just skins
 **Generated builds** can be easily **saved in a build database** for future use
 
 
-![SRBG](dbd/data/tuto_db-1.jpg)
+![SRBG](dbd/data/tuto_files/tuto_db-1.jpg)
 
 Finally, a **built-in tutorial** is also included in **SRBG**
 
-![SRBG](dbd/data/tuto_help.jpg)
+![SRBG](dbd/data/tuto_files/tuto_help.jpg)
 
 ### [Click here for Steam Guide](https://steamcommunity.com/sharedfiles/filedetails/?id=1641511649)
 

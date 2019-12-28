@@ -20,7 +20,7 @@
 <br>
 
 <br>
-<center><img src="tuto_build.jpg"></center>
+<center><img src="tuto_files/tuto_build.jpg"></center>
 <br>
 
 <p><b>Perks and character from <font color="blue">best generated random build</font> (<font color="green">highest score</font>) are graphically displayed in the interface</b></p>
@@ -33,7 +33,7 @@
 <br>
 
 <br>
-<center><img src="tuto_widget.jpg"></center>
+<center><img src="tuto_files/tuto_widget.jpg"></center>
 <br>
 
 <h3><u>How to use the Widget?</u></h3>
@@ -61,17 +61,27 @@
 <h3><u>Perk Constraints</u></h3>
 <p><font color="blue"><b>Enabled perk constraint: at least 1 perk from related subset of perks is required in the generated build</b></font></p><br>
 <ul>
-	<li>Survivor constraints 1 (<b>SURVIV_1</b>): perks related to <b>healing</b> (self-care, healing efficiency, reading partner auras)</li><br>
-	<li>Survivor constraints 2 (<b>SURVIV_2</b>): perks to increase <b>survival</b> (anti-tunnel, anti-hook, anti-slug, avoid detection)</li><br>
-	<li>Survivor constraints 3 (<b>SURVIV_3</b>): perks to help during <b>chases</b> (exhaustion perks, quick vaults, pallet/window detection)</li><br>
-	<li>Survivor constraints 4 (<b>SURVIV_4</b>): perks to <b>reveal auras</b> (killer or environment)</li><br>
+	<li>Survivor constraints 1 (<b>SURVIV_1</b>): perks related to <b>healing</b></li>
+	<center><img src="tuto_files/tuto_cons_s1.png"></center>
+	<li>Survivor constraints 2 (<b>SURVIV_2</b>): perks to increase <b>survival</b></li>
+	<center><img src="tuto_files/tuto_cons_s2.png"></center>
+	<li>Survivor constraints 3 (<b>SURVIV_3</b>): perks to help during <b>chases</b></li>
+	<center><img src="tuto_files/tuto_cons_s3.png"></center>
+	<li>Survivor constraints 4 (<b>SURVIV_4</b>): perks to <b>reveal killer or environment auras</b></li>
+	<center><img src="tuto_files/tuto_cons_s4.png"></center>
 </ul>
+<br>
 <ul>
-	<li>Killer constraints 1 (<b>KILLER_1</b>): perks to <b>slow-down</b> the game (generators or healing)</li><br>
-	<li>Killer constraints 2 (<b>KILLER_2</b>): perks to help during <b>chases</b> (pallets, windows, higher speed, lower terror radius)</li><br>
-	<li>Killer constraints 3 (<b>KILLER_3</b>): perks to <b>detect</b> survivors</li><br>
-	<li>Killer constraints 4 (<b>KILLER_4</b>): perks to have some <b>advantage during late game</b></li><br>
+	<li>Killer constraints 1 (<b>KILLER_1</b>): perks to <b>slow-down</b> the game</li>
+	<center><img src="tuto_files/tuto_cons_k1.png"></center>
+	<li>Killer constraints 2 (<b>KILLER_2</b>): perks to help during <b>chases</b></li>
+	<center><img src="tuto_files/tuto_cons_k2.png"></center>
+	<li>Killer constraints 3 (<b>KILLER_3</b>): perks to <b>detect</b> survivors</li>
+	<center><img src="tuto_files/tuto_cons_k3.png"></center>
+	<li>Killer constraints 4 (<b>KILLER_4</b>): perks to have some <b>advantage during late game</b></li>
+	<center><img src="tuto_files/tuto_cons_k4.png"></center>
 </ul>
+<br>
 <p><b>Custom perk constraint sets can be automatically loaded at start if the configuration file '<font color="orange"><i><b>perk_cons_custom.txt</b></i></font>' is found in the working directory</b></p>
 <br>
 
@@ -81,22 +91,28 @@
 <p>There are <b>perk-based</b> and <b>killer-based</b> synergies (both <b><font color="green">favorable</font></b> and <b><font color="red">unfavorable</font></b> rules are available)</p>
 <br>
 <p><b><u>Examples of perk-based synergies:</u></b></p>
+<br>
 <ul>
-	<li><b><font color="green">Favorable synergy</font></b> on <b><i>survivor</i></b> side: draw '<b><i>ace in the hole</i></b>' perk will <b><font color="green">increase the probability</font></b> to select '<b><i>plunderer's instinct</i></b>' for the next build slots</li><br>
-	<li><b><font color="red">Unfavorable synergy</font></b> on <b><i>survivor</i></b> side: draw '<b><i>sprint burst</i></b>' perk will <b><font color="red">nullify the probability</font></b> to select '<b><i>dead hard</i></b>' for the next build slots</li><br>
-	<li><b><font color="green">Favorable synergy</font></b> on <b><i>killer</i></b> side: draw '<b><i>enduring</i></b>' perk will <b><font color="green">increase the probability</font></b> to select '<b><i>spirit fury</i></b>' for the next build slots</li><br>
-	<li><b><font color="red">Unfavorable synergy</font></b> on <b><i>killer</i></b> side: draw '<b><i>remember me</i></b>' perk will <b><font color="red">decrease the probability</font></b> to select '<b><i>save the best for last</i></b>' for the next build slots</li><br>
+	<li><b><font color="green">Favorable synergy</font></b> on <b>Survivor side</b></li>
+	<center><img src="tuto_files/tuto_syn_p1.png"></center>
+	<li><b><font color="red">Unfavorable synergy</font></b> on <b>Survivor side</b></li>
+	<center><img src="tuto_files/tuto_syn_p2.png"></center>
+	<li><b><font color="green">Favorable synergy</font></b> on <b>Killer side</b></li>
+	<center><img src="tuto_files/tuto_syn_p3.png"></center>
+	<li><b><font color="red">Unfavorable synergy</font></b> on <b>Killer side</b></li>
+	<center><img src="tuto_files/tuto_syn_p4.png"></center>
 </ul>
+<br>
 <p><b>Custom perk-based synergy rules can be automatically loaded at start if the configuration file '<font color="orange"><i><b>syn_perks_custom.txt</b></i></font>' is found in the working directory</b></p>
 <br>
 
 <p><b><u>Examples of killer-based synergies:</u></b></p>
-<ul>
-	<li><b><font color="green">Favorable synergy</font></b> with '<b><i>spirit</i></b>' killer: the <b>probability</b> to select '<b><i>stridor</i></b>' perk for the next build slots is <b><font color="green">increased</font></b></li><br>
-	<li><b><font color="green">Favorable synergy</font></b> with '<b><i>myers</i></b>' killer: the <b>probability</b> to select '<b><i>monitor & abuse</i></b>' perk for the next build slots is <b><font color="green">increased</font></b></li><br>
-	<li><b><font color="red">Unfavorable synergy</font></b> with '<b><i>nurse</i></b>' killer: the <b>probability</b> to select '<b><i>brutal strength</i></b>' perk for the next build slots is <b><font color="red">decreased</font></b></li><br>
-	<li><b><font color="red">Unfavorable synergy</font></b> with '<b><i>hillbilly</i></b>' killer: the <b>probability</b> to select '<b><i>make your choice</i></b>' perk for the next build slots is <b><font color="red">decreased</font></b></li><br>
-</ul>
+
+<center><img src="tuto_files/tuto_syn_k1.png"></center>
+<center><img src="tuto_files/tuto_syn_k2.png"></center>
+<center><img src="tuto_files/tuto_syn_k3.png"></center>
+<center><img src="tuto_files/tuto_syn_k4.png"></center>
+<br>
 <p><b>Custom character-based synergy rules can be automatically loaded at start if the configuration file '<font color="orange"><i><b>syn_chars_custom.txt</b></i></font>' is found in the working directory</b></p>
 <br>
 
@@ -109,7 +125,7 @@
 <p><b><font color="red">Zero or negative weight value means that the related perk will be disabled</font></b></p>
 
 <br>
-<center><img src="tuto_perks.jpg"></center>
+<center><img src="tuto_files/tuto_perks.jpg"></center>
 <br>
 
 <br>
@@ -135,21 +151,21 @@
 <p><b><font color="red">All features ('<i>perk weights</i>', '<i>perk constraints</i>' and '<i>synergy rules</i>') were disabled using the 'set identical weights' button</font></b></p>
 
 <br>
-<center><img src="tuto_perks_rand.jpg"></center>
+<center><img src="tuto_files/tuto_perks_rand.jpg"></center>
 <br>
 
 <p><b><font color="red">The generated builds are now purely random and less interesting:</font></b></p>
 <br>
 
 <br>
-<center><img src="tuto_build_rand.jpg"></center>
+<center><img src="tuto_files/tuto_build_rand.jpg"></center>
 <br>
 
 <p><b>Previous generated builds with all features ON:</b></p>
 <br>
 
 <br>
-<center><img src="tuto_build.jpg"></center>
+<center><img src="tuto_files/tuto_build.jpg"></center>
 <br>
 
 <h2><u>Tab '<i>Build Database</i>'</u></h2>
@@ -162,7 +178,7 @@
 <p><b><font color="blue">More than 5000 predefined builds are automatically loaded at start</font></b></p>
 
 <br>
-<center><img src="tuto_db-1.jpg"></center>
+<center><img src="tuto_files/tuto_db-1.jpg"></center>
 <br>
 
 <h3><u>Features</u></h3>
@@ -181,7 +197,7 @@
 </ul>
 
 <br>
-<center><img src="tuto_db-2.jpg"></center>
+<center><img src="tuto_files/tuto_db-2.jpg"></center>
 <br>
 
 <br>
@@ -190,14 +206,14 @@
 </ul>
 
 <br>
-<center><img src="tuto_db-3.jpg"></center>
+<center><img src="tuto_files/tuto_db-3.jpg"></center>
 <br>
 <p><b>You can use this function to randomly select a build within a shortlist (at least 2 selected rows)</b></p>
 <p><b>In this example, only spirit builds were kept using the filter features. They were then selected using either mouse or keyboard (Ctrl+A)</p></b>
 <p><b>Click the '<font color="blue"><i><b>random select</b></i></font>' button will randomly chose one spirit build from the considered subset</b></p>
 
 <br>
-<center><img src="tuto_db-4.jpg"></center>
+<center><img src="tuto_files/tuto_db-4.jpg"></center>
 <br>
 
 
