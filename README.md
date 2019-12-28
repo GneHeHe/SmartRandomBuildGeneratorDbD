@@ -48,7 +48,7 @@ Briefly, a **weight** is assigned to each **perk**, and random builds are subseq
 * <u>Set 3</u>: perks to help during **chases**
 ![SRBG](dbd/data/tuto_files/tuto_cons_s3.png)
 
-* <u>Set 4</u>: perks to reveal ** killer or environment auras**
+* <u>Set 4</u>: perks to reveal **auras**
 ![SRBG](dbd/data/tuto_files/tuto_cons_s4.png)
 
 
@@ -63,7 +63,7 @@ Briefly, a **weight** is assigned to each **perk**, and random builds are subseq
 * <u>Set 3</u>: perks to **detect** survivors
 ![SRBG](dbd/data/tuto_files/tuto_cons_k3.png)
 
-* <u>Set 4</u>: perks to have some **advantage during late game**
+* <u>Set 4</u>: perks for **late game**
 ![SRBG](dbd/data/tuto_files/tuto_cons_k4.png)
 
 
@@ -75,7 +75,7 @@ Briefly, a **weight** is assigned to each **perk**, and random builds are subseq
 * **Unfavorable synergy rule on survivor side**
 ![SRBG](dbd/data/tuto_files/tuto_syn_p2.png)
 
-* ** Favorable synergy rule on killer side**
+* **Favorable synergy rule on killer side**
 ![SRBG](dbd/data/tuto_files/tuto_syn_p3.png)
 
 * **Unfavorable synergy rule on killer side**
