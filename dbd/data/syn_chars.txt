@@ -243,19 +243,19 @@ Pig	Unnerving Presence	-100
 Pig	Whispers	200
 ############# Plague #############
 Plague	A Nurse's Calling	-500
-Plague	Corrupt Intervention	100
+Plague	Corrupt Intervention	200
 Plague	Coulrophobia	-500
 Plague	Discordance	100
 Plague	Hex No One Escapes Death	-300
 Plague	Hex Ruin	100
-Plague	I'm All Ears	100
-Plague	Infectious Fright	100
+Plague	I'm All Ears	200
+Plague	Infectious Fright	200
 Plague	Make Your Choice	-300
-Plague	Play With Your Food	100
+Plague	Play With Your Food	200
 Plague	Pop Goes The Weasel	100
 Plague	Save The Best For Last	-300
 Plague	Sloppy Butcher	-500
-Plague	Thanatophobia	200
+Plague	Thanatophobia	300
 Plague	Whispers	-100
 ############# Spirit Rin #############
 Spirit Rin	A Nurse's Calling	100
