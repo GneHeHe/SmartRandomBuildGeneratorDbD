@@ -29,7 +29,7 @@ Hex Ruin	Killer	iconPerks_ruin	300
 Hex The Third Seal	Killer	iconPerks_theThirdSeal	10
 Hex Thrill Of The Hunt	Killer	iconPerks_thrillOfTheHunt	1
 I'm All Ears	Killer	iconPerks_ImAllEars	25
-Infectious Fright	Killer	iconPerks_infectiousFright	100
+Infectious Fright	Killer	iconPerks_infectiousFright	150
 Insidious	Killer	iconPerks_insidious	25
 Iron Grasp	Killer	iconPerks_ironGrasp	25
 Iron Maiden	Killer	iconPerks_ironMaiden	25
@@ -54,8 +54,8 @@ Sloppy Butcher	Killer	iconPerks_sloppyButcher	150
 Spies From The Shadows	Killer	iconPerks_spiesFromTheShadows	25
 Spirit Fury	Killer	iconPerks_spiritFury	1
 Stridor	Killer	iconPerks_stridor	100
-Surge	Killer	iconPerks_Surge	50
-Surveillance	Killer	iconPerks_surveillance	100
+Surge	Killer	iconPerks_Surge	100
+Surveillance	Killer	iconPerks_surveillance	150
 Territorial Imperative	Killer	iconPerks_TerritorialImperative	25
 Thanatophobia	Killer	iconPerks_thatanophobia	50
 Thrilling Tremors	Killer	iconPerks_ThrillingTremors	150
@@ -88,14 +88,14 @@ Dead Hard	Survivor	iconPerks_DeadHard	200
 Decisive Strike	Survivor	iconPerks_decisiveStrike	250
 Deja Vu	Survivor	iconPerks_dejaVu	1
 Deliverance	Survivor	iconPerks_deliverance	150
-Detective's Hunch	Survivor	iconPerks_detectivesHunch	150
+Detective's Hunch	Survivor	iconPerks_detectivesHunch	100
 Distortion	Survivor	iconPerks_distortion	50
 Diversion	Survivor	iconPerks_diversion	100
 Empathy	Survivor	iconPerks_empathy	100
 Fixated	Survivor	iconPerks_Fixated	100
 Flip-Flop	Survivor	iconPerks_flipFlop	50
 Head On	Survivor	iconPerks_headOn	150
-Hope	Survivor	iconPerks_hope	50
+Hope	Survivor	iconPerks_hope	100
 Inner Strength	Survivor	iconPerks_InnerStrength	150
 Iron Will	Survivor	iconPerks_ironWill	250
 Kindred	Survivor	iconPerks_kindred	50
@@ -115,7 +115,7 @@ Poised	Survivor	iconPerks_poised	50
 Premonition	Survivor	iconPerks_premonition	25
 Prove Thyself	Survivor	iconPerks_proveThyself	50
 Quick & Quiet	Survivor	iconPerks_quickAndQuiet	150
-Resilience	Survivor	iconPerks_resilience	25
+Resilience	Survivor	iconPerks_resilience	50
 Saboteur	Survivor	iconPerks_saboteur	25
 Second Wind	Survivor	iconPerks_SecondWind	25
 Self-Care	Survivor	iconPerks_selfCare	200

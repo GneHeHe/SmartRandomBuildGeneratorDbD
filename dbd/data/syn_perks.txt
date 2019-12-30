@@ -236,6 +236,7 @@ Corrupt Intervention	Hex Devour Hope	50
 Corrupt Intervention	Hex Ruin	-200
 Corrupt Intervention	Pop Goes The Weasel	-100
 Corrupt Intervention	Whispers	50
+Corrupt Intervention	Surge	-50
 Coulrophobia	Deerstalker	50
 Coulrophobia	Distressing	100
 Coulrophobia	Sloppy Butcher	50
@@ -247,6 +248,7 @@ Dark Devotion	Tinkerer	-300
 Deerstalker	Infectious Fright	100
 Deerstalker	Knock Out	200
 Deerstalker	Sloppy Butcher	50
+Discordance	Monitor & Abuse	100
 Discordance	Surveillance	-50
 Discordance	Whispers	-100
 Distressing	Furtive Chase	-300
@@ -285,7 +287,7 @@ Hex No One Escapes Death	Whispers	100
 Hex No One Escapes Death	Insidious	50
 Hex Ruin	Hex Thrill Of The Hunt	100
 Hex Ruin	Pop Goes The Weasel	-100
-Hex Ruin	Surge	-100
+Hex Ruin	Surge	-50
 Hex The Third Seal	Hex Thrill Of The Hunt	100
 Infectious Fright	Knock Out	50
 Infectious Fright	Monitor & Abuse	200
@@ -306,7 +308,7 @@ Overcharge	Pop Goes The Weasel	50
 Overcharge	Surge	-300
 Overcharge	Surveillance	50
 Overcharge	Unnerving Presence	100
-Pop Goes The Weasel	Surge	-300
+Pop Goes The Weasel	Surge	-50
 Pop Goes The Weasel	Surveillance	200
 Pop Goes The Weasel	Thrilling Tremors	200
 Rancor	Remember Me	50
