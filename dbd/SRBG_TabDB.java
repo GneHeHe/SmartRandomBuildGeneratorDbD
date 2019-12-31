@@ -138,18 +138,18 @@ public class SRBG_TabDB extends JPanel {
         tf_name.setHorizontalAlignment(JTextField.CENTER);
         tf_name.setEditable(true);
         tf_name.setToolTipText("Define name of build");
-        tf_expr = new JTextField(8);
+        tf_expr = new JTextField(12);
         tf_expr.setText("");
         tf_expr.setHorizontalAlignment(JTextField.CENTER);
         tf_expr.setEditable(true);
-        tf_expr.setToolTipText("Case insensitive search (regular expressions can be used)");
+        tf_expr.setToolTipText("<html>Build database can be filtered using patterns:<br><ul><li>Case insensitive search</li><li>Regular expressions can be used</li><li>Multiple filters can be applied using '@' separated pattern</li></ul>For instance: 'trapper@devour' will extract 'Trapper' builds that contain 'Hex Devour Hope' perk</html>");
         tf_build = new JTextField(12);
         tf_build.setText("Active Builds = " + table.getRowCount());
         tf_build.setHorizontalAlignment(JTextField.CENTER);
         tf_build.setEditable(false);
 
         // Define JButton Objects
-        b_rand = new JButton("Random Select");
+        b_rand = new JButton("Random");
         b_reload = new JButton("Reload DB");
         b_reload_remote = new JButton("Update DB (GitHub)");
         b_load = new JButton("Open custom DB");
@@ -481,14 +481,19 @@ public class SRBG_TabDB extends JPanel {
      *
      */
     private void filterRows() {
-        RowFilter rf = null;
+        ArrayList<RowFilter<Object, Object>> l_rf = new ArrayList<>();
+        String[] tab = null;
         try {
-            // Case insensitive Search
-            rf = RowFilter.regexFilter("(?i)" + tf_expr.getText());
+            tab = tf_expr.getText().split("@");
+            for (String element : tab) {
+                // Define 1 or more Filters (Case insensitive Search + RegExp)
+                l_rf.add(RowFilter.regexFilter("(?i)" + element));
+            }
         } catch (PatternSyntaxException e) {
             return;
         }
-        table.getSorter().setRowFilter(rf);
+        // Apply Row Filter
+        table.getSorter().setRowFilter(RowFilter.andFilter(l_rf));
         // Update Field
         tf_build.setText("Active Builds = " + table.getRowCount());
     }
