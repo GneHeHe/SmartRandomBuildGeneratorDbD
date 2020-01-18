@@ -182,7 +182,7 @@ public class TableModelBuild extends AbstractTableModel {
     }
 
     /**
-     * Add new Build in Table (Update List & Throw Event)
+     * Add new Build in Table (Update List and Throw Event)
      *
      * @param newbuild
      * @param verbose
@@ -207,7 +207,7 @@ public class TableModelBuild extends AbstractTableModel {
     }
 
     /**
-     * Remove selected Builds (Update List & Throw Event)
+     * Remove selected Builds (Update List and Throw Event)
      *
      * @param row
      */
@@ -268,6 +268,7 @@ public class TableModelBuild extends AbstractTableModel {
         if (reset) {
             l_builds.clear();
         }
+        String line = "";
         try {
             // Define Reader
             BufferedReader br = null;
@@ -280,7 +281,6 @@ public class TableModelBuild extends AbstractTableModel {
                 br = new BufferedReader(new InputStreamReader(is));
             }
             // Loop over Reader
-            String line = "";
             line = br.readLine();
             int nb_lines = 1;
             int nb_builds = 0;
@@ -301,9 +301,12 @@ public class TableModelBuild extends AbstractTableModel {
                         if (!((myside.equals(srbg.s_side_surv)) || (myside.equals(srbg.s_side_killer)))) {
                             // Check if Side is Ok
                             System.err.println("# ERROR: wrong side ('" + myside + "') => skipped line " + nb_lines + " : >" + line + "< from input file");
+                        } else if (mychar == null) {
+                            // Check if Character is OK
+                            System.err.println("# ERROR: unknown character ('" + mychar_s + "') => skipped line " + nb_lines + " : >" + line + "< from input file");
                         } else if (!mychar.getSide().equals(myside)) {
                             // Check if Character is OK wrt Side
-                            System.err.println("# ERROR: unknown character ('" + mychar_s + "') or mismatch with side ('" + myside + "') => skipped line " + nb_lines + " : >" + line + "< from input file");
+                            System.err.println("# ERROR: mismatch between character ('" + mychar_s + "') and side ('" + myside + "') => skipped line " + nb_lines + " : >" + line + "< from input file");
                         } else if ((p1 == null) || (p2 == null) || (p3 == null) || (p4 == null)) {
                             // Check if Perks are OK
                             System.err.println("# ERROR: unknown perk in build => skipped line " + nb_lines + " : >" + line + "< from input file");
@@ -350,6 +353,7 @@ public class TableModelBuild extends AbstractTableModel {
             br.close();
         } catch (Exception ex) {
             System.err.println("\n# ERROR: Issues with the Build Database");
+            System.err.println("Last processed line from input file: >" + line + "<");
             System.err.println(ex.getMessage());
             System.exit(0);
         }

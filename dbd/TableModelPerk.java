@@ -151,7 +151,7 @@ public class TableModelPerk extends AbstractTableModel {
     }
 
     /**
-     * Update Table according to SRBG Object & Throw Event
+     * Update Table according to SRBG Object and Throw Event
      *
      * @param side
      */

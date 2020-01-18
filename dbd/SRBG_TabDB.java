@@ -9,6 +9,7 @@ import java.io.*;
 import java.net.URL;
 import java.nio.channels.Channels;
 import java.nio.channels.ReadableByteChannel;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.regex.PatternSyntaxException;
@@ -31,7 +32,7 @@ public class SRBG_TabDB extends JPanel {
     // Swing Components
     private JPanel pan_all, pan_build, pan_perks, pan_button;
     private JScrollPane scrollPane;
-    private JButton b_load, b_save, b_add, b_add_last, b_remove, b_rand, b_reload, b_reload_remote;
+    private JButton b_load, b_save, b_add, b_add_last, b_remove, b_rand, b_reload, b_reload_remote, b_pict;
     private JLabel lab_filter, lab_side, lab_char, lab_perk1, lab_perk2, lab_perk3, lab_perk4;
     private JComboBox cb_side, cb_char, cb_perk1, cb_perk2, cb_perk3, cb_perk4;
     private JFileChooser fileChooser;
@@ -43,6 +44,8 @@ public class SRBG_TabDB extends JPanel {
     private final String s_build_custom = "build_db_custom.txt";
     // SRBG Object 
     private SRBG srbg;
+    // Builds as Picture
+    private final int max_builds = 100;
 
     /**
      * Default Constructor
@@ -70,6 +73,7 @@ public class SRBG_TabDB extends JPanel {
         pan_button.add(b_reload_remote);
         pan_button.add(b_load);
         pan_button.add(b_save);
+        pan_button.add(b_pict);
 
         pan_build = new JPanel(new FlowLayout(FlowLayout.CENTER));
         pan_build.add(tf_name);
@@ -124,7 +128,7 @@ public class SRBG_TabDB extends JPanel {
         table.setShowVerticalLines(false);
 
         // Define JLabel Objects
-        lab_filter = new JLabel(" Filter Rows ");
+        lab_filter = new JLabel(" Filter ");
         lab_side = new JLabel(" Side ");
         lab_char = new JLabel(" Character ");
         lab_perk1 = new JLabel(" Perk 1 ");
@@ -138,12 +142,12 @@ public class SRBG_TabDB extends JPanel {
         tf_name.setHorizontalAlignment(JTextField.CENTER);
         tf_name.setEditable(true);
         tf_name.setToolTipText("Define name of build");
-        tf_expr = new JTextField(12);
+        tf_expr = new JTextField(10);
         tf_expr.setText("");
         tf_expr.setHorizontalAlignment(JTextField.CENTER);
         tf_expr.setEditable(true);
-        tf_expr.setToolTipText("<html>Build database can be filtered using patterns:<br><ul><li>Case insensitive search</li><li>Regular expressions can be used</li><li>Multiple filters can be applied using '@' separated pattern</li></ul>For instance: 'trapper@devour' will extract 'Trapper' builds that contain 'Hex Devour Hope' perk</html>");
-        tf_build = new JTextField(12);
+        tf_expr.setToolTipText("<html>Build database can be filtered using patterns:<br><ul><li>Case insensitive search</li><li>Regular expressions can be used</li><li>Multiple filters can be applied using '@' separated pattern</li></ul>For instance:<ul><li>'build1' will extract my favorite build for each killer</li><li>'trapper@devour' will extract 'Trapper' builds that contain 'Hex Devour Hope' perk</li></ul>Using filter mode automatically disables loading of clicked build in the bottom area of the interface</html>");
+        tf_build = new JTextField(13);
         tf_build.setText("Active Builds = " + table.getRowCount());
         tf_build.setHorizontalAlignment(JTextField.CENTER);
         tf_build.setEditable(false);
@@ -151,12 +155,13 @@ public class SRBG_TabDB extends JPanel {
         // Define JButton Objects
         b_rand = new JButton("Random");
         b_reload = new JButton("Reload DB");
-        b_reload_remote = new JButton("Update DB (GitHub)");
+        b_reload_remote = new JButton("Update DB");
         b_load = new JButton("Open custom DB");
         b_save = new JButton("Save current DB");
         b_add = new JButton("Add current Build");
         b_add_last = new JButton("Add random Build");
         b_remove = new JButton("Delete selected Builds");
+        b_pict = new JButton("Builds to Png");
 
         // Set Tooltips for Buttons
         b_rand.setToolTipText("Randomly select one build from database");
@@ -167,6 +172,7 @@ public class SRBG_TabDB extends JPanel {
         b_add.setToolTipText("<html>Add current build in database<br><br>Don't forget to save the build database before closing SRBG</html>");
         b_add_last.setToolTipText("<html>Add generated build from other tab in database<br><br>Don't forget to save the build database before closing SRBG</html>");
         b_remove.setToolTipText("<html>Delete selected builds from database<br><br>Don't forget to save the build database before closing SRBG</html>");
+        b_pict.setToolTipText("Export active builds as png picture (max active builds = " + max_builds + ", picture saved in working directory)");
 
         // Define Colors for Buttons
         b_add_last.setBackground(Color.BLUE);
@@ -411,6 +417,22 @@ public class SRBG_TabDB extends JPanel {
             }
         });
 
+        // Define ActionListener
+        b_pict.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // Define Output Filename
+                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
+                String output = "build_db_" + sdf.format(System.currentTimeMillis()) + ".png";
+                // Export active Builds as Picture
+                if (table.getRowCount() <= max_builds) {
+                    Tools.saveComponentAsImage(table.getTableHeader(), table, output, "PNG");
+                } else {
+                    Tools.getAlert("ERROR: Too much builds are active to be saved as picture (max = " + max_builds + ")", "Warning", JOptionPane.ERROR_MESSAGE);
+                }
+            }
+        });
+
         // Define DocumentListener
         tf_expr.getDocument().addDocumentListener(new DocumentListener() {
             @Override
@@ -444,14 +466,17 @@ public class SRBG_TabDB extends JPanel {
         table.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                // Get Row & Column
-                int row = table.rowAtPoint(e.getPoint());
-                int col = table.columnAtPoint(e.getPoint());
-                if (row >= 0 && col >= 0) {
-                    // Get Selected Build from Database
-                    Build b = ((TableModelBuild) table.getModel()).getBuildFromRow(row);
-                    // Update GUI
-                    updateGUI(b);
+                // Only process Event if no Filter
+                if (tf_expr.getText().equals("")) {
+                    // Get Row & Column
+                    int row = table.rowAtPoint(e.getPoint());
+                    int col = table.columnAtPoint(e.getPoint());
+                    if (row >= 0 && col >= 0) {
+                        // Get Selected Build from Database
+                        Build b = ((TableModelBuild) table.getModel()).getBuildFromRow(row);
+                        // Update GUI
+                        updateGUI(b);
+                    }
                 }
             }
         });

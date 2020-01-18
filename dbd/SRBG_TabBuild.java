@@ -7,8 +7,11 @@ import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.text.SimpleDateFormat;
 import java.util.List;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -84,7 +87,7 @@ public class SRBG_TabBuild extends JPanel {
 
         // Create JScrollPane (hide bars)
         scrollPane = new JScrollPane(text);
-        scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER);
+        scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
         scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 
         // Set Layout & add Subpanels
@@ -118,7 +121,7 @@ public class SRBG_TabBuild extends JPanel {
         b_build = new JButton("Run");
         b_build.setToolTipText("Generate random builds that match considered parameters & constraints");
         b_widget = new JButton("Widget");
-        b_widget.setToolTipText("<html>Open widget window for more convenient use of SRBG within Game<br><br>Click on Widget, then:<br><ul><li>Press SPACE or ENTER to generate random builds</li><br><li>Press ESCAPE to close the widget</li><ul></html>");
+        b_widget.setToolTipText("<html>Open widget window for more convenient use of SRBG within Game<br><br>Click on Widget, then:<br><ul><li>Press SPACE or ENTER to generate random builds</li><br><li>Press ESCAPE to close the widget</li></ul></html>");
 
         // Define JLabel Objects
         lab_nbperks = new JLabel("  Nb Perks ");
@@ -128,6 +131,7 @@ public class SRBG_TabBuild extends JPanel {
         text = new JTextArea(30, 20);
         text.setEditable(false);
         text.setFont(new Font("Helvetica", Font.PLAIN, 16));
+        text.setToolTipText("Click on generated build to export it as png picture (saved in working directory)");
 
         // Default ComboBox Model
         cbm_default = new DefaultComboBoxModel();
@@ -140,7 +144,7 @@ public class SRBG_TabBuild extends JPanel {
         cb_nbperks.setSelectedItem(srbg.getNbPerksBuild());
 
         // Define JComboBox Object for Nb of Builds
-        cb_nbbuilds = new JComboBox(new Integer[]{1, 2, 3, 4, 5, 7, 9});
+        cb_nbbuilds = new JComboBox(new Integer[]{1, 3, 5, 15, 30});
         cb_nbbuilds.setPreferredSize(new Dimension(50, 20));
         cb_nbbuilds.setToolTipText("<html>Define the number of builds to generate<br><br>The build with the highest score is graphically displayed<br><br>Meta builds or builds with 'combos perks' (favorable synergy) are associated with high scores<br><br>They tend to be returned when the number of desired builds is larger than 1!</html>");
         ((JLabel) cb_nbbuilds.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
@@ -152,13 +156,13 @@ public class SRBG_TabBuild extends JPanel {
         cb_side = new JComboBox(new String[]{srbg.s_side_rand, s_rand_surv, s_rand_killer, srbg.s_side_surv, srbg.s_side_killer});
         cb_side.setSelectedIndex(0);
         cb_side.setPreferredSize(new Dimension(130, 25));
-        cb_side.setToolTipText("Define the side for the character (random or specific one)");
+        cb_side.setToolTipText("<html>Define the side for the character:<ul><li>" + srbg.s_side_rand + ": random side & random character</li><br><li>" + s_rand_surv + ": survivor side & random character</li><br><li>" + s_rand_killer + ": killer side & random character</li><br><li>" + srbg.s_side_surv + ": survivor side & ability to chose character</li><br><li>" + srbg.s_side_killer + ": killer side & ability to chose character</li></ul></html>");
         ((JLabel) cb_side.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
 
         // Define JComboBox Object for Character
         cb_char = new JComboBox();
         cb_char.setPreferredSize(new Dimension(130, 25));
-        cb_char.setToolTipText("Define the character (generic or specific one)");
+        cb_char.setToolTipText("<html>Define the character:<br><ul><li>" + (srbg.getCharacterList(srbg.s_side_surv, false).size() - 1) + " survivors + generic survivor</li><br><li>" + (srbg.getCharacterList(srbg.s_side_killer, false).size() - 1) + " killers + generic killer</li></ul>Only available with non-random based selection of character</html>");
         ((JLabel) cb_char.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
         updateComboBoxes();
 
@@ -322,6 +326,18 @@ public class SRBG_TabBuild extends JPanel {
                 }
                 // Update JCheckBoxes
                 updateCheckBoxes();
+            }
+        });
+
+        // Define MouseListener
+        table_perks.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                // Define Output Filename
+                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
+                String output = "build_random_" + sdf.format(System.currentTimeMillis()) + ".png";
+                // Export Random Build as Picture
+                Tools.saveComponentAsImage(table_perks, output, "PNG");
             }
         });
 

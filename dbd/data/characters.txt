@@ -17,7 +17,7 @@ Trapper	Killer	TR_charSelect_portrait
 Wraith	Killer	WR_charSelect_portrait
 Hillbilly	Killer	HB_charSelect_portrait
 Nurse Sally	Killer	NR_charSelect_portrait
-Huntress	Killer	BE_charSelect_portrait
+Huntress Anna	Killer	BE_charSelect_portrait
 Myers	Killer	SH_charSelect_portrait
 Hag	Killer	HA_charSelect_portrait
 Leatherface	Killer	CA_charSelect_portrait

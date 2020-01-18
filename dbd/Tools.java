@@ -4,6 +4,9 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import java.awt.Component;
+import java.awt.Dimension;
+import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.*;
@@ -84,6 +87,69 @@ public class Tools {
     }
 
     /**
+     * Save Swing Component as Picture
+     *
+     * @param myComponent
+     * @param filename
+     * @param format
+     */
+    public static void saveComponentAsImage(Component myComponent, String filename, String format) {
+        // Get Dimensions
+        Dimension size = myComponent.getSize();
+        // Test Dimensions
+        if ((size.width > 0) && (size.height > 0)) {
+            // Define BufferedImage
+            BufferedImage picture = new BufferedImage(size.width, size.height, BufferedImage.TYPE_INT_ARGB);
+            // Paint Component in BufferedImage
+            myComponent.paint(picture.getGraphics());
+            try {
+                // Write BufferedImage as Picture
+                ImageIO.write(picture, format, new File(filename));
+            } catch (IOException e) {
+                System.out.println(e);
+            }
+        } else {
+            System.err.println("\n# ERROR: Picture has either 0-height or 0-width");
+        }
+    }
+
+    /**
+     * Save 2 Swing Components in a single Picture
+     *
+     * @param myComponent1
+     * @param myComponent2
+     * @param filename
+     * @param format
+     */
+    public static void saveComponentAsImage(Component myComponent1, Component myComponent2, String filename, String format) {
+        // Get Dimensions
+        Dimension size1 = myComponent1.getSize();
+        Dimension size2 = myComponent2.getSize();
+        // Test Dimensions
+        if ((size1.width > 0) && (size2.width > 0) && (size1.height > 0) && (size2.height > 0)) {
+            // Define BufferedImages
+            BufferedImage pict1 = new BufferedImage(size1.width, size1.height, BufferedImage.TYPE_INT_ARGB);
+            BufferedImage pict2 = new BufferedImage(size2.width, size2.height, BufferedImage.TYPE_INT_ARGB);
+            BufferedImage pict_all = new BufferedImage(Math.max(size1.width, size2.width), (size1.height + size2.height), BufferedImage.TYPE_INT_ARGB);
+            // Paint Components in BufferedImages
+            myComponent1.paint(pict1.getGraphics());
+            myComponent2.paint(pict2.getGraphics());
+            // Merge both BufferedImages
+            Graphics g = pict_all.getGraphics();
+            g.drawImage(pict1, 0, 0, null);
+            g.drawImage(pict2, 0, size1.height, null);
+            try {
+                // Write combined BufferedImage as Picture
+                ImageIO.write(pict_all, format, new File(filename));
+            } catch (IOException e) {
+                System.out.println(e);
+            }
+        } else {
+            System.err.println("\n# ERROR: Picture has either 0-height or 0-width");
+        }
+    }
+
+    /**
      * Get remote Data as JSON Element
      *
      * @param s_url
@@ -103,7 +169,7 @@ public class Tools {
             is.close();
         } catch (Exception ex) {
             System.err.println("\n# ERROR while checking Update");
-            System.err.println(ex.getMessage() + "\n");
+            System.err.println(ex.getMessage());
         }
         return jsdata;
     }

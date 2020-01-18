@@ -57,7 +57,7 @@ public class Perk implements Comparable<Perk> {
         try {
             setIconPicture(icon);
         } catch (IOException ex) {
-            System.err.println("ERROR while creating Perk " + name);
+            System.err.println("\n# ERROR while creating Perk " + name + "\n");
             System.err.println(ex.getMessage());
             System.exit(0);
         }
@@ -80,7 +80,7 @@ public class Perk implements Comparable<Perk> {
         try {
             setIconPicture(icon);
         } catch (IOException ex) {
-            System.err.println("ERROR while creating Perk " + name);
+            System.err.println("\n# ERROR while creating generic Perk\n");
             System.err.println(ex.getMessage());
             System.exit(0);
         }
@@ -123,7 +123,7 @@ public class Perk implements Comparable<Perk> {
         if (side.equals(KILLER) || side.equals(SURVIVOR)) {
             this.side = side;
         } else {
-            System.err.println("# ERROR: This side " + side + " is wrong (expected value = 'Killer' or 'Survivor'");
+            System.err.println("\n# ERROR: This side " + side + " is wrong (expected value = 'Killer' or 'Survivor'\n");
             System.exit(0);
         }
     }
@@ -195,7 +195,7 @@ public class Perk implements Comparable<Perk> {
                 lab_img_large.setName(name);
                 lab_img_widget.setName(name);
             } else {
-                System.err.println("# WARNING: Both expected and default Icon Files were not found for Perk '" + name + "' => Exit");
+                System.err.println("\n# ERROR: Both expected and default Icon Files were not found for Perk '" + name + "' => Exit\n");
                 System.exit(0);
             }
         }

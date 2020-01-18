@@ -107,7 +107,7 @@ public class Build implements Comparable<Build> {
         if (side.equals(KILLER) || side.equals(SURVIVOR)) {
             this.side = side;
         } else {
-            System.err.println("# ERROR: This side " + side + " is wrong (expected value = 'Killer' or 'Survivor'");
+            System.err.println("\n# ERROR: This side " + side + " is wrong (expected value = 'Killer' or 'Survivor'\n");
             System.exit(0);
         }
     }

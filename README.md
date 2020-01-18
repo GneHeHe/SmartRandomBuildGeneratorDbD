@@ -114,7 +114,7 @@ Finally, a **built-in tutorial** is also included in **SRBG**
 
 # How to install and use SRBG ?
 
-Download the last compiled JAR file [here](https://github.com/GneHeHe/SmartRandomBuildGeneratorDbD/releases/download/2.0/SmartRandBuildGen.jar) (also available in '**releases**' tab)
+Download the last compiled JAR file [here](https://github.com/GneHeHe/SmartRandomBuildGeneratorDbD/releases/download/2.1/SmartRandBuildGen.jar) (also available in '**releases**' tab)
 
 System Requirements:
 

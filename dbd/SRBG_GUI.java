@@ -21,6 +21,12 @@ public class SRBG_GUI extends JFrame {
     private SRBG_TabBuild pan_build;
     private SRBG_TabHelp pan_help;
     private SRBG_TabDB pan_db;
+    // Strings
+    private String s_perk = "Configure Perks";
+    private String s_build = "Generate Random Builds";
+    private String s_help1 = "Contact & Help";
+    private static String s_help2 = "Contact & Help";
+    private String s_db = "Build Database";
     // Required to Play Sound
     private final JFXPanel fxPanel = new JFXPanel();
 
@@ -48,15 +54,16 @@ public class SRBG_GUI extends JFrame {
         tabbedPane = new JTabbedPane();
 
         // Add Tabs to Main Panel
-        tabbedPane.addTab("Configure Perks", pan_perk);
-        tabbedPane.addTab("Generate Random Builds", pan_build);
-        tabbedPane.addTab("Build Database", pan_db);
-        tabbedPane.addTab("Contact & Help", pan_help);
+        tabbedPane.addTab(s_perk, pan_perk);
+        tabbedPane.addTab(s_build, pan_build);
+        tabbedPane.addTab(s_db, pan_db);
+        tabbedPane.addTab(s_help1, pan_help);
 
         // Add Tooltips on Tabs
-        tabbedPane.setToolTipTextAt(0, "<html>Define the weight for each perk (optional tab)<br><br>Synergy rules may have impact on perk weights -> only values associated to last generated build are displayed in the table<br><br>Perk weights are always reseted to their original values before generating any new build</html>");
+        tabbedPane.setToolTipTextAt(0, "<html>Define the weight for each perk (optional tab)<br><br>Synergy rules may have impact on perk weights: only values associated to last generated build are displayed in the table<br><br>Perk weights are always reseted to their original values before generating any new build</html>");
         tabbedPane.setToolTipTextAt(1, "Generate random builds & load widget (main tab)");
         tabbedPane.setToolTipTextAt(2, "Browse build database & save your favorite builds");
+        tabbedPane.setToolTipTextAt(3, "Tutorial & infos");
 
         // Set favorite Tab
         tabbedPane.setSelectedIndex(1);
@@ -103,7 +110,7 @@ public class SRBG_GUI extends JFrame {
             if (news == null) {
                 news = "";
             }
-            Tools.getAlert("SRBG update is available from GitHub repository.\n\nNew Features:\n" + news + "\n\nClickable link is available from \"Contact & Help\" tab.", "Information", JOptionPane.INFORMATION_MESSAGE);
+            Tools.getAlert("An update is available from GitHub repository\n\nNew Features:\n" + news + "\n\nClickable 'GitHub' link is available from '" + SRBG_GUI.s_help2 + "' tab", "Information", JOptionPane.INFORMATION_MESSAGE);
         }
 
         // Launch Frame
@@ -152,7 +159,7 @@ public class SRBG_GUI extends JFrame {
         try {
             UIManager.setLookAndFeel(laf);
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException ex) {
-            System.err.println("# ERROR: LookAndFeel can't be loaded\n" + ex.getMessage());
+            System.err.println("\n# ERROR: LookAndFeel can't be loaded\n" + ex.getMessage() + "\n");
             System.exit(0);
         }
     }

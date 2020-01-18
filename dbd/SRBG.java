@@ -126,7 +126,7 @@ public class SRBG {
     private final String s_cons = "data/perk_cons.txt";
     private final String s_cons_custom = "perk_cons_custom.txt";
     // Version
-    public final double VERSION = 2.0;
+    public final double VERSION = 2.1;
     // Title
     public final String TITLE = "Smart Random Build Generator for Dead by Daylight ( SRBG " + VERSION + " )";
     // GitHub Data
@@ -139,6 +139,7 @@ public class SRBG {
     // Author Information
     public final String STEAM = "http://steamcommunity.com/id/trna";
     public final String EMAIL = "gnehehe70@gmail.com";
+    public final String PAYPAL = "https://www.paypal.me/gnehehe";
     // String Spacer
     private final String MYSPACER = "##########";
 
@@ -638,7 +639,7 @@ public class SRBG {
                     System.out.println("\n# Constraints on Set of Perks 4 = " + b_cons4_perks);
                     break;
                 default:
-                    System.err.println("\n# Wrong Constraint Class => Exit");
+                    System.err.println("\n# ERROR: Wrong Constraint Class => Exit\n");
                     System.exit(0);
             }
         }
@@ -774,13 +775,14 @@ public class SRBG {
             for (String e : l) {
                 s = s + e + ", ";
             }
-            s = s.trim().substring(0, s.length() - 2);
+            s = s.trim();
+            s = s.substring(0, s.length() - 1);
         }
         return s;
     }
 
     /**
-     * Display all Perks & Features
+     * Display all Perks and Features
      *
      * @param detail
      */
@@ -1369,7 +1371,7 @@ public class SRBG {
     }
 
     /**
-     * Display Help & Quit
+     * Display Help and Quit
      *
      */
     public void displayHelp() {

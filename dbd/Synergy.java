@@ -249,7 +249,7 @@ public class Synergy {
     }
 
     /**
-     * Update Perk Weights according to Synergy Rules (Both Characters & Perks)
+     * Update Perk Weights according to Synergy Rules (Both Characters and Perks)
      *
      * @param refchar
      * @param refperk

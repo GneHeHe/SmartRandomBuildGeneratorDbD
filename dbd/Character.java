@@ -51,7 +51,7 @@ public class Character implements Comparable<Character> {
         try {
             setIconPicture(icon);
         } catch (IOException ex) {
-            System.err.println("ERROR while creating Character " + name);
+            System.err.println("\n# ERROR while creating Character " + name +"\n");
             System.err.println(ex.getMessage());
             System.exit(0);
         }
@@ -68,7 +68,7 @@ public class Character implements Comparable<Character> {
         } else if (side.equals(KILLER)) {
             setName(Character.GENERIC_KILLER);
         } else {
-            System.err.println("ERROR while creating generic Character");
+            System.err.println("\n# ERROR while creating generic Character\n");
             System.exit(0);
         }
         setSide(side);
@@ -85,7 +85,7 @@ public class Character implements Comparable<Character> {
         try {
             setIconPicture(icon);
         } catch (IOException ex) {
-            System.err.println("ERROR while creating Character " + name);
+            System.err.println("\n# ERROR while creating generic Character\n");
             System.err.println(ex.getMessage());
             System.exit(0);
         }
@@ -128,7 +128,7 @@ public class Character implements Comparable<Character> {
         if (side.equals(KILLER) || side.equals(SURVIVOR)) {
             this.side = side;
         } else {
-            System.err.println("# ERROR: This side " + side + " is wrong (expected value = 'Killer' or 'Survivor'");
+            System.err.println("\n# ERROR: This side " + side + " is wrong (expected value = 'Killer' or 'Survivor'\n");
             System.exit(0);
         }
     }
@@ -198,7 +198,7 @@ public class Character implements Comparable<Character> {
                 lab_img_large.setName(name);
                 lab_img_widget.setName(name);
             } else {
-                System.err.println("# WARNING: Both expected and default Icon Files were not found for Character '" + name + "' => Exit");
+                System.err.println("\n# ERROR: Both expected and default Icon Files were not found for Character '" + name + "' => Exit\n");
                 System.exit(0);
             }
         }
