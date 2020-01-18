@@ -4,7 +4,7 @@
 
 **Smart Random Build Generator** (SRBG) is a user-friendly tool for **Dead by Daylight** game that can be used to:
 * **generate useful random builds** using varied features
-* **store and manipulate builds** (5000+ predefined builds loaded at start)
+* **store and manipulate builds** (6000+ predefined builds loaded at start)
 
 Most related tools generate pure random builds which are hardly ever interesting/efficient because lots of perks are either trash or just incompatible.
 
@@ -105,6 +105,11 @@ There are no **survivor-based synergy rules** because **survivors are just skins
 
 
 ![SRBG](dbd/data/tuto_files/tuto_db-1.jpg)
+
+**Active builds** can also be exported as png picture (*e.g. favorite build for each character*)
+
+
+![SRBG](dbd/data/tuto_files/tuto_builds.png)
 
 Finally, a **built-in tutorial** is also included in **SRBG**
 
