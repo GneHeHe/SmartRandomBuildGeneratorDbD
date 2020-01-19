@@ -15,7 +15,7 @@ Demogorgon	Discordance	100
 Demogorgon	Hex Devour Hope	300
 Demogorgon	Hex Huntress Lullaby	100
 Demogorgon	Hex No One Escapes Death	100
-Demogorgon	I'm All Ears	200
+Demogorgon	I'm All Ears	300
 Demogorgon	Make Your Choice	200
 Demogorgon	Pop Goes The Weasel	200
 Demogorgon	Save The Best For Last	200
@@ -68,7 +68,7 @@ Ghostface	Discordance	200
 Ghostface	Distressing	-999
 Ghostface	Furtive Chase	-100
 Ghostface	Hex Devour Hope	100
-Ghostface	Hex Haunted Ground	300
+Ghostface	Hex Haunted Ground	100
 Ghostface	Hex No One Escapes Death	100
 Ghostface	I'm All Ears	300
 Ghostface	Insidious	-999
@@ -108,7 +108,7 @@ Hillbilly	Deerstalker	100
 Hillbilly	Discordance	200
 Hillbilly	Enduring	200
 Hillbilly	Hex Devour Hope	100
-Hillbilly	Hex Haunted Ground	-100
+Hillbilly	Hex Haunted Ground	-999
 Hillbilly	Hex No One Escapes Death	-999
 Hillbilly	Infectious Fright	200
 Hillbilly	Make Your Choice	-999
@@ -157,7 +157,7 @@ Leatherface	Dark Devotion	100
 Leatherface	Deerstalker	100
 Leatherface	Discordance	100
 Leatherface	Enduring	200
-Leatherface	Hex Haunted Ground	-100
+Leatherface	Hex Haunted Ground	-300
 Leatherface	Infectious Fright	100
 Leatherface	Insidious	300
 Leatherface	Iron Grasp	100
@@ -223,7 +223,6 @@ Nurse Sally	Deerstalker	100
 Nurse Sally	Discordance	200
 Nurse Sally	Enduring	-999
 Nurse Sally	Hex Devour Hope	200
-Nurse Sally	Hex Haunted Ground	100
 Nurse Sally	I'm All Ears	300
 Nurse Sally	Infectious Fright	300
 Nurse Sally	Make Your Choice	100
@@ -291,7 +290,6 @@ Spirit Rin	Discordance	200
 Spirit Rin	Distressing	-999
 Spirit Rin	Enduring	-200
 Spirit Rin	Hex Devour Hope	200
-Spirit Rin	Hex Haunted Ground	100
 Spirit Rin	I'm All Ears	-300
 Spirit Rin	Infectious Fright	100
 Spirit Rin	Make Your Choice	100
@@ -313,7 +311,7 @@ The Oni	Brutal Strength	-200
 The Oni	Corrupt Intervention	200
 The Oni	Deerstalker	100
 The Oni	Discordance	100
-The Oni	Hex Haunted Ground	-100
+The Oni	Hex Haunted Ground	-300
 The Oni	Hex No One Escapes Death	-300
 The Oni	Infectious Fright	300
 The Oni	Make Your Choice	-300
@@ -349,14 +347,14 @@ Wraith	Discordance	300
 Wraith	Distressing	-999
 Wraith	Enduring	200
 Wraith	Hex Devour Hope	100
-Wraith	Hex Haunted Ground	200
+Wraith	Hex Haunted Ground	100
 Wraith	Hex No One Escapes Death	300
 Wraith	Insidious	-999
 Wraith	Lightborn	100
 Wraith	Make Your Choice	200
 Wraith	Monitor & Abuse	-300
 Wraith	Overwhelming Presence	-100
-Wraith	Play With Your Food	200
+Wraith	Play With Your Food	300
 Wraith	Pop Goes The Weasel	100
 Wraith	Save The Best For Last	200
 Wraith	Sloppy Butcher	200

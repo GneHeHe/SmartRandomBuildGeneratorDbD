@@ -95,7 +95,7 @@ Build	Killer	Clown	Barbecue & Chilli	Corrupt Intervention	Make Your Choice	Pop G
 Build	Killer	Clown	Barbecue & Chilli	Corrupt Intervention	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Clown	Barbecue & Chilli	Corrupt Intervention	Monitor & Abuse	Whispers
 Build	Killer	Clown	Barbecue & Chilli	Corrupt Intervention	Nemesis	Play With Your Food
-Build1	Killer	Clown	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last
+Build	Killer	Clown	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last
 Build	Killer	Clown	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Sloppy Butcher
 Build	Killer	Clown	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Surveillance
 Build	Killer	Clown	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Whispers
@@ -167,7 +167,7 @@ Build	Killer	Clown	Brutal Strength	Corrupt Intervention	Make Your Choice	Whisper
 Build	Killer	Clown	Brutal Strength	Corrupt Intervention	Nemesis	Play With Your Food
 Build	Killer	Clown	Brutal Strength	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last
 Build	Killer	Clown	Brutal Strength	Corrupt Intervention	Pop Goes The Weasel	Surveillance
-Build	Killer	Clown	Brutal Strength	Corrupt Intervention	Pop Goes The Weasel	Thrilling Tremors
+Build1	Killer	Clown	Brutal Strength	Corrupt Intervention	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Clown	Brutal Strength	Corrupt Intervention	Pop Goes The Weasel	Whispers
 Build	Killer	Clown	Brutal Strength	Corrupt Intervention	Sloppy Butcher	Whispers
 Build	Killer	Clown	Brutal Strength	Corrupt Intervention	Surge	Surveillance
@@ -258,7 +258,7 @@ Build	Killer	Clown	Corrupt Intervention	Make Your Choice	Pop Goes The Weasel	Thr
 Build	Killer	Clown	Corrupt Intervention	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Clown	Corrupt Intervention	Nemesis	Play With Your Food	Whispers
 Build	Killer	Clown	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last	Surveillance
-Build	Killer	Clown	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last	Thrilling Tremors
+Build1	Killer	Clown	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last	Thrilling Tremors
 Build	Killer	Clown	Corrupt Intervention	Pop Goes The Weasel	Sloppy Butcher	Thrilling Tremors
 Build	Killer	Clown	Corrupt Intervention	Pop Goes The Weasel	Sloppy Butcher	Whispers
 Build	Killer	Clown	Corrupt Intervention	Pop Goes The Weasel	Surge	Surveillance
@@ -369,6 +369,8 @@ Build	Killer	Demogorgon	Barbecue & Chilli	Corrupt Intervention	Furtive Chase	Mak
 Build	Killer	Demogorgon	Barbecue & Chilli	Corrupt Intervention	Hex Devour Hope	Pop Goes The Weasel
 Build	Killer	Demogorgon	Barbecue & Chilli	Corrupt Intervention	Hex Devour Hope	Save The Best For Last
 Build	Killer	Demogorgon	Barbecue & Chilli	Corrupt Intervention	Hex Devour Hope	Whispers
+Build	Killer	Demogorgon	Barbecue & Chilli	Corrupt Intervention	I'm All Ears	Pop Goes The Weasel
+Build	Killer	Demogorgon	Barbecue & Chilli	Corrupt Intervention	I'm All Ears	Whispers
 Build	Killer	Demogorgon	Barbecue & Chilli	Corrupt Intervention	Make Your Choice	Pop Goes The Weasel
 Build	Killer	Demogorgon	Barbecue & Chilli	Corrupt Intervention	Make Your Choice	Territorial Imperative
 Build	Killer	Demogorgon	Barbecue & Chilli	Corrupt Intervention	Monitor & Abuse	Pop Goes The Weasel
@@ -407,6 +409,7 @@ Build	Killer	Demogorgon	Barbecue & Chilli	Hex Devour Hope	Pop Goes The Weasel	Su
 Build	Killer	Demogorgon	Barbecue & Chilli	Hex Devour Hope	Pop Goes The Weasel	Territorial Imperative
 Build	Killer	Demogorgon	Barbecue & Chilli	Hex Devour Hope	Pop Goes The Weasel	Whispers
 Build	Killer	Demogorgon	Barbecue & Chilli	Hex No One Escapes Death	Pop Goes The Weasel	Whispers
+Build	Killer	Demogorgon	Barbecue & Chilli	I'm All Ears	Pop Goes The Weasel	Whispers
 Build	Killer	Demogorgon	Barbecue & Chilli	Infectious Fright	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Demogorgon	Barbecue & Chilli	Infectious Fright	Pop Goes The Weasel	Save The Best For Last
 Build	Killer	Demogorgon	Barbecue & Chilli	Make Your Choice	Nemesis	Play With Your Food
@@ -468,6 +471,7 @@ Build	Killer	Demogorgon	Corrupt Intervention	Hex Devour Hope	Pop Goes The Weasel
 Build	Killer	Demogorgon	Corrupt Intervention	Hex Devour Hope	Save The Best For Last	Thrilling Tremors
 Build	Killer	Demogorgon	Corrupt Intervention	Hex Devour Hope	Thrilling Tremors	Whispers
 Build	Killer	Demogorgon	Corrupt Intervention	Hex No One Escapes Death	Pop Goes The Weasel	Thrilling Tremors
+Build1	Killer	Demogorgon	Corrupt Intervention	I'm All Ears	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Demogorgon	Corrupt Intervention	Infectious Fright	Monitor & Abuse	Save The Best For Last
 Build	Killer	Demogorgon	Corrupt Intervention	Make Your Choice	Nemesis	Play With Your Food
 Build	Killer	Demogorgon	Corrupt Intervention	Make Your Choice	Pop Goes The Weasel	Thrilling Tremors
@@ -534,6 +538,7 @@ Build	Killer	Demogorgon	Hex Devour Hope	Pop Goes The Weasel	Thrilling Tremors	Wh
 Build	Killer	Demogorgon	Hex Haunted Ground	Hex Huntress Lullaby	Hex Ruin	Hex Thrill Of The Hunt
 Build	Killer	Demogorgon	Hex Haunted Ground	Hex Ruin	Hex The Third Seal	Hex Thrill Of The Hunt
 Build	Killer	Demogorgon	Hex No One Escapes Death	Pop Goes The Weasel	Thrilling Tremors	Whispers
+Build	Killer	Demogorgon	I'm All Ears	Pop Goes The Weasel	Thrilling Tremors	Whispers
 Build	Killer	Demogorgon	Infectious Fright	Monitor & Abuse	Pop Goes The Weasel	Save The Best For Last
 Build	Killer	Demogorgon	Infectious Fright	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Demogorgon	Infectious Fright	Pop Goes The Weasel	Save The Best For Last	Thrilling Tremors
@@ -631,7 +636,7 @@ Build	Killer	Doctor	Barbecue & Chilli	Corrupt Intervention	Monitor & Abuse	Pop G
 Build	Killer	Doctor	Barbecue & Chilli	Corrupt Intervention	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Doctor	Barbecue & Chilli	Corrupt Intervention	Monitor & Abuse	Whispers
 Build	Killer	Doctor	Barbecue & Chilli	Corrupt Intervention	Overcharge	Pop Goes The Weasel
-Build1	Killer	Doctor	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last
+Build	Killer	Doctor	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last
 Build	Killer	Doctor	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Surveillance
 Build	Killer	Doctor	Barbecue & Chilli	Corrupt Intervention	Surge	Surveillance
 Build	Killer	Doctor	Barbecue & Chilli	Enduring	Monitor & Abuse	Pop Goes The Weasel
@@ -692,7 +697,7 @@ Build	Killer	Doctor	Brutal Strength	Corrupt Intervention	Nemesis	Play With Your 
 Build	Killer	Doctor	Brutal Strength	Corrupt Intervention	Overcharge	Pop Goes The Weasel
 Build	Killer	Doctor	Brutal Strength	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last
 Build	Killer	Doctor	Brutal Strength	Corrupt Intervention	Pop Goes The Weasel	Surveillance
-Build	Killer	Doctor	Brutal Strength	Corrupt Intervention	Pop Goes The Weasel	Thrilling Tremors
+Build1	Killer	Doctor	Brutal Strength	Corrupt Intervention	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Doctor	Brutal Strength	Discordance	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Doctor	Brutal Strength	Distressing	Enduring	Overcharge
 Build	Killer	Doctor	Brutal Strength	Distressing	Overcharge	Unnerving Presence
@@ -803,6 +808,7 @@ Build	Killer	Doctor	Corrupt Intervention	Monitor & Abuse	Save The Best For Last	
 Build	Killer	Doctor	Corrupt Intervention	Nemesis	Play With Your Food	Whispers
 Build	Killer	Doctor	Corrupt Intervention	Overcharge	Surveillance	Unnerving Presence
 Build	Killer	Doctor	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last	Surveillance
+Build1	Killer	Doctor	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last	Thrilling Tremors
 Build	Killer	Doctor	Corrupt Intervention	Pop Goes The Weasel	Surge	Surveillance
 Build	Killer	Doctor	Corrupt Intervention	Pop Goes The Weasel	Surveillance	Whispers
 Build	Killer	Doctor	Corrupt Intervention	Pop Goes The Weasel	Thrilling Tremors	Whispers
@@ -988,6 +994,7 @@ Build	Killer	Freddy	Barbecue & Chilli	Nemesis	Play With Your Food	Pop Goes The W
 Build	Killer	Freddy	Barbecue & Chilli	Nemesis	Play With Your Food	Surveillance
 Build	Killer	Freddy	Barbecue & Chilli	Pop Goes The Weasel	Surge	Surveillance
 Build	Killer	Freddy	Barbecue & Chilli	Pop Goes The Weasel	Surveillance	Thrilling Tremors
+Build1	Killer	Freddy	Barbecue & Chilli	Pop Goes The Weasel	Surveillance	Whispers
 Build	Killer	Freddy	Barbecue & Chilli	Surge	Surveillance	Whispers
 Build	Killer	Freddy	Bitter Murmur	Hex No One Escapes Death	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Freddy	Blood Warden	Corrupt Intervention	Hex No One Escapes Death	Remember Me
@@ -1129,7 +1136,7 @@ Build	Killer	Ghostface	A Nurse's Calling	Bamboozle	Sloppy Butcher	Whispers
 Build	Killer	Ghostface	A Nurse's Calling	Barbecue & Chilli	Brutal Strength	Enduring
 Build	Killer	Ghostface	A Nurse's Calling	Barbecue & Chilli	Corrupt Intervention	Discordance
 Build	Killer	Ghostface	A Nurse's Calling	Barbecue & Chilli	Corrupt Intervention	Enduring
-Build	Killer	Ghostface	A Nurse's Calling	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel
+Build1	Killer	Ghostface	A Nurse's Calling	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel
 Build	Killer	Ghostface	A Nurse's Calling	Barbecue & Chilli	Corrupt Intervention	Sloppy Butcher
 Build	Killer	Ghostface	A Nurse's Calling	Barbecue & Chilli	Corrupt Intervention	Surveillance
 Build	Killer	Ghostface	A Nurse's Calling	Barbecue & Chilli	Corrupt Intervention	Whispers
@@ -1293,6 +1300,8 @@ Build	Killer	Ghostface	Barbecue & Chilli	Corrupt Intervention	Enduring	Pop Goes 
 Build	Killer	Ghostface	Barbecue & Chilli	Corrupt Intervention	Enduring	Spirit Fury
 Build	Killer	Ghostface	Barbecue & Chilli	Corrupt Intervention	Enduring	Whispers
 Build	Killer	Ghostface	Barbecue & Chilli	Corrupt Intervention	Hex No One Escapes Death	Whispers
+Build	Killer	Ghostface	Barbecue & Chilli	Corrupt Intervention	I'm All Ears	Pop Goes The Weasel
+Build	Killer	Ghostface	Barbecue & Chilli	Corrupt Intervention	I'm All Ears	Whispers
 Build	Killer	Ghostface	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Whispers
 Build	Killer	Ghostface	Barbecue & Chilli	Corrupt Intervention	Surge	Surveillance
 Build	Killer	Ghostface	Barbecue & Chilli	Discordance	Hex Devour Hope	Pop Goes The Weasel
@@ -1302,6 +1311,7 @@ Build	Killer	Ghostface	Barbecue & Chilli	Enduring	Spirit Fury	Whispers
 Build	Killer	Ghostface	Barbecue & Chilli	Furtive Chase	Make Your Choice	Nemesis
 Build	Killer	Ghostface	Barbecue & Chilli	Hex Devour Hope	Hex Haunted Ground	Pop Goes The Weasel
 Build	Killer	Ghostface	Barbecue & Chilli	Hex Devour Hope	Pop Goes The Weasel	Whispers
+Build	Killer	Ghostface	Barbecue & Chilli	I'm All Ears	Pop Goes The Weasel	Whispers
 Build	Killer	Ghostface	Barbecue & Chilli	Nemesis	Play With Your Food	Pop Goes The Weasel
 Build	Killer	Ghostface	Barbecue & Chilli	Pop Goes The Weasel	Surge	Surveillance
 Build	Killer	Ghostface	Barbecue & Chilli	Pop Goes The Weasel	Surveillance	Whispers
@@ -1353,6 +1363,7 @@ Build	Killer	Ghostface	Corrupt Intervention	Hex No One Escapes Death	Pop Goes Th
 Build	Killer	Ghostface	Corrupt Intervention	Hex No One Escapes Death	Surveillance	Whispers
 Build	Killer	Ghostface	Corrupt Intervention	Hex Ruin	Surveillance	Whispers
 Build	Killer	Ghostface	Corrupt Intervention	I'm All Ears	Nemesis	Play With Your Food
+Build	Killer	Ghostface	Corrupt Intervention	I'm All Ears	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Ghostface	Corrupt Intervention	Nemesis	Play With Your Food	Sloppy Butcher
 Build	Killer	Ghostface	Corrupt Intervention	Nemesis	Play With Your Food	Surveillance
 Build	Killer	Ghostface	Corrupt Intervention	Nemesis	Play With Your Food	Whispers
@@ -1399,6 +1410,7 @@ Build	Killer	Ghostface	Hex No One Escapes Death	Pop Goes The Weasel	Surveillance
 Build	Killer	Ghostface	Hex No One Escapes Death	Pop Goes The Weasel	Thrilling Tremors	Whispers
 Build	Killer	Ghostface	Hex Ruin	Nemesis	Play With Your Food	Surveillance
 Build	Killer	Ghostface	I'm All Ears	Pop Goes The Weasel	Surveillance	Whispers
+Build	Killer	Ghostface	I'm All Ears	Pop Goes The Weasel	Thrilling Tremors	Whispers
 Build	Killer	Ghostface	Nemesis	Play With Your Food	Pop Goes The Weasel	Surveillance
 Build	Killer	Ghostface	Nemesis	Play With Your Food	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Ghostface	Nemesis	Play With Your Food	Pop Goes The Weasel	Whispers
@@ -1413,7 +1425,7 @@ Build	Killer	Hag	Agitation	Corrupt Intervention	Discordance	Make Your Choice
 Build	Killer	Hag	Agitation	Corrupt Intervention	Discordance	Monitor & Abuse
 Build	Killer	Hag	Agitation	Corrupt Intervention	Enduring	Monitor & Abuse
 Build	Killer	Hag	Agitation	Corrupt Intervention	Enduring	Spirit Fury
-Build	Killer	Hag	Agitation	Corrupt Intervention	Make Your Choice	Monitor & Abuse
+Build1	Killer	Hag	Agitation	Corrupt Intervention	Make Your Choice	Monitor & Abuse
 Build	Killer	Hag	Agitation	Corrupt Intervention	Make Your Choice	Territorial Imperative
 Build	Killer	Hag	Agitation	Enduring	Make Your Choice	Spirit Fury
 Build	Killer	Hag	Agitation	Hex Ruin	Make Your Choice	Surveillance
@@ -1722,7 +1734,7 @@ Build	Killer	Hillbilly	Barbecue & Chilli	Enduring	Hex Devour Hope	Whispers
 Build	Killer	Hillbilly	Barbecue & Chilli	Enduring	Hex Ruin	Surveillance
 Build	Killer	Hillbilly	Barbecue & Chilli	Enduring	Infectious Fright	Monitor & Abuse
 Build	Killer	Hillbilly	Barbecue & Chilli	Enduring	Infectious Fright	Pop Goes The Weasel
-Build	Killer	Hillbilly	Barbecue & Chilli	Enduring	Infectious Fright	Spirit Fury
+Build1	Killer	Hillbilly	Barbecue & Chilli	Enduring	Infectious Fright	Spirit Fury
 Build	Killer	Hillbilly	Barbecue & Chilli	Enduring	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Hillbilly	Barbecue & Chilli	Enduring	Monitor & Abuse	Spirit Fury
 Build	Killer	Hillbilly	Barbecue & Chilli	Enduring	Monitor & Abuse	Whispers
@@ -1870,7 +1882,7 @@ Build	Killer	Huntress Anna	A Nurse's Calling	Barbecue & Chilli	Corrupt Intervent
 Build	Killer	Huntress Anna	A Nurse's Calling	Barbecue & Chilli	Corrupt Intervention	Spies From The Shadows
 Build	Killer	Huntress Anna	A Nurse's Calling	Barbecue & Chilli	Corrupt Intervention	Surveillance
 Build	Killer	Huntress Anna	A Nurse's Calling	Barbecue & Chilli	Corrupt Intervention	Thanatophobia
-Build	Killer	Huntress Anna	A Nurse's Calling	Barbecue & Chilli	Corrupt Intervention	Whispers
+Build1	Killer	Huntress Anna	A Nurse's Calling	Barbecue & Chilli	Corrupt Intervention	Whispers
 Build	Killer	Huntress Anna	A Nurse's Calling	Barbecue & Chilli	Discordance	Iron Maiden
 Build	Killer	Huntress Anna	A Nurse's Calling	Barbecue & Chilli	Discordance	Monitor & Abuse
 Build	Killer	Huntress Anna	A Nurse's Calling	Barbecue & Chilli	Discordance	Pop Goes The Weasel
@@ -1966,6 +1978,8 @@ Build	Killer	Huntress Anna	Barbecue & Chilli	Corrupt Intervention	Hex Devour Hop
 Build	Killer	Huntress Anna	Barbecue & Chilli	Corrupt Intervention	Hex Huntress Lullaby	Hex Thrill Of The Hunt
 Build	Killer	Huntress Anna	Barbecue & Chilli	Corrupt Intervention	Hex No One Escapes Death	Whispers
 Build	Killer	Huntress Anna	Barbecue & Chilli	Corrupt Intervention	Hex The Third Seal	Hex Thrill Of The Hunt
+Build	Killer	Huntress Anna	Barbecue & Chilli	Corrupt Intervention	I'm All Ears	Pop Goes The Weasel
+Build	Killer	Huntress Anna	Barbecue & Chilli	Corrupt Intervention	I'm All Ears	Whispers
 Build	Killer	Huntress Anna	Barbecue & Chilli	Corrupt Intervention	Iron Maiden	Make Your Choice
 Build	Killer	Huntress Anna	Barbecue & Chilli	Corrupt Intervention	Iron Maiden	Monitor & Abuse
 Build	Killer	Huntress Anna	Barbecue & Chilli	Corrupt Intervention	Iron Maiden	Pop Goes The Weasel
@@ -2006,6 +2020,7 @@ Build	Killer	Huntress Anna	Barbecue & Chilli	Hex Devour Hope	Pop Goes The Weasel
 Build	Killer	Huntress Anna	Barbecue & Chilli	Hex Devour Hope	Pop Goes The Weasel	Whispers
 Build	Killer	Huntress Anna	Barbecue & Chilli	Hex No One Escapes Death	Iron Maiden	Whispers
 Build	Killer	Huntress Anna	Barbecue & Chilli	Hex Ruin	Surveillance	Whispers
+Build	Killer	Huntress Anna	Barbecue & Chilli	I'm All Ears	Pop Goes The Weasel	Whispers
 Build	Killer	Huntress Anna	Barbecue & Chilli	Iron Maiden	Pop Goes The Weasel	Shadowborn
 Build	Killer	Huntress Anna	Barbecue & Chilli	Iron Maiden	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Huntress Anna	Barbecue & Chilli	Iron Maiden	Pop Goes The Weasel	Whispers
@@ -2046,6 +2061,7 @@ Build	Killer	Huntress Anna	Corrupt Intervention	Hex Devour Hope	Pop Goes The Wea
 Build	Killer	Huntress Anna	Corrupt Intervention	Hex Huntress Lullaby	Hex Thrill Of The Hunt	Whispers
 Build	Killer	Huntress Anna	Corrupt Intervention	Hex No One Escapes Death	Hex Thrill Of The Hunt	Whispers
 Build	Killer	Huntress Anna	Corrupt Intervention	Hex The Third Seal	Hex Thrill Of The Hunt	Iron Maiden
+Build	Killer	Huntress Anna	Corrupt Intervention	I'm All Ears	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Huntress Anna	Corrupt Intervention	Iron Maiden	Nemesis	Play With Your Food
 Build	Killer	Huntress Anna	Corrupt Intervention	Iron Maiden	Shadowborn	Whispers
 Build	Killer	Huntress Anna	Corrupt Intervention	Nemesis	Play With Your Food	Shadowborn
@@ -2076,6 +2092,7 @@ Build	Killer	Huntress Anna	Hex Devour Hope	Hex Haunted Ground	Hex Ruin	Hex Thril
 Build	Killer	Huntress Anna	Hex Devour Hope	Hex Haunted Ground	Hex The Third Seal	Hex Thrill Of The Hunt
 Build	Killer	Huntress Anna	Hex Haunted Ground	Hex Huntress Lullaby	Hex Ruin	Hex Thrill Of The Hunt
 Build	Killer	Huntress Anna	Hex Haunted Ground	Hex Ruin	Hex The Third Seal	Hex Thrill Of The Hunt
+Build	Killer	Huntress Anna	I'm All Ears	Pop Goes The Weasel	Thrilling Tremors	Whispers
 Build	Killer	Huntress Anna	Iron Maiden	Pop Goes The Weasel	Shadowborn	Thrilling Tremors
 Build	Killer	Huntress Anna	Nemesis	Play With Your Food	Pop Goes The Weasel	Surveillance
 Build	Killer	Huntress Anna	Nemesis	Play With Your Food	Pop Goes The Weasel	Thrilling Tremors
@@ -2141,7 +2158,7 @@ Build	Killer	Leatherface	Bamboozle	Enduring	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Leatherface	Bamboozle	Enduring	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Leatherface	Bamboozle	Enduring	Pop Goes The Weasel	Whispers
 Build	Killer	Leatherface	Barbecue & Chilli	Corrupt Intervention	Discordance	Enduring
-Build	Killer	Leatherface	Barbecue & Chilli	Corrupt Intervention	Discordance	Monitor & Abuse
+Build1	Killer	Leatherface	Barbecue & Chilli	Corrupt Intervention	Discordance	Monitor & Abuse
 Build	Killer	Leatherface	Barbecue & Chilli	Corrupt Intervention	Discordance	Play With Your Food
 Build	Killer	Leatherface	Barbecue & Chilli	Corrupt Intervention	Discordance	Pop Goes The Weasel
 Build	Killer	Leatherface	Barbecue & Chilli	Corrupt Intervention	Enduring	Monitor & Abuse
@@ -2440,6 +2457,8 @@ Build	Killer	Legion	Barbecue & Chilli	Corrupt Intervention	Discordance	Monitor &
 Build	Killer	Legion	Barbecue & Chilli	Corrupt Intervention	Discordance	Pop Goes The Weasel
 Build	Killer	Legion	Barbecue & Chilli	Corrupt Intervention	Enduring	Pop Goes The Weasel
 Build	Killer	Legion	Barbecue & Chilli	Corrupt Intervention	Enduring	Spirit Fury
+Build	Killer	Legion	Barbecue & Chilli	Corrupt Intervention	I'm All Ears	Pop Goes The Weasel
+Build	Killer	Legion	Barbecue & Chilli	Corrupt Intervention	I'm All Ears	Whispers
 Build	Killer	Legion	Barbecue & Chilli	Corrupt Intervention	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Legion	Barbecue & Chilli	Corrupt Intervention	Monitor & Abuse	Thanatophobia
 Build	Killer	Legion	Barbecue & Chilli	Corrupt Intervention	Monitor & Abuse	Whispers
@@ -2457,6 +2476,7 @@ Build	Killer	Legion	Barbecue & Chilli	Enduring	Monitor & Abuse	Spirit Fury
 Build	Killer	Legion	Barbecue & Chilli	Enduring	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Legion	Barbecue & Chilli	Enduring	Spirit Fury	Thanatophobia
 Build	Killer	Legion	Barbecue & Chilli	Furtive Chase	Make Your Choice	Nemesis
+Build	Killer	Legion	Barbecue & Chilli	I'm All Ears	Pop Goes The Weasel	Whispers
 Build	Killer	Legion	Barbecue & Chilli	Infectious Fright	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Legion	Barbecue & Chilli	Pop Goes The Weasel	Sloppy Butcher	Thanatophobia
 Build	Killer	Legion	Barbecue & Chilli	Pop Goes The Weasel	Surge	Surveillance
@@ -2473,7 +2493,7 @@ Build	Killer	Legion	Corrupt Intervention	Discordance	Enduring	Thanatophobia
 Build	Killer	Legion	Corrupt Intervention	Discordance	Furtive Chase	Make Your Choice
 Build	Killer	Legion	Corrupt Intervention	Discordance	Hex Ruin	Surveillance
 Build	Killer	Legion	Corrupt Intervention	Discordance	I'm All Ears	Monitor & Abuse
-Build	Killer	Legion	Corrupt Intervention	Discordance	I'm All Ears	Thanatophobia
+Build1	Killer	Legion	Corrupt Intervention	Discordance	I'm All Ears	Thanatophobia
 Build	Killer	Legion	Corrupt Intervention	Discordance	Infectious Fright	Monitor & Abuse
 Build	Killer	Legion	Corrupt Intervention	Discordance	Monitor & Abuse	Pop Goes The Weasel
 Build1	Killer	Legion	Corrupt Intervention	Discordance	Monitor & Abuse	Thanatophobia
@@ -2500,6 +2520,7 @@ Build	Killer	Legion	Corrupt Intervention	Enduring	Spirit Fury	Thrilling Tremors
 Build	Killer	Legion	Corrupt Intervention	Enduring	Spirit Fury	Whispers
 Build	Killer	Legion	Corrupt Intervention	Furtive Chase	Make Your Choice	Nemesis
 Build	Killer	Legion	Corrupt Intervention	I'm All Ears	Infectious Fright	Monitor & Abuse
+Build	Killer	Legion	Corrupt Intervention	I'm All Ears	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Legion	Corrupt Intervention	Infectious Fright	Monitor & Abuse	Thanatophobia
 Build	Killer	Legion	Corrupt Intervention	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Legion	Corrupt Intervention	Monitor & Abuse	Sloppy Butcher	Thanatophobia
@@ -2554,6 +2575,7 @@ Build	Killer	Legion	Hex Haunted Ground	Hex Ruin	Hex The Third Seal	Hex Thrill Of
 Build	Killer	Legion	Hex Ruin	Infectious Fright	Monitor & Abuse	Surveillance
 Build	Killer	Legion	Hex Ruin	Sloppy Butcher	Surveillance	Thanatophobia
 Build	Killer	Legion	I'm All Ears	Pop Goes The Weasel	Surge	Surveillance
+Build	Killer	Legion	I'm All Ears	Pop Goes The Weasel	Thrilling Tremors	Whispers
 Build	Killer	Legion	Infectious Fright	Monitor & Abuse	Pop Goes The Weasel	Surveillance
 Build	Killer	Legion	Infectious Fright	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Legion	Infectious Fright	Monitor & Abuse	Surge	Surveillance
@@ -2604,7 +2626,7 @@ Build	Killer	Myers	A Nurse's Calling	Brutal Strength	Enduring	Monitor & Abuse
 Build	Killer	Myers	A Nurse's Calling	Brutal Strength	Enduring	Pop Goes The Weasel
 Build	Killer	Myers	A Nurse's Calling	Corrupt Intervention	Deerstalker	Monitor & Abuse
 Build	Killer	Myers	A Nurse's Calling	Corrupt Intervention	Deerstalker	Sloppy Butcher
-Build	Killer	Myers	A Nurse's Calling	Corrupt Intervention	Discordance	Monitor & Abuse
+Build1	Killer	Myers	A Nurse's Calling	Corrupt Intervention	Discordance	Monitor & Abuse
 Build	Killer	Myers	A Nurse's Calling	Corrupt Intervention	Discordance	Sloppy Butcher
 Build	Killer	Myers	A Nurse's Calling	Corrupt Intervention	Enduring	Monitor & Abuse
 Build	Killer	Myers	A Nurse's Calling	Corrupt Intervention	Enduring	Sloppy Butcher
@@ -2951,7 +2973,7 @@ Build	Killer	Nurse Sally	A Nurse's Calling	Barbecue & Chilli	Make Your Choice	Wh
 Build	Killer	Nurse Sally	A Nurse's Calling	Barbecue & Chilli	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Nurse Sally	A Nurse's Calling	Barbecue & Chilli	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Nurse Sally	A Nurse's Calling	Barbecue & Chilli	Monitor & Abuse	Whispers
-Build	Killer	Nurse Sally	A Nurse's Calling	Barbecue & Chilli	Pop Goes The Weasel	Shadowborn
+Build1	Killer	Nurse Sally	A Nurse's Calling	Barbecue & Chilli	Pop Goes The Weasel	Shadowborn
 Build	Killer	Nurse Sally	A Nurse's Calling	Barbecue & Chilli	Pop Goes The Weasel	Sloppy Butcher
 Build	Killer	Nurse Sally	A Nurse's Calling	Barbecue & Chilli	Pop Goes The Weasel	Spies From The Shadows
 Build	Killer	Nurse Sally	A Nurse's Calling	Barbecue & Chilli	Pop Goes The Weasel	Stridor
@@ -3116,6 +3138,8 @@ Build	Killer	Nurse Sally	Barbecue & Chilli	Corrupt Intervention	Hex Devour Hope	
 Build	Killer	Nurse Sally	Barbecue & Chilli	Corrupt Intervention	Hex Devour Hope	Whispers
 Build	Killer	Nurse Sally	Barbecue & Chilli	Corrupt Intervention	Hex No One Escapes Death	Hex Thrill Of The Hunt
 Build	Killer	Nurse Sally	Barbecue & Chilli	Corrupt Intervention	Hex The Third Seal	Hex Thrill Of The Hunt
+Build	Killer	Nurse Sally	Barbecue & Chilli	Corrupt Intervention	I'm All Ears	Pop Goes The Weasel
+Build	Killer	Nurse Sally	Barbecue & Chilli	Corrupt Intervention	I'm All Ears	Whispers
 Build	Killer	Nurse Sally	Barbecue & Chilli	Corrupt Intervention	Infectious Fright	Shadowborn
 Build	Killer	Nurse Sally	Barbecue & Chilli	Corrupt Intervention	Infectious Fright	Whispers
 Build	Killer	Nurse Sally	Barbecue & Chilli	Corrupt Intervention	Make Your Choice	Whispers
@@ -3157,6 +3181,7 @@ Build	Killer	Nurse Sally	Barbecue & Chilli	Hex Devour Hope	Pop Goes The Weasel	W
 Build	Killer	Nurse Sally	Barbecue & Chilli	Hex Devour Hope	Shadowborn	Whispers
 Build	Killer	Nurse Sally	Barbecue & Chilli	Hex No One Escapes Death	Pop Goes The Weasel	Whispers
 Build	Killer	Nurse Sally	Barbecue & Chilli	Hex Ruin	Surveillance	Whispers
+Build	Killer	Nurse Sally	Barbecue & Chilli	I'm All Ears	Pop Goes The Weasel	Whispers
 Build	Killer	Nurse Sally	Barbecue & Chilli	I'm All Ears	Shadowborn	Whispers
 Build	Killer	Nurse Sally	Barbecue & Chilli	Infectious Fright	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Nurse Sally	Barbecue & Chilli	Infectious Fright	Monitor & Abuse	Whispers
@@ -3198,6 +3223,7 @@ Build	Killer	Nurse Sally	Corrupt Intervention	Hex Devour Hope	Hex Thrill Of The 
 Build	Killer	Nurse Sally	Corrupt Intervention	Hex Devour Hope	Hex Thrill Of The Hunt	Whispers
 Build	Killer	Nurse Sally	Corrupt Intervention	Hex Devour Hope	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Nurse Sally	Corrupt Intervention	Hex Devour Hope	Pop Goes The Weasel	Whispers
+Build	Killer	Nurse Sally	Corrupt Intervention	I'm All Ears	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Nurse Sally	Corrupt Intervention	Infectious Fright	Monitor & Abuse	Whispers
 Build	Killer	Nurse Sally	Corrupt Intervention	Infectious Fright	Sloppy Butcher	Whispers
 Build	Killer	Nurse Sally	Corrupt Intervention	Pop Goes The Weasel	Shadowborn	Thrilling Tremors
@@ -3232,6 +3258,7 @@ Build	Killer	Nurse Sally	Hex Devour Hope	Pop Goes The Weasel	Surveillance	Whispe
 Build	Killer	Nurse Sally	Hex Devour Hope	Pop Goes The Weasel	Thrilling Tremors	Whispers
 Build	Killer	Nurse Sally	Hex Haunted Ground	Hex Huntress Lullaby	Hex Ruin	Hex Thrill Of The Hunt
 Build	Killer	Nurse Sally	Hex Haunted Ground	Hex Ruin	Hex The Third Seal	Hex Thrill Of The Hunt
+Build	Killer	Nurse Sally	I'm All Ears	Pop Goes The Weasel	Thrilling Tremors	Whispers
 Build	Killer	Nurse Sally	Infectious Fright	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Nurse Sally	Infectious Fright	Monitor & Abuse	Pop Goes The Weasel	Whispers
 Build	Killer	Nurse Sally	Infectious Fright	Pop Goes The Weasel	Sloppy Butcher	Thrilling Tremors
@@ -3285,7 +3312,7 @@ Build	Killer	Pig	A Nurse's Calling	Brutal Strength	Corrupt Intervention	Enduring
 Build	Killer	Pig	A Nurse's Calling	Corrupt Intervention	Coulrophobia	Sloppy Butcher
 Build	Killer	Pig	A Nurse's Calling	Corrupt Intervention	Deerstalker	Monitor & Abuse
 Build	Killer	Pig	A Nurse's Calling	Corrupt Intervention	Discordance	Enduring
-Build	Killer	Pig	A Nurse's Calling	Corrupt Intervention	Discordance	Monitor & Abuse
+Build1	Killer	Pig	A Nurse's Calling	Corrupt Intervention	Discordance	Monitor & Abuse
 Build	Killer	Pig	A Nurse's Calling	Corrupt Intervention	Discordance	Sloppy Butcher
 Build	Killer	Pig	A Nurse's Calling	Corrupt Intervention	Discordance	Whispers
 Build	Killer	Pig	A Nurse's Calling	Corrupt Intervention	Enduring	Monitor & Abuse
@@ -3434,6 +3461,8 @@ Build	Killer	Pig	Barbecue & Chilli	Corrupt Intervention	Enduring	Whispers
 Build	Killer	Pig	Barbecue & Chilli	Corrupt Intervention	Hex Huntress Lullaby	Hex Thrill Of The Hunt
 Build	Killer	Pig	Barbecue & Chilli	Corrupt Intervention	Hex No One Escapes Death	Whispers
 Build	Killer	Pig	Barbecue & Chilli	Corrupt Intervention	Hex The Third Seal	Hex Thrill Of The Hunt
+Build	Killer	Pig	Barbecue & Chilli	Corrupt Intervention	I'm All Ears	Pop Goes The Weasel
+Build	Killer	Pig	Barbecue & Chilli	Corrupt Intervention	I'm All Ears	Whispers
 Build	Killer	Pig	Barbecue & Chilli	Corrupt Intervention	Make Your Choice	Monitor & Abuse
 Build	Killer	Pig	Barbecue & Chilli	Corrupt Intervention	Make Your Choice	Whispers
 Build	Killer	Pig	Barbecue & Chilli	Corrupt Intervention	Monitor & Abuse	Pop Goes The Weasel
@@ -3482,6 +3511,7 @@ Build	Killer	Pig	Barbecue & Chilli	Hex No One Escapes Death	Monitor & Abuse	Whis
 Build	Killer	Pig	Barbecue & Chilli	Hex No One Escapes Death	Pop Goes The Weasel	Whispers
 Build	Killer	Pig	Barbecue & Chilli	Hex Ruin	Monitor & Abuse	Surveillance
 Build	Killer	Pig	Barbecue & Chilli	Hex Ruin	Surveillance	Whispers
+Build	Killer	Pig	Barbecue & Chilli	I'm All Ears	Pop Goes The Weasel	Whispers
 Build	Killer	Pig	Barbecue & Chilli	Infectious Fright	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Pig	Barbecue & Chilli	Infectious Fright	Monitor & Abuse	Whispers
 Build	Killer	Pig	Barbecue & Chilli	Make Your Choice	Monitor & Abuse	Whispers
@@ -3563,6 +3593,7 @@ Build	Killer	Pig	Corrupt Intervention	Hex No One Escapes Death	Pop Goes The Weas
 Build	Killer	Pig	Corrupt Intervention	Hex No One Escapes Death	Save The Best For Last	Whispers
 Build	Killer	Pig	Corrupt Intervention	Hex No One Escapes Death	Surveillance	Whispers
 Build	Killer	Pig	Corrupt Intervention	I'm All Ears	Monitor & Abuse	Whispers
+Build	Killer	Pig	Corrupt Intervention	I'm All Ears	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Pig	Corrupt Intervention	Infectious Fright	Monitor & Abuse	Save The Best For Last
 Build	Killer	Pig	Corrupt Intervention	Infectious Fright	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Pig	Corrupt Intervention	Infectious Fright	Save The Best For Last	Whispers
@@ -3681,6 +3712,8 @@ Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Enduring	Pop Goes The
 Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Enduring	Spirit Fury
 Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Enduring	Thanatophobia
 Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Hex Devour Hope	Pop Goes The Weasel
+Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	I'm All Ears	Pop Goes The Weasel
+Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	I'm All Ears	Whispers
 Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Nemesis	Play With Your Food
 Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Surveillance
 Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Thanatophobia
@@ -3698,6 +3731,7 @@ Build	Killer	Plague	Barbecue & Chilli	Enduring	Pop Goes The Weasel	Spirit Fury
 Build	Killer	Plague	Barbecue & Chilli	Enduring	Pop Goes The Weasel	Surveillance
 Build	Killer	Plague	Barbecue & Chilli	Enduring	Spirit Fury	Thanatophobia
 Build	Killer	Plague	Barbecue & Chilli	Furtive Chase	Make Your Choice	Nemesis
+Build	Killer	Plague	Barbecue & Chilli	I'm All Ears	Pop Goes The Weasel	Whispers
 Build	Killer	Plague	Barbecue & Chilli	Infectious Fright	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Plague	Barbecue & Chilli	Infectious Fright	Pop Goes The Weasel	Surveillance
 Build	Killer	Plague	Barbecue & Chilli	Infectious Fright	Pop Goes The Weasel	Thanatophobia
@@ -3727,12 +3761,12 @@ Build	Killer	Plague	Corrupt Intervention	Discordance	I'm All Ears	Infectious Fri
 Build	Killer	Plague	Corrupt Intervention	Discordance	I'm All Ears	Thanatophobia
 Build	Killer	Plague	Corrupt Intervention	Discordance	Infectious Fright	Monitor & Abuse
 Build	Killer	Plague	Corrupt Intervention	Discordance	Infectious Fright	Play With Your Food
-Build1	Killer	Plague	Corrupt Intervention	Discordance	Infectious Fright	Pop Goes The Weasel
-Build	Killer	Plague	Corrupt Intervention	Discordance	Infectious Fright	Thanatophobia
+Build	Killer	Plague	Corrupt Intervention	Discordance	Infectious Fright	Pop Goes The Weasel
+Build1	Killer	Plague	Corrupt Intervention	Discordance	Infectious Fright	Thanatophobia
 Build	Killer	Plague	Corrupt Intervention	Discordance	Nemesis	Play With Your Food
 Build	Killer	Plague	Corrupt Intervention	Discordance	Pop Goes The Weasel	Surveillance
 Build	Killer	Plague	Corrupt Intervention	Discordance	Pop Goes The Weasel	Thanatophobia
-Build	Killer	Plague	Corrupt Intervention	Discordance	Pop Goes The Weasel	Thrilling Tremors
+Build1	Killer	Plague	Corrupt Intervention	Discordance	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Plague	Corrupt Intervention	Discordance	Surge	Surveillance
 Build	Killer	Plague	Corrupt Intervention	Enduring	Hex Devour Hope	Spirit Fury
 Build	Killer	Plague	Corrupt Intervention	Enduring	I'm All Ears	Spirit Fury
@@ -3757,6 +3791,7 @@ Build	Killer	Plague	Corrupt Intervention	Hex Huntress Lullaby	Hex Thrill Of The 
 Build	Killer	Plague	Corrupt Intervention	I'm All Ears	Infectious Fright	Monitor & Abuse
 Build	Killer	Plague	Corrupt Intervention	I'm All Ears	Nemesis	Play With Your Food
 Build	Killer	Plague	Corrupt Intervention	I'm All Ears	Pop Goes The Weasel	Surveillance
+Build	Killer	Plague	Corrupt Intervention	I'm All Ears	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Plague	Corrupt Intervention	Infectious Fright	Monitor & Abuse	Thanatophobia
 Build	Killer	Plague	Corrupt Intervention	Infectious Fright	Monitor & Abuse	Whispers
 Build	Killer	Plague	Corrupt Intervention	Infectious Fright	Nemesis	Play With Your Food
@@ -3838,6 +3873,7 @@ Build	Killer	Plague	Hex Ruin	Nemesis	Play With Your Food	Surveillance
 Build	Killer	Plague	I'm All Ears	Infectious Fright	Nemesis	Play With Your Food
 Build	Killer	Plague	I'm All Ears	Infectious Fright	Pop Goes The Weasel	Surveillance
 Build	Killer	Plague	I'm All Ears	Nemesis	Play With Your Food	Pop Goes The Weasel
+Build	Killer	Plague	I'm All Ears	Pop Goes The Weasel	Thrilling Tremors	Whispers
 Build	Killer	Plague	Infectious Fright	Monitor & Abuse	Nemesis	Play With Your Food
 Build	Killer	Plague	Infectious Fright	Monitor & Abuse	Pop Goes The Weasel	Surveillance
 Build	Killer	Plague	Infectious Fright	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors
@@ -4036,7 +4072,7 @@ Build	Killer	Spirit Rin	Barbecue & Chilli	Hex Devour Hope	Hex Thrill Of The Hunt
 Build	Killer	Spirit Rin	Barbecue & Chilli	Hex Devour Hope	Infectious Fright	Pop Goes The Weasel
 Build	Killer	Spirit Rin	Barbecue & Chilli	Hex Devour Hope	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Spirit Rin	Barbecue & Chilli	Hex Devour Hope	Pop Goes The Weasel	Sloppy Butcher
-Build	Killer	Spirit Rin	Barbecue & Chilli	Hex Devour Hope	Pop Goes The Weasel	Stridor
+Build1	Killer	Spirit Rin	Barbecue & Chilli	Hex Devour Hope	Pop Goes The Weasel	Stridor
 Build	Killer	Spirit Rin	Barbecue & Chilli	Hex Devour Hope	Pop Goes The Weasel	Surveillance
 Build	Killer	Spirit Rin	Barbecue & Chilli	Hex Devour Hope	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Spirit Rin	Barbecue & Chilli	Hex Devour Hope	Pop Goes The Weasel	Whispers
@@ -4151,7 +4187,7 @@ Build	Killer	Spirit Rin	Undefined	Undefined	Undefined	Undefined
 Build	Killer	The Oni	A Nurse's Calling	Barbecue & Chilli	Corrupt Intervention	Discordance
 Build	Killer	The Oni	A Nurse's Calling	Barbecue & Chilli	Corrupt Intervention	Infectious Fright
 Build	Killer	The Oni	A Nurse's Calling	Barbecue & Chilli	Corrupt Intervention	Monitor & Abuse
-Build	Killer	The Oni	A Nurse's Calling	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel
+Build1	Killer	The Oni	A Nurse's Calling	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel
 Build	Killer	The Oni	A Nurse's Calling	Barbecue & Chilli	Corrupt Intervention	Sloppy Butcher
 Build	Killer	The Oni	A Nurse's Calling	Barbecue & Chilli	Corrupt Intervention	Whispers
 Build	Killer	The Oni	A Nurse's Calling	Barbecue & Chilli	Discordance	Monitor & Abuse
@@ -4584,7 +4620,7 @@ Build	Killer	Trapper	Corrupt Intervention	Monitor & Abuse	Save The Best For Last
 Build	Killer	Trapper	Corrupt Intervention	Nemesis	Play With Your Food	Surveillance
 Build	Killer	Trapper	Corrupt Intervention	Nemesis	Play With Your Food	Whispers
 Build	Killer	Trapper	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last	Surveillance
-Build	Killer	Trapper	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last	Thrilling Tremors
+Build1	Killer	Trapper	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last	Thrilling Tremors
 Build	Killer	Trapper	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last	Whispers
 Build	Killer	Trapper	Corrupt Intervention	Pop Goes The Weasel	Surge	Surveillance
 Build	Killer	Trapper	Corrupt Intervention	Pop Goes The Weasel	Surveillance	Whispers
@@ -4979,6 +5015,7 @@ Build	Killer	Wraith	Corrupt Intervention	Hex No One Escapes Death	Nemesis	Play W
 Build	Killer	Wraith	Corrupt Intervention	Hex No One Escapes Death	Sloppy Butcher	Whispers
 Build	Killer	Wraith	Corrupt Intervention	Hex No One Escapes Death	Surveillance	Whispers
 Build	Killer	Wraith	Corrupt Intervention	Make Your Choice	Pop Goes The Weasel	Thrilling Tremors
+Build1	Killer	Wraith	Corrupt Intervention	Nemesis	Play With Your Food	Pop Goes The Weasel
 Build	Killer	Wraith	Corrupt Intervention	Nemesis	Play With Your Food	Sloppy Butcher
 Build	Killer	Wraith	Corrupt Intervention	Nemesis	Play With Your Food	Surveillance
 Build	Killer	Wraith	Corrupt Intervention	Nemesis	Play With Your Food	Whispers
@@ -5209,6 +5246,7 @@ Build	Survivor	GenSurv	Adrenaline	Balanced Landing	Kindred	Open-Handed
 Build	Survivor	GenSurv	Adrenaline	Balanced Landing	Lightweight	Self-Care
 Build	Survivor	GenSurv	Adrenaline	Balanced Landing	Object Of Obsession	Sole Survivor
 Build	Survivor	GenSurv	Adrenaline	Balanced Landing	Tenacity	Unbreakable
+Build	Survivor	GenSurv	Adrenaline	Boil Over	Flip-Flop	Tenacity
 Build	Survivor	GenSurv	Adrenaline	Bond	Borrowed Time	Dead Hard
 Build	Survivor	GenSurv	Adrenaline	Bond	Borrowed Time	Iron Will
 Build	Survivor	GenSurv	Adrenaline	Bond	Botany Knowledge	Iron Will
@@ -5665,6 +5703,7 @@ Build	Survivor	GenSurv	Autodidact	Bond	Iron Will	Sprint Burst
 Build	Survivor	GenSurv	Autodidact	Bond	Iron Will	We'll Make It
 Build	Survivor	GenSurv	Autodidact	Borrowed Time	Botany Knowledge	Empathy
 Build	Survivor	GenSurv	Autodidact	Borrowed Time	Empathy	We'll Make It
+Build	Survivor	GenSurv	Balanced Landing	Boil Over	Flip-Flop	Tenacity
 Build	Survivor	GenSurv	Balanced Landing	Bond	Borrowed Time	Iron Will
 Build	Survivor	GenSurv	Balanced Landing	Bond	Breakout	Iron Will
 Build	Survivor	GenSurv	Balanced Landing	Bond	Decisive Strike	Iron Will
@@ -5727,6 +5766,20 @@ Build	Survivor	GenSurv	Balanced Landing	Quick & Quiet	Self-Care	Urban Evasion
 Build	Survivor	GenSurv	Balanced Landing	Quick & Quiet	Self-Care	Windows Of Opportunity
 Build	Survivor	GenSurv	Balanced Landing	Self-Care	Tenacity	Unbreakable
 Build	Survivor	GenSurv	Balanced Landing	Self-Care	Unbreakable	Urban Evasion
+Build	Survivor	GenSurv	Boil Over	Bond	Flip-Flop	Tenacity
+Build	Survivor	GenSurv	Boil Over	Borrowed Time	Flip-Flop	Tenacity
+Build	Survivor	GenSurv	Boil Over	Dead Hard	Flip-Flop	Tenacity
+Build	Survivor	GenSurv	Boil Over	Decisive Strike	Flip-Flop	Tenacity
+Build	Survivor	GenSurv	Boil Over	Deliverance	Flip-Flop	Tenacity
+Build	Survivor	GenSurv	Boil Over	Diversion	Flip-Flop	Tenacity
+Build	Survivor	GenSurv	Boil Over	Empathy	Flip-Flop	Tenacity
+Build	Survivor	GenSurv	Boil Over	Flip-Flop	Head On	Tenacity
+Build	Survivor	GenSurv	Boil Over	Flip-Flop	Inner Strength	Tenacity
+Build	Survivor	GenSurv	Boil Over	Flip-Flop	Iron Will	Tenacity
+Build	Survivor	GenSurv	Boil Over	Flip-Flop	Lithe	Tenacity
+Build	Survivor	GenSurv	Boil Over	Flip-Flop	Self-Care	Tenacity
+Build	Survivor	GenSurv	Boil Over	Flip-Flop	Sprint Burst	Tenacity
+Build	Survivor	GenSurv	Boil Over	Flip-Flop	Tenacity	Unbreakable
 Build	Survivor	GenSurv	Bond	Borrowed Time	Botany Knowledge	Solidarity
 Build	Survivor	GenSurv	Bond	Borrowed Time	Botany Knowledge	We'll Make It
 Build	Survivor	GenSurv	Bond	Borrowed Time	Botany Knowledge	We're Gonna Live Forever

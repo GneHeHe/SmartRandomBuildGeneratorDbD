@@ -44,7 +44,7 @@ Balanced Landing	Vigil	300
 Balanced Landing	Windows Of Opportunity	50
 Better Together	Bond	-300
 Better Together	Prove Thyself	50
-Boil Over	Flip-Flop	200
+Boil Over	Flip-Flop	300
 Boil Over	Breakdown	50
 Boil Over	Saboteur	50
 Bond	Botany Knowledge	50
@@ -120,7 +120,7 @@ Empathy	We'll Make It	50
 Fixated	Iron Will	-100
 Fixated	Sprint Burst	200
 Flip-Flop	Saboteur	50
-Flip-Flop	Tenacity	100
+Flip-Flop	Tenacity	300
 Flip-Flop	Unbreakable	100
 Head On	Inner Strength	100
 Head On	Lightweight	50
@@ -198,6 +198,7 @@ Sprint Burst	Windows Of Opportunity	50
 Tenacity	Unbreakable	200
 We'll Make It	We're Gonna Live Forever	50
 ############# Killers #############
+Agitation	Franklin's Demise	100
 Agitation	Iron Grasp	200
 Agitation	Mad Grit	200
 Agitation	Make Your Choice	100
@@ -251,7 +252,7 @@ Deerstalker	Infectious Fright	100
 Deerstalker	Knock Out	200
 Deerstalker	Sloppy Butcher	50
 Discordance	Monitor & Abuse	100
-Discordance	Surveillance	-50
+Discordance	Surveillance	-100
 Discordance	Whispers	-100
 Distressing	Furtive Chase	-300
 Distressing	Infectious Fright	100
@@ -270,7 +271,7 @@ Furtive Chase	Monitor & Abuse	-300
 Furtive Chase	Nemesis	300
 Furtive Chase	Play With Your Food	100
 Furtive Chase	Save The Best For Last	-300
-Hex Devour Hope	Hex Haunted Ground	200
+Hex Devour Hope	Hex Haunted Ground	300
 Hex Devour Hope	Hex Huntress Lullaby	-200
 Hex Devour Hope	Hex Ruin	-200
 Hex Devour Hope	Hex The Third Seal	-200
@@ -281,7 +282,7 @@ Hex Devour Hope	Whispers	50
 Hex Haunted Ground	Hex Huntress Lullaby	200
 Hex Haunted Ground	Hex Ruin	200
 Hex Haunted Ground	Hex The Third Seal	200
-Hex Haunted Ground	Hex Thrill Of The Hunt	200
+Hex Haunted Ground	Hex Thrill Of The Hunt	300
 Hex Huntress Lullaby	Hex Thrill Of The Hunt	100
 Hex Huntress Lullaby	Overcharge	100
 Hex Huntress Lullaby	Whispers	50
@@ -298,7 +299,7 @@ Hex Ruin	Surveillance	300
 Hex The Third Seal	Hex Thrill Of The Hunt	100
 Hex The Third Seal	Knock Out	300
 Hex The Third Seal	Whispers	50
-Infectious Fright	Knock Out	50
+Infectious Fright	Knock Out	100
 Infectious Fright	Make Your Choice	50
 Infectious Fright	Monitor & Abuse	200
 Infectious Fright	Save The Best For Last	100
@@ -322,7 +323,8 @@ Overcharge	Unnerving Presence	200
 Pop Goes The Weasel	Surge	-50
 Pop Goes The Weasel	Surveillance	200
 Pop Goes The Weasel	Thrilling Tremors	200
-Rancor	Remember Me	50
+Rancor	Remember Me	100
+Rancor	Tinkerer	100
 Remember Me	Save The Best For Last	-300
 Sloppy Butcher	Thanatophobia	200
 Spies From The Shadows	Whispers	-300

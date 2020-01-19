@@ -25,10 +25,10 @@ Hex Devour Hope	Killer	iconPerks_devourHope	50
 Hex Haunted Ground	Killer	iconPerks_hauntedGround	1
 Hex Huntress Lullaby	Killer	iconPerks_HuntressLullaby	25
 Hex No One Escapes Death	Killer	iconPerks_noOneEscapesDeath	150
-Hex Ruin	Killer	iconPerks_ruin	150
+Hex Ruin	Killer	iconPerks_ruin	100
 Hex The Third Seal	Killer	iconPerks_theThirdSeal	10
 Hex Thrill Of The Hunt	Killer	iconPerks_thrillOfTheHunt	1
-I'm All Ears	Killer	iconPerks_ImAllEars	100
+I'm All Ears	Killer	iconPerks_ImAllEars	150
 Infectious Fright	Killer	iconPerks_infectiousFright	150
 Insidious	Killer	iconPerks_insidious	50
 Iron Grasp	Killer	iconPerks_ironGrasp	25

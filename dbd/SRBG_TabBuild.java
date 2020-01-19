@@ -119,7 +119,7 @@ public class SRBG_TabBuild extends JPanel {
 
         // Define JButton Objects
         b_build = new JButton("Run");
-        b_build.setToolTipText("Generate random builds that match considered parameters & constraints");
+        b_build.setToolTipText("<html>Generate random builds that match considered parameters & constraints<br><br>Click on generated build to export it as png picture (saved in working directory)</html>");
         b_widget = new JButton("Widget");
         b_widget.setToolTipText("<html>Open widget window for more convenient use of SRBG within Game<br><br>Click on Widget, then:<br><ul><li>Press SPACE or ENTER to generate random builds</li><br><li>Press ESCAPE to close the widget</li></ul></html>");
 
@@ -131,7 +131,6 @@ public class SRBG_TabBuild extends JPanel {
         text = new JTextArea(30, 20);
         text.setEditable(false);
         text.setFont(new Font("Helvetica", Font.PLAIN, 16));
-        text.setToolTipText("Click on generated build to export it as png picture (saved in working directory)");
 
         // Default ComboBox Model
         cbm_default = new DefaultComboBoxModel();
