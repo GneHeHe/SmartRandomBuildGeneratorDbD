@@ -227,7 +227,7 @@ public class Synergy {
             System.err.println(ex.getMessage());
             System.exit(0);
         }
-        System.out.println(nb + " Synergy Rules were loaded over " + m_synergy_perks.size() + " Perks");
+        System.out.println((nb / 2) + " Synergy Rules were loaded over " + m_synergy_perks.size() + " Perks");
         if (verbose) {
             // Display Synergy Map
             showSynergy(m_synergy_perks, "Perk");
@@ -249,7 +249,7 @@ public class Synergy {
     }
 
     /**
-     * Update Perk Weights according to Synergy Rules (Both Characters and Perks)
+     * Update Perk Weights according to Synergy Rules
      *
      * @param refchar
      * @param refperk

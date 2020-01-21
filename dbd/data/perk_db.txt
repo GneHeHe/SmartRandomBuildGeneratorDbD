@@ -4,7 +4,7 @@ Bamboozle	Killer	iconPerks_bamboozle	150
 Barbecue & Chilli	Killer	iconPerks_BBQAndChili	300
 Beast Of Prey	Killer	iconPerks_BeastOfPrey	5
 Bitter Murmur	Killer	iconPerks_bitterMurmur	50
-Blood Echo	Killer	iconPerks_bloodEcho	25
+Blood Echo	Killer	iconPerks_bloodEcho	10
 Blood Warden	Killer	iconPerks_bloodWarden	100
 Bloodhound	Killer	iconPerks_bloodhound	25
 Brutal Strength	Killer	iconPerks_brutalStrength	100
@@ -18,7 +18,7 @@ Distressing	Killer	iconPerks_distressing	5
 Dying Light	Killer	iconPerks_dyingLight	25
 Enduring	Killer	iconPerks_enduring	250
 Fire Up	Killer	iconPerks_fireUp	10
-Franklin's Demise	Killer	iconPerks_franklinsLoss	150
+Franklin's Demise	Killer	iconPerks_franklinsLoss	200
 Furtive Chase	Killer	iconPerks_FurtiveChase	25
 Hangman's Trick	Killer	iconPerks_hangmansTrick	1
 Hex Devour Hope	Killer	iconPerks_devourHope	50
@@ -69,27 +69,27 @@ Adrenaline	Survivor	iconPerks_adrenaline	250
 Aftercare	Survivor	iconPerks_aftercare	100
 Alert	Survivor	iconPerks_alert	100
 Any Means Necessary	Survivor	iconPerks_anyMeansNecessary	100
-Autodidact	Survivor	iconPerks_autodidact	10
-Babysitter	Survivor	iconPerks_Babysitter	5
+Autodidact	Survivor	iconPerks_autodidact	5
+Babysitter	Survivor	iconPerks_Babysitter	10
 Balanced Landing	Survivor	iconPerks_balancedLanding	150
 Better Together	Survivor	iconPerks_BetterTogether	10
 Boil Over	Survivor	iconPerks_boilOver	10
 Bond	Survivor	iconPerks_bond	200
 Borrowed Time	Survivor	iconPerks_borrowedTime	250
 Botany Knowledge	Survivor	iconPerks_botanyKnowledge	10
-Breakdown	Survivor	iconPerks_breakdown	5
+Breakdown	Survivor	iconPerks_breakdown	10
 Breakout	Survivor	iconPerks_breakout	50
 Buckle Up	Survivor	iconPerks_buckleUp	1
-Calm Spirit	Survivor	iconPerks_calmSpirit	10
+Calm Spirit	Survivor	iconPerks_calmSpirit	25
 Camaraderie	Survivor	iconPerks_Camaraderie	5
-Dance With Me	Survivor	iconPerks_danceWithMe	50
-Dark Sense	Survivor	iconPerks_darkSense	10
+Dance With Me	Survivor	iconPerks_danceWithMe	25
+Dark Sense	Survivor	iconPerks_darkSense	25
 Dead Hard	Survivor	iconPerks_DeadHard	200
 Decisive Strike	Survivor	iconPerks_decisiveStrike	250
 Deja Vu	Survivor	iconPerks_dejaVu	1
 Deliverance	Survivor	iconPerks_deliverance	150
 Detective's Hunch	Survivor	iconPerks_detectivesHunch	100
-Distortion	Survivor	iconPerks_distortion	25
+Distortion	Survivor	iconPerks_distortion	50
 Diversion	Survivor	iconPerks_diversion	200
 Empathy	Survivor	iconPerks_empathy	100
 Fixated	Survivor	iconPerks_Fixated	50
@@ -109,23 +109,23 @@ No Mither	Survivor	iconPerks_NoMither	1
 No One Left Behind	Survivor	iconPerks_noOneLeftBehind	1
 Object Of Obsession	Survivor	iconPerks_objectOfObsession	100
 Open-Handed	Survivor	iconPerks_openHanded	1
-Pharmacy	Survivor	iconPerks_pharmacy	10
+Pharmacy	Survivor	iconPerks_pharmacy	50
 Plunderer's Instinct	Survivor	iconPerks_plunderersInstinct	100
 Poised	Survivor	iconPerks_poised	50
-Premonition	Survivor	iconPerks_premonition	25
+Premonition	Survivor	iconPerks_premonition	50
 Prove Thyself	Survivor	iconPerks_proveThyself	100
 Quick & Quiet	Survivor	iconPerks_quickAndQuiet	150
 Resilience	Survivor	iconPerks_resilience	100
-Saboteur	Survivor	iconPerks_saboteur	25
+Saboteur	Survivor	iconPerks_saboteur	50
 Second Wind	Survivor	iconPerks_SecondWind	25
 Self-Care	Survivor	iconPerks_selfCare	200
-Slippery Meat	Survivor	iconPerks_slipperyMeat	10
+Slippery Meat	Survivor	iconPerks_slipperyMeat	5
 Small Game	Survivor	iconPerks_smallGame	50
 Sole Survivor	Survivor	iconPerks_soleSurvivor	1
 Solidarity	Survivor	iconPerks_solidarity	10
 Spine Chill	Survivor	iconPerks_spineChill	150
 Sprint Burst	Survivor	iconPerks_sprintBurst	200
-Stake Out	Survivor	iconPerks_stakeOut	25
+Stake Out	Survivor	iconPerks_stakeOut	5
 Streetwise	Survivor	iconPerks_streetwise	1
 Technician	Survivor	iconPerks_technician	50
 Tenacity	Survivor	iconPerks_tenacity	50

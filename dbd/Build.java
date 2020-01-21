@@ -303,6 +303,7 @@ public class Build implements Comparable<Build> {
         Synergy syn = srbg.getSynergy();
         // Reevaluated Score
         int score_syn = 0;
+        int score_syn_bak = 0;
         // Restore reference Weights
         srbg.setWeightRef();
         if (srbg.b_verbose) {
@@ -321,12 +322,24 @@ public class Build implements Comparable<Build> {
         if (srbg.b_verbose) {
             System.out.println("");
         }
-        // Display updated Perk Weights
+        // Compute Score & Get Min Weight
+        int min_weight = srbg.weight_perk_max;
         for (Perk p : getPerks()) {
             if (srbg.b_verbose) {
                 System.out.println(p.show(false));
             }
             score_syn = score_syn + p.getWeight();
+            if (p.getWeight() < min_weight) {
+                min_weight = p.getWeight();
+            }
+        }
+        // Apply Score Penalty if Lack of Synergy
+        if (min_weight < srbg.syn_min_weight) {
+            score_syn_bak = score_syn;
+            score_syn = score_syn + srbg.syn_penalty;
+            if (srbg.b_verbose) {
+                System.out.println("# - Score Penalty | Low Weight found after Synergy = " + min_weight + " | Minimum Weight allowed after Synergy = " + srbg.syn_min_weight + " | Penalty = " + srbg.syn_penalty + " | Score " + score_syn_bak + " => " + score_syn);
+            }
         }
         if (srbg.b_verbose) {
             System.out.println("");

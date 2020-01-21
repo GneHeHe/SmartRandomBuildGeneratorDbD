@@ -21,7 +21,7 @@ Demogorgon	Pop Goes The Weasel	200
 Demogorgon	Save The Best For Last	200
 Demogorgon	Sloppy Butcher	-100
 Demogorgon	Surge	-200
-Demogorgon	Surveillance	-300
+Demogorgon	Surveillance	-100
 Demogorgon	Territorial Imperative	200
 Demogorgon	Thrilling Tremors	300
 Demogorgon	Tinkerer	100
@@ -49,10 +49,10 @@ Freddy	Barbecue & Chilli	200
 Freddy	Corrupt Intervention	100
 Freddy	Discordance	200
 Freddy	Hex Devour Hope	100
-Freddy	Hex Huntress Lullaby	200
+Freddy	Hex Huntress Lullaby	100
 Freddy	Insidious	-999
 Freddy	Make Your Choice	100
-Freddy	Monitor & Abuse	-200
+Freddy	Monitor & Abuse	-300
 Freddy	Overcharge	-999
 Freddy	Pop Goes The Weasel	200
 Freddy	Surveillance	300
@@ -68,7 +68,7 @@ Ghostface	Discordance	200
 Ghostface	Distressing	-999
 Ghostface	Furtive Chase	-100
 Ghostface	Hex Devour Hope	100
-Ghostface	Hex Haunted Ground	100
+Ghostface	Hex Haunted Ground	200
 Ghostface	Hex No One Escapes Death	100
 Ghostface	I'm All Ears	300
 Ghostface	Insidious	-999
@@ -108,7 +108,7 @@ Hillbilly	Deerstalker	100
 Hillbilly	Discordance	200
 Hillbilly	Enduring	200
 Hillbilly	Hex Devour Hope	100
-Hillbilly	Hex Haunted Ground	-999
+Hillbilly	Hex Haunted Ground	-300
 Hillbilly	Hex No One Escapes Death	-999
 Hillbilly	Infectious Fright	200
 Hillbilly	Make Your Choice	-999
@@ -139,7 +139,7 @@ Huntress Anna	I'm All Ears	200
 Huntress Anna	Insidious	-300
 Huntress Anna	Iron Maiden	300
 Huntress Anna	Make Your Choice	-100
-Huntress Anna	Monitor & Abuse	-200
+Huntress Anna	Monitor & Abuse	-300
 Huntress Anna	Pop Goes The Weasel	100
 Huntress Anna	Save The Best For Last	-300
 Huntress Anna	Shadowborn	300
@@ -172,7 +172,7 @@ Leatherface	Territorial Imperative	200
 Leatherface	Tinkerer	100
 ############# Legion #############
 Legion	Bamboozle	300
-Legion	Blood Echo	100
+Legion	Blood Echo	300
 Legion	Corrupt Intervention	200
 Legion	Dark Devotion	100
 Legion	Discordance	300
@@ -198,7 +198,7 @@ Myers	Distressing	-999
 Myers	Enduring	100
 Myers	Furtive Chase	-100
 Myers	Hex Devour Hope	100
-Myers	Hex Haunted Ground	100
+Myers	Hex Haunted Ground	200
 Myers	Hex No One Escapes Death	-300
 Myers	Infectious Fright	200
 Myers	Insidious	-999
@@ -245,7 +245,7 @@ Pig	Discordance	200
 Pig	Distressing	-999
 Pig	Enduring	100
 Pig	Hex Devour Hope	100
-Pig	Hex Haunted Ground	100
+Pig	Hex Haunted Ground	200
 Pig	Hex No One Escapes Death	200
 Pig	I'm All Ears	300
 Pig	Insidious	-999
@@ -262,7 +262,7 @@ Pig	Unnerving Presence	-100
 Pig	Whispers	300
 ############# Plague #############
 Plague	A Nurse's Calling	-999
-Plague	Blood Echo	100
+Plague	Blood Echo	300
 Plague	Corrupt Intervention	300
 Plague	Coulrophobia	-999
 Plague	Discordance	200
@@ -347,12 +347,12 @@ Wraith	Discordance	300
 Wraith	Distressing	-999
 Wraith	Enduring	200
 Wraith	Hex Devour Hope	100
-Wraith	Hex Haunted Ground	100
+Wraith	Hex Haunted Ground	200
 Wraith	Hex No One Escapes Death	300
 Wraith	Insidious	-999
 Wraith	Lightborn	100
 Wraith	Make Your Choice	200
-Wraith	Monitor & Abuse	-300
+Wraith	Monitor & Abuse	-999
 Wraith	Overwhelming Presence	-100
 Wraith	Play With Your Food	300
 Wraith	Pop Goes The Weasel	100

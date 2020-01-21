@@ -111,10 +111,14 @@ public class SRBG {
     public final int nb_perks_ref = 4;
     // Generic Perk
     public final Perk perk_generic = new Perk();
-    // Min Weight for Perks (normal)
+    // Min Weight for Perk (normal)
     public final int weight_perk_min = 0;
-    // Max Weight for Perks (normal and after synergy)
+    // Max Weight for Perk (normal and after synergy)
     public final int weight_perk_max = 500;
+    // Min Weight for Perk after Synergy (Reevaluation Mode)
+    public final int syn_min_weight = 30;
+    // Score Penalty for Build with Lack of Synergy (Reevaluation Mode)
+    public final int syn_penalty = -1200;
     // Max Nb of Loops
     private final int maxloop = 3000;
     // Character File
@@ -1598,13 +1602,15 @@ public class SRBG {
 
         // Exclusive Build Evaluation
         if (b_reeval) {
-            System.out.println("\n" + srbg.MYSPACER + " Reevaluation of Builds from Database using Synergy-based Rules " + srbg.MYSPACER);
+            System.out.println("\n" + srbg.MYSPACER + " Reevaluation of Builds from Database using Synergy-based Rules " + srbg.MYSPACER + "\n");
+            System.out.println("# Minimum Weight allowed after Synergy = " + srbg.syn_min_weight);
+            System.out.println("# Score Penalty for identified Builds = " + srbg.syn_penalty);
             // Force Synergy Mode
             srbg.b_synergy = true;
             // Load Builds from Reference Database
             TableModelBuild btm = new TableModelBuild(srbg);
             System.out.println("");
-            // Rescore Builds & Exit
+            // Rescore Builds from DB, then Exit
             btm.rescoreDatabase();
             System.exit(0);
         }
