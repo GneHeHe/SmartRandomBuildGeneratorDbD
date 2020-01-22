@@ -58,7 +58,7 @@ Bond	Leader	50
 Bond	Mettle Of Man	50
 Bond	Open-Handed	300
 Bond	Prove Thyself	50
-Bond	Self-Care	-200
+Bond	Self-Care	-300
 Bond	We'll Make It	50
 Borrowed Time	Dead Hard	200
 Borrowed Time	Deliverance	300
@@ -142,7 +142,7 @@ Head On	Vigil	100
 Hope	Left Behind	50
 Inner Strength	Iron Will	100
 Inner Strength	No Mither	-999
-Inner Strength	Pharmacy	-200
+Inner Strength	Pharmacy	-300
 Inner Strength	Quick & Quiet	100
 Inner Strength	Self-Care	-300
 Inner Strength	Small Game	300
@@ -226,7 +226,7 @@ Bamboozle	Brutal Strength	100
 Bamboozle	Enduring	50
 Bamboozle	Fire Up	50
 Barbecue & Chilli	Blood Echo	100
-Barbecue & Chilli	Deerstalker	-300
+Barbecue & Chilli	Deerstalker	-999
 Barbecue & Chilli	Iron Maiden	50
 Barbecue & Chilli	Pop Goes The Weasel	100
 Barbecue & Chilli	Thrilling Tremors	-999
@@ -236,15 +236,15 @@ Bitter Murmur	Rancor	-300
 Blood Echo	Bloodhound	50
 Blood Echo	Mindbreaker	-300
 Blood Echo	Sloppy Butcher	-100
-Bloodhound	Sloppy Butcher	200
-Blood Warden	Deerstalker	50
+Bloodhound	Sloppy Butcher	50
+Blood Warden	Deerstalker	200
 Blood Warden	Hex No One Escapes Death	200
 Blood Warden	Remember Me	100
 Brutal Strength	Enduring	50
 Brutal Strength	Fire Up	50
-Brutal Strength	Overcharge	50
-Brutal Strength	Pop Goes The Weasel	50
-Brutal Strength	Surveillance	50
+Brutal Strength	Overcharge	100
+Brutal Strength	Pop Goes The Weasel	100
+Brutal Strength	Surveillance	100
 Corrupt Intervention	Discordance	200
 Corrupt Intervention	Dying Light	-50
 Corrupt Intervention	Hex Devour Hope	100
@@ -252,7 +252,6 @@ Corrupt Intervention	Hex Ruin	-100
 Corrupt Intervention	Pop Goes The Weasel	-100
 Corrupt Intervention	Surge	-50
 Corrupt Intervention	Whispers	100
-Coulrophobia	Deerstalker	50
 Coulrophobia	Distressing	100
 Coulrophobia	Sloppy Butcher	50
 Cruel Limits	Tinkerer	100
@@ -278,38 +277,40 @@ Dying Light	Save The Best For Last	50
 Dying Light	Sloppy Butcher	-300
 Enduring	Nemesis	100
 Enduring	Spirit Fury	500
+Franklin's Demise	Insidious	200
 Franklin's Demise	Lightborn	-300
-Furtive Chase	Make Your Choice	300
+Furtive Chase	Make Your Choice	200
 Furtive Chase	Monitor & Abuse	-300
-Furtive Chase	Nemesis	300
+Furtive Chase	Nemesis	200
 Furtive Chase	Play With Your Food	100
 Furtive Chase	Save The Best For Last	-300
 Hex Devour Hope	Hex Haunted Ground	300
-Hex Devour Hope	Hex Huntress Lullaby	-200
-Hex Devour Hope	Hex Ruin	-200
-Hex Devour Hope	Hex The Third Seal	-200
-Hex Devour Hope	Hex Thrill Of The Hunt	100
+Hex Devour Hope	Hex Huntress Lullaby	-300
+Hex Devour Hope	Hex Ruin	-300
+Hex Devour Hope	Hex The Third Seal	-300
+Hex Devour Hope	Hex Thrill Of The Hunt	300
 Hex Devour Hope	Make Your Choice	-300
 Hex Devour Hope	Pop Goes The Weasel	100
 Hex Devour Hope	Whispers	50
 Hex Haunted Ground	Hex Huntress Lullaby	200
 Hex Haunted Ground	Hex Ruin	200
 Hex Haunted Ground	Hex The Third Seal	200
-Hex Haunted Ground	Hex Thrill Of The Hunt	300
-Hex Huntress Lullaby	Hex Thrill Of The Hunt	100
+Hex Haunted Ground	Hex Thrill Of The Hunt	200
+Hex Huntress Lullaby	Hex Thrill Of The Hunt	200
 Hex Huntress Lullaby	Overcharge	100
 Hex Huntress Lullaby	Whispers	50
 Hex No One Escapes Death	Hex Thrill Of The Hunt	100
-Hex No One Escapes Death	Insidious	100
+Hex No One Escapes Death	Insidious	200
 Hex No One Escapes Death	Rancor	-100
-Hex No One Escapes Death	Remember Me	200
+Hex No One Escapes Death	Remember Me	300
 Hex No One Escapes Death	Whispers	200
-Hex Ruin	Hex Thrill Of The Hunt	100
+Hex Ruin	Hex The Third Seal	-300
+Hex Ruin	Hex Thrill Of The Hunt	300
 Hex Ruin	Overcharge	-999
 Hex Ruin	Pop Goes The Weasel	-999
 Hex Ruin	Surge	-999
 Hex Ruin	Surveillance	300
-Hex The Third Seal	Hex Thrill Of The Hunt	100
+Hex The Third Seal	Hex Thrill Of The Hunt	200
 Hex The Third Seal	Knock Out	300
 Hex The Third Seal	Whispers	50
 Infectious Fright	Knock Out	100
@@ -324,8 +325,9 @@ Make Your Choice	Territorial Imperative	100
 Make Your Choice	Whispers	50
 Mindbreaker	Tinkerer	-300
 Monitor & Abuse	Shadowborn	-999
+Monitor & Abuse	Surveillance	100
 Monitor & Abuse	Whispers	100
-Nemesis	Play With Your Food	500
+Nemesis	Play With Your Food	200
 Nemesis	Rancor	100
 Nemesis	Remember Me	100
 Nemesis	Save The Best For Last	-300

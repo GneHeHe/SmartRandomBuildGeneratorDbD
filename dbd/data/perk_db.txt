@@ -18,13 +18,13 @@ Distressing	Killer	iconPerks_distressing	5
 Dying Light	Killer	iconPerks_dyingLight	25
 Enduring	Killer	iconPerks_enduring	250
 Fire Up	Killer	iconPerks_fireUp	10
-Franklin's Demise	Killer	iconPerks_franklinsLoss	200
+Franklin's Demise	Killer	iconPerks_franklinsLoss	25
 Furtive Chase	Killer	iconPerks_FurtiveChase	25
 Hangman's Trick	Killer	iconPerks_hangmansTrick	1
 Hex Devour Hope	Killer	iconPerks_devourHope	50
 Hex Haunted Ground	Killer	iconPerks_hauntedGround	1
 Hex Huntress Lullaby	Killer	iconPerks_HuntressLullaby	25
-Hex No One Escapes Death	Killer	iconPerks_noOneEscapesDeath	150
+Hex No One Escapes Death	Killer	iconPerks_noOneEscapesDeath	200
 Hex Ruin	Killer	iconPerks_ruin	100
 Hex The Third Seal	Killer	iconPerks_theThirdSeal	10
 Hex Thrill Of The Hunt	Killer	iconPerks_thrillOfTheHunt	1
@@ -54,7 +54,7 @@ Sloppy Butcher	Killer	iconPerks_sloppyButcher	200
 Spies From The Shadows	Killer	iconPerks_spiesFromTheShadows	25
 Spirit Fury	Killer	iconPerks_spiritFury	1
 Stridor	Killer	iconPerks_stridor	100
-Surge	Killer	iconPerks_Surge	100
+Surge	Killer	iconPerks_Surge	150
 Surveillance	Killer	iconPerks_surveillance	150
 Territorial Imperative	Killer	iconPerks_TerritorialImperative	25
 Thanatophobia	Killer	iconPerks_thatanophobia	100
