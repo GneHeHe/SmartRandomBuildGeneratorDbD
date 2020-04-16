@@ -52,6 +52,7 @@ Boil Over	Saboteur	50
 Bond	Botany Knowledge	50
 Bond	Breakout	100
 Bond	Empathy	-300
+Bond	For the People	50
 Bond	Inner Strength	-100
 Bond	Iron Will	200
 Bond	Leader	50
@@ -96,7 +97,9 @@ Dance With Me	Quick & Quiet	100
 Dance With Me	Windows Of Opportunity	200
 Dark Sense	Poised	50
 Dark Sense	Wake Up!	100
+Dead Hard	For the People	100
 Dead Hard	Head On	-100
+Dead Hard	Iron Will	50
 Dead Hard	Lithe	-100
 Dead Hard	No Mither	50
 Dead Hard	Sprint Burst	-999
@@ -110,6 +113,7 @@ Decisive Strike	Object Of Obsession	100
 Decisive Strike	Tenacity	100
 Decisive Strike	Unbreakable	100
 Deliverance	Flip-Flop	50
+Deliverance	Off the Record	100
 Deliverance	Tenacity	50
 Deliverance	Unbreakable	50
 Detective's Hunch	Inner Strength	300
@@ -118,10 +122,13 @@ Detective's Hunch	Plunderer's Instinct	-300
 Detective's Hunch	Small Game	-300
 Distortion	Mettle Of Man	-999
 Distortion	Object Of Obsession	-999
+Distortion	Off the Record	-300
 Distortion	Self-Care	100
 Diversion	Iron Will	100
 Diversion	Quick & Quiet	50
+Diversion	Red Herring	50
 Diversion	Urban Evasion	300
+Empathy	For the People	50
 Empathy	Iron Will	100
 Empathy	Leader	50
 Empathy	Mettle Of Man	50
@@ -133,6 +140,12 @@ Fixated	Sprint Burst	200
 Flip-Flop	Saboteur	50
 Flip-Flop	Tenacity	100
 Flip-Flop	Unbreakable	100
+For the People	Inner Strength	50
+For the People	Iron Will	100
+For the People	Lucky Break	50
+For the People	No Mither	-999
+For the People	Resilience	50
+For the People	Self-Care	100
 Head On	Inner Strength	100
 Head On	Lightweight	50
 Head On	Lithe	-100
@@ -150,6 +163,7 @@ Inner Strength	Solidarity	-300
 Iron Will	Lightweight	50
 Iron Will	Lucky Break	200
 Iron Will	No Mither	50
+Iron Will	Off the Record	-300
 Iron Will	Pharmacy	50
 Iron Will	Plunderer's Instinct	50
 Iron Will	Poised	50
@@ -195,6 +209,7 @@ Premonition	Spine Chill	-300
 Premonition	Stake Out	50
 Premonition	Urban Evasion	200
 Prove Thyself	We're Gonna Live Forever	100
+Quick & Quiet	Red Herring	100
 Quick & Quiet	Resilience	100
 Quick & Quiet	Windows Of Opportunity	100
 Resilience	Spine Chill	300
@@ -227,6 +242,7 @@ Bamboozle	Enduring	50
 Bamboozle	Fire Up	50
 Barbecue & Chilli	Blood Echo	100
 Barbecue & Chilli	Deerstalker	-999
+Barbecue & Chilli	Hex Ruin	200
 Barbecue & Chilli	Iron Maiden	50
 Barbecue & Chilli	Pop Goes The Weasel	100
 Barbecue & Chilli	Thrilling Tremors	-999
@@ -259,9 +275,14 @@ Dark Devotion	Monitor & Abuse	-300
 Dark Devotion	Nemesis	50
 Dark Devotion	Save The Best For Last	-300
 Dark Devotion	Tinkerer	-300
+Dead Man's Switch	Furtive Chase	300
+Dead Man's Switch	Nemesis	300
+Dead Man's Switch	Play With Your Food	-300
+Dead Man's Switch	Save The Best For Last	-300
 Deerstalker	Infectious Fright	100
 Deerstalker	Knock Out	200
 Deerstalker	Sloppy Butcher	50
+Discordance	Hex Ruin	200
 Discordance	Monitor & Abuse	100
 Discordance	Surveillance	-100
 Discordance	Whispers	-100
@@ -286,6 +307,7 @@ Furtive Chase	Play With Your Food	100
 Furtive Chase	Save The Best For Last	-300
 Hex Devour Hope	Hex Haunted Ground	300
 Hex Devour Hope	Hex Huntress Lullaby	-300
+Hex Devour Hope	Hex Retribution	50
 Hex Devour Hope	Hex Ruin	-300
 Hex Devour Hope	Hex The Third Seal	-300
 Hex Devour Hope	Hex Thrill Of The Hunt	300
@@ -293,34 +315,44 @@ Hex Devour Hope	Make Your Choice	-300
 Hex Devour Hope	Pop Goes The Weasel	100
 Hex Devour Hope	Whispers	50
 Hex Haunted Ground	Hex Huntress Lullaby	200
+Hex Haunted Ground	Hex Retribution	100
 Hex Haunted Ground	Hex Ruin	200
 Hex Haunted Ground	Hex The Third Seal	200
 Hex Haunted Ground	Hex Thrill Of The Hunt	200
+Hex Huntress Lullaby	Hex Retribution	50
 Hex Huntress Lullaby	Hex Thrill Of The Hunt	200
 Hex Huntress Lullaby	Overcharge	100
 Hex Huntress Lullaby	Whispers	50
+Hex No One Escapes Death	Hex Retribution	50
 Hex No One Escapes Death	Hex Thrill Of The Hunt	100
+Hex No One Escapes Death	Infectious Fright	100
 Hex No One Escapes Death	Insidious	200
 Hex No One Escapes Death	Rancor	-100
 Hex No One Escapes Death	Remember Me	300
 Hex No One Escapes Death	Whispers	200
+Hex Retribution	Hex Ruin	50
+Hex Retribution	Hex The Third Seal	50
+Hex Retribution	Hex Thrill Of The Hunt	50
+Hex Retribution	Make Your Choice	50
 Hex Ruin	Hex The Third Seal	-300
 Hex Ruin	Hex Thrill Of The Hunt	300
 Hex Ruin	Overcharge	-999
 Hex Ruin	Pop Goes The Weasel	-999
 Hex Ruin	Surge	-999
 Hex Ruin	Surveillance	300
+Hex Ruin	Thrilling Tremors	200
 Hex The Third Seal	Hex Thrill Of The Hunt	200
 Hex The Third Seal	Knock Out	300
 Hex The Third Seal	Whispers	50
 Infectious Fright	Knock Out	100
-Infectious Fright	Make Your Choice	50
+Infectious Fright	Make Your Choice	100
 Infectious Fright	Monitor & Abuse	200
 Infectious Fright	Save The Best For Last	100
 Infectious Fright	Sloppy Butcher	100
 Infectious Fright	Whispers	-50
 Iron Grasp	Mad Grit	200
 Iron Grasp	Monstrous Shrine	50
+Knock Out	Pop Goes The Weasel	-300
 Make Your Choice	Territorial Imperative	100
 Make Your Choice	Whispers	50
 Mindbreaker	Tinkerer	-300
@@ -338,8 +370,8 @@ Overcharge	Unnerving Presence	200
 Pop Goes The Weasel	Surge	-50
 Pop Goes The Weasel	Surveillance	200
 Pop Goes The Weasel	Thrilling Tremors	200
-Rancor	Remember Me	100
-Rancor	Tinkerer	100
+Rancor	Remember Me	200
+Rancor	Tinkerer	50
 Remember Me	Save The Best For Last	-300
 Sloppy Butcher	Thanatophobia	200
 Spies From The Shadows	Whispers	-300

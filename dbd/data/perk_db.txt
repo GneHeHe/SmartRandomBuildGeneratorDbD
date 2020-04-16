@@ -138,3 +138,9 @@ Wake Up!	Survivor	iconPerks_wakeUp	10
 We'll Make It	Survivor	iconPerks_wellMakeIt	100
 We're Gonna Live Forever	Survivor	iconPerks_WereGonnaLiveForever	150
 Windows Of Opportunity	Survivor	iconPerks_windowsOfOpportunity	100
+Off the Record	Survivor	iconPerks_OffTheRecord	10
+Red Herring	Survivor	iconPerks_RedHerring	50
+For the People	Survivor	iconPerks_ForThePeople	100
+Gearhead	Killer	iconPerks_Gearhead	10
+Dead Man's Switch	Killer	iconPerks_DeadMansSwitch	10
+Hex Retribution	Killer	iconPerks_HexRetribution	1

@@ -36,3 +36,5 @@ Steve	Survivor	QM_charSelect_portrait
 Demogorgon	Killer	QK_charSelect_portrait
 Yui	Survivor	SS_charSelect_portrait
 The Oni	Killer	SK_charSelect_portrait
+Zarina	Survivor	US_charSelect_portrait
+Deathslinger	Killer	UK_charSelect_portrait

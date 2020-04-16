@@ -142,13 +142,13 @@ public class SRBG_TabDB extends JPanel {
         tf_name.setHorizontalAlignment(JTextField.CENTER);
         tf_name.setEditable(true);
         tf_name.setToolTipText("Define name of build");
-        tf_expr = new JTextField(10);
+        tf_expr = new JTextField(12);
         tf_expr.setText("");
         tf_expr.setHorizontalAlignment(JTextField.CENTER);
         tf_expr.setEditable(true);
         tf_expr.setToolTipText("<html>Build database can be filtered using patterns:<br><ul><li>Case insensitive search</li><li>Regular expressions can be used</li><li>Multiple filters can be applied using '@' separated pattern</li></ul>For instance:<ul><li>'build1' will extract my favorite build for each killer</li><li>'trapper@devour' will extract 'Trapper' builds that contain 'Hex Devour Hope' perk</li></ul>Using filter mode automatically disables loading of clicked build in the bottom area of the interface</html>");
-        tf_build = new JTextField(13);
-        tf_build.setText("Active Builds = " + table.getRowCount());
+        tf_build = new JTextField(11);
+        tf_build.setText(table.getRowCount() + " active Builds");
         tf_build.setHorizontalAlignment(JTextField.CENTER);
         tf_build.setEditable(false);
 
@@ -455,7 +455,7 @@ public class SRBG_TabDB extends JPanel {
         table.getModel().addTableModelListener(new TableModelListener() {
             @Override
             public void tableChanged(TableModelEvent e) {
-                String s = "Active Builds = " + table.getRowCount();
+                String s = table.getRowCount() + " active Builds";
                 // Update Field
                 System.out.println("# " + s);
                 tf_build.setText(s);
@@ -520,7 +520,7 @@ public class SRBG_TabDB extends JPanel {
         // Apply Row Filter
         table.getSorter().setRowFilter(RowFilter.andFilter(l_rf));
         // Update Field
-        tf_build.setText("Active Builds = " + table.getRowCount());
+        tf_build.setText(table.getRowCount() + " active Builds");
     }
 
     /**

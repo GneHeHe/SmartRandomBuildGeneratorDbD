@@ -92,7 +92,7 @@ Build	Killer	Clown	Barbecue & Chilli	Blood Warden	Corrupt Intervention	Hex No On
 Build	Killer	Clown	Barbecue & Chilli	Blood Warden	Hex No One Escapes Death	Pop Goes The Weasel
 Build	Killer	Clown	Barbecue & Chilli	Brutal Strength	Corrupt Intervention	Enduring
 Build	Killer	Clown	Barbecue & Chilli	Brutal Strength	Corrupt Intervention	Hex No One Escapes Death
-Build	Killer	Clown	Barbecue & Chilli	Brutal Strength	Corrupt Intervention	Pop Goes The Weasel
+Build1	Killer	Clown	Barbecue & Chilli	Brutal Strength	Corrupt Intervention	Pop Goes The Weasel
 Build	Killer	Clown	Barbecue & Chilli	Brutal Strength	Corrupt Intervention	Whispers
 Build	Killer	Clown	Barbecue & Chilli	Brutal Strength	Enduring	Pop Goes The Weasel
 Build	Killer	Clown	Barbecue & Chilli	Brutal Strength	Enduring	Spirit Fury
@@ -107,7 +107,7 @@ Build	Killer	Clown	Barbecue & Chilli	Corrupt Intervention	Hex No One Escapes Dea
 Build	Killer	Clown	Barbecue & Chilli	Corrupt Intervention	Hex No One Escapes Death	Whispers
 Build	Killer	Clown	Barbecue & Chilli	Corrupt Intervention	Make Your Choice	Pop Goes The Weasel
 Build	Killer	Clown	Barbecue & Chilli	Corrupt Intervention	Monitor & Abuse	Whispers
-Build	Killer	Clown	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last
+Build1	Killer	Clown	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last
 Build	Killer	Clown	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Surveillance
 Build	Killer	Clown	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Whispers
 Build	Killer	Clown	Barbecue & Chilli	Corrupt Intervention	Surge	Surveillance
@@ -178,7 +178,7 @@ Build	Killer	Clown	Brutal Strength	Corrupt Intervention	Make Your Choice	Pop Goe
 Build	Killer	Clown	Brutal Strength	Corrupt Intervention	Make Your Choice	Whispers
 Build	Killer	Clown	Brutal Strength	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last
 Build	Killer	Clown	Brutal Strength	Corrupt Intervention	Pop Goes The Weasel	Surveillance
-Build1	Killer	Clown	Brutal Strength	Corrupt Intervention	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Clown	Brutal Strength	Corrupt Intervention	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Clown	Brutal Strength	Corrupt Intervention	Pop Goes The Weasel	Whispers
 Build	Killer	Clown	Brutal Strength	Corrupt Intervention	Save The Best For Last	Whispers
 Build	Killer	Clown	Brutal Strength	Corrupt Intervention	Surge	Surveillance
@@ -287,7 +287,7 @@ Build	Killer	Clown	Corrupt Intervention	Make Your Choice	Monitor & Abuse	Whisper
 Build	Killer	Clown	Corrupt Intervention	Make Your Choice	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Clown	Corrupt Intervention	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Clown	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last	Surveillance
-Build1	Killer	Clown	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last	Thrilling Tremors
+Build	Killer	Clown	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last	Thrilling Tremors
 Build	Killer	Clown	Corrupt Intervention	Pop Goes The Weasel	Sloppy Butcher	Thrilling Tremors
 Build	Killer	Clown	Corrupt Intervention	Pop Goes The Weasel	Surge	Surveillance
 Build	Killer	Clown	Corrupt Intervention	Pop Goes The Weasel	Surveillance	Thrilling Tremors
@@ -373,6 +373,140 @@ Build	Killer	Clown	Pop Goes The Weasel	Save The Best For Last	Surveillance	Thril
 Build	Killer	Clown	Pop Goes The Weasel	Surge	Surveillance	Thrilling Tremors
 Build	Killer	Clown	Pop Goes The Weasel	Surge	Surveillance	Whispers
 Build	Killer	Clown	Undefined	Undefined	Undefined	Undefined
+################################# Build	Killer	Deathslinger #################################
+Build1	Killer	Deathslinger	A Nurse's Calling	Barbecue & Chilli	Corrupt Intervention	Monitor & Abuse
+Build	Killer	Deathslinger	A Nurse's Calling	Barbecue & Chilli	Corrupt Intervention	Sloppy Butcher
+Build	Killer	Deathslinger	A Nurse's Calling	Barbecue & Chilli	Discordance	Monitor & Abuse
+Build	Killer	Deathslinger	A Nurse's Calling	Barbecue & Chilli	Hex Ruin	Monitor & Abuse
+Build	Killer	Deathslinger	A Nurse's Calling	Barbecue & Chilli	Hex Ruin	Sloppy Butcher
+Build	Killer	Deathslinger	A Nurse's Calling	Barbecue & Chilli	Monitor & Abuse	Pop Goes The Weasel
+Build	Killer	Deathslinger	A Nurse's Calling	Barbecue & Chilli	Monitor & Abuse	Sloppy Butcher
+Build	Killer	Deathslinger	A Nurse's Calling	Barbecue & Chilli	Monitor & Abuse	Whispers
+Build	Killer	Deathslinger	A Nurse's Calling	Barbecue & Chilli	Pop Goes The Weasel	Sloppy Butcher
+Build	Killer	Deathslinger	A Nurse's Calling	Bitter Murmur	Hex No One Escapes Death	Monitor & Abuse
+Build	Killer	Deathslinger	A Nurse's Calling	Bitter Murmur	Hex No One Escapes Death	Sloppy Butcher
+Build	Killer	Deathslinger	A Nurse's Calling	Corrupt Intervention	Discordance	Monitor & Abuse
+Build	Killer	Deathslinger	A Nurse's Calling	Corrupt Intervention	Discordance	Sloppy Butcher
+Build	Killer	Deathslinger	A Nurse's Calling	Corrupt Intervention	Monitor & Abuse	Sloppy Butcher
+Build	Killer	Deathslinger	A Nurse's Calling	Corrupt Intervention	Monitor & Abuse	Whispers
+Build	Killer	Deathslinger	A Nurse's Calling	Corrupt Intervention	Sloppy Butcher	Whispers
+Build	Killer	Deathslinger	A Nurse's Calling	Discordance	Hex Ruin	Monitor & Abuse
+Build	Killer	Deathslinger	A Nurse's Calling	Discordance	Hex Ruin	Sloppy Butcher
+Build	Killer	Deathslinger	A Nurse's Calling	Discordance	Monitor & Abuse	Pop Goes The Weasel
+Build	Killer	Deathslinger	A Nurse's Calling	Discordance	Monitor & Abuse	Sloppy Butcher
+Build	Killer	Deathslinger	A Nurse's Calling	Enduring	Sloppy Butcher	Spirit Fury
+Build	Killer	Deathslinger	A Nurse's Calling	Hex Devour Hope	Hex Haunted Ground	Monitor & Abuse
+Build	Killer	Deathslinger	A Nurse's Calling	Hex Devour Hope	Hex Haunted Ground	Sloppy Butcher
+Build	Killer	Deathslinger	A Nurse's Calling	Hex Devour Hope	Hex Thrill Of The Hunt	Sloppy Butcher
+Build	Killer	Deathslinger	A Nurse's Calling	Hex Ruin	Hex Thrill Of The Hunt	Monitor & Abuse
+Build	Killer	Deathslinger	A Nurse's Calling	Hex Ruin	Hex Thrill Of The Hunt	Sloppy Butcher
+Build	Killer	Deathslinger	A Nurse's Calling	Hex Ruin	Monitor & Abuse	Surveillance
+Build	Killer	Deathslinger	A Nurse's Calling	Hex Ruin	Monitor & Abuse	Thrilling Tremors
+Build	Killer	Deathslinger	A Nurse's Calling	Hex Ruin	Sloppy Butcher	Surveillance
+Build	Killer	Deathslinger	A Nurse's Calling	Hex Ruin	Sloppy Butcher	Thrilling Tremors
+Build	Killer	Deathslinger	A Nurse's Calling	Monitor & Abuse	Pop Goes The Weasel	Sloppy Butcher
+Build	Killer	Deathslinger	A Nurse's Calling	Monitor & Abuse	Pop Goes The Weasel	Surveillance
+Build	Killer	Deathslinger	A Nurse's Calling	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Deathslinger	A Nurse's Calling	Monitor & Abuse	Pop Goes The Weasel	Whispers
+Build	Killer	Deathslinger	A Nurse's Calling	Monitor & Abuse	Sloppy Butcher	Whispers
+Build	Killer	Deathslinger	A Nurse's Calling	Monitor & Abuse	Surge	Surveillance
+Build	Killer	Deathslinger	A Nurse's Calling	Pop Goes The Weasel	Sloppy Butcher	Surveillance
+Build	Killer	Deathslinger	A Nurse's Calling	Pop Goes The Weasel	Sloppy Butcher	Thrilling Tremors
+Build	Killer	Deathslinger	A Nurse's Calling	Sloppy Butcher	Surge	Surveillance
+Build	Killer	Deathslinger	Barbecue & Chilli	Bitter Murmur	Hex No One Escapes Death	Hex Ruin
+Build	Killer	Deathslinger	Barbecue & Chilli	Bitter Murmur	Hex No One Escapes Death	Pop Goes The Weasel
+Build	Killer	Deathslinger	Barbecue & Chilli	Bitter Murmur	Hex No One Escapes Death	Whispers
+Build	Killer	Deathslinger	Barbecue & Chilli	Corrupt Intervention	Discordance	Hex Ruin
+Build	Killer	Deathslinger	Barbecue & Chilli	Corrupt Intervention	Discordance	Monitor & Abuse
+Build	Killer	Deathslinger	Barbecue & Chilli	Corrupt Intervention	Discordance	Pop Goes The Weasel
+Build	Killer	Deathslinger	Barbecue & Chilli	Corrupt Intervention	Hex Devour Hope	Hex Haunted Ground
+Build	Killer	Deathslinger	Barbecue & Chilli	Corrupt Intervention	Hex Devour Hope	Hex Thrill Of The Hunt
+Build	Killer	Deathslinger	Barbecue & Chilli	Corrupt Intervention	Hex No One Escapes Death	Whispers
+Build1	Killer	Deathslinger	Barbecue & Chilli	Corrupt Intervention	Monitor & Abuse	Sloppy Butcher
+Build	Killer	Deathslinger	Barbecue & Chilli	Corrupt Intervention	Monitor & Abuse	Whispers
+Build	Killer	Deathslinger	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Whispers
+Build	Killer	Deathslinger	Barbecue & Chilli	Discordance	Hex Ruin	Hex Thrill Of The Hunt
+Build	Killer	Deathslinger	Barbecue & Chilli	Discordance	Hex Ruin	Monitor & Abuse
+Build	Killer	Deathslinger	Barbecue & Chilli	Discordance	Hex Ruin	Surveillance
+Build	Killer	Deathslinger	Barbecue & Chilli	Discordance	Monitor & Abuse	Pop Goes The Weasel
+Build	Killer	Deathslinger	Barbecue & Chilli	Enduring	Hex Ruin	Spirit Fury
+Build	Killer	Deathslinger	Barbecue & Chilli	Enduring	Pop Goes The Weasel	Spirit Fury
+Build	Killer	Deathslinger	Barbecue & Chilli	Hex Devour Hope	Hex Haunted Ground	Pop Goes The Weasel
+Build	Killer	Deathslinger	Barbecue & Chilli	Hex Devour Hope	Hex Haunted Ground	Whispers
+Build	Killer	Deathslinger	Barbecue & Chilli	Hex Devour Hope	Hex No One Escapes Death	Hex Thrill Of The Hunt
+Build	Killer	Deathslinger	Barbecue & Chilli	Hex Devour Hope	Hex Thrill Of The Hunt	Pop Goes The Weasel
+Build	Killer	Deathslinger	Barbecue & Chilli	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The Hunt
+Build	Killer	Deathslinger	Barbecue & Chilli	Hex No One Escapes Death	Hex Ruin	Hex Thrill Of The Hunt
+Build	Killer	Deathslinger	Barbecue & Chilli	Hex No One Escapes Death	Hex Ruin	Whispers
+Build	Killer	Deathslinger	Barbecue & Chilli	Hex No One Escapes Death	Monitor & Abuse	Whispers
+Build	Killer	Deathslinger	Barbecue & Chilli	Hex No One Escapes Death	Pop Goes The Weasel	Whispers
+Build	Killer	Deathslinger	Barbecue & Chilli	Hex Ruin	Hex Thrill Of The Hunt	Surveillance
+Build	Killer	Deathslinger	Barbecue & Chilli	Hex Ruin	Monitor & Abuse	Surveillance
+Build	Killer	Deathslinger	Barbecue & Chilli	Hex Ruin	Monitor & Abuse	Whispers
+Build	Killer	Deathslinger	Barbecue & Chilli	Monitor & Abuse	Pop Goes The Weasel	Surveillance
+Build	Killer	Deathslinger	Barbecue & Chilli	Monitor & Abuse	Pop Goes The Weasel	Whispers
+Build	Killer	Deathslinger	Barbecue & Chilli	Monitor & Abuse	Surge	Surveillance
+Build	Killer	Deathslinger	Barbecue & Chilli	Pop Goes The Weasel	Surge	Surveillance
+Build	Killer	Deathslinger	Bitter Murmur	Discordance	Hex No One Escapes Death	Hex Ruin
+Build	Killer	Deathslinger	Bitter Murmur	Discordance	Hex No One Escapes Death	Monitor & Abuse
+Build	Killer	Deathslinger	Bitter Murmur	Hex No One Escapes Death	Hex Ruin	Hex Thrill Of The Hunt
+Build	Killer	Deathslinger	Bitter Murmur	Hex No One Escapes Death	Hex Ruin	Thrilling Tremors
+Build	Killer	Deathslinger	Bitter Murmur	Hex No One Escapes Death	Pop Goes The Weasel	Surveillance
+Build	Killer	Deathslinger	Bitter Murmur	Hex No One Escapes Death	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Deathslinger	Bitter Murmur	Hex No One Escapes Death	Pop Goes The Weasel	Whispers
+Build	Killer	Deathslinger	Bitter Murmur	Hex No One Escapes Death	Surge	Surveillance
+Build	Killer	Deathslinger	Corrupt Intervention	Discordance	Enduring	Spirit Fury
+Build	Killer	Deathslinger	Corrupt Intervention	Discordance	Hex Devour Hope	Hex Haunted Ground
+Build	Killer	Deathslinger	Corrupt Intervention	Discordance	Hex Devour Hope	Hex Thrill Of The Hunt
+Build	Killer	Deathslinger	Corrupt Intervention	Discordance	Hex No One Escapes Death	Whispers
+Build	Killer	Deathslinger	Corrupt Intervention	Discordance	Hex Ruin	Hex Thrill Of The Hunt
+Build	Killer	Deathslinger	Corrupt Intervention	Discordance	Monitor & Abuse	Whispers
+Build	Killer	Deathslinger	Corrupt Intervention	Discordance	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Deathslinger	Corrupt Intervention	Hex Devour Hope	Hex Haunted Ground	Whispers
+Build	Killer	Deathslinger	Corrupt Intervention	Hex Devour Hope	Hex Thrill Of The Hunt	Whispers
+Build	Killer	Deathslinger	Corrupt Intervention	Hex Devour Hope	Pop Goes The Weasel	Whispers
+Build	Killer	Deathslinger	Corrupt Intervention	Hex No One Escapes Death	Monitor & Abuse	Whispers
+Build	Killer	Deathslinger	Corrupt Intervention	Hex Ruin	Surveillance	Whispers
+Build	Killer	Deathslinger	Corrupt Intervention	Pop Goes The Weasel	Thrilling Tremors	Whispers
+Build	Killer	Deathslinger	Discordance	Hex Haunted Ground	Hex Ruin	Hex Thrill Of The Hunt
+Build	Killer	Deathslinger	Discordance	Hex No One Escapes Death	Hex Ruin	Hex Thrill Of The Hunt
+Build	Killer	Deathslinger	Discordance	Hex Ruin	Hex Thrill Of The Hunt	Thrilling Tremors
+Build	Killer	Deathslinger	Discordance	Hex Ruin	Monitor & Abuse	Surveillance
+Build	Killer	Deathslinger	Discordance	Hex Ruin	Monitor & Abuse	Thrilling Tremors
+Build	Killer	Deathslinger	Discordance	Hex Ruin	Surveillance	Thrilling Tremors
+Build	Killer	Deathslinger	Discordance	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Deathslinger	Enduring	Hex Ruin	Spirit Fury	Surveillance
+Build	Killer	Deathslinger	Enduring	Hex Ruin	Spirit Fury	Thrilling Tremors
+Build	Killer	Deathslinger	Enduring	Monitor & Abuse	Spirit Fury	Whispers
+Build	Killer	Deathslinger	Hex Devour Hope	Hex Haunted Ground	Hex Thrill Of The Hunt	Pop Goes The Weasel
+Build	Killer	Deathslinger	Hex Devour Hope	Hex Haunted Ground	Hex Thrill Of The Hunt	Whispers
+Build	Killer	Deathslinger	Hex Devour Hope	Hex Haunted Ground	Pop Goes The Weasel	Surveillance
+Build	Killer	Deathslinger	Hex Devour Hope	Hex Haunted Ground	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Deathslinger	Hex Devour Hope	Hex Haunted Ground	Pop Goes The Weasel	Whispers
+Build	Killer	Deathslinger	Hex Devour Hope	Hex Haunted Ground	Surge	Surveillance
+Build	Killer	Deathslinger	Hex Devour Hope	Hex No One Escapes Death	Hex Thrill Of The Hunt	Pop Goes The Weasel
+Build	Killer	Deathslinger	Hex Devour Hope	Hex No One Escapes Death	Hex Thrill Of The Hunt	Whispers
+Build	Killer	Deathslinger	Hex Devour Hope	Hex Thrill Of The Hunt	Monitor & Abuse	Whispers
+Build	Killer	Deathslinger	Hex Devour Hope	Hex Thrill Of The Hunt	Pop Goes The Weasel	Surveillance
+Build	Killer	Deathslinger	Hex Devour Hope	Hex Thrill Of The Hunt	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Deathslinger	Hex Devour Hope	Hex Thrill Of The Hunt	Pop Goes The Weasel	Whispers
+Build	Killer	Deathslinger	Hex Devour Hope	Hex Thrill Of The Hunt	Surge	Surveillance
+Build	Killer	Deathslinger	Hex Haunted Ground	Hex No One Escapes Death	Hex Ruin	Hex Thrill Of The Hunt
+Build	Killer	Deathslinger	Hex No One Escapes Death	Hex Ruin	Hex Thrill Of The Hunt	Thrilling Tremors
+Build	Killer	Deathslinger	Hex No One Escapes Death	Hex Ruin	Thrilling Tremors	Whispers
+Build	Killer	Deathslinger	Hex No One Escapes Death	Infectious Fright	Monitor & Abuse	Sloppy Butcher
+Build	Killer	Deathslinger	Hex No One Escapes Death	Monitor & Abuse	Pop Goes The Weasel	Whispers
+Build	Killer	Deathslinger	Hex No One Escapes Death	Pop Goes The Weasel	Thrilling Tremors	Whispers
+Build	Killer	Deathslinger	Hex No One Escapes Death	Surge	Surveillance	Whispers
+Build	Killer	Deathslinger	Hex Ruin	Hex Thrill Of The Hunt	Monitor & Abuse	Surveillance
+Build	Killer	Deathslinger	Hex Ruin	Hex Thrill Of The Hunt	Surveillance	Thrilling Tremors
+Build	Killer	Deathslinger	Hex Ruin	Monitor & Abuse	Surveillance	Whispers
+Build	Killer	Deathslinger	Hex Ruin	Monitor & Abuse	Thrilling Tremors	Whispers
+Build	Killer	Deathslinger	Infectious Fright	Monitor & Abuse	Save The Best For Last	Sloppy Butcher
+Build	Killer	Deathslinger	Monitor & Abuse	Pop Goes The Weasel	Surveillance	Thrilling Tremors
+Build	Killer	Deathslinger	Monitor & Abuse	Pop Goes The Weasel	Thrilling Tremors	Whispers
+Build	Killer	Deathslinger	Monitor & Abuse	Surge	Surveillance	Whispers
+Build	Killer	Deathslinger	Pop Goes The Weasel	Surge	Surveillance	Thrilling Tremors
 ################################# Build	Killer	Demogorgon #################################
 Build	Killer	Demogorgon	Agitation	Barbecue & Chilli	Corrupt Intervention	Iron Grasp
 Build	Killer	Demogorgon	Agitation	Barbecue & Chilli	Corrupt Intervention	Mad Grit
@@ -817,9 +951,9 @@ Build	Killer	Doctor	Barbecue & Chilli	Corrupt Intervention	Infectious Fright	Mon
 Build	Killer	Doctor	Barbecue & Chilli	Corrupt Intervention	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Doctor	Barbecue & Chilli	Corrupt Intervention	Monitor & Abuse	Whispers
 Build	Killer	Doctor	Barbecue & Chilli	Corrupt Intervention	Overcharge	Pop Goes The Weasel
-Build	Killer	Doctor	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last
+Build1	Killer	Doctor	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last
 Build	Killer	Doctor	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Surveillance
-Build	Killer	Doctor	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Whispers
+Build1	Killer	Doctor	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Whispers
 Build	Killer	Doctor	Barbecue & Chilli	Corrupt Intervention	Surge	Surveillance
 Build	Killer	Doctor	Barbecue & Chilli	Enduring	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Doctor	Barbecue & Chilli	Enduring	Monitor & Abuse	Spirit Fury
@@ -993,10 +1127,10 @@ Build	Killer	Doctor	Corrupt Intervention	Overcharge	Save The Best For Last	Unner
 Build	Killer	Doctor	Corrupt Intervention	Overcharge	Surveillance	Unnerving Presence
 Build	Killer	Doctor	Corrupt Intervention	Overcharge	Unnerving Presence	Whispers
 Build	Killer	Doctor	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last	Surveillance
-Build1	Killer	Doctor	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last	Thrilling Tremors
+Build	Killer	Doctor	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last	Thrilling Tremors
 Build	Killer	Doctor	Corrupt Intervention	Pop Goes The Weasel	Surge	Surveillance
 Build	Killer	Doctor	Corrupt Intervention	Pop Goes The Weasel	Surveillance	Whispers
-Build1	Killer	Doctor	Corrupt Intervention	Pop Goes The Weasel	Thrilling Tremors	Whispers
+Build	Killer	Doctor	Corrupt Intervention	Pop Goes The Weasel	Thrilling Tremors	Whispers
 Build	Killer	Doctor	Corrupt Intervention	Surge	Surveillance	Whispers
 Build	Killer	Doctor	Coulrophobia	Distressing	Overcharge	Pop Goes The Weasel
 Build	Killer	Doctor	Coulrophobia	Distressing	Overcharge	Unnerving Presence
@@ -1511,7 +1645,7 @@ Build	Killer	Ghostface	A Nurse's Calling	Bamboozle	Sloppy Butcher	Whispers
 Build	Killer	Ghostface	A Nurse's Calling	Barbecue & Chilli	Corrupt Intervention	Discordance
 Build	Killer	Ghostface	A Nurse's Calling	Barbecue & Chilli	Corrupt Intervention	Enduring
 Build1	Killer	Ghostface	A Nurse's Calling	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel
-Build	Killer	Ghostface	A Nurse's Calling	Barbecue & Chilli	Corrupt Intervention	Sloppy Butcher
+Build1	Killer	Ghostface	A Nurse's Calling	Barbecue & Chilli	Corrupt Intervention	Sloppy Butcher
 Build	Killer	Ghostface	A Nurse's Calling	Barbecue & Chilli	Corrupt Intervention	Surveillance
 Build	Killer	Ghostface	A Nurse's Calling	Barbecue & Chilli	Corrupt Intervention	Whispers
 Build	Killer	Ghostface	A Nurse's Calling	Barbecue & Chilli	Discordance	Enduring
@@ -1557,7 +1691,7 @@ Build	Killer	Ghostface	A Nurse's Calling	Corrupt Intervention	Discordance	Hex No
 Build	Killer	Ghostface	A Nurse's Calling	Corrupt Intervention	Discordance	I'm All Ears
 Build	Killer	Ghostface	A Nurse's Calling	Corrupt Intervention	Discordance	Pop Goes The Weasel
 Build	Killer	Ghostface	A Nurse's Calling	Corrupt Intervention	Discordance	Save The Best For Last
-Build1	Killer	Ghostface	A Nurse's Calling	Corrupt Intervention	Discordance	Sloppy Butcher
+Build	Killer	Ghostface	A Nurse's Calling	Corrupt Intervention	Discordance	Sloppy Butcher
 Build	Killer	Ghostface	A Nurse's Calling	Corrupt Intervention	Discordance	Spies From The Shadows
 Build	Killer	Ghostface	A Nurse's Calling	Corrupt Intervention	Discordance	Surveillance
 Build	Killer	Ghostface	A Nurse's Calling	Corrupt Intervention	Discordance	Thrilling Tremors
@@ -3485,9 +3619,11 @@ Build	Killer	Legion	Barbecue & Chilli	Blood Echo	Pop Goes The Weasel	Thanatophob
 Build	Killer	Legion	Barbecue & Chilli	Corrupt Intervention	Discordance	I'm All Ears
 Build	Killer	Legion	Barbecue & Chilli	Corrupt Intervention	Discordance	Monitor & Abuse
 Build	Killer	Legion	Barbecue & Chilli	Corrupt Intervention	Discordance	Pop Goes The Weasel
+Build1	Killer	Legion	Barbecue & Chilli	Corrupt Intervention	Discordance	Thanatophobia
 Build	Killer	Legion	Barbecue & Chilli	Corrupt Intervention	Enduring	Pop Goes The Weasel
 Build	Killer	Legion	Barbecue & Chilli	Corrupt Intervention	Enduring	Spirit Fury
 Build	Killer	Legion	Barbecue & Chilli	Corrupt Intervention	I'm All Ears	Pop Goes The Weasel
+Build1	Killer	Legion	Barbecue & Chilli	Corrupt Intervention	I'm All Ears	Thanatophobia
 Build	Killer	Legion	Barbecue & Chilli	Corrupt Intervention	I'm All Ears	Whispers
 Build	Killer	Legion	Barbecue & Chilli	Corrupt Intervention	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Legion	Barbecue & Chilli	Corrupt Intervention	Monitor & Abuse	Thanatophobia
@@ -3527,7 +3663,7 @@ Build	Killer	Legion	Corrupt Intervention	Discordance	I'm All Ears	Thanatophobia
 Build	Killer	Legion	Corrupt Intervention	Discordance	I'm All Ears	Zanshin Tactics
 Build	Killer	Legion	Corrupt Intervention	Discordance	Infectious Fright	Monitor & Abuse
 Build	Killer	Legion	Corrupt Intervention	Discordance	Monitor & Abuse	Pop Goes The Weasel
-Build1	Killer	Legion	Corrupt Intervention	Discordance	Monitor & Abuse	Thanatophobia
+Build	Killer	Legion	Corrupt Intervention	Discordance	Monitor & Abuse	Thanatophobia
 Build	Killer	Legion	Corrupt Intervention	Discordance	Monitor & Abuse	Whispers
 Build	Killer	Legion	Corrupt Intervention	Discordance	Monitor & Abuse	Zanshin Tactics
 Build	Killer	Legion	Corrupt Intervention	Discordance	Pop Goes The Weasel	Surveillance
@@ -3553,7 +3689,7 @@ Build	Killer	Legion	Corrupt Intervention	Hex The Third Seal	Knock Out	Whispers
 Build	Killer	Legion	Corrupt Intervention	I'm All Ears	Infectious Fright	Monitor & Abuse
 Build	Killer	Legion	Corrupt Intervention	I'm All Ears	Monitor & Abuse	Whispers
 Build	Killer	Legion	Corrupt Intervention	I'm All Ears	Pop Goes The Weasel	Thanatophobia
-Build1	Killer	Legion	Corrupt Intervention	I'm All Ears	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Legion	Corrupt Intervention	I'm All Ears	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Legion	Corrupt Intervention	Infectious Fright	Knock Out	Monitor & Abuse
 Build	Killer	Legion	Corrupt Intervention	Infectious Fright	Monitor & Abuse	Thanatophobia
 Build	Killer	Legion	Corrupt Intervention	Monitor & Abuse	Pop Goes The Weasel	Surveillance
@@ -4972,13 +5108,14 @@ Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Discordance	I'm All E
 Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Discordance	Infectious Fright
 Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Discordance	Monitor & Abuse
 Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Discordance	Pop Goes The Weasel
-Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Discordance	Thanatophobia
+Build1	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Discordance	Thanatophobia
 Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Enduring	Pop Goes The Weasel
 Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Enduring	Spirit Fury
 Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Enduring	Thanatophobia
 Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Hex Devour Hope	Pop Goes The Weasel
 Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	I'm All Ears	Pop Goes The Weasel
 Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Infectious Fright	Monitor & Abuse
+Build1	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Infectious Fright	Thanatophobia
 Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Surveillance
 Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Thanatophobia
 Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Surge	Surveillance
@@ -5059,7 +5196,7 @@ Build	Killer	Plague	Corrupt Intervention	Discordance	Monitor & Abuse	Zanshin Tac
 Build	Killer	Plague	Corrupt Intervention	Discordance	Nemesis	Play With Your Food
 Build	Killer	Plague	Corrupt Intervention	Discordance	Pop Goes The Weasel	Surveillance
 Build	Killer	Plague	Corrupt Intervention	Discordance	Pop Goes The Weasel	Thanatophobia
-Build1	Killer	Plague	Corrupt Intervention	Discordance	Pop Goes The Weasel	Thrilling Tremors
+Build	Killer	Plague	Corrupt Intervention	Discordance	Pop Goes The Weasel	Thrilling Tremors
 Build	Killer	Plague	Corrupt Intervention	Discordance	Surge	Surveillance
 Build	Killer	Plague	Corrupt Intervention	Enduring	Hex Devour Hope	Spirit Fury
 Build	Killer	Plague	Corrupt Intervention	Enduring	I'm All Ears	Infectious Fright
@@ -5102,7 +5239,7 @@ Build	Killer	Plague	Corrupt Intervention	Infectious Fright	Knock Out	Monitor & A
 Build	Killer	Plague	Corrupt Intervention	Infectious Fright	Monitor & Abuse	Pop Goes The Weasel
 Build	Killer	Plague	Corrupt Intervention	Infectious Fright	Monitor & Abuse	Rancor
 Build	Killer	Plague	Corrupt Intervention	Infectious Fright	Monitor & Abuse	Surveillance
-Build1	Killer	Plague	Corrupt Intervention	Infectious Fright	Monitor & Abuse	Thanatophobia
+Build	Killer	Plague	Corrupt Intervention	Infectious Fright	Monitor & Abuse	Thanatophobia
 Build	Killer	Plague	Corrupt Intervention	Infectious Fright	Monitor & Abuse	Whispers
 Build	Killer	Plague	Corrupt Intervention	Infectious Fright	Monitor & Abuse	Zanshin Tactics
 Build	Killer	Plague	Corrupt Intervention	Infectious Fright	Nemesis	Play With Your Food
@@ -6076,7 +6213,7 @@ Build	Killer	Trapper	Barbecue & Chilli	Corrupt Intervention	Enduring	Whispers
 Build	Killer	Trapper	Barbecue & Chilli	Corrupt Intervention	Hex No One Escapes Death	Whispers
 Build	Killer	Trapper	Barbecue & Chilli	Corrupt Intervention	Make Your Choice	Whispers
 Build	Killer	Trapper	Barbecue & Chilli	Corrupt Intervention	Monitor & Abuse	Whispers
-Build	Killer	Trapper	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last
+Build1	Killer	Trapper	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last
 Build	Killer	Trapper	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Surveillance
 Build	Killer	Trapper	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Whispers
 Build	Killer	Trapper	Barbecue & Chilli	Corrupt Intervention	Save The Best For Last	Whispers
@@ -6233,7 +6370,7 @@ Build	Killer	Trapper	Corrupt Intervention	Monitor & Abuse	Pop Goes The Weasel	Wh
 Build	Killer	Trapper	Corrupt Intervention	Monitor & Abuse	Save The Best For Last	Whispers
 Build	Killer	Trapper	Corrupt Intervention	Monitor & Abuse	Surveillance	Whispers
 Build	Killer	Trapper	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last	Surveillance
-Build1	Killer	Trapper	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last	Thrilling Tremors
+Build	Killer	Trapper	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last	Thrilling Tremors
 Build1	Killer	Trapper	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last	Whispers
 Build	Killer	Trapper	Corrupt Intervention	Pop Goes The Weasel	Surge	Surveillance
 Build	Killer	Trapper	Corrupt Intervention	Pop Goes The Weasel	Surveillance	Whispers
@@ -6575,6 +6712,7 @@ Build	Killer	Wraith	Barbecue & Chilli	Corrupt Intervention	Enduring	Whispers
 Build	Killer	Wraith	Barbecue & Chilli	Corrupt Intervention	Hex No One Escapes Death	Whispers
 Build	Killer	Wraith	Barbecue & Chilli	Corrupt Intervention	Make Your Choice	Pop Goes The Weasel
 Build	Killer	Wraith	Barbecue & Chilli	Corrupt Intervention	Make Your Choice	Whispers
+Build1	Killer	Wraith	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last
 Build	Killer	Wraith	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Surveillance
 Build	Killer	Wraith	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Whispers
 Build	Killer	Wraith	Barbecue & Chilli	Corrupt Intervention	Surge	Surveillance
@@ -6698,7 +6836,7 @@ Build	Killer	Wraith	Corrupt Intervention	Nemesis	Play With Your Food	Pop Goes Th
 Build	Killer	Wraith	Corrupt Intervention	Nemesis	Play With Your Food	Sloppy Butcher
 Build	Killer	Wraith	Corrupt Intervention	Nemesis	Play With Your Food	Surveillance
 Build	Killer	Wraith	Corrupt Intervention	Nemesis	Play With Your Food	Whispers
-Build1	Killer	Wraith	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last	Thrilling Tremors
+Build	Killer	Wraith	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last	Thrilling Tremors
 Build	Killer	Wraith	Corrupt Intervention	Pop Goes The Weasel	Surge	Surveillance
 Build	Killer	Wraith	Corrupt Intervention	Pop Goes The Weasel	Surveillance	Thrilling Tremors
 Build	Killer	Wraith	Corrupt Intervention	Pop Goes The Weasel	Surveillance	Whispers
@@ -6943,6 +7081,7 @@ Build	Survivor	GenSurv	Adrenaline	Bond	Diversion	Iron Will
 Build	Survivor	GenSurv	Adrenaline	Bond	Diversion	Open-Handed
 Build	Survivor	GenSurv	Adrenaline	Bond	Diversion	Urban Evasion
 Build	Survivor	GenSurv	Adrenaline	Bond	Flip-Flop	Iron Will
+Build	Survivor	GenSurv	Adrenaline	Bond	For the People	Iron Will
 Build	Survivor	GenSurv	Adrenaline	Bond	Head On	Iron Will
 Build	Survivor	GenSurv	Adrenaline	Bond	Hope	Iron Will
 Build	Survivor	GenSurv	Adrenaline	Bond	Hope	Lithe
@@ -6985,6 +7124,7 @@ Build	Survivor	GenSurv	Adrenaline	Bond	Open-Handed	Poised
 Build	Survivor	GenSurv	Adrenaline	Bond	Open-Handed	Quick & Quiet
 Build	Survivor	GenSurv	Adrenaline	Borrowed Time	Dead Hard	Decisive Strike
 Build	Survivor	GenSurv	Adrenaline	Borrowed Time	Dead Hard	Deliverance
+Build	Survivor	GenSurv	Adrenaline	Borrowed Time	Dead Hard	For the People
 Build	Survivor	GenSurv	Adrenaline	Borrowed Time	Dead Hard	Hope
 Build	Survivor	GenSurv	Adrenaline	Borrowed Time	Dead Hard	Iron Will
 Build	Survivor	GenSurv	Adrenaline	Borrowed Time	Dead Hard	Poised
@@ -7063,6 +7203,8 @@ Build	Survivor	GenSurv	Adrenaline	Dead Hard	Deliverance	Hope
 Build	Survivor	GenSurv	Adrenaline	Dead Hard	Deliverance	Iron Will
 Build	Survivor	GenSurv	Adrenaline	Dead Hard	Diversion	Iron Will
 Build	Survivor	GenSurv	Adrenaline	Dead Hard	Empathy	Iron Will
+Build	Survivor	GenSurv	Adrenaline	Dead Hard	For the People	Hope
+Build	Survivor	GenSurv	Adrenaline	Dead Hard	For the People	Iron Will
 Build	Survivor	GenSurv	Adrenaline	Dead Hard	Hope	Iron Will
 Build	Survivor	GenSurv	Adrenaline	Dead Hard	Hope	Quick & Quiet
 Build	Survivor	GenSurv	Adrenaline	Dead Hard	Hope	Self-Care
@@ -7099,6 +7241,7 @@ Build	Survivor	GenSurv	Adrenaline	Decisive Strike	Diversion	Iron Will
 Build	Survivor	GenSurv	Adrenaline	Decisive Strike	Diversion	Urban Evasion
 Build	Survivor	GenSurv	Adrenaline	Decisive Strike	Empathy	Iron Will
 Build	Survivor	GenSurv	Adrenaline	Decisive Strike	Flip-Flop	Unbreakable
+Build	Survivor	GenSurv	Adrenaline	Decisive Strike	For the People	Iron Will
 Build	Survivor	GenSurv	Adrenaline	Decisive Strike	Head On	Hope
 Build	Survivor	GenSurv	Adrenaline	Decisive Strike	Head On	Inner Strength
 Build	Survivor	GenSurv	Adrenaline	Decisive Strike	Head On	Iron Will
@@ -7168,6 +7311,7 @@ Build	Survivor	GenSurv	Adrenaline	Detective's Hunch	Inner Strength	Quick & Quiet
 Build	Survivor	GenSurv	Adrenaline	Detective's Hunch	Iron Will	Quick & Quiet
 Build	Survivor	GenSurv	Adrenaline	Distortion	Iron Will	Quick & Quiet
 Build	Survivor	GenSurv	Adrenaline	Diversion	Empathy	Iron Will
+Build	Survivor	GenSurv	Adrenaline	Diversion	For the People	Iron Will
 Build	Survivor	GenSurv	Adrenaline	Diversion	Hope	Iron Will
 Build	Survivor	GenSurv	Adrenaline	Diversion	Hope	Self-Care
 Build	Survivor	GenSurv	Adrenaline	Diversion	Hope	Urban Evasion
@@ -7189,6 +7333,7 @@ Build	Survivor	GenSurv	Adrenaline	Diversion	Iron Will	Urban Evasion
 Build	Survivor	GenSurv	Adrenaline	Diversion	Poised	Urban Evasion
 Build	Survivor	GenSurv	Adrenaline	Diversion	Premonition	Urban Evasion
 Build	Survivor	GenSurv	Adrenaline	Diversion	Spine Chill	Urban Evasion
+Build	Survivor	GenSurv	Adrenaline	Empathy	For the People	Iron Will
 Build	Survivor	GenSurv	Adrenaline	Empathy	Hope	Iron Will
 Build	Survivor	GenSurv	Adrenaline	Empathy	Hope	Poised
 Build	Survivor	GenSurv	Adrenaline	Empathy	Inner Strength	Iron Will
@@ -7206,6 +7351,16 @@ Build	Survivor	GenSurv	Adrenaline	Fixated	Hope	Sprint Burst
 Build	Survivor	GenSurv	Adrenaline	Fixated	Sprint Burst	Vigil
 Build	Survivor	GenSurv	Adrenaline	Flip-Flop	Hope	Tenacity
 Build	Survivor	GenSurv	Adrenaline	Flip-Flop	Tenacity	Unbreakable
+Build	Survivor	GenSurv	Adrenaline	For the People	Hope	Iron Will
+Build	Survivor	GenSurv	Adrenaline	For the People	Hope	Poised
+Build	Survivor	GenSurv	Adrenaline	For the People	Iron Will	Lightweight
+Build	Survivor	GenSurv	Adrenaline	For the People	Iron Will	Lithe
+Build	Survivor	GenSurv	Adrenaline	For the People	Iron Will	Lucky Break
+Build	Survivor	GenSurv	Adrenaline	For the People	Iron Will	Poised
+Build	Survivor	GenSurv	Adrenaline	For the People	Iron Will	Quick & Quiet
+Build	Survivor	GenSurv	Adrenaline	For the People	Iron Will	Resilience
+Build	Survivor	GenSurv	Adrenaline	For the People	Iron Will	Sprint Burst
+Build	Survivor	GenSurv	Adrenaline	For the People	Iron Will	Windows Of Opportunity
 Build	Survivor	GenSurv	Adrenaline	Head On	Hope	Iron Will
 Build	Survivor	GenSurv	Adrenaline	Head On	Inner Strength	Iron Will
 Build	Survivor	GenSurv	Adrenaline	Head On	Inner Strength	Quick & Quiet
@@ -7344,6 +7499,7 @@ Build	Survivor	GenSurv	Aftercare	Balanced Landing	Dead Hard	Vigil
 Build	Survivor	GenSurv	Aftercare	Balanced Landing	Lithe	Vigil
 Build	Survivor	GenSurv	Aftercare	Borrowed Time	Dead Hard	Decisive Strike
 Build	Survivor	GenSurv	Aftercare	Borrowed Time	Dead Hard	Deliverance
+Build	Survivor	GenSurv	Aftercare	Borrowed Time	Dead Hard	For the People
 Build	Survivor	GenSurv	Aftercare	Borrowed Time	Dead Hard	Iron Will
 Build	Survivor	GenSurv	Aftercare	Borrowed Time	Dead Hard	Quick & Quiet
 Build	Survivor	GenSurv	Aftercare	Borrowed Time	Dead Hard	Vigil
@@ -7385,9 +7541,11 @@ Build	Survivor	GenSurv	Alert	Bond	Iron Will	Quick & Quiet
 Build	Survivor	GenSurv	Alert	Bond	Iron Will	Sprint Burst
 Build	Survivor	GenSurv	Alert	Bond	Kindred	Open-Handed
 Build	Survivor	GenSurv	Alert	Borrowed Time	Dead Hard	Deliverance
+Build	Survivor	GenSurv	Alert	Borrowed Time	Dead Hard	For the People
 Build	Survivor	GenSurv	Alert	Borrowed Time	Dead Hard	We're Gonna Live Forever
 Build	Survivor	GenSurv	Alert	Borrowed Time	Decisive Strike	Deliverance
 Build	Survivor	GenSurv	Alert	Borrowed Time	Deliverance	We're Gonna Live Forever
+Build	Survivor	GenSurv	Alert	Dead Hard	For the People	Iron Will
 Build	Survivor	GenSurv	Alert	Dead Hard	Iron Will	Urban Evasion
 Build	Survivor	GenSurv	Alert	Decisive Strike	Tenacity	Unbreakable
 Build	Survivor	GenSurv	Alert	Detective's Hunch	Inner Strength	Iron Will
@@ -7401,6 +7559,7 @@ Build	Survivor	GenSurv	Alert	Inner Strength	Iron Will	Quick & Quiet
 Build	Survivor	GenSurv	Any Means Necessary	Autodidact	Bond	Windows Of Opportunity
 Build	Survivor	GenSurv	Any Means Necessary	Balanced Landing	Bond	Windows Of Opportunity
 Build	Survivor	GenSurv	Any Means Necessary	Balanced Landing	Empathy	Windows Of Opportunity
+Build	Survivor	GenSurv	Any Means Necessary	Balanced Landing	For the People	Windows Of Opportunity
 Build	Survivor	GenSurv	Any Means Necessary	Balanced Landing	Inner Strength	Windows Of Opportunity
 Build	Survivor	GenSurv	Any Means Necessary	Balanced Landing	Self-Care	Windows Of Opportunity
 Build	Survivor	GenSurv	Any Means Necessary	Balanced Landing	Vigil	Windows Of Opportunity
@@ -7422,6 +7581,7 @@ Build	Survivor	GenSurv	Any Means Necessary	Bond	Quick & Quiet	Windows Of Opportu
 Build	Survivor	GenSurv	Any Means Necessary	Bond	Sprint Burst	Windows Of Opportunity
 Build	Survivor	GenSurv	Any Means Necessary	Bond	We'll Make It	Windows Of Opportunity
 Build	Survivor	GenSurv	Any Means Necessary	Borrowed Time	Dead Hard	Deliverance
+Build	Survivor	GenSurv	Any Means Necessary	Borrowed Time	Dead Hard	For the People
 Build	Survivor	GenSurv	Any Means Necessary	Borrowed Time	Dead Hard	We're Gonna Live Forever
 Build	Survivor	GenSurv	Any Means Necessary	Borrowed Time	Dead Hard	Windows Of Opportunity
 Build	Survivor	GenSurv	Any Means Necessary	Borrowed Time	Decisive Strike	Deliverance
@@ -7443,6 +7603,7 @@ Build	Survivor	GenSurv	Any Means Necessary	Dance With Me	Quick & Quiet	Windows O
 Build	Survivor	GenSurv	Any Means Necessary	Dance With Me	Self-Care	Windows Of Opportunity
 Build	Survivor	GenSurv	Any Means Necessary	Dead Hard	Decisive Strike	Windows Of Opportunity
 Build	Survivor	GenSurv	Any Means Necessary	Dead Hard	Empathy	Windows Of Opportunity
+Build	Survivor	GenSurv	Any Means Necessary	Dead Hard	For the People	Windows Of Opportunity
 Build	Survivor	GenSurv	Any Means Necessary	Dead Hard	Inner Strength	Windows Of Opportunity
 Build	Survivor	GenSurv	Any Means Necessary	Dead Hard	Iron Will	Windows Of Opportunity
 Build	Survivor	GenSurv	Any Means Necessary	Dead Hard	Pharmacy	Windows Of Opportunity
@@ -7467,6 +7628,11 @@ Build	Survivor	GenSurv	Any Means Necessary	Empathy	Lithe	Windows Of Opportunity
 Build	Survivor	GenSurv	Any Means Necessary	Empathy	Quick & Quiet	Windows Of Opportunity
 Build	Survivor	GenSurv	Any Means Necessary	Empathy	Sprint Burst	Windows Of Opportunity
 Build	Survivor	GenSurv	Any Means Necessary	Fixated	Sprint Burst	Windows Of Opportunity
+Build	Survivor	GenSurv	Any Means Necessary	For the People	Iron Will	Windows Of Opportunity
+Build	Survivor	GenSurv	Any Means Necessary	For the People	Lithe	Windows Of Opportunity
+Build	Survivor	GenSurv	Any Means Necessary	For the People	Quick & Quiet	Windows Of Opportunity
+Build	Survivor	GenSurv	Any Means Necessary	For the People	Self-Care	Windows Of Opportunity
+Build	Survivor	GenSurv	Any Means Necessary	For the People	Sprint Burst	Windows Of Opportunity
 Build	Survivor	GenSurv	Any Means Necessary	Head On	Inner Strength	Windows Of Opportunity
 Build	Survivor	GenSurv	Any Means Necessary	Head On	Quick & Quiet	Windows Of Opportunity
 Build	Survivor	GenSurv	Any Means Necessary	Inner Strength	Iron Will	Quick & Quiet
@@ -7533,6 +7699,7 @@ Build	Survivor	GenSurv	Balanced Landing	Bond	Decisive Strike	Open-Handed
 Build	Survivor	GenSurv	Balanced Landing	Bond	Decisive Strike	Vigil
 Build	Survivor	GenSurv	Balanced Landing	Bond	Detective's Hunch	Open-Handed
 Build	Survivor	GenSurv	Balanced Landing	Bond	Diversion	Iron Will
+Build	Survivor	GenSurv	Balanced Landing	Bond	For the People	Iron Will
 Build	Survivor	GenSurv	Balanced Landing	Bond	Inner Strength	Iron Will
 Build	Survivor	GenSurv	Balanced Landing	Bond	Iron Will	Lightweight
 Build	Survivor	GenSurv	Balanced Landing	Bond	Iron Will	Lucky Break
@@ -7581,6 +7748,7 @@ Build	Survivor	GenSurv	Balanced Landing	Dance With Me	Lithe	Windows Of Opportuni
 Build	Survivor	GenSurv	Balanced Landing	Dead Hard	Decisive Strike	Vigil
 Build	Survivor	GenSurv	Balanced Landing	Dead Hard	Diversion	Vigil
 Build	Survivor	GenSurv	Balanced Landing	Dead Hard	Empathy	Vigil
+Build	Survivor	GenSurv	Balanced Landing	Dead Hard	For the People	Vigil
 Build	Survivor	GenSurv	Balanced Landing	Dead Hard	Inner Strength	Vigil
 Build	Survivor	GenSurv	Balanced Landing	Dead Hard	Iron Will	Vigil
 Build	Survivor	GenSurv	Balanced Landing	Dead Hard	Pharmacy	Vigil
@@ -7611,6 +7779,11 @@ Build	Survivor	GenSurv	Balanced Landing	Diversion	Urban Evasion	Vigil
 Build	Survivor	GenSurv	Balanced Landing	Empathy	Iron Will	Vigil
 Build	Survivor	GenSurv	Balanced Landing	Empathy	Lithe	Vigil
 Build	Survivor	GenSurv	Balanced Landing	Flip-Flop	Tenacity	Unbreakable
+Build	Survivor	GenSurv	Balanced Landing	For the People	Iron Will	Lucky Break
+Build	Survivor	GenSurv	Balanced Landing	For the People	Iron Will	Resilience
+Build	Survivor	GenSurv	Balanced Landing	For the People	Iron Will	Vigil
+Build	Survivor	GenSurv	Balanced Landing	For the People	Lithe	Vigil
+Build	Survivor	GenSurv	Balanced Landing	For the People	Self-Care	Vigil
 Build	Survivor	GenSurv	Balanced Landing	Head On	Inner Strength	Vigil
 Build	Survivor	GenSurv	Balanced Landing	Inner Strength	Iron Will	Lucky Break
 Build	Survivor	GenSurv	Balanced Landing	Inner Strength	Iron Will	Quick & Quiet
@@ -7676,6 +7849,7 @@ Build	Survivor	GenSurv	Bond	Borrowed Time	Dance With Me	Iron Will
 Build	Survivor	GenSurv	Bond	Borrowed Time	Dead Hard	Decisive Strike
 Build	Survivor	GenSurv	Bond	Borrowed Time	Dead Hard	Deliverance
 Build	Survivor	GenSurv	Bond	Borrowed Time	Dead Hard	Diversion
+Build	Survivor	GenSurv	Bond	Borrowed Time	Dead Hard	For the People
 Build	Survivor	GenSurv	Bond	Borrowed Time	Dead Hard	Iron Will
 Build	Survivor	GenSurv	Bond	Borrowed Time	Dead Hard	Open-Handed
 Build	Survivor	GenSurv	Bond	Borrowed Time	Dead Hard	Prove Thyself
@@ -7700,6 +7874,7 @@ Build	Survivor	GenSurv	Bond	Borrowed Time	Diversion	Iron Will
 Build	Survivor	GenSurv	Bond	Borrowed Time	Diversion	Open-Handed
 Build	Survivor	GenSurv	Bond	Borrowed Time	Diversion	Urban Evasion
 Build	Survivor	GenSurv	Bond	Borrowed Time	Diversion	We're Gonna Live Forever
+Build	Survivor	GenSurv	Bond	Borrowed Time	For the People	Iron Will
 Build	Survivor	GenSurv	Bond	Borrowed Time	Inner Strength	Iron Will
 Build	Survivor	GenSurv	Bond	Borrowed Time	Iron Will	Lightweight
 Build	Survivor	GenSurv	Bond	Borrowed Time	Iron Will	Lithe
@@ -7730,6 +7905,7 @@ Build	Survivor	GenSurv	Bond	Botany Knowledge	Diversion	Iron Will
 Build	Survivor	GenSurv	Bond	Botany Knowledge	Iron Will	Quick & Quiet
 Build	Survivor	GenSurv	Bond	Botany Knowledge	Kindred	Open-Handed
 Build	Survivor	GenSurv	Bond	Breakout	Dance With Me	Iron Will
+Build	Survivor	GenSurv	Bond	Breakout	Dead Hard	For the People
 Build	Survivor	GenSurv	Bond	Breakout	Dead Hard	Iron Will
 Build	Survivor	GenSurv	Bond	Breakout	Dead Hard	Open-Handed
 Build	Survivor	GenSurv	Bond	Breakout	Dead Hard	Vigil
@@ -7757,6 +7933,7 @@ Build	Survivor	GenSurv	Bond	Camaraderie	Kindred	Open-Handed
 Build	Survivor	GenSurv	Bond	Dance With Me	Decisive Strike	Head On
 Build	Survivor	GenSurv	Bond	Dance With Me	Decisive Strike	Iron Will
 Build	Survivor	GenSurv	Bond	Dance With Me	Diversion	Iron Will
+Build	Survivor	GenSurv	Bond	Dance With Me	For the People	Iron Will
 Build	Survivor	GenSurv	Bond	Dance With Me	Head On	Iron Will
 Build	Survivor	GenSurv	Bond	Dance With Me	Head On	Quick & Quiet
 Build	Survivor	GenSurv	Bond	Dance With Me	Inner Strength	Iron Will
@@ -7781,6 +7958,9 @@ Build	Survivor	GenSurv	Bond	Dead Hard	Diversion	Iron Will
 Build	Survivor	GenSurv	Bond	Dead Hard	Diversion	Open-Handed
 Build	Survivor	GenSurv	Bond	Dead Hard	Diversion	Urban Evasion
 Build	Survivor	GenSurv	Bond	Dead Hard	Diversion	Vigil
+Build	Survivor	GenSurv	Bond	Dead Hard	For the People	Iron Will
+Build	Survivor	GenSurv	Bond	Dead Hard	For the People	Open-Handed
+Build	Survivor	GenSurv	Bond	Dead Hard	For the People	Vigil
 Build	Survivor	GenSurv	Bond	Dead Hard	Inner Strength	Iron Will
 Build	Survivor	GenSurv	Bond	Dead Hard	Iron Will	Lucky Break
 Build	Survivor	GenSurv	Bond	Dead Hard	Iron Will	No Mither
@@ -7813,6 +7993,7 @@ Build	Survivor	GenSurv	Bond	Decisive Strike	Deliverance	Iron Will
 Build	Survivor	GenSurv	Bond	Decisive Strike	Diversion	Iron Will
 Build	Survivor	GenSurv	Bond	Decisive Strike	Diversion	Open-Handed
 Build	Survivor	GenSurv	Bond	Decisive Strike	Diversion	Urban Evasion
+Build	Survivor	GenSurv	Bond	Decisive Strike	For the People	Iron Will
 Build	Survivor	GenSurv	Bond	Decisive Strike	Head On	Inner Strength
 Build	Survivor	GenSurv	Bond	Decisive Strike	Head On	Iron Will
 Build	Survivor	GenSurv	Bond	Decisive Strike	Head On	Quick & Quiet
@@ -7855,6 +8036,7 @@ Build	Survivor	GenSurv	Bond	Detective's Hunch	Open-Handed	Sprint Burst
 Build	Survivor	GenSurv	Bond	Detective's Hunch	Open-Handed	Windows Of Opportunity
 Build	Survivor	GenSurv	Bond	Distortion	Diversion	Iron Will
 Build	Survivor	GenSurv	Bond	Diversion	Flip-Flop	Iron Will
+Build	Survivor	GenSurv	Bond	Diversion	For the People	Iron Will
 Build	Survivor	GenSurv	Bond	Diversion	Head On	Iron Will
 Build	Survivor	GenSurv	Bond	Diversion	Hope	Iron Will
 Build	Survivor	GenSurv	Bond	Diversion	Inner Strength	Iron Will
@@ -7873,6 +8055,7 @@ Build	Survivor	GenSurv	Bond	Diversion	Iron Will	Poised
 Build	Survivor	GenSurv	Bond	Diversion	Iron Will	Premonition
 Build	Survivor	GenSurv	Bond	Diversion	Iron Will	Prove Thyself
 Build	Survivor	GenSurv	Bond	Diversion	Iron Will	Quick & Quiet
+Build	Survivor	GenSurv	Bond	Diversion	Iron Will	Red Herring
 Build	Survivor	GenSurv	Bond	Diversion	Iron Will	Resilience
 Build	Survivor	GenSurv	Bond	Diversion	Iron Will	Saboteur
 Build	Survivor	GenSurv	Bond	Diversion	Iron Will	Small Game
@@ -7907,6 +8090,15 @@ Build	Survivor	GenSurv	Bond	Fixated	Iron Will	Sprint Burst
 Build	Survivor	GenSurv	Bond	Fixated	Open-Handed	Sprint Burst
 Build	Survivor	GenSurv	Bond	Fixated	Sprint Burst	Vigil
 Build	Survivor	GenSurv	Bond	Flip-Flop	Tenacity	Unbreakable
+Build	Survivor	GenSurv	Bond	For the People	Iron Will	Lightweight
+Build	Survivor	GenSurv	Bond	For the People	Iron Will	Lithe
+Build	Survivor	GenSurv	Bond	For the People	Iron Will	Lucky Break
+Build	Survivor	GenSurv	Bond	For the People	Iron Will	Open-Handed
+Build	Survivor	GenSurv	Bond	For the People	Iron Will	Poised
+Build	Survivor	GenSurv	Bond	For the People	Iron Will	Quick & Quiet
+Build	Survivor	GenSurv	Bond	For the People	Iron Will	Resilience
+Build	Survivor	GenSurv	Bond	For the People	Iron Will	Sprint Burst
+Build	Survivor	GenSurv	Bond	For the People	Iron Will	Windows Of Opportunity
 Build	Survivor	GenSurv	Bond	Head On	Inner Strength	Iron Will
 Build	Survivor	GenSurv	Bond	Head On	Inner Strength	Quick & Quiet
 Build	Survivor	GenSurv	Bond	Head On	Iron Will	Lightweight
@@ -7978,6 +8170,7 @@ Build	Survivor	GenSurv	Bond	Iron Will	Premonition	Quick & Quiet
 Build	Survivor	GenSurv	Bond	Iron Will	Premonition	Urban Evasion
 Build	Survivor	GenSurv	Bond	Iron Will	Prove Thyself	Quick & Quiet
 Build	Survivor	GenSurv	Bond	Iron Will	Prove Thyself	Sprint Burst
+Build	Survivor	GenSurv	Bond	Iron Will	Quick & Quiet	Red Herring
 Build	Survivor	GenSurv	Bond	Iron Will	Quick & Quiet	Resilience
 Build	Survivor	GenSurv	Bond	Iron Will	Quick & Quiet	Small Game
 Build	Survivor	GenSurv	Bond	Iron Will	Quick & Quiet	Spine Chill
@@ -8062,6 +8255,7 @@ Build	Survivor	GenSurv	Borrowed Time	Botany Knowledge	Self-Care	We'll Make It
 Build	Survivor	GenSurv	Borrowed Time	Botany Knowledge	Self-Care	We're Gonna Live Forever
 Build	Survivor	GenSurv	Borrowed Time	Breakout	Dead Hard	Deliverance
 Build	Survivor	GenSurv	Borrowed Time	Breakout	Dead Hard	Empathy
+Build	Survivor	GenSurv	Borrowed Time	Breakout	Dead Hard	For the People
 Build	Survivor	GenSurv	Borrowed Time	Breakout	Dead Hard	Inner Strength
 Build	Survivor	GenSurv	Borrowed Time	Breakout	Dead Hard	Self-Care
 Build	Survivor	GenSurv	Borrowed Time	Breakout	Dead Hard	We're Gonna Live Forever
@@ -8080,6 +8274,7 @@ Build	Survivor	GenSurv	Borrowed Time	Dance With Me	Lithe	We're Gonna Live Foreve
 Build	Survivor	GenSurv	Borrowed Time	Dance With Me	Lithe	Windows Of Opportunity
 Build	Survivor	GenSurv	Borrowed Time	Dance With Me	We're Gonna Live Forever	Windows Of Opportunity
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Decisive Strike	Deliverance
+Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Decisive Strike	For the People
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Decisive Strike	Inner Strength
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Decisive Strike	Iron Will
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Decisive Strike	Quick & Quiet
@@ -8091,6 +8286,7 @@ Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Deliverance	Detective's Hunch
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Deliverance	Diversion
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Deliverance	Empathy
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Deliverance	Flip-Flop
+Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Deliverance	For the People
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Deliverance	Hope
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Deliverance	Inner Strength
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Deliverance	Iron Will
@@ -8098,6 +8294,7 @@ Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Deliverance	Kindred
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Deliverance	Lucky Break
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Deliverance	No Mither
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Deliverance	Object Of Obsession
+Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Deliverance	Off the Record
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Deliverance	Pharmacy
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Deliverance	Plunderer's Instinct
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Deliverance	Prove Thyself
@@ -8111,19 +8308,39 @@ Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Deliverance	Vigil
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Deliverance	We'll Make It
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Deliverance	We're Gonna Live Forever
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Deliverance	Windows Of Opportunity
+Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Detective's Hunch	For the People
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Detective's Hunch	Inner Strength
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Detective's Hunch	We're Gonna Live Forever
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Distortion	Self-Care
+Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Diversion	For the People
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Diversion	Inner Strength
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Diversion	Iron Will
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Diversion	Self-Care
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Diversion	Urban Evasion
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Diversion	Vigil
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Diversion	We're Gonna Live Forever
+Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Empathy	For the People
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Empathy	Iron Will
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Empathy	Vigil
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Empathy	We're Gonna Live Forever
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Empathy	Windows Of Opportunity
+Build	Survivor	GenSurv	Borrowed Time	Dead Hard	For the People	Hope
+Build	Survivor	GenSurv	Borrowed Time	Dead Hard	For the People	Inner Strength
+Build	Survivor	GenSurv	Borrowed Time	Dead Hard	For the People	Iron Will
+Build	Survivor	GenSurv	Borrowed Time	Dead Hard	For the People	Kindred
+Build	Survivor	GenSurv	Borrowed Time	Dead Hard	For the People	Lucky Break
+Build	Survivor	GenSurv	Borrowed Time	Dead Hard	For the People	Object Of Obsession
+Build	Survivor	GenSurv	Borrowed Time	Dead Hard	For the People	Plunderer's Instinct
+Build	Survivor	GenSurv	Borrowed Time	Dead Hard	For the People	Prove Thyself
+Build	Survivor	GenSurv	Borrowed Time	Dead Hard	For the People	Quick & Quiet
+Build	Survivor	GenSurv	Borrowed Time	Dead Hard	For the People	Resilience
+Build	Survivor	GenSurv	Borrowed Time	Dead Hard	For the People	Self-Care
+Build	Survivor	GenSurv	Borrowed Time	Dead Hard	For the People	Spine Chill
+Build	Survivor	GenSurv	Borrowed Time	Dead Hard	For the People	Unbreakable
+Build	Survivor	GenSurv	Borrowed Time	Dead Hard	For the People	Vigil
+Build	Survivor	GenSurv	Borrowed Time	Dead Hard	For the People	We'll Make It
+Build	Survivor	GenSurv	Borrowed Time	Dead Hard	For the People	We're Gonna Live Forever
+Build	Survivor	GenSurv	Borrowed Time	Dead Hard	For the People	Windows Of Opportunity
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Head On	Vigil
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Hope	We're Gonna Live Forever
 Build	Survivor	GenSurv	Borrowed Time	Dead Hard	Inner Strength	Iron Will
@@ -8175,6 +8392,7 @@ Build	Survivor	GenSurv	Borrowed Time	Decisive Strike	Deliverance	Detective's Hun
 Build	Survivor	GenSurv	Borrowed Time	Decisive Strike	Deliverance	Diversion
 Build	Survivor	GenSurv	Borrowed Time	Decisive Strike	Deliverance	Empathy
 Build	Survivor	GenSurv	Borrowed Time	Decisive Strike	Deliverance	Flip-Flop
+Build	Survivor	GenSurv	Borrowed Time	Decisive Strike	Deliverance	For the People
 Build	Survivor	GenSurv	Borrowed Time	Decisive Strike	Deliverance	Head On
 Build	Survivor	GenSurv	Borrowed Time	Decisive Strike	Deliverance	Hope
 Build	Survivor	GenSurv	Borrowed Time	Decisive Strike	Deliverance	Inner Strength
@@ -8183,6 +8401,7 @@ Build	Survivor	GenSurv	Borrowed Time	Decisive Strike	Deliverance	Kindred
 Build	Survivor	GenSurv	Borrowed Time	Decisive Strike	Deliverance	Lithe
 Build	Survivor	GenSurv	Borrowed Time	Decisive Strike	Deliverance	Lucky Break
 Build	Survivor	GenSurv	Borrowed Time	Decisive Strike	Deliverance	Object Of Obsession
+Build	Survivor	GenSurv	Borrowed Time	Decisive Strike	Deliverance	Off the Record
 Build	Survivor	GenSurv	Borrowed Time	Decisive Strike	Deliverance	Plunderer's Instinct
 Build	Survivor	GenSurv	Borrowed Time	Decisive Strike	Deliverance	Prove Thyself
 Build	Survivor	GenSurv	Borrowed Time	Decisive Strike	Deliverance	Quick & Quiet
@@ -8212,6 +8431,7 @@ Build	Survivor	GenSurv	Borrowed Time	Deliverance	Detective's Hunch	Inner Strengt
 Build	Survivor	GenSurv	Borrowed Time	Deliverance	Detective's Hunch	We're Gonna Live Forever
 Build	Survivor	GenSurv	Borrowed Time	Deliverance	Distortion	We're Gonna Live Forever
 Build	Survivor	GenSurv	Borrowed Time	Deliverance	Diversion	Empathy
+Build	Survivor	GenSurv	Borrowed Time	Deliverance	Diversion	For the People
 Build	Survivor	GenSurv	Borrowed Time	Deliverance	Diversion	Inner Strength
 Build	Survivor	GenSurv	Borrowed Time	Deliverance	Diversion	Iron Will
 Build	Survivor	GenSurv	Borrowed Time	Deliverance	Diversion	Self-Care
@@ -8228,6 +8448,11 @@ Build	Survivor	GenSurv	Borrowed Time	Deliverance	Fixated	We're Gonna Live Foreve
 Build	Survivor	GenSurv	Borrowed Time	Deliverance	Flip-Flop	Tenacity
 Build	Survivor	GenSurv	Borrowed Time	Deliverance	Flip-Flop	Unbreakable
 Build	Survivor	GenSurv	Borrowed Time	Deliverance	Flip-Flop	We're Gonna Live Forever
+Build	Survivor	GenSurv	Borrowed Time	Deliverance	For the People	Iron Will
+Build	Survivor	GenSurv	Borrowed Time	Deliverance	For the People	Lithe
+Build	Survivor	GenSurv	Borrowed Time	Deliverance	For the People	Self-Care
+Build	Survivor	GenSurv	Borrowed Time	Deliverance	For the People	Sprint Burst
+Build	Survivor	GenSurv	Borrowed Time	Deliverance	For the People	We're Gonna Live Forever
 Build	Survivor	GenSurv	Borrowed Time	Deliverance	Head On	Inner Strength
 Build	Survivor	GenSurv	Borrowed Time	Deliverance	Head On	Quick & Quiet
 Build	Survivor	GenSurv	Borrowed Time	Deliverance	Head On	We're Gonna Live Forever
@@ -8258,6 +8483,7 @@ Build	Survivor	GenSurv	Borrowed Time	Deliverance	Mettle Of Man	Self-Care
 Build	Survivor	GenSurv	Borrowed Time	Deliverance	Mettle Of Man	We're Gonna Live Forever
 Build	Survivor	GenSurv	Borrowed Time	Deliverance	Object Of Obsession	Sole Survivor
 Build	Survivor	GenSurv	Borrowed Time	Deliverance	Object Of Obsession	We're Gonna Live Forever
+Build	Survivor	GenSurv	Borrowed Time	Deliverance	Off the Record	We're Gonna Live Forever
 Build	Survivor	GenSurv	Borrowed Time	Deliverance	Pharmacy	Sprint Burst
 Build	Survivor	GenSurv	Borrowed Time	Deliverance	Pharmacy	We're Gonna Live Forever
 Build	Survivor	GenSurv	Borrowed Time	Deliverance	Plunderer's Instinct	We're Gonna Live Forever
@@ -8299,6 +8525,7 @@ Build	Survivor	GenSurv	Borrowed Time	Detective's Hunch	Inner Strength	We're Gonn
 Build	Survivor	GenSurv	Borrowed Time	Diversion	Empathy	Iron Will
 Build	Survivor	GenSurv	Borrowed Time	Diversion	Empathy	Urban Evasion
 Build	Survivor	GenSurv	Borrowed Time	Diversion	Empathy	We're Gonna Live Forever
+Build	Survivor	GenSurv	Borrowed Time	Diversion	For the People	We're Gonna Live Forever
 Build	Survivor	GenSurv	Borrowed Time	Diversion	Inner Strength	Iron Will
 Build	Survivor	GenSurv	Borrowed Time	Diversion	Inner Strength	Small Game
 Build	Survivor	GenSurv	Borrowed Time	Diversion	Inner Strength	Urban Evasion
@@ -8317,6 +8544,10 @@ Build	Survivor	GenSurv	Borrowed Time	Empathy	We'll Make It	We're Gonna Live Fore
 Build	Survivor	GenSurv	Borrowed Time	Fixated	Sprint Burst	Vigil
 Build	Survivor	GenSurv	Borrowed Time	Fixated	Sprint Burst	We're Gonna Live Forever
 Build	Survivor	GenSurv	Borrowed Time	Flip-Flop	Tenacity	Unbreakable
+Build	Survivor	GenSurv	Borrowed Time	For the People	Iron Will	We're Gonna Live Forever
+Build	Survivor	GenSurv	Borrowed Time	For the People	Lithe	We're Gonna Live Forever
+Build	Survivor	GenSurv	Borrowed Time	For the People	Self-Care	We're Gonna Live Forever
+Build	Survivor	GenSurv	Borrowed Time	For the People	Sprint Burst	We're Gonna Live Forever
 Build	Survivor	GenSurv	Borrowed Time	Head On	Inner Strength	Iron Will
 Build	Survivor	GenSurv	Borrowed Time	Head On	Inner Strength	Quick & Quiet
 Build	Survivor	GenSurv	Borrowed Time	Head On	Inner Strength	We're Gonna Live Forever
@@ -8370,6 +8601,7 @@ Build	Survivor	GenSurv	Botany Knowledge	Dance With Me	Lithe	Self-Care
 Build	Survivor	GenSurv	Botany Knowledge	Dance With Me	Self-Care	Windows Of Opportunity
 Build	Survivor	GenSurv	Botany Knowledge	Dead Hard	Decisive Strike	Self-Care
 Build	Survivor	GenSurv	Botany Knowledge	Dead Hard	Diversion	Self-Care
+Build	Survivor	GenSurv	Botany Knowledge	Dead Hard	For the People	Self-Care
 Build	Survivor	GenSurv	Botany Knowledge	Dead Hard	Mettle Of Man	Self-Care
 Build	Survivor	GenSurv	Botany Knowledge	Dead Hard	Self-Care	Unbreakable
 Build	Survivor	GenSurv	Botany Knowledge	Dead Hard	Self-Care	Vigil
@@ -8413,6 +8645,8 @@ Build	Survivor	GenSurv	Botany Knowledge	Self-Care	Tenacity	Unbreakable
 Build	Survivor	GenSurv	Breakout	Dance With Me	Lithe	Quick & Quiet
 Build	Survivor	GenSurv	Breakout	Dead Hard	Detective's Hunch	Inner Strength
 Build	Survivor	GenSurv	Breakout	Dead Hard	Empathy	Vigil
+Build	Survivor	GenSurv	Breakout	Dead Hard	For the People	Iron Will
+Build	Survivor	GenSurv	Breakout	Dead Hard	For the People	Self-Care
 Build	Survivor	GenSurv	Breakout	Dead Hard	Inner Strength	Small Game
 Build	Survivor	GenSurv	Breakout	Dead Hard	Lithe	Vigil
 Build	Survivor	GenSurv	Breakout	Dead Hard	Mettle Of Man	Self-Care
@@ -8471,6 +8705,9 @@ Build	Survivor	GenSurv	Dance With Me	Empathy	Lithe	Quick & Quiet
 Build	Survivor	GenSurv	Dance With Me	Empathy	Lithe	Windows Of Opportunity
 Build	Survivor	GenSurv	Dance With Me	Fixated	Lithe	Quick & Quiet
 Build	Survivor	GenSurv	Dance With Me	Flip-Flop	Lithe	Quick & Quiet
+Build	Survivor	GenSurv	Dance With Me	For the People	Iron Will	Lithe
+Build	Survivor	GenSurv	Dance With Me	For the People	Lithe	Quick & Quiet
+Build	Survivor	GenSurv	Dance With Me	For the People	Lithe	Windows Of Opportunity
 Build	Survivor	GenSurv	Dance With Me	Head On	Inner Strength	Iron Will
 Build	Survivor	GenSurv	Dance With Me	Head On	Inner Strength	Lithe
 Build	Survivor	GenSurv	Dance With Me	Head On	Inner Strength	Quick & Quiet
@@ -8540,6 +8777,8 @@ Build	Survivor	GenSurv	Dead Hard	Decisive Strike	Deliverance	Self-Care
 Build	Survivor	GenSurv	Dead Hard	Decisive Strike	Detective's Hunch	Inner Strength
 Build	Survivor	GenSurv	Dead Hard	Decisive Strike	Diversion	Iron Will
 Build	Survivor	GenSurv	Dead Hard	Decisive Strike	Flip-Flop	Unbreakable
+Build	Survivor	GenSurv	Dead Hard	Decisive Strike	For the People	Iron Will
+Build	Survivor	GenSurv	Dead Hard	Decisive Strike	For the People	Vigil
 Build	Survivor	GenSurv	Dead Hard	Decisive Strike	Head On	Inner Strength
 Build	Survivor	GenSurv	Dead Hard	Decisive Strike	Head On	Vigil
 Build	Survivor	GenSurv	Dead Hard	Decisive Strike	Inner Strength	Small Game
@@ -8554,6 +8793,7 @@ Build	Survivor	GenSurv	Dead Hard	Decisive Strike	Tenacity	Unbreakable
 Build	Survivor	GenSurv	Dead Hard	Decisive Strike	Unbreakable	Vigil
 Build	Survivor	GenSurv	Dead Hard	Deliverance	Lithe	Vigil
 Build	Survivor	GenSurv	Dead Hard	Detective's Hunch	Diversion	Inner Strength
+Build	Survivor	GenSurv	Dead Hard	Detective's Hunch	For the People	Inner Strength
 Build	Survivor	GenSurv	Dead Hard	Detective's Hunch	Inner Strength	Iron Will
 Build	Survivor	GenSurv	Dead Hard	Detective's Hunch	Inner Strength	Open-Handed
 Build	Survivor	GenSurv	Dead Hard	Detective's Hunch	Inner Strength	Quick & Quiet
@@ -8563,6 +8803,8 @@ Build	Survivor	GenSurv	Dead Hard	Detective's Hunch	Inner Strength	Vigil
 Build	Survivor	GenSurv	Dead Hard	Detective's Hunch	Inner Strength	We're Gonna Live Forever
 Build	Survivor	GenSurv	Dead Hard	Detective's Hunch	Inner Strength	Windows Of Opportunity
 Build	Survivor	GenSurv	Dead Hard	Distortion	Self-Care	Vigil
+Build	Survivor	GenSurv	Dead Hard	Diversion	For the People	Iron Will
+Build	Survivor	GenSurv	Dead Hard	Diversion	For the People	Urban Evasion
 Build	Survivor	GenSurv	Dead Hard	Diversion	Inner Strength	Small Game
 Build	Survivor	GenSurv	Dead Hard	Diversion	Iron Will	Quick & Quiet
 Build	Survivor	GenSurv	Dead Hard	Diversion	Iron Will	Unbreakable
@@ -8574,11 +8816,30 @@ Build	Survivor	GenSurv	Dead Hard	Diversion	Self-Care	Urban Evasion
 Build	Survivor	GenSurv	Dead Hard	Diversion	Self-Care	Vigil
 Build	Survivor	GenSurv	Dead Hard	Diversion	Spine Chill	Urban Evasion
 Build	Survivor	GenSurv	Dead Hard	Diversion	Urban Evasion	Vigil
+Build	Survivor	GenSurv	Dead Hard	Empathy	For the People	Iron Will
 Build	Survivor	GenSurv	Dead Hard	Empathy	Iron Will	Lucky Break
 Build	Survivor	GenSurv	Dead Hard	Empathy	Iron Will	Resilience
 Build	Survivor	GenSurv	Dead Hard	Empathy	Iron Will	Vigil
 Build	Survivor	GenSurv	Dead Hard	Empathy	Lithe	Vigil
 Build	Survivor	GenSurv	Dead Hard	Flip-Flop	Tenacity	Unbreakable
+Build	Survivor	GenSurv	Dead Hard	For the People	Head On	Vigil
+Build	Survivor	GenSurv	Dead Hard	For the People	Inner Strength	Iron Will
+Build	Survivor	GenSurv	Dead Hard	For the People	Inner Strength	Small Game
+Build	Survivor	GenSurv	Dead Hard	For the People	Inner Strength	Vigil
+Build	Survivor	GenSurv	Dead Hard	For the People	Iron Will	Lucky Break
+Build	Survivor	GenSurv	Dead Hard	For the People	Iron Will	Plunderer's Instinct
+Build	Survivor	GenSurv	Dead Hard	For the People	Iron Will	Quick & Quiet
+Build	Survivor	GenSurv	Dead Hard	For the People	Iron Will	Resilience
+Build	Survivor	GenSurv	Dead Hard	For the People	Iron Will	Self-Care
+Build	Survivor	GenSurv	Dead Hard	For the People	Iron Will	Spine Chill
+Build	Survivor	GenSurv	Dead Hard	For the People	Iron Will	Unbreakable
+Build	Survivor	GenSurv	Dead Hard	For the People	Iron Will	Urban Evasion
+Build	Survivor	GenSurv	Dead Hard	For the People	Iron Will	Vigil
+Build	Survivor	GenSurv	Dead Hard	For the People	Iron Will	Windows Of Opportunity
+Build	Survivor	GenSurv	Dead Hard	For the People	Lithe	Vigil
+Build	Survivor	GenSurv	Dead Hard	For the People	Mettle Of Man	Self-Care
+Build	Survivor	GenSurv	Dead Hard	For the People	Resilience	Spine Chill
+Build	Survivor	GenSurv	Dead Hard	For the People	Self-Care	Vigil
 Build	Survivor	GenSurv	Dead Hard	Head On	Inner Strength	Quick & Quiet
 Build	Survivor	GenSurv	Dead Hard	Head On	Inner Strength	Vigil
 Build	Survivor	GenSurv	Dead Hard	Inner Strength	Iron Will	Lucky Break
@@ -8752,6 +9013,7 @@ Build	Survivor	GenSurv	Deliverance	Head On	Inner Strength	Quick & Quiet
 Build	Survivor	GenSurv	Deliverance	Inner Strength	Iron Will	Quick & Quiet
 Build	Survivor	GenSurv	Deliverance	Inner Strength	Quick & Quiet	Small Game
 Build	Survivor	GenSurv	Deliverance	Iron Will	Resilience	Spine Chill
+Build	Survivor	GenSurv	Detective's Hunch	Diversion	For the People	Inner Strength
 Build	Survivor	GenSurv	Detective's Hunch	Diversion	Head On	Inner Strength
 Build	Survivor	GenSurv	Detective's Hunch	Diversion	Inner Strength	Iron Will
 Build	Survivor	GenSurv	Detective's Hunch	Diversion	Inner Strength	Lithe
@@ -8767,6 +9029,10 @@ Build	Survivor	GenSurv	Detective's Hunch	Diversion	Spine Chill	Urban Evasion
 Build	Survivor	GenSurv	Detective's Hunch	Empathy	Inner Strength	Iron Will
 Build	Survivor	GenSurv	Detective's Hunch	Empathy	Inner Strength	Quick & Quiet
 Build	Survivor	GenSurv	Detective's Hunch	Fixated	Inner Strength	Sprint Burst
+Build	Survivor	GenSurv	Detective's Hunch	For the People	Inner Strength	Iron Will
+Build	Survivor	GenSurv	Detective's Hunch	For the People	Inner Strength	Lithe
+Build	Survivor	GenSurv	Detective's Hunch	For the People	Inner Strength	Quick & Quiet
+Build	Survivor	GenSurv	Detective's Hunch	For the People	Inner Strength	Sprint Burst
 Build	Survivor	GenSurv	Detective's Hunch	Head On	Inner Strength	Iron Will
 Build	Survivor	GenSurv	Detective's Hunch	Head On	Inner Strength	Lightweight
 Build	Survivor	GenSurv	Detective's Hunch	Head On	Inner Strength	Quick & Quiet
@@ -8801,6 +9067,7 @@ Build	Survivor	GenSurv	Detective's Hunch	Inner Strength	Open-Handed	Quick & Quie
 Build	Survivor	GenSurv	Detective's Hunch	Inner Strength	Open-Handed	Sprint Burst
 Build	Survivor	GenSurv	Detective's Hunch	Inner Strength	Poised	Quick & Quiet
 Build	Survivor	GenSurv	Detective's Hunch	Inner Strength	Prove Thyself	Quick & Quiet
+Build	Survivor	GenSurv	Detective's Hunch	Inner Strength	Quick & Quiet	Red Herring
 Build	Survivor	GenSurv	Detective's Hunch	Inner Strength	Quick & Quiet	Resilience
 Build	Survivor	GenSurv	Detective's Hunch	Inner Strength	Quick & Quiet	Spine Chill
 Build	Survivor	GenSurv	Detective's Hunch	Inner Strength	Quick & Quiet	Sprint Burst
@@ -8820,6 +9087,7 @@ Build	Survivor	GenSurv	Distortion	Diversion	Self-Care	Urban Evasion
 Build	Survivor	GenSurv	Distortion	Iron Will	Resilience	Spine Chill
 Build	Survivor	GenSurv	Distortion	Lithe	Self-Care	Vigil
 Build	Survivor	GenSurv	Distortion	Self-Care	Sprint Burst	Vigil
+Build	Survivor	GenSurv	Diversion	Empathy	For the People	Iron Will
 Build	Survivor	GenSurv	Diversion	Empathy	Inner Strength	Iron Will
 Build	Survivor	GenSurv	Diversion	Empathy	Iron Will	Lucky Break
 Build	Survivor	GenSurv	Diversion	Empathy	Iron Will	Quick & Quiet
@@ -8829,6 +9097,16 @@ Build	Survivor	GenSurv	Diversion	Empathy	Premonition	Urban Evasion
 Build	Survivor	GenSurv	Diversion	Empathy	Spine Chill	Urban Evasion
 Build	Survivor	GenSurv	Diversion	Fixated	Sprint Burst	Urban Evasion
 Build	Survivor	GenSurv	Diversion	Flip-Flop	Tenacity	Unbreakable
+Build	Survivor	GenSurv	Diversion	For the People	Inner Strength	Iron Will
+Build	Survivor	GenSurv	Diversion	For the People	Iron Will	Lucky Break
+Build	Survivor	GenSurv	Diversion	For the People	Iron Will	Quick & Quiet
+Build	Survivor	GenSurv	Diversion	For the People	Iron Will	Resilience
+Build	Survivor	GenSurv	Diversion	For the People	Iron Will	Self-Care
+Build	Survivor	GenSurv	Diversion	For the People	Iron Will	Urban Evasion
+Build	Survivor	GenSurv	Diversion	For the People	Premonition	Urban Evasion
+Build	Survivor	GenSurv	Diversion	For the People	Resilience	Spine Chill
+Build	Survivor	GenSurv	Diversion	For the People	Self-Care	Urban Evasion
+Build	Survivor	GenSurv	Diversion	For the People	Spine Chill	Urban Evasion
 Build	Survivor	GenSurv	Diversion	Head On	Inner Strength	Iron Will
 Build	Survivor	GenSurv	Diversion	Head On	Inner Strength	Quick & Quiet
 Build	Survivor	GenSurv	Diversion	Head On	Inner Strength	Small Game
@@ -8872,6 +9150,7 @@ Build	Survivor	GenSurv	Diversion	Iron Will	Prove Thyself	Urban Evasion
 Build	Survivor	GenSurv	Diversion	Iron Will	Quick & Quiet	Resilience
 Build	Survivor	GenSurv	Diversion	Iron Will	Quick & Quiet	Self-Care
 Build	Survivor	GenSurv	Diversion	Iron Will	Quick & Quiet	Urban Evasion
+Build	Survivor	GenSurv	Diversion	Iron Will	Red Herring	Urban Evasion
 Build	Survivor	GenSurv	Diversion	Iron Will	Resilience	Self-Care
 Build	Survivor	GenSurv	Diversion	Iron Will	Resilience	Spine Chill
 Build	Survivor	GenSurv	Diversion	Iron Will	Resilience	Urban Evasion
@@ -8925,6 +9204,7 @@ Build	Survivor	GenSurv	Diversion	Spine Chill	Urban Evasion	Windows Of Opportunit
 Build	Survivor	GenSurv	Diversion	Sprint Burst	Urban Evasion	Vigil
 Build	Survivor	GenSurv	Diversion	Tenacity	Unbreakable	Urban Evasion
 Build	Survivor	GenSurv	Empathy	Flip-Flop	Tenacity	Unbreakable
+Build	Survivor	GenSurv	Empathy	For the People	Iron Will	Quick & Quiet
 Build	Survivor	GenSurv	Empathy	Head On	Inner Strength	Iron Will
 Build	Survivor	GenSurv	Empathy	Head On	Inner Strength	Quick & Quiet
 Build	Survivor	GenSurv	Empathy	Head On	Iron Will	Quick & Quiet
@@ -8958,6 +9238,28 @@ Build	Survivor	GenSurv	Flip-Flop	Saboteur	Tenacity	Unbreakable
 Build	Survivor	GenSurv	Flip-Flop	Self-Care	Tenacity	Unbreakable
 Build	Survivor	GenSurv	Flip-Flop	Sprint Burst	Tenacity	Unbreakable
 Build	Survivor	GenSurv	Flip-Flop	Tenacity	Unbreakable	Windows Of Opportunity
+Build	Survivor	GenSurv	For the People	Head On	Inner Strength	Quick & Quiet
+Build	Survivor	GenSurv	For the People	Head On	Iron Will	Quick & Quiet
+Build	Survivor	GenSurv	For the People	Inner Strength	Iron Will	Quick & Quiet
+Build	Survivor	GenSurv	For the People	Inner Strength	Iron Will	Small Game
+Build	Survivor	GenSurv	For the People	Inner Strength	Quick & Quiet	Small Game
+Build	Survivor	GenSurv	For the People	Iron Will	Lithe	Lucky Break
+Build	Survivor	GenSurv	For the People	Iron Will	Lithe	Quick & Quiet
+Build	Survivor	GenSurv	For the People	Iron Will	Lithe	Resilience
+Build	Survivor	GenSurv	For the People	Iron Will	Lithe	Vigil
+Build	Survivor	GenSurv	For the People	Iron Will	Lucky Break	Quick & Quiet
+Build	Survivor	GenSurv	For the People	Iron Will	Lucky Break	Resilience
+Build	Survivor	GenSurv	For the People	Iron Will	Lucky Break	Self-Care
+Build	Survivor	GenSurv	For the People	Iron Will	Lucky Break	Sprint Burst
+Build	Survivor	GenSurv	For the People	Iron Will	Quick & Quiet	Resilience
+Build	Survivor	GenSurv	For the People	Iron Will	Resilience	Spine Chill
+Build	Survivor	GenSurv	For the People	Iron Will	Resilience	Sprint Burst
+Build	Survivor	GenSurv	For the People	Iron Will	Sprint Burst	Vigil
+Build	Survivor	GenSurv	For the People	Lithe	Resilience	Spine Chill
+Build	Survivor	GenSurv	For the People	Lithe	Self-Care	Vigil
+Build	Survivor	GenSurv	For the People	Quick & Quiet	Resilience	Spine Chill
+Build	Survivor	GenSurv	For the People	Resilience	Spine Chill	Sprint Burst
+Build	Survivor	GenSurv	For the People	Self-Care	Sprint Burst	Vigil
 Build	Survivor	GenSurv	Head On	Hope	Inner Strength	Quick & Quiet
 Build	Survivor	GenSurv	Head On	Inner Strength	Iron Will	Lightweight
 Build	Survivor	GenSurv	Head On	Inner Strength	Iron Will	Lucky Break
@@ -8970,6 +9272,7 @@ Build	Survivor	GenSurv	Head On	Inner Strength	Lithe	Vigil
 Build	Survivor	GenSurv	Head On	Inner Strength	Object Of Obsession	Quick & Quiet
 Build	Survivor	GenSurv	Head On	Inner Strength	Plunderer's Instinct	Quick & Quiet
 Build	Survivor	GenSurv	Head On	Inner Strength	Prove Thyself	Quick & Quiet
+Build	Survivor	GenSurv	Head On	Inner Strength	Quick & Quiet	Red Herring
 Build	Survivor	GenSurv	Head On	Inner Strength	Quick & Quiet	Resilience
 Build	Survivor	GenSurv	Head On	Inner Strength	Quick & Quiet	Small Game
 Build	Survivor	GenSurv	Head On	Inner Strength	Quick & Quiet	Unbreakable
@@ -9001,6 +9304,7 @@ Build	Survivor	GenSurv	Inner Strength	Iron Will	Poised	Quick & Quiet
 Build	Survivor	GenSurv	Inner Strength	Iron Will	Poised	Small Game
 Build	Survivor	GenSurv	Inner Strength	Iron Will	Premonition	Quick & Quiet
 Build	Survivor	GenSurv	Inner Strength	Iron Will	Prove Thyself	Quick & Quiet
+Build	Survivor	GenSurv	Inner Strength	Iron Will	Quick & Quiet	Red Herring
 Build	Survivor	GenSurv	Inner Strength	Iron Will	Quick & Quiet	Resilience
 Build	Survivor	GenSurv	Inner Strength	Iron Will	Quick & Quiet	Small Game
 Build	Survivor	GenSurv	Inner Strength	Iron Will	Quick & Quiet	Spine Chill
@@ -9032,6 +9336,7 @@ Build	Survivor	GenSurv	Inner Strength	Lithe	Small Game	Windows Of Opportunity
 Build	Survivor	GenSurv	Inner Strength	Object Of Obsession	Quick & Quiet	Small Game
 Build	Survivor	GenSurv	Inner Strength	Object Of Obsession	Quick & Quiet	Sole Survivor
 Build	Survivor	GenSurv	Inner Strength	Object Of Obsession	Small Game	Sole Survivor
+Build	Survivor	GenSurv	Inner Strength	Quick & Quiet	Red Herring	Small Game
 Build	Survivor	GenSurv	Inner Strength	Quick & Quiet	Resilience	Small Game
 Build	Survivor	GenSurv	Inner Strength	Quick & Quiet	Resilience	Spine Chill
 Build	Survivor	GenSurv	Inner Strength	Quick & Quiet	Small Game	Spine Chill
@@ -9084,6 +9389,7 @@ Build	Survivor	GenSurv	Iron Will	Plunderer's Instinct	Resilience	Spine Chill
 Build	Survivor	GenSurv	Iron Will	Poised	Resilience	Spine Chill
 Build	Survivor	GenSurv	Iron Will	Premonition	Resilience	Urban Evasion
 Build	Survivor	GenSurv	Iron Will	Prove Thyself	Resilience	Spine Chill
+Build	Survivor	GenSurv	Iron Will	Quick & Quiet	Red Herring	Resilience
 Build	Survivor	GenSurv	Iron Will	Quick & Quiet	Resilience	Self-Care
 Build	Survivor	GenSurv	Iron Will	Quick & Quiet	Resilience	Spine Chill
 Build	Survivor	GenSurv	Iron Will	Quick & Quiet	Resilience	Sprint Burst
@@ -9131,6 +9437,7 @@ Build	Survivor	GenSurv	Object Of Obsession	Quick & Quiet	Self-Care	Sole Survivor
 Build	Survivor	GenSurv	Object Of Obsession	Resilience	Sole Survivor	Spine Chill
 Build	Survivor	GenSurv	Object Of Obsession	Sole Survivor	Sprint Burst	Vigil
 Build	Survivor	GenSurv	Pharmacy	Quick & Quiet	Resilience	Spine Chill
+Build	Survivor	GenSurv	Quick & Quiet	Red Herring	Resilience	Spine Chill
 Build	Survivor	GenSurv	Quick & Quiet	Resilience	Self-Care	Spine Chill
 Build	Survivor	GenSurv	Quick & Quiet	Resilience	Spine Chill	Urban Evasion
 Build	Survivor	GenSurv	Quick & Quiet	Resilience	Spine Chill	Windows Of Opportunity

@@ -4,10 +4,42 @@ Clown	Corrupt Intervention	300
 Clown	Enduring	100
 Clown	Hex No One Escapes Death	300
 Clown	Make Your Choice	200
-Clown	Monitor & Abuse	100
+Clown	Monitor & Abuse	-100
 Clown	Play With Your Food	-300
 Clown	Pop Goes The Weasel	200
 Clown	Save The Best For Last	300
+############# Deathslinger #############
+Deathslinger	A Nurse's Calling	200
+Deathslinger	Barbecue & Chilli	200
+Deathslinger	Bitter Murmur	200
+Deathslinger	Brutal Strength	-100
+Deathslinger	Corrupt Intervention	300
+Deathslinger	Coulrophobia	-300
+Deathslinger	Dark Devotion	-300
+Deathslinger	Discordance	200
+Deathslinger	Distressing	-999
+Deathslinger	Enduring	-100
+Deathslinger	Furtive Chase	-100
+Deathslinger	Hex Devour Hope	200
+Deathslinger	Hex Haunted Ground	200
+Deathslinger	Hex No One Escapes Death	200
+Deathslinger	Hex Ruin	200
+Deathslinger	Hex Thrill Of The Hunt	200
+Deathslinger	I'm All Ears	200
+Deathslinger	Make Your Choice	200
+Deathslinger	Monitor & Abuse	300
+Deathslinger	Overwhelming Presence	-999
+Deathslinger	Pop Goes The Weasel	200
+Deathslinger	Rancor	100
+Deathslinger	Save The Best For Last	200
+Deathslinger	Shadowborn	200
+Deathslinger	Sloppy Butcher	200
+Deathslinger	Spies From The Shadows	100
+Deathslinger	Surge	100
+Deathslinger	Surveillance	200
+Deathslinger	Thrilling Tremors	200
+Deathslinger	Unnerving Presence	-999
+Deathslinger	Whispers	200
 ############# Demogorgon #############
 Demogorgon	Agitation	100
 Demogorgon	Barbecue & Chilli	200
@@ -15,12 +47,13 @@ Demogorgon	Brutal Strength	-300
 Demogorgon	Corrupt Intervention	200
 Demogorgon	Discordance	100
 Demogorgon	Enduring	-100
+Demogorgon	Gearhead	-100
 Demogorgon	Hex Devour Hope	300
 Demogorgon	Hex No One Escapes Death	100
 Demogorgon	I'm All Ears	300
 Demogorgon	Iron Grasp	100
 Demogorgon	Make Your Choice	300
-Demogorgon	Monitor & Abuse	100
+Demogorgon	Monitor & Abuse	-100
 Demogorgon	Play With Your Food	-300
 Demogorgon	Pop Goes The Weasel	300
 Demogorgon	Save The Best For Last	300
@@ -31,6 +64,7 @@ Demogorgon	Territorial Imperative	200
 Demogorgon	Thrilling Tremors	300
 Demogorgon	Tinkerer	100
 ############# Doctor #############
+Doctor	Barbecue & Chilli	200
 Doctor	Brutal Strength	200
 Doctor	Corrupt Intervention	300
 Doctor	Coulrophobia	100
@@ -40,15 +74,17 @@ Doctor	Enduring	100
 Doctor	Hex Devour Hope	100
 Doctor	Hex Huntress Lullaby	300
 Doctor	Hex No One Escapes Death	300
+Doctor	Hex Ruin	100
 Doctor	Iron Maiden	100
 Doctor	Make Your Choice	200
-Doctor	Monitor & Abuse	200
+Doctor	Monitor & Abuse	-100
 Doctor	Overcharge	300
 Doctor	Play With Your Food	-300
 Doctor	Pop Goes The Weasel	200
 Doctor	Save The Best For Last	300
+Doctor	Thrilling Tremors	300
 Doctor	Unnerving Presence	200
-Doctor	Whispers	100
+Doctor	Whispers	200
 ############# Freddy #############
 Freddy	Barbecue & Chilli	200
 Freddy	Corrupt Intervention	200
@@ -57,6 +93,7 @@ Freddy	Discordance	200
 Freddy	Enduring	100
 Freddy	Hex Huntress Lullaby	200
 Freddy	Hex No One Escapes Death	-100
+Freddy	Hex Ruin	100
 Freddy	I'm All Ears	200
 Freddy	Insidious	-999
 Freddy	Make Your Choice	100
@@ -80,11 +117,13 @@ Ghostface	Dark Devotion	-999
 Ghostface	Discordance	200
 Ghostface	Distressing	-999
 Ghostface	Enduring	100
+Ghostface	Franklin's Demise	100
 Ghostface	Furtive Chase	-300
 Ghostface	Hex Devour Hope	100
 Ghostface	Hex Haunted Ground	100
 Ghostface	Hex No One Escapes Death	300
 Ghostface	I'm All Ears	300
+Ghostface	Infectious Fright	-200
 Ghostface	Insidious	-999
 Ghostface	Iron Grasp	100
 Ghostface	Make Your Choice	100
@@ -135,6 +174,7 @@ Hillbilly	Dark Devotion	100
 Hillbilly	Deerstalker	300
 Hillbilly	Discordance	200
 Hillbilly	Enduring	300
+Hillbilly	Gearhead	-100
 Hillbilly	Hex Haunted Ground	-300
 Hillbilly	Hex No One Escapes Death	-999
 Hillbilly	Infectious Fright	300
@@ -164,6 +204,7 @@ Huntress Anna	Coulrophobia	-300
 Huntress Anna	Deerstalker	200
 Huntress Anna	Discordance	300
 Huntress Anna	Enduring	-100
+Huntress Anna	Gearhead	-100
 Huntress Anna	Hex No One Escapes Death	-300
 Huntress Anna	I'm All Ears	200
 Huntress Anna	Insidious	-999
@@ -188,14 +229,14 @@ Leatherface	Dark Devotion	100
 Leatherface	Deerstalker	200
 Leatherface	Discordance	100
 Leatherface	Enduring	200
-Leatherface	Franklin's Demise	100
+Leatherface	Gearhead	-100
 Leatherface	Hex Haunted Ground	-300
 Leatherface	Hex No One Escapes Death	200
 Leatherface	Infectious Fright	100
 Leatherface	Insidious	300
 Leatherface	Iron Grasp	300
 Leatherface	Make Your Choice	-300
-Leatherface	Monitor & Abuse	200
+Leatherface	Monitor & Abuse	100
 Leatherface	Play With Your Food	300
 Leatherface	Pop Goes The Weasel	200
 Leatherface	Save The Best For Last	-999
@@ -213,7 +254,7 @@ Legion	Enduring	100
 Legion	Hex No One Escapes Death	-300
 Legion	I'm All Ears	300
 Legion	Make Your Choice	100
-Legion	Monitor & Abuse	200
+Legion	Monitor & Abuse	-100
 Legion	Play With Your Food	-300
 Legion	Pop Goes The Weasel	200
 Legion	Save The Best For Last	-300
@@ -266,7 +307,7 @@ Nurse Sally	I'm All Ears	300
 Nurse Sally	Infectious Fright	300
 Nurse Sally	Insidious	100
 Nurse Sally	Make Your Choice	100
-Nurse Sally	Monitor & Abuse	200
+Nurse Sally	Monitor & Abuse	100
 Nurse Sally	Play With Your Food	-999
 Nurse Sally	Pop Goes The Weasel	300
 Nurse Sally	Save The Best For Last	-999
@@ -287,10 +328,13 @@ Pig	Dark Devotion	-300
 Pig	Discordance	200
 Pig	Distressing	-999
 Pig	Enduring	100
+Pig	Franklin's Demise	100
 Pig	Furtive Chase	-100
+Pig	Gearhead	-100
 Pig	Hex Devour Hope	100
 Pig	Hex Haunted Ground	100
 Pig	Hex No One Escapes Death	300
+Pig	Hex Ruin	200
 Pig	I'm All Ears	300
 Pig	Insidious	-999
 Pig	Make Your Choice	200
@@ -314,11 +358,12 @@ Plague	Coulrophobia	-999
 Plague	Deerstalker	100
 Plague	Discordance	200
 Plague	Enduring	100
+Plague	Gearhead	-100
 Plague	Hex No One Escapes Death	100
 Plague	I'm All Ears	200
 Plague	Infectious Fright	300
 Plague	Make Your Choice	-300
-Plague	Monitor & Abuse	200
+Plague	Monitor & Abuse	100
 Plague	Play With Your Food	200
 Plague	Pop Goes The Weasel	200
 Plague	Save The Best For Last	-300
@@ -364,6 +409,7 @@ The Oni	Corrupt Intervention	300
 The Oni	Deerstalker	300
 The Oni	Discordance	100
 The Oni	Enduring	100
+The Oni	Gearhead	-100
 The Oni	Hex Haunted Ground	-300
 The Oni	Hex No One Escapes Death	-100
 The Oni	Infectious Fright	300
@@ -391,7 +437,7 @@ Trapper	Hex No One Escapes Death	300
 Trapper	Insidious	100
 Trapper	Iron Grasp	200
 Trapper	Make Your Choice	200
-Trapper	Monitor & Abuse	100
+Trapper	Monitor & Abuse	-100
 Trapper	Play With Your Food	-300
 Trapper	Pop Goes The Weasel	200
 Trapper	Save The Best For Last	300
@@ -406,6 +452,7 @@ Wraith	Dark Devotion	-300
 Wraith	Discordance	300
 Wraith	Distressing	-999
 Wraith	Enduring	200
+Wraith	Franklin's Demise	100
 Wraith	Furtive Chase	-100
 Wraith	Hex Devour Hope	200
 Wraith	Hex Haunted Ground	100

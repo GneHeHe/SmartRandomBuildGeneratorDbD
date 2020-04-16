@@ -1,4 +1,5 @@
 KILLER_1	Corrupt Intervention
+KILLER_1	Dead Man's Switch
 KILLER_1	Dying Light
 KILLER_1	Hex Ruin
 KILLER_1	Overcharge
@@ -21,6 +22,8 @@ KILLER_3	Barbecue & Chilli
 KILLER_3	Bitter Murmur
 KILLER_3	Bloodhound
 KILLER_3	Discordance
+KILLER_3	Gearhead
+KILLER_3	Hex Retribution
 KILLER_3	Hex Thrill Of The Hunt
 KILLER_3	Infectious Fright
 KILLER_3	Iron Maiden
@@ -40,6 +43,7 @@ KILLER_4	Remember Me
 SURVIV_1	Aftercare
 SURVIV_1	Bond
 SURVIV_1	Empathy
+SURVIV_1	For the People
 SURVIV_1	Inner Strength
 SURVIV_1	Pharmacy
 SURVIV_1	Second Wind
