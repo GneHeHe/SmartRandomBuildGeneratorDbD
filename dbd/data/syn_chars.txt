@@ -23,7 +23,6 @@ Deathslinger	Furtive Chase	-100
 Deathslinger	Hex Devour Hope	200
 Deathslinger	Hex Haunted Ground	200
 Deathslinger	Hex No One Escapes Death	200
-Deathslinger	Hex Ruin	200
 Deathslinger	Hex Thrill Of The Hunt	200
 Deathslinger	I'm All Ears	200
 Deathslinger	Make Your Choice	200
@@ -36,7 +35,7 @@ Deathslinger	Shadowborn	200
 Deathslinger	Sloppy Butcher	200
 Deathslinger	Spies From The Shadows	100
 Deathslinger	Surge	100
-Deathslinger	Surveillance	200
+Deathslinger	Surveillance	100
 Deathslinger	Thrilling Tremors	200
 Deathslinger	Unnerving Presence	-999
 Deathslinger	Whispers	200
@@ -59,7 +58,6 @@ Demogorgon	Pop Goes The Weasel	300
 Demogorgon	Save The Best For Last	300
 Demogorgon	Sloppy Butcher	-100
 Demogorgon	Surge	-100
-Demogorgon	Surveillance	-300
 Demogorgon	Territorial Imperative	200
 Demogorgon	Thrilling Tremors	300
 Demogorgon	Tinkerer	100
@@ -74,7 +72,6 @@ Doctor	Enduring	100
 Doctor	Hex Devour Hope	100
 Doctor	Hex Huntress Lullaby	300
 Doctor	Hex No One Escapes Death	300
-Doctor	Hex Ruin	100
 Doctor	Iron Maiden	100
 Doctor	Make Your Choice	200
 Doctor	Monitor & Abuse	-100
@@ -103,7 +100,7 @@ Freddy	Play With Your Food	-300
 Freddy	Pop Goes The Weasel	300
 Freddy	Save The Best For Last	200
 Freddy	Surge	100
-Freddy	Surveillance	300
+Freddy	Surveillance	200
 Freddy	Thrilling Tremors	300
 Freddy	Tinkerer	100
 ############# Ghostface #############
@@ -134,7 +131,7 @@ Ghostface	Pop Goes The Weasel	200
 Ghostface	Save The Best For Last	-100
 Ghostface	Sloppy Butcher	100
 Ghostface	Spies From The Shadows	100
-Ghostface	Surveillance	300
+Ghostface	Surveillance	200
 Ghostface	Territorial Imperative	100
 Ghostface	Unnerving Presence	-999
 Ghostface	Whispers	200
@@ -153,7 +150,6 @@ Hag	Franklin's Demise	100
 Hag	Hangman's Trick	100
 Hag	Hex Devour Hope	100
 Hag	Hex No One Escapes Death	100
-Hag	I'm All Ears	-300
 Hag	Iron Grasp	200
 Hag	Make Your Choice	300
 Hag	Monitor & Abuse	300
@@ -162,7 +158,7 @@ Hag	Pop Goes The Weasel	200
 Hag	Save The Best For Last	200
 Hag	Sloppy Butcher	100
 Hag	Surge	100
-Hag	Surveillance	200
+Hag	Surveillance	100
 Hag	Territorial Imperative	100
 ############# Hillbilly #############
 Hillbilly	Agitation	100
@@ -177,6 +173,7 @@ Hillbilly	Enduring	300
 Hillbilly	Gearhead	-100
 Hillbilly	Hex Haunted Ground	-300
 Hillbilly	Hex No One Escapes Death	-999
+Hillbilly	Hex Ruin	100
 Hillbilly	Infectious Fright	300
 Hillbilly	Iron Grasp	100
 Hillbilly	Make Your Choice	-999
@@ -252,6 +249,7 @@ Legion	Dark Devotion	-100
 Legion	Discordance	300
 Legion	Enduring	100
 Legion	Hex No One Escapes Death	-300
+Legion	Hex Ruin	100
 Legion	I'm All Ears	300
 Legion	Make Your Choice	100
 Legion	Monitor & Abuse	-100
@@ -271,7 +269,7 @@ Myers	Dark Devotion	-100
 Myers	Deerstalker	300
 Myers	Discordance	200
 Myers	Distressing	-999
-Myers	Enduring	100
+Myers	Enduring	200
 Myers	Furtive Chase	-300
 Myers	Hex Devour Hope	100
 Myers	Hex Haunted Ground	100
@@ -288,7 +286,7 @@ Myers	Pop Goes The Weasel	200
 Myers	Save The Best For Last	-100
 Myers	Sloppy Butcher	100
 Myers	Spies From The Shadows	100
-Myers	Surveillance	200
+Myers	Surveillance	100
 Myers	Territorial Imperative	100
 Myers	Unnerving Presence	-999
 Myers	Whispers	200
@@ -303,6 +301,7 @@ Nurse Sally	Discordance	200
 Nurse Sally	Enduring	-999
 Nurse Sally	Hex Devour Hope	200
 Nurse Sally	Hex No One Escapes Death	-100
+Nurse Sally	Hex Ruin	100
 Nurse Sally	I'm All Ears	300
 Nurse Sally	Infectious Fright	300
 Nurse Sally	Insidious	100
@@ -334,8 +333,8 @@ Pig	Gearhead	-100
 Pig	Hex Devour Hope	100
 Pig	Hex Haunted Ground	100
 Pig	Hex No One Escapes Death	300
-Pig	Hex Ruin	200
 Pig	I'm All Ears	300
+Pig	Infectious Fright	100
 Pig	Insidious	-999
 Pig	Make Your Choice	200
 Pig	Monitor & Abuse	300
@@ -346,7 +345,7 @@ Pig	Save The Best For Last	300
 Pig	Sloppy Butcher	100
 Pig	Spies From The Shadows	100
 Pig	Surge	-100
-Pig	Surveillance	300
+Pig	Surveillance	200
 Pig	Thrilling Tremors	100
 Pig	Unnerving Presence	-999
 Pig	Whispers	300
@@ -357,6 +356,7 @@ Plague	Corrupt Intervention	300
 Plague	Coulrophobia	-999
 Plague	Deerstalker	100
 Plague	Discordance	200
+Plague	Dying Light	200
 Plague	Enduring	100
 Plague	Gearhead	-100
 Plague	Hex No One Escapes Death	100
@@ -369,9 +369,20 @@ Plague	Pop Goes The Weasel	200
 Plague	Save The Best For Last	-300
 Plague	Sloppy Butcher	-999
 Plague	Surge	-100
-Plague	Surveillance	100
 Plague	Thanatophobia	300
 Plague	Whispers	-100
+############# Pyramid Head #############
+Pyramid Head	A Nurse's Calling	300
+Pyramid Head	Barbecue & Chilli	-100
+Pyramid Head	Corrupt Intervention	300
+Pyramid Head	Coulrophobia	200
+Pyramid Head	I'm All Ears	300
+Pyramid Head	Infectious Fright	100
+Pyramid Head	Make Your Choice	-100
+Pyramid Head	Save The Best For Last	200
+Pyramid Head	Sloppy Butcher	300
+Pyramid Head	Thrilling Tremors	-100
+Pyramid Head	Zanshin Tactics	300
 ############# Spirit Rin #############
 Spirit Rin	A Nurse's Calling	300
 Spirit Rin	Bamboozle	-100
@@ -385,7 +396,7 @@ Spirit Rin	Distressing	-300
 Spirit Rin	Enduring	-100
 Spirit Rin	Hex Devour Hope	300
 Spirit Rin	Hex No One Escapes Death	-100
-Spirit Rin	I'm All Ears	-300
+Spirit Rin	Hex Ruin	100
 Spirit Rin	Infectious Fright	100
 Spirit Rin	Make Your Choice	100
 Spirit Rin	Monitor & Abuse	100
@@ -397,7 +408,7 @@ Spirit Rin	Sloppy Butcher	100
 Spirit Rin	Spies From The Shadows	100
 Spirit Rin	Stridor	300
 Spirit Rin	Surge	100
-Spirit Rin	Surveillance	300
+Spirit Rin	Surveillance	100
 Spirit Rin	Thrilling Tremors	200
 Spirit Rin	Whispers	200
 ############# The Oni #############
@@ -412,6 +423,7 @@ The Oni	Enduring	100
 The Oni	Gearhead	-100
 The Oni	Hex Haunted Ground	-300
 The Oni	Hex No One Escapes Death	-100
+The Oni	Hex Ruin	100
 The Oni	Infectious Fright	300
 The Oni	Make Your Choice	-100
 The Oni	Monitor & Abuse	300
@@ -428,6 +440,7 @@ The Oni	Tinkerer	100
 The Oni	Whispers	100
 ############# Trapper #############
 Trapper	Agitation	200
+Trapper	Blood Warden	100
 Trapper	Corrupt Intervention	300
 Trapper	Enduring	100
 Trapper	Franklin's Demise	100
@@ -440,8 +453,9 @@ Trapper	Make Your Choice	200
 Trapper	Monitor & Abuse	-100
 Trapper	Play With Your Food	-300
 Trapper	Pop Goes The Weasel	200
+Trapper	Remember Me	100
 Trapper	Save The Best For Last	300
-Trapper	Surveillance	200
+Trapper	Surveillance	100
 Trapper	Whispers	300
 ############# Wraith #############
 Wraith	A Nurse's Calling	300
@@ -467,7 +481,7 @@ Wraith	Pop Goes The Weasel	200
 Wraith	Save The Best For Last	200
 Wraith	Sloppy Butcher	100
 Wraith	Spies From The Shadows	100
-Wraith	Surveillance	300
+Wraith	Surveillance	100
 Wraith	Thrilling Tremors	100
 Wraith	Unnerving Presence	-999
 Wraith	Whispers	200

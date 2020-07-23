@@ -18,6 +18,7 @@ Adrenaline	No Mither	-999
 Adrenaline	Object Of Obsession	50
 Adrenaline	Poised	200
 Adrenaline	Self-Care	-50
+Adrenaline	Soul Guard	100
 Adrenaline	Sprint Burst	-50
 Adrenaline	Wake Up!	50
 Aftercare	Bond	-300
@@ -194,6 +195,7 @@ No Mither	Resilience	50
 No Mither	Saboteur	50
 No Mither	Self-Care	-999
 No Mither	Solidarity	-999
+No Mither	Soul Guard	200
 No Mither	Spine Chill	50
 No Mither	Sprint Burst	50
 No Mither	Tenacity	50
@@ -217,6 +219,7 @@ Saboteur	Tenacity	50
 Saboteur	Unbreakable	100
 Self-Care	Solidarity	-300
 Slippery Meat	Up The Ante	50
+Soul Guard	Unbreakable	200
 Spine Chill	Stake Out	50
 Spine Chill	Urban Evasion	200
 Sprint Burst	Vigil	300
@@ -224,7 +227,7 @@ Sprint Burst	Windows Of Opportunity	100
 Tenacity	Unbreakable	200
 We'll Make It	We're Gonna Live Forever	50
 ############# Killers #############
-Agitation	Franklin's Demise	100
+Agitation	Franklin's Demise	50
 Agitation	Iron Grasp	300
 Agitation	Mad Grit	300
 Agitation	Make Your Choice	200
@@ -237,6 +240,7 @@ A Nurse's Calling	Monitor & Abuse	100
 A Nurse's Calling	Sloppy Butcher	200
 A Nurse's Calling	Thanatophobia	100
 A Nurse's Calling	Tinkerer	50
+A Nurse's Calling	Trail of Torment	300
 Bamboozle	Brutal Strength	100
 Bamboozle	Enduring	50
 Bamboozle	Fire Up	50
@@ -268,8 +272,9 @@ Corrupt Intervention	Hex Ruin	-100
 Corrupt Intervention	Pop Goes The Weasel	-100
 Corrupt Intervention	Surge	-50
 Corrupt Intervention	Whispers	100
-Coulrophobia	Distressing	100
-Coulrophobia	Sloppy Butcher	50
+Coulrophobia	Distressing	200
+Coulrophobia	Sloppy Butcher	100
+Coulrophobia	Trail of Torment	-300
 Cruel Limits	Tinkerer	100
 Dark Devotion	Monitor & Abuse	-300
 Dark Devotion	Nemesis	50
@@ -279,18 +284,21 @@ Dead Man's Switch	Furtive Chase	300
 Dead Man's Switch	Nemesis	300
 Dead Man's Switch	Play With Your Food	-300
 Dead Man's Switch	Save The Best For Last	-300
+Deathbound	Make Your Choice	200
 Deerstalker	Infectious Fright	100
 Deerstalker	Knock Out	200
 Deerstalker	Sloppy Butcher	50
 Discordance	Hex Ruin	200
 Discordance	Monitor & Abuse	100
 Discordance	Surveillance	-100
+Discordance	Trail of Torment	100
 Discordance	Whispers	-100
 Distressing	Furtive Chase	-300
 Distressing	Infectious Fright	100
 Distressing	Monitor & Abuse	-999
 Distressing	Overcharge	100
 Distressing	Overwhelming Presence	50
+Distressing	Trail of Torment	-999
 Distressing	Unnerving Presence	100
 Dying Light	Nemesis	-300
 Dying Light	Pop Goes The Weasel	-50
@@ -307,7 +315,7 @@ Furtive Chase	Play With Your Food	100
 Furtive Chase	Save The Best For Last	-300
 Hex Devour Hope	Hex Haunted Ground	300
 Hex Devour Hope	Hex Huntress Lullaby	-300
-Hex Devour Hope	Hex Retribution	50
+Hex Devour Hope	Hex Retribution	100
 Hex Devour Hope	Hex Ruin	-300
 Hex Devour Hope	Hex The Third Seal	-300
 Hex Devour Hope	Hex Thrill Of The Hunt	300
@@ -319,20 +327,20 @@ Hex Haunted Ground	Hex Retribution	100
 Hex Haunted Ground	Hex Ruin	200
 Hex Haunted Ground	Hex The Third Seal	200
 Hex Haunted Ground	Hex Thrill Of The Hunt	200
-Hex Huntress Lullaby	Hex Retribution	50
+Hex Huntress Lullaby	Hex Retribution	100
 Hex Huntress Lullaby	Hex Thrill Of The Hunt	200
 Hex Huntress Lullaby	Overcharge	100
 Hex Huntress Lullaby	Whispers	50
-Hex No One Escapes Death	Hex Retribution	50
+Hex No One Escapes Death	Hex Retribution	100
 Hex No One Escapes Death	Hex Thrill Of The Hunt	100
 Hex No One Escapes Death	Infectious Fright	100
 Hex No One Escapes Death	Insidious	200
 Hex No One Escapes Death	Rancor	-100
 Hex No One Escapes Death	Remember Me	300
 Hex No One Escapes Death	Whispers	200
-Hex Retribution	Hex Ruin	50
-Hex Retribution	Hex The Third Seal	50
-Hex Retribution	Hex Thrill Of The Hunt	50
+Hex Retribution	Hex Ruin	100
+Hex Retribution	Hex The Third Seal	100
+Hex Retribution	Hex Thrill Of The Hunt	100
 Hex Retribution	Make Your Choice	50
 Hex Ruin	Hex The Third Seal	-300
 Hex Ruin	Hex Thrill Of The Hunt	300
@@ -341,23 +349,28 @@ Hex Ruin	Pop Goes The Weasel	-999
 Hex Ruin	Surge	-999
 Hex Ruin	Surveillance	300
 Hex Ruin	Thrilling Tremors	200
+Hex Ruin	Tinkerer	100
 Hex The Third Seal	Hex Thrill Of The Hunt	200
 Hex The Third Seal	Knock Out	300
 Hex The Third Seal	Whispers	50
-Infectious Fright	Knock Out	100
+Hex Thrill Of The Hunt	Trail of Torment	100
+Infectious Fright	Knock Out	200
 Infectious Fright	Make Your Choice	100
 Infectious Fright	Monitor & Abuse	200
 Infectious Fright	Save The Best For Last	100
 Infectious Fright	Sloppy Butcher	100
+Infectious Fright	Trail of Torment	-300
 Infectious Fright	Whispers	-50
+Insidious	Trail of Torment	-999
 Iron Grasp	Mad Grit	200
 Iron Grasp	Monstrous Shrine	50
-Knock Out	Pop Goes The Weasel	-300
 Make Your Choice	Territorial Imperative	100
+Make Your Choice	Trail of Torment	100
 Make Your Choice	Whispers	50
 Mindbreaker	Tinkerer	-300
 Monitor & Abuse	Shadowborn	-999
 Monitor & Abuse	Surveillance	100
+Monitor & Abuse	Trail of Torment	-200
 Monitor & Abuse	Whispers	100
 Nemesis	Play With Your Food	200
 Nemesis	Rancor	100
@@ -367,6 +380,7 @@ Overcharge	Pop Goes The Weasel	100
 Overcharge	Surge	-300
 Overcharge	Surveillance	100
 Overcharge	Unnerving Presence	200
+Overwhelming Presence	Trail of Torment	-300
 Pop Goes The Weasel	Surge	-50
 Pop Goes The Weasel	Surveillance	200
 Pop Goes The Weasel	Thrilling Tremors	200
@@ -376,3 +390,6 @@ Remember Me	Save The Best For Last	-300
 Sloppy Butcher	Thanatophobia	200
 Spies From The Shadows	Whispers	-300
 Surge	Surveillance	300
+Surveillance	Trail of Torment	300
+Tinkerer	Trail of Torment	-300
+Trail of Torment	Unnerving Presence	-300

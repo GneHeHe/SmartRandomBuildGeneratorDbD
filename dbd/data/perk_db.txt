@@ -18,14 +18,14 @@ Distressing	Killer	iconPerks_distressing	5
 Dying Light	Killer	iconPerks_dyingLight	25
 Enduring	Killer	iconPerks_enduring	250
 Fire Up	Killer	iconPerks_fireUp	10
-Franklin's Demise	Killer	iconPerks_franklinsLoss	25
-Furtive Chase	Killer	iconPerks_FurtiveChase	25
+Franklin's Demise	Killer	iconPerks_franklinsLoss	100
+Furtive Chase	Killer	iconPerks_FurtiveChase	10
 Hangman's Trick	Killer	iconPerks_hangmansTrick	1
 Hex Devour Hope	Killer	iconPerks_devourHope	50
 Hex Haunted Ground	Killer	iconPerks_hauntedGround	1
 Hex Huntress Lullaby	Killer	iconPerks_HuntressLullaby	25
 Hex No One Escapes Death	Killer	iconPerks_noOneEscapesDeath	200
-Hex Ruin	Killer	iconPerks_ruin	100
+Hex Ruin	Killer	iconPerks_ruin	150
 Hex The Third Seal	Killer	iconPerks_theThirdSeal	10
 Hex Thrill Of The Hunt	Killer	iconPerks_thrillOfTheHunt	1
 I'm All Ears	Killer	iconPerks_ImAllEars	150
@@ -63,7 +63,7 @@ Tinkerer	Killer	iconPerks_tinkerer	25
 Unnerving Presence	Killer	iconPerks_unnervingPresence	5
 Unrelenting	Killer	iconPerks_unrelenting	5
 Whispers	Killer	iconPerks_whispers	250
-Zanshin Tactics	Killer	iconPerks_zanshinTactics	100
+Zanshin Tactics	Killer	iconPerks_zanshinTactics	150
 Ace In The Hole	Survivor	iconPerks_aceInTheHole	10
 Adrenaline	Survivor	iconPerks_adrenaline	250
 Aftercare	Survivor	iconPerks_aftercare	100
@@ -72,7 +72,7 @@ Any Means Necessary	Survivor	iconPerks_anyMeansNecessary	100
 Autodidact	Survivor	iconPerks_autodidact	5
 Babysitter	Survivor	iconPerks_Babysitter	10
 Balanced Landing	Survivor	iconPerks_balancedLanding	150
-Better Together	Survivor	iconPerks_BetterTogether	10
+Better Together	Survivor	iconPerks_BetterTogether	25
 Boil Over	Survivor	iconPerks_boilOver	10
 Bond	Survivor	iconPerks_bond	200
 Borrowed Time	Survivor	iconPerks_borrowedTime	250
@@ -144,3 +144,9 @@ For the People	Survivor	iconPerks_ForThePeople	100
 Gearhead	Killer	iconPerks_Gearhead	10
 Dead Man's Switch	Killer	iconPerks_DeadMansSwitch	10
 Hex Retribution	Killer	iconPerks_HexRetribution	1
+Soul Guard	Survivor	iconPerks_SoulGuard	150
+Blood Pact	Survivor	iconPerks_BloodPact	5
+Repressed Alliance	Survivor	iconPerks_RepressedAlliance	150
+Forced Penance	Killer	iconPerks_ForcedPenance	10
+Trail of Torment	Killer	iconPerks_TrailOfTorment	50
+Deathbound	Killer	iconPerks_Deathbound	50

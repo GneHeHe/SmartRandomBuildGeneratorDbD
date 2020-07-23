@@ -21,6 +21,7 @@ KILLER_3	A Nurse's Calling
 KILLER_3	Barbecue & Chilli
 KILLER_3	Bitter Murmur
 KILLER_3	Bloodhound
+KILLER_3	Deathbound
 KILLER_3	Discordance
 KILLER_3	Gearhead
 KILLER_3	Hex Retribution
@@ -63,6 +64,7 @@ SURVIV_2	Left Behind
 SURVIV_2	Lucky Break
 SURVIV_2	Mettle Of Man
 SURVIV_2	Premonition
+SURVIV_2	Soul Guard
 SURVIV_2	Spine Chill
 SURVIV_2	Tenacity
 SURVIV_2	Unbreakable

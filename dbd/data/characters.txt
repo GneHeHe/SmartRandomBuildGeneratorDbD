@@ -38,3 +38,5 @@ Yui	Survivor	SS_charSelect_portrait
 The Oni	Killer	SK_charSelect_portrait
 Zarina	Survivor	US_charSelect_portrait
 Deathslinger	Killer	UK_charSelect_portrait
+Cheryl	Survivor	S22_charSelect_portrait
+Pyramid Head	Killer	K20_charSelect_portrait
