@@ -147,7 +147,6 @@ Hag	Deerstalker	100
 Hag	Distressing	-999
 Hag	Enduring	-100
 Hag	Franklin's Demise	100
-Hag	Hangman's Trick	100
 Hag	Hex Devour Hope	100
 Hag	Hex No One Escapes Death	100
 Hag	Iron Grasp	200
@@ -444,7 +443,6 @@ Trapper	Blood Warden	100
 Trapper	Corrupt Intervention	300
 Trapper	Enduring	100
 Trapper	Franklin's Demise	100
-Trapper	Hangman's Trick	200
 Trapper	Hex Devour Hope	200
 Trapper	Hex No One Escapes Death	300
 Trapper	Insidious	100

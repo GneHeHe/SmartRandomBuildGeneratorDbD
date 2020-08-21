@@ -98,12 +98,14 @@ Dance With Me	Quick & Quiet	100
 Dance With Me	Windows Of Opportunity	200
 Dark Sense	Poised	50
 Dark Sense	Wake Up!	100
+Dead Hard	Deliverance	100
 Dead Hard	For the People	100
 Dead Hard	Head On	-100
 Dead Hard	Iron Will	50
 Dead Hard	Lithe	-100
 Dead Hard	No Mither	50
 Dead Hard	Sprint Burst	-999
+Dead Hard	Unbreakable	100
 Dead Hard	Vigil	300
 Dead Hard	Windows Of Opportunity	100
 Decisive Strike	Deliverance	100
@@ -158,6 +160,7 @@ Inner Strength	Iron Will	100
 Inner Strength	No Mither	-999
 Inner Strength	Pharmacy	-300
 Inner Strength	Quick & Quiet	100
+Inner Strength	Red Herring	100
 Inner Strength	Self-Care	-300
 Inner Strength	Small Game	300
 Inner Strength	Solidarity	-300
@@ -222,6 +225,7 @@ Slippery Meat	Up The Ante	50
 Soul Guard	Unbreakable	200
 Spine Chill	Stake Out	50
 Spine Chill	Urban Evasion	200
+Sprint Burst	Unbreakable	100
 Sprint Burst	Vigil	300
 Sprint Burst	Windows Of Opportunity	100
 Tenacity	Unbreakable	200
@@ -313,6 +317,7 @@ Furtive Chase	Monitor & Abuse	-300
 Furtive Chase	Nemesis	200
 Furtive Chase	Play With Your Food	100
 Furtive Chase	Save The Best For Last	-300
+Gearhead	Hex Ruin	100
 Hex Devour Hope	Hex Haunted Ground	300
 Hex Devour Hope	Hex Huntress Lullaby	-300
 Hex Devour Hope	Hex Retribution	100
