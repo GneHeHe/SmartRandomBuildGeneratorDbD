@@ -119,14 +119,16 @@ Finally, a **built-in tutorial** is also included in **SRBG**
 
 # How to install and use SRBG ?
 
-Download the last compiled JAR file [here](https://github.com/GneHeHe/SmartRandomBuildGeneratorDbD/releases/download/2.3/SRBG.jar) (also available in '**releases**' tab)
+Download the last **pre-compiled JAR file** [here](https://github.com/GneHeHe/SmartRandomBuildGeneratorDbD/releases/download/2.3/SRBG.jar) (also available in '**releases**' tab)
+
+If you have any **issue with the JAR file**, you can also download the **wrapped EXE file** [here](https://raw.githubusercontent.com/GneHeHe/SmartRandomBuildGeneratorDbD/master/dbd/data/versions/SRBG_2.3.exe)
+
+**Double click** either on the JAR file **'SRBG.jar'** or on the EXE file **'SRBG.exe'** to launch **SRBG**
 
 System Requirements:
 
-* Latest **Java** Version [Link](https://java.com/en/download)
-* Library **Gson** (included in compiled JAR file)
-
-Double click on the JAR file **'SmartRandBuildGen.jar'** to run **SRBG**
+* Recent **Java** Version (1.8 required) [Link](https://java.com/en/download)
+* Library **Gson** (included in pre-compiled JAR or EXE files)
 
 # Conclusion
 
