@@ -22,11 +22,11 @@ Franklin's Demise	Killer	iconPerks_franklinsLoss	100
 Furtive Chase	Killer	iconPerks_FurtiveChase	10
 Hangman's Trick	Killer	iconPerks_hangmansTrick	1
 Hex Devour Hope	Killer	iconPerks_devourHope	50
-Hex Haunted Ground	Killer	iconPerks_hauntedGround	1
+Hex Haunted Ground	Killer	iconPerks_hauntedGround	50
 Hex Huntress Lullaby	Killer	iconPerks_HuntressLullaby	25
 Hex No One Escapes Death	Killer	iconPerks_noOneEscapesDeath	200
-Hex Ruin	Killer	iconPerks_ruin	150
-Hex The Third Seal	Killer	iconPerks_theThirdSeal	10
+Hex Ruin	Killer	iconPerks_ruin	200
+Hex The Third Seal	Killer	iconPerks_theThirdSeal	25
 Hex Thrill Of The Hunt	Killer	iconPerks_thrillOfTheHunt	1
 I'm All Ears	Killer	iconPerks_ImAllEars	150
 Infectious Fright	Killer	iconPerks_infectiousFright	150
@@ -48,7 +48,7 @@ Pop Goes The Weasel	Killer	iconPerks_popGoesTheWeasel	300
 Predator	Killer	iconPerks_predator	5
 Rancor	Killer	iconPerks_hatred	50
 Remember Me	Killer	iconPerks_rememberMe	25
-Save The Best For Last	Killer	iconPerks_saveTheBestForLast	150
+Save The Best For Last	Killer	iconPerks_saveTheBestForLast	100
 Shadowborn	Killer	iconPerks_shadowborn	100
 Sloppy Butcher	Killer	iconPerks_sloppyButcher	200
 Spies From The Shadows	Killer	iconPerks_spiesFromTheShadows	25
@@ -59,7 +59,7 @@ Surveillance	Killer	iconPerks_surveillance	150
 Territorial Imperative	Killer	iconPerks_TerritorialImperative	25
 Thanatophobia	Killer	iconPerks_thatanophobia	100
 Thrilling Tremors	Killer	iconPerks_ThrillingTremors	200
-Tinkerer	Killer	iconPerks_tinkerer	25
+Tinkerer	Killer	iconPerks_tinkerer	100
 Unnerving Presence	Killer	iconPerks_unnervingPresence	5
 Unrelenting	Killer	iconPerks_unrelenting	5
 Whispers	Killer	iconPerks_whispers	250
@@ -76,7 +76,7 @@ Better Together	Survivor	iconPerks_BetterTogether	25
 Boil Over	Survivor	iconPerks_boilOver	10
 Bond	Survivor	iconPerks_bond	200
 Borrowed Time	Survivor	iconPerks_borrowedTime	250
-Botany Knowledge	Survivor	iconPerks_botanyKnowledge	10
+Botany Knowledge	Survivor	iconPerks_botanyKnowledge	50
 Breakdown	Survivor	iconPerks_breakdown	10
 Breakout	Survivor	iconPerks_breakout	50
 Buckle Up	Survivor	iconPerks_buckleUp	1
@@ -86,7 +86,7 @@ Dance With Me	Survivor	iconPerks_danceWithMe	25
 Dark Sense	Survivor	iconPerks_darkSense	25
 Dead Hard	Survivor	iconPerks_DeadHard	200
 Decisive Strike	Survivor	iconPerks_decisiveStrike	250
-Deja Vu	Survivor	iconPerks_dejaVu	1
+Deja Vu	Survivor	iconPerks_dejaVu	25
 Deliverance	Survivor	iconPerks_deliverance	150
 Detective's Hunch	Survivor	iconPerks_detectivesHunch	100
 Distortion	Survivor	iconPerks_distortion	50
@@ -138,15 +138,21 @@ Wake Up!	Survivor	iconPerks_wakeUp	10
 We'll Make It	Survivor	iconPerks_wellMakeIt	100
 We're Gonna Live Forever	Survivor	iconPerks_WereGonnaLiveForever	150
 Windows Of Opportunity	Survivor	iconPerks_windowsOfOpportunity	100
+For the People	Survivor	iconPerks_ForThePeople	100
 Off the Record	Survivor	iconPerks_OffTheRecord	10
 Red Herring	Survivor	iconPerks_RedHerring	50
-For the People	Survivor	iconPerks_ForThePeople	100
-Gearhead	Killer	iconPerks_Gearhead	10
 Dead Man's Switch	Killer	iconPerks_DeadMansSwitch	10
-Hex Retribution	Killer	iconPerks_HexRetribution	1
-Soul Guard	Survivor	iconPerks_SoulGuard	150
+Gearhead	Killer	iconPerks_Gearhead	10
+Hex Retribution	Killer	iconPerks_HexRetribution	25
 Blood Pact	Survivor	iconPerks_BloodPact	5
 Repressed Alliance	Survivor	iconPerks_RepressedAlliance	150
+Soul Guard	Survivor	iconPerks_SoulGuard	150
+Deathbound	Killer	iconPerks_Deathbound	50
 Forced Penance	Killer	iconPerks_ForcedPenance	10
 Trail of Torment	Killer	iconPerks_TrailOfTorment	50
-Deathbound	Killer	iconPerks_Deathbound	50
+Built to Last	Survivor	iconPerks_BuiltToLast	25
+Desperate Measures	Survivor	iconPerks_DesperateMeasures	50
+Visionary	Survivor	iconPerks_Visionary	50
+Dragon's Grip	Killer	iconPerks_DragonsGrip	50
+Hex Blood Favour	Killer	iconPerks_HexBloodFavour	25
+Hex Undying	Killer	iconPerks_HexUndying	1

@@ -143,7 +143,7 @@ public class SRBG_TabBuild extends JPanel {
         cb_nbperks.setSelectedItem(srbg.getNbPerksBuild());
 
         // Define JComboBox Object for Nb of Builds
-        cb_nbbuilds = new JComboBox(new Integer[]{1, 3, 5, 15, 30});
+        cb_nbbuilds = new JComboBox(new Integer[]{1, 5, 10, 25, 50});
         cb_nbbuilds.setPreferredSize(new Dimension(50, 20));
         cb_nbbuilds.setToolTipText("<html>Define the number of builds to generate<br><br>The build with the highest score is graphically displayed<br><br>Meta builds or builds with 'combos perks' (favorable synergy) are associated with high scores<br><br>They tend to be returned when the number of desired builds is larger than 1!</html>");
         ((JLabel) cb_nbbuilds.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);

@@ -1,20 +1,17 @@
 ![SRBG](dbd/data/logo.png)
 
-# What is 'Smart Random Build Generator' and Why should I use It?
+# Smart Random Build Generator (SRBG)
 
-**Smart Random Build Generator** (SRBG) is a user-friendly tool for **Dead by Daylight** game that can be used to:
+**Bored to play with same perks? You do think usual generators just return crap builds? Well, SRBG is for you :)**
+
+**SRBG** is a user-friendly perk roulette for **Dead by Daylight** game that can be used to:
 * **generate useful random builds** using varied features
 * **store and manipulate builds** (several thousand builds loaded at start)
-
-Most related tools generate pure random builds which are hardly ever interesting/efficient because lots of perks are either trash or just incompatible.
-
-
-By contrast, **SRBG** will create **useful random builds** if desired:
 
 ![SRBG](dbd/data/tuto_files/tuto_build.jpg)
 ![SRBG](dbd/data/gif/SRBG_1.9.gif)
 
-**Widget feature is also available for more convenient use of SRBG within the game**
+**Widget feature is also available for more convenient use of SRBG within the game (in-game overlay)**
 
 ![SRBG](dbd/data/tuto_files/tuto_widget.jpg)
 
@@ -117,15 +114,15 @@ Finally, a **built-in tutorial** is also included in **SRBG**
 
 ### [Click here for Steam Guide](https://steamcommunity.com/sharedfiles/filedetails/?id=1641511649)
 
-# How to install and use SRBG ?
+# How to download and run SRBG ?
 
-Download the last **pre-compiled JAR file** [here](https://github.com/GneHeHe/SmartRandomBuildGeneratorDbD/releases/download/2.3/SRBG.jar) (also available in '**releases**' tab)
+1) Download the last **pre-compiled JAR/EXE files** [here](https://github.com/GneHeHe/SmartRandomBuildGeneratorDbD/releases/download/2.4/SRBG.zip) (also available in '**releases**' tab)
 
-If you have any **issue with the JAR file**, you can also download the **wrapped EXE file** [here](https://raw.githubusercontent.com/GneHeHe/SmartRandomBuildGeneratorDbD/master/dbd/data/versions/SRBG_2.3.exe)
+2) Unzip the downloaded ZIP file
 
-**Double click** either on the JAR file **'SRBG.jar'** or on the EXE file **'SRBG.exe'** to launch **SRBG**
+3) To run **SRBG**: double click either on the EXE file **'SRBG.exe'** or on the JAR file **'SRBG.jar'**
 
-System Requirements:
+**System Requirements**:
 
 * Recent **Java** Version (1.8 required) [Link](https://java.com/en/download)
 * Library **Gson** (included in pre-compiled JAR or EXE files)

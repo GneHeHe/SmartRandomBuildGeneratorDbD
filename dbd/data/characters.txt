@@ -40,3 +40,5 @@ Zarina	Survivor	US_charSelect_portrait
 Deathslinger	Killer	UK_charSelect_portrait
 Cheryl	Survivor	S22_charSelect_portrait
 Pyramid Head	Killer	K20_charSelect_portrait
+Felix	Survivor	S23_charSelect_portrait
+The Blight	Killer	K21_charSelect_portrait

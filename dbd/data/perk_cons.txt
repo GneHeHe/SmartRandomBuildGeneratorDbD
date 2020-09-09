@@ -23,6 +23,7 @@ KILLER_3	Bitter Murmur
 KILLER_3	Bloodhound
 KILLER_3	Deathbound
 KILLER_3	Discordance
+KILLER_3	Dragon's Grip
 KILLER_3	Gearhead
 KILLER_3	Hex Retribution
 KILLER_3	Hex Thrill Of The Hunt
@@ -38,11 +39,13 @@ KILLER_3	Thrilling Tremors
 KILLER_3	Tinkerer
 KILLER_3	Whispers
 KILLER_4	Blood Warden
-KILLER_4	Fire Up
 KILLER_4	Hex No One Escapes Death
 KILLER_4	Remember Me
 SURVIV_1	Aftercare
+SURVIV_1	Autodidact
 SURVIV_1	Bond
+SURVIV_1	Botany Knowledge
+SURVIV_1	Desperate Measures
 SURVIV_1	Empathy
 SURVIV_1	For the People
 SURVIV_1	Inner Strength
@@ -50,6 +53,7 @@ SURVIV_1	Pharmacy
 SURVIV_1	Second Wind
 SURVIV_1	Self-Care
 SURVIV_1	Solidarity
+SURVIV_1	We'll Make It
 SURVIV_2	Adrenaline
 SURVIV_2	Borrowed Time
 SURVIV_2	Breakdown
@@ -82,8 +86,10 @@ SURVIV_3	Windows Of Opportunity
 SURVIV_4	Alert
 SURVIV_4	Babysitter
 SURVIV_4	Dark Sense
+SURVIV_4	Deja Vu
 SURVIV_4	Detective's Hunch
 SURVIV_4	Kindred
 SURVIV_4	Object Of Obsession
 SURVIV_4	Plunderer's Instinct
 SURVIV_4	Small Game
+SURVIV_4	Visionary

@@ -116,7 +116,7 @@ public class SRBG {
     // Max Weight for Perk (normal and after synergy)
     public final int weight_perk_max = 500;
     // Min Weight for Perk after Synergy (Reevaluation Mode)
-    public final int syn_min_weight = 30;
+    public final int syn_min_weight = 60;
     // Score Penalty for Build with Lack of Synergy (Reevaluation Mode)
     public final int syn_penalty = -1200;
     // Max Nb of Loops
@@ -130,7 +130,7 @@ public class SRBG {
     private final String s_cons = "data/perk_cons.txt";
     private final String s_cons_custom = "perk_cons_custom.txt";
     // Version
-    public final double VERSION = 2.3;
+    public final double VERSION = 2.4;
     // Title
     public final String TITLE = "Smart Random Build Generator for Dead by Daylight ( SRBG " + VERSION + " )";
     // GitHub Data
@@ -1227,6 +1227,16 @@ public class SRBG {
                 line = br.readLine();
             }
             br.close();
+            // Display Characters
+            int i = 1;
+            for (String s : l_char_all_string) {
+                System.out.print(s + ", ");
+                if (i % 10 == 0) {
+                    System.out.println();
+                }
+                i++;
+            }
+            System.out.println();
         } catch (Exception ex) {
             System.err.println("\n# ERROR: issues with character file => Exit");
             System.err.println(ex.getMessage());

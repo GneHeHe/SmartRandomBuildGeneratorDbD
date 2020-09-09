@@ -42,6 +42,7 @@ Deathslinger	Whispers	200
 ############# Demogorgon #############
 Demogorgon	Agitation	100
 Demogorgon	Barbecue & Chilli	200
+Demogorgon	Blood Echo	100
 Demogorgon	Brutal Strength	-300
 Demogorgon	Corrupt Intervention	200
 Demogorgon	Discordance	100
@@ -84,6 +85,7 @@ Doctor	Unnerving Presence	200
 Doctor	Whispers	200
 ############# Freddy #############
 Freddy	Barbecue & Chilli	200
+Freddy	Blood Echo	100
 Freddy	Corrupt Intervention	200
 Freddy	Coulrophobia	-300
 Freddy	Discordance	200
@@ -102,7 +104,7 @@ Freddy	Save The Best For Last	200
 Freddy	Surge	100
 Freddy	Surveillance	200
 Freddy	Thrilling Tremors	300
-Freddy	Tinkerer	100
+Freddy	Tinkerer	200
 ############# Ghostface #############
 Ghostface	Agitation	100
 Ghostface	A Nurse's Calling	300
@@ -133,6 +135,7 @@ Ghostface	Sloppy Butcher	100
 Ghostface	Spies From The Shadows	100
 Ghostface	Surveillance	200
 Ghostface	Territorial Imperative	100
+Ghostface	Tinkerer	100
 Ghostface	Unnerving Presence	-999
 Ghostface	Whispers	200
 ############# Hag #############
@@ -161,12 +164,13 @@ Hag	Surveillance	100
 Hag	Territorial Imperative	100
 ############# Hillbilly #############
 Hillbilly	Agitation	100
+Hillbilly	Bamboozle	300
 Hillbilly	Barbecue & Chilli	300
 Hillbilly	Bloodhound	-300
 Hillbilly	Brutal Strength	-100
 Hillbilly	Corrupt Intervention	100
 Hillbilly	Dark Devotion	100
-Hillbilly	Deerstalker	300
+Hillbilly	Deerstalker	200
 Hillbilly	Discordance	200
 Hillbilly	Enduring	300
 Hillbilly	Gearhead	-100
@@ -187,7 +191,7 @@ Hillbilly	Surge	-300
 Hillbilly	Surveillance	100
 Hillbilly	Territorial Imperative	100
 Hillbilly	Thrilling Tremors	200
-Hillbilly	Tinkerer	100
+Hillbilly	Tinkerer	200
 Hillbilly	Whispers	300
 ############# Huntress #############
 Huntress Anna	Agitation	100
@@ -218,6 +222,7 @@ Huntress Anna	Thrilling Tremors	100
 Huntress Anna	Whispers	300
 ############# Leatherface #############
 Leatherface	Agitation	300
+Leatherface	Bamboozle	300
 Leatherface	Bloodhound	-300
 Leatherface	Brutal Strength	-100
 Leatherface	Corrupt Intervention	300
@@ -239,16 +244,17 @@ Leatherface	Save The Best For Last	-999
 Leatherface	Sloppy Butcher	-300
 Leatherface	Surge	-300
 Leatherface	Territorial Imperative	200
+Leatherface	Tinkerer	200
 ############# Legion #############
 Legion	A Nurse's Calling	100
-Legion	Bamboozle	300
-Legion	Blood Echo	300
+Legion	Bamboozle	200
+Legion	Blood Echo	100
 Legion	Corrupt Intervention	300
 Legion	Dark Devotion	-100
 Legion	Discordance	300
 Legion	Enduring	100
 Legion	Hex No One Escapes Death	-300
-Legion	Hex Ruin	100
+Legion	Hex Ruin	200
 Legion	I'm All Ears	300
 Legion	Make Your Choice	100
 Legion	Monitor & Abuse	-100
@@ -265,7 +271,7 @@ Myers	Barbecue & Chilli	100
 Myers	Corrupt Intervention	300
 Myers	Coulrophobia	-300
 Myers	Dark Devotion	-100
-Myers	Deerstalker	300
+Myers	Deerstalker	200
 Myers	Discordance	200
 Myers	Distressing	-999
 Myers	Enduring	200
@@ -287,12 +293,14 @@ Myers	Sloppy Butcher	100
 Myers	Spies From The Shadows	100
 Myers	Surveillance	100
 Myers	Territorial Imperative	100
+Myers	Tinkerer	100
 Myers	Unnerving Presence	-999
 Myers	Whispers	200
 ############# Nurse Sally #############
 Nurse Sally	A Nurse's Calling	300
 Nurse Sally	Bamboozle	-999
 Nurse Sally	Barbecue & Chilli	300
+Nurse Sally	Blood Echo	100
 Nurse Sally	Brutal Strength	-999
 Nurse Sally	Corrupt Intervention	100
 Nurse Sally	Deerstalker	200
@@ -328,7 +336,6 @@ Pig	Distressing	-999
 Pig	Enduring	100
 Pig	Franklin's Demise	100
 Pig	Furtive Chase	-100
-Pig	Gearhead	-100
 Pig	Hex Devour Hope	100
 Pig	Hex Haunted Ground	100
 Pig	Hex No One Escapes Death	300
@@ -350,7 +357,7 @@ Pig	Unnerving Presence	-999
 Pig	Whispers	300
 ############# Plague #############
 Plague	A Nurse's Calling	-999
-Plague	Blood Echo	300
+Plague	Blood Echo	100
 Plague	Corrupt Intervention	300
 Plague	Coulrophobia	-999
 Plague	Deerstalker	100
@@ -359,6 +366,8 @@ Plague	Dying Light	200
 Plague	Enduring	100
 Plague	Gearhead	-100
 Plague	Hex No One Escapes Death	100
+Plague	Hex Retribution	100
+Plague	Hex Ruin	200
 Plague	I'm All Ears	200
 Plague	Infectious Fright	300
 Plague	Make Your Choice	-300
@@ -378,14 +387,17 @@ Pyramid Head	Coulrophobia	200
 Pyramid Head	I'm All Ears	300
 Pyramid Head	Infectious Fright	100
 Pyramid Head	Make Your Choice	-100
+Pyramid Head	Nemesis	200
 Pyramid Head	Save The Best For Last	200
 Pyramid Head	Sloppy Butcher	300
 Pyramid Head	Thrilling Tremors	-100
+Pyramid Head	Tinkerer	100
 Pyramid Head	Zanshin Tactics	300
 ############# Spirit Rin #############
 Spirit Rin	A Nurse's Calling	300
 Spirit Rin	Bamboozle	-100
 Spirit Rin	Barbecue & Chilli	300
+Spirit Rin	Blood Echo	100
 Spirit Rin	Brutal Strength	-100
 Spirit Rin	Corrupt Intervention	100
 Spirit Rin	Coulrophobia	-300
@@ -410,18 +422,34 @@ Spirit Rin	Surge	100
 Spirit Rin	Surveillance	100
 Spirit Rin	Thrilling Tremors	200
 Spirit Rin	Whispers	200
+############# The Blight #############
+The Blight	Bamboozle	100
+The Blight	Barbecue & Chilli	300
+The Blight	Blood Echo	100
+The Blight	Brutal Strength	100
+The Blight	Corrupt Intervention	200
+The Blight	Discordance	200
+The Blight	Enduring	100
+The Blight	Hex Ruin	200
+The Blight	Pop Goes The Weasel	200
+The Blight	Save The Best For Last	200
+The Blight	Shadowborn	100
+The Blight	Thrilling Tremors	200
+The Blight	Whispers	100
 ############# The Oni #############
 The Oni	A Nurse's Calling	300
+The Oni	Bamboozle	100
 The Oni	Barbecue & Chilli	300
 The Oni	Bloodhound	-999
 The Oni	Brutal Strength	-100
 The Oni	Corrupt Intervention	300
-The Oni	Deerstalker	300
+The Oni	Deerstalker	200
 The Oni	Discordance	100
 The Oni	Enduring	100
 The Oni	Gearhead	-100
 The Oni	Hex Haunted Ground	-300
 The Oni	Hex No One Escapes Death	-100
+The Oni	Hex Retribution	100
 The Oni	Hex Ruin	100
 The Oni	Infectious Fright	300
 The Oni	Make Your Choice	-100
@@ -435,7 +463,7 @@ The Oni	Stridor	-999
 The Oni	Surge	-100
 The Oni	Surveillance	100
 The Oni	Thrilling Tremors	200
-The Oni	Tinkerer	100
+The Oni	Tinkerer	200
 The Oni	Whispers	100
 ############# Trapper #############
 Trapper	Agitation	200
