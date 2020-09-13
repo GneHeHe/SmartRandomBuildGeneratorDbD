@@ -54,16 +54,16 @@ Sloppy Butcher	Killer	iconPerks_sloppyButcher	200
 Spies From The Shadows	Killer	iconPerks_spiesFromTheShadows	25
 Spirit Fury	Killer	iconPerks_spiritFury	1
 Stridor	Killer	iconPerks_stridor	100
-Surge	Killer	iconPerks_Surge	150
-Surveillance	Killer	iconPerks_surveillance	150
+Surge	Killer	iconPerks_Surge	100
+Surveillance	Killer	iconPerks_surveillance	100
 Territorial Imperative	Killer	iconPerks_TerritorialImperative	25
 Thanatophobia	Killer	iconPerks_thatanophobia	100
 Thrilling Tremors	Killer	iconPerks_ThrillingTremors	200
-Tinkerer	Killer	iconPerks_tinkerer	100
+Tinkerer	Killer	iconPerks_tinkerer	150
 Unnerving Presence	Killer	iconPerks_unnervingPresence	5
 Unrelenting	Killer	iconPerks_unrelenting	5
 Whispers	Killer	iconPerks_whispers	250
-Zanshin Tactics	Killer	iconPerks_zanshinTactics	150
+Zanshin Tactics	Killer	iconPerks_zanshinTactics	100
 Ace In The Hole	Survivor	iconPerks_aceInTheHole	10
 Adrenaline	Survivor	iconPerks_adrenaline	250
 Aftercare	Survivor	iconPerks_aftercare	100
