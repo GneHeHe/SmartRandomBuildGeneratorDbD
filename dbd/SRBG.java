@@ -10,7 +10,10 @@ import java.io.InputStreamReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.TreeSet;
 
 /**
@@ -38,6 +41,13 @@ public class SRBG {
     private ArrayList<Character> l_char_killer_generic;
     // List of All Characters
     private ArrayList<String> l_char_all_string;
+    // Random-based Characters (Objects)
+    private Map<String, Integer> m_char_random_killer;
+    private Map<String, Integer> m_char_random_survivor;
+    private ArrayList<String> l_char_random;
+    // Random-based Characters (Constants)
+    private int char_val_orig = 20;
+    private int char_val_dec = 18;
     // Synergy Object
     private Synergy synergy;
     // Nb Builds to Generate
@@ -71,7 +81,6 @@ public class SRBG {
     private final String s_cons2_killer_txt = "Chase";
     private final String s_cons3_killer_txt = "Detection";
     private final String s_cons4_killer_txt = "Endgame";
-
     // List of Constraints for both Sides
     private List<String> l_cons1;
     private List<String> l_cons2;
@@ -170,6 +179,11 @@ public class SRBG {
         l_char_killer = new ArrayList<>();
         l_char_killer_generic = new ArrayList<>();
         l_char_all_string = new ArrayList<>();
+        l_char_random = new ArrayList<>();
+
+        // Map for Random-based Characters
+        m_char_random_killer = new HashMap<>();
+        m_char_random_survivor = new HashMap<>();
 
         // Random Mode OFF
         b_random = false;
@@ -367,6 +381,7 @@ public class SRBG {
      *
      * @return
      */
+    /*
     public final Character getCharacterRandom() {
         Character c = null;
         // Get Random non-generic Character
@@ -380,6 +395,74 @@ public class SRBG {
         }
         System.out.println("# Random Character = " + c.getName() + " | Side = " + side);
         return c;
+    }*/
+    /**
+     * Get a random Character (Updated)
+     *
+     * @return
+     */
+    public final Character getCharacterRandom() {
+        // Random non-generic Character
+        Character c = null;
+        // Get Iterator
+        Iterator iterator = null;
+        switch (side) {
+            case s_side_surv:
+                iterator = m_char_random_survivor.entrySet().iterator();
+                break;
+            case s_side_killer:
+                iterator = m_char_random_killer.entrySet().iterator();
+                break;
+            default:
+                System.err.println("\n# ERROR: The side must be either 'Survivor' OR 'Killer' OR 'Random'\n");
+                System.exit(0);
+        }
+        // Reset Character List
+        l_char_random.clear();
+        // Build New Character List
+        String char_tmp = "";
+        int weight_tmp = 0;
+        while (iterator.hasNext()) {
+            Map.Entry entry = (Map.Entry) iterator.next();
+            char_tmp = (String) entry.getKey();
+            weight_tmp = (int) entry.getValue();
+            for (int i = 0; i < weight_tmp; i++) {
+                l_char_random.add(char_tmp);
+            }
+        }
+        // Get Random Character
+        int rand = (int) (l_char_random.size() * Math.random());
+        char_tmp = l_char_random.get(rand);
+        c = retrieveCharacter(char_tmp);
+        System.out.println("# Random Character = " + c.getName() + " | Side = " + side);
+        return c;
+    }
+
+    /**
+     * Update Map Weight associated to a given Character
+     *
+     * @param name
+     */
+    protected void updateCharacterMapWeights(String name) {
+        int weight;
+        // Update Weight associated to a given Character from active Side
+        switch (side) {
+            case s_side_surv:
+                weight = m_char_random_survivor.get(name);
+                //System.out.print("\n# " + name + " " + weight);
+                m_char_random_survivor.put(name, Math.max(1, weight - char_val_dec));
+                //System.out.println(" => " + m_char_random_survivor.get(name) + " | " + l_char_random.size());
+                break;
+            case s_side_killer:
+                weight = m_char_random_killer.get(name);
+                //System.out.print("\n# " + name + " " + weight);
+                m_char_random_killer.put(name, Math.max(1, weight - char_val_dec));
+                //System.out.println(" => " + m_char_random_killer.get(name) + " | " + l_char_random.size());
+                break;
+            default:
+                System.err.println("\n# ERROR: The side must be either 'Survivor' OR 'Killer' OR 'Random'\n");
+                System.exit(0);
+        }
     }
 
     /**
@@ -545,12 +628,14 @@ public class SRBG {
         // Copy current Side & Update Active Side
         String side_old = this.side;
         side = s;
+        // Generic Character Mode ON
         boolean char_generic = true;
         // Random Selection Case
         if (s.equals(s_side_rand)) {
             side = choseSideRandom();
-            // Define Generic Character
+            // Get Random Character
             character = getCharacterRandom();
+            // Generic Character Mode Off
             char_generic = false;
         }
         // Update Nb Perks on Active Side
@@ -573,6 +658,7 @@ public class SRBG {
                 System.err.println("\n# ERROR: The side must be either 'Survivor' OR 'Killer' OR 'Random'\n");
                 System.exit(0);
         }
+        // Get Generic Character if Desired
         if (char_generic) {
             character = getCharacterGeneric();
         }
@@ -1216,8 +1302,12 @@ public class SRBG {
                     // Add Character to related List
                     if (myside.equals(s_side_surv)) {
                         l_char_survivor.add(c);
+                        // Add Character to Map
+                        m_char_random_survivor.put(myname, char_val_orig);
                     } else {
                         l_char_killer.add(c);
+                        // Add Character to Map
+                        m_char_random_killer.put(myname, char_val_orig);
                     }
                     l_char_all_string.add(myname);
                 } else {

@@ -51,6 +51,7 @@ public class SRBG_TabBuild extends JPanel {
     private int anim_loop_perk = 7;
     private int anim_loop_char = 6;
     public boolean b_ready;
+    private boolean force_random;
     private final String s_sound = "data/sound.mp3";
 
     /**
@@ -412,7 +413,7 @@ public class SRBG_TabBuild extends JPanel {
         // Update JCheckBoxes
         updateCheckBoxes();
         // Monitor Random Feature
-        boolean force_random = false;
+        force_random = false;
         String mode = "";
         // Test with 'Rand' substring is important to catch 3 random modes
         if (cb_side.getSelectedItem().toString().startsWith(s_rand)) {
@@ -444,6 +445,10 @@ public class SRBG_TabBuild extends JPanel {
                 try {
                     // Display both Perk Animations & Build                    
                     displayBuild(table, size_perk, size_char);
+                    // Update Map Weight associated to selected Character
+                    if (force_random) {
+                        srbg.updateCharacterMapWeights(srbg.getBestBuild().getCharacter().getName());
+                    }
                 } catch (Exception ex) {
                     System.err.println("\n# ERROR: issues during perk animation => Exit");
                     System.err.println(ex.getMessage());

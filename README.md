@@ -10,6 +10,9 @@ Well, SRBG is for you :)**
 * **store and manipulate builds** (several thousand builds loaded at start)
 
 ![SRBG](dbd/data/tuto_files/tuto_build.jpg)
+
+### [Click here for Steam Guide](https://steamcommunity.com/sharedfiles/filedetails/?id=1641511649)
+
 ![SRBG](dbd/data/gif/SRBG_1.9.gif)
 
 **Widget feature is also available for more convenient use of SRBG within the game**
