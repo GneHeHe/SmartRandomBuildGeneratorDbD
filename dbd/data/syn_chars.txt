@@ -10,6 +10,7 @@ Deathslinger	Brutal Strength	-100
 Deathslinger	Coulrophobia	-300
 Deathslinger	Dark Devotion	-300
 Deathslinger	Distressing	-999
+Deathslinger	Dragon's Grip	100
 Deathslinger	Enduring	-100
 Deathslinger	Furtive Chase	-100
 Deathslinger	Hex Devour Hope	100
@@ -69,6 +70,7 @@ Freddy	Barbecue & Chilli	100
 Freddy	Blood Echo	100
 Freddy	Coulrophobia	-300
 Freddy	Discordance	100
+Freddy	Dragon's Grip	100
 Freddy	Hex Huntress Lullaby	100
 Freddy	Hex Ruin	100
 Freddy	I'm All Ears	100
@@ -91,6 +93,7 @@ Ghostface	Coulrophobia	-999
 Ghostface	Dark Devotion	-999
 Ghostface	Discordance	100
 Ghostface	Distressing	-999
+Ghostface	Dragon's Grip	100
 Ghostface	Franklin's Demise	100
 Ghostface	Furtive Chase	-300
 Ghostface	Hex Devour Hope	100
@@ -121,6 +124,7 @@ Hag	Corrupt Intervention	100
 Hag	Coulrophobia	-300
 Hag	Deerstalker	100
 Hag	Distressing	-999
+Hag	Dragon's Grip	100
 Hag	Enduring	-100
 Hag	Franklin's Demise	100
 Hag	Hex Devour Hope	100
@@ -140,6 +144,7 @@ Hillbilly	Brutal Strength	-100
 Hillbilly	Dark Devotion	100
 Hillbilly	Deerstalker	100
 Hillbilly	Discordance	100
+Hillbilly	Dragon's Grip	-300
 Hillbilly	Enduring	100
 Hillbilly	Gearhead	-100
 Hillbilly	Hex Haunted Ground	-300
@@ -190,6 +195,7 @@ Leatherface	Bloodhound	-300
 Leatherface	Brutal Strength	-100
 Leatherface	Dark Devotion	100
 Leatherface	Deerstalker	100
+Leatherface	Dragon's Grip	-300
 Leatherface	Gearhead	-100
 Leatherface	Hex Haunted Ground	-300
 Leatherface	Infectious Fright	100
@@ -226,6 +232,7 @@ Myers	Dark Devotion	-100
 Myers	Deerstalker	100
 Myers	Discordance	100
 Myers	Distressing	-999
+Myers	Dragon's Grip	100
 Myers	Furtive Chase	-300
 Myers	Hex Devour Hope	100
 Myers	Hex Haunted Ground	100
@@ -253,6 +260,7 @@ Nurse Sally	Blood Echo	100
 Nurse Sally	Brutal Strength	-999
 Nurse Sally	Deerstalker	100
 Nurse Sally	Discordance	100
+Nurse Sally	Dragon's Grip	100
 Nurse Sally	Enduring	-999
 Nurse Sally	Hex Devour Hope	100
 Nurse Sally	Hex Ruin	100
@@ -277,6 +285,7 @@ Pig	Coulrophobia	-300
 Pig	Dark Devotion	-300
 Pig	Discordance	100
 Pig	Distressing	-999
+Pig	Dragon's Grip	100
 Pig	Franklin's Demise	100
 Pig	Furtive Chase	-100
 Pig	Hex Devour Hope	100
@@ -338,6 +347,7 @@ Spirit Rin	Coulrophobia	-300
 Spirit Rin	Deerstalker	100
 Spirit Rin	Discordance	100
 Spirit Rin	Distressing	-300
+Spirit Rin	Dragon's Grip	100
 Spirit Rin	Enduring	-100
 Spirit Rin	Hex Devour Hope	100
 Spirit Rin	Hex Ruin	100
@@ -357,6 +367,7 @@ The Blight	Barbecue & Chilli	100
 The Blight	Blood Echo	100
 The Blight	Brutal Strength	100
 The Blight	Discordance	100
+The Blight	Dragon's Grip	100
 The Blight	Hex Ruin	100
 The Blight	Save The Best For Last	100
 The Blight	Shadowborn	100
@@ -372,6 +383,7 @@ The Oni	Brutal Strength	-100
 The Oni	Corrupt Intervention	100
 The Oni	Deerstalker	100
 The Oni	Discordance	100
+The Oni	Dragon's Grip	-300
 The Oni	Gearhead	-100
 The Oni	Hex Haunted Ground	-300
 The Oni	Hex No One Escapes Death	-100
@@ -410,6 +422,7 @@ Wraith	Coulrophobia	-300
 Wraith	Dark Devotion	-300
 Wraith	Discordance	100
 Wraith	Distressing	-999
+Wraith	Dragon's Grip	100
 Wraith	Franklin's Demise	100
 Wraith	Furtive Chase	-100
 Wraith	Hex Devour Hope	100

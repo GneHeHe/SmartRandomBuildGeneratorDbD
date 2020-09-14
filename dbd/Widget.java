@@ -46,7 +46,7 @@ public class Widget extends JFrame {
 
         // Set Background Color
         //getRootPane().setBackground(new Color(0, 0, 0, 0));
-        getRootPane().setBackground(Color.WHITE);
+        getRootPane().setBackground(Color.BLACK);
 
         // Add Swing Components
         addComponents();

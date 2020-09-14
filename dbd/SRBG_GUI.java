@@ -110,7 +110,7 @@ public class SRBG_GUI extends JFrame {
             if (news == null) {
                 news = "";
             }
-            Tools.getAlert("An update is available from GitHub repository\n\nNew Features:\n" + news + "\n\nClickable 'GitHub' link is available from '" + SRBG_GUI.s_help2 + "' tab", "Information", JOptionPane.INFORMATION_MESSAGE);
+            Tools.getAlert("An update is available from GitHub repository\n\nNew Features:\n" + news + "\n\nGo to GitHub project webpage from '" + SRBG_GUI.s_help2 + "' tab", "Information", JOptionPane.INFORMATION_MESSAGE);
         }
 
         // Launch Frame

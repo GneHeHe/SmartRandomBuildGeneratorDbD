@@ -2,16 +2,17 @@
 
 # Smart Random Build Generator (SRBG)
 
-**Bored to play with same perks? You do think usual generators just return crap builds? Well, SRBG is for you :)**
+**Bored to play with same perks? You do think usual generators just return crap builds?
+Well, SRBG is for you :)**
 
-**SRBG** is a user-friendly perk roulette for **Dead by Daylight** game that can be used to:
-* **generate useful random builds** using varied features
+**SRBG** is a user-friendly **perk roulette** for **Dead by Daylight** game that can be used to:
+* **generate useful random builds** using varied features (including **in-game widget**)
 * **store and manipulate builds** (several thousand builds loaded at start)
 
 ![SRBG](dbd/data/tuto_files/tuto_build.jpg)
 ![SRBG](dbd/data/gif/SRBG_1.9.gif)
 
-**Widget feature is also available for more convenient use of SRBG within the game (in-game overlay)**
+**Widget feature is also available for more convenient use of SRBG within the game**
 
 ![SRBG](dbd/data/tuto_files/tuto_widget.jpg)
 
@@ -102,11 +103,6 @@ There are no **survivor-based synergy rules** because **survivors are just skins
 
 
 ![SRBG](dbd/data/tuto_files/tuto_db-1.jpg)
-
-**Active builds** can also be exported as png picture (*e.g. favorite build for each character*)
-
-
-![SRBG](dbd/data/tuto_files/tuto_builds_small.jpg)
 
 Finally, a **built-in tutorial** is also included in **SRBG**
 
