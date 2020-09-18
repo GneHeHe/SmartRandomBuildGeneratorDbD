@@ -24,7 +24,7 @@ public class SRBG_TabHelp extends JPanel {
     private JPanel pan_header, pan_author;
     private JScrollPane scrollPane;
     private JEditorPane editor;
-    private JLabel lab_author, lab_email, lab_git, lab_donate;
+    private JLabel lab_git, lab_guide, lab_email, lab_donate;
     private ImageIcon pict;
     // SRBG Object 
     private SRBG srbg;
@@ -48,9 +48,9 @@ public class SRBG_TabHelp extends JPanel {
         // Create Subpanels
         pan_author = new JPanel(new FlowLayout());
         pan_author.setLayout(new BoxLayout(pan_author, BoxLayout.X_AXIS));
-        pan_author.add(lab_author);
-        pan_author.add(lab_email);
         pan_author.add(lab_git);
+        pan_author.add(lab_guide);
+        pan_author.add(lab_email);
         pan_author.add(lab_donate);
 
         pan_header = new JPanel();
@@ -97,39 +97,39 @@ public class SRBG_TabHelp extends JPanel {
             System.exit(0);
         }
 
-        // Define JLabel Name
-        lab_author = new JLabel("<html><u>Author</u></html>", SwingConstants.CENTER);
-        lab_author.setFont(new Font("Helvetica", Font.BOLD, 18));
-        lab_author.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        lab_author.setToolTipText("Go to " + srbg.GIT_USER + "'s STEAM profile");
+        // Define JLabel GitHub Project
+        lab_git = new JLabel("<html><u>GitHub Project</u></html>", SwingConstants.CENTER);
+        lab_git.setFont(new Font("Helvetica", Font.BOLD, 18));
+        lab_git.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        lab_git.setToolTipText("Go to GitHub Project");
+
+        // Define JLabel STEAM Guide
+        lab_guide = new JLabel("<html><u>STEAM Guide</u></html>", SwingConstants.CENTER);
+        lab_guide.setFont(new Font("Helvetica", Font.BOLD, 18));
+        lab_guide.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        lab_guide.setToolTipText("<html>Go to STEAM Guide<br><br>If you appreciated SRBG, please:<br><ul><li>Upvote this Guide with a 'thumbs up'</li><br><li>Bookmark this Guide to your Favorites</li><br><li>Share it on Social Networks and with your Friends</li></ul>This will help SRBG and its related Guide to be more visible among the thousands of DbD Guides!</html>");
 
         // Define JLabel Email
         lab_email = new JLabel("<html><u>Contact</u></html>", SwingConstants.CENTER);
         lab_email.setFont(new Font("Helvetica", Font.BOLD, 18));
         lab_email.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        lab_email.setToolTipText("Send an email to " + srbg.GIT_USER);
-
-        // Define JLabel Git
-        lab_git = new JLabel("<html><u>GitHub</u></html>", SwingConstants.CENTER);
-        lab_git.setFont(new Font("Helvetica", Font.BOLD, 18));
-        lab_git.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        lab_git.setToolTipText("Go to GitHub repository to download the last version ('SRBG.jar' file)");
+        lab_email.setToolTipText("Send an Email to " + srbg.GIT_USER);
 
         // Define JLabel Donate
         lab_donate = new JLabel("<html><u>Donate</u></html>", SwingConstants.CENTER);
         lab_donate.setFont(new Font("Helvetica", Font.BOLD, 18));
         lab_donate.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        lab_donate.setToolTipText("<html>Donation using Paypal<br>Help me out a little bit if you liked my tool, TIA :)</html>");
+        lab_donate.setToolTipText("<html>Donation using Paypal<br>Help me out a little bit if you enjoyed SRBG, TIA :)</html>");
 
         // Define MouseListener
-        lab_author.addMouseListener(new MouseAdapter() {
+        lab_guide.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 try {
-                    // Open default Browser & Go to STEAM Profile
-                    Desktop.getDesktop().browse(new URI(srbg.STEAM));
+                    // Open default Browser & Go to SRBG STEAM Guide
+                    Desktop.getDesktop().browse(new URI(srbg.GUIDE));
                 } catch (IOException | URISyntaxException ex) {
-                    System.err.println("\n# ERROR: WARNING_STEAM_PROFILE");
+                    System.err.println("\n# ERROR: WARNING_GUIDE");
                     System.err.println(ex.getMessage());
                 }
             }
@@ -156,7 +156,7 @@ public class SRBG_TabHelp extends JPanel {
             public void mouseClicked(MouseEvent e) {
                 try {
                     // Open default Browser & Go to GitHub
-                    Desktop.getDesktop().browse(new URI(srbg.GIT_URL_RELEASE));
+                    Desktop.getDesktop().browse(new URI(srbg.GIT_URL));
                 } catch (IOException | URISyntaxException ex) {
                     System.err.println("\n# ERROR: WARNING_GIT");
                     System.err.println(ex.getMessage());

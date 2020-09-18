@@ -2,22 +2,22 @@
 
 # Smart Random Build Generator (SRBG)
 
-**Bored to play with same perks? You do think usual generators just return crap builds?
+**Bored to play with same perks? You think most randomizers return crap builds?
 Well, SRBG is for you :)**
-
-**SRBG** is a user-friendly **perk roulette** for **Dead by Daylight** game that can be used to:
-* **generate useful random builds** using varied features (including **in-game widget**)
-* **store and manipulate builds** (several thousand builds loaded at start)
-
-![SRBG](dbd/data/tuto_files/tuto_build.jpg)
 
 ### [Click here for Steam Guide](https://steamcommunity.com/sharedfiles/filedetails/?id=1641511649)
 
-![SRBG](dbd/data/gif/SRBG_1.9.gif)
+**SRBG** is a user-friendly **perk roulette** for **Dead by Daylight** game that can:
+* **generate useful random builds** using varied **features** and **constraints**
+* **store and manipulate builds** (several thousand builds loaded at start)
 
-**Widget feature is also available for more convenient use of SRBG within the game**
+**SRBG** also includes an **overlay widget** for convenient use within the DbD game
+
+![SRBG](dbd/data/tuto_files/tuto_build.jpg)
 
 ![SRBG](dbd/data/tuto_files/tuto_widget.jpg)
+
+![SRBG](dbd/data/gif/SRBG_1.9.gif)
 
 ![SRBG](dbd/data/gif/SRBG_2.0_Killer.gif)
 
@@ -110,8 +110,6 @@ There are no **survivor-based synergy rules** because **survivors are just skins
 Finally, a **built-in tutorial** is also included in **SRBG**
 
 ![SRBG](dbd/data/tuto_files/tuto_help.jpg)
-
-### [Click here for Steam Guide](https://steamcommunity.com/sharedfiles/filedetails/?id=1641511649)
 
 # How to download and run SRBG ?
 

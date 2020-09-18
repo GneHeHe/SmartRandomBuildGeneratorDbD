@@ -78,6 +78,7 @@ Freddy	Infectious Fright	-300
 Freddy	Insidious	-999
 Freddy	Make Your Choice	100
 Freddy	Monitor & Abuse	-999
+Freddy	Nemesis	100
 Freddy	Overcharge	-999
 Freddy	Pop Goes The Weasel	100
 Freddy	Save The Best For Last	100

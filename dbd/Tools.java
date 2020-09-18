@@ -5,12 +5,17 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import java.awt.Component;
+import java.awt.Desktop;
 import java.awt.Dimension;
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Image;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import java.io.*;
 import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -20,6 +25,8 @@ import java.util.Set;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javax.imageio.ImageIO;
+import javax.swing.JEditorPane;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 /**
@@ -243,7 +250,7 @@ public class Tools {
     }
 
     /**
-     * Duplicate Lists ?
+     * Duplicate Lists?
      *
      * @param l1
      * @param l2
@@ -279,6 +286,52 @@ public class Tools {
      */
     public static void getAlert(String msg, String title, int type) {
         JOptionPane.showMessageDialog(null, msg, title, type);
+    }
+
+    /**
+     * Display Message & Clickable URL in a Window
+     *
+     * @param msg string to display
+     * @param title title of window
+     * @param type type of alert
+     * @param button_text text of button
+     * @param url_text text associated to URL
+     * @param url_link link URL
+     */
+    public static void getAlertURL(String msg, String title, int type, String button_text, String url_text, String url_link) {
+        // Define generic Label
+        JLabel label = new JLabel();
+        // Get default Font
+        Font font = label.getFont();
+        // Define CSS associated to Font
+        StringBuffer style = new StringBuffer("font-family:" + font.getFamily() + ";");
+        style.append("font-weight:" + (font.isBold() ? "bold" : "normal") + ";");
+        style.append("font-size:" + font.getSize() + "pt;");
+
+        // Define a JEditorPane to include HTML
+        JEditorPane ep = new JEditorPane();
+        ep.setEditable(false);
+        ep.setBackground(label.getBackground());
+        // Set HTML Content & Text
+        ep.setContentType("text/html");
+        ep.setText("<html><body style=\"" + style + "\"><body>" + msg.replaceAll("\n", "<br>") + url_text + "</body></html>");
+
+        // Define MouseListener
+        ep.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                try {
+                    // Open default Browser & Go to URL
+                    Desktop.getDesktop().browse(new URI(url_link));
+                } catch (IOException | URISyntaxException ex) {
+                    System.err.println("\n# ERROR: WARNING_URL");
+                    System.err.println(ex.getMessage());
+                }
+            }
+        });
+
+        Object[] object = {button_text};
+        JOptionPane.showOptionDialog(null, ep, title, JOptionPane.YES_OPTION, JOptionPane.INFORMATION_MESSAGE, null, object, object[0]);
     }
 
     /**

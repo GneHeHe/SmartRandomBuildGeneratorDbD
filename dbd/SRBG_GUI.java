@@ -25,7 +25,7 @@ public class SRBG_GUI extends JFrame {
     private String s_perk = "Configure Perks";
     private String s_build = "Generate Random Builds";
     private String s_help1 = "Contact & Help";
-    private static String s_help2 = "Contact & Help";
+    private String s_help2 = "Contact & Help";
     private String s_db = "Build Database";
     // Required to Play Sound
     private final JFXPanel fxPanel = new JFXPanel();
@@ -110,7 +110,7 @@ public class SRBG_GUI extends JFrame {
             if (news == null) {
                 news = "";
             }
-            Tools.getAlert("An update is available from GitHub repository\n\nNew Features:\n" + news + "\n\nGo to GitHub project webpage from '" + SRBG_GUI.s_help2 + "' tab", "Information", JOptionPane.INFORMATION_MESSAGE);
+            Tools.getAlertURL("An Update of SRBG is available from GitHub Website\n\nNew Features:\n" + news + "\n\n", "Information", JOptionPane.INFORMATION_MESSAGE,"Continue with current Version","Click 'here' to Download the last Version ('SRBG.zip' file)", mysrbg.GIT_URL_RELEASE);
         }
 
         // Launch Frame

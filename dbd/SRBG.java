@@ -151,6 +151,7 @@ public class SRBG {
     public final String GIT_URL_API = "https://api.github.com/repos/" + GIT_USER + "/" + GIT_REPO + "/releases";
     // Author Information
     public final String STEAM = "http://steamcommunity.com/id/trna";
+    public final String GUIDE = "https://steamcommunity.com/sharedfiles/filedetails/?id=1641511649";
     public final String EMAIL = "gnehehe70@gmail.com";
     public final String PAYPAL = "https://www.paypal.me/gnehehe";
     // String Spacer

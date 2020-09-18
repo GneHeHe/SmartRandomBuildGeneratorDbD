@@ -1,14 +1,14 @@
 A Nurse's Calling	Killer	iconPerks_aNursesCalling	200
 Agitation	Killer	iconPerks_agitation	100
 Bamboozle	Killer	iconPerks_bamboozle	150
-Barbecue & Chilli	Killer	iconPerks_BBQAndChili	300
+Barbecue & Chilli	Killer	iconPerks_BBQAndChili	250
 Beast Of Prey	Killer	iconPerks_BeastOfPrey	5
 Bitter Murmur	Killer	iconPerks_bitterMurmur	50
 Blood Echo	Killer	iconPerks_bloodEcho	50
 Blood Warden	Killer	iconPerks_bloodWarden	100
 Bloodhound	Killer	iconPerks_bloodhound	50
 Brutal Strength	Killer	iconPerks_brutalStrength	100
-Corrupt Intervention	Killer	iconPerks_corruptIntervention	300
+Corrupt Intervention	Killer	iconPerks_corruptIntervention	250
 Coulrophobia	Killer	iconPerks_coulrophobia	25
 Cruel Limits	Killer	iconPerks_CruelLimits	10
 Dark Devotion	Killer	iconPerks_darkDevotion	50
@@ -44,7 +44,7 @@ Nemesis	Killer	iconPerks_nemesis	50
 Overcharge	Killer	iconPerks_generatorOvercharge	25
 Overwhelming Presence	Killer	iconPerks_overwhelmingPresence	5
 Play With Your Food	Killer	iconPerks_playWithYourFood	25
-Pop Goes The Weasel	Killer	iconPerks_popGoesTheWeasel	300
+Pop Goes The Weasel	Killer	iconPerks_popGoesTheWeasel	250
 Predator	Killer	iconPerks_predator	5
 Rancor	Killer	iconPerks_hatred	50
 Remember Me	Killer	iconPerks_rememberMe	25
@@ -75,7 +75,7 @@ Balanced Landing	Survivor	iconPerks_balancedLanding	200
 Better Together	Survivor	iconPerks_BetterTogether	50
 Boil Over	Survivor	iconPerks_boilOver	25
 Bond	Survivor	iconPerks_bond	200
-Borrowed Time	Survivor	iconPerks_borrowedTime	300
+Borrowed Time	Survivor	iconPerks_borrowedTime	250
 Botany Knowledge	Survivor	iconPerks_botanyKnowledge	50
 Breakdown	Survivor	iconPerks_breakdown	10
 Breakout	Survivor	iconPerks_breakout	50
@@ -85,7 +85,7 @@ Camaraderie	Survivor	iconPerks_Camaraderie	10
 Dance With Me	Survivor	iconPerks_danceWithMe	50
 Dark Sense	Survivor	iconPerks_darkSense	25
 Dead Hard	Survivor	iconPerks_DeadHard	250
-Decisive Strike	Survivor	iconPerks_decisiveStrike	300
+Decisive Strike	Survivor	iconPerks_decisiveStrike	250
 Deja Vu	Survivor	iconPerks_dejaVu	25
 Deliverance	Survivor	iconPerks_deliverance	150
 Detective's Hunch	Survivor	iconPerks_detectivesHunch	100

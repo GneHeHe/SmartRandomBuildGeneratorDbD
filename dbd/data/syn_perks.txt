@@ -334,8 +334,9 @@ Franklin's Demise	Insidious	200
 Franklin's Demise	Lightborn	-300
 Furtive Chase	Make Your Choice	200
 Furtive Chase	Monitor & Abuse	-300
-Furtive Chase	Nemesis	100
+Furtive Chase	Nemesis	50
 Furtive Chase	Play With Your Food	100
+Furtive Chase	Rancor	200
 Furtive Chase	Save The Best For Last	-300
 Gearhead	Hex Ruin	100
 Hex Blood Favour	Hex Undying	50
@@ -410,7 +411,7 @@ Monitor & Abuse	Surveillance	100
 Monitor & Abuse	Trail of Torment	-200
 Monitor & Abuse	Whispers	100
 Nemesis	Play With Your Food	100
-Nemesis	Rancor	100
+Nemesis	Rancor	200
 Nemesis	Remember Me	50
 Nemesis	Save The Best For Last	-300
 Overcharge	Pop Goes The Weasel	100
