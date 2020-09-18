@@ -21,8 +21,8 @@ Fire Up	Killer	iconPerks_fireUp	25
 Franklin's Demise	Killer	iconPerks_franklinsLoss	100
 Furtive Chase	Killer	iconPerks_FurtiveChase	10
 Hangman's Trick	Killer	iconPerks_hangmansTrick	5
-Hex Devour Hope	Killer	iconPerks_devourHope	50
-Hex Haunted Ground	Killer	iconPerks_hauntedGround	50
+Hex Devour Hope	Killer	iconPerks_devourHope	100
+Hex Haunted Ground	Killer	iconPerks_hauntedGround	100
 Hex Huntress Lullaby	Killer	iconPerks_HuntressLullaby	25
 Hex No One Escapes Death	Killer	iconPerks_noOneEscapesDeath	150
 Hex Ruin	Killer	iconPerks_ruin	200
@@ -155,4 +155,4 @@ Desperate Measures	Survivor	iconPerks_DesperateMeasures	50
 Visionary	Survivor	iconPerks_Visionary	50
 Dragon's Grip	Killer	iconPerks_DragonsGrip	50
 Hex Blood Favour	Killer	iconPerks_HexBloodFavour	25
-Hex Undying	Killer	iconPerks_HexUndying	1
+Hex Undying	Killer	iconPerks_HexUndying	100
