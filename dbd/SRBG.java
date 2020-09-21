@@ -125,9 +125,9 @@ public class SRBG {
     // Max Weight for Perk (normal and after synergy)
     public final int weight_perk_max = 500;
     // Min Weight for Perk after Synergy (Reevaluation Mode)
-    public final int syn_min_weight = 60;
+    public final int syn_min_weight = 130;
     // Score Penalty for Build with Lack of Synergy (Reevaluation Mode)
-    public final int syn_penalty = -1200;
+    public final int syn_penalty = -1000;
     // Max Nb of Loops
     private final int maxloop = 3000;
     // Character File

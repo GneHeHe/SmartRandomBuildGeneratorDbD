@@ -265,11 +265,11 @@ Barbecue & Chilli	Blood Echo	100
 Barbecue & Chilli	Deerstalker	-999
 Barbecue & Chilli	Hex Ruin	200
 Barbecue & Chilli	Iron Maiden	50
-Barbecue & Chilli	Pop Goes The Weasel	100
+Barbecue & Chilli	Pop Goes The Weasel	200
 Barbecue & Chilli	Thrilling Tremors	-300
 Beast Of Prey	I'm All Ears	50
 Bitter Murmur	Hex No One Escapes Death	200
-Bitter Murmur	Rancor	-300
+Bitter Murmur	Rancor	-100
 Blood Echo	Bloodhound	50
 Blood Echo	Mindbreaker	-300
 Blood Echo	Sloppy Butcher	-100
@@ -277,7 +277,7 @@ Blood Warden	Deerstalker	100
 Blood Warden	Hex No One Escapes Death	200
 Blood Warden	Remember Me	100
 Bloodhound	Sloppy Butcher	50
-Brutal Strength	Dragon's Grip	50
+Brutal Strength	Dragon's Grip	100
 Brutal Strength	Enduring	50
 Brutal Strength	Fire Up	50
 Brutal Strength	Overcharge	100
@@ -286,14 +286,14 @@ Brutal Strength	Surveillance	100
 Corrupt Intervention	Discordance	200
 Corrupt Intervention	Dying Light	-50
 Corrupt Intervention	Hex Devour Hope	100
-Corrupt Intervention	Hex Ruin	-300
-Corrupt Intervention	Pop Goes The Weasel	-200
+Corrupt Intervention	Hex Ruin	-100
+Corrupt Intervention	Pop Goes The Weasel	-100
 Corrupt Intervention	Surge	-50
 Corrupt Intervention	Whispers	100
 Coulrophobia	Distressing	200
 Coulrophobia	Sloppy Butcher	100
 Coulrophobia	Trail of Torment	-300
-Cruel Limits	Tinkerer	200
+Cruel Limits	Tinkerer	50
 Dark Devotion	Monitor & Abuse	-300
 Dark Devotion	Nemesis	50
 Dark Devotion	Save The Best For Last	-300
@@ -319,17 +319,18 @@ Distressing	Overwhelming Presence	50
 Distressing	Trail of Torment	-999
 Distressing	Unnerving Presence	100
 Dragon's Grip	Hex Ruin	-999
-Dragon's Grip	Overcharge	50
-Dragon's Grip	Pop Goes The Weasel	50
+Dragon's Grip	Overcharge	100
+Dragon's Grip	Pop Goes The Weasel	100
 Dragon's Grip	Surge	-999
 Dragon's Grip	Tinkerer	50
-Dragon's Grip	Trail of Torment	100
+Dragon's Grip	Trail of Torment	200
 Dying Light	Nemesis	-300
 Dying Light	Pop Goes The Weasel	-50
 Dying Light	Save The Best For Last	50
-Dying Light	Sloppy Butcher	-300
+Dying Light	Sloppy Butcher	-100
 Enduring	Nemesis	50
 Enduring	Spirit Fury	300
+Forced Penance	Mad Grit	200
 Franklin's Demise	Insidious	200
 Franklin's Demise	Lightborn	-300
 Furtive Chase	Make Your Choice	200
@@ -347,7 +348,7 @@ Hex Devour Hope	Hex Ruin	-100
 Hex Devour Hope	Hex The Third Seal	-100
 Hex Devour Hope	Hex Thrill Of The Hunt	100
 Hex Devour Hope	Hex Undying	50
-Hex Devour Hope	Make Your Choice	-200
+Hex Devour Hope	Make Your Choice	-100
 Hex Devour Hope	Pop Goes The Weasel	100
 Hex Devour Hope	Whispers	50
 Hex Haunted Ground	Hex Huntress Lullaby	100
@@ -362,7 +363,7 @@ Hex Huntress Lullaby	Hex Undying	50
 Hex Huntress Lullaby	Overcharge	100
 Hex Huntress Lullaby	Whispers	50
 Hex No One Escapes Death	Hex Retribution	100
-Hex No One Escapes Death	Hex Ruin	-200
+Hex No One Escapes Death	Hex Ruin	-100
 Hex No One Escapes Death	Hex Thrill Of The Hunt	100
 Hex No One Escapes Death	Hex Undying	50
 Hex No One Escapes Death	Infectious Fright	100
@@ -379,7 +380,7 @@ Hex Ruin	Hex The Third Seal	-100
 Hex Ruin	Hex Thrill Of The Hunt	100
 Hex Ruin	Hex Undying	300
 Hex Ruin	Overcharge	-999
-Hex Ruin	Pop Goes The Weasel	-300
+Hex Ruin	Pop Goes The Weasel	-100
 Hex Ruin	Surge	-300
 Hex Ruin	Surveillance	300
 Hex Ruin	Thrilling Tremors	200
@@ -391,7 +392,7 @@ Hex The Third Seal	Knock Out	200
 Hex The Third Seal	Whispers	50
 Hex Thrill Of The Hunt	Hex Undying	50
 Hex Thrill Of The Hunt	Trail of Torment	50
-Hex Undying	Pop Goes The Weasel	-300
+Hex Undying	Pop Goes The Weasel	-100
 Infectious Fright	Knock Out	200
 Infectious Fright	Make Your Choice	100
 Infectious Fright	Monitor & Abuse	200
@@ -402,18 +403,20 @@ Infectious Fright	Whispers	-50
 Insidious	Trail of Torment	-999
 Iron Grasp	Mad Grit	200
 Iron Grasp	Monstrous Shrine	50
+Mad Grit	Save The Best For Last	100
 Make Your Choice	Territorial Imperative	100
 Make Your Choice	Trail of Torment	100
 Make Your Choice	Whispers	50
 Mindbreaker	Tinkerer	-300
 Monitor & Abuse	Shadowborn	-999
 Monitor & Abuse	Surveillance	100
-Monitor & Abuse	Trail of Torment	-200
+Monitor & Abuse	Trail of Torment	-300
 Monitor & Abuse	Whispers	100
 Nemesis	Play With Your Food	100
 Nemesis	Rancor	200
 Nemesis	Remember Me	50
 Nemesis	Save The Best For Last	-300
+Nemesis	Trail of Torment	-300
 Overcharge	Pop Goes The Weasel	100
 Overcharge	Surge	-300
 Overcharge	Surveillance	100

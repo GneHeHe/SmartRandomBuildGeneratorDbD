@@ -1,5 +1,6 @@
 ############# Clown #############
 Clown	Brutal Strength	200
+Clown	Dragon's Grip	100
 Clown	Hex No One Escapes Death	100
 Clown	Make Your Choice	100
 Clown	Save The Best For Last	100
@@ -37,6 +38,7 @@ Demogorgon	Blood Echo	100
 Demogorgon	Brutal Strength	-300
 Demogorgon	Corrupt Intervention	100
 Demogorgon	Discordance	100
+Demogorgon	Dragon's Grip	100
 Demogorgon	Enduring	-100
 Demogorgon	Gearhead	-100
 Demogorgon	Hex Devour Hope	100
@@ -55,6 +57,7 @@ Doctor	Brutal Strength	200
 Doctor	Coulrophobia	100
 Doctor	Deerstalker	-999
 Doctor	Distressing	200
+Doctor	Dragon's Grip	100
 Doctor	Hex Devour Hope	100
 Doctor	Hex Huntress Lullaby	100
 Doctor	Hex No One Escapes Death	100
@@ -147,6 +150,7 @@ Hillbilly	Deerstalker	100
 Hillbilly	Discordance	100
 Hillbilly	Dragon's Grip	-300
 Hillbilly	Enduring	100
+Hillbilly	Franklin's Demise	-100
 Hillbilly	Gearhead	-100
 Hillbilly	Hex Haunted Ground	-300
 Hillbilly	Hex No One Escapes Death	-999
@@ -173,7 +177,9 @@ Huntress Anna	Brutal Strength	-100
 Huntress Anna	Coulrophobia	-300
 Huntress Anna	Deerstalker	100
 Huntress Anna	Discordance	100
+Huntress Anna	Dragon's Grip	-100
 Huntress Anna	Enduring	-100
+Huntress Anna	Franklin's Demise	-100
 Huntress Anna	Gearhead	-100
 Huntress Anna	Hex No One Escapes Death	-300
 Huntress Anna	I'm All Ears	100
@@ -196,13 +202,13 @@ Leatherface	Bloodhound	-300
 Leatherface	Brutal Strength	-100
 Leatherface	Dark Devotion	100
 Leatherface	Deerstalker	100
-Leatherface	Dragon's Grip	-300
+Leatherface	Dragon's Grip	-100
 Leatherface	Gearhead	-100
 Leatherface	Hex Haunted Ground	-300
 Leatherface	Infectious Fright	100
 Leatherface	Insidious	200
 Leatherface	Iron Grasp	100
-Leatherface	Make Your Choice	-300
+Leatherface	Make Your Choice	-100
 Leatherface	Play With Your Food	100
 Leatherface	Save The Best For Last	-999
 Leatherface	Sloppy Butcher	-300
@@ -214,7 +220,9 @@ Legion	Bamboozle	100
 Legion	Blood Echo	100
 Legion	Dark Devotion	-100
 Legion	Discordance	100
+Legion	Dragon's Grip	100
 Legion	Enduring	100
+Legion	Franklin's Demise	-100
 Legion	Hex Ruin	100
 Legion	I'm All Ears	100
 Legion	Infectious Fright	-100
@@ -311,6 +319,7 @@ Plague	Blood Echo	100
 Plague	Corrupt Intervention	100
 Plague	Coulrophobia	-999
 Plague	Deerstalker	100
+Plague	Dragon's Grip	-300
 Plague	Dying Light	100
 Plague	Gearhead	-100
 Plague	Hex No One Escapes Death	100
@@ -329,6 +338,7 @@ Plague	Whispers	-100
 Pyramid Head	A Nurse's Calling	100
 Pyramid Head	Barbecue & Chilli	-100
 Pyramid Head	Coulrophobia	100
+Pyramid Head	Dragon's Grip	100
 Pyramid Head	I'm All Ears	100
 Pyramid Head	Make Your Choice	-100
 Pyramid Head	Nemesis	100
@@ -352,7 +362,9 @@ Spirit Rin	Dragon's Grip	100
 Spirit Rin	Enduring	-100
 Spirit Rin	Hex Devour Hope	100
 Spirit Rin	Hex Ruin	100
+Spirit Rin	I'm All Ears	-100
 Spirit Rin	Make Your Choice	100
+Spirit Rin	Nemesis	-300
 Spirit Rin	Predator	100
 Spirit Rin	Save The Best For Last	100
 Spirit Rin	Sloppy Butcher	100
@@ -361,7 +373,7 @@ Spirit Rin	Stridor	200
 Spirit Rin	Surge	100
 Spirit Rin	Surveillance	100
 Spirit Rin	Thrilling Tremors	100
-Spirit Rin	Tinkerer	100
+Spirit Rin	Tinkerer	-100
 ############# The Blight #############
 The Blight	Bamboozle	100
 The Blight	Barbecue & Chilli	100
@@ -370,6 +382,7 @@ The Blight	Brutal Strength	100
 The Blight	Discordance	100
 The Blight	Dragon's Grip	100
 The Blight	Hex Ruin	100
+The Blight	Make Your Choice	100
 The Blight	Save The Best For Last	100
 The Blight	Shadowborn	100
 The Blight	Thrilling Tremors	100
@@ -384,7 +397,7 @@ The Oni	Brutal Strength	-100
 The Oni	Corrupt Intervention	100
 The Oni	Deerstalker	100
 The Oni	Discordance	100
-The Oni	Dragon's Grip	-300
+The Oni	Dragon's Grip	-100
 The Oni	Gearhead	-100
 The Oni	Hex Haunted Ground	-300
 The Oni	Hex No One Escapes Death	-100
@@ -405,6 +418,7 @@ Trapper	Agitation	100
 Trapper	Barbecue & Chilli	-100
 Trapper	Blood Warden	100
 Trapper	Corrupt Intervention	100
+Trapper	Dragon's Grip	100
 Trapper	Franklin's Demise	100
 Trapper	Hex Devour Hope	100
 Trapper	Hex No One Escapes Death	100
