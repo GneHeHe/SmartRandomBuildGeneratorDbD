@@ -111,18 +111,36 @@ Finally, a **built-in tutorial** is also included in **SRBG**
 
 ![SRBG](dbd/data/tuto_files/tuto_help.jpg)
 
+# Comment about SRBG with respect to DbD/OS
+
+**SRBG** does not interact at all with **DbD game** and/or files, so it is **100% safe regarding EAC anti-cheat**!
+
+Some OS and/or antivirus programs may raise security warnings because **SRBG executable is not signed**.
+This is a personal project, so SRBG will never be signed with certificate like commercial software.
+However, **I guarantee SRBG is virus/trojan-free**.
+
+**If you want to compile yourself the binaries, you can do it with the sources available here**
+
 # How to download and run SRBG ?
 
-1) Download the last **pre-compiled JAR/EXE files** [here](https://github.com/GneHeHe/SmartRandomBuildGeneratorDbD/releases/download/2.4/SRBG.zip) (also available in '**releases**' tab)
+1) Download the last **pre-compiled JAR/EXE files** [here](https://github.com/GneHeHe/SmartRandomBuildGeneratorDbD/releases/download/2.5/SRBG.zip) (also available in '**releases**' tab)
 
-2) Unzip the downloaded ZIP file
+2) Unzip the downloaded **ZIP file**
 
-3) To run **SRBG**: double click either on the EXE file **'SRBG.exe'** or on the JAR file **'SRBG.jar'**
+3) **SRBG** can be launched using different ways, with order of priority:
 
-**System Requirements**:
+* double click on **SRBG.jar** file to run the native **Java program**
+* double click on **SRBG.bat** file to run the native **Java program** using the alternative way
+* if both previous methods did not work, double click on **SRBG.exe** file to run the **wrapped program** (may rise security warnings, see above)
+
+**SRBG** may take 5 seconds to launch, depending on your hardware capacity.
+
+# System Requirements
 
 * Recent **Java** Version (1.8 required) [Link](https://java.com/en/download)
-* Library **Gson** (included in pre-compiled JAR or EXE files)
+
+
+* Library **Gson** (included in pre-compiled files)
 
 # Conclusion
 

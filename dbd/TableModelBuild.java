@@ -9,6 +9,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
 import javax.swing.JLabel;
 import javax.swing.table.AbstractTableModel;
 
@@ -22,9 +24,10 @@ import javax.swing.table.AbstractTableModel;
 public class TableModelBuild extends AbstractTableModel {
 
     // Define Columns
-    private final String[] columns = {"ID", "Name", "Side", "Character", "Perk1", "Perk2", "Perk3", "Perk4"};
+    private final String[] columns = {"Build ID", "Build Name", "Side", "Character", "Perk1", "Perk2", "Perk3", "Perk4"};
     // Define Content of Table
     private ArrayList<Build> l_builds;
+    private HashMap<String, Integer> m_builds;
     // SRBG Object
     private SRBG srbg;
     // Database Filenames
@@ -39,6 +42,8 @@ public class TableModelBuild extends AbstractTableModel {
     public TableModelBuild(SRBG srbg) {
         // Define List
         l_builds = new ArrayList<>();
+        // Define Map
+        m_builds = new HashMap<>();
         // Set SRBG Object
         this.srbg = srbg;
         // Read default Build Database
@@ -189,6 +194,7 @@ public class TableModelBuild extends AbstractTableModel {
      * @return
      */
     public boolean addBuild(Build newbuild, boolean verbose) {
+        /*
         // Check if Build is already known
         for (Build b : l_builds) {
             if (b.isDuplicate(newbuild, true)) {
@@ -204,6 +210,25 @@ public class TableModelBuild extends AbstractTableModel {
         // Update JTable using an Event
         fireTableDataChanged();
         return true;
+         */
+        String tmp = newbuild.show_raw();
+        // Check if Build is already known
+        Integer exist = m_builds.get(tmp);
+        if (exist == null) {
+            // Add Build in List
+            l_builds.add(newbuild);
+            // Add Build (String as Key) in Map
+            m_builds.put(tmp, 1);
+            if (verbose) {
+                System.out.println("# Added Build | " + newbuild.show(false, "   "));
+            }
+            // Update JTable using an Event
+            fireTableDataChanged();
+            return true;
+        } else {
+            System.out.println("# Skipped Build | " + newbuild.show(false, "   "));
+            return false;
+        }
     }
 
     /**
@@ -253,7 +278,7 @@ public class TableModelBuild extends AbstractTableModel {
             f = s_build;
         }
         // Read build database
-        readData(f, true);
+        readDatabase(f, true);
     }
 
     /**
@@ -262,11 +287,12 @@ public class TableModelBuild extends AbstractTableModel {
      * @param input
      * @param reset
      */
-    public void readData(String input, boolean reset) {
+    public void readDatabase(String input, boolean reset) {
         String spacer = "\t";
         // Reset Model if needed
         if (reset) {
             l_builds.clear();
+            m_builds.clear();
         }
         String line = "";
         try {
@@ -320,16 +346,18 @@ public class TableModelBuild extends AbstractTableModel {
                             l.add(p2.getName());
                             l.add(p3.getName());
                             l.add(p4.getName());
+                            // Sort Perks
+                            Collections.sort(l);
                             if (!Tools.hasDuplicateElements(l, Perk.GENERIC)) {
                                 // Everything is OK => Create Build Object
                                 Build b = new Build();
                                 b.setName(myname);
                                 b.setSide(myside);
                                 b.setCharacter(mychar);
-                                b.addPerk(p1);
-                                b.addPerk(p2);
-                                b.addPerk(p3);
-                                b.addPerk(p4);
+                                b.addPerk(srbg.getPerk(l.get(0)));
+                                b.addPerk(srbg.getPerk(l.get(1)));
+                                b.addPerk(srbg.getPerk(l.get(2)));
+                                b.addPerk(srbg.getPerk(l.get(3)));
                                 // Add Build to Model
                                 if (addBuild(b, false)) {
                                     nb_builds++;

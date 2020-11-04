@@ -1,46 +1,3 @@
-KILLER_1	Corrupt Intervention
-KILLER_1	Dead Man's Switch
-KILLER_1	Dying Light
-KILLER_1	Hex Ruin
-KILLER_1	Overcharge
-KILLER_1	Pop Goes The Weasel
-KILLER_1	Sloppy Butcher
-KILLER_1	Surge
-KILLER_1	Thanatophobia
-KILLER_2	Bamboozle
-KILLER_2	Brutal Strength
-KILLER_2	Enduring
-KILLER_2	Hex Haunted Ground
-KILLER_2	I'm All Ears
-KILLER_2	Make Your Choice
-KILLER_2	Play With Your Food
-KILLER_2	Save The Best For Last
-KILLER_2	Spirit Fury
-KILLER_2	Zanshin Tactics
-KILLER_3	A Nurse's Calling
-KILLER_3	Barbecue & Chilli
-KILLER_3	Bitter Murmur
-KILLER_3	Bloodhound
-KILLER_3	Deathbound
-KILLER_3	Discordance
-KILLER_3	Dragon's Grip
-KILLER_3	Gearhead
-KILLER_3	Hex Retribution
-KILLER_3	Hex Thrill Of The Hunt
-KILLER_3	Infectious Fright
-KILLER_3	Iron Maiden
-KILLER_3	Rancor
-KILLER_3	Shadowborn
-KILLER_3	Spies From The Shadows
-KILLER_3	Stridor
-KILLER_3	Surveillance
-KILLER_3	Territorial Imperative
-KILLER_3	Thrilling Tremors
-KILLER_3	Tinkerer
-KILLER_3	Whispers
-KILLER_4	Blood Warden
-KILLER_4	Hex No One Escapes Death
-KILLER_4	Remember Me
 SURVIV_1	Aftercare
 SURVIV_1	Autodidact
 SURVIV_1	Bond
@@ -93,3 +50,46 @@ SURVIV_4	Object Of Obsession
 SURVIV_4	Plunderer's Instinct
 SURVIV_4	Small Game
 SURVIV_4	Visionary
+KILLER_1	Corrupt Intervention
+KILLER_1	Dead Man's Switch
+KILLER_1	Dying Light
+KILLER_1	Hex Ruin
+KILLER_1	Overcharge
+KILLER_1	Pop Goes The Weasel
+KILLER_1	Sloppy Butcher
+KILLER_1	Surge
+KILLER_1	Thanatophobia
+KILLER_2	Bamboozle
+KILLER_2	Brutal Strength
+KILLER_2	Enduring
+KILLER_2	Hex Haunted Ground
+KILLER_2	I'm All Ears
+KILLER_2	Make Your Choice
+KILLER_2	Play With Your Food
+KILLER_2	Save The Best For Last
+KILLER_2	Spirit Fury
+KILLER_2	Zanshin Tactics
+KILLER_3	A Nurse's Calling
+KILLER_3	Barbecue & Chilli
+KILLER_3	Bitter Murmur
+KILLER_3	Bloodhound
+KILLER_3	Deathbound
+KILLER_3	Discordance
+KILLER_3	Dragon's Grip
+KILLER_3	Gearhead
+KILLER_3	Hex Retribution
+KILLER_3	Hex Thrill Of The Hunt
+KILLER_3	Infectious Fright
+KILLER_3	Iron Maiden
+KILLER_3	Rancor
+KILLER_3	Shadowborn
+KILLER_3	Spies From The Shadows
+KILLER_3	Stridor
+KILLER_3	Surveillance
+KILLER_3	Territorial Imperative
+KILLER_3	Thrilling Tremors
+KILLER_3	Tinkerer
+KILLER_3	Whispers
+KILLER_4	Blood Warden
+KILLER_4	Hex No One Escapes Death
+KILLER_4	Remember Me

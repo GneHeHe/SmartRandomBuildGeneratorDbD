@@ -34,6 +34,9 @@ public class Character implements Comparable<Character> {
     // Generic Characters
     public final static String GENERIC_SURVIVOR = "GenSurv";
     public final static String GENERIC_KILLER = "GenKiller";
+    // Generic Character Icons
+    public final static String GENERIC_SURVIVOR_ICON = "iconHelpLoading_survivor";
+    public final static String GENERIC_KILLER_ICON = "iconHelpLoading_killer";
 
     /**
      * Constructor
@@ -44,14 +47,12 @@ public class Character implements Comparable<Character> {
      */
     public Character(String name, String side, String icon) {
         setName(name);
+        setIconString(icon);
         setSide(side);
-        lab_img_small = new JLabel("", SwingConstants.CENTER);
-        lab_img_large = new JLabel("", SwingConstants.CENTER);
-        lab_img_widget = new JLabel("", SwingConstants.CENTER);
         try {
-            setIconPicture(icon);
+            setIconPicture();
         } catch (IOException ex) {
-            System.err.println("\n# ERROR while creating Character " + name +"\n");
+            System.err.println("\n# ERROR while creating Character " + name + "\n");
             System.err.println(ex.getMessage());
             System.exit(0);
         }
@@ -63,27 +64,22 @@ public class Character implements Comparable<Character> {
      * @param side
      */
     public Character(String side) {
-        if (side.equals(SURVIVOR)) {
-            setName(Character.GENERIC_SURVIVOR);
-        } else if (side.equals(KILLER)) {
-            setName(Character.GENERIC_KILLER);
-        } else {
-            System.err.println("\n# ERROR while creating generic Character\n");
-            System.exit(0);
+        switch (side) {
+            case SURVIVOR:
+                setName(GENERIC_SURVIVOR);
+                setIconString(GENERIC_SURVIVOR_ICON);
+                break;
+            case KILLER:
+                setName(GENERIC_KILLER);
+                setIconString(GENERIC_KILLER_ICON);
+                break;
+            default:
+                System.err.println("\n# ERROR while creating generic Character\n");
+                System.exit(0);
         }
         setSide(side);
-        lab_img_small = new JLabel("", SwingConstants.CENTER);
-        lab_img_large = new JLabel("", SwingConstants.CENTER);
-        lab_img_widget = new JLabel("", SwingConstants.CENTER);
-        // Set Default Icon
-        String icon = "";
-        if (side.equals(SURVIVOR)) {
-            icon = "iconHelpLoading_survivor";
-        } else if (side.equals(KILLER)) {
-            icon = "iconHelpLoading_killer";
-        }
         try {
-            setIconPicture(icon);
+            setIconPicture();
         } catch (IOException ex) {
             System.err.println("\n# ERROR while creating generic Character\n");
             System.err.println(ex.getMessage());
@@ -107,6 +103,24 @@ public class Character implements Comparable<Character> {
      */
     public final void setName(String name) {
         this.name = name;
+    }
+
+    /**
+     * Get Character Icon as String
+     *
+     * @return
+     */
+    public String getIconString() {
+        return icon_string;
+    }
+
+    /**
+     * Set Character Icon as String
+     *
+     * @param icon_string
+     */
+    public final void setIconString(String icon_string) {
+        this.icon_string = icon_string;
     }
 
     /**
@@ -153,54 +167,39 @@ public class Character implements Comparable<Character> {
     }
 
     /**
-     * Get Character Icon as String
-     *
-     * @return
-     */
-    public String getIconString() {
-        return icon_string;
-    }
-
-    /**
      * Set Character Icon
      *
-     * @param s_icon
      * @throws java.io.IOException
      */
-    private void setIconPicture(String s_icon) throws IOException {
-        // Try to set given Icon Picture
-        icon_string = s_icon;
-        String path = "icons_char/" + s_icon + ".png";
+    private void setIconPicture() throws IOException {
+        // Define JLabels
+        lab_img_small = new JLabel("", SwingConstants.CENTER);
+        lab_img_large = new JLabel("", SwingConstants.CENTER);
+        lab_img_widget = new JLabel("", SwingConstants.CENTER);
+        // Try using given Icon Picture
+        String path = "icons_char/" + icon_string + ".png";
+        if (getClass().getResourceAsStream(path) == null) {
+            // Try using default Icon Picture
+            if (side.equals(SURVIVOR)) {
+                path = "icons_char/" + GENERIC_SURVIVOR_ICON + ".png";
+            } else if (side.equals(KILLER)) {
+                path = "icons_char/" + GENERIC_KILLER_ICON + ".png";
+            }
+            System.err.println("\n# WARNING: Using default Icon Files for Character '" + name + "'");
+        }
+        // Load Icon Picture
         if (getClass().getResourceAsStream(path) != null) {
-            // Set Icons in JLabel
-            lab_img_small.setIcon(new ImageIcon(Tools.resizePicture(path, Character.SIZE_SMALL, Character.SIZE_SMALL)));
-            lab_img_large.setIcon(new ImageIcon(Tools.resizePicture(path, Character.SIZE_LARGE, Character.SIZE_LARGE)));
-            lab_img_widget.setIcon(new ImageIcon(Tools.resizePicture(path, Character.SIZE_WIDGET, Character.SIZE_WIDGET)));
+            // Set Icon in JLabel
+            lab_img_small.setIcon(new ImageIcon(Tools.resizePicture(path, SIZE_SMALL, SIZE_SMALL)));
+            lab_img_large.setIcon(new ImageIcon(Tools.resizePicture(path, SIZE_LARGE, SIZE_LARGE)));
+            lab_img_widget.setIcon(new ImageIcon(Tools.resizePicture(path, SIZE_WIDGET, SIZE_WIDGET)));
             // Set Name for Tooltip
             lab_img_small.setName(name);
             lab_img_large.setName(name);
             lab_img_widget.setName(name);
         } else {
-            // Try to use default Icon Picture
-            if (side.equals(SURVIVOR)) {
-                s_icon = "iconHelpLoading_survivor";
-            } else if (side.equals(KILLER)) {
-                s_icon = "iconHelpLoading_killer";
-            }
-            path = "icons_char/" + s_icon + ".png";
-            if (getClass().getResourceAsStream(path) != null) {
-                // Set Default Icon in JLabel
-                lab_img_small.setIcon(new ImageIcon(Tools.resizePicture(path, Character.SIZE_SMALL, Character.SIZE_SMALL)));
-                lab_img_large.setIcon(new ImageIcon(Tools.resizePicture(path, Character.SIZE_LARGE, Character.SIZE_LARGE)));
-                lab_img_widget.setIcon(new ImageIcon(Tools.resizePicture(path, Character.SIZE_WIDGET, Character.SIZE_WIDGET)));
-                // Set Name for Tooltip
-                lab_img_small.setName(name);
-                lab_img_large.setName(name);
-                lab_img_widget.setName(name);
-            } else {
-                System.err.println("\n# ERROR: Both expected and default Icon Files were not found for Character '" + name + "' => Exit\n");
-                System.exit(0);
-            }
+            System.err.println("\n# ERROR: Icon Files were not found for Character '" + name + "' => Exit\n");
+            System.exit(0);
         }
     }
 

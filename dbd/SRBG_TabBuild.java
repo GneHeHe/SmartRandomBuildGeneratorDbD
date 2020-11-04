@@ -52,7 +52,8 @@ public class SRBG_TabBuild extends JPanel {
     private int anim_loop_char = 6;
     public boolean b_ready;
     private boolean force_random;
-    private final String s_sound = "data/sound.mp3";
+    private final String sound_file = "data/sound.mp3";
+    private final double sound_volume = 0.2;
 
     /**
      * Default Constructor
@@ -120,10 +121,9 @@ public class SRBG_TabBuild extends JPanel {
 
         // Define JButton Objects
         b_build = new JButton("Run");
-        b_build.setToolTipText("<html>Generate random builds that match considered parameters & constraints<br><br>Click on generated build to export it as png picture (saved in working directory)</html>");
+        b_build.setToolTipText("<html>Generate random builds using enabled features<br><br>Click on generated build to export it as png picture (saved in working directory)</html>");
         b_widget = new JButton("Widget");
-        b_widget.setToolTipText("<html>Open widget window for more convenient use of SRBG within Game<br><br>Click on Widget, then:<br><ul><li>Press SPACE or ENTER to generate random builds</li><br><li>Press ESCAPE to close the widget</li></ul></html>");
-
+        b_widget.setToolTipText("<html>Open the Widget for more convenient use of SRBG within the Game<br><br>Generate random Builds:<br><ul><li>Double-click on Widget, or</li><li>Click on Widget, then press SPACE or ENTER</li></ul><br>Move the Widget:<br><ul><li>Press & Drag</li></ul><br>Close the Widget:<br><ul><li>Click on Widget, then press ESCAPE</li></ul><br></html>");
         // Define JLabel Objects
         lab_nbperks = new JLabel("  Nb Perks ");
         lab_nbbuilds = new JLabel("  Nb Builds ");
@@ -139,14 +139,14 @@ public class SRBG_TabBuild extends JPanel {
         // Define JComboBox Object for Perks
         cb_nbperks = new JComboBox(new Integer[]{1, 2, 3, 4});
         cb_nbperks.setPreferredSize(new Dimension(50, 20));
-        cb_nbperks.setToolTipText("Define the number of desired perks in a build");
+        cb_nbperks.setToolTipText("Define the number of perks in generated builds");
         ((JLabel) cb_nbperks.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
         cb_nbperks.setSelectedItem(srbg.getNbPerksBuild());
 
         // Define JComboBox Object for Nb of Builds
         cb_nbbuilds = new JComboBox(new Integer[]{1, 5, 10, 25, 50});
         cb_nbbuilds.setPreferredSize(new Dimension(50, 20));
-        cb_nbbuilds.setToolTipText("<html>Define the number of builds to generate<br><br>The build with the highest score is graphically displayed<br><br>Meta builds or builds with 'combos perks' (favorable synergy) are associated with high scores<br><br>They tend to be returned when the number of desired builds is larger than 1!</html>");
+        cb_nbbuilds.setToolTipText("<html>Define the number of builds to be generated<br><br>The build with the highest score is graphically displayed<br><br>Meta builds or high-synergy builds are associated with high scores<br><br>Meta builds or high-synergy builds tend to be returned when the number of generated builds is large</html>");
         ((JLabel) cb_nbbuilds.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
         cb_nbbuilds.setSelectedIndex(0);
         // Force 1 desired build in GUI
@@ -156,7 +156,7 @@ public class SRBG_TabBuild extends JPanel {
         cb_side = new JComboBox(new String[]{srbg.s_side_rand, s_rand_surv, s_rand_killer, srbg.s_side_surv, srbg.s_side_killer});
         cb_side.setSelectedIndex(0);
         cb_side.setPreferredSize(new Dimension(130, 25));
-        cb_side.setToolTipText("<html>Define the side for the character:<ul><li>" + srbg.s_side_rand + ": random side & random character</li><br><li>" + s_rand_surv + ": survivor side & random character</li><br><li>" + s_rand_killer + ": killer side & random character</li><br><li>" + srbg.s_side_surv + ": survivor side & ability to chose character</li><br><li>" + srbg.s_side_killer + ": killer side & ability to chose character</li></ul></html>");
+        cb_side.setToolTipText("<html>Define the selection mode:<ul><li>" + srbg.s_side_rand + ": random side & random character</li><br><li>" + s_rand_surv + ": random character from survivor side</li><br><li>" + s_rand_killer + ": random character from killer side</li><br><li>" + srbg.s_side_surv + ": select an explicit character from survivor side</li><br><li>" + srbg.s_side_killer + ": select an explicit character from killer side</li></ul></html>");
         ((JLabel) cb_side.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
 
         // Define JComboBox Object for Character
@@ -172,7 +172,7 @@ public class SRBG_TabBuild extends JPanel {
         check_cons3 = new JCheckBox("Cons3");
         check_cons4 = new JCheckBox("Cons4");
         check_syn = new JCheckBox("Synergy");
-        check_syn.setToolTipText("<html>Enable or disable the synergy rules<br><br>Perk weights are dynamically updated with respect to selected character & previous looted perks<br><br>The goal of 'perk constraints' & 'synergy rules' is to generate even better random builds</html>");
+        check_syn.setToolTipText("<html>Enable or disable the synergy rules<br><br>Perk weights are dynamically updated with respect to selected character & previous looted perks</html>");
         updateCheckBoxes();
         check_cons1.setToolTipText("<html>Required perk from this specific subset in generated builds:<br><ul><li>" + srbg.getConstraints(1, srbg.s_side_surv) + "</li><br><li>" + srbg.getConstraints(1, srbg.s_side_killer) + "</li></ul></html>");
         check_cons2.setToolTipText("<html>Required perk from this specific subset in generated builds:<br><ul><li>" + srbg.getConstraints(2, srbg.s_side_surv) + "</li><br><li>" + srbg.getConstraints(2, srbg.s_side_killer) + "</li></ul></html>");
@@ -335,7 +335,7 @@ public class SRBG_TabBuild extends JPanel {
             public void mouseClicked(MouseEvent e) {
                 // Define Output Filename
                 SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
-                String output = "build_random_" + sdf.format(System.currentTimeMillis()) + ".png";
+                String output = "build_saved_" + sdf.format(System.currentTimeMillis()) + ".png";
                 // Export Random Build as Picture
                 Tools.saveComponentAsImage(table_perks, output, "PNG");
             }
@@ -403,6 +403,67 @@ public class SRBG_TabBuild extends JPanel {
     }
 
     /**
+     * Enable/Disable Components while generating Builds
+     *
+     */
+    public void switchComponents() {
+        // JComboBox Side
+        if (cb_side.isEnabled()) {
+            cb_side.setEnabled(false);
+        } else {
+            cb_side.setEnabled(true);
+        }
+        // JComboBox Characters
+        if (cb_char.isEnabled()) {
+            cb_char.setEnabled(false);
+        } else {
+            cb_char.setEnabled(true);
+        }
+        // JComboBox Nb Perks
+        if (cb_nbperks.isEnabled()) {
+            cb_nbperks.setEnabled(false);
+        } else {
+            cb_nbperks.setEnabled(true);
+        }
+        // JComboBox Nb Builds
+        if (cb_nbbuilds.isEnabled()) {
+            cb_nbbuilds.setEnabled(false);
+        } else {
+            cb_nbbuilds.setEnabled(true);
+        }
+        // JCheckBox Cons1
+        if (check_cons1.isEnabled()) {
+            check_cons1.setEnabled(false);
+        } else {
+            check_cons1.setEnabled(true);
+        }
+        // JCheckBox Cons2
+        if (check_cons2.isEnabled()) {
+            check_cons2.setEnabled(false);
+        } else {
+            check_cons2.setEnabled(true);
+        }
+        // JCheckBox Cons3
+        if (check_cons3.isEnabled()) {
+            check_cons3.setEnabled(false);
+        } else {
+            check_cons3.setEnabled(true);
+        }
+        // JCheckBox Cons4
+        if (check_cons4.isEnabled()) {
+            check_cons4.setEnabled(false);
+        } else {
+            check_cons4.setEnabled(true);
+        }
+        // JCheckBox Synergy
+        if (check_syn.isEnabled()) {
+            check_syn.setEnabled(false);
+        } else {
+            check_syn.setEnabled(true);
+        }
+    }
+
+    /**
      * Generate Builds (Main Method)
      *
      * @param table
@@ -429,6 +490,10 @@ public class SRBG_TabBuild extends JPanel {
             protected Void doInBackground() {
                 // Disable Button
                 b_build.setEnabled(false);
+                // Disable Button
+                b_widget.setEnabled(false);
+                // Enable/Disable Components
+                switchComponents();
                 // Reset Text
                 String fulltext = "";
                 text.setText(fulltext);
@@ -460,6 +525,10 @@ public class SRBG_TabBuild extends JPanel {
                 System.out.println("\n#" + fulltext.replaceAll("\n\n ", "\n# ").replaceFirst("\n", ""));
                 // Enable Button
                 b_build.setEnabled(true);
+                // Disable Button
+                b_widget.setEnabled(true);
+                // Enable/Disable Components
+                switchComponents();
                 // Update boolean
                 b_ready = true;
                 // End SwingWorker (doInBackground method)
@@ -505,7 +574,7 @@ public class SRBG_TabBuild extends JPanel {
             Thread.sleep(anim_delay_perk);
         }
         // Play Sound
-        Tools.playSound(s_sound);
+        Tools.playSound(sound_file, sound_volume);
         // Display Generic Perks
         for (int j = 0; j < srbg.getNbPerksBuild(); j++) {
             table.getModel().setValueAt(perk_gen.getIconImage(size_perk), 0, j);
@@ -574,6 +643,22 @@ public class SRBG_TabBuild extends JPanel {
                         int keyCode = e.getKeyCode();
                         // Generate Build after either ENTER or SPACE Keys have been Pressed
                         if (b_ready && ((keyCode == KeyEvent.VK_ENTER) || (keyCode == KeyEvent.VK_SPACE))) {
+                            // SRBG Status
+                            b_ready = false;
+                            // Reset Table
+                            resetTable(table_perks);
+                            // Generate Build
+                            genBuild(widget.getTable(), 4, 3);
+                        }
+                    }
+                });
+
+                // Define MouseListener
+                widget.getTable().addMouseListener(new MouseAdapter() {
+                    @Override
+                    public void mouseClicked(MouseEvent e) {
+                        // Generate Build after a double-click with mouse
+                        if (b_ready && (e.getClickCount() == 2)) {
                             // SRBG Status
                             b_ready = false;
                             // Reset Table

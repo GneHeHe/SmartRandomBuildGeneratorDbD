@@ -240,6 +240,24 @@ public class Build implements Comparable<Build> {
     }
 
     /**
+     * Display Build as String (Raw)
+     *
+     * @return
+     */
+    public String show_raw() {
+        String s = side + " " + character + " ";
+        int nb = 1;
+        for (Perk p : l_perks) {
+            s = s + p.getName();
+            if (nb < getNbPerks()) {
+                s = s + " ";
+            }
+            nb++;
+        }
+        return s;
+    }
+
+    /**
      * toString() Method
      *
      * @return
@@ -251,6 +269,7 @@ public class Build implements Comparable<Build> {
 
     /**
      * Check if two Builds are Identical
+     * Warning: not used anymore in database for efficiency purpose
      *
      * @param b
      * @param sort

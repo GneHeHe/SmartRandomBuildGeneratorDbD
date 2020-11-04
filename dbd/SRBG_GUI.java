@@ -19,13 +19,12 @@ public class SRBG_GUI extends JFrame {
     // Tabs
     private SRBG_TabPerk pan_perk;
     private SRBG_TabBuild pan_build;
-    private SRBG_TabHelp pan_help;
+    private SRBG_TabHelp pan_tuto;
     private SRBG_TabDB pan_db;
     // Strings
     private String s_perk = "Configure Perks";
     private String s_build = "Generate Random Builds";
-    private String s_help1 = "Contact & Help";
-    private String s_help2 = "Contact & Help";
+    private String s_tuto = "Tutorial & Contact";
     private String s_db = "Build Database";
     // Required to Play Sound
     private final JFXPanel fxPanel = new JFXPanel();
@@ -36,10 +35,10 @@ public class SRBG_GUI extends JFrame {
      * @param title
      * @param myperk
      * @param mybuild
-     * @param myhelp
+     * @param mytuto
      * @param mydb
      */
-    public SRBG_GUI(String title, SRBG_TabPerk myperk, SRBG_TabBuild mybuild, SRBG_TabHelp myhelp, SRBG_TabDB mydb) {
+    public SRBG_GUI(String title, SRBG_TabPerk myperk, SRBG_TabBuild mybuild, SRBG_TabHelp mytuto, SRBG_TabDB mydb) {
 
         // Set LookAndFeel
         setlookandfeel();
@@ -47,7 +46,7 @@ public class SRBG_GUI extends JFrame {
         // Init Tabs
         pan_perk = myperk;
         pan_build = mybuild;
-        pan_help = myhelp;
+        pan_tuto = mytuto;
         pan_db = mydb;
 
         // Main Panel
@@ -57,16 +56,16 @@ public class SRBG_GUI extends JFrame {
         tabbedPane.addTab(s_perk, pan_perk);
         tabbedPane.addTab(s_build, pan_build);
         tabbedPane.addTab(s_db, pan_db);
-        tabbedPane.addTab(s_help1, pan_help);
+        tabbedPane.addTab(s_tuto, pan_tuto);
 
         // Add Tooltips on Tabs
         tabbedPane.setToolTipTextAt(0, "<html>Define the weight for each perk (optional tab)<br><br>Synergy rules may have impact on perk weights: only values associated to last generated build are displayed in the table<br><br>Perk weights are always reseted to their original values before generating any new build</html>");
         tabbedPane.setToolTipTextAt(1, "Generate random builds & load widget (main tab)");
         tabbedPane.setToolTipTextAt(2, "Browse build database & save your favorite builds");
-        tabbedPane.setToolTipTextAt(3, "Tutorial & infos");
+        //tabbedPane.setToolTipTextAt(3, "Tutorial & Contact");
 
         // Set favorite Tab
-        tabbedPane.setSelectedIndex(1);
+        tabbedPane.setSelectedIndex(3);
 
         // Add Main Panel to Frame
         getContentPane().add(tabbedPane);
@@ -95,9 +94,10 @@ public class SRBG_GUI extends JFrame {
 
         // Build Object (No Verbose Mode in GUI)
         SRBG mysrbg = new SRBG(false);
-        mysrbg.setConstraintsPerks(1, true);
-        mysrbg.setConstraintsPerks(3, true);
 
+        // Enable some Constraints in GUI
+        //mysrbg.setConstraintsPerks(1, true);
+        //mysrbg.setConstraintsPerks(3, true);
         // Define Tabs
         SRBG_TabPerk myPerks = new SRBG_TabPerk(mysrbg);
         SRBG_TabBuild myBuilds = new SRBG_TabBuild(mysrbg);
@@ -110,7 +110,7 @@ public class SRBG_GUI extends JFrame {
             if (news == null) {
                 news = "";
             }
-            Tools.getAlertURL("An Update of SRBG is available from GitHub Website\n\nNew Features:\n" + news + "\n\n", "Information", JOptionPane.INFORMATION_MESSAGE,"Continue with current Version","Click 'here' to Download the last Version ('SRBG.zip' file)", mysrbg.GIT_URL_RELEASE);
+            Tools.getAlertURL("New update of SRBG is available\n\nNew Features:\n" + news + "\n\n", "Information", JOptionPane.INFORMATION_MESSAGE, "Continue with current version", "Click here to download the last version from STEAM guide ('SRBG.zip' file from 'Download SRBG' section)", mysrbg.GUIDE);
         }
 
         // Launch Frame

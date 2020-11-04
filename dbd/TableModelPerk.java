@@ -15,7 +15,7 @@ import javax.swing.table.AbstractTableModel;
 public class TableModelPerk extends AbstractTableModel {
 
     // Define Columns
-    private final String[] columns = {"Perk", "Icon", "Weight"};
+    private final String[] columns = {"Perk Name", "Perk Icon", "Linked Character", "Perk Weight"};
     // Define Content of Table
     private ArrayList<Perk> l_perks;
     // SRBG Object
@@ -78,6 +78,8 @@ public class TableModelPerk extends AbstractTableModel {
             case 1:
                 return JLabel.class;
             case 2:
+                return JLabel.class;
+            case 3:
                 return Integer.class;
             default:
                 return Object.class;
@@ -101,6 +103,8 @@ public class TableModelPerk extends AbstractTableModel {
                 //System.out.println(l_perks.get(rowIndex).getPerkIcon());
                 return l_perks.get(rowIndex).getIconImage(1);
             case 2:
+                return l_perks.get(rowIndex).getParentImage();
+            case 3:
                 //System.out.println(l_perks.get(rowIndex).getPerkWeight());
                 return l_perks.get(rowIndex).getWeight();
             default:
@@ -123,6 +127,8 @@ public class TableModelPerk extends AbstractTableModel {
             case 1:
                 return false;
             case 2:
+                return false;
+            case 3:
                 return true;
             default:
                 return false;
@@ -140,7 +146,7 @@ public class TableModelPerk extends AbstractTableModel {
     public void setValueAt(Object aValue, int rowIndex, int columnIndex) {
         if (aValue != null) {
             Perk p = l_perks.get(rowIndex);
-            if (columnIndex == 2) {
+            if (columnIndex == 3) {
                 // Update Weight for given Perk
                 p.setWeight(Integer.parseInt(aValue.toString()), true);
                 System.out.println("# Updated Perk '" + p.getName() + "' => New Value is '" + p.getWeight() + "'");

@@ -337,22 +337,23 @@ public class Tools {
     /**
      * Play Sound
      *
-     * @param path
+     * @param file
+     * @param volume (typical value 0.03->0.20)
      */
-    public static void playSound(String path) {
+    public static void playSound(String file, double volume) {
         try {
             // Create URI
-            URI uri = Tools.class.getResource(path).toURI();
+            URI uri = Tools.class.getResource(file).toURI();
             // Create Media
             Media media = new Media(uri.toString());
             // Create Media Player
             MediaPlayer mediaPlayer = new MediaPlayer(media);
             // Set Volume Gain (Low Value)
-            mediaPlayer.setVolume(0.03);
+            mediaPlayer.setVolume(volume);
             // Play Sound
             mediaPlayer.play();
         } catch (Exception ex) {
-            System.err.println("\n# ERROR while loading Sound File from " + path);
+            System.err.println("\n# ERROR while loading Sound File from " + file);
             System.err.println(ex.getMessage());
         }
     }

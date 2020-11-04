@@ -1,158 +1,158 @@
-A Nurse's Calling	Killer	iconPerks_aNursesCalling	200
-Agitation	Killer	iconPerks_agitation	150
-Bamboozle	Killer	iconPerks_bamboozle	150
-Barbecue & Chilli	Killer	iconPerks_BBQAndChili	200
-Beast Of Prey	Killer	iconPerks_BeastOfPrey	10
-Bitter Murmur	Killer	iconPerks_bitterMurmur	100
-Blood Echo	Killer	iconPerks_bloodEcho	50
-Blood Warden	Killer	iconPerks_bloodWarden	150
-Bloodhound	Killer	iconPerks_bloodhound	100
-Brutal Strength	Killer	iconPerks_brutalStrength	150
-Corrupt Intervention	Killer	iconPerks_corruptIntervention	200
-Coulrophobia	Killer	iconPerks_coulrophobia	25
-Cruel Limits	Killer	iconPerks_CruelLimits	25
-Dark Devotion	Killer	iconPerks_darkDevotion	50
-Deerstalker	Killer	iconPerks_deerstalker	100
-Discordance	Killer	iconPerks_discordance	200
-Distressing	Killer	iconPerks_distressing	25
-Dying Light	Killer	iconPerks_dyingLight	50
-Enduring	Killer	iconPerks_enduring	200
-Fire Up	Killer	iconPerks_fireUp	50
-Franklin's Demise	Killer	iconPerks_franklinsLoss	150
-Furtive Chase	Killer	iconPerks_FurtiveChase	10
-Hangman's Trick	Killer	iconPerks_hangmansTrick	10
-Hex Devour Hope	Killer	iconPerks_devourHope	150
-Hex Haunted Ground	Killer	iconPerks_hauntedGround	150
-Hex Huntress Lullaby	Killer	iconPerks_HuntressLullaby	50
-Hex No One Escapes Death	Killer	iconPerks_noOneEscapesDeath	150
-Hex Ruin	Killer	iconPerks_ruin	200
-Hex The Third Seal	Killer	iconPerks_theThirdSeal	25
-Hex Thrill Of The Hunt	Killer	iconPerks_thrillOfTheHunt	25
-I'm All Ears	Killer	iconPerks_ImAllEars	150
-Infectious Fright	Killer	iconPerks_infectiousFright	150
-Insidious	Killer	iconPerks_insidious	100
-Iron Grasp	Killer	iconPerks_ironGrasp	100
-Iron Maiden	Killer	iconPerks_ironMaiden	100
-Knock Out	Killer	iconPerks_knockOut	50
-Lightborn	Killer	iconPerks_lightborn	100
-Mad Grit	Killer	iconPerks_madGrit	50
-Make Your Choice	Killer	iconPerks_makeYourChoice	150
-Mindbreaker	Killer	iconPerks_Mindbreaker	10
-Monitor & Abuse	Killer	iconPerks_monitorAndAbuse	150
-Monstrous Shrine	Killer	iconPerks_monstrousShrine	10
-Nemesis	Killer	iconPerks_nemesis	100
-Overcharge	Killer	iconPerks_generatorOvercharge	50
-Overwhelming Presence	Killer	iconPerks_overwhelmingPresence	10
-Play With Your Food	Killer	iconPerks_playWithYourFood	50
-Pop Goes The Weasel	Killer	iconPerks_popGoesTheWeasel	200
-Predator	Killer	iconPerks_predator	25
-Rancor	Killer	iconPerks_hatred	100
-Remember Me	Killer	iconPerks_rememberMe	50
-Save The Best For Last	Killer	iconPerks_saveTheBestForLast	150
-Shadowborn	Killer	iconPerks_shadowborn	100
-Sloppy Butcher	Killer	iconPerks_sloppyButcher	200
-Spies From The Shadows	Killer	iconPerks_spiesFromTheShadows	100
-Spirit Fury	Killer	iconPerks_spiritFury	25
-Stridor	Killer	iconPerks_stridor	100
-Surge	Killer	iconPerks_Surge	150
-Surveillance	Killer	iconPerks_surveillance	150
-Territorial Imperative	Killer	iconPerks_TerritorialImperative	50
-Thanatophobia	Killer	iconPerks_thatanophobia	100
-Thrilling Tremors	Killer	iconPerks_ThrillingTremors	200
-Tinkerer	Killer	iconPerks_tinkerer	150
-Unnerving Presence	Killer	iconPerks_unnervingPresence	10
-Unrelenting	Killer	iconPerks_unrelenting	25
-Whispers	Killer	iconPerks_whispers	200
-Zanshin Tactics	Killer	iconPerks_zanshinTactics	100
-Ace In The Hole	Survivor	iconPerks_aceInTheHole	100
-Adrenaline	Survivor	iconPerks_adrenaline	200
-Aftercare	Survivor	iconPerks_aftercare	150
-Alert	Survivor	iconPerks_alert	150
-Any Means Necessary	Survivor	iconPerks_anyMeansNecessary	150
-Autodidact	Survivor	iconPerks_autodidact	50
-Babysitter	Survivor	iconPerks_Babysitter	25
-Balanced Landing	Survivor	iconPerks_balancedLanding	200
-Better Together	Survivor	iconPerks_BetterTogether	100
-Boil Over	Survivor	iconPerks_boilOver	50
-Bond	Survivor	iconPerks_bond	200
-Borrowed Time	Survivor	iconPerks_borrowedTime	250
-Botany Knowledge	Survivor	iconPerks_botanyKnowledge	100
-Breakdown	Survivor	iconPerks_breakdown	25
-Breakout	Survivor	iconPerks_breakout	100
-Buckle Up	Survivor	iconPerks_buckleUp	10
-Calm Spirit	Survivor	iconPerks_calmSpirit	50
-Camaraderie	Survivor	iconPerks_Camaraderie	25
-Dance With Me	Survivor	iconPerks_danceWithMe	100
-Dark Sense	Survivor	iconPerks_darkSense	50
-Dead Hard	Survivor	iconPerks_DeadHard	200
-Decisive Strike	Survivor	iconPerks_decisiveStrike	200
-Deja Vu	Survivor	iconPerks_dejaVu	50
-Deliverance	Survivor	iconPerks_deliverance	150
-Detective's Hunch	Survivor	iconPerks_detectivesHunch	150
-Distortion	Survivor	iconPerks_distortion	50
-Diversion	Survivor	iconPerks_diversion	150
-Empathy	Survivor	iconPerks_empathy	150
-Fixated	Survivor	iconPerks_Fixated	150
-Flip-Flop	Survivor	iconPerks_flipFlop	50
-Head On	Survivor	iconPerks_headOn	150
-Hope	Survivor	iconPerks_hope	150
-Inner Strength	Survivor	iconPerks_InnerStrength	150
-Iron Will	Survivor	iconPerks_ironWill	200
-Kindred	Survivor	iconPerks_kindred	200
-Leader	Survivor	iconPerks_leader	50
-Left Behind	Survivor	iconPerks_leftBehind	100
-Lightweight	Survivor	iconPerks_lightweight	50
-Lithe	Survivor	iconPerks_lithe	200
-Lucky Break	Survivor	iconPerks_luckyBreak	100
-Mettle Of Man	Survivor	iconPerks_mettleOfMan	50
-No Mither	Survivor	iconPerks_NoMither	50
-No One Left Behind	Survivor	iconPerks_noOneLeftBehind	10
-Object Of Obsession	Survivor	iconPerks_objectOfObsession	100
-Open-Handed	Survivor	iconPerks_openHanded	10
-Pharmacy	Survivor	iconPerks_pharmacy	50
-Plunderer's Instinct	Survivor	iconPerks_plunderersInstinct	150
-Poised	Survivor	iconPerks_poised	50
-Premonition	Survivor	iconPerks_premonition	50
-Prove Thyself	Survivor	iconPerks_proveThyself	150
-Quick & Quiet	Survivor	iconPerks_quickAndQuiet	150
-Resilience	Survivor	iconPerks_resilience	150
-Saboteur	Survivor	iconPerks_saboteur	50
-Second Wind	Survivor	iconPerks_SecondWind	50
-Self-Care	Survivor	iconPerks_selfCare	200
-Slippery Meat	Survivor	iconPerks_slipperyMeat	25
-Small Game	Survivor	iconPerks_smallGame	100
-Sole Survivor	Survivor	iconPerks_soleSurvivor	10
-Solidarity	Survivor	iconPerks_solidarity	25
-Spine Chill	Survivor	iconPerks_spineChill	200
-Sprint Burst	Survivor	iconPerks_sprintBurst	200
-Stake Out	Survivor	iconPerks_stakeOut	10
-Streetwise	Survivor	iconPerks_streetwise	25
-Technician	Survivor	iconPerks_technician	100
-Tenacity	Survivor	iconPerks_tenacity	100
-This Is Not Happening	Survivor	iconPerks_thisIsNotHappening	10
-Unbreakable	Survivor	iconPerks_unbreakable	200
-Up The Ante	Survivor	iconPerks_upTheAnte	25
-Urban Evasion	Survivor	iconPerks_urbanEvasion	100
-Vigil	Survivor	iconPerks_vigil	25
-Wake Up!	Survivor	iconPerks_wakeUp	100
-We'll Make It	Survivor	iconPerks_wellMakeIt	150
-We're Gonna Live Forever	Survivor	iconPerks_WereGonnaLiveForever	150
-Windows Of Opportunity	Survivor	iconPerks_windowsOfOpportunity	150
-For the People	Survivor	iconPerks_ForThePeople	100
-Off the Record	Survivor	iconPerks_OffTheRecord	25
-Red Herring	Survivor	iconPerks_RedHerring	50
-Dead Man's Switch	Killer	iconPerks_DeadMansSwitch	50
-Gearhead	Killer	iconPerks_Gearhead	50
-Hex Retribution	Killer	iconPerks_HexRetribution	100
-Blood Pact	Survivor	iconPerks_BloodPact	25
-Repressed Alliance	Survivor	iconPerks_RepressedAlliance	100
-Soul Guard	Survivor	iconPerks_SoulGuard	150
-Deathbound	Killer	iconPerks_Deathbound	100
-Forced Penance	Killer	iconPerks_ForcedPenance	25
-Trail of Torment	Killer	iconPerks_TrailOfTorment	50
-Built to Last	Survivor	iconPerks_BuiltToLast	100
-Desperate Measures	Survivor	iconPerks_DesperateMeasures	100
-Visionary	Survivor	iconPerks_Visionary	100
-Dragon's Grip	Killer	iconPerks_DragonsGrip	100
-Hex Blood Favour	Killer	iconPerks_HexBloodFavour	50
-Hex Undying	Killer	iconPerks_HexUndying	150
+Ace In The Hole	Survivor	iconPerks_aceInTheHole	100	Ace Visconti
+Adrenaline	Survivor	iconPerks_adrenaline	200	Meg
+Aftercare	Survivor	iconPerks_aftercare	150	Jeff
+Alert	Survivor	iconPerks_alert	150	Feng
+Any Means Necessary	Survivor	iconPerks_anyMeansNecessary	150	Yui
+Autodidact	Survivor	iconPerks_autodidact	50	Adam
+Babysitter	Survivor	iconPerks_Babysitter	25	Steve
+Balanced Landing	Survivor	iconPerks_balancedLanding	200	Nea
+Better Together	Survivor	iconPerks_BetterTogether	100	Nancy
+Blood Pact	Survivor	iconPerks_BloodPact	50	Cheryl
+Boil Over	Survivor	iconPerks_boilOver	50	Kate
+Bond	Survivor	iconPerks_bond	200	Dwight
+Borrowed Time	Survivor	iconPerks_borrowedTime	200	Bill Overbeck
+Botany Knowledge	Survivor	iconPerks_botanyKnowledge	100	Claudette
+Breakdown	Survivor	iconPerks_breakdown	25	Jeff
+Breakout	Survivor	iconPerks_breakout	100	Yui
+Buckle Up	Survivor	iconPerks_buckleUp	10	Ash
+Built to Last	Survivor	iconPerks_BuiltToLast	100	Felix
+Calm Spirit	Survivor	iconPerks_calmSpirit	50	Jake
+Camaraderie	Survivor	iconPerks_Camaraderie	25	Steve
+Dance With Me	Survivor	iconPerks_danceWithMe	100	Kate
+Dark Sense	Survivor	iconPerks_darkSense	50	GenSurv
+Dead Hard	Survivor	iconPerks_DeadHard	200	David King
+Decisive Strike	Survivor	iconPerks_decisiveStrike	200	Laurie
+Deja Vu	Survivor	iconPerks_dejaVu	50	GenSurv
+Deliverance	Survivor	iconPerks_deliverance	150	Adam
+Desperate Measures	Survivor	iconPerks_DesperateMeasures	100	Felix
+Detective's Hunch	Survivor	iconPerks_detectivesHunch	150	David Tapp
+Distortion	Survivor	iconPerks_distortion	50	Jeff
+Diversion	Survivor	iconPerks_diversion	150	Adam
+Empathy	Survivor	iconPerks_empathy	150	Claudette
+Fixated	Survivor	iconPerks_Fixated	150	Nancy
+Flip-Flop	Survivor	iconPerks_flipFlop	50	Ash
+For the People	Survivor	iconPerks_ForThePeople	100	Zarina
+Head On	Survivor	iconPerks_headOn	150	Jane
+Hope	Survivor	iconPerks_hope	150	GenSurv
+Inner Strength	Survivor	iconPerks_InnerStrength	150	Nancy
+Iron Will	Survivor	iconPerks_ironWill	200	Jake
+Kindred	Survivor	iconPerks_kindred	200	GenSurv
+Leader	Survivor	iconPerks_leader	50	Dwight
+Left Behind	Survivor	iconPerks_leftBehind	100	Bill Overbeck
+Lightweight	Survivor	iconPerks_lightweight	50	GenSurv
+Lithe	Survivor	iconPerks_lithe	200	Feng
+Lucky Break	Survivor	iconPerks_luckyBreak	100	Yui
+Mettle Of Man	Survivor	iconPerks_mettleOfMan	50	Ash
+No Mither	Survivor	iconPerks_NoMither	50	David King
+No One Left Behind	Survivor	iconPerks_noOneLeftBehind	10	GenSurv
+Object Of Obsession	Survivor	iconPerks_objectOfObsession	150	Laurie
+Off the Record	Survivor	iconPerks_OffTheRecord	25	Zarina
+Open-Handed	Survivor	iconPerks_openHanded	10	Ace Visconti
+Pharmacy	Survivor	iconPerks_pharmacy	100	Quentin
+Plunderer's Instinct	Survivor	iconPerks_plunderersInstinct	150	GenSurv
+Poised	Survivor	iconPerks_poised	50	Jane
+Premonition	Survivor	iconPerks_premonition	50	GenSurv
+Prove Thyself	Survivor	iconPerks_proveThyself	150	Dwight
+Quick & Quiet	Survivor	iconPerks_quickAndQuiet	150	Meg
+Red Herring	Survivor	iconPerks_RedHerring	50	Zarina
+Repressed Alliance	Survivor	iconPerks_RepressedAlliance	100	Cheryl
+Resilience	Survivor	iconPerks_resilience	150	GenSurv
+Saboteur	Survivor	iconPerks_saboteur	50	Jake
+Second Wind	Survivor	iconPerks_SecondWind	50	Steve
+Self-Care	Survivor	iconPerks_selfCare	200	Claudette
+Slippery Meat	Survivor	iconPerks_slipperyMeat	50	GenSurv
+Small Game	Survivor	iconPerks_smallGame	100	GenSurv
+Sole Survivor	Survivor	iconPerks_soleSurvivor	10	Laurie
+Solidarity	Survivor	iconPerks_solidarity	25	Jane
+Soul Guard	Survivor	iconPerks_SoulGuard	150	Cheryl
+Spine Chill	Survivor	iconPerks_spineChill	200	GenSurv
+Sprint Burst	Survivor	iconPerks_sprintBurst	200	Meg
+Stake Out	Survivor	iconPerks_stakeOut	10	David Tapp
+Streetwise	Survivor	iconPerks_streetwise	25	Nea
+Technician	Survivor	iconPerks_technician	100	Feng
+Tenacity	Survivor	iconPerks_tenacity	100	David Tapp
+This Is Not Happening	Survivor	iconPerks_thisIsNotHappening	10	GenSurv
+Unbreakable	Survivor	iconPerks_unbreakable	200	Bill Overbeck
+Up The Ante	Survivor	iconPerks_upTheAnte	25	Ace Visconti
+Urban Evasion	Survivor	iconPerks_urbanEvasion	100	Nea
+Vigil	Survivor	iconPerks_vigil	10	Quentin
+Visionary	Survivor	iconPerks_Visionary	100	Felix
+Wake Up!	Survivor	iconPerks_wakeUp	100	Quentin
+We'll Make It	Survivor	iconPerks_wellMakeIt	150	GenSurv
+We're Gonna Live Forever	Survivor	iconPerks_WereGonnaLiveForever	150	David King
+Windows Of Opportunity	Survivor	iconPerks_windowsOfOpportunity	150	Kate
+A Nurse's Calling	Killer	iconPerks_aNursesCalling	200	Nurse Sally
+Agitation	Killer	iconPerks_agitation	150	Trapper
+Bamboozle	Killer	iconPerks_bamboozle	150	Clown
+Barbecue & Chilli	Killer	iconPerks_BBQAndChili	200	Leatherface
+Beast Of Prey	Killer	iconPerks_BeastOfPrey	10	Huntress Anna
+Bitter Murmur	Killer	iconPerks_bitterMurmur	100	GenKiller
+Blood Echo	Killer	iconPerks_bloodEcho	50	The Oni
+Blood Warden	Killer	iconPerks_bloodWarden	150	Freddy
+Bloodhound	Killer	iconPerks_bloodhound	100	Wraith
+Brutal Strength	Killer	iconPerks_brutalStrength	150	Trapper
+Corrupt Intervention	Killer	iconPerks_corruptIntervention	200	Plague
+Coulrophobia	Killer	iconPerks_coulrophobia	25	Clown
+Cruel Limits	Killer	iconPerks_CruelLimits	25	Demogorgon
+Dark Devotion	Killer	iconPerks_darkDevotion	50	Plague
+Dead Man's Switch	Killer	iconPerks_DeadMansSwitch	50	Deathslinger
+Deathbound	Killer	iconPerks_Deathbound	100	Pyramid Head
+Deerstalker	Killer	iconPerks_deerstalker	100	GenKiller
+Discordance	Killer	iconPerks_discordance	200	Legion
+Distressing	Killer	iconPerks_distressing	25	GenKiller
+Dragon's Grip	Killer	iconPerks_DragonsGrip	100	The Blight
+Dying Light	Killer	iconPerks_dyingLight	50	Myers
+Enduring	Killer	iconPerks_enduring	200	Hillbilly
+Fire Up	Killer	iconPerks_fireUp	50	Freddy
+Forced Penance	Killer	iconPerks_ForcedPenance	25	Pyramid Head
+Franklin's Demise	Killer	iconPerks_franklinsLoss	100	Leatherface
+Furtive Chase	Killer	iconPerks_FurtiveChase	10	Ghostface
+Gearhead	Killer	iconPerks_Gearhead	50	Deathslinger
+Hangman's Trick	Killer	iconPerks_hangmansTrick	10	Pig
+Hex Blood Favour	Killer	iconPerks_HexBloodFavour	50	The Blight
+Hex Devour Hope	Killer	iconPerks_devourHope	150	Hag
+Hex Haunted Ground	Killer	iconPerks_hauntedGround	150	Spirit Rin
+Hex Huntress Lullaby	Killer	iconPerks_HuntressLullaby	50	Huntress Anna
+Hex No One Escapes Death	Killer	iconPerks_noOneEscapesDeath	150	GenKiller
+Hex Retribution	Killer	iconPerks_HexRetribution	100	Deathslinger
+Hex Ruin	Killer	iconPerks_ruin	200	Hag
+Hex The Third Seal	Killer	iconPerks_theThirdSeal	25	Hag
+Hex Thrill Of The Hunt	Killer	iconPerks_thrillOfTheHunt	10	GenKiller
+Hex Undying	Killer	iconPerks_HexUndying	150	The Blight
+I'm All Ears	Killer	iconPerks_ImAllEars	150	Ghostface
+Infectious Fright	Killer	iconPerks_infectiousFright	150	Plague
+Insidious	Killer	iconPerks_insidious	100	GenKiller
+Iron Grasp	Killer	iconPerks_ironGrasp	100	GenKiller
+Iron Maiden	Killer	iconPerks_ironMaiden	100	Legion
+Knock Out	Killer	iconPerks_knockOut	50	Leatherface
+Lightborn	Killer	iconPerks_lightborn	100	Hillbilly
+Mad Grit	Killer	iconPerks_madGrit	50	Legion
+Make Your Choice	Killer	iconPerks_makeYourChoice	150	Pig
+Mindbreaker	Killer	iconPerks_Mindbreaker	50	Demogorgon
+Monitor & Abuse	Killer	iconPerks_monitorAndAbuse	150	Doctor
+Monstrous Shrine	Killer	iconPerks_monstrousShrine	10	GenKiller
+Nemesis	Killer	iconPerks_nemesis	100	The Oni
+Overcharge	Killer	iconPerks_generatorOvercharge	50	Doctor
+Overwhelming Presence	Killer	iconPerks_overwhelmingPresence	10	Doctor
+Play With Your Food	Killer	iconPerks_playWithYourFood	50	Myers
+Pop Goes The Weasel	Killer	iconPerks_popGoesTheWeasel	200	Clown
+Predator	Killer	iconPerks_predator	25	Wraith
+Rancor	Killer	iconPerks_hatred	100	Spirit Rin
+Remember Me	Killer	iconPerks_rememberMe	50	Freddy
+Save The Best For Last	Killer	iconPerks_saveTheBestForLast	150	Myers
+Shadowborn	Killer	iconPerks_shadowborn	100	Wraith
+Sloppy Butcher	Killer	iconPerks_sloppyButcher	200	GenKiller
+Spies From The Shadows	Killer	iconPerks_spiesFromTheShadows	100	GenKiller
+Spirit Fury	Killer	iconPerks_spiritFury	25	Spirit Rin
+Stridor	Killer	iconPerks_stridor	100	Nurse Sally
+Surge	Killer	iconPerks_Surge	150	Demogorgon
+Surveillance	Killer	iconPerks_surveillance	150	Pig
+Territorial Imperative	Killer	iconPerks_TerritorialImperative	50	Huntress Anna
+Thanatophobia	Killer	iconPerks_thatanophobia	100	Nurse Sally
+Thrilling Tremors	Killer	iconPerks_ThrillingTremors	200	Ghostface
+Tinkerer	Killer	iconPerks_tinkerer	150	Hillbilly
+Trail of Torment	Killer	iconPerks_TrailOfTorment	150	Pyramid Head
+Unnerving Presence	Killer	iconPerks_unnervingPresence	10	Trapper
+Unrelenting	Killer	iconPerks_unrelenting	25	GenKiller
+Whispers	Killer	iconPerks_whispers	200	GenKiller
+Zanshin Tactics	Killer	iconPerks_zanshinTactics	100	The Oni

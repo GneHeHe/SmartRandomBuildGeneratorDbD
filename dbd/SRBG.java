@@ -124,7 +124,7 @@ public class SRBG {
     public final int weight_perk_min = 0;
     // Max Weight for Perk (normal and after synergy)
     public final int weight_perk_max = 500;
-    // Min Weight for Perk after Synergy (Reevaluation Mode)
+    // Min Weight for Perk after Synergy (Reevaluation Mode / Critical Value)
     public final int syn_min_weight = 130;
     // Score Penalty for Build with Lack of Synergy (Reevaluation Mode)
     public final int syn_penalty = -1000;
@@ -139,18 +139,16 @@ public class SRBG {
     private final String s_cons = "data/perk_cons.txt";
     private final String s_cons_custom = "perk_cons_custom.txt";
     // Version
-    public final double VERSION = 2.4;
+    public final double VERSION = 2.5;
     // Title
     public final String TITLE = "Smart Random Build Generator for Dead by Daylight ( SRBG " + VERSION + " )";
     // GitHub Data
     public final String GIT_USER = "GneHeHe";
     public final String GIT_REPO = "SmartRandomBuildGeneratorDbD";
     public final String GIT_URL = "https://github.com/" + GIT_USER + "/" + GIT_REPO;
-    public final String GIT_URL_RELEASE = GIT_URL + "/releases";
     public final String GIT_URL_RAW = "https://raw.githubusercontent.com/" + GIT_USER + "/" + GIT_REPO;
     public final String GIT_URL_API = "https://api.github.com/repos/" + GIT_USER + "/" + GIT_REPO + "/releases";
     // Author Information
-    public final String STEAM = "http://steamcommunity.com/id/trna";
     public final String GUIDE = "https://steamcommunity.com/sharedfiles/filedetails/?id=1641511649";
     public final String EMAIL = "gnehehe70@gmail.com";
     public final String PAYPAL = "https://www.paypal.me/gnehehe";
@@ -1201,8 +1199,8 @@ public class SRBG {
             while (line != null) {
                 // Split Line according to Spacer
                 String tab[] = line.split(spacer);
-                if (tab.length == 4) {
-                    // Get Data (4 Fields are expected)
+                if (tab.length == 5) {
+                    // Get Data (5 Fields are required)
                     String myname = tab[0];
                     String myside = tab[1];
                     if (!((myside.equals(s_side_surv)) || (myside.equals(s_side_killer)))) {
@@ -1211,14 +1209,20 @@ public class SRBG {
                     }
                     String myicon = tab[2];
                     int myweight = Integer.parseInt(tab[3]);
+                    String myparent = tab[4];
                     // Check Weight Value
                     if (myweight > weight_perk_max) {
                         myweight = weight_perk_max;
                     } else if (myweight < weight_perk_min) {
                         myweight = weight_perk_min;
                     }
+                    // Check Parent
+                    if (!l_char_all_string.contains(myparent)) {
+                        System.err.println("\n# ERROR: wrong parent ('" + myparent + "') for perk '" + myname + "' => Exit [ wrong line : >" + line + "< from input file ]\n");
+                        System.exit(0);
+                    }
                     // Create Perk Object
-                    p = new Perk(myname, myweight, myside, myicon);
+                    p = new Perk(myname, myweight, myside, myicon, myparent, retrieveCharacter(myparent).getIconString());
                     // Add Perk to the List
                     l_perks_all.add(p);
                     // Add Perk Name to Perk List
@@ -1273,9 +1277,11 @@ public class SRBG {
         Character c = new Character(s_side_surv);
         l_char_survivor.add(c);
         l_char_survivor_generic.add(c);
+        l_char_all_string.add(c.getName());
         c = new Character(s_side_killer);
         l_char_killer.add(c);
         l_char_killer_generic.add(c);
+        l_char_all_string.add(c.getName());
         try {
             // Define the Reader
             BufferedReader br = null;
@@ -1346,7 +1352,9 @@ public class SRBG {
         try {
             bw = new BufferedWriter(new FileWriter(new File(filename)));
             for (Perk p : l_perks_all) {
-                bw.write(p.getName() + spacer + p.getSide() + spacer + p.getIconString() + spacer + p.getWeight() + "\n");
+                if (!p.getName().equals(Perk.GENERIC)) {
+                    bw.write(p.getName() + spacer + p.getSide() + spacer + p.getIconString() + spacer + p.getWeight() + spacer + p.getParent() + "\n");
+                }
             }
             System.out.println("# Saving current weight distribution in " + filename);
             bw.flush();
@@ -1552,7 +1560,7 @@ public class SRBG {
         // New Version Found?
         if (gitversion > VERSION) {
             update_new = true;
-            System.out.println("# Remote Version = " + gitversion + " | Local Version = " + VERSION + "\n# An Update is available from " + GIT_URL_RELEASE);
+            System.out.println("# Remote Version = " + gitversion + " | Local Version = " + VERSION + "\n# An Update is available from " + GIT_URL);
             System.out.println("# New Features from SRBG " + gitversion + ":\n" + Tools.extractJSONdata(GIT_URL_API, "body").replaceAll("\n-", "\n# -").replaceAll("^-", "# -") + "\n");
         } else if (gitversion > 0) {
             System.out.println("# Current Version (" + VERSION + ") is already the last One\n");

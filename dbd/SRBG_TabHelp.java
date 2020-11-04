@@ -101,25 +101,25 @@ public class SRBG_TabHelp extends JPanel {
         lab_git = new JLabel("<html><u>GitHub Project</u></html>", SwingConstants.CENTER);
         lab_git.setFont(new Font("Helvetica", Font.BOLD, 18));
         lab_git.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        lab_git.setToolTipText("Go to GitHub Project");
+        lab_git.setToolTipText("Go to GitHub Project Homepage");
 
         // Define JLabel STEAM Guide
         lab_guide = new JLabel("<html><u>STEAM Guide</u></html>", SwingConstants.CENTER);
         lab_guide.setFont(new Font("Helvetica", Font.BOLD, 18));
         lab_guide.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        lab_guide.setToolTipText("<html>Go to STEAM Guide<br><br>If you appreciated SRBG, please:<br><ul><li>Upvote this Guide with a 'thumbs up'</li><br><li>Bookmark this Guide to your Favorites</li><br><li>Share it on Social Networks and with your Friends</li></ul>This will help SRBG and its related Guide to be more visible among the thousands of DbD Guides!</html>");
+        lab_guide.setToolTipText("<html>Go to STEAM Guide (Steamcommunity.com)<br><br>If you appreciated SRBG, please:<br><ul><li>Upvote this Guide with a 'thumbs up'</li><br><li>Bookmark this Guide to your Favorites</li><br><li>Share it on Social Networks and with your Friends</li></ul>This will help the SRBG Guide to be more visible among the thousands of DbD Guides!</html>");
 
         // Define JLabel Email
         lab_email = new JLabel("<html><u>Contact</u></html>", SwingConstants.CENTER);
         lab_email.setFont(new Font("Helvetica", Font.BOLD, 18));
         lab_email.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        lab_email.setToolTipText("Send an Email to " + srbg.GIT_USER);
+        lab_email.setToolTipText("<html>Send an Email to " + srbg.GIT_USER +" to:<br><ul><li>Give Feedback</li><br><li>Report any Bug</li><br><li>Suggest potential new Features</li></ul></html>");
 
         // Define JLabel Donate
         lab_donate = new JLabel("<html><u>Donate</u></html>", SwingConstants.CENTER);
         lab_donate.setFont(new Font("Helvetica", Font.BOLD, 18));
         lab_donate.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        lab_donate.setToolTipText("<html>Donation using Paypal<br>Help me out a little bit if you enjoyed SRBG, TIA :)</html>");
+        lab_donate.setToolTipText("<html>Donation using Paypal<br><br>Feel free to help me out if you enjoyed SRBG, TIA :)</html>");
 
         // Define MouseListener
         lab_guide.addMouseListener(new MouseAdapter() {

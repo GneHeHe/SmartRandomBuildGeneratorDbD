@@ -131,7 +131,7 @@ public class TablePerk extends JTable {
     public Component prepareRenderer(TableCellRenderer renderer, int row, int col) {
         Component comp = super.prepareRenderer(renderer, row, col);
         // Update Background Color according to Value (Only Process Third Column)
-        if (col == 2) {
+        if (col == 3) {
             // Get Value (required double/float)
             float value = Float.parseFloat(getModel().getValueAt(row, col).toString());
             if (value <= 0) {

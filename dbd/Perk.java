@@ -21,6 +21,9 @@ public class Perk implements Comparable<Perk> {
     private int weight_ref;
     // Side of Perk
     private String side;
+    // Parent of Perk
+    private String parent;
+    private String parent_string;
     // Icon of Perk (as String)
     private String icon_string;
     // Icon of Perk (as JLabel)
@@ -28,6 +31,8 @@ public class Perk implements Comparable<Perk> {
     private JLabel lab_img_medium;
     private JLabel lab_img_large;
     private JLabel lab_img_widget;
+    // Icon of Parent (as JLabel)
+    private JLabel lab_parent_small;
     // Size of Icon Pictures
     private final static int SIZE_SMALL = 50;
     private final static int SIZE_MEDIUM = 60;
@@ -37,6 +42,7 @@ public class Perk implements Comparable<Perk> {
     public final static String SURVIVOR = "Survivor";
     public final static String KILLER = "Killer";
     public final static String GENERIC = "Undefined";
+    public final static String GENERIC_ICON = "iconPerks_default";
 
     /**
      * Constructor
@@ -45,17 +51,18 @@ public class Perk implements Comparable<Perk> {
      * @param weight
      * @param side
      * @param icon
+     * @param parent
+     * @param icon_parent
      */
-    public Perk(String name, int weight, String side, String icon) {
+    public Perk(String name, int weight, String side, String icon, String parent, String icon_parent) {
         setName(name);
         setSide(side);
+        setIconString(icon);
+        setParent(parent, icon_parent);
         setWeight(weight, true);
-        lab_img_small = new JLabel("", SwingConstants.CENTER);
-        lab_img_medium = new JLabel("", SwingConstants.CENTER);
-        lab_img_large = new JLabel("", SwingConstants.CENTER);
-        lab_img_widget = new JLabel("", SwingConstants.CENTER);
         try {
-            setIconPicture(icon);
+            setIconPicture();
+            setParentPicture();
         } catch (IOException ex) {
             System.err.println("\n# ERROR while creating Perk " + name + "\n");
             System.err.println(ex.getMessage());
@@ -68,17 +75,14 @@ public class Perk implements Comparable<Perk> {
      *
      */
     public Perk() {
-        setName(Perk.GENERIC);
-        side = Perk.GENERIC;
+        setName(GENERIC);
+        side = GENERIC;
+        setIconString(GENERIC_ICON);
+        setParent(GENERIC, GENERIC_ICON);
         setWeight(0, true);
-        // Set Default Icon
-        String icon = "iconPerks_default";
-        lab_img_small = new JLabel("", SwingConstants.CENTER);
-        lab_img_medium = new JLabel("", SwingConstants.CENTER);
-        lab_img_large = new JLabel("", SwingConstants.CENTER);
-        lab_img_widget = new JLabel("", SwingConstants.CENTER);
         try {
-            setIconPicture(icon);
+            setIconPicture();
+            //setParentPicture();
         } catch (IOException ex) {
             System.err.println("\n# ERROR while creating generic Perk\n");
             System.err.println(ex.getMessage());
@@ -129,6 +133,44 @@ public class Perk implements Comparable<Perk> {
     }
 
     /**
+     * Get Perk Icon as String
+     *
+     * @return
+     */
+    public String getIconString() {
+        return icon_string;
+    }
+
+    /**
+     * Set Perk Icon as String
+     *
+     * @param icon_string
+     */
+    public final void setIconString(String icon_string) {
+        this.icon_string = icon_string;
+    }
+
+    /**
+     * Get Parent
+     *
+     * @return
+     */
+    public String getParent() {
+        return parent;
+    }
+
+    /**
+     * Set Parent
+     *
+     * @param parent
+     * @param parent_string
+     */
+    private void setParent(String parent, String parent_string) {
+        this.parent = parent;
+        this.parent_string = parent_string;
+    }
+
+    /**
      * Get Perk Icon as JLabel
      *
      * @param size
@@ -150,54 +192,78 @@ public class Perk implements Comparable<Perk> {
     }
 
     /**
-     * Get Perk Icon as String
+     * Get Parent Icon as JLabel
      *
      * @return
      */
-    public String getIconString() {
-        return icon_string;
+    public JLabel getParentImage() {
+        return lab_parent_small;
     }
 
     /**
      * Set Perk Icon
      *
-     * @param s_icon
      * @throws java.io.IOException
      */
-    private void setIconPicture(String s_icon) throws IOException {
-        // Try to set given Icon Picture
-        icon_string = s_icon;
-        String path = "icons_perks/" + s_icon + ".png";
+    private void setIconPicture() throws IOException {
+        // Define JLabels
+        lab_img_small = new JLabel("", SwingConstants.CENTER);
+        lab_img_medium = new JLabel("", SwingConstants.CENTER);
+        lab_img_large = new JLabel("", SwingConstants.CENTER);
+        lab_img_widget = new JLabel("", SwingConstants.CENTER);
+        // Try using given Icon Picture
+        String path = "icons_perks/" + icon_string + ".png";
+        if (getClass().getResourceAsStream(path) == null) {
+            // Try using default Icon Picture
+            path = "icons_perks/" + GENERIC_ICON + ".png";
+            System.err.println("\n# WARNING: Using default Icon Files for Perk '" + name + "'");
+        }
+        // Load Icon Picture
         if (getClass().getResourceAsStream(path) != null) {
             // Set Icons in JLabel
-            lab_img_small.setIcon(new ImageIcon(Tools.resizePicture(path, Perk.SIZE_SMALL, Perk.SIZE_SMALL)));
-            lab_img_medium.setIcon(new ImageIcon(Tools.resizePicture(path, Perk.SIZE_MEDIUM, Perk.SIZE_MEDIUM)));
-            lab_img_large.setIcon(new ImageIcon(Tools.resizePicture(path, Perk.SIZE_LARGE, Perk.SIZE_LARGE)));
-            lab_img_widget.setIcon(new ImageIcon(Tools.resizePicture(path, Perk.SIZE_WIDGET, Perk.SIZE_WIDGET)));
+            lab_img_small.setIcon(new ImageIcon(Tools.resizePicture(path, SIZE_SMALL, SIZE_SMALL)));
+            lab_img_medium.setIcon(new ImageIcon(Tools.resizePicture(path, SIZE_MEDIUM, SIZE_MEDIUM)));
+            lab_img_large.setIcon(new ImageIcon(Tools.resizePicture(path, SIZE_LARGE, SIZE_LARGE)));
+            lab_img_widget.setIcon(new ImageIcon(Tools.resizePicture(path, SIZE_WIDGET, SIZE_WIDGET)));
             // Set Name for Tooltip
             lab_img_small.setName(name);
             lab_img_medium.setName(name);
-            lab_img_large.setName(name);
-            lab_img_widget.setName(name);
+            lab_img_large.setName("<html>" + name + "<br><br>Linked Character: " + parent + "</html>");
+            lab_img_widget.setName("<html>" + name + "<br><br>Linked Character: " + parent + "</html>");
         } else {
-            // Try to use default Icon Picture
-            s_icon = "iconPerks_default";
-            path = "icons_perks/" + s_icon + ".png";
-            if (getClass().getResourceAsStream(path) != null) {
-                // Set Default Icon in JLabel
-                lab_img_small.setIcon(new ImageIcon(Tools.resizePicture(path, Perk.SIZE_SMALL, Perk.SIZE_SMALL)));
-                lab_img_medium.setIcon(new ImageIcon(Tools.resizePicture(path, Perk.SIZE_MEDIUM, Perk.SIZE_MEDIUM)));
-                lab_img_large.setIcon(new ImageIcon(Tools.resizePicture(path, Perk.SIZE_LARGE, Perk.SIZE_LARGE)));
-                lab_img_widget.setIcon(new ImageIcon(Tools.resizePicture(path, Perk.SIZE_WIDGET, Perk.SIZE_WIDGET)));
-                // Set Name for Tooltip
-                lab_img_small.setName(name);
-                lab_img_medium.setName(name);
-                lab_img_large.setName(name);
-                lab_img_widget.setName(name);
-            } else {
-                System.err.println("\n# ERROR: Both expected and default Icon Files were not found for Perk '" + name + "' => Exit\n");
-                System.exit(0);
+            System.err.println("\n# ERROR: Icon Files were not found for Perk '" + name + "' => Exit\n");
+            System.exit(0);
+        }
+    }
+
+    /**
+     * Set Parent Picture
+     *
+     * @throws java.io.IOException
+     */
+    private void setParentPicture() throws IOException {
+        // Define JLabel
+        lab_parent_small = new JLabel("", SwingConstants.CENTER);
+        // Try using given Icon Picture
+        String path = "icons_char/" + parent_string + ".png";
+        if (getClass().getResourceAsStream(path) == null) {
+            // Try to use default Parent Picture
+            if (side.equals(SURVIVOR)) {
+                path = "icons_char/" + Character.GENERIC_SURVIVOR_ICON + ".png";
+            } else if (side.equals(KILLER)) {
+                path = "icons_char/" + Character.GENERIC_KILLER_ICON + ".png";
             }
+            System.err.println("\n# WARNING: Using default Icon Files for Character '" + parent + "' for Perk '" + name + "'");
+        }
+        // Load Icon Picture
+        if (getClass().getResourceAsStream(path) != null) {
+            // Set Icons in JLabel
+            lab_parent_small.setIcon(new ImageIcon(Tools.resizePicture(path, SIZE_SMALL, SIZE_SMALL)));
+            // Set Name for Tooltip
+            lab_parent_small.setName(parent);
+        } else {
+            System.err.println("\n# ERROR: Icon Files for Character '" + parent + "' were not found for Perk '" + name + "' => Exit\n");
+            System.exit(0);
         }
     }
 
@@ -253,7 +319,7 @@ public class Perk implements Comparable<Perk> {
      * @return
      */
     public boolean checkSide(String test_side) {
-        if (side.equals(Perk.GENERIC)) {
+        if (side.equals(GENERIC)) {
             return true;
         } else {
             return side.equals(test_side);

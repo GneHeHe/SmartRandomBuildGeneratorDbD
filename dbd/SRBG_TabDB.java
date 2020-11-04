@@ -146,7 +146,7 @@ public class SRBG_TabDB extends JPanel {
         tf_expr.setText("");
         tf_expr.setHorizontalAlignment(JTextField.CENTER);
         tf_expr.setEditable(true);
-        tf_expr.setToolTipText("<html>Build database can be filtered using patterns:<br><ul><li>Case insensitive search</li><li>Regular expressions can be used</li><li>Multiple filters can be applied using '@' separated pattern</li></ul>For instance:<ul><li>'build1' will extract my favorite build for each killer</li><li>'trapper@devour' will extract 'Trapper' builds that contain 'Hex Devour Hope' perk</li></ul>Using filter mode automatically disables loading of clicked build in the bottom area of the interface</html>");
+        tf_expr.setToolTipText("<html>Build database can be filtered using patterns:<br><ul><li>Case insensitive search</li><li>Regular expressions can be used</li><li>Multiple filters can be applied using '@' separated pattern</li></ul>For instance:<ul><li>'trapper@devour' will extract 'Trapper' builds that contain 'Hex Devour Hope' perk</li></ul>Using filter mode automatically disables loading of clicked build in the bottom area of the interface</html>");
         tf_build = new JTextField(11);
         tf_build.setText(table.getRowCount() + " Builds");
         tf_build.setHorizontalAlignment(JTextField.CENTER);
@@ -169,7 +169,7 @@ public class SRBG_TabDB extends JPanel {
         b_reload_remote.setToolTipText("Merge current build database with remote version from GitHub");
         b_load.setToolTipText("Open custom build database");
         b_save.setToolTipText("Save current build database");
-        b_add.setToolTipText("<html>Add current build in database<br><br>Don't forget to save the build database before closing SRBG</html>");
+        b_add.setToolTipText("<html>Add current build in database (defined below)<br><br>Don't forget to save the build database before closing SRBG</html>");
         b_add_last.setToolTipText("<html>Add generated build from other tab in database<br><br>Don't forget to save the build database before closing SRBG</html>");
         b_remove.setToolTipText("<html>Delete selected builds from database<br><br>Don't forget to save the build database before closing SRBG</html>");
         b_pict.setToolTipText("Export active builds as png picture (max active builds = " + max_builds + ", picture saved in working directory)");
@@ -254,7 +254,7 @@ public class SRBG_TabDB extends JPanel {
                     fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
                     if (new File(output).exists()) {
                         // Load remote build database from GitHub
-                        ((TableModelBuild) table.getModel()).readData(output, false);
+                        ((TableModelBuild) table.getModel()).readDatabase(output, false);
                     } else {
                         Tools.getAlert("ERROR: Issues were encountered while downloading the last build database from GitHub", "Warning", JOptionPane.ERROR_MESSAGE);
                     }
@@ -275,7 +275,7 @@ public class SRBG_TabDB extends JPanel {
                     if (new File(f).exists()) {
                         try {
                             // Load custom build database
-                            ((TableModelBuild) table.getModel()).readData(f, true);
+                            ((TableModelBuild) table.getModel()).readDatabase(f, true);
                         } catch (Exception ex) {
                             Tools.getAlert("ERROR: Issues were encountered while processing the build database file " + f, "Warning", JOptionPane.ERROR_MESSAGE);
                         }
@@ -457,7 +457,7 @@ public class SRBG_TabDB extends JPanel {
             public void tableChanged(TableModelEvent e) {
                 String s = table.getRowCount() + " Builds";
                 // Update Field
-                System.out.println("# " + s);
+                // System.out.println("# " + s);
                 tf_build.setText(s);
             }
         });
