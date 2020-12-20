@@ -3,6 +3,7 @@ Adrenaline	Survivor	iconPerks_adrenaline	200	Meg
 Aftercare	Survivor	iconPerks_aftercare	150	Jeff
 Alert	Survivor	iconPerks_alert	150	Feng
 Any Means Necessary	Survivor	iconPerks_anyMeansNecessary	150	Yui
+Appraisal	Survivor	iconPerks_Appraisal	100	Elodie
 Autodidact	Survivor	iconPerks_autodidact	50	Adam
 Babysitter	Survivor	iconPerks_Babysitter	25	Steve
 Balanced Landing	Survivor	iconPerks_balancedLanding	200	Nea
@@ -21,8 +22,9 @@ Camaraderie	Survivor	iconPerks_Camaraderie	25	Steve
 Dance With Me	Survivor	iconPerks_danceWithMe	100	Kate
 Dark Sense	Survivor	iconPerks_darkSense	50	GenSurv
 Dead Hard	Survivor	iconPerks_DeadHard	200	David King
+Deception	Survivor	iconPerks_Deception	100	Elodie
 Decisive Strike	Survivor	iconPerks_decisiveStrike	200	Laurie
-Deja Vu	Survivor	iconPerks_dejaVu	50	GenSurv
+Deja Vu	Survivor	iconPerks_dejaVu	100	GenSurv
 Deliverance	Survivor	iconPerks_deliverance	150	Adam
 Desperate Measures	Survivor	iconPerks_DesperateMeasures	100	Felix
 Detective's Hunch	Survivor	iconPerks_detectivesHunch	150	David Tapp
@@ -44,13 +46,14 @@ Lithe	Survivor	iconPerks_lithe	200	Feng
 Lucky Break	Survivor	iconPerks_luckyBreak	100	Yui
 Mettle Of Man	Survivor	iconPerks_mettleOfMan	50	Ash
 No Mither	Survivor	iconPerks_NoMither	50	David King
-No One Left Behind	Survivor	iconPerks_noOneLeftBehind	10	GenSurv
+No One Left Behind	Survivor	iconPerks_noOneLeftBehind	25	GenSurv
 Object Of Obsession	Survivor	iconPerks_objectOfObsession	150	Laurie
 Off the Record	Survivor	iconPerks_OffTheRecord	25	Zarina
 Open-Handed	Survivor	iconPerks_openHanded	10	Ace Visconti
-Pharmacy	Survivor	iconPerks_pharmacy	100	Quentin
+Pharmacy	Survivor	iconPerks_pharmacy	50	Quentin
 Plunderer's Instinct	Survivor	iconPerks_plunderersInstinct	150	GenSurv
 Poised	Survivor	iconPerks_poised	50	Jane
+Power Struggle	Survivor	iconPerks_PowerStruggle	100	Elodie
 Premonition	Survivor	iconPerks_premonition	50	GenSurv
 Prove Thyself	Survivor	iconPerks_proveThyself	150	Dwight
 Quick & Quiet	Survivor	iconPerks_quickAndQuiet	150	Meg
@@ -93,6 +96,7 @@ Bloodhound	Killer	iconPerks_bloodhound	100	Wraith
 Brutal Strength	Killer	iconPerks_brutalStrength	150	Trapper
 Corrupt Intervention	Killer	iconPerks_corruptIntervention	200	Plague
 Coulrophobia	Killer	iconPerks_coulrophobia	25	Clown
+Coup De Grace	Killer	iconPerks_CoupDeGrace	100	The Twins
 Cruel Limits	Killer	iconPerks_CruelLimits	25	Demogorgon
 Dark Devotion	Killer	iconPerks_darkDevotion	50	Plague
 Dead Man's Switch	Killer	iconPerks_DeadMansSwitch	50	Deathslinger
@@ -119,6 +123,7 @@ Hex Ruin	Killer	iconPerks_ruin	200	Hag
 Hex The Third Seal	Killer	iconPerks_theThirdSeal	25	Hag
 Hex Thrill Of The Hunt	Killer	iconPerks_thrillOfTheHunt	10	GenKiller
 Hex Undying	Killer	iconPerks_HexUndying	150	The Blight
+Hoarder	Killer	iconPerks_Hoarder	50	The Twins
 I'm All Ears	Killer	iconPerks_ImAllEars	150	Ghostface
 Infectious Fright	Killer	iconPerks_infectiousFright	150	Plague
 Insidious	Killer	iconPerks_insidious	100	GenKiller
@@ -132,6 +137,7 @@ Mindbreaker	Killer	iconPerks_Mindbreaker	50	Demogorgon
 Monitor & Abuse	Killer	iconPerks_monitorAndAbuse	150	Doctor
 Monstrous Shrine	Killer	iconPerks_monstrousShrine	10	GenKiller
 Nemesis	Killer	iconPerks_nemesis	100	The Oni
+Oppression	Killer	iconPerks_Oppression	150	The Twins
 Overcharge	Killer	iconPerks_generatorOvercharge	50	Doctor
 Overwhelming Presence	Killer	iconPerks_overwhelmingPresence	10	Doctor
 Play With Your Food	Killer	iconPerks_playWithYourFood	50	Myers

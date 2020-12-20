@@ -26,6 +26,9 @@ David Tapp	Tenacity	75
 Dwight	Bond	75
 Dwight	Leader	75
 Dwight	Prove Thyself	75
+Elodie	Appraisal	75
+Elodie	Deception	75
+Elodie	Power Struggle	75
 Felix	Built to Last	75
 Felix	Desperate Measures	75
 Felix	Visionary	75
@@ -165,6 +168,7 @@ Doctor	Pop Goes The Weasel	50
 Doctor	Rancor	-100
 Doctor	Save The Best For Last	50
 Doctor	Sloppy Butcher	50
+Doctor	Spies From The Shadows	-100
 Doctor	Tinkerer	-100
 Doctor	Unnerving Presence	50
 Doctor	Whispers	50
@@ -174,6 +178,7 @@ Freddy	Blood Echo	50
 Freddy	Blood Warden	75
 Freddy	Brutal Strength	50
 Freddy	Coulrophobia	-200
+Freddy	Coup De Grace	50
 Freddy	Discordance	50
 Freddy	Dragon's Grip	50
 Freddy	Enduring	50
@@ -205,6 +210,7 @@ Ghostface	Beast Of Prey	-999
 Ghostface	Brutal Strength	50
 Ghostface	Corrupt Intervention	50
 Ghostface	Coulrophobia	-999
+Ghostface	Coup De Grace	50
 Ghostface	Dark Devotion	-999
 Ghostface	Discordance	50
 Ghostface	Distressing	-999
@@ -252,7 +258,9 @@ Hag	Dragon's Grip	50
 Hag	Enduring	-100
 Hag	Franklin's Demise	50
 Hag	Hex Devour Hope	75
+Hag	Hex Haunted Ground	50
 Hag	Hex No One Escapes Death	50
+Hag	Hex Retribution	50
 Hag	Hex Ruin	75
 Hag	Hex The Third Seal	75
 Hag	Iron Grasp	50
@@ -277,6 +285,7 @@ Hillbilly	Bamboozle	50
 Hillbilly	Barbecue & Chilli	50
 Hillbilly	Bloodhound	-100
 Hillbilly	Brutal Strength	-100
+Hillbilly	Coup De Grace	-200
 Hillbilly	Dark Devotion	50
 Hillbilly	Deerstalker	50
 Hillbilly	Discordance	50
@@ -315,6 +324,7 @@ Huntress Anna	Bitter Murmur	100
 Huntress Anna	Brutal Strength	-100
 Huntress Anna	Corrupt Intervention	50
 Huntress Anna	Coulrophobia	-200
+Huntress Anna	Coup De Grace	-100
 Huntress Anna	Deerstalker	50
 Huntress Anna	Discordance	50
 Huntress Anna	Dragon's Grip	-100
@@ -347,6 +357,7 @@ Leatherface	Bamboozle	100
 Leatherface	Barbecue & Chilli	75
 Leatherface	Bloodhound	-100
 Leatherface	Brutal Strength	-100
+Leatherface	Coup De Grace	-100
 Leatherface	Dark Devotion	50
 Leatherface	Deerstalker	50
 Leatherface	Dragon's Grip	-100
@@ -402,6 +413,7 @@ Myers	Barbecue & Chilli	50
 Myers	Brutal Strength	50
 Myers	Corrupt Intervention	50
 Myers	Coulrophobia	-200
+Myers	Coup De Grace	100
 Myers	Dark Devotion	-100
 Myers	Deerstalker	50
 Myers	Discordance	50
@@ -508,13 +520,15 @@ Pig	Unnerving Presence	-999
 Pig	Whispers	100
 Pig	Zanshin Tactics	50
 ############# Plague #############
-Plague	A Nurse's Calling	-200
+Plague	A Nurse's Calling	-999
 Plague	Barbecue & Chilli	50
 Plague	Blood Echo	100
 Plague	Brutal Strength	50
 Plague	Corrupt Intervention	75
 Plague	Coulrophobia	-999
+Plague	Coup De Grace	50
 Plague	Dark Devotion	75
+Plague	Deathbound	-999
 Plague	Deerstalker	50
 Plague	Dragon's Grip	-200
 Plague	Dying Light	100
@@ -539,8 +553,10 @@ Plague	Whispers	-100
 ############# Pyramid Head #############
 Pyramid Head	A Nurse's Calling	100
 Pyramid Head	Barbecue & Chilli	-100
+Pyramid Head	Blood Echo	-200
 Pyramid Head	Brutal Strength	-100
 Pyramid Head	Coulrophobia	50
+Pyramid Head	Coup De Grace	-100
 Pyramid Head	Deathbound	75
 Pyramid Head	Dragon's Grip	50
 Pyramid Head	Enduring	-100
@@ -565,6 +581,7 @@ Spirit Rin	Barbecue & Chilli	50
 Spirit Rin	Blood Echo	50
 Spirit Rin	Brutal Strength	-100
 Spirit Rin	Coulrophobia	-200
+Spirit Rin	Coup De Grace	-100
 Spirit Rin	Deerstalker	50
 Spirit Rin	Discordance	50
 Spirit Rin	Distressing	-200
@@ -596,7 +613,6 @@ Spirit Rin	Unnerving Presence	-200
 Spirit Rin	Whispers	-100
 Spirit Rin	Zanshin Tactics	-100
 ############# The Blight #############
-The Blight	Bamboozle	50
 The Blight	Barbecue & Chilli	50
 The Blight	Blood Echo	50
 The Blight	Brutal Strength	-100
@@ -624,6 +640,7 @@ The Oni	Blood Echo	75
 The Oni	Bloodhound	-200
 The Oni	Brutal Strength	-100
 The Oni	Corrupt Intervention	50
+The Oni	Coup De Grace	-100
 The Oni	Deerstalker	50
 The Oni	Discordance	50
 The Oni	Dragon's Grip	-100
@@ -652,6 +669,35 @@ The Oni	Thrilling Tremors	50
 The Oni	Tinkerer	50
 The Oni	Trail of Torment	50
 The Oni	Zanshin Tactics	75
+############# The Twins #############
+The Twins	A Nurse's Calling	50
+The Twins	Barbecue & Chilli	50
+The Twins	Bloodhound	-200
+The Twins	Brutal Strength	50
+The Twins	Corrupt Intervention	50
+The Twins	Coup De Grace	75
+The Twins	Dark Devotion	-200
+The Twins	Deerstalker	50
+The Twins	Discordance	50
+The Twins	Dragon's Grip	50
+The Twins	Enduring	50
+The Twins	Forced Penance	-200
+The Twins	Hex Haunted Ground	50
+The Twins	Hex No One Escapes Death	50
+The Twins	Hex Ruin	50
+The Twins	Hex Undying	50
+The Twins	Hoarder	75
+The Twins	Infectious Fright	50
+The Twins	Insidious	-999
+The Twins	Knock Out	50
+The Twins	Make Your Choice	50
+The Twins	Monitor & Abuse	-200
+The Twins	Oppression	75
+The Twins	Pop Goes The Weasel	50
+The Twins	Save The Best For Last	-200
+The Twins	Thrilling Tremors	50
+The Twins	Tinkerer	-200
+The Twins	Trail of Torment	-200
 ############# Trapper #############
 Trapper	Agitation	75
 Trapper	Barbecue & Chilli	-100

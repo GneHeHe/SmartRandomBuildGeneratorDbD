@@ -29,6 +29,7 @@ public class SRBG {
     private ArrayList<Perk> l_perks_all;
     private ArrayList<String> l_perks_all_string;
     private ArrayList<String> l_perks_pool;
+    private ArrayList<String> l_perks_pool_default;
     // List of Survivor Perks
     private ArrayList<String> l_perks_survivor;
     // List of Killer Perks
@@ -139,7 +140,7 @@ public class SRBG {
     private final String s_cons = "data/perk_cons.txt";
     private final String s_cons_custom = "perk_cons_custom.txt";
     // Version
-    public final double VERSION = 2.5;
+    public final double VERSION = 2.6;
     // Title
     public final String TITLE = "Smart Random Build Generator for Dead by Daylight ( SRBG " + VERSION + " )";
     // GitHub Data
@@ -171,6 +172,7 @@ public class SRBG {
         l_perks_all = new ArrayList<>();
         l_perks_all_string = new ArrayList<>();
         l_perks_pool = new ArrayList<>();
+        l_perks_pool_default = new ArrayList<>();
         l_perks_survivor = new ArrayList<>();
         l_perks_killer = new ArrayList<>();
         l_char_survivor = new ArrayList<>();
@@ -941,6 +943,7 @@ public class SRBG {
         }
         // Reset Pool of Perks 
         l_perks_pool.clear();
+        l_perks_pool_default.clear();
         // Rebuild Pool of Perks 
         for (Perk perk : l_perks_all) {
             if (perk.getSide().equals(side)) {
@@ -948,6 +951,7 @@ public class SRBG {
                 for (int i = 0; i < value; i++) {
                     l_perks_pool.add(perk.getName());
                 }
+                l_perks_pool_default.add(perk.getName());
             }
         }
         setPerkPoolChanged(false);
@@ -988,9 +992,17 @@ public class SRBG {
             l_perk_ok.clear();
             while (l_perk_ok.size() < getNbPerksBuild()) {
                 // Loop until desired number of perks was reached
-                int rand = (int) (l_perks_pool.size() * Math.random());
-                // Get a random Perk from Pool
-                String random_perk = l_perks_pool.get(rand);
+                // Get one random Perk from Pool
+                String random_perk = "";
+                if (l_perk_ok.isEmpty()) {
+                    // Weight-unbiased Selection for the first looted Perk
+                    int rand = (int) (l_perks_pool_default.size() * Math.random());
+                    random_perk = l_perks_pool_default.get(rand);
+                } else {
+                    // Weight-biased Selection for other looted Perks
+                    int rand = (int) (l_perks_pool.size() * Math.random());
+                    random_perk = l_perks_pool.get(rand);
+                }
                 if (!l_perk_ok.contains(random_perk)) {
                     // New Perk found => added to the Build
                     l_perk_ok.add(random_perk);

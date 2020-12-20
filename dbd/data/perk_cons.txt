@@ -24,6 +24,7 @@ SURVIV_2	Iron Will
 SURVIV_2	Left Behind
 SURVIV_2	Lucky Break
 SURVIV_2	Mettle Of Man
+SURVIV_2	Power Struggle
 SURVIV_2	Premonition
 SURVIV_2	Soul Guard
 SURVIV_2	Spine Chill
@@ -33,6 +34,7 @@ SURVIV_2	Wake Up!
 SURVIV_3	Balanced Landing
 SURVIV_3	Dance With Me
 SURVIV_3	Dead Hard
+SURVIV_3	Deception
 SURVIV_3	Diversion
 SURVIV_3	Lightweight
 SURVIV_3	Lithe
@@ -54,6 +56,7 @@ KILLER_1	Corrupt Intervention
 KILLER_1	Dead Man's Switch
 KILLER_1	Dying Light
 KILLER_1	Hex Ruin
+KILLER_1	Oppression
 KILLER_1	Overcharge
 KILLER_1	Pop Goes The Weasel
 KILLER_1	Sloppy Butcher
@@ -61,6 +64,7 @@ KILLER_1	Surge
 KILLER_1	Thanatophobia
 KILLER_2	Bamboozle
 KILLER_2	Brutal Strength
+KILLER_2	Coup De Grace
 KILLER_2	Enduring
 KILLER_2	Hex Haunted Ground
 KILLER_2	I'm All Ears
@@ -79,6 +83,7 @@ KILLER_3	Dragon's Grip
 KILLER_3	Gearhead
 KILLER_3	Hex Retribution
 KILLER_3	Hex Thrill Of The Hunt
+KILLER_3	Hoarder
 KILLER_3	Infectious Fright
 KILLER_3	Iron Maiden
 KILLER_3	Rancor

@@ -45,11 +45,11 @@ public class SRBG_TabBuild extends JPanel {
     // Animation
     private SwingWorker<Void, Void> worker, worker_widget;
     private final Perk perk_gen = new Perk();
-    private int anim_delay_trans = 500;
-    private int anim_delay_perk = 300;
+    private int anim_loop_char = 7;
+    private int anim_loop_perk = 8;
     private int anim_delay_char = 400;
-    private int anim_loop_perk = 7;
-    private int anim_loop_char = 6;
+    private int anim_delay_trans = 800;
+    private int anim_delay_perk = 400;
     public boolean b_ready;
     private boolean force_random;
     private final String sound_file = "data/sound.mp3";
@@ -144,11 +144,11 @@ public class SRBG_TabBuild extends JPanel {
         cb_nbperks.setSelectedItem(srbg.getNbPerksBuild());
 
         // Define JComboBox Object for Nb of Builds
-        cb_nbbuilds = new JComboBox(new Integer[]{1, 5, 10, 25, 50});
+        cb_nbbuilds = new JComboBox(new Integer[]{1, 2, 5, 10, 25, 50});
         cb_nbbuilds.setPreferredSize(new Dimension(50, 20));
         cb_nbbuilds.setToolTipText("<html>Define the number of builds to be generated<br><br>The build with the highest score is graphically displayed<br><br>Meta builds or high-synergy builds are associated with high scores<br><br>Meta builds or high-synergy builds tend to be returned when the number of generated builds is large</html>");
         ((JLabel) cb_nbbuilds.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
-        cb_nbbuilds.setSelectedIndex(0);
+        cb_nbbuilds.setSelectedIndex(1);
         // Force 1 desired build in GUI
         srbg.setNbBuilds(Integer.parseInt(cb_nbbuilds.getSelectedItem().toString()));
 
