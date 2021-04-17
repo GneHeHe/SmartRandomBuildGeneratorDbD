@@ -32,8 +32,8 @@ Alert	Premonition	-300
 Alert	Spine Chill	-300
 Alert	Urban Evasion	25
 Alert	Wake Up!	25
-Any Means Necessary	Windows Of Opportunity	100
 Any Means Necessary	Power Struggle	25
+Any Means Necessary	Windows Of Opportunity	100
 Appraisal	Detective's Hunch	50
 Appraisal	Pharmacy	25
 Appraisal	Plunderer's Instinct	50
@@ -46,10 +46,12 @@ Autodidact	Solidarity	25
 Autodidact	Spine Chill	50
 Autodidact	We'll Make It	25
 Babysitter	Distortion	-999
+Babysitter	Self-Preservation	-999
 Balanced Landing	Dead Hard	-100
 Balanced Landing	Head On	-100
 Balanced Landing	Lightweight	50
 Balanced Landing	Lithe	-100
+Balanced Landing	Smash Hit	-100
 Balanced Landing	Sprint Burst	-999
 Balanced Landing	Vigil	100
 Balanced Landing	Windows Of Opportunity	50
@@ -120,17 +122,20 @@ Dead Hard	Iron Will	25
 Dead Hard	Lithe	-100
 Dead Hard	No Mither	50
 Dead Hard	Object Of Obsession	50
+Dead Hard	Smash Hit	-100
 Dead Hard	Sprint Burst	-999
 Dead Hard	Unbreakable	50
 Dead Hard	Vigil	100
 Dead Hard	Windows Of Opportunity	50
 Deception	Fixated	25
 Deception	Head On	50
+Deception	Red Herring	-100
 Decisive Strike	Deliverance	50
 Decisive Strike	Flip-Flop	25
 Decisive Strike	Head On	50
 Decisive Strike	Inner Strength	25
 Decisive Strike	Object Of Obsession	50
+Decisive Strike	Self-Care	-100
 Decisive Strike	Tenacity	50
 Decisive Strike	Unbreakable	50
 Deja Vu	Detective's Hunch	-300
@@ -171,6 +176,7 @@ Empathy	Second Wind	50
 Empathy	Self-Care	-100
 Empathy	Solidarity	25
 Empathy	We'll Make It	25
+Fast Track	This Is Not Happening	50
 Fixated	Iron Will	-100
 Fixated	Sprint Burst	100
 Flip-Flop	Power Struggle	100
@@ -187,6 +193,7 @@ Head On	Inner Strength	50
 Head On	Lightweight	50
 Head On	Lithe	-100
 Head On	Quick & Quiet	50
+Head On	Smash Hit	-100
 Head On	Sprint Burst	-999
 Head On	Vigil	50
 Hope	Left Behind	25
@@ -209,6 +216,7 @@ Iron Will	Premonition	25
 Iron Will	Quick & Quiet	50
 Iron Will	Resilience	100
 Iron Will	Self-Care	-50
+Iron Will	Self-Preservation	-300
 Iron Will	Spine Chill	25
 Iron Will	Urban Evasion	50
 Kindred	Open-Handed	100
@@ -218,10 +226,12 @@ Lightweight	Poised	-300
 Lightweight	Quick & Quiet	25
 Lightweight	Sprint Burst	50
 Lithe	Quick & Quiet	50
+Lithe	Smash Hit	-100
 Lithe	Sprint Burst	-999
 Lithe	Vigil	100
 Lithe	Windows Of Opportunity	50
 Lucky Break	No Mither	-999
+Lucky Break	Self-Preservation	-300
 Mettle Of Man	No Mither	-999
 Mettle Of Man	Self-Care	50
 Mettle Of Man	We're Gonna Live Forever	50
@@ -232,6 +242,7 @@ No Mither	Quick & Quiet	25
 No Mither	Resilience	25
 No Mither	Saboteur	25
 No Mither	Self-Care	-999
+No Mither	Self-Preservation	-999
 No Mither	Solidarity	-999
 No Mither	Soul Guard	50
 No Mither	Spine Chill	25
@@ -263,6 +274,7 @@ Saboteur	Unbreakable	50
 Second Wind	We'll Make It	50
 Self-Care	Solidarity	-300
 Slippery Meat	Up The Ante	100
+Smash Hit	Sprint Burst	-999
 Soul Guard	Unbreakable	50
 Spine Chill	Stake Out	25
 Spine Chill	Urban Evasion	50
@@ -273,6 +285,15 @@ Technician	Visionary	50
 Tenacity	Unbreakable	50
 We'll Make It	We're Gonna Live Forever	25
 ############# Killers #############
+Agitation	Forced Penance	100
+Agitation	Franklin's Demise	25
+Agitation	Hangman's Trick	50
+Agitation	Iron Grasp	100
+Agitation	Mad Grit	100
+Agitation	Make Your Choice	50
+Agitation	Monstrous Shrine	25
+Agitation	Starstruck	100
+Agitation	Territorial Imperative	50
 A Nurse's Calling	Coulrophobia	25
 A Nurse's Calling	Dark Devotion	25
 A Nurse's Calling	Deathbound	-100
@@ -283,38 +304,35 @@ A Nurse's Calling	Monitor & Abuse	50
 A Nurse's Calling	Sloppy Butcher	50
 A Nurse's Calling	Stridor	-100
 A Nurse's Calling	Trail of Torment	50
-Agitation	Forced Penance	100
-Agitation	Franklin's Demise	25
-Agitation	Hangman's Trick	50
-Agitation	Iron Grasp	100
-Agitation	Mad Grit	100
-Agitation	Make Your Choice	50
-Agitation	Monstrous Shrine	25
-Agitation	Territorial Imperative	50
 Bamboozle	Brutal Strength	50
 Bamboozle	Cruel Limits	-100
 Bamboozle	Enduring	25
 Bamboozle	Fire Up	50
+Bamboozle	Hex Crowd Control	-300
 Barbecue & Chilli	Bitter Murmur	-100
 Barbecue & Chilli	Blood Echo	50
 Barbecue & Chilli	Dead Man's Switch	50
 Barbecue & Chilli	Deerstalker	-999
 Barbecue & Chilli	Hex Ruin	50
 Barbecue & Chilli	Iron Maiden	25
+Barbecue & Chilli	Mindbreaker	50
 Barbecue & Chilli	Pop Goes The Weasel	50
 Barbecue & Chilli	Rancor	-100
 Barbecue & Chilli	Thrilling Tremors	-300
 Beast Of Prey	I'm All Ears	25
-Bitter Murmur	Coup De Grace	50
 Bitter Murmur	Hex No One Escapes Death	100
+Bitter Murmur	Hex Undying	-100
+Bitter Murmur	Mindbreaker	50
+Bitter Murmur	No Way Out	25
 Bitter Murmur	Rancor	-100
 Blood Echo	Bloodhound	25
 Blood Echo	Mindbreaker	-300
 Blood Echo	Sloppy Butcher	50
+Bloodhound	Sloppy Butcher	25
 Blood Warden	Deerstalker	50
 Blood Warden	Hex No One Escapes Death	100
+Blood Warden	No Way Out	50
 Blood Warden	Remember Me	50
-Bloodhound	Sloppy Butcher	25
 Brutal Strength	Dragon's Grip	50
 Brutal Strength	Enduring	50
 Brutal Strength	Fire Up	50
@@ -332,26 +350,25 @@ Corrupt Intervention	Whispers	50
 Coulrophobia	Distressing	100
 Coulrophobia	Sloppy Butcher	50
 Coulrophobia	Trail of Torment	-300
-Coup De Grace	Cruel Limits	25
+Coup De Grace	Hex No One Escapes Death	25
 Coup De Grace	Make Your Choice	25
-Coup De Grace	Play With Your Food	25
-Coup De Grace	Rancor	50
-Coup De Grace	Tinkerer	25
+Coup De Grace	Rancor	25
+Coup De Grace	Starstruck	25
 Cruel Limits	Tinkerer	50
 Dark Devotion	Monitor & Abuse	-300
 Dark Devotion	Nemesis	25
 Dark Devotion	Save The Best For Last	-300
 Dark Devotion	Tinkerer	-300
 Dead Man's Switch	Discordance	50
-Dead Man's Switch	Gearhead	50
-Dead Man's Switch	Surveillance	50
-Dead Man's Switch	Thrilling Tremors	50
 Dead Man's Switch	Furtive Chase	100
+Dead Man's Switch	Gearhead	50
 Dead Man's Switch	Nemesis	100
 Dead Man's Switch	Oppression	100
 Dead Man's Switch	Play With Your Food	-300
 Dead Man's Switch	Pop Goes The Weasel	-100
 Dead Man's Switch	Save The Best For Last	-300
+Dead Man's Switch	Surveillance	50
+Dead Man's Switch	Thrilling Tremors	50
 Deathbound	Forced Penance	-100
 Deathbound	Make Your Choice	50
 Deerstalker	Hex The Third Seal	25
@@ -359,6 +376,7 @@ Deerstalker	Infectious Fright	50
 Deerstalker	Knock Out	50
 Deerstalker	Sloppy Butcher	25
 Discordance	Hex Ruin	50
+Discordance	Mindbreaker	50
 Discordance	Monitor & Abuse	25
 Discordance	Save The Best For Last	50
 Discordance	Surveillance	-100
@@ -386,6 +404,7 @@ Enduring	Nemesis	25
 Enduring	Spirit Fury	200
 Forced Penance	Hangman's Trick	50
 Forced Penance	Mad Grit	50
+Franklin's Demise	Hoarder	100
 Franklin's Demise	Insidious	100
 Franklin's Demise	Lightborn	-300
 Furtive Chase	Make Your Choice	100
@@ -395,8 +414,9 @@ Furtive Chase	Play With Your Food	50
 Furtive Chase	Rancor	100
 Furtive Chase	Save The Best For Last	-300
 Gearhead	Hex Ruin	50
-Hangman's Trick	Mad Grit	50
+Gearhead	Mindbreaker	50
 Hangman's Trick	Iron Grasp	50
+Hangman's Trick	Mad Grit	50
 Hex Blood Favour	Hex Undying	25
 Hex Devour Hope	Hex Haunted Ground	50
 Hex Devour Hope	Hex Huntress Lullaby	-100
@@ -428,6 +448,7 @@ Hex No One Escapes Death	Hex Thrill Of The Hunt	50
 Hex No One Escapes Death	Hex Undying	25
 Hex No One Escapes Death	Infectious Fright	50
 Hex No One Escapes Death	Insidious	100
+Hex No One Escapes Death	No Way Out	100
 Hex No One Escapes Death	Rancor	-100
 Hex No One Escapes Death	Remember Me	100
 Hex No One Escapes Death	Surge	-50
@@ -455,27 +476,37 @@ Hex The Third Seal	Hex Thrill Of The Hunt	25
 Hex The Third Seal	Hex Undying	25
 Hex The Third Seal	Knock Out	100
 Hex Thrill Of The Hunt	Hex Undying	-300
-Hex Undying	Bitter Murmur	-100
 Hex Undying	Pop Goes The Weasel	-100
 Hex Undying	Rancor	-100
 Infectious Fright	Knock Out	50
 Infectious Fright	Make Your Choice	50
 Infectious Fright	Monitor & Abuse	100
+Infectious Fright	No Way Out	50
 Infectious Fright	Save The Best For Last	50
 Infectious Fright	Sloppy Butcher	25
+Infectious Fright	Starstruck	100
 Infectious Fright	Trail of Torment	-300
 Infectious Fright	Whispers	-50
 Insidious	Trail of Torment	-999
 Iron Grasp	Mad Grit	50
 Iron Grasp	Monstrous Shrine	25
+Iron Grasp	Starstruck	50
 Mad Grit	Monstrous Shrine	25
 Mad Grit	Save The Best For Last	50
+Mad Grit	Starstruck	50
 Mad Grit	Unrelenting	-999
 Make Your Choice	Surge	25
 Make Your Choice	Territorial Imperative	50
 Make Your Choice	Trail of Torment	25
 Make Your Choice	Whispers	25
+Mindbreaker	Oppression	50
+Mindbreaker	Overcharge	50
+Mindbreaker	Surge	50
+Mindbreaker	Surveillance	50
+Mindbreaker	Thrilling Tremors	50
 Mindbreaker	Tinkerer	-300
+Mindbreaker	Tinkerer	50
+Mindbreaker	Trail of Torment	50
 Monitor & Abuse	Shadowborn	-999
 Monitor & Abuse	Trail of Torment	-300
 Monitor & Abuse	Whispers	50
@@ -484,6 +515,7 @@ Nemesis	Rancor	100
 Nemesis	Remember Me	25
 Nemesis	Save The Best For Last	-300
 Nemesis	Trail of Torment	-300
+No Way Out	Remember Me	50
 Oppression	Pop Goes The Weasel	50
 Oppression	Surge	-300
 Oppression	Surveillance	50

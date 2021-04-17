@@ -74,14 +74,16 @@ public class SRBG {
     private final String s_cons2_killer = "KILLER_2";
     private final String s_cons3_killer = "KILLER_3";
     private final String s_cons4_killer = "KILLER_4";
-    private final String s_cons1_surv_txt = "Healing";
-    private final String s_cons2_surv_txt = "Survival";
-    private final String s_cons3_surv_txt = "Chase";
-    private final String s_cons4_surv_txt = "Aura";
-    private final String s_cons1_killer_txt = "SlowDown";
-    private final String s_cons2_killer_txt = "Chase";
-    private final String s_cons3_killer_txt = "Detection";
-    private final String s_cons4_killer_txt = "Endgame";
+    private String s_cons1_surv_txt;
+    private String s_cons2_surv_txt;
+    private String s_cons3_surv_txt;
+    private String s_cons4_surv_txt;
+    private String s_cons1_killer_txt;
+    private String s_cons2_killer_txt;
+    private String s_cons3_killer_txt;
+    private String s_cons4_killer_txt;
+    // Bonus Weight for Constrained Perks (high value may be misleading)
+    public final int weight_perk_bonus = 150;
     // List of Constraints for both Sides
     private List<String> l_cons1;
     private List<String> l_cons2;
@@ -140,7 +142,7 @@ public class SRBG {
     private final String s_cons = "data/perk_cons.txt";
     private final String s_cons_custom = "perk_cons_custom.txt";
     // Version
-    public final double VERSION = 2.6;
+    public final double VERSION = 2.7;
     // Title
     public final String TITLE = "Smart Random Build Generator for Dead by Daylight ( SRBG " + VERSION + " )";
     // GitHub Data
@@ -948,9 +950,33 @@ public class SRBG {
         for (Perk perk : l_perks_all) {
             if (perk.getSide().equals(side)) {
                 int value = perk.getWeight();
+                // Weight Bonus for Constrained Perks
+                // Just for the Pool Stage (not the Real Perk Weight)
+                if (b_cons1_perks) {
+                    if (l_cons1.contains(perk.getName())) {
+                        value = value + weight_perk_bonus;
+                    }
+                }
+                if (b_cons2_perks) {
+                    if (l_cons2.contains(perk.getName())) {
+                        value = value + weight_perk_bonus;
+                    }
+                }
+                if (b_cons3_perks) {
+                    if (l_cons3.contains(perk.getName())) {
+                        value = value + weight_perk_bonus;
+                    }
+                }
+                if (b_cons4_perks) {
+                    if (l_cons4.contains(perk.getName())) {
+                        value = value + weight_perk_bonus;
+                    }
+                }
+                // Update Pool of Perk
                 for (int i = 0; i < value; i++) {
                     l_perks_pool.add(perk.getName());
                 }
+                // Update default Pool of Perk
                 l_perks_pool_default.add(perk.getName());
             }
         }
@@ -1384,6 +1410,7 @@ public class SRBG {
     private void initPerkConstraints() {
         String line = null;
         String perk = "";
+        String type = "";
         try {
             // Define the Reader
             BufferedReader br = null;
@@ -1399,27 +1426,36 @@ public class SRBG {
             }
             line = br.readLine();
             while (line != null) {
-                if (line.split("\t").length == 2) {
-                    perk = line.split("\t")[1];
+                if (line.split("\t").length == 3) {
+                    type = line.split("\t")[1];
+                    perk = line.split("\t")[2];
                     // Check Perk
                     if (l_perks_all_string.contains(perk)) {
                         // Add Perk to reference List
                         if (line.startsWith(s_cons1_surv)) {
                             l_cons1_surv.add(perk);
+                            s_cons1_surv_txt = type;
                         } else if (line.startsWith(s_cons2_surv)) {
                             l_cons2_surv.add(perk);
+                            s_cons2_surv_txt = type;
                         } else if (line.startsWith(s_cons3_surv)) {
                             l_cons3_surv.add(perk);
+                            s_cons3_surv_txt = type;
                         } else if (line.startsWith(s_cons4_surv)) {
                             l_cons4_surv.add(perk);
+                            s_cons4_surv_txt = type;
                         } else if (line.startsWith(s_cons1_killer)) {
                             l_cons1_killer.add(perk);
+                            s_cons1_killer_txt = type;
                         } else if (line.startsWith(s_cons2_killer)) {
                             l_cons2_killer.add(perk);
+                            s_cons2_killer_txt = type;
                         } else if (line.startsWith(s_cons3_killer)) {
                             l_cons3_killer.add(perk);
+                            s_cons3_killer_txt = type;
                         } else if (line.startsWith(s_cons4_killer)) {
                             l_cons4_killer.add(perk);
+                            s_cons4_killer_txt = type;
                         } else {
                             System.err.println("\n# ERROR: Issues with the constraints File on Line >" + line + "<\n");
                             System.exit(0);

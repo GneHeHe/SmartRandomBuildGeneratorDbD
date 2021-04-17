@@ -1,5 +1,6 @@
 package dbd;
 
+import java.io.File;
 import java.io.IOException;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
@@ -25,9 +26,10 @@ public class Character implements Comparable<Character> {
     private JLabel lab_img_large;
     private JLabel lab_img_widget;
     // Size of Icon Pictures
-    private final static int SIZE_SMALL = 55;
-    private final static int SIZE_LARGE = 175;
-    private final static int SIZE_WIDGET = 130;
+    private final static int SIZE_SMALL_W = 40;
+    private final static int SIZE_LARGE_W = 130;
+    private final static int SIZE_WIDGET_W = 90;
+    private final static double SIZE_SCALING_H = 1.3;
     // Strings
     public final static String SURVIVOR = "Survivor";
     public final static String KILLER = "Killer";
@@ -35,8 +37,8 @@ public class Character implements Comparable<Character> {
     public final static String GENERIC_SURVIVOR = "GenSurv";
     public final static String GENERIC_KILLER = "GenKiller";
     // Generic Character Icons
-    public final static String GENERIC_SURVIVOR_ICON = "iconHelpLoading_survivor";
-    public final static String GENERIC_KILLER_ICON = "iconHelpLoading_killer";
+    public final static String GENERIC_SURVIVOR_ICON = "iconHelpLoading_survivor.png";
+    public final static String GENERIC_KILLER_ICON = "iconHelpLoading_killer.png";
 
     /**
      * Constructor
@@ -177,22 +179,22 @@ public class Character implements Comparable<Character> {
         lab_img_large = new JLabel("", SwingConstants.CENTER);
         lab_img_widget = new JLabel("", SwingConstants.CENTER);
         // Try using given Icon Picture
-        String path = "icons_char/" + icon_string + ".png";
+        String path = "icons_char/" + icon_string;
         if (getClass().getResourceAsStream(path) == null) {
             // Try using default Icon Picture
             if (side.equals(SURVIVOR)) {
-                path = "icons_char/" + GENERIC_SURVIVOR_ICON + ".png";
+                path = "icons_char/" + GENERIC_SURVIVOR_ICON;
             } else if (side.equals(KILLER)) {
-                path = "icons_char/" + GENERIC_KILLER_ICON + ".png";
+                path = "icons_char/" + GENERIC_KILLER_ICON;
             }
             System.err.println("\n# WARNING: Using default Icon Files for Character '" + name + "'");
         }
         // Load Icon Picture
         if (getClass().getResourceAsStream(path) != null) {
             // Set Icon in JLabel
-            lab_img_small.setIcon(new ImageIcon(Tools.resizePicture(path, SIZE_SMALL, SIZE_SMALL)));
-            lab_img_large.setIcon(new ImageIcon(Tools.resizePicture(path, SIZE_LARGE, SIZE_LARGE)));
-            lab_img_widget.setIcon(new ImageIcon(Tools.resizePicture(path, SIZE_WIDGET, SIZE_WIDGET)));
+            lab_img_small.setIcon(new ImageIcon(Tools.resizePicture(path, SIZE_SMALL_W, (int) (SIZE_SMALL_W * SIZE_SCALING_H))));
+            lab_img_large.setIcon(new ImageIcon(Tools.resizePicture(path, SIZE_LARGE_W, (int) (SIZE_LARGE_W * SIZE_SCALING_H))));
+            lab_img_widget.setIcon(new ImageIcon(Tools.resizePicture(path, SIZE_WIDGET_W, (int) (SIZE_WIDGET_W * SIZE_SCALING_H))));
             // Set Name for Tooltip
             lab_img_small.setName(name);
             lab_img_large.setName(name);

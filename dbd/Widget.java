@@ -12,6 +12,7 @@ import java.awt.Toolkit;
 import javax.swing.JFrame;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
+import javax.swing.SwingUtilities;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.TableColumn;
 
@@ -108,10 +109,19 @@ public class Widget extends JFrame {
 
         // Define MouseListener
         table_mini.addMouseListener(new MouseAdapter() {
+
             @Override
             public void mousePressed(MouseEvent e) {
                 point.x = e.getX();
                 point.y = e.getY();
+            }
+
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                if (SwingUtilities.isRightMouseButton(e) && e.getClickCount() == 1) {
+                    // Close Frame after Right Mouse Button has been Pressed
+                    dispose();
+                }
             }
         });
 

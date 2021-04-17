@@ -82,14 +82,14 @@ public class SRBG_TabPerk extends JPanel {
         // Define JButton Objects
         b_load = new JButton("Open custom Weight File");
         b_save = new JButton("Save current Weight Table");
-        b_same = new JButton("Disable all Features & Constraints");
-        b_default = new JButton("Reload original Weights");
+        b_same = new JButton("Generate Pure Random Builds");
+        b_default = new JButton("Reload Original Weights");
         b_remote_syn = new JButton("Update Synergy Rules");
 
         // Add Tooltips
         b_load.setToolTipText("Load a custom weight distribution for each perk");
         b_save.setToolTipText("Save the current weight distribution from the table in an output file");
-        b_same.setToolTipText("Same weight for each perk, no perk constraints and no synergy rules: pure random builds will be generated");
+        b_same.setToolTipText("Disable all features & constraints, same weight for each perk: pure random builds will be generated");
         b_default.setToolTipText("Reset each weight to its original value");
         b_remote_syn.setToolTipText("<html>Download last version of synergy rules from GitHub, then reload them<br>Backup is performed if custom synergy files were already present</html>");
 
@@ -163,7 +163,7 @@ public class SRBG_TabPerk extends JPanel {
         b_default.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.out.println("# All perks have loaded weights from start");
+                System.out.println("\n# All perks have loaded weights from start");
                 // Load default Weight File
                 srbg.readWeightsDefault();
                 // Update Model & Table

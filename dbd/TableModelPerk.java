@@ -15,7 +15,7 @@ import javax.swing.table.AbstractTableModel;
 public class TableModelPerk extends AbstractTableModel {
 
     // Define Columns
-    private final String[] columns = {"Perk Name", "Perk Icon", "Linked Character", "Perk Weight"};
+    private final String[] columns = {"Perk Name", "Perk Icon", "Linked Character", "Current Weight", "Original Weight"};
     // Define Content of Table
     private ArrayList<Perk> l_perks;
     // SRBG Object
@@ -81,6 +81,8 @@ public class TableModelPerk extends AbstractTableModel {
                 return JLabel.class;
             case 3:
                 return Integer.class;
+            case 4:
+                return Integer.class;
             default:
                 return Object.class;
         }
@@ -97,16 +99,20 @@ public class TableModelPerk extends AbstractTableModel {
     public Object getValueAt(int rowIndex, int columnIndex) {
         switch (columnIndex) {
             case 0:
-                //System.out.println(l_perks.get(rowIndex).getPerkName());
+                //System.out.println(l_perks.get(rowIndex).getName());
                 return l_perks.get(rowIndex).getName();
             case 1:
-                //System.out.println(l_perks.get(rowIndex).getPerkIcon());
+                //System.out.println(l_perks.get(rowIndex).getIconImage(1));
                 return l_perks.get(rowIndex).getIconImage(1);
             case 2:
+                //System.out.println(l_perks.get(rowIndex).getParentImage());
                 return l_perks.get(rowIndex).getParentImage();
             case 3:
-                //System.out.println(l_perks.get(rowIndex).getPerkWeight());
+                //System.out.println(l_perks.get(rowIndex).getWeight());
                 return l_perks.get(rowIndex).getWeight();
+            case 4:
+                //System.out.println(l_perks.get(rowIndex).getWeightOrig());
+                return l_perks.get(rowIndex).getWeightOrig();
             default:
                 return null;
         }
@@ -130,6 +136,8 @@ public class TableModelPerk extends AbstractTableModel {
                 return false;
             case 3:
                 return true;
+            case 4:
+                return false;
             default:
                 return false;
         }

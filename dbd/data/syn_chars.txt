@@ -68,6 +68,9 @@ Steve	Second Wind	75
 Yui	Any Means Necessary	75
 Yui	Breakout	75
 Yui	Lucky Break	75
+Yun-Jin	Fast Track	75
+Yun-Jin	Self-Preservation	75
+Yun-Jin	Smash Hit	75
 Zarina	For the People	75
 Zarina	Off the Record	75
 Zarina	Red Herring	75
@@ -109,10 +112,11 @@ Deathslinger	Mindbreaker	50
 Deathslinger	Monitor & Abuse	100
 Deathslinger	Overwhelming Presence	-999
 Deathslinger	Rancor	50
-Deathslinger	Save The Best For Last	50
+Deathslinger	Save The Best For Last	100
 Deathslinger	Shadowborn	50
 Deathslinger	Sloppy Butcher	50
-Deathslinger	Spies From The Shadows	50
+Deathslinger	Spies From The Shadows	-100
+Deathslinger	Starstruck	50
 Deathslinger	Stridor	50
 Deathslinger	Surge	50
 Deathslinger	Surveillance	50
@@ -146,7 +150,6 @@ Demogorgon	Territorial Imperative	50
 Demogorgon	Thrilling Tremors	50
 Demogorgon	Tinkerer	50
 ############# Doctor #############
-Doctor	Bamboozle	50
 Doctor	Barbecue & Chilli	50
 Doctor	Brutal Strength	50
 Doctor	Coulrophobia	50
@@ -169,6 +172,7 @@ Doctor	Rancor	-100
 Doctor	Save The Best For Last	50
 Doctor	Sloppy Butcher	50
 Doctor	Spies From The Shadows	-100
+Doctor	Starstruck	50
 Doctor	Tinkerer	-100
 Doctor	Unnerving Presence	50
 Doctor	Whispers	50
@@ -198,6 +202,7 @@ Freddy	Rancor	50
 Freddy	Remember Me	75
 Freddy	Save The Best For Last	50
 Freddy	Sloppy Butcher	50
+Freddy	Starstruck	50
 Freddy	Surge	50
 Freddy	Surveillance	50
 Freddy	Thrilling Tremors	50
@@ -236,6 +241,7 @@ Ghostface	Rancor	50
 Ghostface	Save The Best For Last	-100
 Ghostface	Sloppy Butcher	50
 Ghostface	Spies From The Shadows	50
+Ghostface	Starstruck	-100
 Ghostface	Stridor	50
 Ghostface	Surveillance	50
 Ghostface	Territorial Imperative	50
@@ -257,6 +263,7 @@ Hag	Distressing	-999
 Hag	Dragon's Grip	50
 Hag	Enduring	-100
 Hag	Franklin's Demise	50
+Hag	Hex Crowd Control	-100
 Hag	Hex Devour Hope	75
 Hag	Hex Haunted Ground	50
 Hag	Hex No One Escapes Death	50
@@ -272,6 +279,7 @@ Hag	Pop Goes The Weasel	50
 Hag	Rancor	50
 Hag	Save The Best For Last	50
 Hag	Sloppy Butcher	50
+Hag	Starstruck	50
 Hag	Stridor	50
 Hag	Surge	50
 Hag	Surveillance	50
@@ -293,6 +301,7 @@ Hillbilly	Dragon's Grip	-200
 Hillbilly	Enduring	75
 Hillbilly	Franklin's Demise	-100
 Hillbilly	Gearhead	-100
+Hillbilly	Hex Crowd Control	50
 Hillbilly	Hex Haunted Ground	-200
 Hillbilly	Hex No One Escapes Death	-200
 Hillbilly	Hex Ruin	50
@@ -308,6 +317,7 @@ Hillbilly	Save The Best For Last	-200
 Hillbilly	Shadowborn	50
 Hillbilly	Sloppy Butcher	-200
 Hillbilly	Spies From The Shadows	50
+Hillbilly	Starstruck	-200
 Hillbilly	Surge	-100
 Hillbilly	Surveillance	50
 Hillbilly	Territorial Imperative	50
@@ -346,6 +356,7 @@ Huntress Anna	Rancor	50
 Huntress Anna	Save The Best For Last	-200
 Huntress Anna	Shadowborn	100
 Huntress Anna	Sloppy Butcher	-200
+Huntress Anna	Starstruck	-100
 Huntress Anna	Surge	-100
 Huntress Anna	Territorial Imperative	75
 Huntress Anna	Thrilling Tremors	50
@@ -364,6 +375,7 @@ Leatherface	Dragon's Grip	-100
 Leatherface	Enduring	50
 Leatherface	Franklin's Demise	75
 Leatherface	Gearhead	-100
+Leatherface	Hex Crowd Control	50
 Leatherface	Hex Haunted Ground	-100
 Leatherface	Hex No One Escapes Death	50
 Leatherface	Infectious Fright	50
@@ -377,6 +389,7 @@ Leatherface	Pop Goes The Weasel	50
 Leatherface	Rancor	-100
 Leatherface	Save The Best For Last	-200
 Leatherface	Sloppy Butcher	-200
+Leatherface	Starstruck	-100
 Leatherface	Surge	-100
 Leatherface	Territorial Imperative	100
 Leatherface	Tinkerer	100
@@ -422,6 +435,7 @@ Myers	Dragon's Grip	50
 Myers	Dying Light	75
 Myers	Enduring	50
 Myers	Furtive Chase	-200
+Myers	Hex Crowd Control	50
 Myers	Hex Devour Hope	50
 Myers	Hex Haunted Ground	50
 Myers	Hex No One Escapes Death	-200
@@ -440,6 +454,7 @@ Myers	Rancor	-100
 Myers	Save The Best For Last	75
 Myers	Sloppy Butcher	50
 Myers	Spies From The Shadows	50
+Myers	Starstruck	-100
 Myers	Stridor	50
 Myers	Surveillance	50
 Myers	Territorial Imperative	50
@@ -457,6 +472,7 @@ Nurse Sally	Deerstalker	50
 Nurse Sally	Discordance	50
 Nurse Sally	Dragon's Grip	50
 Nurse Sally	Enduring	-200
+Nurse Sally	Forced Penance	-100
 Nurse Sally	Hex Devour Hope	50
 Nurse Sally	Hex Ruin	50
 Nurse Sally	Hex Undying	50
@@ -471,6 +487,7 @@ Nurse Sally	Save The Best For Last	-200
 Nurse Sally	Shadowborn	100
 Nurse Sally	Sloppy Butcher	50
 Nurse Sally	Spies From The Shadows	50
+Nurse Sally	Starstruck	50
 Nurse Sally	Stridor	75
 Nurse Sally	Surge	50
 Nurse Sally	Surveillance	50
@@ -533,6 +550,7 @@ Plague	Deerstalker	50
 Plague	Dragon's Grip	-200
 Plague	Dying Light	100
 Plague	Enduring	-100
+Plague	Forced Penance	-100
 Plague	Gearhead	-100
 Plague	Hex No One Escapes Death	50
 Plague	Hex Retribution	50
@@ -546,6 +564,7 @@ Plague	Pop Goes The Weasel	50
 Plague	Rancor	-100
 Plague	Save The Best For Last	-200
 Plague	Sloppy Butcher	-999
+Plague	Starstruck	-200
 Plague	Stridor	-100
 Plague	Surge	-100
 Plague	Thanatophobia	100
@@ -570,6 +589,7 @@ Pyramid Head	Pop Goes The Weasel	-100
 Pyramid Head	Rancor	50
 Pyramid Head	Save The Best For Last	50
 Pyramid Head	Sloppy Butcher	50
+Pyramid Head	Starstruck	-100
 Pyramid Head	Thrilling Tremors	-100
 Pyramid Head	Tinkerer	100
 Pyramid Head	Trail of Torment	75
@@ -604,6 +624,7 @@ Spirit Rin	Save The Best For Last	50
 Spirit Rin	Sloppy Butcher	50
 Spirit Rin	Spies From The Shadows	50
 Spirit Rin	Spirit Fury	75
+Spirit Rin	Starstruck	50
 Spirit Rin	Stridor	100
 Spirit Rin	Surge	50
 Spirit Rin	Surveillance	50
@@ -647,6 +668,7 @@ The Oni	Dragon's Grip	-100
 The Oni	Enduring	-100
 The Oni	Forced Penance	-100
 The Oni	Gearhead	-100
+The Oni	Hex Crowd Control	50
 The Oni	Hex Haunted Ground	-100
 The Oni	Hex No One Escapes Death	-200
 The Oni	Hex Retribution	50
@@ -662,6 +684,7 @@ The Oni	Rancor	-100
 The Oni	Save The Best For Last	-100
 The Oni	Shadowborn	50
 The Oni	Sloppy Butcher	50
+The Oni	Starstruck	-100
 The Oni	Stridor	-100
 The Oni	Surge	-100
 The Oni	Surveillance	50
@@ -669,6 +692,38 @@ The Oni	Thrilling Tremors	50
 The Oni	Tinkerer	50
 The Oni	Trail of Torment	50
 The Oni	Zanshin Tactics	75
+############# The Trickster #############
+The Trickster	A Nurse's Calling	50
+The Trickster	Bamboozle	50
+The Trickster	Barbecue & Chilli	50
+The Trickster	Brutal Strength	-100
+The Trickster	Corrupt Intervention	100
+The Trickster	Coulrophobia	-200
+The Trickster	Distressing	-999
+The Trickster	Dragon's Grip	50
+The Trickster	Enduring	-100
+The Trickster	Hex Crowd Control	75
+The Trickster	Hex Devour Hope	50
+The Trickster	Hex Haunted Ground	50
+The Trickster	Hex No One Escapes Death	50
+The Trickster	I'm All Ears	50
+The Trickster	Infectious Fright	50
+The Trickster	Insidious	-999
+The Trickster	Make Your Choice	50
+The Trickster	Monitor & Abuse	100
+The Trickster	No Way Out	75
+The Trickster	Overwhelming Presence	-999
+The Trickster	Play With Your Food	-200
+The Trickster	Pop Goes The Weasel	50
+The Trickster	Rancor	50
+The Trickster	Save The Best For Last	-100
+The Trickster	Shadowborn	50
+The Trickster	Sloppy Butcher	-100
+The Trickster	Spies From The Shadows	50
+The Trickster	Starstruck	75
+The Trickster	Trail of Torment	-100
+The Trickster	Unnerving Presence	-999
+The Trickster	Whispers	50
 ############# The Twins #############
 The Twins	A Nurse's Calling	50
 The Twins	Barbecue & Chilli	50
@@ -681,7 +736,7 @@ The Twins	Deerstalker	50
 The Twins	Discordance	50
 The Twins	Dragon's Grip	50
 The Twins	Enduring	50
-The Twins	Forced Penance	-200
+The Twins	Forced Penance	-100
 The Twins	Hex Haunted Ground	50
 The Twins	Hex No One Escapes Death	50
 The Twins	Hex Ruin	50
@@ -705,7 +760,6 @@ Trapper	Blood Warden	50
 Trapper	Brutal Strength	75
 Trapper	Corrupt Intervention	50
 Trapper	Dragon's Grip	50
-Trapper	Enduring	50
 Trapper	Franklin's Demise	50
 Trapper	Hex Devour Hope	50
 Trapper	Hex No One Escapes Death	50

@@ -123,7 +123,7 @@ public class SRBG_TabBuild extends JPanel {
         b_build = new JButton("Run");
         b_build.setToolTipText("<html>Generate random builds using enabled features<br><br>Click on generated build to export it as png picture (saved in working directory)</html>");
         b_widget = new JButton("Widget");
-        b_widget.setToolTipText("<html>Open the Widget for more convenient use of SRBG within the Game<br><br>Generate random Builds:<br><ul><li>Double-click on Widget, or</li><li>Click on Widget, then press SPACE or ENTER</li></ul><br>Move the Widget:<br><ul><li>Press & Drag</li></ul><br>Close the Widget:<br><ul><li>Click on Widget, then press ESCAPE</li></ul><br></html>");
+        b_widget.setToolTipText("<html>Open the Widget for more convenient use of SRBG within the Game<br><br>Generate random Builds:<br><ul><li>Double-click on Widget, or</li><li>Click on Widget, then press SPACE or ENTER</li></ul><br>Move the Widget:<br><ul><li>Press & Drag</li></ul><br>Close the Widget:<br><ul><li>Click on Widget using Right Mouse Button, or</li><li>Click on Widget, then press ESCAPE</li></ul><br></html>");
         // Define JLabel Objects
         lab_nbperks = new JLabel("  Nb Perks ");
         lab_nbbuilds = new JLabel("  Nb Builds ");
@@ -148,7 +148,7 @@ public class SRBG_TabBuild extends JPanel {
         cb_nbbuilds.setPreferredSize(new Dimension(50, 20));
         cb_nbbuilds.setToolTipText("<html>Define the number of builds to be generated<br><br>The build with the highest score is graphically displayed<br><br>Meta builds or high-synergy builds are associated with high scores<br><br>Meta builds or high-synergy builds tend to be returned when the number of generated builds is large</html>");
         ((JLabel) cb_nbbuilds.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
-        cb_nbbuilds.setSelectedIndex(1);
+        cb_nbbuilds.setSelectedIndex(0);
         // Force 1 desired build in GUI
         srbg.setNbBuilds(Integer.parseInt(cb_nbbuilds.getSelectedItem().toString()));
 
@@ -597,12 +597,23 @@ public class SRBG_TabBuild extends JPanel {
      * @throws java.lang.Exception
      */
     private void displayInit(JTable table, int size_perk, int size_char) {
-        // Display Generic Perks
-        for (int i = 0; i < srbg.nb_perks_ref; i++) {
-            table.getModel().setValueAt(srbg.perk_generic.getIconImage(size_perk), 0, i);
+        if ((srbg.getBestBuild() != null) && (srbg.getSide().equals(srbg.getBestBuild().getSide()))) {
+            // Display Best Build in Table
+            int nb = 0;
+            for (Perk p : srbg.getBestBuild().getPerks()) {
+                table.getModel().setValueAt(p.getIconImage(size_perk), 0, nb);
+                nb++;
+            }
+            // Display Character
+            table.getModel().setValueAt(srbg.getCharacter().getIconImage(size_char), 0, 4);
+        } else {
+            // Display Generic Build
+            for (int i = 0; i < srbg.nb_perks_ref; i++) {
+                table.getModel().setValueAt(srbg.perk_generic.getIconImage(size_perk), 0, i);
+            }
+            // Display Generic Character
+            table.getModel().setValueAt(srbg.getCharacterGeneric().getIconImage(size_char), 0, 4);
         }
-        // Display Generic Character
-        table.getModel().setValueAt(srbg.getCharacterGeneric().getIconImage(size_char), 0, 4);
     }
 
     /**
@@ -643,12 +654,7 @@ public class SRBG_TabBuild extends JPanel {
                         int keyCode = e.getKeyCode();
                         // Generate Build after either ENTER or SPACE Keys have been Pressed
                         if (b_ready && ((keyCode == KeyEvent.VK_ENTER) || (keyCode == KeyEvent.VK_SPACE))) {
-                            // SRBG Status
-                            b_ready = false;
-                            // Reset Table
-                            resetTable(table_perks);
-                            // Generate Build
-                            genBuild(widget.getTable(), 4, 3);
+
                         }
                     }
                 });
@@ -659,6 +665,7 @@ public class SRBG_TabBuild extends JPanel {
                     public void mouseClicked(MouseEvent e) {
                         // Generate Build after a double-click with mouse
                         if (b_ready && (e.getClickCount() == 2)) {
+                            // Same Code as Above for Keyboard
                             // SRBG Status
                             b_ready = false;
                             // Reset Table

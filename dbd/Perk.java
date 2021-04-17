@@ -19,6 +19,7 @@ public class Perk implements Comparable<Perk> {
     // Weight of Perk
     private int weight;
     private int weight_ref;
+    private int weight_orig;
     // Side of Perk
     private String side;
     // Parent of Perk
@@ -38,11 +39,13 @@ public class Perk implements Comparable<Perk> {
     private final static int SIZE_MEDIUM = 60;
     private final static int SIZE_LARGE = 160;
     private final static int SIZE_WIDGET = 110;
+    private final static int SIZE_CHAR = 35;
+    private final static double SIZE_CHAR_SCALING = 1.3;
     // Generic Perk
     public final static String SURVIVOR = "Survivor";
     public final static String KILLER = "Killer";
     public final static String GENERIC = "Undefined";
-    public final static String GENERIC_ICON = "iconPerks_default";
+    public final static String GENERIC_ICON = "iconPerks_default.png";
 
     /**
      * Constructor
@@ -60,6 +63,7 @@ public class Perk implements Comparable<Perk> {
         setIconString(icon);
         setParent(parent, icon_parent);
         setWeight(weight, true);
+        setWeightOrig(weight);
         try {
             setIconPicture();
             setParentPicture();
@@ -80,6 +84,7 @@ public class Perk implements Comparable<Perk> {
         setIconString(GENERIC_ICON);
         setParent(GENERIC, GENERIC_ICON);
         setWeight(0, true);
+        setWeightOrig(0);
         try {
             setIconPicture();
             //setParentPicture();
@@ -212,10 +217,10 @@ public class Perk implements Comparable<Perk> {
         lab_img_large = new JLabel("", SwingConstants.CENTER);
         lab_img_widget = new JLabel("", SwingConstants.CENTER);
         // Try using given Icon Picture
-        String path = "icons_perks/" + icon_string + ".png";
+        String path = "icons_perks/" + icon_string;
         if (getClass().getResourceAsStream(path) == null) {
             // Try using default Icon Picture
-            path = "icons_perks/" + GENERIC_ICON + ".png";
+            path = "icons_perks/" + GENERIC_ICON;
             System.err.println("\n# WARNING: Using default Icon Files for Perk '" + name + "'");
         }
         // Load Icon Picture
@@ -245,20 +250,20 @@ public class Perk implements Comparable<Perk> {
         // Define JLabel
         lab_parent_small = new JLabel("", SwingConstants.CENTER);
         // Try using given Icon Picture
-        String path = "icons_char/" + parent_string + ".png";
+        String path = "icons_char/" + parent_string;
         if (getClass().getResourceAsStream(path) == null) {
             // Try to use default Parent Picture
             if (side.equals(SURVIVOR)) {
-                path = "icons_char/" + Character.GENERIC_SURVIVOR_ICON + ".png";
+                path = "icons_char/" + Character.GENERIC_SURVIVOR_ICON;
             } else if (side.equals(KILLER)) {
-                path = "icons_char/" + Character.GENERIC_KILLER_ICON + ".png";
+                path = "icons_char/" + Character.GENERIC_KILLER_ICON;
             }
             System.err.println("\n# WARNING: Using default Icon Files for Character '" + parent + "' for Perk '" + name + "'");
         }
         // Load Icon Picture
         if (getClass().getResourceAsStream(path) != null) {
             // Set Icons in JLabel
-            lab_parent_small.setIcon(new ImageIcon(Tools.resizePicture(path, SIZE_SMALL, SIZE_SMALL)));
+            lab_parent_small.setIcon(new ImageIcon(Tools.resizePicture(path, SIZE_CHAR, (int) (SIZE_CHAR * SIZE_CHAR_SCALING))));
             // Set Name for Tooltip
             lab_parent_small.setName(parent);
         } else {
@@ -286,6 +291,15 @@ public class Perk implements Comparable<Perk> {
     }
 
     /**
+     * Get Perk Weight (Orig)
+     *
+     * @return
+     */
+    public int getWeightOrig() {
+        return weight_orig;
+    }
+
+    /**
      * Set Perk Weight
      *
      * @param weight
@@ -294,8 +308,17 @@ public class Perk implements Comparable<Perk> {
     public final void setWeight(int weight, boolean init) {
         this.weight = weight;
         if (init) {
-            weight_ref = weight;
+            this.weight_ref = weight;
         }
+    }
+
+    /**
+     * Set Perk Weight (Orig)
+     *
+     * @param weight
+     */
+    private void setWeightOrig(int weight) {
+        weight_orig = weight;
     }
 
     /**

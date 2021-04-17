@@ -1,100 +1,105 @@
-SURVIV_1	Aftercare
-SURVIV_1	Autodidact
-SURVIV_1	Bond
-SURVIV_1	Botany Knowledge
-SURVIV_1	Desperate Measures
-SURVIV_1	Empathy
-SURVIV_1	For the People
-SURVIV_1	Inner Strength
-SURVIV_1	Pharmacy
-SURVIV_1	Second Wind
-SURVIV_1	Self-Care
-SURVIV_1	Solidarity
-SURVIV_1	We'll Make It
-SURVIV_2	Adrenaline
-SURVIV_2	Borrowed Time
-SURVIV_2	Breakdown
-SURVIV_2	Decisive Strike
-SURVIV_2	Deliverance
-SURVIV_2	Distortion
-SURVIV_2	Flip-Flop
-SURVIV_2	Head On
-SURVIV_2	Hope
-SURVIV_2	Iron Will
-SURVIV_2	Left Behind
-SURVIV_2	Lucky Break
-SURVIV_2	Mettle Of Man
-SURVIV_2	Power Struggle
-SURVIV_2	Premonition
-SURVIV_2	Soul Guard
-SURVIV_2	Spine Chill
-SURVIV_2	Tenacity
-SURVIV_2	Unbreakable
-SURVIV_2	Wake Up!
-SURVIV_3	Balanced Landing
-SURVIV_3	Dance With Me
-SURVIV_3	Dead Hard
-SURVIV_3	Deception
-SURVIV_3	Diversion
-SURVIV_3	Lightweight
-SURVIV_3	Lithe
-SURVIV_3	Poised
-SURVIV_3	Quick & Quiet
-SURVIV_3	Sprint Burst
-SURVIV_3	Windows Of Opportunity
-SURVIV_4	Alert
-SURVIV_4	Babysitter
-SURVIV_4	Dark Sense
-SURVIV_4	Deja Vu
-SURVIV_4	Detective's Hunch
-SURVIV_4	Kindred
-SURVIV_4	Object Of Obsession
-SURVIV_4	Plunderer's Instinct
-SURVIV_4	Small Game
-SURVIV_4	Visionary
-KILLER_1	Corrupt Intervention
-KILLER_1	Dead Man's Switch
-KILLER_1	Dying Light
-KILLER_1	Hex Ruin
-KILLER_1	Oppression
-KILLER_1	Overcharge
-KILLER_1	Pop Goes The Weasel
-KILLER_1	Sloppy Butcher
-KILLER_1	Surge
-KILLER_1	Thanatophobia
-KILLER_2	Bamboozle
-KILLER_2	Brutal Strength
-KILLER_2	Coup De Grace
-KILLER_2	Enduring
-KILLER_2	Hex Haunted Ground
-KILLER_2	I'm All Ears
-KILLER_2	Make Your Choice
-KILLER_2	Play With Your Food
-KILLER_2	Save The Best For Last
-KILLER_2	Spirit Fury
-KILLER_2	Zanshin Tactics
-KILLER_3	A Nurse's Calling
-KILLER_3	Barbecue & Chilli
-KILLER_3	Bitter Murmur
-KILLER_3	Bloodhound
-KILLER_3	Deathbound
-KILLER_3	Discordance
-KILLER_3	Dragon's Grip
-KILLER_3	Gearhead
-KILLER_3	Hex Retribution
-KILLER_3	Hex Thrill Of The Hunt
-KILLER_3	Hoarder
-KILLER_3	Infectious Fright
-KILLER_3	Iron Maiden
-KILLER_3	Rancor
-KILLER_3	Shadowborn
-KILLER_3	Spies From The Shadows
-KILLER_3	Stridor
-KILLER_3	Surveillance
-KILLER_3	Territorial Imperative
-KILLER_3	Thrilling Tremors
-KILLER_3	Tinkerer
-KILLER_3	Whispers
-KILLER_4	Blood Warden
-KILLER_4	Hex No One Escapes Death
-KILLER_4	Remember Me
+SURVIV_1	Healing	Aftercare
+SURVIV_1	Healing	Autodidact
+SURVIV_1	Healing	Bond
+SURVIV_1	Healing	Botany Knowledge
+SURVIV_1	Healing	Desperate Measures
+SURVIV_1	Healing	Empathy
+SURVIV_1	Healing	For the People
+SURVIV_1	Healing	Inner Strength
+SURVIV_1	Healing	Pharmacy
+SURVIV_1	Healing	Second Wind
+SURVIV_1	Healing	Self-Care
+SURVIV_1	Healing	Solidarity
+SURVIV_1	Healing	We'll Make It
+SURVIV_2	Survival	Adrenaline
+SURVIV_2	Survival	Borrowed Time
+SURVIV_2	Survival	Breakdown
+SURVIV_2	Survival	Decisive Strike
+SURVIV_2	Survival	Deliverance
+SURVIV_2	Survival	Distortion
+SURVIV_2	Survival	Flip-Flop
+SURVIV_2	Survival	Head On
+SURVIV_2	Survival	Hope
+SURVIV_2	Survival	Iron Will
+SURVIV_2	Survival	Left Behind
+SURVIV_2	Survival	Lucky Break
+SURVIV_2	Survival	Mettle Of Man
+SURVIV_2	Survival	Power Struggle
+SURVIV_2	Survival	Premonition
+SURVIV_2	Survival	Self-Preservation
+SURVIV_2	Survival	Soul Guard
+SURVIV_2	Survival	Spine Chill
+SURVIV_2	Survival	Tenacity
+SURVIV_2	Survival	Unbreakable
+SURVIV_2	Survival	Wake Up!
+SURVIV_3	Chase	Balanced Landing
+SURVIV_3	Chase	Dance With Me
+SURVIV_3	Chase	Dead Hard
+SURVIV_3	Chase	Deception
+SURVIV_3	Chase	Diversion
+SURVIV_3	Chase	Lightweight
+SURVIV_3	Chase	Lithe
+SURVIV_3	Chase	Poised
+SURVIV_3	Chase	Quick & Quiet
+SURVIV_3	Chase	Smash Hit
+SURVIV_3	Chase	Sprint Burst
+SURVIV_3	Chase	Windows Of Opportunity
+SURVIV_4	ShowAura	Alert
+SURVIV_4	ShowAura	Babysitter
+SURVIV_4	ShowAura	Dark Sense
+SURVIV_4	ShowAura	Deja Vu
+SURVIV_4	ShowAura	Detective's Hunch
+SURVIV_4	ShowAura	Kindred
+SURVIV_4	ShowAura	Object Of Obsession
+SURVIV_4	ShowAura	Plunderer's Instinct
+SURVIV_4	ShowAura	Small Game
+SURVIV_4	ShowAura	Visionary
+KILLER_1	SlowDown	Corrupt Intervention
+KILLER_1	SlowDown	Dead Man's Switch
+KILLER_1	SlowDown	Dying Light
+KILLER_1	SlowDown	Hex Ruin
+KILLER_1	SlowDown	Oppression
+KILLER_1	SlowDown	Overcharge
+KILLER_1	SlowDown	Pop Goes The Weasel
+KILLER_1	SlowDown	Sloppy Butcher
+KILLER_1	SlowDown	Surge
+KILLER_1	SlowDown	Thanatophobia
+KILLER_2	Chase	Bamboozle
+KILLER_2	Chase	Brutal Strength
+KILLER_2	Chase	Coup De Grace
+KILLER_2	Chase	Enduring
+KILLER_2	Chase	Hex Blood Favour
+KILLER_2	Chase	Hex Crowd Control
+KILLER_2	Chase	Hex Haunted Ground
+KILLER_2	Chase	I'm All Ears
+KILLER_2	Chase	Make Your Choice
+KILLER_2	Chase	Play With Your Food
+KILLER_2	Chase	Save The Best For Last
+KILLER_2	Chase	Spirit Fury
+KILLER_2	Chase	Zanshin Tactics
+KILLER_3	Detection	A Nurse's Calling
+KILLER_3	Detection	Barbecue & Chilli
+KILLER_3	Detection	Bitter Murmur
+KILLER_3	Detection	Bloodhound
+KILLER_3	Detection	Deathbound
+KILLER_3	Detection	Discordance
+KILLER_3	Detection	Dragon's Grip
+KILLER_3	Detection	Gearhead
+KILLER_3	Detection	Hex Retribution
+KILLER_3	Detection	Hex Thrill Of The Hunt
+KILLER_3	Detection	Hoarder
+KILLER_3	Detection	Infectious Fright
+KILLER_3	Detection	Iron Maiden
+KILLER_3	Detection	Rancor
+KILLER_3	Detection	Shadowborn
+KILLER_3	Detection	Spies From The Shadows
+KILLER_3	Detection	Stridor
+KILLER_3	Detection	Surveillance
+KILLER_3	Detection	Territorial Imperative
+KILLER_3	Detection	Thrilling Tremors
+KILLER_3	Detection	Tinkerer
+KILLER_3	Detection	Whispers
+KILLER_4	EndGame	Blood Warden
+KILLER_4	EndGame	Hex No One Escapes Death
+KILLER_4	EndGame	No Way Out
+KILLER_4	EndGame	Remember Me
