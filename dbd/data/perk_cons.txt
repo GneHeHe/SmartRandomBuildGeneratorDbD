@@ -1,5 +1,6 @@
 SURVIV_1	Healing	Aftercare
 SURVIV_1	Healing	Autodidact
+SURVIV_1	Healing	Bite the Bullet
 SURVIV_1	Healing	Bond
 SURVIV_1	Healing	Botany Knowledge
 SURVIV_1	Healing	Desperate Measures
@@ -7,6 +8,7 @@ SURVIV_1	Healing	Empathy
 SURVIV_1	Healing	For the People
 SURVIV_1	Healing	Inner Strength
 SURVIV_1	Healing	Pharmacy
+SURVIV_1	Healing	Resurgence
 SURVIV_1	Healing	Second Wind
 SURVIV_1	Healing	Self-Care
 SURVIV_1	Healing	Solidarity
@@ -17,6 +19,7 @@ SURVIV_2	Survival	Breakdown
 SURVIV_2	Survival	Decisive Strike
 SURVIV_2	Survival	Deliverance
 SURVIV_2	Survival	Distortion
+SURVIV_2	Survival	Flashbang
 SURVIV_2	Survival	Flip-Flop
 SURVIV_2	Survival	Head On
 SURVIV_2	Survival	Hope
@@ -46,17 +49,20 @@ SURVIV_3	Chase	Sprint Burst
 SURVIV_3	Chase	Windows Of Opportunity
 SURVIV_4	ShowAura	Alert
 SURVIV_4	ShowAura	Babysitter
+SURVIV_4	ShowAura	Counterforce
 SURVIV_4	ShowAura	Dark Sense
 SURVIV_4	ShowAura	Deja Vu
 SURVIV_4	ShowAura	Detective's Hunch
 SURVIV_4	ShowAura	Kindred
 SURVIV_4	ShowAura	Object Of Obsession
 SURVIV_4	ShowAura	Plunderer's Instinct
+SURVIV_4	ShowAura	Rookie Spirit
 SURVIV_4	ShowAura	Small Game
 SURVIV_4	ShowAura	Visionary
 KILLER_1	SlowDown	Corrupt Intervention
 KILLER_1	SlowDown	Dead Man's Switch
 KILLER_1	SlowDown	Dying Light
+KILLER_1	SlowDown	Eruption
 KILLER_1	SlowDown	Hex Ruin
 KILLER_1	SlowDown	Oppression
 KILLER_1	SlowDown	Overcharge
@@ -90,6 +96,7 @@ KILLER_3	Detection	Hex Thrill Of The Hunt
 KILLER_3	Detection	Hoarder
 KILLER_3	Detection	Infectious Fright
 KILLER_3	Detection	Iron Maiden
+KILLER_3	Detection	Lethal Pursuer
 KILLER_3	Detection	Rancor
 KILLER_3	Detection	Shadowborn
 KILLER_3	Detection	Spies From The Shadows

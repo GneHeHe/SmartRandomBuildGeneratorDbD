@@ -105,6 +105,10 @@ public class SRBG {
     private boolean b_cons4_perks;
     // Nb of Perks in Build
     private int nb_perks_build;
+    // Thresholds for Random Nb of Perks
+    private double rand_nb_perk1 = 0.03; // 0.03 ; 0.25
+    private double rand_nb_perk2 = 0.10; // 0.10 ; 0.50
+    private double rand_nb_perk3 = 0.25; // 0.25 ; 0.75
     // Nb of loaded Perks
     private int nb_perks_all;
     // Nb of active Perks
@@ -135,6 +139,8 @@ public class SRBG {
     private final int maxloop = 3000;
     // Character File
     private final String s_char = "data/characters.txt";
+    // Character Status File
+    private final String s_char_disabled = "disabled_chars.txt";
     // Perk DB Files
     private final String s_perk = "data/perk_db.txt";
     public final String s_perk_custom = "perk_db_custom.txt";
@@ -142,7 +148,7 @@ public class SRBG {
     private final String s_cons = "data/perk_cons.txt";
     private final String s_cons_custom = "perk_cons_custom.txt";
     // Version
-    public final double VERSION = 2.7;
+    public final double VERSION = 2.8;
     // Title
     public final String TITLE = "Smart Random Build Generator for Dead by Daylight ( SRBG " + VERSION + " )";
     // GitHub Data
@@ -428,13 +434,18 @@ public class SRBG {
         while (iterator.hasNext()) {
             Map.Entry entry = (Map.Entry) iterator.next();
             char_tmp = (String) entry.getKey();
-            weight_tmp = (int) entry.getValue();
-            for (int i = 0; i < weight_tmp; i++) {
-                l_char_random.add(char_tmp);
+            if (retrieveCharacter(char_tmp).getStatus()) {
+                weight_tmp = (int) entry.getValue();
+                for (int i = 0; i < weight_tmp; i++) {
+                    l_char_random.add(char_tmp);
+                }
             }
         }
         // Get Random Character
-        int rand = (int) (l_char_random.size() * Math.random());
+        int rand = 0;
+        if (l_char_random.size() > 1) {
+            rand = (int) (l_char_random.size() * Math.random());
+        }
         char_tmp = l_char_random.get(rand);
         c = retrieveCharacter(char_tmp);
         System.out.println("# Random Character = " + c.getName() + " | Side = " + side);
@@ -525,8 +536,26 @@ public class SRBG {
      * @param n
      */
     public final void setNbPerksBuild(int n) {
-        nb_perks_build = n;
-        System.out.println("\n# Nb of Perks in a Build = " + nb_perks_build + "\n");
+        if ((n >= 0) && (n <= 4)) {
+            if (n == 0) {
+                System.out.println("# Random Number of Perks");
+                double rand = Math.random();
+                if (rand <= rand_nb_perk1) {
+                    n = 1;
+                } else if (rand <= rand_nb_perk2) {
+                    n = 2;
+                } else if (rand <= rand_nb_perk3) {
+                    n = 3;
+                } else {
+                    n = 4;
+                }
+            }
+            nb_perks_build = n;
+            System.out.println("\n# Nb of Perks in a Build = " + nb_perks_build + "\n");
+        } else {
+            System.out.println("# ERROR: Wrong desired Nb of Perks (" + n + ") in a Build");
+            System.exit(0);
+        }
     }
 
     /**
@@ -1320,9 +1349,27 @@ public class SRBG {
         l_char_killer.add(c);
         l_char_killer_generic.add(c);
         l_char_all_string.add(c.getName());
+        // Try to detect Character Status File
+        BufferedReader br = null;
+        List<String> l_char_disabled = new ArrayList();
+        String f = System.getProperty("user.dir") + File.separator + s_char_disabled;
+        if (new File(f).exists()) {
+            System.out.println("\n# Character Status File Detected");
+            try {
+                br = new BufferedReader(new FileReader(new File(f).getAbsolutePath()));
+                String line = br.readLine();
+                while (line != null) {
+                    l_char_disabled.add(line);
+                    line = br.readLine();
+                }
+                br.close();
+            } catch (Exception ex) {
+                System.err.println("\n# ERROR: issues with character status file => Exit");
+                System.exit(0);
+            }
+        }
+        // Load Characters
         try {
-            // Define the Reader
-            BufferedReader br = null;
             String input = s_char;
             InputStream is = getClass().getResourceAsStream(input);
             System.out.println("\n# Loading Characters from " + input);
@@ -1334,7 +1381,7 @@ public class SRBG {
                 // Split Line according to Spacer
                 String tab[] = line.split(spacer);
                 if (tab.length == 3) {
-                    // Get Data (4 Fields are expected)
+                    // Get Data (3 Fields are expected)
                     String myname = tab[0];
                     String myside = tab[1];
                     if (!((myside.equals(s_side_surv)) || (myside.equals(s_side_killer)))) {
@@ -1355,6 +1402,10 @@ public class SRBG {
                         m_char_random_killer.put(myname, char_val_orig);
                     }
                     l_char_all_string.add(myname);
+                    // Check if Character must be disabled
+                    if (l_char_disabled.indexOf(myname) >= 0) {
+                        c.setStatus(false);
+                    }
                 } else {
                     System.err.println("\n# ERROR: corrupted character file => Exit [ wrong line : >" + line + "< from input file ]\n");
                     System.exit(0);
@@ -1364,10 +1415,11 @@ public class SRBG {
             br.close();
             // Display Characters
             int i = 1;
+            System.out.print("# All Characters: ");
             for (String s : l_char_all_string) {
                 System.out.print(s + ", ");
                 if (i % 10 == 0) {
-                    System.out.println();
+                    System.out.print("\n# ");
                 }
                 i++;
             }

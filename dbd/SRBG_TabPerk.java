@@ -3,14 +3,19 @@ package dbd;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.io.*;
 import java.net.URL;
 import java.nio.channels.Channels;
 import java.nio.channels.ReadableByteChannel;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
+import java.util.ArrayList;
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
+import javax.swing.table.TableModel;
+import javax.swing.table.TableRowSorter;
 
 /**
  *
@@ -28,7 +33,7 @@ public class SRBG_TabPerk extends JPanel {
     private JLabel lab_side;
     private JComboBox cb_side;
     private JFileChooser fileChooser;
-    private TablePerk table;
+    public TablePerk table;
     // SRBG Object 
     private SRBG srbg;
     // Synergy Filenames
@@ -120,6 +125,24 @@ public class SRBG_TabPerk extends JPanel {
         table.setColumnWeight(3);
         // Update Table
         ((TableModelPerk) table.getModel()).updateTable(cb_side.getSelectedItem().toString());
+
+        TableRowSorter<TableModel> sorter = new TableRowSorter<>(table.getModel());
+        table.setRowSorter(sorter);
+        ArrayList<RowSorter.SortKey> sortKeys = new ArrayList<>();
+
+        table.getTableHeader().addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                int column = table.columnAtPoint(e.getPoint());
+                if (column != 1) {
+                    sortKeys.clear();
+                    sortKeys.add(new RowSorter.SortKey(column, SortOrder.ASCENDING));
+                    sorter.setSortKeys(sortKeys);
+                    sorter.sort();
+                    //table.repaint();
+                }
+            }
+        });
 
         // Define ActionListener
         b_load.addActionListener(new ActionListener() {

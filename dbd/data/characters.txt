@@ -23,6 +23,8 @@ Cheryl	Survivor	S22_charSelect_portrait.jpg
 Felix	Survivor	S23_charSelect_portrait.jpg
 Elodie	Survivor	S24_charSelect_portrait.jpg
 Yun-Jin	Survivor	S25_charSelect_portrait.jpg
+Jill	Survivor	S26_charSelect_portrait.jpg
+Leon	Survivor	S27_charSelect_portrait.jpg
 Trapper	Killer	K01_charSelect_portrait.jpg
 Wraith	Killer	K02_charSelect_portrait.jpg
 Hillbilly	Killer	K03_charSelect_portrait.jpg
@@ -46,3 +48,4 @@ Pyramid Head	Killer	K20_charSelect_portrait.jpg
 The Blight	Killer	K21_charSelect_portrait.jpg
 The Twins	Killer	K22_charSelect_portrait.jpg
 The Trickster	Killer	K23_charSelect_portrait.jpg
+The Nemesis	Killer	K24_charSelect_portrait.jpg

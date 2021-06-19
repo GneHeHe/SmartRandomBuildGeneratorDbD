@@ -44,12 +44,18 @@ Jane	Solidarity	75
 Jeff	Aftercare	75
 Jeff	Breakdown	75
 Jeff	Distortion	75
+Jill	Blast Mine	75
+Jill	Counterforce	75
+Jill	Resurgence	75
 Kate	Boil Over	75
 Kate	Dance With Me	75
 Kate	Windows Of Opportunity	75
 Laurie	Decisive Strike	75
 Laurie	Object Of Obsession	75
 Laurie	Sole Survivor	75
+Leon	Bite the Bullet	75
+Leon	Flashbang	75
+Leon	Rookie Spirit	75
 Meg	Adrenaline	75
 Meg	Quick & Quiet	75
 Meg	Sprint Burst	75
@@ -80,6 +86,7 @@ Clown	Brutal Strength	100
 Clown	Coulrophobia	75
 Clown	Dragon's Grip	50
 Clown	Enduring	50
+Clown	Hex Devour Hope	50
 Clown	Hex No One Escapes Death	50
 Clown	Make Your Choice	50
 Clown	Pop Goes The Weasel	75
@@ -104,9 +111,9 @@ Deathslinger	Hex Haunted Ground	50
 Deathslinger	Hex No One Escapes Death	50
 Deathslinger	Hex Retribution	75
 Deathslinger	Hex Thrill Of The Hunt	50
-Deathslinger	Hex Undying	50
 Deathslinger	I'm All Ears	50
 Deathslinger	Infectious Fright	-100
+Deathslinger	Lethal Pursuer	50
 Deathslinger	Make Your Choice	50
 Deathslinger	Mindbreaker	50
 Deathslinger	Monitor & Abuse	100
@@ -132,13 +139,15 @@ Demogorgon	Corrupt Intervention	50
 Demogorgon	Cruel Limits	75
 Demogorgon	Discordance	50
 Demogorgon	Dragon's Grip	50
-Demogorgon	Enduring	-100
+Demogorgon	Eruption	50
 Demogorgon	Gearhead	-100
 Demogorgon	Hex Devour Hope	50
 Demogorgon	Hex No One Escapes Death	50
-Demogorgon	Hex Undying	50
+Demogorgon	Hex The Third Seal	-100
 Demogorgon	I'm All Ears	50
+Demogorgon	Infectious Fright	50
 Demogorgon	Iron Grasp	50
+Demogorgon	Knock Out	-100
 Demogorgon	Make Your Choice	50
 Demogorgon	Mindbreaker	75
 Demogorgon	Pop Goes The Weasel	50
@@ -157,14 +166,18 @@ Doctor	Deerstalker	-100
 Doctor	Distressing	100
 Doctor	Dragon's Grip	50
 Doctor	Enduring	50
+Doctor	Eruption	50
+Doctor	Franklin's Demise	-100
 Doctor	Hex Devour Hope	50
 Doctor	Hex Huntress Lullaby	50
 Doctor	Hex No One Escapes Death	50
 Doctor	Hex Ruin	50
-Doctor	Hex Undying	50
+Doctor	Infectious Fright	-100
 Doctor	Iron Maiden	50
+Doctor	Lethal Pursuer	-100
 Doctor	Make Your Choice	50
 Doctor	Monitor & Abuse	75
+Doctor	Oppression	50
 Doctor	Overcharge	75
 Doctor	Overwhelming Presence	75
 Doctor	Pop Goes The Weasel	50
@@ -172,7 +185,7 @@ Doctor	Rancor	-100
 Doctor	Save The Best For Last	50
 Doctor	Sloppy Butcher	50
 Doctor	Spies From The Shadows	-100
-Doctor	Starstruck	50
+Doctor	Starstruck	100
 Doctor	Tinkerer	-100
 Doctor	Unnerving Presence	50
 Doctor	Whispers	50
@@ -186,6 +199,7 @@ Freddy	Coup De Grace	50
 Freddy	Discordance	50
 Freddy	Dragon's Grip	50
 Freddy	Enduring	50
+Freddy	Eruption	50
 Freddy	Fire Up	75
 Freddy	Hex Huntress Lullaby	50
 Freddy	Hex No One Escapes Death	50
@@ -207,6 +221,7 @@ Freddy	Surge	50
 Freddy	Surveillance	50
 Freddy	Thrilling Tremors	50
 Freddy	Tinkerer	50
+Freddy	Trail of Torment	-200
 ############# Ghostface #############
 Ghostface	Agitation	50
 Ghostface	A Nurse's Calling	50
@@ -225,13 +240,12 @@ Ghostface	Franklin's Demise	50
 Ghostface	Furtive Chase	75
 Ghostface	Hex Devour Hope	50
 Ghostface	Hex Haunted Ground	50
-Ghostface	Hex No One Escapes Death	-100
-Ghostface	Hex Undying	50
 Ghostface	I'm All Ears	75
 Ghostface	Infectious Fright	-100
 Ghostface	Insidious	-999
 Ghostface	Iron Grasp	50
 Ghostface	Iron Maiden	50
+Ghostface	Lethal Pursuer	50
 Ghostface	Make Your Choice	50
 Ghostface	Mindbreaker	50
 Ghostface	Monitor & Abuse	-999
@@ -253,15 +267,18 @@ Ghostface	Whispers	50
 ############# Hag #############
 Hag	Agitation	50
 Hag	A Nurse's Calling	50
-Hag	Bamboozle	-100
+Hag	Bamboozle	-200
 Hag	Barbecue & Chilli	-100
-Hag	Brutal Strength	-100
-Hag	Corrupt Intervention	50
+Hag	Brutal Strength	-200
+Hag	Corrupt Intervention	100
 Hag	Coulrophobia	-200
+Hag	Dark Devotion	50
 Hag	Deerstalker	50
 Hag	Distressing	-999
 Hag	Dragon's Grip	50
-Hag	Enduring	-100
+Hag	Enduring	-200
+Hag	Eruption	50
+Hag	Forced Penance	100
 Hag	Franklin's Demise	50
 Hag	Hex Crowd Control	-100
 Hag	Hex Devour Hope	75
@@ -270,8 +287,10 @@ Hag	Hex No One Escapes Death	50
 Hag	Hex Retribution	50
 Hag	Hex Ruin	75
 Hag	Hex The Third Seal	75
+Hag	Infectious Fright	-100
 Hag	Iron Grasp	50
-Hag	Make Your Choice	50
+Hag	Knock Out	50
+Hag	Make Your Choice	100
 Hag	Mindbreaker	50
 Hag	Monitor & Abuse	100
 Hag	Overwhelming Presence	-999
@@ -286,28 +305,32 @@ Hag	Surveillance	50
 Hag	Territorial Imperative	50
 Hag	Trail of Torment	-100
 Hag	Unnerving Presence	-999
+Hag	Unrelenting	50
 Hag	Zanshin Tactics	-100
 ############# Hillbilly #############
 Hillbilly	Agitation	50
-Hillbilly	Bamboozle	50
+Hillbilly	Bamboozle	100
 Hillbilly	Barbecue & Chilli	50
 Hillbilly	Bloodhound	-100
 Hillbilly	Brutal Strength	-100
 Hillbilly	Coup De Grace	-200
-Hillbilly	Dark Devotion	50
 Hillbilly	Deerstalker	50
 Hillbilly	Discordance	50
 Hillbilly	Dragon's Grip	-200
 Hillbilly	Enduring	75
+Hillbilly	Eruption	50
 Hillbilly	Franklin's Demise	-100
 Hillbilly	Gearhead	-100
+Hillbilly	Hex Blood Favour	-100
 Hillbilly	Hex Crowd Control	50
 Hillbilly	Hex Haunted Ground	-200
 Hillbilly	Hex No One Escapes Death	-200
 Hillbilly	Hex Ruin	50
-Hillbilly	Hex Undying	50
+Hillbilly	Hex The Third Seal	-100
 Hillbilly	Infectious Fright	100
 Hillbilly	Iron Grasp	50
+Hillbilly	Knock Out	-100
+Hillbilly	Lethal Pursuer	50
 Hillbilly	Lightborn	75
 Hillbilly	Make Your Choice	-200
 Hillbilly	Play With Your Food	-200
@@ -341,14 +364,17 @@ Huntress Anna	Dragon's Grip	-100
 Huntress Anna	Enduring	-100
 Huntress Anna	Franklin's Demise	-100
 Huntress Anna	Gearhead	-100
+Huntress Anna	Hex Blood Favour	-100
 Huntress Anna	Hex Huntress Lullaby	75
 Huntress Anna	Hex No One Escapes Death	-100
-Huntress Anna	Hex Undying	50
-Huntress Anna	I'm All Ears	50
+Huntress Anna	Hex The Third Seal	-100
+Huntress Anna	I'm All Ears	100
 Huntress Anna	Infectious Fright	-100
 Huntress Anna	Insidious	-999
 Huntress Anna	Iron Grasp	50
 Huntress Anna	Iron Maiden	100
+Huntress Anna	Lethal Pursuer	50
+Huntress Anna	Knock Out	-100
 Huntress Anna	Make Your Choice	-100
 Huntress Anna	Monitor & Abuse	-200
 Huntress Anna	Play With Your Food	-200
@@ -360,6 +386,7 @@ Huntress Anna	Starstruck	-100
 Huntress Anna	Surge	-100
 Huntress Anna	Territorial Imperative	75
 Huntress Anna	Thrilling Tremors	50
+Huntress Anna	Trail of Torment	-200
 Huntress Anna	Whispers	100
 Huntress Anna	Zanshin Tactics	-100
 ############# Leatherface #############
@@ -375,13 +402,14 @@ Leatherface	Dragon's Grip	-100
 Leatherface	Enduring	50
 Leatherface	Franklin's Demise	75
 Leatherface	Gearhead	-100
+Leatherface	Hex Blood Favour	-100
 Leatherface	Hex Crowd Control	50
 Leatherface	Hex Haunted Ground	-100
-Leatherface	Hex No One Escapes Death	50
+Leatherface	Hex No One Escapes Death	-100
+Leatherface	Hex The Third Seal	-100
 Leatherface	Infectious Fright	50
 Leatherface	Insidious	100
 Leatherface	Iron Grasp	100
-Leatherface	Iron Maiden	50
 Leatherface	Knock Out	75
 Leatherface	Make Your Choice	-100
 Leatherface	Play With Your Food	50
@@ -393,7 +421,7 @@ Leatherface	Starstruck	-100
 Leatherface	Surge	-100
 Leatherface	Territorial Imperative	100
 Leatherface	Tinkerer	100
-Leatherface	Trail of Torment	50
+Leatherface	Trail of Torment	100
 Leatherface	Zanshin Tactics	50
 ############# Legion #############
 Legion	Bamboozle	100
@@ -405,17 +433,21 @@ Legion	Discordance	75
 Legion	Dragon's Grip	50
 Legion	Enduring	50
 Legion	Franklin's Demise	-100
+Legion	Hex Blood Favour	-100
 Legion	Hex No One Escapes Death	50
 Legion	Hex Ruin	50
+Legion	Hysteria	100
 Legion	I'm All Ears	50
 Legion	Infectious Fright	-100
 Legion	Iron Maiden	75
+Legion	Lethal Pursuer	50
 Legion	Mad Grit	75
 Legion	Make Your Choice	50
+Legion	Mindbreaker	100
 Legion	Play With Your Food	-200
 Legion	Rancor	50
 Legion	Save The Best For Last	-100
-Legion	Sloppy Butcher	-100
+Legion	Surge	50
 Legion	Thanatophobia	100
 Legion	Tinkerer	-100
 ############# Myers #############
@@ -423,11 +455,12 @@ Myers	Agitation	50
 Myers	A Nurse's Calling	50
 Myers	Bamboozle	100
 Myers	Barbecue & Chilli	50
+Myers	Bitter Murmur	50
 Myers	Brutal Strength	50
-Myers	Corrupt Intervention	50
+Myers	Corrupt Intervention	100
 Myers	Coulrophobia	-200
-Myers	Coup De Grace	100
-Myers	Dark Devotion	-100
+Myers	Coup De Grace	50
+Myers	Dark Devotion	50
 Myers	Deerstalker	50
 Myers	Discordance	50
 Myers	Distressing	-999
@@ -439,11 +472,13 @@ Myers	Hex Crowd Control	50
 Myers	Hex Devour Hope	50
 Myers	Hex Haunted Ground	50
 Myers	Hex No One Escapes Death	-200
-Myers	Hex Undying	50
+Myers	Hex The Third Seal	50
 Myers	I'm All Ears	50
 Myers	Infectious Fright	50
 Myers	Insidious	-999
 Myers	Iron Grasp	50
+Myers	Knock Out	50
+Myers	Lethal Pursuer	50
 Myers	Make Your Choice	-100
 Myers	Mindbreaker	50
 Myers	Monitor & Abuse	50
@@ -473,13 +508,16 @@ Nurse Sally	Discordance	50
 Nurse Sally	Dragon's Grip	50
 Nurse Sally	Enduring	-200
 Nurse Sally	Forced Penance	-100
+Nurse Sally	Hex Blood Favour	-100
 Nurse Sally	Hex Devour Hope	50
 Nurse Sally	Hex Ruin	50
-Nurse Sally	Hex Undying	50
-Nurse Sally	I'm All Ears	50
+Nurse Sally	Hex The Third Seal	50
+Nurse Sally	I'm All Ears	100
 Nurse Sally	Infectious Fright	50
 Nurse Sally	Insidious	50
 Nurse Sally	Iron Maiden	50
+Nurse Sally	Knock Out	50
+Nurse Sally	Lethal Pursuer	50
 Nurse Sally	Make Your Choice	50
 Nurse Sally	Play With Your Food	-200
 Nurse Sally	Rancor	50
@@ -487,7 +525,7 @@ Nurse Sally	Save The Best For Last	-200
 Nurse Sally	Shadowborn	100
 Nurse Sally	Sloppy Butcher	50
 Nurse Sally	Spies From The Shadows	50
-Nurse Sally	Starstruck	50
+Nurse Sally	Starstruck	100
 Nurse Sally	Stridor	75
 Nurse Sally	Surge	50
 Nurse Sally	Surveillance	50
@@ -514,9 +552,9 @@ Pig	Hex Devour Hope	50
 Pig	Hex Haunted Ground	50
 Pig	Hex No One Escapes Death	50
 Pig	Hex Ruin	50
-Pig	Hex Undying	50
 Pig	I'm All Ears	50
 Pig	Insidious	-999
+Pig	Lethal Pursuer	50
 Pig	Make Your Choice	75
 Pig	Mindbreaker	50
 Pig	Monitor & Abuse	50
@@ -525,10 +563,8 @@ Pig	Overwhelming Presence	-999
 Pig	Pop Goes The Weasel	50
 Pig	Rancor	50
 Pig	Save The Best For Last	50
-Pig	Sloppy Butcher	-100
 Pig	Spies From The Shadows	50
 Pig	Stridor	50
-Pig	Surge	-100
 Pig	Surveillance	75
 Pig	Thrilling Tremors	50
 Pig	Tinkerer	50
@@ -547,18 +583,24 @@ Plague	Coup De Grace	50
 Plague	Dark Devotion	75
 Plague	Deathbound	-999
 Plague	Deerstalker	50
+Plague	Discordance	50
 Plague	Dragon's Grip	-200
 Plague	Dying Light	100
 Plague	Enduring	-100
 Plague	Forced Penance	-100
 Plague	Gearhead	-100
+Plague	Hex Blood Favour	-100
 Plague	Hex No One Escapes Death	50
 Plague	Hex Retribution	50
 Plague	Hex Ruin	50
-Plague	Hex Undying	50
+Plague	Hex The Third Seal	50
+Plague	Hysteria	100
 Plague	I'm All Ears	50
 Plague	Infectious Fright	75
+Plague	Knock Out	50
+Plague	Lethal Pursuer	50
 Plague	Make Your Choice	-200
+Plague	Mindbreaker	100
 Plague	Play With Your Food	50
 Plague	Pop Goes The Weasel	50
 Plague	Rancor	-100
@@ -570,19 +612,23 @@ Plague	Surge	-100
 Plague	Thanatophobia	100
 Plague	Whispers	-100
 ############# Pyramid Head #############
-Pyramid Head	A Nurse's Calling	100
+Pyramid Head	A Nurse's Calling	50
 Pyramid Head	Barbecue & Chilli	-100
 Pyramid Head	Blood Echo	-200
 Pyramid Head	Brutal Strength	-100
+Pyramid Head	Corrupt Intervention	50
 Pyramid Head	Coulrophobia	50
 Pyramid Head	Coup De Grace	-100
 Pyramid Head	Deathbound	75
 Pyramid Head	Dragon's Grip	50
 Pyramid Head	Enduring	-100
 Pyramid Head	Forced Penance	75
+Pyramid Head	Hex Blood Favour	-100
 Pyramid Head	Hex Ruin	50
-Pyramid Head	Hex Undying	50
+Pyramid Head	Hex The Third Seal	50
 Pyramid Head	I'm All Ears	100
+Pyramid Head	Infectious Fright	50
+Pyramid Head	Knock Out	50
 Pyramid Head	Make Your Choice	-100
 Pyramid Head	Nemesis	50
 Pyramid Head	Pop Goes The Weasel	-100
@@ -596,23 +642,24 @@ Pyramid Head	Trail of Torment	75
 Pyramid Head	Zanshin Tactics	50
 ############# Spirit Rin #############
 Spirit Rin	A Nurse's Calling	50
-Spirit Rin	Bamboozle	-100
+Spirit Rin	Bamboozle	-200
 Spirit Rin	Barbecue & Chilli	50
 Spirit Rin	Blood Echo	50
-Spirit Rin	Brutal Strength	-100
+Spirit Rin	Brutal Strength	-200
 Spirit Rin	Coulrophobia	-200
 Spirit Rin	Coup De Grace	-100
 Spirit Rin	Deerstalker	50
 Spirit Rin	Discordance	50
 Spirit Rin	Distressing	-200
 Spirit Rin	Dragon's Grip	50
-Spirit Rin	Enduring	-100
+Spirit Rin	Enduring	-200
 Spirit Rin	Forced Penance	-100
+Spirit Rin	Hex Blood Favour	-100
 Spirit Rin	Hex Devour Hope	50
 Spirit Rin	Hex Haunted Ground	75
 Spirit Rin	Hex Ruin	50
-Spirit Rin	Hex Undying	50
 Spirit Rin	I'm All Ears	-100
+Spirit Rin	Lethal Pursuer	50
 Spirit Rin	Make Your Choice	50
 Spirit Rin	Mad Grit	-100
 Spirit Rin	Nemesis	-200
@@ -625,7 +672,7 @@ Spirit Rin	Sloppy Butcher	50
 Spirit Rin	Spies From The Shadows	50
 Spirit Rin	Spirit Fury	75
 Spirit Rin	Starstruck	50
-Spirit Rin	Stridor	100
+Spirit Rin	Stridor	200
 Spirit Rin	Surge	50
 Spirit Rin	Surveillance	50
 Spirit Rin	Thrilling Tremors	50
@@ -640,10 +687,14 @@ The Blight	Brutal Strength	-100
 The Blight	Discordance	50
 The Blight	Dragon's Grip	75
 The Blight	Enduring	-100
+The Blight	Eruption	50
 The Blight	Hex Blood Favour	75
+The Blight	Hex Devour Hope	50
 The Blight	Hex Ruin	50
 The Blight	Hex Undying	75
-The Blight	Make Your Choice	50
+The Blight	Infectious Fright	50
+The Blight	Knock Out	-100
+The Blight	Lethal Pursuer	50
 The Blight	Play With Your Food	-200
 The Blight	Pop Goes The Weasel	50
 The Blight	Rancor	50
@@ -653,6 +704,27 @@ The Blight	Sloppy Butcher	50
 The Blight	Thrilling Tremors	50
 The Blight	Tinkerer	100
 The Blight	Whispers	50
+############# The Nemesis #############
+The Nemesis	Bamboozle	-100
+The Nemesis	Brutal Strength	-100
+The Nemesis	Corrupt Intervention	50
+The Nemesis	Discordance	50
+The Nemesis	Enduring	-100
+The Nemesis	Eruption	75
+The Nemesis	Fire Up	-100
+The Nemesis	Hex Blood Favour	-100
+The Nemesis	Hex Crowd Control	-100
+The Nemesis	Hysteria	75
+The Nemesis	I'm All Ears	50
+The Nemesis	Infectious Fright	50
+The Nemesis	Lethal Pursuer	75
+The Nemesis	Make Your Choice	50
+The Nemesis	Mindbreaker	50
+The Nemesis	Monitor & Abuse	50
+The Nemesis	Nemesis	100
+The Nemesis	Play With Your Food	-200
+The Nemesis	Save The Best For Last	100
+The Nemesis	Sloppy Butcher	50
 ############# The Oni #############
 The Oni	A Nurse's Calling	50
 The Oni	Bamboozle	50
@@ -660,21 +732,25 @@ The Oni	Barbecue & Chilli	50
 The Oni	Blood Echo	75
 The Oni	Bloodhound	-200
 The Oni	Brutal Strength	-100
-The Oni	Corrupt Intervention	50
+The Oni	Corrupt Intervention	100
 The Oni	Coup De Grace	-100
+The Oni	Deathbound	50
 The Oni	Deerstalker	50
 The Oni	Discordance	50
 The Oni	Dragon's Grip	-100
 The Oni	Enduring	-100
 The Oni	Forced Penance	-100
 The Oni	Gearhead	-100
+The Oni	Hex Blood Favour	-100
 The Oni	Hex Crowd Control	50
 The Oni	Hex Haunted Ground	-100
 The Oni	Hex No One Escapes Death	-200
 The Oni	Hex Retribution	50
 The Oni	Hex Ruin	50
-The Oni	Hex Undying	50
+The Oni	Hex The Third Seal	-100
 The Oni	Infectious Fright	100
+The Oni	Knock Out	-100
+The Oni	Lethal Pursuer	50
 The Oni	Make Your Choice	-100
 The Oni	Mad Grit	-100
 The Oni	Monitor & Abuse	50
@@ -694,29 +770,28 @@ The Oni	Trail of Torment	50
 The Oni	Zanshin Tactics	75
 ############# The Trickster #############
 The Trickster	A Nurse's Calling	50
-The Trickster	Bamboozle	50
+The Trickster	Bamboozle	100
 The Trickster	Barbecue & Chilli	50
-The Trickster	Brutal Strength	-100
 The Trickster	Corrupt Intervention	100
 The Trickster	Coulrophobia	-200
 The Trickster	Distressing	-999
 The Trickster	Dragon's Grip	50
-The Trickster	Enduring	-100
 The Trickster	Hex Crowd Control	75
 The Trickster	Hex Devour Hope	50
 The Trickster	Hex Haunted Ground	50
-The Trickster	Hex No One Escapes Death	50
+The Trickster	Hex No One Escapes Death	100
 The Trickster	I'm All Ears	50
-The Trickster	Infectious Fright	50
+The Trickster	Infectious Fright	-100
+The Trickster	Iron Maiden	100
 The Trickster	Insidious	-999
 The Trickster	Make Your Choice	50
+The Trickster	Mindbreaker	50
 The Trickster	Monitor & Abuse	100
 The Trickster	No Way Out	75
 The Trickster	Overwhelming Presence	-999
 The Trickster	Play With Your Food	-200
 The Trickster	Pop Goes The Weasel	50
 The Trickster	Rancor	50
-The Trickster	Save The Best For Last	-100
 The Trickster	Shadowborn	50
 The Trickster	Sloppy Butcher	-100
 The Trickster	Spies From The Shadows	50
@@ -725,7 +800,7 @@ The Trickster	Trail of Torment	-100
 The Trickster	Unnerving Presence	-999
 The Trickster	Whispers	50
 ############# The Twins #############
-The Twins	A Nurse's Calling	50
+The Twins	A Nurse's Calling	-100
 The Twins	Barbecue & Chilli	50
 The Twins	Bloodhound	-200
 The Twins	Brutal Strength	50
@@ -737,19 +812,23 @@ The Twins	Discordance	50
 The Twins	Dragon's Grip	50
 The Twins	Enduring	50
 The Twins	Forced Penance	-100
+The Twins	Hex Blood Favour	-100
+The Twins	Hex Devour Hope	50
 The Twins	Hex Haunted Ground	50
-The Twins	Hex No One Escapes Death	50
 The Twins	Hex Ruin	50
-The Twins	Hex Undying	50
+The Twins	Hex The Third Seal	-100
 The Twins	Hoarder	75
 The Twins	Infectious Fright	50
 The Twins	Insidious	-999
-The Twins	Knock Out	50
+The Twins	Knock Out	-100
 The Twins	Make Your Choice	50
 The Twins	Monitor & Abuse	-200
 The Twins	Oppression	75
 The Twins	Pop Goes The Weasel	50
 The Twins	Save The Best For Last	-200
+The Twins	Sloppy Butcher	100
+The Twins	Surge	-100
+The Twins	Thanatophobia	50
 The Twins	Thrilling Tremors	50
 The Twins	Tinkerer	-200
 The Twins	Trail of Torment	-200
@@ -758,8 +837,9 @@ Trapper	Agitation	75
 Trapper	Barbecue & Chilli	-100
 Trapper	Blood Warden	50
 Trapper	Brutal Strength	75
-Trapper	Corrupt Intervention	50
+Trapper	Corrupt Intervention	100
 Trapper	Dragon's Grip	50
+Trapper	Eruption	50
 Trapper	Franklin's Demise	50
 Trapper	Hex Devour Hope	50
 Trapper	Hex No One Escapes Death	50
@@ -787,15 +867,16 @@ Wraith	Discordance	50
 Wraith	Distressing	-999
 Wraith	Dragon's Grip	50
 Wraith	Enduring	50
+Wraith	Eruption	50
 Wraith	Franklin's Demise	50
 Wraith	Furtive Chase	-100
 Wraith	Hex Devour Hope	50
 Wraith	Hex Haunted Ground	50
 Wraith	Hex No One Escapes Death	50
 Wraith	Hex Ruin	50
-Wraith	Hex Undying	50
 Wraith	Infectious Fright	-100
 Wraith	Insidious	-999
+Wraith	Lethal Pursuer	50
 Wraith	Lightborn	50
 Wraith	Make Your Choice	50
 Wraith	Mindbreaker	50

@@ -268,8 +268,8 @@ public class Build implements Comparable<Build> {
     }
 
     /**
-     * Check if two Builds are Identical
-     * Warning: not used anymore in database for efficiency purpose
+     * Check if two Builds are Identical Warning: not used anymore in database
+     * for efficiency purpose
      *
      * @param b
      * @param sort

@@ -58,6 +58,9 @@ public class SRBG_TabHelp extends JPanel {
         pan_header.add(new JLabel(pict), BorderLayout.CENTER);
         pan_header.add(pan_author, BorderLayout.SOUTH);
 
+        // Define Background
+        editor.setBackground(pan_header.getBackground());
+
         // Add Tutorial to Panel
         scrollPane = new JScrollPane(editor);
 
@@ -113,7 +116,7 @@ public class SRBG_TabHelp extends JPanel {
         lab_email = new JLabel("<html><u>Contact</u></html>", SwingConstants.CENTER);
         lab_email.setFont(new Font("Helvetica", Font.BOLD, 18));
         lab_email.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        lab_email.setToolTipText("<html>Send an Email to " + srbg.GIT_USER +" to:<br><ul><li>Give Feedback</li><br><li>Report any Bug</li><br><li>Suggest potential new Features</li></ul></html>");
+        lab_email.setToolTipText("<html>Send an Email to " + srbg.GIT_USER + " to:<br><ul><li>Give Feedback</li><br><li>Report any Bug</li><br><li>Suggest potential new Features</li></ul></html>");
 
         // Define JLabel Donate
         lab_donate = new JLabel("<html><u>Donate</u></html>", SwingConstants.CENTER);

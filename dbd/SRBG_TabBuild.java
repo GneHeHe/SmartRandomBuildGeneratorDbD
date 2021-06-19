@@ -92,6 +92,10 @@ public class SRBG_TabBuild extends JPanel {
         scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
         scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 
+        // Define Backgrounds
+        text.setBackground(pan_config.getBackground());
+        table_perks.setBackground(pan_config.getBackground());
+
         // Set Layout & add Subpanels
         setLayout(new BorderLayout());
         add(pan_config, BorderLayout.NORTH);
@@ -131,21 +135,22 @@ public class SRBG_TabBuild extends JPanel {
         // Define JTextArea Objects
         text = new JTextArea(30, 20);
         text.setEditable(false);
-        text.setFont(new Font("Helvetica", Font.PLAIN, 16));
+        text.setFont(new Font("Helvetica", Font.BOLD, 16));
 
         // Default ComboBox Model
         cbm_default = new DefaultComboBoxModel();
 
         // Define JComboBox Object for Perks
-        cb_nbperks = new JComboBox(new Integer[]{1, 2, 3, 4});
+        cb_nbperks = new JComboBox(new Integer[]{0, 1, 2, 3, 4});
         cb_nbperks.setPreferredSize(new Dimension(50, 20));
-        cb_nbperks.setToolTipText("Define the number of perks in generated builds");
+        cb_nbperks.setToolTipText("<html>Define the number of perks in generated builds<br><br>Random number of looted perks will be enabled with '0' value: high chance of 4 perks and pretty low probability of 1 or 2 or 3 perks</html>");
         ((JLabel) cb_nbperks.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
-        cb_nbperks.setSelectedItem(srbg.getNbPerksBuild());
+        //cb_nbperks.setSelectedItem(srbg.getNbPerksBuild());
+        cb_nbperks.setSelectedIndex(0);
 
         // Define JComboBox Object for Nb of Builds
-        cb_nbbuilds = new JComboBox(new Integer[]{1, 2, 5, 10, 25, 50});
-        cb_nbbuilds.setPreferredSize(new Dimension(50, 20));
+        cb_nbbuilds = new JComboBox(new Integer[]{1, 2, 5, 10, 50, 100});
+        cb_nbbuilds.setPreferredSize(new Dimension(60, 20));
         cb_nbbuilds.setToolTipText("<html>Define the number of builds to be generated<br><br>The build with the highest score is graphically displayed<br><br>Meta builds or high-synergy builds are associated with high scores<br><br>Meta builds or high-synergy builds tend to be returned when the number of generated builds is large</html>");
         ((JLabel) cb_nbbuilds.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
         cb_nbbuilds.setSelectedIndex(0);
@@ -473,6 +478,10 @@ public class SRBG_TabBuild extends JPanel {
     private void genBuild(JTable table, int size_perk, int size_char) {
         // Update JCheckBoxes
         updateCheckBoxes();
+        // Set Nb Perks
+        if (Integer.parseInt(cb_nbperks.getSelectedItem().toString()) == 0) {
+            srbg.setNbPerksBuild(0);
+        }
         // Monitor Random Feature
         force_random = false;
         String mode = "";
@@ -481,6 +490,10 @@ public class SRBG_TabBuild extends JPanel {
             force_random = true;
             mode = cb_side.getSelectedItem().toString();
             updateComboBoxes();
+        }
+        // Display Generic Build
+        for (int i = 0; i < srbg.nb_perks_ref; i++) {
+            table.getModel().setValueAt(srbg.perk_generic.getIconImage(size_perk), 0, i);
         }
         // Reset Table
         resetTable(table);
@@ -495,7 +508,7 @@ public class SRBG_TabBuild extends JPanel {
                 // Enable/Disable Components
                 switchComponents();
                 // Reset Text
-                String fulltext = "";
+                String fulltext = "\n Generated Builds will be sorted by their Score:\n";
                 text.setText(fulltext);
                 // Display loaded Parameters
                 srbg.showParams(false);
@@ -597,6 +610,10 @@ public class SRBG_TabBuild extends JPanel {
      * @throws java.lang.Exception
      */
     private void displayInit(JTable table, int size_perk, int size_char) {
+        // Display Generic Build
+        for (int i = 0; i < srbg.nb_perks_ref; i++) {
+            table.getModel().setValueAt(srbg.perk_generic.getIconImage(size_perk), 0, i);
+        }
         if ((srbg.getBestBuild() != null) && (srbg.getSide().equals(srbg.getBestBuild().getSide()))) {
             // Display Best Build in Table
             int nb = 0;
@@ -607,10 +624,6 @@ public class SRBG_TabBuild extends JPanel {
             // Display Character
             table.getModel().setValueAt(srbg.getCharacter().getIconImage(size_char), 0, 4);
         } else {
-            // Display Generic Build
-            for (int i = 0; i < srbg.nb_perks_ref; i++) {
-                table.getModel().setValueAt(srbg.perk_generic.getIconImage(size_perk), 0, i);
-            }
             // Display Generic Character
             table.getModel().setValueAt(srbg.getCharacterGeneric().getIconImage(size_char), 0, 4);
         }

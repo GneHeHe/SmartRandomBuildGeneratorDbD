@@ -1,6 +1,5 @@
 package dbd;
 
-import java.io.File;
 import java.io.IOException;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
@@ -19,6 +18,8 @@ public class Character implements Comparable<Character> {
     private String name;
     // Side of Character
     private String side;
+    // Status of Character
+    private boolean status;
     // Icon of Character (as String)
     private String icon_string;
     // Icon of Character (as JLabel)
@@ -51,6 +52,7 @@ public class Character implements Comparable<Character> {
         setName(name);
         setIconString(icon);
         setSide(side);
+        setStatus(true);
         try {
             setIconPicture();
         } catch (IOException ex) {
@@ -146,6 +148,27 @@ public class Character implements Comparable<Character> {
         } else {
             System.err.println("\n# ERROR: This side " + side + " is wrong (expected value = 'Killer' or 'Survivor'\n");
             System.exit(0);
+        }
+    }
+
+    /**
+     * Get Character Status
+     *
+     * @return
+     */
+    public boolean getStatus() {
+        return status;
+    }
+
+    /**
+     * Set Character Status
+     *
+     * @param newval
+     */
+    public final void setStatus(boolean newval) {
+        status = newval;
+        if (!status) {
+            System.out.println("# - Character '" + name + "' has been disabled");
         }
     }
 
