@@ -7,12 +7,13 @@ Ace In The Hole	Up The Ante	25
 Adrenaline	Balanced Landing	-50
 Adrenaline	Bite the Bullet	-50
 Adrenaline	Blast Mine	50
+Adrenaline	Boon Shadow Step	50
 Adrenaline	Dead Hard	-50
 Adrenaline	Decisive Strike	25
 Adrenaline	Deliverance	25
 Adrenaline	Head On	-50
 Adrenaline	Hope	100
-Adrenaline	Inner Strength	-50
+Adrenaline	Inner Healing	-50
 Adrenaline	Iron Will	50
 Adrenaline	Left Behind	25
 Adrenaline	Lightweight	50
@@ -26,10 +27,11 @@ Adrenaline	Soul Guard	50
 Adrenaline	Sprint Burst	-50
 Adrenaline	Wake Up!	25
 Aftercare	Bond	-300
+Aftercare	Boon Circle of Healing	-100
 Aftercare	Empathy	-300
 Aftercare	Flashbang	25
 Aftercare	Leader	25
-Aftercare	Second Wind	25
+Aftercare	Renewal	25
 Alert	Any Means Necessary	-300
 Alert	Iron Will	25
 Alert	Premonition	-300
@@ -42,15 +44,15 @@ Appraisal	Detective's Hunch	50
 Appraisal	Pharmacy	25
 Appraisal	Plunderer's Instinct	50
 Autodidact	Bond	50
+Autodidact	Boon Circle of Healing	25
 Autodidact	Botany Knowledge	25
 Autodidact	Desperate Measures	25
 Autodidact	Empathy	50
-Autodidact	Second Wind	25
+Autodidact	Renewal	25
 Autodidact	Solidarity	25
 Autodidact	Spine Chill	50
 Autodidact	We'll Make It	25
-Babysitter	Distortion	-999
-Babysitter	Self-Preservation	-999
+Balanced Landing	Boon Shadow Step	50
 Balanced Landing	Dead Hard	-100
 Balanced Landing	Head On	-100
 Balanced Landing	Lightweight	50
@@ -59,58 +61,95 @@ Balanced Landing	Smash Hit	-100
 Balanced Landing	Sprint Burst	-999
 Balanced Landing	Vigil	100
 Balanced Landing	Windows Of Opportunity	25
-Better Together	Blast Mine	25
-Better Together	Bond	-300
-Better Together	Deja Vu	50
-Better Together	Detective's Hunch	25
-Better Together	Prove Thyself	25
-Better Together	Rookie Spirit	-100
-Better Together	Visionary	25
+Bite the Bullet	Boon Circle of Healing	50
 Bite the Bullet	Botany Knowledge	25
 Bite the Bullet	Desperate Measures	25
-Bite the Bullet	Inner Strength	-100
+Bite the Bullet	Inner Healing	-100
 Bite the Bullet	Iron Will	-100
 Bite the Bullet	No Mither	-999
 Bite the Bullet	Pharmacy	50
+Bite the Bullet	Renewal	-100
 Bite the Bullet	Resilience	25
 Bite the Bullet	Resurgence	25
-Bite the Bullet	Second Wind	-100
 Bite the Bullet	Self-Care	100
 Bite the Bullet	Solidarity	50
 Blast Mine	Bond	25
 Blast Mine	Fast Track	25
 Blast Mine	Premonition	25
 Blast Mine	Prove Thyself	25
+Blast Mine	Red Herring	25
 Blast Mine	Repressed Alliance	50
 Blast Mine	Resilience	25
+Blast Mine	Situational Awareness	25
 Blast Mine	Spine Chill	25
 Boil Over	Breakdown	25
 Boil Over	Flip-Flop	100
 Boil Over	Saboteur	25
+Bond	Boon Circle of Healing	-100
 Bond	Botany Knowledge	25
 Bond	Breakout	50
 Bond	Empathy	-300
 Bond	Flashbang	50
 Bond	For the People	25
-Bond	Inner Strength	-100
+Bond	Inner Healing	-100
 Bond	Iron Will	50
 Bond	Leader	25
 Bond	Mettle Of Man	25
 Bond	Open-Handed	100
 Bond	Prove Thyself	25
-Bond	Second Wind	50
+Bond	Renewal	50
 Bond	Self-Care	-300
+Bond	Situational Awareness	-300
 Bond	We'll Make It	25
+Boon Circle of Healing	Boon Shadow Step	100
+Boon Circle of Healing	Botany Knowledge	50
+Boon Circle of Healing	Breakout	25
+Boon Circle of Healing	Clairvoyance	-300
+Boon Circle of Healing	Counterforce	-300
+Boon Circle of Healing	Desperate Measures	50
+Boon Circle of Healing	Detective's Hunch	100
+Boon Circle of Healing	Empathy	-100
+Boon Circle of Healing	For the People	25
+Boon Circle of Healing	Inner Healing	-100
+Boon Circle of Healing	Iron Will	50
+Boon Circle of Healing	Mettle Of Man	25
+Boon Circle of Healing	No Mither	-999
+Boon Circle of Healing	Pharmacy	-100
+Boon Circle of Healing	Renewal	-100
+Boon Circle of Healing	Resilience	25
+Boon Circle of Healing	Resurgence	-100
+Boon Circle of Healing	Self-Care	-100
+Boon Circle of Healing	Small Game	100
+Boon Circle of Healing	Solidarity	25
+Boon Circle of Healing	We'll Make It	50
+Boon Shadow Step	Clairvoyance	-300
+Boon Shadow Step	Counterforce	-300
+Boon Shadow Step	Dance With Me	-300
+Boon Shadow Step	Dead Hard	25
+Boon Shadow Step	Detective's Hunch	100
+Boon Shadow Step	Distortion	-300
+Boon Shadow Step	Hope	50
+Boon Shadow Step	Iron Will	50
+Boon Shadow Step	Lightweight	-300
+Boon Shadow Step	Lithe	50
+Boon Shadow Step	Lucky Break	-300
+Boon Shadow Step	Off the Record	-300
+Boon Shadow Step	Poised	-300
+Boon Shadow Step	Self-Aware	-100
+Boon Shadow Step	Small Game	100
+Boon Shadow Step	Smash Hit	50
+Boon Shadow Step	Sprint Burst	50
 Borrowed Time	Dead Hard	50
 Borrowed Time	Deliverance	100
+Borrowed Time	Desperate Measures	25
 Borrowed Time	We're Gonna Live Forever	100
 Botany Knowledge	Built to Last	50
 Botany Knowledge	Desperate Measures	50
 Botany Knowledge	Empathy	50
-Botany Knowledge	Inner Strength	-300
+Botany Knowledge	Inner Healing	-300
 Botany Knowledge	No Mither	-999
+Botany Knowledge	Renewal	50
 Botany Knowledge	Resurgence	25
-Botany Knowledge	Second Wind	50
 Botany Knowledge	Self-Care	100
 Botany Knowledge	Solidarity	25
 Botany Knowledge	We'll Make It	50
@@ -134,9 +173,18 @@ Calm Spirit	No Mither	25
 Calm Spirit	Premonition	25
 Calm Spirit	Spine Chill	25
 Calm Spirit	Urban Evasion	25
-Camaraderie	Kindred	25
+Clairvoyance	Counterforce	50
+Clairvoyance	Deja Vu	-300
+Clairvoyance	Detective's Hunch	25
+Clairvoyance	Open-Handed	50
+Clairvoyance	Plunderer's Instinct	-100
+Clairvoyance	Rookie Spirit	-100
+Clairvoyance	Saboteur	-100
+Clairvoyance	Situational Awareness	-100
+Clairvoyance	Small Game	100
+Clairvoyance	Visionary	-300
 Counterforce	Detective's Hunch	-300
-Counterforce	Inner Strength	100
+Counterforce	Inner Healing	100
 Counterforce	Small Game	-300
 Dance With Me	Head On	50
 Dance With Me	Iron Will	25
@@ -159,13 +207,13 @@ Dead Hard	Sprint Burst	-999
 Dead Hard	Unbreakable	50
 Dead Hard	Vigil	100
 Dead Hard	Windows Of Opportunity	25
-Deception	Fixated	25
 Deception	Head On	50
 Deception	Red Herring	-100
+Deception	Self-Aware	25
 Decisive Strike	Deliverance	50
 Decisive Strike	Flip-Flop	25
 Decisive Strike	Head On	50
-Decisive Strike	Inner Strength	25
+Decisive Strike	Inner Healing	25
 Decisive Strike	Object Of Obsession	50
 Decisive Strike	Self-Care	-100
 Decisive Strike	Tenacity	50
@@ -174,6 +222,7 @@ Deja Vu	Detective's Hunch	-300
 Deja Vu	Prove Thyself	50
 Deja Vu	Repressed Alliance	50
 Deja Vu	Rookie Spirit	-300
+Deja Vu	Situational Awareness	50
 Deja Vu	Technician	50
 Deja Vu	Visionary	-999
 Deliverance	Flip-Flop	25
@@ -183,19 +232,21 @@ Deliverance	Slippery Meat	-999
 Deliverance	Tenacity	25
 Deliverance	Unbreakable	25
 Desperate Measures	Empathy	50
+Desperate Measures	Renewal	50
 Desperate Measures	Resurgence	25
-Desperate Measures	Second Wind	50
 Desperate Measures	Self-Care	100
 Desperate Measures	Solidarity	25
 Desperate Measures	We'll Make It	50
-Detective's Hunch	Inner Strength	100
+Detective's Hunch	Inner Healing	100
 Detective's Hunch	Open-Handed	50
 Detective's Hunch	Plunderer's Instinct	-300
 Detective's Hunch	Repressed Alliance	25
 Detective's Hunch	Rookie Spirit	-100
+Detective's Hunch	Situational Awareness	25
 Detective's Hunch	Small Game	-300
 Detective's Hunch	Technician	25
 Detective's Hunch	Visionary	-300
+Distortion	Guardian	-999
 Distortion	Mettle Of Man	-999
 Distortion	Object Of Obsession	-999
 Distortion	Off the Record	-300
@@ -209,28 +260,28 @@ Empathy	For the People	25
 Empathy	Iron Will	50
 Empathy	Leader	25
 Empathy	Mettle Of Man	25
-Empathy	Second Wind	50
+Empathy	Renewal	50
 Empathy	Self-Care	-100
 Empathy	Solidarity	25
 Empathy	We'll Make It	25
 Fast Track	This Is Not Happening	50
-Fixated	Iron Will	-100
-Fixated	Sprint Burst	100
 Flashbang	Head On	50
-Flashbang	Inner Strength	25
+Flashbang	Inner Healing	25
 Flashbang	Quick & Quiet	50
+Flashbang	Saboteur	25
 Flashbang	Unbreakable	25
-Flip-Flop	Power Struggle	100
+Flip-Flop	Power Struggle	200
 Flip-Flop	Saboteur	25
 Flip-Flop	Tenacity	50
 Flip-Flop	Unbreakable	50
-For the People	Inner Strength	25
+For the People	Inner Healing	25
 For the People	Iron Will	50
 For the People	Lucky Break	-300
 For the People	No Mither	-999
 For the People	Resilience	25
 For the People	Self-Care	50
-Head On	Inner Strength	50
+Guardian	Self-Preservation	-999
+Head On	Inner Healing	50
 Head On	Lightweight	50
 Head On	Lithe	-100
 Head On	Quick & Quiet	50
@@ -238,16 +289,16 @@ Head On	Smash Hit	-100
 Head On	Sprint Burst	-999
 Head On	Vigil	50
 Hope	Left Behind	25
-Inner Strength	Iron Will	50
-Inner Strength	Lucky Break	100
-Inner Strength	No Mither	-999
-Inner Strength	Pharmacy	-300
-Inner Strength	Quick & Quiet	50
-Inner Strength	Red Herring	50
-Inner Strength	Resurgence	-100
-Inner Strength	Self-Care	-300
-Inner Strength	Small Game	100
-Inner Strength	Solidarity	-300
+Inner Healing	Iron Will	50
+Inner Healing	Lucky Break	100
+Inner Healing	No Mither	-999
+Inner Healing	Pharmacy	-300
+Inner Healing	Quick & Quiet	50
+Inner Healing	Red Herring	50
+Inner Healing	Resurgence	-100
+Inner Healing	Self-Care	-300
+Inner Healing	Small Game	100
+Inner Healing	Solidarity	-300
 Iron Will	Lightweight	25
 Iron Will	Lucky Break	100
 Iron Will	No Mither	25
@@ -258,10 +309,12 @@ Iron Will	Poised	25
 Iron Will	Premonition	25
 Iron Will	Quick & Quiet	50
 Iron Will	Resilience	100
+Iron Will	Self-Aware	-100
 Iron Will	Self-Care	-50
 Iron Will	Self-Preservation	-300
 Iron Will	Spine Chill	25
 Iron Will	Urban Evasion	50
+Kindred	Kinship	25
 Kindred	Open-Handed	100
 Left Behind	Lightweight	25
 Lightweight	Lithe	50
@@ -274,6 +327,7 @@ Lithe	Sprint Burst	-999
 Lithe	Vigil	100
 Lithe	Windows Of Opportunity	50
 Lucky Break	No Mither	-999
+Lucky Break	Object Of Obsession	-999
 Lucky Break	Poised	-300
 Lucky Break	Quick & Quiet	25
 Lucky Break	Self-Preservation	-300
@@ -304,27 +358,32 @@ Pharmacy	Plunderer's Instinct	50
 Pharmacy	Resurgence	-100
 Pharmacy	Self-Care	-300
 Plunderer's Instinct	Up The Ante	25
+Power Struggle	Smash Hit	25
 Power Struggle	Tenacity	50
 Power Struggle	Unbreakable	25
 Premonition	Spine Chill	-300
 Premonition	Stake Out	25
 Premonition	Urban Evasion	50
+Prove Thyself	Situational Awareness	50
 Prove Thyself	Visionary	50
 Prove Thyself	We're Gonna Live Forever	50
 Quick & Quiet	Red Herring	50
 Quick & Quiet	Resilience	50
 Quick & Quiet	Windows Of Opportunity	50
+Renewal	Resurgence	-100
+Renewal	We'll Make It	50
 Repressed Alliance	Rookie Spirit	100
 Repressed Alliance	Visionary	50
 Resilience	Spine Chill	100
-Resurgence	Second Wind	-100
 Resurgence	Self-Care	100
 Resurgence	Solidarity	50
+Rookie Spirit	Situational Awareness	-100
 Rookie Spirit	Visionary	-300
 Saboteur	Tenacity	25
 Saboteur	Unbreakable	50
-Second Wind	We'll Make It	50
+Self-Aware	Sprint Burst	100
 Self-Care	Solidarity	-300
+Situational Awareness	Visionary	25
 Slippery Meat	Up The Ante	100
 Smash Hit	Sprint Burst	-999
 Soul Guard	Unbreakable	50
@@ -337,6 +396,16 @@ Technician	Visionary	50
 Tenacity	Unbreakable	50
 We'll Make It	We're Gonna Live Forever	25
 ############# Killers #############
+Agitation	Forced Penance	100
+Agitation	Franklin's Demise	25
+Agitation	Hangman's Trick	50
+Agitation	Iron Grasp	100
+Agitation	Mad Grit	100
+Agitation	Make Your Choice	50
+Agitation	Monstrous Shrine	25
+Agitation	Scourge Hook Gift Of Pain	100
+Agitation	Starstruck	100
+Agitation	Territorial Imperative	50
 A Nurse's Calling	Coulrophobia	25
 A Nurse's Calling	Dark Devotion	25
 A Nurse's Calling	Deathbound	-100
@@ -348,17 +417,8 @@ A Nurse's Calling	Monitor & Abuse	50
 A Nurse's Calling	Sloppy Butcher	50
 A Nurse's Calling	Stridor	-100
 A Nurse's Calling	Trail of Torment	50
-Agitation	Forced Penance	100
-Agitation	Franklin's Demise	25
-Agitation	Hangman's Trick	50
-Agitation	Iron Grasp	100
-Agitation	Mad Grit	100
-Agitation	Make Your Choice	50
-Agitation	Monstrous Shrine	25
-Agitation	Starstruck	100
-Agitation	Territorial Imperative	50
 Bamboozle	Brutal Strength	50
-Bamboozle	Cruel Limits	-100
+Bamboozle	Claustrophobia	-100
 Bamboozle	Enduring	25
 Bamboozle	Fire Up	50
 Bamboozle	Hex Crowd Control	-300
@@ -367,45 +427,45 @@ Barbecue & Chilli	Blood Echo	50
 Barbecue & Chilli	Dead Man's Switch	50
 Barbecue & Chilli	Deerstalker	-300
 Barbecue & Chilli	Eruption	25
+Barbecue & Chilli	Fearmonger	50
 Barbecue & Chilli	Hex Ruin	50
 Barbecue & Chilli	Iron Maiden	25
-Barbecue & Chilli	Mindbreaker	50
 Barbecue & Chilli	Pop Goes The Weasel	50
 Barbecue & Chilli	Rancor	-100
-Barbecue & Chilli	Starstruck	25
 Barbecue & Chilli	Thrilling Tremors	-300
 Beast Of Prey	I'm All Ears	25
 Bitter Murmur	Eruption	-50
+Bitter Murmur	Fearmonger	50
 Bitter Murmur	Hex No One Escapes Death	100
 Bitter Murmur	Hex Undying	-50
-Bitter Murmur	Mindbreaker	50
 Bitter Murmur	No Way Out	25
 Bitter Murmur	Rancor	-100
-Bitter Murmur	Starstruck	25
 Blood Echo	Bloodhound	25
-Blood Echo	Mindbreaker	-300
+Blood Echo	Fearmonger	-300
 Blood Echo	Sloppy Butcher	50
+Bloodhound	Sloppy Butcher	25
 Blood Warden	Deerstalker	50
 Blood Warden	Hex No One Escapes Death	100
 Blood Warden	No Way Out	50
 Blood Warden	Remember Me	50
-Bloodhound	Sloppy Butcher	25
 Brutal Strength	Dragon's Grip	50
 Brutal Strength	Enduring	50
-Brutal Strength	Eruption	50
+Brutal Strength	Eruption	25
 Brutal Strength	Fire Up	50
 Brutal Strength	Oppression	25
 Brutal Strength	Overcharge	50
 Brutal Strength	Pop Goes The Weasel	50
 Brutal Strength	Surveillance	25
+Claustrophobia	Tinkerer	50
+Corrupt Intervention	Deadlock	-50
 Corrupt Intervention	Discordance	-50
 Corrupt Intervention	Dying Light	-50
 Corrupt Intervention	Hex Devour Hope	50
 Corrupt Intervention	Hex Huntress Lullaby	25
 Corrupt Intervention	Hex Ruin	-100
+Corrupt Intervention	Jolt	-50
 Corrupt Intervention	Lethal Pursuer	-50
 Corrupt Intervention	Pop Goes The Weasel	-50
-Corrupt Intervention	Surge	-50
 Corrupt Intervention	Whispers	50
 Coulrophobia	Distressing	100
 Coulrophobia	Hysteria	-50
@@ -414,12 +474,21 @@ Coulrophobia	Trail of Torment	-300
 Coup De Grace	Hex No One Escapes Death	25
 Coup De Grace	Make Your Choice	25
 Coup De Grace	Rancor	25
-Coup De Grace	Starstruck	25
-Cruel Limits	Tinkerer	50
 Dark Devotion	Monitor & Abuse	-300
 Dark Devotion	Nemesis	25
 Dark Devotion	Save The Best For Last	-300
 Dark Devotion	Tinkerer	-300
+Deadlock	Dying Light	-50
+Deadlock	Eruption	-50
+Deadlock	Hex Ruin	-50
+Deadlock	Jolt	-50
+Deadlock	Oppression	-50
+Deadlock	Overcharge	-50
+Deadlock	Pop Goes The Weasel	50
+Deadlock	Surveillance	-50
+Deadlock	Thrilling Tremors	-50
+Deadlock	Trail of Torment	-50
+Dead Man's Switch	Deadlock	-50
 Dead Man's Switch	Discordance	50
 Dead Man's Switch	Eruption	-50
 Dead Man's Switch	Furtive Chase	100
@@ -439,9 +508,9 @@ Deerstalker	Infectious Fright	50
 Deerstalker	Knock Out	50
 Deerstalker	Sloppy Butcher	25
 Discordance	Eruption	25
+Discordance	Fearmonger	50
 Discordance	Hex Ruin	50
 Discordance	Lethal Pursuer	-50
-Discordance	Mindbreaker	50
 Discordance	Monitor & Abuse	25
 Discordance	Save The Best For Last	50
 Discordance	Surveillance	-100
@@ -455,33 +524,42 @@ Distressing	Insidious	-300
 Distressing	Lethal Pursuer	-300
 Distressing	Monitor & Abuse	-999
 Distressing	Overwhelming Presence	25
-Distressing	Starstruck	100
+Distressing	Starstruck	50
 Distressing	Trail of Torment	-999
 Distressing	Unnerving Presence	50
 Dragon's Grip	Eruption	25
 Dragon's Grip	Hex Ruin	-999
 Dragon's Grip	Insidious	50
+Dragon's Grip	Jolt	-999
 Dragon's Grip	Overcharge	50
 Dragon's Grip	Pop Goes The Weasel	50
-Dragon's Grip	Surge	-999
 Dragon's Grip	Surveillance	-100
 Dragon's Grip	Trail of Torment	100
 Dying Light	Nemesis	-300
 Dying Light	Pop Goes The Weasel	-50
 Dying Light	Save The Best For Last	25
-Dying Light	Sloppy Butcher	-50
+Dying Light	Sloppy Butcher	-100
 Enduring	Nemesis	25
 Enduring	Spirit Fury	200
-Eruption	Fire Up	50
+Eruption	Fire Up	25
 Eruption	Hex Ruin	-300
+Eruption	Jolt	-50
 Eruption	Oppression	25
 Eruption	Overcharge	25
-Eruption	Pop Goes The Weasel	50
-Eruption	Surge	-50
+Eruption	Pop Goes The Weasel	25
 Eruption	Surveillance	-50
-Eruption	Thrilling Tremors	100
+Eruption	Thrilling Tremors	50
 Eruption	Tinkerer	25
-Eruption	Trail of Torment	50
+Eruption	Trail of Torment	25
+Fearmonger	Gearhead	50
+Fearmonger	Jolt	50
+Fearmonger	Oppression	50
+Fearmonger	Overcharge	50
+Fearmonger	Surveillance	50
+Fearmonger	Thrilling Tremors	50
+Fearmonger	Tinkerer	-300
+Fearmonger	Tinkerer	50
+Fearmonger	Trail of Torment	50
 Forced Penance	Hangman's Trick	50
 Forced Penance	Mad Grit	50
 Forced Penance	Thanatophobia	50
@@ -495,10 +573,9 @@ Furtive Chase	Play With Your Food	50
 Furtive Chase	Rancor	100
 Furtive Chase	Save The Best For Last	-300
 Gearhead	Hex Ruin	50
-Gearhead	Mindbreaker	50
 Hangman's Trick	Iron Grasp	50
 Hangman's Trick	Mad Grit	50
-Hangman's Trick	Starstruck	50
+Hangman's Trick	Starstruck	25
 Hex Blood Favour	Hex Undying	50
 Hex Devour Hope	Hex Haunted Ground	50
 Hex Devour Hope	Hex Huntress Lullaby	-100
@@ -507,9 +584,9 @@ Hex Devour Hope	Hex Ruin	-100
 Hex Devour Hope	Hex The Third Seal	-100
 Hex Devour Hope	Hex Thrill Of The Hunt	50
 Hex Devour Hope	Hex Undying	50
+Hex Devour Hope	Jolt	25
 Hex Devour Hope	Make Your Choice	-100
 Hex Devour Hope	Pop Goes The Weasel	50
-Hex Devour Hope	Surge	25
 Hex Devour Hope	Thanatophobia	25
 Hex Devour Hope	Whispers	25
 Hex Haunted Ground	Hex Huntress Lullaby	25
@@ -518,7 +595,8 @@ Hex Haunted Ground	Hex Ruin	50
 Hex Haunted Ground	Hex The Third Seal	50
 Hex Haunted Ground	Hex Thrill Of The Hunt	25
 Hex Haunted Ground	Hex Undying	50
-Hex Haunted Ground	Surge	25
+Hex Haunted Ground	Iron Maiden	25
+Hex Haunted Ground	Jolt	25
 Hex Huntress Lullaby	Hex Retribution	50
 Hex Huntress Lullaby	Hex Thrill Of The Hunt	25
 Hex Huntress Lullaby	Hex Undying	100
@@ -530,12 +608,15 @@ Hex No One Escapes Death	Hex Thrill Of The Hunt	50
 Hex No One Escapes Death	Hex Undying	25
 Hex No One Escapes Death	Infectious Fright	50
 Hex No One Escapes Death	Insidious	100
+Hex No One Escapes Death	Jolt	-50
 Hex No One Escapes Death	No Way Out	100
 Hex No One Escapes Death	Rancor	-100
 Hex No One Escapes Death	Remember Me	100
-Hex No One Escapes Death	Surge	-50
 Hex No One Escapes Death	Thanatophobia	25
 Hex No One Escapes Death	Whispers	50
+Hex Plaything	Hex Retribution	50
+Hex Plaything	Hex The Third Seal	50
+Hex Plaything	Hex Thrill Of The Hunt	50
 Hex Retribution	Hex Ruin	50
 Hex Retribution	Hex The Third Seal	50
 Hex Retribution	Hex Thrill Of The Hunt	25
@@ -544,11 +625,11 @@ Hex Retribution	Make Your Choice	25
 Hex Ruin	Hex The Third Seal	-100
 Hex Ruin	Hex Thrill Of The Hunt	50
 Hex Ruin	Hex Undying	50
+Hex Ruin	Jolt	-50
 Hex Ruin	Oppression	-300
 Hex Ruin	Overcharge	-300
 Hex Ruin	Pop Goes The Weasel	-300
 Hex Ruin	Sloppy Butcher	25
-Hex Ruin	Surge	-50
 Hex Ruin	Surveillance	50
 Hex Ruin	Thanatophobia	25
 Hex Ruin	Thrilling Tremors	50
@@ -563,42 +644,44 @@ Hex Undying	Pop Goes The Weasel	-100
 Hex Undying	Rancor	-50
 Hoarder	Lethal Pursuer	-50
 Hysteria	Sloppy Butcher	50
+Infectious Fright	Jolt	50
 Infectious Fright	Knock Out	50
 Infectious Fright	Make Your Choice	50
 Infectious Fright	Monitor & Abuse	100
 Infectious Fright	No Way Out	50
 Infectious Fright	Save The Best For Last	50
 Infectious Fright	Sloppy Butcher	25
-Infectious Fright	Starstruck	100
-Infectious Fright	Surge	50
+Infectious Fright	Starstruck	50
 Infectious Fright	Tinkerer	-100
 Infectious Fright	Trail of Torment	-300
 Infectious Fright	Whispers	-50
+Insidious	Tinkerer	-300
 Insidious	Trail of Torment	-999
 Iron Grasp	Mad Grit	50
 Iron Grasp	Monstrous Shrine	25
-Iron Grasp	Starstruck	25
+Iron Grasp	Scourge Hook Gift Of Pain	50
+Iron Grasp	Starstruck	50
+Iron Maiden	Rancor	50
 Iron Maiden	Starstruck	25
+Jolt	Make Your Choice	25
+Jolt	Oppression	-300
+Jolt	Overcharge	-300
+Jolt	Pop Goes The Weasel	-50
+Jolt	Save The Best For Last	25
+Jolt	Surveillance	50
+Jolt	Thrilling Tremors	50
 Lethal Pursuer	Monitor & Abuse	50
 Lethal Pursuer	Spies From The Shadows	-50
 Lethal Pursuer	Territorial Imperative	-50
 Lethal Pursuer	Whispers	-50
 Mad Grit	Monstrous Shrine	25
 Mad Grit	Save The Best For Last	50
+Mad Grit	Scourge Hook Gift Of Pain	50
 Mad Grit	Starstruck	50
 Mad Grit	Unrelenting	-999
-Make Your Choice	Surge	25
 Make Your Choice	Territorial Imperative	50
 Make Your Choice	Trail of Torment	25
 Make Your Choice	Whispers	25
-Mindbreaker	Oppression	50
-Mindbreaker	Overcharge	50
-Mindbreaker	Surge	50
-Mindbreaker	Surveillance	50
-Mindbreaker	Thrilling Tremors	50
-Mindbreaker	Tinkerer	-300
-Mindbreaker	Tinkerer	50
-Mindbreaker	Trail of Torment	50
 Monitor & Abuse	Shadowborn	-999
 Monitor & Abuse	Starstruck	-300
 Monitor & Abuse	Trail of Torment	-300
@@ -610,28 +693,22 @@ Nemesis	Save The Best For Last	-300
 Nemesis	Trail of Torment	-300
 No Way Out	Remember Me	50
 Oppression	Pop Goes The Weasel	50
-Oppression	Surge	-300
 Oppression	Surveillance	50
 Overcharge	Pop Goes The Weasel	50
-Overcharge	Surge	-300
 Overcharge	Surveillance	50
 Overcharge	Unnerving Presence	100
 Overwhelming Presence	Trail of Torment	-300
 Play With Your Food	Save The Best For Last	-50
-Pop Goes The Weasel	Surge	-50
 Pop Goes The Weasel	Surveillance	50
 Pop Goes The Weasel	Thrilling Tremors	50
 Pop Goes The Weasel	Trail of Torment	25
 Rancor	Remember Me	100
 Rancor	Starstruck	25
 Remember Me	Save The Best For Last	-300
-Save The Best For Last	Surge	25
 Spies From The Shadows	Whispers	-300
-Starstruck	Thrilling Tremors	100
+Starstruck	Thrilling Tremors	50
 Starstruck	Tinkerer	-300
 Stridor	Whispers	-300
-Surge	Surveillance	50
-Surge	Thrilling Tremors	50
 Surveillance	Trail of Torment	-100
 Tinkerer	Trail of Torment	-300
 Trail of Torment	Unnerving Presence	-300

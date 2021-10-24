@@ -1,50 +1,25 @@
-Build	Killer	Clown	Bamboozle	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel
-Build	Killer	Clown	Corrupt Intervention	Pop Goes The Weasel	Starstruck	Thrilling Tremors
-Build	Killer	Deathslinger	Barbecue & Chilli	Corrupt Intervention	Monitor & Abuse	Pop Goes The Weasel
-Build	Killer	Deathslinger	Corrupt Intervention	Pop Goes The Weasel	Starstruck	Thrilling Tremors
-Build	Killer	Demogorgon	Barbecue & Chilli	Corrupt Intervention	Infectious Fright	Save The Best For Last
-Build	Killer	Demogorgon	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last
-Build	Killer	Doctor	Corrupt Intervention	Distressing	Pop Goes The Weasel	Starstruck
-Build	Killer	Doctor	Corrupt Intervention	Pop Goes The Weasel	Starstruck	Thrilling Tremors
-Build	Killer	Freddy	Corrupt Intervention	Pop Goes The Weasel	Thrilling Tremors	Tinkerer
-Build	Killer	Freddy	Discordance	Pop Goes The Weasel	Sloppy Butcher	Thrilling Tremors
-Build	Killer	Ghostface	A Nurse's Calling	Barbecue & Chilli	Corrupt Intervention	Sloppy Butcher
-Build	Killer	Ghostface	Barbecue & Chilli	Corrupt Intervention	Surge	Surveillance
-Build	Killer	Hag	A Nurse's Calling	Corrupt Intervention	Monitor & Abuse	Sloppy Butcher
+Build	Killer	Trapper	Corrupt Intervention	Jolt	Save The Best For Last	Whispers
+Build	Killer	Wraith	Barbecue & Chilli	Corrupt Intervention	Sloppy Butcher	Whispers
+Build	Killer	Hillbilly	Bamboozle	Barbecue & Chilli	Corrupt Intervention	Whispers
+Build	Killer	Nurse Sally	Barbecue & Chilli	Corrupt Intervention	Infectious Fright	Lethal Pursuer
+Build	Killer	Huntress Anna	Barbecue & Chilli	Corrupt Intervention	Deadlock	Whispers
+Build	Killer	Myers	Barbecue & Chilli	Corrupt Intervention	Jolt	Monitor & Abuse
 Build	Killer	Hag	Corrupt Intervention	Monitor & Abuse	Save The Best For Last	Sloppy Butcher
-Build	Killer	Hillbilly	Bamboozle	Barbecue & Chilli	Corrupt Intervention	Enduring
-Build	Killer	Hillbilly	Barbecue & Chilli	Corrupt Intervention	Enduring	Spirit Fury
-Build	Killer	Huntress Anna	A Nurse's Calling	Barbecue & Chilli	Corrupt Intervention	Whispers
-Build	Killer	Huntress Anna	Barbecue & Chilli	Corrupt Intervention	Iron Maiden	Whispers
-Build	Killer	Leatherface	Bamboozle	Corrupt Intervention	Pop Goes The Weasel	Tinkerer
-Build	Killer	Leatherface	Bamboozle	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel
-Build	Killer	Legion	Barbecue & Chilli	Discordance	Hex Ruin	Hex Undying
-Build	Killer	Legion	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Thanatophobia
-Build	Killer	Myers	Bamboozle	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel
-Build	Killer	Myers	Bamboozle	Corrupt Intervention	Pop Goes The Weasel	Tinkerer
-Build	Killer	Nurse Sally	Barbecue & Chilli	Corrupt Intervention	I'm All Ears	Infectious Fright
-Build	Killer	Nurse Sally	Corrupt Intervention	Infectious Fright	Starstruck	Thrilling Tremors
-Build	Killer	Pig	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last
-Build	Killer	Pig	Barbecue & Chilli	Corrupt Intervention	Surge	Surveillance
-Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Infectious Fright	Pop Goes The Weasel
-Build	Killer	Plague	Discordance	Hex Ruin	Hex Undying	Infectious Fright
-Build	Killer	Pyramid Head	Corrupt Intervention	I'm All Ears	Pop Goes The Weasel	Thrilling Tremors
-Build	Killer	Pyramid Head	Corrupt Intervention	I'm All Ears	Sloppy Butcher	Tinkerer
-Build	Killer	Spirit Rin	A Nurse's Calling	Barbecue & Chilli	Corrupt Intervention	Sloppy Butcher
-Build	Killer	Spirit Rin	Barbecue & Chilli	Corrupt Intervention	Sloppy Butcher	Stridor
-Build	Killer	The Blight	Discordance	Hex Ruin	Hex Undying	Tinkerer
-Build	Killer	The Blight	Barbecue & Chilli	Corrupt Intervention	Discordance	Pop Goes The Weasel
-Build	Killer	The Nemesis	Tinkerer	Hex Ruin	Hex Undying	Lethal Pursuer
-Build	Killer	The Nemesis	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last
-Build	Killer	The Oni	Barbecue & Chilli	Corrupt Intervention	Infectious Fright	Monitor & Abuse
-Build	Killer	The Oni	Barbecue & Chilli	Corrupt Intervention	Infectious Fright	Pop Goes The Weasel
-Build	Killer	The Trickster	Bamboozle	Barbecue & Chilli	Corrupt Intervention	Monitor & Abuse
-Build	Killer	The Trickster	Bamboozle	Corrupt Intervention	Hex No One Escapes Death	Monitor & Abuse
-Build	Killer	The Twins	Barbecue & Chilli	Corrupt Intervention	Pop Goes The Weasel	Sloppy Butcher
-Build	Killer	The Twins	Barbecue & Chilli	Discordance	Hex Ruin	Hex Undying
-Build	Killer	Trapper	Corrupt Intervention	Pop Goes The Weasel	Save The Best For Last	Thrilling Tremors
-Build	Killer	Trapper	Corrupt Intervention	Pop Goes The Weasel	Starstruck	Thrilling Tremors
-Build	Killer	Wraith	A Nurse's Calling	Barbecue & Chilli	Corrupt Intervention	Sloppy Butcher
-Build	Killer	Wraith	Barbecue & Chilli	Discordance	Hex Ruin	Hex Undying
-Build	Survivor	GenSurv	Bond	Borrowed Time	Iron Will	Sprint Burst
-Build	Survivor	GenSurv	Bond	Borrowed Time	Counterforce	Iron Will
+Build	Killer	Doctor	Barbecue & Chilli	Corrupt Intervention	Jolt	Whispers
+Build	Killer	Leatherface	Bamboozle	Barbecue & Chilli	Corrupt Intervention	Monitor & Abuse
+Build	Killer	Freddy	Corrupt Intervention	Jolt	Thrilling Tremors	Tinkerer
+Build	Killer	Pig	Barbecue & Chilli	Corrupt Intervention	Save The Best For Last	Whispers
+Build	Killer	Clown	Barbecue & Chilli	Brutal Strength	Corrupt Intervention	Jolt
+Build	Killer	Spirit Rin	Barbecue & Chilli	Corrupt Intervention	Lethal Pursuer	Sloppy Butcher
+Build	Killer	Legion	Barbecue & Chilli	Corrupt Intervention	Discordance	Thanatophobia
+Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Infectious Fright	Thanatophobia
+Build	Killer	Ghostface	Barbecue & Chilli	Corrupt Intervention	Jolt	Surveillance
+Build	Killer	Demogorgon	Barbecue & Chilli	Corrupt Intervention	Jolt	Save The Best For Last
+Build	Killer	Oni	Barbecue & Chilli	Corrupt Intervention	Infectious Fright	Monitor & Abuse
+Build	Killer	Deathslinger	Barbecue & Chilli	Corrupt Intervention	Jolt	Save The Best For Last
+Build	Killer	Pyramid Head	Corrupt Intervention	I'm All Ears	Infectious Fright	Sloppy Butcher
+Build	Killer	Blight	Barbecue & Chilli	Corrupt Intervention	Infectious Fright	Lethal Pursuer
+Build	Killer	Twins	Barbecue & Chilli	Corrupt Intervention	Sloppy Butcher	Thanatophobia
+Build	Killer	Trickster	Bamboozle	Barbecue & Chilli	Corrupt Intervention	Monitor & Abuse
+Build	Killer	Nemesis	Corrupt Intervention	Discordance	Jolt	Save The Best For Last
+Build	Killer	Cenobite	Barbecue & Chilli	Corrupt Intervention	Franklin's Demise	Hoarder

@@ -148,7 +148,7 @@ public class SRBG {
     private final String s_cons = "data/perk_cons.txt";
     private final String s_cons_custom = "perk_cons_custom.txt";
     // Version
-    public final double VERSION = 2.8;
+    public final double VERSION = 2.9;
     // Title
     public final String TITLE = "Smart Random Build Generator for Dead by Daylight ( SRBG " + VERSION + " )";
     // GitHub Data
@@ -1264,44 +1264,46 @@ public class SRBG {
             String line = "";
             line = br.readLine();
             while (line != null) {
-                // Split Line according to Spacer
-                String tab[] = line.split(spacer);
-                if (tab.length == 5) {
-                    // Get Data (5 Fields are required)
-                    String myname = tab[0];
-                    String myside = tab[1];
-                    if (!((myside.equals(s_side_surv)) || (myside.equals(s_side_killer)))) {
-                        System.err.println("\n# ERROR: wrong side ('" + myside + "') => Exit [ wrong line : >" + line + "< from input file ]\n");
-                        System.exit(0);
-                    }
-                    String myicon = tab[2];
-                    int myweight = Integer.parseInt(tab[3]);
-                    String myparent = tab[4];
-                    // Check Weight Value
-                    if (myweight > weight_perk_max) {
-                        myweight = weight_perk_max;
-                    } else if (myweight < weight_perk_min) {
-                        myweight = weight_perk_min;
-                    }
-                    // Check Parent
-                    if (!l_char_all_string.contains(myparent)) {
-                        System.err.println("\n# ERROR: wrong parent ('" + myparent + "') for perk '" + myname + "' => Exit [ wrong line : >" + line + "< from input file ]\n");
-                        System.exit(0);
-                    }
-                    // Create Perk Object
-                    p = new Perk(myname, myweight, myside, myicon, myparent, retrieveCharacter(myparent).getIconString());
-                    // Add Perk to the List
-                    l_perks_all.add(p);
-                    // Add Perk Name to Perk List
-                    l_perks_all_string.add(myname);
-                    if (myside.equals(s_side_surv)) {
-                        l_perks_survivor.add(myname);
+                if ((!line.startsWith("#")) && (line.length() > 0)) {
+                    // Split Line according to Spacer
+                    String tab[] = line.split(spacer);
+                    if (tab.length == 5) {
+                        // Get Data (5 Fields are required)
+                        String myname = tab[0];
+                        String myside = tab[1];
+                        if (!((myside.equals(s_side_surv)) || (myside.equals(s_side_killer)))) {
+                            System.err.println("\n# ERROR: wrong side ('" + myside + "') => Exit [ wrong line : >" + line + "< from input file ]\n");
+                            System.exit(0);
+                        }
+                        String myicon = tab[2];
+                        int myweight = Integer.parseInt(tab[3]);
+                        String myparent = tab[4];
+                        // Check Weight Value
+                        if (myweight > weight_perk_max) {
+                            myweight = weight_perk_max;
+                        } else if (myweight < weight_perk_min) {
+                            myweight = weight_perk_min;
+                        }
+                        // Check Parent
+                        if (!l_char_all_string.contains(myparent)) {
+                            System.err.println("\n# ERROR: wrong parent ('" + myparent + "') for perk '" + myname + "' => Exit [ wrong line : >" + line + "< from input file ]\n");
+                            System.exit(0);
+                        }
+                        // Create Perk Object
+                        p = new Perk(myname, myweight, myside, myicon, myparent, retrieveCharacter(myparent).getIconString());
+                        // Add Perk to the List
+                        l_perks_all.add(p);
+                        // Add Perk Name to Perk List
+                        l_perks_all_string.add(myname);
+                        if (myside.equals(s_side_surv)) {
+                            l_perks_survivor.add(myname);
+                        } else {
+                            l_perks_killer.add(myname);
+                        }
                     } else {
-                        l_perks_killer.add(myname);
+                        System.err.println("\n# ERROR: corrupted weight file => Exit [ wrong line : >" + line + "< from input file ]\n");
+                        System.exit(0);
                     }
-                } else {
-                    System.err.println("\n# ERROR: corrupted weight file => Exit [ wrong line : >" + line + "< from input file ]\n");
-                    System.exit(0);
                 }
                 line = br.readLine();
             }

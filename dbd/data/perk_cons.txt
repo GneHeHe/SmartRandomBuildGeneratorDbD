@@ -2,14 +2,15 @@ SURVIV_1	Healing	Aftercare
 SURVIV_1	Healing	Autodidact
 SURVIV_1	Healing	Bite the Bullet
 SURVIV_1	Healing	Bond
+SURVIV_1	Healing	Boon Circle of Healing
 SURVIV_1	Healing	Botany Knowledge
 SURVIV_1	Healing	Desperate Measures
 SURVIV_1	Healing	Empathy
 SURVIV_1	Healing	For the People
-SURVIV_1	Healing	Inner Strength
+SURVIV_1	Healing	Inner Healing
 SURVIV_1	Healing	Pharmacy
+SURVIV_1	Healing	Renewal
 SURVIV_1	Healing	Resurgence
-SURVIV_1	Healing	Second Wind
 SURVIV_1	Healing	Self-Care
 SURVIV_1	Healing	Solidarity
 SURVIV_1	Healing	We'll Make It
@@ -29,6 +30,7 @@ SURVIV_2	Survival	Lucky Break
 SURVIV_2	Survival	Mettle Of Man
 SURVIV_2	Survival	Power Struggle
 SURVIV_2	Survival	Premonition
+SURVIV_2	Survival	Self-Aware
 SURVIV_2	Survival	Self-Preservation
 SURVIV_2	Survival	Soul Guard
 SURVIV_2	Survival	Spine Chill
@@ -36,6 +38,7 @@ SURVIV_2	Survival	Tenacity
 SURVIV_2	Survival	Unbreakable
 SURVIV_2	Survival	Wake Up!
 SURVIV_3	Chase	Balanced Landing
+SURVIV_3	Chase	Boon Shadow Step
 SURVIV_3	Chase	Dance With Me
 SURVIV_3	Chase	Dead Hard
 SURVIV_3	Chase	Deception
@@ -48,11 +51,12 @@ SURVIV_3	Chase	Smash Hit
 SURVIV_3	Chase	Sprint Burst
 SURVIV_3	Chase	Windows Of Opportunity
 SURVIV_4	ShowAura	Alert
-SURVIV_4	ShowAura	Babysitter
+SURVIV_4	ShowAura	Clairvoyance
 SURVIV_4	ShowAura	Counterforce
 SURVIV_4	ShowAura	Dark Sense
 SURVIV_4	ShowAura	Deja Vu
 SURVIV_4	ShowAura	Detective's Hunch
+SURVIV_4	ShowAura	Guardian
 SURVIV_4	ShowAura	Kindred
 SURVIV_4	ShowAura	Object Of Obsession
 SURVIV_4	ShowAura	Plunderer's Instinct
@@ -61,14 +65,17 @@ SURVIV_4	ShowAura	Small Game
 SURVIV_4	ShowAura	Visionary
 KILLER_1	SlowDown	Corrupt Intervention
 KILLER_1	SlowDown	Dead Man's Switch
+KILLER_1	SlowDown	Deadlock
 KILLER_1	SlowDown	Dying Light
 KILLER_1	SlowDown	Eruption
+KILLER_1	SlowDown	Hex Plaything
 KILLER_1	SlowDown	Hex Ruin
+KILLER_1	SlowDown	Jolt
 KILLER_1	SlowDown	Oppression
 KILLER_1	SlowDown	Overcharge
 KILLER_1	SlowDown	Pop Goes The Weasel
+KILLER_1	SlowDown	Scourge Hook Gift Of Pain
 KILLER_1	SlowDown	Sloppy Butcher
-KILLER_1	SlowDown	Surge
 KILLER_1	SlowDown	Thanatophobia
 KILLER_2	Chase	Bamboozle
 KILLER_2	Chase	Brutal Strength
