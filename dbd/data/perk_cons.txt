@@ -15,6 +15,7 @@ SURVIV_1	Healing	Self-Care
 SURVIV_1	Healing	Solidarity
 SURVIV_1	Healing	We'll Make It
 SURVIV_2	Survival	Adrenaline
+SURVIV_2	Survival	Boon Exponential
 SURVIV_2	Survival	Borrowed Time
 SURVIV_2	Survival	Breakdown
 SURVIV_2	Survival	Decisive Strike
@@ -45,6 +46,7 @@ SURVIV_3	Chase	Deception
 SURVIV_3	Chase	Diversion
 SURVIV_3	Chase	Lightweight
 SURVIV_3	Chase	Lithe
+SURVIV_3	Chase	Overcome
 SURVIV_3	Chase	Poised
 SURVIV_3	Chase	Quick & Quiet
 SURVIV_3	Chase	Smash Hit
@@ -68,6 +70,7 @@ KILLER_1	SlowDown	Dead Man's Switch
 KILLER_1	SlowDown	Deadlock
 KILLER_1	SlowDown	Dying Light
 KILLER_1	SlowDown	Eruption
+KILLER_1	SlowDown	Grim Embrace
 KILLER_1	SlowDown	Hex Plaything
 KILLER_1	SlowDown	Hex Ruin
 KILLER_1	SlowDown	Jolt
@@ -75,6 +78,7 @@ KILLER_1	SlowDown	Oppression
 KILLER_1	SlowDown	Overcharge
 KILLER_1	SlowDown	Pop Goes The Weasel
 KILLER_1	SlowDown	Scourge Hook Gift Of Pain
+KILLER_1	SlowDown	Scourge Hook Pain Resonance
 KILLER_1	SlowDown	Sloppy Butcher
 KILLER_1	SlowDown	Thanatophobia
 KILLER_2	Chase	Bamboozle

@@ -26,6 +26,7 @@ Yun-Jin	Survivor	S25_charSelect_portrait.jpg
 Jill	Survivor	S26_charSelect_portrait.jpg
 Leon	Survivor	S27_charSelect_portrait.jpg
 Mikaela	Survivor	S28_charSelect_portrait.jpg
+Jonah	Survivor	S29_charSelect_portrait.jpg
 Trapper	Killer	K01_charSelect_portrait.jpg
 Wraith	Killer	K02_charSelect_portrait.jpg
 Hillbilly	Killer	K03_charSelect_portrait.jpg
@@ -51,3 +52,4 @@ Twins	Killer	K22_charSelect_portrait.jpg
 Trickster	Killer	K23_charSelect_portrait.jpg
 Nemesis	Killer	K24_charSelect_portrait.jpg
 Cenobite	Killer	K25_charSelect_portrait.jpg
+Artist	Killer	K26_charSelect_portrait.jpg

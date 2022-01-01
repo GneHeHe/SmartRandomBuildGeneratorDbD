@@ -12,7 +12,8 @@ Blast Mine	Survivor	iconPerks_BlastMine.png	150	Jill
 Blood Pact	Survivor	iconPerks_BloodPact.png	100	Cheryl
 Boil Over	Survivor	iconPerks_boilOver.png	50	Kate
 Bond	Survivor	iconPerks_bond.png	200	Dwight
-Boon Circle of Healing	Survivor	iconPerks_BoonCircleOfHealing.png	150	Mikaela
+Boon Circle of Healing	Survivor	iconPerks_BoonCircleOfHealing.png	200	Mikaela
+Boon Exponential	Survivor	iconPerks_BoonExponential.png	150	Jonah
 Boon Shadow Step	Survivor	iconPerks_BoonShadowStep.png	150	Mikaela
 Borrowed Time	Survivor	iconPerks_borrowedTime.png	200	Bill Overbeck
 Botany Knowledge	Survivor	iconPerks_botanyKnowledge.png	100	Claudette
@@ -22,6 +23,7 @@ Buckle Up	Survivor	iconPerks_buckleUp.png	10	Ash
 Built to Last	Survivor	iconPerks_BuiltToLast.png	150	Felix
 Calm Spirit	Survivor	iconPerks_calmSpirit.png	100	Jake
 Clairvoyance	Survivor	iconPerks_Clairvoyance.png	100	Mikaela
+Corrective Action	Survivor	iconPerks_CorrectiveAction.png	100	Jonah
 Counterforce	Survivor	iconPerks_Counterforce.png	150	Jill
 Dance With Me	Survivor	iconPerks_danceWithMe.png	100	Kate
 Dark Sense	Survivor	iconPerks_darkSense.png	50	GenSurv
@@ -57,8 +59,9 @@ No One Left Behind	Survivor	iconPerks_noOneLeftBehind.png	25	GenSurv
 Object Of Obsession	Survivor	iconPerks_objectOfObsession.png	150	Laurie
 Off the Record	Survivor	iconPerks_OffTheRecord.png	25	Zarina
 Open-Handed	Survivor	iconPerks_openHanded.png	10	Ace Visconti
+Overcome	Survivor	iconPerks_Overcome.png	150	Jonah
 Pharmacy	Survivor	iconPerks_pharmacy.png	50	Quentin
-Plunderer's Instinct	Survivor	iconPerks_plunderersInstinct.png	150	GenSurv
+Plunderer's Instinct	Survivor	iconPerks_plunderersInstinct.png	200	GenSurv
 Poised	Survivor	iconPerks_poised.png	50	Jane
 Power Struggle	Survivor	iconPerks_PowerStruggle.png	100	Elodie
 Premonition	Survivor	iconPerks_premonition.png	50	GenSurv
@@ -101,7 +104,7 @@ Windows Of Opportunity	Survivor	iconPerks_windowsOfOpportunity.png	150	Kate
 A Nurse's Calling	Killer	iconPerks_aNursesCalling.png	150	Nurse Sally
 Agitation	Killer	iconPerks_agitation.png	150	Trapper
 Bamboozle	Killer	iconPerks_bamboozle.png	150	Clown
-Barbecue & Chilli	Killer	iconPerks_BBQAndChili.png	200	Leatherface
+Barbecue & Chilli	Killer	iconPerks_BBQAndChili.png	250	Leatherface
 Beast Of Prey	Killer	iconPerks_BeastOfPrey.png	10	Huntress Anna
 Bitter Murmur	Killer	iconPerks_bitterMurmur.png	100	GenKiller
 Blood Echo	Killer	iconPerks_bloodEcho.png	100	Oni
@@ -109,7 +112,7 @@ Blood Warden	Killer	iconPerks_bloodWarden.png	150	Freddy
 Bloodhound	Killer	iconPerks_bloodhound.png	100	Wraith
 Brutal Strength	Killer	iconPerks_brutalStrength.png	150	Trapper
 Claustrophobia	Killer	iconPerks_Claustrophobia.png	25	Demogorgon
-Corrupt Intervention	Killer	iconPerks_corruptIntervention.png	200	Plague
+Corrupt Intervention	Killer	iconPerks_corruptIntervention.png	300	Plague
 Coulrophobia	Killer	iconPerks_coulrophobia.png	25	Clown
 Coup De Grace	Killer	iconPerks_CoupDeGrace.png	50	Twins
 Dark Devotion	Killer	iconPerks_darkDevotion.png	100	Plague
@@ -129,6 +132,7 @@ Forced Penance	Killer	iconPerks_ForcedPenance.png	50	Pyramid Head
 Franklin's Demise	Killer	iconPerks_franklinsLoss.png	50	Leatherface
 Furtive Chase	Killer	iconPerks_FurtiveChase.png	10	Ghostface
 Gearhead	Killer	iconPerks_Gearhead.png	50	Deathslinger
+Grim Embrace	Killer	iconPerks_GrimEmbrace.png	150	Artist
 Hangman's Trick	Killer	iconPerks_hangmansTrick.png	10	Pig
 Hex Blood Favour	Killer	iconPerks_HexBloodFavour.png	100	Blight
 Hex Crowd Control	Killer	iconPerks_HexCrowdControl.png	100	Trickster
@@ -136,6 +140,7 @@ Hex Devour Hope	Killer	iconPerks_devourHope.png	150	Hag
 Hex Haunted Ground	Killer	iconPerks_hauntedGround.png	150	Spirit Rin
 Hex Huntress Lullaby	Killer	iconPerks_HuntressLullaby.png	100	Huntress Anna
 Hex No One Escapes Death	Killer	iconPerks_noOneEscapesDeath.png	150	GenKiller
+Hex Pentimento	Killer	iconPerks_HexPentimento.png	25	Artist
 Hex Plaything	Killer	iconPerks_HexPlaything.png	150	Cenobite
 Hex Retribution	Killer	iconPerks_HexRetribution.png	100	Deathslinger
 Hex Ruin	Killer	iconPerks_ruin.png	200	Hag
@@ -158,7 +163,7 @@ Make Your Choice	Killer	iconPerks_makeYourChoice.png	150	Pig
 Monitor & Abuse	Killer	iconPerks_monitorAndAbuse.png	150	Doctor
 Monstrous Shrine	Killer	iconPerks_monstrousShrine.png	10	GenKiller
 Nemesis	Killer	iconPerks_nemesis.png	25	Oni
-No Way Out	Killer	iconPerks_NoWayOut.png	150	Trickster
+No Way Out	Killer	iconPerks_NoWayOut.png	200	Trickster
 Oppression	Killer	iconPerks_Oppression.png	100	Twins
 Overcharge	Killer	iconPerks_generatorOvercharge.png	100	Doctor
 Overwhelming Presence	Killer	iconPerks_overwhelmingPresence.png	10	Doctor
@@ -167,8 +172,9 @@ Pop Goes The Weasel	Killer	iconPerks_popGoesTheWeasel.png	200	Clown
 Predator	Killer	iconPerks_predator.png	25	Wraith
 Rancor	Killer	iconPerks_hatred.png	150	Spirit Rin
 Remember Me	Killer	iconPerks_rememberMe.png	100	Freddy
-Save The Best For Last	Killer	iconPerks_saveTheBestForLast.png	150	Myers
+Save The Best For Last	Killer	iconPerks_saveTheBestForLast.png	200	Myers
 Scourge Hook Gift Of Pain	Killer	iconPerks_ScourgeHookGiftOfPain.png	100	Cenobite
+Scourge Hook Pain Resonance	Killer	iconPerks_ScourgeHookPainResonance.png	200	Artist
 Shadowborn	Killer	iconPerks_shadowborn.png	100	Wraith
 Sloppy Butcher	Killer	iconPerks_sloppyButcher.png	150	GenKiller
 Spies From The Shadows	Killer	iconPerks_spiesFromTheShadows.png	100	GenKiller

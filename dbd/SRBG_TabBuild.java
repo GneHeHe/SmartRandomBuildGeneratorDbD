@@ -146,7 +146,7 @@ public class SRBG_TabBuild extends JPanel {
         cb_nbperks.setToolTipText("<html>Define the number of perks in generated builds<br><br>Random number of looted perks will be enabled with '0' value: high chance of 4 perks and pretty low probability of 1 or 2 or 3 perks</html>");
         ((JLabel) cb_nbperks.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
         //cb_nbperks.setSelectedItem(srbg.getNbPerksBuild());
-        cb_nbperks.setSelectedIndex(0);
+        cb_nbperks.setSelectedIndex(4);
 
         // Define JComboBox Object for Nb of Builds
         cb_nbbuilds = new JComboBox(new Integer[]{1, 2, 5, 10, 50, 100});

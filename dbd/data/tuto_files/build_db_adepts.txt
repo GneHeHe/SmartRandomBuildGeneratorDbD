@@ -1,4 +1,5 @@
 ################################# Perkless #################################
+Perkless	Killer	Artist	Undefined	Undefined	Undefined	Undefined
 Perkless	Killer	Blight	Undefined	Undefined	Undefined	Undefined
 Perkless	Killer	Cenobite	Undefined	Undefined	Undefined	Undefined
 Perkless	Killer	Clown	Undefined	Undefined	Undefined	Undefined
@@ -26,6 +27,7 @@ Perkless	Killer	Twins	Undefined	Undefined	Undefined	Undefined
 Perkless	Killer	Wraith	Undefined	Undefined	Undefined	Undefined
 Perkless	Survivor	GenSurv	Undefined	Undefined	Undefined	Undefined
 ################################# TheAdept #################################
+TheAdept	Killer	Artist	Grim Embrace	Hex Pentimento	Scourge Hook Pain Resonance	Undefined
 TheAdept	Killer	Blight	Dragon's Grip	Hex Blood Favour	Hex Undying	Undefined
 TheAdept	Killer	Cenobite	Deadlock	Hex Plaything	Scourge Hook Gift Of Pain	Undefined
 TheAdept	Killer	Clown	Bamboozle	Coulrophobia	Pop Goes The Weasel	Undefined
@@ -67,6 +69,7 @@ TheAdept	Survivor	Jake	Calm Spirit	Iron Will	Saboteur	Undefined
 TheAdept	Survivor	Jane	Head On	Poised	Solidarity	Undefined
 TheAdept	Survivor	Jeff	Aftercare	Breakdown	Distortion	Undefined
 TheAdept	Survivor	Jill	Blast Mine	Counterforce	Resurgence	Undefined
+TheAdept	Survivor	Jonah	Boon Exponential	Corrective Action	Overcome	Undefined
 TheAdept	Survivor	Kate	Boil Over	Dance With Me	Windows Of Opportunity	Undefined
 TheAdept	Survivor	Laurie	Decisive Strike	Object Of Obsession	Sole Survivor	Undefined
 TheAdept	Survivor	Leon	Bite the Bullet	Flashbang	Rookie Spirit	Undefined
