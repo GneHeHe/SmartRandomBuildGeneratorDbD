@@ -1,3 +1,4 @@
+############# Survivors #############
 SURVIV_1	Healing	Aftercare
 SURVIV_1	Healing	Autodidact
 SURVIV_1	Healing	Bite the Bullet
@@ -28,7 +29,7 @@ SURVIV_2	Survival	Hope
 SURVIV_2	Survival	Iron Will
 SURVIV_2	Survival	Left Behind
 SURVIV_2	Survival	Lucky Break
-SURVIV_2	Survival	Mettle Of Man
+SURVIV_2	Survival	Mettle of Man
 SURVIV_2	Survival	Power Struggle
 SURVIV_2	Survival	Premonition
 SURVIV_2	Survival	Self-Aware
@@ -39,6 +40,7 @@ SURVIV_2	Survival	Tenacity
 SURVIV_2	Survival	Unbreakable
 SURVIV_2	Survival	Wake Up!
 SURVIV_3	Chase	Balanced Landing
+SURVIV_3	Chase	Boon Dark Theory
 SURVIV_3	Chase	Boon Shadow Step
 SURVIV_3	Chase	Dance With Me
 SURVIV_3	Chase	Dead Hard
@@ -47,11 +49,12 @@ SURVIV_3	Chase	Diversion
 SURVIV_3	Chase	Lightweight
 SURVIV_3	Chase	Lithe
 SURVIV_3	Chase	Overcome
+SURVIV_3	Chase	Parental Guidance
 SURVIV_3	Chase	Poised
 SURVIV_3	Chase	Quick & Quiet
 SURVIV_3	Chase	Smash Hit
 SURVIV_3	Chase	Sprint Burst
-SURVIV_3	Chase	Windows Of Opportunity
+SURVIV_3	Chase	Windows of Opportunity
 SURVIV_4	ShowAura	Alert
 SURVIV_4	ShowAura	Clairvoyance
 SURVIV_4	ShowAura	Counterforce
@@ -60,11 +63,13 @@ SURVIV_4	ShowAura	Deja Vu
 SURVIV_4	ShowAura	Detective's Hunch
 SURVIV_4	ShowAura	Guardian
 SURVIV_4	ShowAura	Kindred
-SURVIV_4	ShowAura	Object Of Obsession
+SURVIV_4	ShowAura	Object of Obsession
 SURVIV_4	ShowAura	Plunderer's Instinct
 SURVIV_4	ShowAura	Rookie Spirit
 SURVIV_4	ShowAura	Small Game
 SURVIV_4	ShowAura	Visionary
+############# Killers #############
+KILLER_1	SlowDown	Call of Brine
 KILLER_1	SlowDown	Corrupt Intervention
 KILLER_1	SlowDown	Dead Man's Switch
 KILLER_1	SlowDown	Deadlock
@@ -74,10 +79,11 @@ KILLER_1	SlowDown	Grim Embrace
 KILLER_1	SlowDown	Hex Plaything
 KILLER_1	SlowDown	Hex Ruin
 KILLER_1	SlowDown	Jolt
+KILLER_1	SlowDown	Merciless Storm
 KILLER_1	SlowDown	Oppression
 KILLER_1	SlowDown	Overcharge
 KILLER_1	SlowDown	Pop Goes The Weasel
-KILLER_1	SlowDown	Scourge Hook Gift Of Pain
+KILLER_1	SlowDown	Scourge Hook Gift of Pain
 KILLER_1	SlowDown	Scourge Hook Pain Resonance
 KILLER_1	SlowDown	Sloppy Butcher
 KILLER_1	SlowDown	Thanatophobia
@@ -103,12 +109,12 @@ KILLER_3	Detection	Discordance
 KILLER_3	Detection	Dragon's Grip
 KILLER_3	Detection	Gearhead
 KILLER_3	Detection	Hex Retribution
-KILLER_3	Detection	Hex Thrill Of The Hunt
 KILLER_3	Detection	Hoarder
 KILLER_3	Detection	Infectious Fright
 KILLER_3	Detection	Iron Maiden
 KILLER_3	Detection	Lethal Pursuer
 KILLER_3	Detection	Rancor
+KILLER_3	Detection	Scourge Hook Floods of Rage
 KILLER_3	Detection	Shadowborn
 KILLER_3	Detection	Spies From The Shadows
 KILLER_3	Detection	Stridor

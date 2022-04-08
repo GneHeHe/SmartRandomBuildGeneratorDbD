@@ -148,7 +148,7 @@ public class SRBG {
     private final String s_cons = "data/perk_cons.txt";
     private final String s_cons_custom = "perk_cons_custom.txt";
     // Version
-    public final double VERSION = 3.0;
+    public final double VERSION = 3.1;
     // Title
     public final String TITLE = "Smart Random Build Generator for Dead by Daylight ( SRBG " + VERSION + " )";
     // GitHub Data
@@ -1380,37 +1380,39 @@ public class SRBG {
             String line = "";
             line = br.readLine();
             while (line != null) {
-                // Split Line according to Spacer
-                String tab[] = line.split(spacer);
-                if (tab.length == 3) {
-                    // Get Data (3 Fields are expected)
-                    String myname = tab[0];
-                    String myside = tab[1];
-                    if (!((myside.equals(s_side_surv)) || (myside.equals(s_side_killer)))) {
-                        System.err.println("\n# ERROR: wrong side ('" + myside + "') => Exit [ wrong line : >" + line + "< from input file ]\n");
+                if (!line.startsWith("#")) {
+                    // Split Line according to Spacer
+                    String tab[] = line.split(spacer);
+                    if (tab.length == 3) {
+                        // Get Data (3 Fields are expected)
+                        String myname = tab[0];
+                        String myside = tab[1];
+                        if (!((myside.equals(s_side_surv)) || (myside.equals(s_side_killer)))) {
+                            System.err.println("\n# ERROR: wrong side ('" + myside + "') => Exit [ wrong line : >" + line + "< from input file ]\n");
+                            System.exit(0);
+                        }
+                        String myicon = tab[2];
+                        // Create Character Object
+                        c = new Character(myname, myside, myicon);
+                        // Add Character to related List
+                        if (myside.equals(s_side_surv)) {
+                            l_char_survivor.add(c);
+                            // Add Character to Map
+                            m_char_random_survivor.put(myname, char_val_orig);
+                        } else {
+                            l_char_killer.add(c);
+                            // Add Character to Map
+                            m_char_random_killer.put(myname, char_val_orig);
+                        }
+                        l_char_all_string.add(myname);
+                        // Check if Character must be disabled
+                        if (l_char_disabled.indexOf(myname) >= 0) {
+                            c.setStatus(false);
+                        }
+                    } else {
+                        System.err.println("\n# ERROR: corrupted character file => Exit [ wrong line : >" + line + "< from input file ]\n");
                         System.exit(0);
                     }
-                    String myicon = tab[2];
-                    // Create Character Object
-                    c = new Character(myname, myside, myicon);
-                    // Add Character to related List
-                    if (myside.equals(s_side_surv)) {
-                        l_char_survivor.add(c);
-                        // Add Character to Map
-                        m_char_random_survivor.put(myname, char_val_orig);
-                    } else {
-                        l_char_killer.add(c);
-                        // Add Character to Map
-                        m_char_random_killer.put(myname, char_val_orig);
-                    }
-                    l_char_all_string.add(myname);
-                    // Check if Character must be disabled
-                    if (l_char_disabled.indexOf(myname) >= 0) {
-                        c.setStatus(false);
-                    }
-                } else {
-                    System.err.println("\n# ERROR: corrupted character file => Exit [ wrong line : >" + line + "< from input file ]\n");
-                    System.exit(0);
                 }
                 line = br.readLine();
             }
@@ -1480,47 +1482,49 @@ public class SRBG {
             }
             line = br.readLine();
             while (line != null) {
-                if (line.split("\t").length == 3) {
-                    type = line.split("\t")[1];
-                    perk = line.split("\t")[2];
-                    // Check Perk
-                    if (l_perks_all_string.contains(perk)) {
-                        // Add Perk to reference List
-                        if (line.startsWith(s_cons1_surv)) {
-                            l_cons1_surv.add(perk);
-                            s_cons1_surv_txt = type;
-                        } else if (line.startsWith(s_cons2_surv)) {
-                            l_cons2_surv.add(perk);
-                            s_cons2_surv_txt = type;
-                        } else if (line.startsWith(s_cons3_surv)) {
-                            l_cons3_surv.add(perk);
-                            s_cons3_surv_txt = type;
-                        } else if (line.startsWith(s_cons4_surv)) {
-                            l_cons4_surv.add(perk);
-                            s_cons4_surv_txt = type;
-                        } else if (line.startsWith(s_cons1_killer)) {
-                            l_cons1_killer.add(perk);
-                            s_cons1_killer_txt = type;
-                        } else if (line.startsWith(s_cons2_killer)) {
-                            l_cons2_killer.add(perk);
-                            s_cons2_killer_txt = type;
-                        } else if (line.startsWith(s_cons3_killer)) {
-                            l_cons3_killer.add(perk);
-                            s_cons3_killer_txt = type;
-                        } else if (line.startsWith(s_cons4_killer)) {
-                            l_cons4_killer.add(perk);
-                            s_cons4_killer_txt = type;
+                if (!line.startsWith("#")) {
+                    if (line.split("\t").length == 3) {
+                        type = line.split("\t")[1];
+                        perk = line.split("\t")[2];
+                        // Check Perk
+                        if (l_perks_all_string.contains(perk)) {
+                            // Add Perk to reference List
+                            if (line.startsWith(s_cons1_surv)) {
+                                l_cons1_surv.add(perk);
+                                s_cons1_surv_txt = type;
+                            } else if (line.startsWith(s_cons2_surv)) {
+                                l_cons2_surv.add(perk);
+                                s_cons2_surv_txt = type;
+                            } else if (line.startsWith(s_cons3_surv)) {
+                                l_cons3_surv.add(perk);
+                                s_cons3_surv_txt = type;
+                            } else if (line.startsWith(s_cons4_surv)) {
+                                l_cons4_surv.add(perk);
+                                s_cons4_surv_txt = type;
+                            } else if (line.startsWith(s_cons1_killer)) {
+                                l_cons1_killer.add(perk);
+                                s_cons1_killer_txt = type;
+                            } else if (line.startsWith(s_cons2_killer)) {
+                                l_cons2_killer.add(perk);
+                                s_cons2_killer_txt = type;
+                            } else if (line.startsWith(s_cons3_killer)) {
+                                l_cons3_killer.add(perk);
+                                s_cons3_killer_txt = type;
+                            } else if (line.startsWith(s_cons4_killer)) {
+                                l_cons4_killer.add(perk);
+                                s_cons4_killer_txt = type;
+                            } else {
+                                System.err.println("\n# ERROR: Issues with the constraints File on Line >" + line + "<\n");
+                                System.exit(0);
+                            }
                         } else {
-                            System.err.println("\n# ERROR: Issues with the constraints File on Line >" + line + "<\n");
+                            System.err.println("\n# ERROR: Perk '" + perk + "' does not exist !\n");
                             System.exit(0);
                         }
                     } else {
-                        System.err.println("\n# ERROR: Perk '" + perk + "' does not exist !\n");
+                        System.err.println("\n# ERROR: Issues with the constraints File on Line >" + line + "<\n");
                         System.exit(0);
                     }
-                } else {
-                    System.err.println("\n# ERROR: Issues with the constraints File on Line >" + line + "<\n");
-                    System.exit(0);
                 }
                 line = br.readLine();
             }

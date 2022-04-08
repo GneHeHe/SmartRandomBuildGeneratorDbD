@@ -1,4 +1,4 @@
-################################# Perkless #################################
+################################# Perkless	#################################
 Perkless	Killer	Artist	Undefined	Undefined	Undefined	Undefined
 Perkless	Killer	Blight	Undefined	Undefined	Undefined	Undefined
 Perkless	Killer	Cenobite	Undefined	Undefined	Undefined	Undefined
@@ -20,16 +20,17 @@ Perkless	Killer	Oni	Undefined	Undefined	Undefined	Undefined
 Perkless	Killer	Pig	Undefined	Undefined	Undefined	Undefined
 Perkless	Killer	Plague	Undefined	Undefined	Undefined	Undefined
 Perkless	Killer	Pyramid Head	Undefined	Undefined	Undefined	Undefined
+Perkless	Killer	Sadako	Undefined	Undefined	Undefined	Undefined
 Perkless	Killer	Spirit Rin	Undefined	Undefined	Undefined	Undefined
 Perkless	Killer	Trapper	Undefined	Undefined	Undefined	Undefined
 Perkless	Killer	Trickster	Undefined	Undefined	Undefined	Undefined
 Perkless	Killer	Twins	Undefined	Undefined	Undefined	Undefined
 Perkless	Killer	Wraith	Undefined	Undefined	Undefined	Undefined
 Perkless	Survivor	GenSurv	Undefined	Undefined	Undefined	Undefined
-################################# TheAdept #################################
+################################# TheAdept	#################################
 TheAdept	Killer	Artist	Grim Embrace	Hex Pentimento	Scourge Hook Pain Resonance	Undefined
 TheAdept	Killer	Blight	Dragon's Grip	Hex Blood Favour	Hex Undying	Undefined
-TheAdept	Killer	Cenobite	Deadlock	Hex Plaything	Scourge Hook Gift Of Pain	Undefined
+TheAdept	Killer	Cenobite	Deadlock	Hex Plaything	Scourge Hook Gift of Pain	Undefined
 TheAdept	Killer	Clown	Bamboozle	Coulrophobia	Pop Goes The Weasel	Undefined
 TheAdept	Killer	Deathslinger	Dead Man's Switch	Gearhead	Hex Retribution	Undefined
 TheAdept	Killer	Demogorgon	Claustrophobia	Fearmonger	Jolt	Undefined
@@ -38,7 +39,7 @@ TheAdept	Killer	Freddy	Blood Warden	Fire Up	Remember Me	Undefined
 TheAdept	Killer	Ghostface	Furtive Chase	I'm All Ears	Thrilling Tremors	Undefined
 TheAdept	Killer	Hag	Hex Devour Hope	Hex Ruin	Hex The Third Seal	Undefined
 TheAdept	Killer	Hillbilly	Enduring	Lightborn	Tinkerer	Undefined
-TheAdept	Killer	Huntress Anna	Beast Of Prey	Hex Huntress Lullaby	Territorial Imperative	Undefined
+TheAdept	Killer	Huntress Anna	Beast of Prey	Hex Huntress Lullaby	Territorial Imperative	Undefined
 TheAdept	Killer	Leatherface	Barbecue & Chilli	Franklin's Demise	Knock Out	Undefined
 TheAdept	Killer	Legion	Discordance	Iron Maiden	Mad Grit	Undefined
 TheAdept	Killer	Myers	Dying Light	Play With Your Food	Save The Best For Last	Undefined
@@ -48,6 +49,7 @@ TheAdept	Killer	Oni	Blood Echo	Nemesis	Zanshin Tactics	Undefined
 TheAdept	Killer	Pig	Hangman's Trick	Make Your Choice	Surveillance	Undefined
 TheAdept	Killer	Plague	Corrupt Intervention	Dark Devotion	Infectious Fright	Undefined
 TheAdept	Killer	Pyramid Head	Deathbound	Forced Penance	Trail of Torment	Undefined
+TheAdept	Killer	Sadako	Call of Brine	Merciless Storm	Scourge Hook Floods of Rage	Undefined
 TheAdept	Killer	Spirit Rin	Hex Haunted Ground	Rancor	Spirit Fury	Undefined
 TheAdept	Killer	Trapper	Agitation	Brutal Strength	Unnerving Presence	Undefined
 TheAdept	Killer	Trickster	Hex Crowd Control	No Way Out	Starstruck	Undefined
@@ -55,7 +57,7 @@ TheAdept	Killer	Twins	Coup De Grace	Hoarder	Oppression	Undefined
 TheAdept	Killer	Wraith	Bloodhound	Predator	Shadowborn	Undefined
 TheAdept	Survivor	Ace Visconti	Ace In The Hole	Open-Handed	Up The Ante	Undefined
 TheAdept	Survivor	Adam	Autodidact	Deliverance	Diversion	Undefined
-TheAdept	Survivor	Ash	Buckle Up	Flip-Flop	Mettle Of Man	Undefined
+TheAdept	Survivor	Ash	Buckle Up	Flip-Flop	Mettle of Man	Undefined
 TheAdept	Survivor	Bill Overbeck	Borrowed Time	Left Behind	Unbreakable	Undefined
 TheAdept	Survivor	Cheryl	Blood Pact	Repressed Alliance	Soul Guard	Undefined
 TheAdept	Survivor	Claudette	Botany Knowledge	Empathy	Self-Care	Undefined
@@ -70,8 +72,8 @@ TheAdept	Survivor	Jane	Head On	Poised	Solidarity	Undefined
 TheAdept	Survivor	Jeff	Aftercare	Breakdown	Distortion	Undefined
 TheAdept	Survivor	Jill	Blast Mine	Counterforce	Resurgence	Undefined
 TheAdept	Survivor	Jonah	Boon Exponential	Corrective Action	Overcome	Undefined
-TheAdept	Survivor	Kate	Boil Over	Dance With Me	Windows Of Opportunity	Undefined
-TheAdept	Survivor	Laurie	Decisive Strike	Object Of Obsession	Sole Survivor	Undefined
+TheAdept	Survivor	Kate	Boil Over	Dance With Me	Windows of Opportunity	Undefined
+TheAdept	Survivor	Laurie	Decisive Strike	Object of Obsession	Sole Survivor	Undefined
 TheAdept	Survivor	Leon	Bite the Bullet	Flashbang	Rookie Spirit	Undefined
 TheAdept	Survivor	Meg	Adrenaline	Quick & Quiet	Sprint Burst	Undefined
 TheAdept	Survivor	Mikaela	Boon Circle of Healing	Boon Shadow Step	Clairvoyance	Undefined
@@ -79,6 +81,7 @@ TheAdept	Survivor	Nancy	Inner Healing	Self-Aware	Situational Awareness	Undefined
 TheAdept	Survivor	Nea	Balanced Landing	Streetwise	Urban Evasion	Undefined
 TheAdept	Survivor	Quentin	Pharmacy	Vigil	Wake Up!	Undefined
 TheAdept	Survivor	Steve	Guardian	Kinship	Renewal	Undefined
+TheAdept	Survivor	Yoichi	Boon Dark Theory	Empathic Connection	Parental Guidance	Undefined
 TheAdept	Survivor	Yui	Any Means Necessary	Breakout	Lucky Break	Undefined
 TheAdept	Survivor	Yun-Jin	Fast Track	Self-Preservation	Smash Hit	Undefined
 TheAdept	Survivor	Zarina	For the People	Off the Record	Red Herring	Undefined

@@ -7,7 +7,7 @@ Adam	Deliverance	75
 Adam	Diversion	75
 Ash	Buckle Up	75
 Ash	Flip-Flop	75
-Ash	Mettle Of Man	75
+Ash	Mettle of Man	75
 Bill Overbeck	Borrowed Time	75
 Bill Overbeck	Left Behind	75
 Bill Overbeck	Unbreakable	75
@@ -52,9 +52,9 @@ Jonah	Corrective Action	75
 Jonah	Overcome	75
 Kate	Boil Over	75
 Kate	Dance With Me	75
-Kate	Windows Of Opportunity	75
+Kate	Windows of Opportunity	75
 Laurie	Decisive Strike	75
-Laurie	Object Of Obsession	75
+Laurie	Object of Obsession	75
 Laurie	Sole Survivor	75
 Leon	Bite the Bullet	75
 Leon	Flashbang	75
@@ -86,6 +86,9 @@ Yun-Jin	Smash Hit	75
 Zarina	For the People	75
 Zarina	Off the Record	75
 Zarina	Red Herring	75
+Yoichi	Boon Dark Theory	75
+Yoichi	Empathic Connection	75
+Yoichi	Parental Guidance	75
 ############# Artist #############
 Artist	A Nurse's Calling	50
 Artist	Bamboozle	-100
@@ -152,7 +155,7 @@ Cenobite	Lethal Pursuer	50
 Cenobite	Monitor & Abuse	-100
 Cenobite	Rancor	50
 Cenobite	Save The Best For Last	50
-Cenobite	Scourge Hook Gift Of Pain	75
+Cenobite	Scourge Hook Gift of Pain	75
 ############# Clown #############
 Clown	Bamboozle	75
 Clown	Brutal Strength	50
@@ -184,7 +187,7 @@ Deathslinger	Hex Devour Hope	50
 Deathslinger	Hex Haunted Ground	50
 Deathslinger	Hex No One Escapes Death	50
 Deathslinger	Hex Retribution	75
-Deathslinger	Hex Thrill Of The Hunt	50
+Deathslinger	Hex Thrill of The Hunt	50
 Deathslinger	I'm All Ears	50
 Deathslinger	Infectious Fright	-100
 Deathslinger	Lethal Pursuer	-100
@@ -228,6 +231,7 @@ Demogorgon	Tinkerer	50
 Doctor	Barbecue & Chilli	50
 Doctor	Brutal Strength	50
 Doctor	Coulrophobia	50
+Doctor	Dead Man's Switch	100
 Doctor	Deerstalker	-100
 Doctor	Discordance	50
 Doctor	Distressing	100
@@ -282,7 +286,7 @@ Freddy	Trail of Torment	-200
 Ghostface	Agitation	50
 Ghostface	A Nurse's Calling	50
 Ghostface	Barbecue & Chilli	50
-Ghostface	Beast Of Prey	-999
+Ghostface	Beast of Prey	-999
 Ghostface	Brutal Strength	50
 Ghostface	Coulrophobia	-999
 Ghostface	Coup De Grace	50
@@ -399,7 +403,7 @@ Hillbilly	Whispers	50
 Huntress Anna	Agitation	50
 Huntress Anna	A Nurse's Calling	50
 Huntress Anna	Barbecue & Chilli	50
-Huntress Anna	Beast Of Prey	75
+Huntress Anna	Beast of Prey	75
 Huntress Anna	Bitter Murmur	50
 Huntress Anna	Brutal Strength	-100
 Huntress Anna	Coulrophobia	-200
@@ -685,6 +689,7 @@ Plague	Fearmonger	50
 Plague	Forced Penance	-100
 Plague	Gearhead	-100
 Plague	Hex Blood Favour	50
+Plague	Hex Plaything	50
 Plague	Hex Retribution	50
 Plague	Hex The Third Seal	50
 Plague	Hysteria	50
@@ -728,6 +733,35 @@ Pyramid Head	Thrilling Tremors	-100
 Pyramid Head	Tinkerer	50
 Pyramid Head	Trail of Torment	75
 Pyramid Head	Zanshin Tactics	50
+############# Sadako #############
+Sadako	A Nurse's Calling	50
+Sadako	Barbecue & Chilli	50
+Sadako	Brutal Strength	50
+Sadako	Call of Brine	75
+Sadako	Coulrophobia	-200
+Sadako	Dark Devotion	-200
+Sadako	Discordance	100
+Sadako	Distressing	-999
+Sadako	Enduring	50
+Sadako	Fearmonger	50
+Sadako	Furtive Chase	-100
+Sadako	Gearhead	50
+Sadako	Hex Devour Hope	50
+Sadako	Hex Haunted Ground	50
+Sadako	Infectious Fright	-100
+Sadako	Make Your Choice	100
+Sadako	Merciless Storm	75
+Sadako	Monitor & Abuse	-200
+Sadako	Overwhelming Presence	-999
+Sadako	Rancor	50
+Sadako	Save The Best For Last	50
+Sadako	Scourge Hook Floods of Rage	75
+Sadako	Spies From The Shadows	50
+Sadako	Surveillance	50
+Sadako	Thrilling Tremors	50
+Sadako	Tinkerer	50
+Sadako	Unnerving Presence	-999
+Sadako	Whispers	50
 ############# Spirit Rin #############
 Spirit Rin	A Nurse's Calling	50
 Spirit Rin	Bamboozle	-200

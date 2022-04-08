@@ -1,26 +1,27 @@
-Build	Killer	Trapper	Corrupt Intervention	Save The Best For Last	Scourge Hook Pain Resonance	Whispers
-Build	Killer	Wraith	Barbecue & Chilli	Corrupt Intervention	Scourge Hook Pain Resonance	Whispers
-Build	Killer	Hillbilly	Bamboozle	Barbecue & Chilli	Corrupt Intervention	Whispers
-Build	Killer	Nurse Sally	Barbecue & Chilli	Corrupt Intervention	I'm All Ears	Lethal Pursuer
-Build	Killer	Huntress Anna	Barbecue & Chilli	Corrupt Intervention	Scourge Hook Pain Resonance	Whispers
+Build	Killer	Trapper	Agitation	Corrupt Intervention	Save The Best For Last	Scourge Hook Pain Resonance
+Build	Killer	Wraith	Barbecue & Chilli	Corrupt Intervention	Scourge Hook Floods of Rage	Scourge Hook Pain Resonance
+Build	Killer	Hillbilly	Bamboozle	Barbecue & Chilli	Corrupt Intervention	Lethal Pursuer
+Build	Killer	Nurse Sally	Barbecue & Chilli	Lethal Pursuer	Scourge Hook Floods of Rage	Scourge Hook Pain Resonance
+Build	Killer	Huntress Anna	Barbecue & Chilli	Corrupt Intervention	Scourge Hook Floods of Rage	Scourge Hook Pain Resonance
 Build	Killer	Myers	Barbecue & Chilli	Corrupt Intervention	Monitor & Abuse	Scourge Hook Pain Resonance
 Build	Killer	Hag	Corrupt Intervention	Monitor & Abuse	Save The Best For Last	Scourge Hook Pain Resonance
-Build	Killer	Doctor	Barbecue & Chilli	Corrupt Intervention	Scourge Hook Pain Resonance	Whispers
-Build	Killer	Leatherface	Bamboozle	Barbecue & Chilli	Corrupt Intervention	Scourge Hook Pain Resonance
+Build	Killer	Doctor	Corrupt Intervention	Dead Man's Switch	Distressing	Scourge Hook Pain Resonance
+Build	Killer	Leatherface	Bamboozle	Barbecue & Chilli	Corrupt Intervention	Hex Plaything
 Build	Killer	Freddy	Barbecue & Chilli	Corrupt Intervention	Discordance	Scourge Hook Pain Resonance
-Build	Killer	Pig	Barbecue & Chilli	Corrupt Intervention	Save The Best For Last	Whispers
+Build	Killer	Pig	Barbecue & Chilli	Corrupt Intervention	Save The Best For Last	Scourge Hook Pain Resonance
 Build	Killer	Clown	Barbecue & Chilli	Brutal Strength	Corrupt Intervention	Scourge Hook Pain Resonance
 Build	Killer	Spirit Rin	Barbecue & Chilli	Corrupt Intervention	Lethal Pursuer	Scourge Hook Pain Resonance
-Build	Killer	Legion	Barbecue & Chilli	Discordance	Scourge Hook Pain Resonance	Thanatophobia
+Build	Killer	Legion	Barbecue & Chilli	Corrupt Intervention	Scourge Hook Pain Resonance	Thanatophobia
 Build	Killer	Plague	Barbecue & Chilli	Corrupt Intervention	Scourge Hook Pain Resonance	Thanatophobia
-Build	Killer	Ghostface	Barbecue & Chilli	Corrupt Intervention	Scourge Hook Pain Resonance	Surveillance
-Build	Killer	Demogorgon	Corrupt Intervention	I'm All Ears	Save The Best For Last	Scourge Hook Pain Resonance
-Build	Killer	Oni	Barbecue & Chilli	Corrupt Intervention	Monitor & Abuse	Scourge Hook Pain Resonance
+Build	Killer	Ghostface	Barbecue & Chilli	Corrupt Intervention	Scourge Hook Floods of Rage	Scourge Hook Pain Resonance
+Build	Killer	Demogorgon	Barbecue & Chilli	Corrupt Intervention	Save The Best For Last	Scourge Hook Pain Resonance
+Build	Killer	Oni	Barbecue & Chilli	Corrupt Intervention	Infectious Fright	Monitor & Abuse
 Build	Killer	Deathslinger	Barbecue & Chilli	Corrupt Intervention	Save The Best For Last	Scourge Hook Pain Resonance
-Build	Killer	Pyramid Head	Corrupt Intervention	Deadlock	I'm All Ears	Tinkerer
+Build	Killer	Pyramid Head	Corrupt Intervention	I'm All Ears	Scourge Hook Floods of Rage	Scourge Hook Pain Resonance
 Build	Killer	Blight	Barbecue & Chilli	Corrupt Intervention	Lethal Pursuer	Scourge Hook Pain Resonance
-Build	Killer	Twins	Barbecue & Chilli	Corrupt Intervention	Scourge Hook Pain Resonance	Thanatophobia
+Build	Killer	Twins	Barbecue & Chilli	Corrupt Intervention	Forced Penance	Scourge Hook Pain Resonance
 Build	Killer	Trickster	Barbecue & Chilli	Corrupt Intervention	Monitor & Abuse	Scourge Hook Pain Resonance
-Build	Killer	Nemesis	Corrupt Intervention	Discordance	Save The Best For Last	Scourge Hook Pain Resonance
+Build	Killer	Nemesis	Barbecue & Chilli	Corrupt Intervention	Save The Best For Last	Scourge Hook Pain Resonance
 Build	Killer	Cenobite	Barbecue & Chilli	Corrupt Intervention	Franklin's Demise	Scourge Hook Pain Resonance
-Build	Killer	Artist	Barbecue & Chilli	Corrupt Intervention	I'm All Ears	Scourge Hook Pain Resonance
+Build	Killer	Artist	Barbecue & Chilli	Corrupt Intervention	Scourge Hook Floods of Rage	Scourge Hook Pain Resonance
+Build	Killer	Sadako	Corrupt Intervention	Discordance	Scourge Hook Floods of Rage	Scourge Hook Pain Resonance
