@@ -123,7 +123,7 @@ However, **I guarantee SRBG is virus/trojan-free**.
 
 # How to download and run SRBG ?
 
-1) Download the last **pre-compiled JAR/EXE files** [here](https://github.com/GneHeHe/SmartRandomBuildGeneratorDbD/releases/download/3.1/SRBG.zip) (also available in '**releases**' tab)
+1) Download the last **pre-compiled JAR/EXE files** [here](https://github.com/GneHeHe/SmartRandomBuildGeneratorDbD/releases/download/3.2/SRBG.zip) (also available in '**releases**' tab)
 
 2) Unzip the downloaded **ZIP file**
 

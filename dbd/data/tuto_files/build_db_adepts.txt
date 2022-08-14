@@ -35,6 +35,7 @@ TheAdept	Killer	Clown	Bamboozle	Coulrophobia	Pop Goes The Weasel	Undefined
 TheAdept	Killer	Deathslinger	Dead Man's Switch	Gearhead	Hex Retribution	Undefined
 TheAdept	Killer	Demogorgon	Claustrophobia	Fearmonger	Jolt	Undefined
 TheAdept	Killer	Doctor	Monitor & Abuse	Overcharge	Overwhelming Presence	Undefined
+TheAdept	Killer	Dredge	Darkness Revealed	Dissolution	Septic Touch	Undefined
 TheAdept	Killer	Freddy	Blood Warden	Fire Up	Remember Me	Undefined
 TheAdept	Killer	Ghostface	Furtive Chase	I'm All Ears	Thrilling Tremors	Undefined
 TheAdept	Killer	Hag	Hex Devour Hope	Hex Ruin	Hex The Third Seal	Undefined
@@ -67,6 +68,7 @@ TheAdept	Survivor	Dwight	Bond	Leader	Prove Thyself	Undefined
 TheAdept	Survivor	Elodie	Appraisal	Deception	Power Struggle	Undefined
 TheAdept	Survivor	Felix	Built to Last	Desperate Measures	Visionary	Undefined
 TheAdept	Survivor	Feng	Alert	Lithe	Technician	Undefined
+TheAdept	Survivor	Haddie	Inner Focus	Overzealous	Residual Manifest	Undefined
 TheAdept	Survivor	Jake	Calm Spirit	Iron Will	Saboteur	Undefined
 TheAdept	Survivor	Jane	Head On	Poised	Solidarity	Undefined
 TheAdept	Survivor	Jeff	Aftercare	Breakdown	Distortion	Undefined

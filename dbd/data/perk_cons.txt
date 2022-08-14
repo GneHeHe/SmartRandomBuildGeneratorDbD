@@ -62,6 +62,7 @@ SURVIV_4	ShowAura	Dark Sense
 SURVIV_4	ShowAura	Deja Vu
 SURVIV_4	ShowAura	Detective's Hunch
 SURVIV_4	ShowAura	Guardian
+SURVIV_4	ShowAura	Inner Focus
 SURVIV_4	ShowAura	Kindred
 SURVIV_4	ShowAura	Object of Obsession
 SURVIV_4	ShowAura	Plunderer's Instinct
@@ -90,6 +91,7 @@ KILLER_1	SlowDown	Thanatophobia
 KILLER_2	Chase	Bamboozle
 KILLER_2	Chase	Brutal Strength
 KILLER_2	Chase	Coup De Grace
+KILLER_2	Chase	Dissolution
 KILLER_2	Chase	Enduring
 KILLER_2	Chase	Hex Blood Favour
 KILLER_2	Chase	Hex Crowd Control
@@ -104,6 +106,7 @@ KILLER_3	Detection	A Nurse's Calling
 KILLER_3	Detection	Barbecue & Chilli
 KILLER_3	Detection	Bitter Murmur
 KILLER_3	Detection	Bloodhound
+KILLER_3	Detection	Darkness Revealed
 KILLER_3	Detection	Deathbound
 KILLER_3	Detection	Discordance
 KILLER_3	Detection	Dragon's Grip

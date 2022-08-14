@@ -373,7 +373,7 @@ public class TableModelBuild extends AbstractTableModel {
                 nb_lines++;
                 line = br.readLine();
                 // Display
-                if (((nb_builds % 1000) == 0) && (nb_builds > 0)) {
+                if (((nb_builds % 10000) == 0) && (nb_builds > 0)) {
                     System.out.println("# " + nb_builds + " Builds were loaded");
                 }
             }
