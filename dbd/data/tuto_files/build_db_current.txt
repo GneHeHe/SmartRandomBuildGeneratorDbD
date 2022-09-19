@@ -7,7 +7,7 @@ Build	Killer	Hillbilly	Barbecue & Chilli	Lethal Pursuer	Scourge Hook Pain Resona
 Build	Killer	Nurse Sally	Barbecue & Chilli	Lethal Pursuer	Scourge Hook Floods of Rage	Scourge Hook Pain Resonance
 Build	Killer	Nurse Sally	Jolt	Lethal Pursuer	Scourge Hook Pain Resonance	Surveillance
 Build	Killer	Huntress Anna	Barbecue & Chilli	Lethal Pursuer	Scourge Hook Floods of Rage	Scourge Hook Pain Resonance
-Build	Killer	Huntress Anna	Barbecue & Chilli	Iron Maiden	Lethal Pursuer	Scourge Hook Pain Resonance
+Build	Killer	Huntress Anna	Darkness Revealed	Iron Maiden	Lethal Pursuer	Scourge Hook Pain Resonance
 Build	Killer	Myers	Barbecue & Chilli	Lethal Pursuer	Monitor & Abuse	Scourge Hook Pain Resonance
 Build	Killer	Myers	Jolt	Lethal Pursuer	Scourge Hook Pain Resonance	Surveillance
 Build	Killer	Hag	Corrupt Intervention	Franklin's Demise	Monitor & Abuse	Sloppy Butcher
@@ -42,7 +42,7 @@ Build	Killer	Blight	Barbecue & Chilli	Lethal Pursuer	Scourge Hook Pain Resonance
 Build	Killer	Blight	Barbecue & Chilli	Lethal Pursuer	Scourge Hook Floods of Rage	Scourge Hook Pain Resonance
 Build	Killer	Twins	Barbecue & Chilli	Forced Penance	Lethal Pursuer	Scourge Hook Pain Resonance
 Build	Killer	Twins	Barbecue & Chilli	Lethal Pursuer	Scourge Hook Pain Resonance	Sloppy Butcher
-Build	Killer	Trickster	Barbecue & Chilli	Iron Maiden	Lethal Pursuer	Scourge Hook Pain Resonance
+Build	Killer	Trickster	Darkness Revealed	Iron Maiden	Lethal Pursuer	Scourge Hook Pain Resonance
 Build	Killer	Trickster	Barbecue & Chilli	Lethal Pursuer	Monitor & Abuse	Scourge Hook Pain Resonance
 Build	Killer	Nemesis	Barbecue & Chilli	Discordance	Save The Best For Last	Scourge Hook Pain Resonance
 Build	Killer	Nemesis	Barbecue & Chilli	Lethal Pursuer	Save The Best For Last	Scourge Hook Pain Resonance
@@ -52,5 +52,7 @@ Build	Killer	Artist	Barbecue & Chilli	Dead Man's Switch	Discordance	Scourge Hook
 Build	Killer	Artist	Barbecue & Chilli	Dead Man's Switch	Lethal Pursuer	Scourge Hook Pain Resonance
 Build	Killer	Sadako	Barbecue & Chilli	Lethal Pursuer	Scourge Hook Pain Resonance	Sloppy Butcher
 Build	Killer	Sadako	Jolt	Lethal Pursuer	Scourge Hook Pain Resonance	Surveillance
-Build	Killer	Dredge	Barbecue & Chilli	Lethal Pursuer	Make Your Choice	Scourge Hook Pain Resonance
+Build	Killer	Dredge	Barbecue & Chilli	Darkness Revealed	Deadlock	Scourge Hook Pain Resonance
 Build	Killer	Dredge	Jolt	Lethal Pursuer	Scourge Hook Pain Resonance	Surveillance
+Build	Killer	Wesker	Barbecue & Chilli	Dissolution	Lethal Pursuer	Scourge Hook Pain Resonance
+Build	Killer	Wesker	Barbecue & Chilli	Lethal Pursuer	Save The Best For Last	Scourge Hook Pain Resonance

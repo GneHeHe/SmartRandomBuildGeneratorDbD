@@ -30,6 +30,8 @@ Mikaela	Survivor	S28_charSelect_portrait.jpg
 Jonah	Survivor	S29_charSelect_portrait.jpg
 Yoichi	Survivor	S30_charSelect_portrait.jpg
 Haddie	Survivor	S31_charSelect_portrait.jpg
+Ada Wong	Survivor	S32_charSelect_portrait.jpg
+Rebecca	Survivor	S33_charSelect_portrait.jpg
 ############# Killers #############
 Trapper	Killer	K01_charSelect_portrait.jpg
 Wraith	Killer	K02_charSelect_portrait.jpg
@@ -59,3 +61,4 @@ Cenobite	Killer	K25_charSelect_portrait.jpg
 Artist	Killer	K26_charSelect_portrait.jpg
 Sadako	Killer	K27_charSelect_portrait.jpg
 Dredge	Killer	K28_charSelect_portrait.jpg
+Wesker	Killer	K29_charSelect_portrait.jpg

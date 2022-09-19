@@ -2,6 +2,9 @@
 Ace Visconti	Ace In The Hole	75
 Ace Visconti	Open-Handed	75
 Ace Visconti	Up The Ante	75
+Ada Wong	Low Profile	75
+Ada Wong	Reactive Healing	75
+Ada Wong	Wiretap	75
 Adam	Autodidact	75
 Adam	Deliverance	75
 Adam	Diversion	75
@@ -77,6 +80,9 @@ Nea	Urban Evasion	75
 Quentin	Pharmacy	75
 Quentin	Vigil	75
 Quentin	Wake Up!	75
+Rebecca	Better Than New	75
+Rebecca	Hyperfocus	75
+Rebecca	Reassurance	75
 Steve	Guardian	75
 Steve	Kinship	75
 Steve	Renewal	75
@@ -97,6 +103,7 @@ Artist	Bamboozle	-100
 Artist	Brutal Strength	-100
 Artist	Coup De Grace	-100
 Artist	Dead Man's Switch	50
+Artist	Discordance	50
 Artist	Dissolution	-100
 Artist	Enduring	-100
 Artist	Franklin's Demise	-100
@@ -108,6 +115,8 @@ Artist	Jolt	-100
 Artist	Save The Best For Last	-100
 Artist	Scourge Hook Pain Resonance	75
 Artist	Sloppy Butcher	-100
+Artist	Superior Anatomy	-100
+Artist	Thrilling Tremors	50
 ############# Blight #############
 Blight	Bamboozle	-100
 Blight	Brutal Strength	-100
@@ -117,23 +126,33 @@ Blight	Dragon's Grip	75
 Blight	Enduring	-100
 Blight	Hex Blood Favour	75
 Blight	Hex Undying	75
+Blight	Lethal Pursuer	50
 Blight	Save The Best For Last	-100
 Blight	Shadowborn	50
+Blight	Superior Anatomy	-100
+Blight	Tinkerer	50
 ############# Cenobite #############
 Cenobite	Deadlock	75
 Cenobite	Franklin's Demise	50
 Cenobite	Hex Plaything	75
+Cenobite	Hex Ruin	50
 Cenobite	Hoarder	100
 Cenobite	Scourge Hook Gift of Pain	75
+Cenobite	Sloppy Butcher	50
 ############# Clown #############
 Clown	Bamboozle	75
+Clown	Brutal Strength	50
 Clown	Coulrophobia	75
 Clown	Pop Goes The Weasel	75
+Clown	Save The Best For Last	50
 ############# Deathslinger #############
 Deathslinger	Dead Man's Switch	75
+Deathslinger	Dissolution	50
 Deathslinger	Gearhead	75
 Deathslinger	Hex Retribution	75
+Deathslinger	Jolt	50
 Deathslinger	Save The Best For Last	50
+Deathslinger	Starstruck	50
 ############# Demogorgon #############
 Demogorgon	Brutal Strength	-100
 Demogorgon	Coup De Grace	-100
@@ -142,17 +161,23 @@ Demogorgon	Claustrophobia	75
 Demogorgon	Fearmonger	75
 Demogorgon	Franklin's Demise	-100
 Demogorgon	Gearhead	-100
+Demogorgon	Hex Devour Hope	50
+Demogorgon	I'm All Ears	50
 Demogorgon	Jolt	75
 Demogorgon	Knock Out	-100
 Demogorgon	Save The Best For Last	50
 Demogorgon	Sloppy Butcher	-100
 ############# Doctor #############
+Doctor	Brutal Strength	50
+Doctor	Coulrophobia	50
 Doctor	Dead Man's Switch	50
 Doctor	Distressing	50
 Doctor	Iron Maiden	50
+Doctor	Merciless Storm	50
 Doctor	Monitor & Abuse	75
 Doctor	Overcharge	75
 Doctor	Overwhelming Presence	75
+Doctor	Starstruck	50
 Doctor	Whispers	50
 ############# Dredge #############
 Dredge	Coulrophobia	-200
@@ -160,19 +185,23 @@ Dredge	Dark Devotion	-200
 Dredge	Darkness Revealed	75
 Dredge	Dissolution	75
 Dredge	Distressing	-200
+Dredge	Hex No One Escapes Death	50
 Dredge	Hysteria	-200
 Dredge	Infectious Fright	-200
 Dredge	Insidious	-200
 Dredge	Make Your Choice	50
 Dredge	Overwhelming Presence	-200
 Dredge	Septic Touch	75
+Dredge	Tinkerer	50
 Dredge	Trail of Torment	-200
 Dredge	Unnerving Presence	-200
 ############# Freddy #############
 Freddy	Blood Warden	75
+Freddy	Brutal Strength	50
 Freddy	Coulrophobia	-200
 Freddy	Discordance	50
 Freddy	Dissolution	-100
+Freddy	Fearmonger	50
 Freddy	Fire Up	75
 Freddy	Infectious Fright	-100
 Freddy	Insidious	-200
@@ -180,22 +209,31 @@ Freddy	Monitor & Abuse	-200
 Freddy	Overcharge	-100
 Freddy	Remember Me	75
 Freddy	Starstruck	-200
+Freddy	Tinkerer	50
+Freddy	Thrilling Tremors	50
 Freddy	Trail of Torment	-200
 ############# Ghostface #############
+Ghostface	A Nurse's Calling	50
+Ghostface	Bamboozle	50
 Ghostface	Beast of Prey	-200
+Ghostface	Coup De Grace	50
 Ghostface	Coulrophobia	-200
 Ghostface	Dark Devotion	-200
 Ghostface	Discordance	50
 Ghostface	Dissolution	-100
 Ghostface	Distressing	-200
+Ghostface	Fearmonger	50
 Ghostface	Furtive Chase	75
 Ghostface	I'm All Ears	75
 Ghostface	Infectious Fright	-100
 Ghostface	Insidious	-200
+Ghostface	Lethal Pursuer	50
 Ghostface	Monitor & Abuse	-200
 Ghostface	Overwhelming Presence	-200
 Ghostface	Save The Best For Last	-100
+Ghostface	Scourge Hook Floods of Rage	50
 Ghostface	Starstruck	-100
+Ghostface	Superior Anatomy	50
 Ghostface	Surveillance	50
 Ghostface	Thrilling Tremors	75
 Ghostface	Tinkerer	-100
@@ -217,9 +255,14 @@ Hag	Hex Devour Hope	75
 Hag	Hex Ruin	75
 Hag	Hex The Third Seal	75
 Hag	Infectious Fright	-100
+Hag	Lethal Pursuer	-100
 Hag	Make Your Choice	50
 Hag	Monitor & Abuse	50
 Hag	Overwhelming Presence	-200
+Hag	Scourge Hook Gift of Pain	50
+Hag	Sloppy Butcher	50
+Hag	Superior Anatomy	-100
+Hag	Terminus	50
 Hag	Tinkerer	-100
 Hag	Trail of Torment	-100
 Hag	Unnerving Presence	-200
@@ -241,6 +284,7 @@ Hillbilly	Hex No One Escapes Death	-200
 Hillbilly	Hex The Third Seal	-100
 Hillbilly	Jolt	-100
 Hillbilly	Knock Out	-100
+Hillbilly	Lethal Pursuer	50
 Hillbilly	Lightborn	75
 Hillbilly	Make Your Choice	-200
 Hillbilly	Play With Your Food	-200
@@ -251,17 +295,20 @@ Hillbilly	Sloppy Butcher	-200
 Hillbilly	Starstruck	-200
 Hillbilly	Tinkerer	75
 ############# Huntress Anna #############
+Huntress Anna	A Nurse's Calling	50
 Huntress Anna	Beast of Prey	75
 Huntress Anna	Bitter Murmur	50
 Huntress Anna	Brutal Strength	-100
 Huntress Anna	Coulrophobia	-200
 Huntress Anna	Coup De Grace	-100
 Huntress Anna	Darkness Revealed	50
+Huntress Anna	Deerstalker	50
 Huntress Anna	Dissolution	-100
 Huntress Anna	Dragon's Grip	-100
 Huntress Anna	Enduring	-100
 Huntress Anna	Franklin's Demise	-100
 Huntress Anna	Gearhead	-100
+Huntress Anna	Hex Blood Favour	50
 Huntress Anna	Hex Huntress Lullaby	75
 Huntress Anna	Hex No One Escapes Death	-100
 Huntress Anna	Hex The Third Seal	-100
@@ -270,18 +317,22 @@ Huntress Anna	Insidious	-200
 Huntress Anna	Iron Maiden	100
 Huntress Anna	Jolt	-100
 Huntress Anna	Knock Out	-100
+Huntress Anna	Lethal Pursuer	50
 Huntress Anna	Make Your Choice	-100
 Huntress Anna	Monitor & Abuse	-200
 Huntress Anna	Play With Your Food	-200
 Huntress Anna	Save The Best For Last	-200
+Huntress Anna	Scourge Hook Floods of Rage	50
 Huntress Anna	Shadowborn	50
 Huntress Anna	Sloppy Butcher	-200
 Huntress Anna	Starstruck	-100
+Huntress Anna	Superior Anatomy	-100
 Huntress Anna	Territorial Imperative	75
 Huntress Anna	Tinkerer	-100
 Huntress Anna	Trail of Torment	-200
 Huntress Anna	Zanshin Tactics	-100
 ############# Leatherface #############
+Leatherface	Agitation	50
 Leatherface	Bamboozle	50
 Leatherface	Barbecue & Chilli	75
 Leatherface	Bloodhound	-100
@@ -306,10 +357,14 @@ Leatherface	Sloppy Butcher	-200
 Leatherface	Starstruck	-100
 Leatherface	Trail of Torment	50
 ############# Legion #############
+Legion	Bamboozle	50
 Legion	Blood Echo	50
+Legion	Brutal Strength	50
 Legion	Dark Devotion	-100
 Legion	Discordance	75
+Legion	Fearmonger	50
 Legion	Franklin's Demise	-100
+Legion	Hex Ruin	50
 Legion	Infectious Fright	-100
 Legion	Iron Maiden	75
 Legion	Mad Grit	75
@@ -318,17 +373,23 @@ Legion	Save The Best For Last	-100
 Legion	Thanatophobia	100
 Legion	Tinkerer	-100
 ############# Myers #############
+Myers	A Nurse's Calling	50
 Myers	Bamboozle	50
+Myers	Brutal Strength	50
 Myers	Corrupt Intervention	50
 Myers	Coulrophobia	-200
 Myers	Coup De Grace	50
+Myers	Deerstalker	50
+Myers	Discordance	50
 Myers	Dissolution	-100
 Myers	Distressing	-200
 Myers	Dying Light	75
+Myers	Fearmonger	50
 Myers	Furtive Chase	-200
 Myers	Hex Crowd Control	50
 Myers	Hex No One Escapes Death	-200
 Myers	Insidious	-200
+Myers	Lethal Pursuer	50
 Myers	Make Your Choice	-100
 Myers	Monitor & Abuse	50
 Myers	Overwhelming Presence	-200
@@ -336,7 +397,9 @@ Myers	Play With Your Food	75
 Myers	Rancor	-100
 Myers	Save The Best For Last	75
 Myers	Starstruck	-100
-Myers	Tinkerer	-100
+Myers	Superior Anatomy	50
+Myers	Surveillance	50
+Myers	Tinkerer	50
 Myers	Trail of Torment	-100
 Myers	Unnerving Presence	-200
 ############# Nemesis #############
@@ -363,21 +426,27 @@ Nurse Sally	Bamboozle	-200
 Nurse Sally	Brutal Strength	-200
 Nurse Sally	Dissolution	-100
 Nurse Sally	Enduring	-200
+Nurse Sally	Fearmonger	50
 Nurse Sally	Forced Penance	-100
 Nurse Sally	Hex Blood Favour	-100
 Nurse Sally	I'm All Ears	50
+Nurse Sally	Lethal Pursuer	50
 Nurse Sally	Play With Your Food	-200
 Nurse Sally	Save The Best For Last	-200
+Nurse Sally	Scourge Hook Floods of Rage	50
 Nurse Sally	Shadowborn	50
+Nurse Sally	Starstruck	50
 Nurse Sally	Stridor	75
+Nurse Sally	Superior Anatomy	-100
 Nurse Sally	Thanatophobia	75
 Nurse Sally	Zanshin Tactics	-100
 ############# Oni #############
 Oni	Blood Echo	75
 Oni	Bloodhound	-200
-Oni	Brutal Strength	-100
+Oni	Brutal Strength	50
 Oni	Corrupt Intervention	50
 Oni	Coup De Grace	-100
+Oni	Deerstalker	50
 Oni	Dragon's Grip	-100
 Oni	Enduring	-100
 Oni	Forced Penance	-100
@@ -394,24 +463,29 @@ Oni	Monitor & Abuse	50
 Oni	Nemesis	75
 Oni	Rancor	-100
 Oni	Save The Best For Last	-100
+Oni	Scourge Hook Floods of Rage	50
 Oni	Starstruck	-100
+Oni	Tinkerer	50
 Oni	Zanshin Tactics	75
 ############# Pig #############
+Pig	Brutal Strength	50
 Pig	Coulrophobia	-200
 Pig	Dark Devotion	-200
 Pig	Discordance	50
 Pig	Distressing	-200
+Pig	Fearmonger	50
 Pig	Furtive Chase	-100
 Pig	Hangman's Trick	75
 Pig	Insidious	-200
 Pig	Jolt	-100
+Pig	Lethal Pursuer	50
 Pig	Make Your Choice	75
 Pig	Monitor & Abuse	50
 Pig	Overwhelming Presence	-200
 Pig	Save The Best For Last	50
 Pig	Sloppy Butcher	-100
 Pig	Surveillance	75
-Pig	Tinkerer	-100
+Pig	Tinkerer	50
 Pig	Trail of Torment	-100
 Pig	Unnerving Presence	-200
 Pig	Whispers	50
@@ -424,18 +498,20 @@ Plague	Dark Devotion	75
 Plague	Deathbound	-200
 Plague	Dragon's Grip	-200
 Plague	Enduring	-100
+Plague	Fearmonger	50
 Plague	Forced Penance	-100
 Plague	Gearhead	-100
 Plague	Infectious Fright	75
 Plague	Jolt	-100
+Plague	Lethal Pursuer	50
 Plague	Make Your Choice	-200
 Plague	Rancor	-100
 Plague	Save The Best For Last	-200
 Plague	Sloppy Butcher	-200
 Plague	Starstruck	-200
 Plague	Stridor	-100
+Plague	Terminus	50
 Plague	Thanatophobia	100
-Plague	Whispers	-100
 ############# Pyramid Head #############
 Pyramid Head	Barbecue & Chilli	-100
 Pyramid Head	Blood Echo	-200
@@ -449,27 +525,37 @@ Pyramid Head	Jolt	-100
 Pyramid Head	Make Your Choice	-100
 Pyramid Head	Nemesis	50
 Pyramid Head	Pop Goes The Weasel	-100
+Pyramid Head	Scourge Hook Floods of Rage	50
 Pyramid Head	Sloppy Butcher	-100
 Pyramid Head	Starstruck	-100
 Pyramid Head	Thrilling Tremors	-100
+Pyramid Head	Tinkerer	50
 Pyramid Head	Trail of Torment	75
 ############# Sadako #############
+Sadako	A Nurse's Calling	50
+Sadako	Brutal Strength	50
 Sadako	Call of Brine	75
 Sadako	Coulrophobia	-200
 Sadako	Dark Devotion	-200
 Sadako	Discordance	50
 Sadako	Distressing	-200
 Sadako	Dragon's Grip	50
+Sadako	Fearmonger	50
 Sadako	Furtive Chase	-100
 Sadako	Infectious Fright	-100
+Sadako	Lethal Pursuer	50
 Sadako	Make Your Choice	50
 Sadako	Merciless Storm	75
 Sadako	Monitor & Abuse	-200
 Sadako	Overwhelming Presence	-200
+Sadako	Save The Best For Last	50
+Sadako	Surveillance	50
+Sadako	Tinkerer	50
 Sadako	Scourge Hook Floods of Rage	75
 Sadako	Unnerving Presence	-200
 Sadako	Whispers	-100
 ############# Spirit Rin #############
+Spirit Rin	A Nurse's Calling	50
 Spirit Rin	Bamboozle	-200
 Spirit Rin	Brutal Strength	-200
 Spirit Rin	Coulrophobia	-200
@@ -480,26 +566,32 @@ Spirit Rin	Enduring	-200
 Spirit Rin	Forced Penance	-100
 Spirit Rin	Hex Haunted Ground	75
 Spirit Rin	I'm All Ears	-100
+Spirit Rin	Lethal Pursuer	50
 Spirit Rin	Mad Grit	-100
 Spirit Rin	Nemesis	-200
 Spirit Rin	Overwhelming Presence	-200
 Spirit Rin	Rancor	75
+Spirit Rin	Spies From The Shadows	50
 Spirit Rin	Spirit Fury	75
 Spirit Rin	Stridor	50
+Spirit Rin	Superior Anatomy	-100
 Spirit Rin	Tinkerer	-100
 Spirit Rin	Unnerving Presence	-200
-Spirit Rin	Whispers	-200
-Spirit Rin	Zanshin Tactics	-100
 ############# Trapper #############
 Trapper	Agitation	75
 Trapper	Barbecue & Chilli	-100
 Trapper	Brutal Strength	75
 Trapper	Corrupt Intervention	50
+Trapper	Hex Haunted Ground	50
+Trapper	Hex No One Escapes Death	50
+Trapper	Lethal Pursuer	-100
+Trapper	No Way Out	50
 Trapper	Save The Best For Last	50
 Trapper	Tinkerer	-100
 Trapper	Unnerving Presence	75
 Trapper	Whispers	100
 ############# Trickster #############
+Trickster	Bamboozle	50
 Trickster	Coulrophobia	-200
 Trickster	Darkness Revealed	50
 Trickster	Distressing	-200
@@ -524,8 +616,10 @@ Twins	A Nurse's Calling	-100
 Twins	Bloodhound	-200
 Twins	Coup De Grace	75
 Twins	Deerstalker	50
+Twins	Discordance	50
 Twins	Dissolution	-100
 Twins	Forced Penance	100
+Twins	Hex Crowd Control	50
 Twins	Hex The Third Seal	-100
 Twins	Hoarder	75
 Twins	Insidious	-200
@@ -534,16 +628,42 @@ Twins	Knock Out	-100
 Twins	Monitor & Abuse	-200
 Twins	Oppression	75
 Twins	Save The Best For Last	-200
+Twins	Terminus	50
 Twins	Trail of Torment	-200
+############# Wesker #############
+Wesker	Awakened Awareness	75
+Wesker	Bamboozle	50
+Wesker	Coulrophobia	50
+Wesker	Coup De Grace	50
+Wesker	Dissolution	50
+Wesker	Distressing	50
+Wesker	I'm All Ears	50
+Wesker	Infectious Fright	50
+Wesker	Insidious	-200
+Wesker	Jolt	-100
+Wesker	Make Your Choice	-100
+Wesker	Monitor & Abuse	-100
+Wesker	Overwhelming Presence	50
+Wesker	Save The Best For Last	50
+Wesker	Sloppy Butcher	-100
+Wesker	Starstruck	50
+Wesker	Superior Anatomy	75
+Wesker	Terminus	75
+Wesker	Trail of Torment	-100
+Wesker	Unnerving Presence	50
 ############# Wraith #############
+Wraith	A Nurse's Calling	50
 Wraith	Bloodhound	75
+Wraith	Brutal Strength	50
 Wraith	Coulrophobia	-200
 Wraith	Dark Devotion	-200
 Wraith	Distressing	-200
 Wraith	Dragon's Grip	50
+Wraith	Fearmonger	50
 Wraith	Furtive Chase	-100
 Wraith	Infectious Fright	-100
 Wraith	Insidious	-200
+Wraith	Lethal Pursuer	50
 Wraith	Monitor & Abuse	-200
 Wraith	Overwhelming Presence	-200
 Wraith	Play With Your Food	50

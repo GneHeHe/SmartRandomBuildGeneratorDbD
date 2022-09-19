@@ -7,6 +7,7 @@ Any Means Necessary	Survivor	iconPerks_anyMeansNecessary.png	150	Yui
 Appraisal	Survivor	iconPerks_Appraisal.png	50	Elodie
 Autodidact	Survivor	iconPerks_autodidact.png	50	Adam
 Balanced Landing	Survivor	iconPerks_balancedLanding.png	150	Nea
+Better Than New	Survivor	iconPerks_BetterThanNew.png	100	Rebecca
 Bite the Bullet	Survivor	iconPerks_BiteTheBullet.png	100	Leon
 Blast Mine	Survivor	iconPerks_BlastMine.png	150	Jill
 Blood Pact	Survivor	iconPerks_BloodPact.png	100	Cheryl
@@ -46,6 +47,7 @@ For the People	Survivor	iconPerks_ForThePeople.png	150	Zarina
 Guardian	Survivor	iconPerks_Guardian.png	25	Steve
 Head On	Survivor	iconPerks_headOn.png	150	Jane
 Hope	Survivor	iconPerks_hope.png	150	GenSurv
+Hyperfocus	Survivor	iconPerks_Hyperfocus.png	150	Rebecca
 Inner Focus	Survivor	iconPerks_InnerFocus.png	50	Haddie
 Inner Healing	Survivor	iconPerks_InnerHealing.png	150	Nancy
 Iron Will	Survivor	iconPerks_ironWill.png	150	Jake
@@ -55,6 +57,7 @@ Leader	Survivor	iconPerks_leader.png	50	Dwight
 Left Behind	Survivor	iconPerks_leftBehind.png	50	Bill Overbeck
 Lightweight	Survivor	iconPerks_lightweight.png	100	GenSurv
 Lithe	Survivor	iconPerks_lithe.png	200	Feng
+Low Profile	Survivor	iconPerks_LowProfile.png	50	Ada Wong
 Lucky Break	Survivor	iconPerks_luckyBreak.png	150	Yui
 Mettle of Man	Survivor	iconPerks_mettleOfMan.png	100	Ash
 No Mither	Survivor	iconPerks_NoMither.png	25	David King
@@ -72,17 +75,19 @@ Power Struggle	Survivor	iconPerks_PowerStruggle.png	100	Elodie
 Premonition	Survivor	iconPerks_premonition.png	50	GenSurv
 Prove Thyself	Survivor	iconPerks_proveThyself.png	150	Dwight
 Quick & Quiet	Survivor	iconPerks_quickAndQuiet.png	100	Meg
+Reactive Healing	Survivor	iconPerks_ReactiveHealing.png	50	Ada Wong
+Reassurance	Survivor	iconPerks_Reassurance.png	200	Rebecca
 Red Herring	Survivor	iconPerks_RedHerring.png	25	Zarina
 Renewal	Survivor	iconPerks_Renewal.png	150	Steve
 Repressed Alliance	Survivor	iconPerks_RepressedAlliance.png	100	Cheryl
-Residual Manifest	Survivor	iconPerks_ResidualManifest.png	100	Haddie
+Residual Manifest	Survivor	iconPerks_ResidualManifest.png	150	Haddie
 Resilience	Survivor	iconPerks_resilience.png	150	GenSurv
 Resurgence	Survivor	iconPerks_Resurgence.png	100	Jill
 Rookie Spirit	Survivor	iconPerks_RookieSpirit.png	50	Leon
 Saboteur	Survivor	iconPerks_saboteur.png	100	Jake
 Self-Aware	Survivor	iconPerks_SelfAware.png	150	Nancy
 Self-Care	Survivor	iconPerks_selfCare.png	150	Claudette
-Self-Preservation	Survivor	iconPerks_Self-Preservation.png	25	Yun-Jin
+Self-Preservation	Survivor	iconPerks_Self-Preservation.png	50	Yun-Jin
 Situational Awareness	Survivor	iconPerks_SituationalAwareness.png	100	Nancy
 Slippery Meat	Survivor	iconPerks_slipperyMeat.png	50	GenSurv
 Small Game	Survivor	iconPerks_smallGame.png	100	GenSurv
@@ -102,13 +107,15 @@ Up The Ante	Survivor	iconPerks_upTheAnte.png	25	Ace Visconti
 Urban Evasion	Survivor	iconPerks_urbanEvasion.png	100	Nea
 Vigil	Survivor	iconPerks_vigil.png	10	Quentin
 Visionary	Survivor	iconPerks_Visionary.png	100	Felix
-Wake Up!	Survivor	iconPerks_wakeUp.png	100	Quentin
+Wake Up!	Survivor	iconPerks_wakeUp.png	150	Quentin
 We'll Make It	Survivor	iconPerks_wellMakeIt.png	150	GenSurv
 We're Gonna Live Forever	Survivor	iconPerks_WereGonnaLiveForever.png	100	David King
-Windows of Opportunity	Survivor	iconPerks_windowsOfOpportunity.png	100	Kate
+Windows of Opportunity	Survivor	iconPerks_windowsOfOpportunity.png	150	Kate
+Wiretap	Survivor	iconPerks_Wiretap.png	150	Ada Wong
 ############# Killers #############
 A Nurse's Calling	Killer	iconPerks_aNursesCalling.png	150	Nurse Sally
 Agitation	Killer	iconPerks_agitation.png	150	Trapper
+Awakened Awareness	Killer	iconPerks_AwakenedAwareness.png	150	Wesker
 Bamboozle	Killer	iconPerks_bamboozle.png	150	Clown
 Barbecue & Chilli	Killer	iconPerks_BBQAndChili.png	150	Leatherface
 Beast of Prey	Killer	iconPerks_BeastOfPrey.png	10	Huntress Anna
@@ -194,7 +201,9 @@ Spies From The Shadows	Killer	iconPerks_spiesFromTheShadows.png	50	GenKiller
 Spirit Fury	Killer	iconPerks_spiritFury.png	25	Spirit Rin
 Starstruck	Killer	iconPerks_Starstruck.png	150	Trickster
 Stridor	Killer	iconPerks_stridor.png	50	Nurse Sally
+Superior Anatomy	Killer	iconPerks_SuperiorAnatomy.png	150	Wesker
 Surveillance	Killer	iconPerks_surveillance.png	150	Pig
+Terminus	Killer	iconPerks_Terminus.png	150	Wesker
 Territorial Imperative	Killer	iconPerks_TerritorialImperative.png	50	Huntress Anna
 Thanatophobia	Killer	iconPerks_thatanophobia.png	100	Nurse Sally
 Thrilling Tremors	Killer	iconPerks_ThrillingTremors.png	150	Ghostface

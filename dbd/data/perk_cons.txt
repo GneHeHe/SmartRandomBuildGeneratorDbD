@@ -28,10 +28,12 @@ SURVIV_2	Survival	Head On
 SURVIV_2	Survival	Hope
 SURVIV_2	Survival	Iron Will
 SURVIV_2	Survival	Left Behind
+SURVIV_2	Survival	Low Profile
 SURVIV_2	Survival	Lucky Break
 SURVIV_2	Survival	Mettle of Man
 SURVIV_2	Survival	Power Struggle
 SURVIV_2	Survival	Premonition
+SURVIV_2	Survival	Reassurance
 SURVIV_2	Survival	Self-Aware
 SURVIV_2	Survival	Self-Preservation
 SURVIV_2	Survival	Soul Guard
@@ -55,6 +57,7 @@ SURVIV_3	Chase	Quick & Quiet
 SURVIV_3	Chase	Smash Hit
 SURVIV_3	Chase	Sprint Burst
 SURVIV_3	Chase	Windows of Opportunity
+SURVIV_3	Chase	Wiretap
 SURVIV_4	ShowAura	Alert
 SURVIV_4	ShowAura	Clairvoyance
 SURVIV_4	ShowAura	Counterforce
@@ -101,8 +104,10 @@ KILLER_2	Chase	Make Your Choice
 KILLER_2	Chase	Play With Your Food
 KILLER_2	Chase	Save The Best For Last
 KILLER_2	Chase	Spirit Fury
+KILLER_2	Chase	Superior Anatomy
 KILLER_2	Chase	Zanshin Tactics
 KILLER_3	Detection	A Nurse's Calling
+KILLER_3	Detection	Awakened Awareness
 KILLER_3	Detection	Barbecue & Chilli
 KILLER_3	Detection	Bitter Murmur
 KILLER_3	Detection	Bloodhound
@@ -130,3 +135,4 @@ KILLER_4	EndGame	Blood Warden
 KILLER_4	EndGame	Hex No One Escapes Death
 KILLER_4	EndGame	No Way Out
 KILLER_4	EndGame	Remember Me
+KILLER_4	EndGame	Terminus

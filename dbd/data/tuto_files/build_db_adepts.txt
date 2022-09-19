@@ -25,6 +25,7 @@ Perkless	Killer	Spirit Rin	Undefined	Undefined	Undefined	Undefined
 Perkless	Killer	Trapper	Undefined	Undefined	Undefined	Undefined
 Perkless	Killer	Trickster	Undefined	Undefined	Undefined	Undefined
 Perkless	Killer	Twins	Undefined	Undefined	Undefined	Undefined
+Perkless	Killer	Wesker	Undefined	Undefined	Undefined	Undefined
 Perkless	Killer	Wraith	Undefined	Undefined	Undefined	Undefined
 Perkless	Survivor	GenSurv	Undefined	Undefined	Undefined	Undefined
 ################################# TheAdept	#################################
@@ -55,8 +56,10 @@ TheAdept	Killer	Spirit Rin	Hex Haunted Ground	Rancor	Spirit Fury	Undefined
 TheAdept	Killer	Trapper	Agitation	Brutal Strength	Unnerving Presence	Undefined
 TheAdept	Killer	Trickster	Hex Crowd Control	No Way Out	Starstruck	Undefined
 TheAdept	Killer	Twins	Coup De Grace	Hoarder	Oppression	Undefined
+TheAdept	Killer	Wesker	Awakened Awareness	Superior Anatomy	Terminus	Undefined
 TheAdept	Killer	Wraith	Bloodhound	Predator	Shadowborn	Undefined
 TheAdept	Survivor	Ace Visconti	Ace In The Hole	Open-Handed	Up The Ante	Undefined
+TheAdept	Survivor	Ada Wong	Low Profile	Reactive Healing	Wiretap	Undefined
 TheAdept	Survivor	Adam	Autodidact	Deliverance	Diversion	Undefined
 TheAdept	Survivor	Ash	Buckle Up	Flip-Flop	Mettle of Man	Undefined
 TheAdept	Survivor	Bill Overbeck	Borrowed Time	Left Behind	Unbreakable	Undefined
@@ -82,6 +85,7 @@ TheAdept	Survivor	Mikaela	Boon Circle of Healing	Boon Shadow Step	Clairvoyance	U
 TheAdept	Survivor	Nancy	Inner Healing	Self-Aware	Situational Awareness	Undefined
 TheAdept	Survivor	Nea	Balanced Landing	Streetwise	Urban Evasion	Undefined
 TheAdept	Survivor	Quentin	Pharmacy	Vigil	Wake Up!	Undefined
+TheAdept	Survivor	Rebecca	Better Than New	Hyperfocus	Reassurance	Undefined
 TheAdept	Survivor	Steve	Guardian	Kinship	Renewal	Undefined
 TheAdept	Survivor	Yoichi	Boon Dark Theory	Empathic Connection	Parental Guidance	Undefined
 TheAdept	Survivor	Yui	Any Means Necessary	Breakout	Lucky Break	Undefined
