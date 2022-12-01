@@ -56,3 +56,5 @@ Build	Killer	Dredge	Barbecue & Chilli	Darkness Revealed	Deadlock	Scourge Hook Pa
 Build	Killer	Dredge	Jolt	Lethal Pursuer	Scourge Hook Pain Resonance	Surveillance
 Build	Killer	Wesker	Barbecue & Chilli	Dissolution	Lethal Pursuer	Scourge Hook Pain Resonance
 Build	Killer	Wesker	Barbecue & Chilli	Lethal Pursuer	Save The Best For Last	Scourge Hook Pain Resonance
+Build	Killer	Knight	Barbecue & Chilli	Lethal Pursuer	Play With Your Food	Scourge Hook Pain Resonance
+Build	Killer	Knight	Barbecue & Chilli	Lethal Pursuer	Save The Best For Last	Scourge Hook Pain Resonance

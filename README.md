@@ -123,7 +123,7 @@ However, **I guarantee SRBG is virus/trojan-free**.
 
 # How to download and run SRBG ?
 
-1) Download the last **pre-compiled JAR/EXE files** [here](https://github.com/GneHeHe/SmartRandomBuildGeneratorDbD/releases/download/3.3/SRBG.zip) (also available in '**releases**' tab)
+1) Download the last **pre-compiled JAR/EXE files** [here](https://github.com/GneHeHe/SmartRandomBuildGeneratorDbD/releases/download/3.4/SRBG.zip) (also available in '**releases**' tab)
 
 2) Unzip the downloaded **ZIP file**
 
@@ -137,8 +137,7 @@ However, **I guarantee SRBG is virus/trojan-free**.
 
 # System Requirements
 
-* Recent **Java** Version (1.8 required) [Link](https://java.com/en/download)
-
+* Recent **Java** Version (1.8 required ; tested with Oracle Java, not tested with OpenJDK) [Link](https://java.com/en/download)
 
 * Library **Gson** (included in pre-compiled files)
 

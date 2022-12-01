@@ -11,6 +11,7 @@ Perkless	Killer	Ghostface	Undefined	Undefined	Undefined	Undefined
 Perkless	Killer	Hag	Undefined	Undefined	Undefined	Undefined
 Perkless	Killer	Hillbilly	Undefined	Undefined	Undefined	Undefined
 Perkless	Killer	Huntress Anna	Undefined	Undefined	Undefined	Undefined
+Perkless	Killer	Knight	Undefined	Undefined	Undefined	Undefined
 Perkless	Killer	Leatherface	Undefined	Undefined	Undefined	Undefined
 Perkless	Killer	Legion	Undefined	Undefined	Undefined	Undefined
 Perkless	Killer	Myers	Undefined	Undefined	Undefined	Undefined
@@ -42,6 +43,7 @@ TheAdept	Killer	Ghostface	Furtive Chase	I'm All Ears	Thrilling Tremors	Undefined
 TheAdept	Killer	Hag	Hex Devour Hope	Hex Ruin	Hex The Third Seal	Undefined
 TheAdept	Killer	Hillbilly	Enduring	Lightborn	Tinkerer	Undefined
 TheAdept	Killer	Huntress Anna	Beast of Prey	Hex Huntress Lullaby	Territorial Imperative	Undefined
+TheAdept	Killer	Knight	Hex Face the Darkness	Hubris	Nowhere to Hide	Undefined
 TheAdept	Killer	Leatherface	Barbecue & Chilli	Franklin's Demise	Knock Out	Undefined
 TheAdept	Killer	Legion	Discordance	Iron Maiden	Mad Grit	Undefined
 TheAdept	Killer	Myers	Dying Light	Play With Your Food	Save The Best For Last	Undefined
@@ -87,6 +89,7 @@ TheAdept	Survivor	Nea	Balanced Landing	Streetwise	Urban Evasion	Undefined
 TheAdept	Survivor	Quentin	Pharmacy	Vigil	Wake Up!	Undefined
 TheAdept	Survivor	Rebecca	Better Than New	Hyperfocus	Reassurance	Undefined
 TheAdept	Survivor	Steve	Guardian	Kinship	Renewal	Undefined
+TheAdept	Survivor	Vittorio	Fogwise	Potential Energy	Quick Gambit	Undefined
 TheAdept	Survivor	Yoichi	Boon Dark Theory	Empathic Connection	Parental Guidance	Undefined
 TheAdept	Survivor	Yui	Any Means Necessary	Breakout	Lucky Break	Undefined
 TheAdept	Survivor	Yun-Jin	Fast Track	Self-Preservation	Smash Hit	Undefined

@@ -86,6 +86,9 @@ Rebecca	Reassurance	75
 Steve	Guardian	75
 Steve	Kinship	75
 Steve	Renewal	75
+Vittorio	Fogwise	75
+Vittorio	Potential Energy	75
+Vittorio	Quick Gambit	75
 Yui	Any Means Necessary	75
 Yui	Breakout	75
 Yui	Lucky Break	75
@@ -112,6 +115,8 @@ Artist	Grim Embrace	75
 Artist	Hex Pentimento	75
 Artist	Hex The Third Seal	-100
 Artist	Jolt	-100
+Artist	Lethal Pursuer	50
+Artist	Nowhere to Hide	50
 Artist	Save The Best For Last	-100
 Artist	Scourge Hook Pain Resonance	75
 Artist	Sloppy Butcher	-100
@@ -127,6 +132,7 @@ Blight	Enduring	-100
 Blight	Hex Blood Favour	75
 Blight	Hex Undying	75
 Blight	Lethal Pursuer	50
+Blight	Nowhere to Hide	50
 Blight	Save The Best For Last	-100
 Blight	Shadowborn	50
 Blight	Superior Anatomy	-100
@@ -143,6 +149,7 @@ Cenobite	Sloppy Butcher	50
 Clown	Bamboozle	75
 Clown	Brutal Strength	50
 Clown	Coulrophobia	75
+Clown	Hubris	50
 Clown	Pop Goes The Weasel	75
 Clown	Save The Best For Last	50
 ############# Deathslinger #############
@@ -172,6 +179,7 @@ Doctor	Brutal Strength	50
 Doctor	Coulrophobia	50
 Doctor	Dead Man's Switch	50
 Doctor	Distressing	50
+Doctor	Hubris	50
 Doctor	Iron Maiden	50
 Doctor	Merciless Storm	50
 Doctor	Monitor & Abuse	75
@@ -192,6 +200,7 @@ Dredge	Insidious	-200
 Dredge	Make Your Choice	50
 Dredge	Overwhelming Presence	-200
 Dredge	Septic Touch	75
+Dredge	Sloppy Butcher	50
 Dredge	Tinkerer	50
 Dredge	Trail of Torment	-200
 Dredge	Unnerving Presence	-200
@@ -203,6 +212,7 @@ Freddy	Discordance	50
 Freddy	Dissolution	-100
 Freddy	Fearmonger	50
 Freddy	Fire Up	75
+Freddy	Hubris	50
 Freddy	Infectious Fright	-100
 Freddy	Insidious	-200
 Freddy	Monitor & Abuse	-200
@@ -229,6 +239,7 @@ Ghostface	Infectious Fright	-100
 Ghostface	Insidious	-200
 Ghostface	Lethal Pursuer	50
 Ghostface	Monitor & Abuse	-200
+Ghostface	Nowhere to Hide	50
 Ghostface	Overwhelming Presence	-200
 Ghostface	Save The Best For Last	-100
 Ghostface	Scourge Hook Floods of Rage	50
@@ -254,10 +265,12 @@ Hag	Hex Crowd Control	-100
 Hag	Hex Devour Hope	75
 Hag	Hex Ruin	75
 Hag	Hex The Third Seal	75
+Hag	Hubris	50
 Hag	Infectious Fright	-100
 Hag	Lethal Pursuer	-100
 Hag	Make Your Choice	50
 Hag	Monitor & Abuse	50
+Hag	Nowhere to Hide	50
 Hag	Overwhelming Presence	-200
 Hag	Scourge Hook Gift of Pain	50
 Hag	Sloppy Butcher	50
@@ -282,11 +295,13 @@ Hillbilly	Hex Crowd Control	50
 Hillbilly	Hex Haunted Ground	-200
 Hillbilly	Hex No One Escapes Death	-200
 Hillbilly	Hex The Third Seal	-100
+Hillbilly	Hubris	-100
 Hillbilly	Jolt	-100
 Hillbilly	Knock Out	-100
 Hillbilly	Lethal Pursuer	50
 Hillbilly	Lightborn	75
 Hillbilly	Make Your Choice	-200
+Hillbilly	Nowhere to Hide	50
 Hillbilly	Play With Your Food	-200
 Hillbilly	Rancor	-100
 Hillbilly	Save The Best For Last	-200
@@ -312,6 +327,7 @@ Huntress Anna	Hex Blood Favour	50
 Huntress Anna	Hex Huntress Lullaby	75
 Huntress Anna	Hex No One Escapes Death	-100
 Huntress Anna	Hex The Third Seal	-100
+Huntress Anna	Hubris	-100
 Huntress Anna	Infectious Fright	-100
 Huntress Anna	Insidious	-200
 Huntress Anna	Iron Maiden	100
@@ -331,6 +347,17 @@ Huntress Anna	Territorial Imperative	75
 Huntress Anna	Tinkerer	-100
 Huntress Anna	Trail of Torment	-200
 Huntress Anna	Zanshin Tactics	-100
+############# Knight #############
+Knight	Bamboozle	50
+Knight	Dead Man's Switch	50
+Knight	Hex Crowd Control	50
+Knight	Hex Devour Hope	50
+Knight	Hex Face the Darkness	75
+Knight	Hubris	75
+Knight	Make Your Choice	50
+Knight	Nowhere to Hide	75
+Knight	Play With Your Food	50
+Knight	Zanshin Tactics	50
 ############# Leatherface #############
 Leatherface	Agitation	50
 Leatherface	Bamboozle	50
@@ -338,6 +365,7 @@ Leatherface	Barbecue & Chilli	75
 Leatherface	Bloodhound	-100
 Leatherface	Brutal Strength	-100
 Leatherface	Coup De Grace	-100
+Leatherface	Deadlock	50
 Leatherface	Dissolution	-100
 Leatherface	Dragon's Grip	-100
 Leatherface	Franklin's Demise	75
@@ -348,9 +376,11 @@ Leatherface	Hex Haunted Ground	-100
 Leatherface	Hex Plaything	50
 Leatherface	Hex The Third Seal	-100
 Leatherface	Insidious	50
+Leatherface	Iron Maiden	50
 Leatherface	Jolt	-100
 Leatherface	Knock Out	75
 Leatherface	Make Your Choice	-100
+Leatherface	Nowhere to Hide	50
 Leatherface	Rancor	-100
 Leatherface	Save The Best For Last	-200
 Leatherface	Sloppy Butcher	-200
@@ -365,6 +395,7 @@ Legion	Discordance	75
 Legion	Fearmonger	50
 Legion	Franklin's Demise	-100
 Legion	Hex Ruin	50
+Legion	Hubris	50
 Legion	Infectious Fright	-100
 Legion	Iron Maiden	75
 Legion	Mad Grit	75
@@ -392,6 +423,7 @@ Myers	Insidious	-200
 Myers	Lethal Pursuer	50
 Myers	Make Your Choice	-100
 Myers	Monitor & Abuse	50
+Myers	Nowhere to Hide	50
 Myers	Overwhelming Presence	-200
 Myers	Play With Your Food	75
 Myers	Rancor	-100
@@ -431,6 +463,7 @@ Nurse Sally	Forced Penance	-100
 Nurse Sally	Hex Blood Favour	-100
 Nurse Sally	I'm All Ears	50
 Nurse Sally	Lethal Pursuer	50
+Nurse Sally	Nowhere to Hide	50
 Nurse Sally	Play With Your Food	-200
 Nurse Sally	Save The Best For Last	-200
 Nurse Sally	Scourge Hook Floods of Rage	50
@@ -454,6 +487,7 @@ Oni	Gearhead	-100
 Oni	Hex Haunted Ground	-100
 Oni	Hex No One Escapes Death	-200
 Oni	Hex The Third Seal	-100
+Oni	Hubris	-100
 Oni	Infectious Fright	50
 Oni	Jolt	-100
 Oni	Knock Out	-100
@@ -461,6 +495,7 @@ Oni	Mad Grit	-100
 Oni	Make Your Choice	-100
 Oni	Monitor & Abuse	50
 Oni	Nemesis	75
+Oni	Nowhere to Hide	50
 Oni	Rancor	-100
 Oni	Save The Best For Last	-100
 Oni	Scourge Hook Floods of Rage	50
@@ -476,6 +511,7 @@ Pig	Distressing	-200
 Pig	Fearmonger	50
 Pig	Furtive Chase	-100
 Pig	Hangman's Trick	75
+Pig	Hubris	50
 Pig	Insidious	-200
 Pig	Jolt	-100
 Pig	Lethal Pursuer	50
@@ -496,6 +532,7 @@ Plague	Corrupt Intervention	75
 Plague	Coulrophobia	-200
 Plague	Dark Devotion	75
 Plague	Deathbound	-200
+Plague	Dissolution	50
 Plague	Dragon's Grip	-200
 Plague	Enduring	-100
 Plague	Fearmonger	50
@@ -524,6 +561,7 @@ Pyramid Head	I'm All Ears	100
 Pyramid Head	Jolt	-100
 Pyramid Head	Make Your Choice	-100
 Pyramid Head	Nemesis	50
+Pyramid Head	Nowhere to Hide	50
 Pyramid Head	Pop Goes The Weasel	-100
 Pyramid Head	Scourge Hook Floods of Rage	50
 Pyramid Head	Sloppy Butcher	-100
@@ -538,10 +576,13 @@ Sadako	Call of Brine	75
 Sadako	Coulrophobia	-200
 Sadako	Dark Devotion	-200
 Sadako	Discordance	50
+Sadako	Dissolution	50
 Sadako	Distressing	-200
 Sadako	Dragon's Grip	50
 Sadako	Fearmonger	50
 Sadako	Furtive Chase	-100
+Sadako	Hex Face the Darkness	50
+Sadako	Hubris	50
 Sadako	Infectious Fright	-100
 Sadako	Lethal Pursuer	50
 Sadako	Make Your Choice	50
@@ -565,10 +606,12 @@ Spirit Rin	Distressing	-200
 Spirit Rin	Enduring	-200
 Spirit Rin	Forced Penance	-100
 Spirit Rin	Hex Haunted Ground	75
+Spirit Rin	Hubris	50
 Spirit Rin	I'm All Ears	-100
 Spirit Rin	Lethal Pursuer	50
 Spirit Rin	Mad Grit	-100
 Spirit Rin	Nemesis	-200
+Spirit Rin	Nowhere to Hide	50
 Spirit Rin	Overwhelming Presence	-200
 Spirit Rin	Rancor	75
 Spirit Rin	Spies From The Shadows	50
@@ -584,6 +627,7 @@ Trapper	Brutal Strength	75
 Trapper	Corrupt Intervention	50
 Trapper	Hex Haunted Ground	50
 Trapper	Hex No One Escapes Death	50
+Trapper	Hubris	50
 Trapper	Lethal Pursuer	-100
 Trapper	No Way Out	50
 Trapper	Save The Best For Last	50
@@ -597,6 +641,8 @@ Trickster	Darkness Revealed	50
 Trickster	Distressing	-200
 Trickster	Hex Blood Favour	50
 Trickster	Hex Crowd Control	75
+Trickster	Hex No One Escapes Death	-100
+Trickster	Hubris	-100
 Trickster	Infectious Fright	-100
 Trickster	Insidious	-200
 Trickster	Iron Maiden	100
@@ -661,6 +707,7 @@ Wraith	Distressing	-200
 Wraith	Dragon's Grip	50
 Wraith	Fearmonger	50
 Wraith	Furtive Chase	-100
+Wraith	Hubris	50
 Wraith	Infectious Fright	-100
 Wraith	Insidious	-200
 Wraith	Lethal Pursuer	50

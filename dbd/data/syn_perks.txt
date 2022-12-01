@@ -38,6 +38,7 @@ Aftercare	Empathy	-300
 Aftercare	Flashbang	25
 Aftercare	Leader	25
 Aftercare	Lucky Break	25
+Aftercare	Quick Gambit	25
 Aftercare	Renewal	25
 Alert	Any Means Necessary	-300
 Alert	Inner Focus	-50
@@ -69,6 +70,7 @@ Balanced Landing	Iron Will	-100
 Balanced Landing	Lightweight	50
 Balanced Landing	Lithe	-100
 Balanced Landing	Overcome	-100
+Balanced Landing	Potential Energy	25
 Balanced Landing	Smash Hit	-100
 Balanced Landing	Sprint Burst	-999
 Balanced Landing	Vigil	50
@@ -94,6 +96,7 @@ Bite the Bullet	Resurgence	25
 Bite the Bullet	Self-Care	50
 Bite the Bullet	Solidarity	50
 Blast Mine	Bond	25
+Blast Mine	Fogwise	25
 Blast Mine	Premonition	25
 Blast Mine	Prove Thyself	25
 Blast Mine	Red Herring	25
@@ -102,6 +105,7 @@ Blast Mine	Resilience	25
 Blast Mine	Situational Awareness	25
 Blast Mine	Spine Chill	25
 Blast Mine	Wiretap	50
+Blood Pact	Quick Gambit	25
 Boil Over	Breakdown	25
 Boil Over	Flip-Flop	50
 Boil Over	Saboteur	25
@@ -118,7 +122,9 @@ Bond	Leader	25
 Bond	Lucky Break	25
 Bond	Mettle of Man	25
 Bond	Open-Handed	50
+Bond	Potential Energy	25
 Bond	Prove Thyself	25
+Bond	Quick Gambit	50
 Bond	Reactive Healing	50
 Bond	Renewal	50
 Bond	Self-Care	-300
@@ -219,6 +225,7 @@ Calm Spirit	Lucky Break	25
 Calm Spirit	No Mither	25
 Calm Spirit	Pharmacy	25
 Calm Spirit	Plunderer's Instinct	50
+Calm Spirit	Potential Energy	25
 Calm Spirit	Residual Manifest	25
 Calm Spirit	Urban Evasion	25
 Clairvoyance	Counterforce	50
@@ -246,7 +253,9 @@ Dance With Me	Parental Guidance	-100
 Dance With Me	Poised	-300
 Dance With Me	Quick & Quiet	50
 Dance With Me	Windows of Opportunity	50
+Dark Sense	Fogwise	-300
 Dark Sense	Inner Focus	-50
+Dark Sense	Potential Energy	25
 Dark Sense	Premonition	-100
 Dark Sense	Spine Chill	-999
 Dark Sense	Wiretap	-100
@@ -260,6 +269,7 @@ Dead Hard	No Mither	50
 Dead Hard	Object of Obsession	25
 Dead Hard	Off the Record	-300
 Dead Hard	Overcome	-999
+Dead Hard	Potential Energy	25
 Dead Hard	Smash Hit	-100
 Dead Hard	Soul Guard	-999
 Dead Hard	Sprint Burst	-999
@@ -275,13 +285,17 @@ Decisive Strike	Self-Care	-100
 Decisive Strike	Tenacity	50
 Decisive Strike	Unbreakable	50
 Deja Vu	Detective's Hunch	-300
+Deja Vu	Fogwise	25
 Deja Vu	Hyperfocus	25
+Deja Vu	Potential Energy	25
 Deja Vu	Prove Thyself	50
+Deja Vu	Quick Gambit	25
 Deja Vu	Repressed Alliance	50
 Deja Vu	Rookie Spirit	-300
 Deja Vu	Situational Awareness	50
 Deja Vu	Technician	50
 Deja Vu	Visionary	-999
+Deliverance	Distortion	50
 Deliverance	Flip-Flop	25
 Deliverance	Mettle of Man	25
 Deliverance	Off the Record	50
@@ -313,6 +327,7 @@ Distortion	Guardian	-999
 Distortion	Mettle of Man	-999
 Distortion	Object of Obsession	-999
 Distortion	Off the Record	-100
+Distortion	Potential Energy	50
 Distortion	Self-Care	50
 Diversion	Iron Will	50
 Diversion	Low Profile	25
@@ -328,22 +343,33 @@ Empathy	For the People	25
 Empathy	Leader	25
 Empathy	Lucky Break	50
 Empathy	Mettle of Man	25
+Empathy	Quick Gambit	25
 Empathy	Reactive Healing	-100
 Empathy	Renewal	50
 Empathy	Self-Care	-100
 Empathy	Solidarity	25
 Empathy	We'll Make It	25
 Fast Track	Hyperfocus	25
+Fast Track	Potential Energy	25
 Fast Track	Stake Out	50
 Fast Track	This Is Not Happening	50
+Flashbang	Fogwise	25
 Flashbang	Head On	50
 Flashbang	Inner Healing	25
 Flashbang	Quick & Quiet	50
-Flashbang	Saboteur	25
+Flashbang	Saboteur	50
 Flashbang	Unbreakable	25
 Flip-Flop	Power Struggle	50
 Flip-Flop	Tenacity	50
 Flip-Flop	Unbreakable	50
+Fogwise	Hyperfocus	25
+Fogwise	Object of Obsession	-999
+Fogwise	Potential Energy	25
+Fogwise	Prove Thyself	25
+Fogwise	Repressed Alliance	25
+Fogwise	Stake Out	50
+Fogwise	Visionary	25
+Fogwise	Wiretap	25
 For the People	Inner Healing	25
 For the People	Iron Will	50
 For the People	Lucky Break	-300
@@ -365,9 +391,10 @@ Hope	Left Behind	25
 Hope	Overcome	25
 Hope	Wiretap	-100
 Hyperfocus	Overzealous	25
+Hyperfocus	Potential Energy	25
 Hyperfocus	Prove Thyself	25
 Hyperfocus	Resilience	25
-Hyperfocus	Stake Out	50
+Hyperfocus	Stake Out	100
 Hyperfocus	This Is Not Happening	25
 Inner Focus	Object of Obsession	-50
 Inner Focus	Self-Aware	-50
@@ -411,6 +438,7 @@ Lightweight	Quick & Quiet	25
 Lightweight	Smash Hit	50
 Lightweight	Sprint Burst	50
 Lithe	Overcome	-100
+Lithe	Potential Energy	25
 Lithe	Quick & Quiet	50
 Lithe	Smash Hit	-100
 Lithe	Sprint Burst	-999
@@ -457,6 +485,7 @@ No Mither	Sprint Burst	25
 No Mither	Tenacity	25
 No Mither	Unbreakable	50
 No Mither	Urban Evasion	25
+Object of Obsession	Potential Energy	-999
 Object of Obsession	Quick & Quiet	50
 Object of Obsession	Sole Survivor	50
 Object of Obsession	Sprint Burst	50
@@ -477,6 +506,13 @@ Pharmacy	Self-Care	-300
 Plunderer's Instinct	Residual Manifest	50
 Plunderer's Instinct	Up The Ante	25
 Poised	Unbreakable	25
+Potential Energy	Prove Thyself	25
+Potential Energy	Repressed Alliance	25
+Potential Energy	Self-Aware	25
+Potential Energy	Spine Chill	25
+Potential Energy	Sprint Burst	50
+Potential Energy	Stake Out	25
+Potential Energy	Visionary	25
 Power Struggle	Smash Hit	25
 Power Struggle	Tenacity	25
 Power Struggle	Unbreakable	25
@@ -488,12 +524,15 @@ Prove Thyself	Visionary	50
 Quick & Quiet	Red Herring	50
 Quick & Quiet	Resilience	50
 Quick & Quiet	Windows of Opportunity	50
+Quick Gambit	Visionary	25
+Quick Gambit	Wiretap	25
 Reactive Healing	Resurgence	25
-Reactive Healing	Self-Care	25
+Reactive Healing	Self-Care	50
 Renewal	Resurgence	-100
 Renewal	We'll Make It	50
 Repressed Alliance	Rookie Spirit	50
 Repressed Alliance	Visionary	50
+Repressed Alliance	Wiretap	50
 Resilience	Sole Survivor	25
 Resilience	Wake Up!	25
 Resurgence	Self-Care	50
@@ -554,6 +593,7 @@ Bamboozle	Dissolution	25
 Bamboozle	Enduring	25
 Bamboozle	Fire Up	50
 Bamboozle	Hex Crowd Control	-100
+Bamboozle	Hubris	25
 Bamboozle	Superior Anatomy	50
 Barbecue & Chilli	Bitter Murmur	-50
 Barbecue & Chilli	Blood Echo	50
@@ -565,6 +605,7 @@ Barbecue & Chilli	Hex Ruin	50
 Barbecue & Chilli	Iron Maiden	25
 Barbecue & Chilli	Knock Out	25
 Barbecue & Chilli	Lethal Pursuer	50
+Barbecue & Chilli	Nowhere to Hide	25
 Barbecue & Chilli	Pop Goes The Weasel	50
 Barbecue & Chilli	Rancor	-100
 Barbecue & Chilli	Scourge Hook Floods of Rage	-50
@@ -593,6 +634,8 @@ Brutal Strength	Dragon's Grip	25
 Brutal Strength	Enduring	25
 Brutal Strength	Eruption	25
 Brutal Strength	Fire Up	50
+Brutal Strength	Hubris	25
+Brutal Strength	Nowhere to Hide	50
 Brutal Strength	Oppression	25
 Brutal Strength	Overcharge	25
 Brutal Strength	Pop Goes The Weasel	25
@@ -605,6 +648,7 @@ Call of Brine	Fire Up	25
 Call of Brine	Grim Embrace	-50
 Call of Brine	Hex Ruin	-100
 Call of Brine	Jolt	-50
+Call of Brine	Nowhere to Hide	25
 Call of Brine	Oppression	50
 Call of Brine	Overcharge	50
 Call of Brine	Pop Goes The Weasel	50
@@ -623,6 +667,7 @@ Coulrophobia	Sloppy Butcher	50
 Coulrophobia	Trail of Torment	-300
 Coup De Grace	Dissolution	50
 Coup De Grace	Hex Blood Favour	50
+Coup De Grace	Hubris	50
 Coup De Grace	Make Your Choice	25
 Coup De Grace	Rancor	25
 Dark Devotion	Monitor & Abuse	-300
@@ -641,6 +686,7 @@ Dead Man's Switch	Eruption	50
 Dead Man's Switch	Fearmonger	50
 Dead Man's Switch	Gearhead	50
 Dead Man's Switch	Grim Embrace	-50
+Dead Man's Switch	Hex Face the Darkness	50
 Dead Man's Switch	Hex Ruin	-50
 Dead Man's Switch	Jolt	50
 Dead Man's Switch	Oppression	50
@@ -654,6 +700,7 @@ Deadlock	Eruption	-50
 Deadlock	Grim Embrace	-50
 Deadlock	Hex Ruin	-50
 Deadlock	Jolt	-50
+Deadlock	Nowhere to Hide	-50
 Deadlock	Oppression	-50
 Deadlock	Overcharge	-50
 Deadlock	Pop Goes The Weasel	-50
@@ -673,6 +720,7 @@ Discordance	Fearmonger	50
 Discordance	Hex Ruin	50
 Discordance	Lethal Pursuer	-50
 Discordance	Monitor & Abuse	25
+Discordance	Nowhere to Hide	25
 Discordance	Save The Best For Last	25
 Discordance	Surveillance	-100
 Discordance	Thanatophobia	25
@@ -682,8 +730,10 @@ Dissolution	Enduring	25
 Dissolution	Fire Up	25
 Dissolution	Hex Blood Favour	-50
 Dissolution	Hex Crowd Control	25
+Dissolution	Hubris	50
 Dissolution	Play With Your Food	25
 Distressing	Furtive Chase	-300
+Distressing	Hex Face the Darkness	-999
 Distressing	Hysteria	-300
 Distressing	Infectious Fright	50
 Distressing	Insidious	-300
@@ -700,6 +750,7 @@ Dragon's Grip	Grim Embrace	-50
 Dragon's Grip	Hex Ruin	-999
 Dragon's Grip	Insidious	50
 Dragon's Grip	Jolt	-999
+Dragon's Grip	Nowhere to Hide	25
 Dragon's Grip	Overcharge	25
 Dragon's Grip	Pop Goes The Weasel	25
 Dragon's Grip	Surveillance	-100
@@ -708,12 +759,14 @@ Dying Light	Grim Embrace	-50
 Dying Light	Nemesis	-300
 Dying Light	Save The Best For Last	25
 Dying Light	Sloppy Butcher	-50
+Enduring	Hubris	50
 Enduring	Nemesis	25
 Enduring	Spirit Fury	50
 Eruption	Fire Up	25
 Eruption	Grim Embrace	-50
 Eruption	Hex Ruin	-300
 Eruption	Jolt	-50
+Eruption	Nowhere to Hide	25
 Eruption	Oppression	25
 Eruption	Overcharge	25
 Eruption	Pop Goes The Weasel	25
@@ -726,6 +779,8 @@ Fearmonger	Scourge Hook Floods of Rage	25
 Fearmonger	Surveillance	25
 Fearmonger	Thrilling Tremors	25
 Fearmonger	Tinkerer	50
+Fire Up	Hubris	25
+Fire Up	Nowhere to Hide	25
 Fire Up	Oppression	25
 Fire Up	Overcharge	25
 Fire Up	Pop Goes The Weasel	25
@@ -743,8 +798,10 @@ Furtive Chase	Play With Your Food	50
 Furtive Chase	Save The Best For Last	-300
 Furtive Chase	Septic Touch	-300
 Gearhead	Hex Ruin	50
+Gearhead	Nowhere to Hide	25
 Grim Embrace	Hex Ruin	-50
 Grim Embrace	Jolt	-50
+Grim Embrace	Nowhere to Hide	-50
 Grim Embrace	Oppression	-50
 Grim Embrace	Overcharge	-50
 Grim Embrace	Pop Goes The Weasel	-50
@@ -772,6 +829,12 @@ Hex Devour Hope	Hex Thrill of The Hunt	50
 Hex Devour Hope	Hex Undying	50
 Hex Devour Hope	Make Your Choice	-50
 Hex Devour Hope	Whispers	25
+Hex Face the Darkness	Hex Haunted Ground	25
+Hex Face the Darkness	Hex Pentimento	50
+Hex Face the Darkness	Hex Retribution	25
+Hex Face the Darkness	Insidious	-999
+Hex Face the Darkness	Monitor & Abuse	25
+Hex Face the Darkness	Sloppy Butcher	25
 Hex Haunted Ground	Hex Huntress Lullaby	25
 Hex Haunted Ground	Hex Pentimento	25
 Hex Haunted Ground	Hex Retribution	25
@@ -780,6 +843,7 @@ Hex Haunted Ground	Hex The Third Seal	25
 Hex Haunted Ground	Hex Thrill of The Hunt	25
 Hex Haunted Ground	Hex Undying	25
 Hex Haunted Ground	Iron Maiden	25
+Hex Haunted Ground	Nowhere to Hide	25
 Hex Huntress Lullaby	Hex Pentimento	25
 Hex Huntress Lullaby	Hex Retribution	25
 Hex Huntress Lullaby	Hex Thrill of The Hunt	25
@@ -818,6 +882,7 @@ Hex Retribution	Make Your Choice	25
 Hex Ruin	Hex The Third Seal	-50
 Hex Ruin	Hex Thrill of The Hunt	50
 Hex Ruin	Hex Undying	50
+Hex Ruin	Nowhere to Hide	-999
 Hex Ruin	Oppression	-300
 Hex Ruin	Overcharge	-300
 Hex Ruin	Pop Goes The Weasel	-300
@@ -835,6 +900,12 @@ Hex Thrill of The Hunt	Hex Undying	-50
 Hex Undying	Lethal Pursuer	-50
 Hex Undying	Rancor	-50
 Hoarder	Lethal Pursuer	-50
+Hubris	I'm All Ears	25
+Hubris	Infectious Fright	25
+Hubris	Play With Your Food	50
+Hubris	Spirit Fury	50
+Hubris	Superior Anatomy	25
+Hubris	Zanshin Tactics	25
 Hysteria	Sloppy Butcher	50
 I'm All Ears	Lethal Pursuer	50
 I'm All Ears	Superior Anatomy	25
@@ -858,6 +929,7 @@ Iron Grasp	Scourge Hook Pain Resonance	25
 Iron Grasp	Starstruck	50
 Iron Maiden	Rancor	50
 Iron Maiden	Starstruck	25
+Jolt	Nowhere to Hide	-50
 Jolt	Oppression	-300
 Jolt	Overcharge	-300
 Jolt	Pop Goes The Weasel	-50
@@ -865,6 +937,7 @@ Jolt	Surveillance	50
 Jolt	Thrilling Tremors	50
 Lethal Pursuer	Monitor & Abuse	25
 Lethal Pursuer	Nemesis	25
+Lethal Pursuer	Nowhere to Hide	25
 Lethal Pursuer	Scourge Hook Floods of Rage	50
 Lethal Pursuer	Shattered Hope	25
 Lethal Pursuer	Spies From The Shadows	-50
@@ -895,6 +968,15 @@ Nemesis	Trail of Torment	-300
 No Way Out	Rancor	25
 No Way Out	Remember Me	50
 No Way Out	Terminus	50
+Nowhere to Hide	Oppression	25
+Nowhere to Hide	Overcharge	25
+Nowhere to Hide	Pop Goes The Weasel	25
+Nowhere to Hide	Scourge Hook Pain Resonance	-50
+Nowhere to Hide	Starstruck	25
+Nowhere to Hide	Surveillance	25
+Nowhere to Hide	Thrilling Tremors	25
+Nowhere to Hide	Tinkerer	25
+Nowhere to Hide	Whispers	25
 Oppression	Pop Goes The Weasel	50
 Oppression	Surveillance	-100
 Overcharge	Pop Goes The Weasel	50

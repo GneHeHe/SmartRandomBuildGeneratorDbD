@@ -64,6 +64,7 @@ SURVIV_4	ShowAura	Counterforce
 SURVIV_4	ShowAura	Dark Sense
 SURVIV_4	ShowAura	Deja Vu
 SURVIV_4	ShowAura	Detective's Hunch
+SURVIV_4	ShowAura	Fogwise
 SURVIV_4	ShowAura	Guardian
 SURVIV_4	ShowAura	Inner Focus
 SURVIV_4	ShowAura	Kindred
@@ -99,6 +100,7 @@ KILLER_2	Chase	Enduring
 KILLER_2	Chase	Hex Blood Favour
 KILLER_2	Chase	Hex Crowd Control
 KILLER_2	Chase	Hex Haunted Ground
+KILLER_2	Chase	Hubris
 KILLER_2	Chase	I'm All Ears
 KILLER_2	Chase	Make Your Choice
 KILLER_2	Chase	Play With Your Food
@@ -116,11 +118,13 @@ KILLER_3	Detection	Deathbound
 KILLER_3	Detection	Discordance
 KILLER_3	Detection	Dragon's Grip
 KILLER_3	Detection	Gearhead
+KILLER_3	Detection	Hex Face the Darkness
 KILLER_3	Detection	Hex Retribution
 KILLER_3	Detection	Hoarder
 KILLER_3	Detection	Infectious Fright
 KILLER_3	Detection	Iron Maiden
 KILLER_3	Detection	Lethal Pursuer
+KILLER_3	Detection	Nowhere to Hide
 KILLER_3	Detection	Rancor
 KILLER_3	Detection	Scourge Hook Floods of Rage
 KILLER_3	Detection	Shadowborn

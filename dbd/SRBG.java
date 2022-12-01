@@ -148,7 +148,7 @@ public class SRBG {
     private final String s_cons = "data/perk_cons.txt";
     private final String s_cons_custom = "perk_cons_custom.txt";
     // Version
-    public final double VERSION = 3.3;
+    public final double VERSION = 3.4;
     // Title
     public final String TITLE = "Smart Random Build Generator for Dead by Daylight ( SRBG " + VERSION + " )";
     // GitHub Data
