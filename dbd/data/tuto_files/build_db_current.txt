@@ -1,60 +1,60 @@
-Build	Killer	Trapper	Corrupt Intervention	Deadlock	No Way Out	Save The Best For Last
+Build	Killer	Trapper	Agitation	Corrupt Intervention	Save The Best For Last	Scourge Hook Pain Resonance
 Build	Killer	Trapper	Corrupt Intervention	Deadlock	Save The Best For Last	Whispers
-Build	Killer	Wraith	Barbecue & Chilli	Lethal Pursuer	Scourge Hook Pain Resonance	Sloppy Butcher
+Build	Killer	Wraith	Corrupt Intervention	Lethal Pursuer	Scourge Hook Pain Resonance	Sloppy Butcher
 Build	Killer	Wraith	Jolt	Lethal Pursuer	Scourge Hook Pain Resonance	Surveillance
 Build	Killer	Hillbilly	Bamboozle	Barbecue & Chilli	Lethal Pursuer	Scourge Hook Pain Resonance
-Build	Killer	Hillbilly	Barbecue & Chilli	Lethal Pursuer	Scourge Hook Pain Resonance	Shadowborn
-Build	Killer	Nurse Sally	Barbecue & Chilli	Lethal Pursuer	Scourge Hook Floods of Rage	Scourge Hook Pain Resonance
-Build	Killer	Nurse Sally	Jolt	Lethal Pursuer	Scourge Hook Pain Resonance	Surveillance
+Build	Killer	Hillbilly	Bamboozle	Barbecue & Chilli	Corrupt Intervention	Lethal Pursuer
+Build	Killer	Nurse Sally	Barbecue & Chilli	Corrupt Intervention	Lethal Pursuer	Scourge Hook Pain Resonance
+Build	Killer	Nurse Sally	Barbecue & Chilli	Lethal Pursuer	Scourge Hook Pain Resonance	Sloppy Butcher
+Build	Killer	Huntress Anna	Barbecue & Chilli	Corrupt Intervention	Lethal Pursuer	Scourge Hook Pain Resonance
 Build	Killer	Huntress Anna	Barbecue & Chilli	Lethal Pursuer	Scourge Hook Floods of Rage	Scourge Hook Pain Resonance
-Build	Killer	Huntress Anna	Darkness Revealed	Iron Maiden	Lethal Pursuer	Scourge Hook Pain Resonance
-Build	Killer	Myers	Barbecue & Chilli	Lethal Pursuer	Monitor & Abuse	Scourge Hook Pain Resonance
+Build	Killer	Myers	Corrupt Intervention	Lethal Pursuer	Scourge Hook Pain Resonance	Sloppy Butcher
 Build	Killer	Myers	Jolt	Lethal Pursuer	Scourge Hook Pain Resonance	Surveillance
-Build	Killer	Hag	Corrupt Intervention	Franklin's Demise	Monitor & Abuse	Sloppy Butcher
+Build	Killer	Hag	Corrupt Intervention	Deadlock	Monitor & Abuse	Sloppy Butcher
 Build	Killer	Hag	Corrupt Intervention	Monitor & Abuse	Save The Best For Last	Sloppy Butcher
-Build	Killer	Doctor	Barbecue & Chilli	Dead Man's Switch	Lethal Pursuer	Scourge Hook Pain Resonance
+Build	Killer	Doctor	Corrupt Intervention	Lethal Pursuer	Scourge Hook Pain Resonance	Sloppy Butcher
 Build	Killer	Doctor	Jolt	Lethal Pursuer	Scourge Hook Pain Resonance	Surveillance
-Build	Killer	Leatherface	Bamboozle	Barbecue & Chilli	Hex Plaything	Lethal Pursuer
-Build	Killer	Leatherface	Bamboozle	Barbecue & Chilli	Lethal Pursuer	Scourge Hook Pain Resonance
-Build	Killer	Freddy	Barbecue & Chilli	Lethal Pursuer	Save The Best For Last	Scourge Hook Pain Resonance
+Build	Killer	Leatherface	Bamboozle	Corrupt Intervention	Hex Plaything	Lethal Pursuer
+Build	Killer	Leatherface	Bamboozle	Corrupt Intervention	Lethal Pursuer	Scourge Hook Pain Resonance
+Build	Killer	Freddy	Corrupt Intervention	Lethal Pursuer	Save The Best For Last	Scourge Hook Pain Resonance
 Build	Killer	Freddy	Jolt	Lethal Pursuer	Scourge Hook Pain Resonance	Surveillance
-Build	Killer	Pig	Barbecue & Chilli	Lethal Pursuer	Save The Best For Last	Scourge Hook Pain Resonance
+Build	Killer	Pig	Corrupt Intervention	Lethal Pursuer	Save The Best For Last	Scourge Hook Pain Resonance
 Build	Killer	Pig	Jolt	Lethal Pursuer	Scourge Hook Pain Resonance	Surveillance
-Build	Killer	Clown	Barbecue & Chilli	Lethal Pursuer	Save The Best For Last	Scourge Hook Pain Resonance
+Build	Killer	Clown	Corrupt Intervention	Lethal Pursuer	Save The Best For Last	Scourge Hook Pain Resonance
 Build	Killer	Clown	Jolt	Lethal Pursuer	Scourge Hook Pain Resonance	Surveillance
-Build	Killer	Spirit Rin	Barbecue & Chilli	Lethal Pursuer	Scourge Hook Pain Resonance	Sloppy Butcher
+Build	Killer	Spirit Rin	Corrupt Intervention	Lethal Pursuer	Scourge Hook Pain Resonance	Sloppy Butcher
 Build	Killer	Spirit Rin	Jolt	Lethal Pursuer	Scourge Hook Pain Resonance	Surveillance
-Build	Killer	Legion	Barbecue & Chilli	Lethal Pursuer	Scourge Hook Pain Resonance	Thanatophobia
+Build	Killer	Legion	Barbecue & Chilli	Corrupt Intervention	Lethal Pursuer	Scourge Hook Pain Resonance
 Build	Killer	Legion	Jolt	Lethal Pursuer	Scourge Hook Pain Resonance	Surveillance
-Build	Killer	Plague	Barbecue & Chilli	Lethal Pursuer	Scourge Hook Pain Resonance	Thanatophobia
+Build	Killer	Plague	Corrupt Intervention	Dissolution	Lethal Pursuer	Scourge Hook Pain Resonance
 Build	Killer	Plague	Jolt	Lethal Pursuer	Scourge Hook Pain Resonance	Surveillance
-Build	Killer	Ghostface	Barbecue & Chilli	Lethal Pursuer	Scourge Hook Pain Resonance	Sloppy Butcher
+Build	Killer	Ghostface	Corrupt Intervention	Lethal Pursuer	Scourge Hook Pain Resonance	Sloppy Butcher
 Build	Killer	Ghostface	Jolt	Lethal Pursuer	Scourge Hook Pain Resonance	Surveillance
-Build	Killer	Demogorgon	Barbecue & Chilli	I'm All Ears	Lethal Pursuer	Scourge Hook Pain Resonance
-Build	Killer	Demogorgon	Barbecue & Chilli	Lethal Pursuer	Save The Best For Last	Scourge Hook Pain Resonance
+Build	Killer	Demogorgon	Corrupt Intervention	I'm All Ears	Lethal Pursuer	Scourge Hook Pain Resonance
+Build	Killer	Demogorgon	Corrupt Intervention	Lethal Pursuer	Save The Best For Last	Scourge Hook Pain Resonance
 Build	Killer	Oni	Barbecue & Chilli	Infectious Fright	Lethal Pursuer	Monitor & Abuse
-Build	Killer	Oni	Barbecue & Chilli	Lethal Pursuer	Monitor & Abuse	Scourge Hook Pain Resonance
-Build	Killer	Deathslinger	Barbecue & Chilli	Lethal Pursuer	Save The Best For Last	Scourge Hook Pain Resonance
-Build	Killer	Deathslinger	Jolt	Lethal Pursuer	Scourge Hook Pain Resonance	Surveillance
-Build	Killer	Pyramid Head	Barbecue & Chilli	I'm All Ears	Lethal Pursuer	Scourge Hook Pain Resonance
-Build	Killer	Pyramid Head	Barbecue & Chilli	Lethal Pursuer	Scourge Hook Pain Resonance	Scourge Hook Floods of Rage
+Build	Killer	Oni	Barbecue & Chilli	Corrupt Intervention	Lethal Pursuer	Scourge Hook Pain Resonance
+Build	Killer	Deathslinger	Corrupt Intervention	Dissolution	Lethal Pursuer	Scourge Hook Pain Resonance
+Build	Killer	Deathslinger	Corrupt Intervention	Lethal Pursuer	Save The Best For Last	Scourge Hook Pain Resonance
+Build	Killer	Pyramid Head	Corrupt Intervention	I'm All Ears	Lethal Pursuer	Scourge Hook Pain Resonance
+Build	Killer	Pyramid Head	Corrupt Intervention	Lethal Pursuer	Scourge Hook Pain Resonance	Scourge Hook Floods of Rage
+Build	Killer	Blight	Barbecue & Chilli	Corrupt Intervention	Lethal Pursuer	Scourge Hook Pain Resonance
 Build	Killer	Blight	Barbecue & Chilli	Lethal Pursuer	Scourge Hook Pain Resonance	Shadowborn
-Build	Killer	Blight	Barbecue & Chilli	Lethal Pursuer	Scourge Hook Floods of Rage	Scourge Hook Pain Resonance
-Build	Killer	Twins	Barbecue & Chilli	Forced Penance	Lethal Pursuer	Scourge Hook Pain Resonance
-Build	Killer	Twins	Barbecue & Chilli	Lethal Pursuer	Scourge Hook Pain Resonance	Sloppy Butcher
-Build	Killer	Trickster	Darkness Revealed	Iron Maiden	Lethal Pursuer	Scourge Hook Pain Resonance
-Build	Killer	Trickster	Barbecue & Chilli	Lethal Pursuer	Monitor & Abuse	Scourge Hook Pain Resonance
-Build	Killer	Nemesis	Barbecue & Chilli	Discordance	Save The Best For Last	Scourge Hook Pain Resonance
-Build	Killer	Nemesis	Barbecue & Chilli	Lethal Pursuer	Save The Best For Last	Scourge Hook Pain Resonance
-Build	Killer	Cenobite	Barbecue & Chilli	Hoarder	Lethal Pursuer	Scourge Hook Pain Resonance
-Build	Killer	Cenobite	Jolt	Lethal Pursuer	Scourge Hook Pain Resonance	Surveillance
-Build	Killer	Artist	Barbecue & Chilli	Dead Man's Switch	Discordance	Scourge Hook Pain Resonance
-Build	Killer	Artist	Barbecue & Chilli	Dead Man's Switch	Lethal Pursuer	Scourge Hook Pain Resonance
-Build	Killer	Sadako	Barbecue & Chilli	Lethal Pursuer	Scourge Hook Pain Resonance	Sloppy Butcher
+Build	Killer	Twins	Corrupt Intervention	Forced Penance	Lethal Pursuer	Scourge Hook Pain Resonance
+Build	Killer	Twins	Corrupt Intervention	Lethal Pursuer	Scourge Hook Pain Resonance	Sloppy Butcher
+Build	Killer	Trickster	Corrupt Intervention	Iron Maiden	Lethal Pursuer	Scourge Hook Pain Resonance
+Build	Killer	Trickster	Corrupt Intervention	Lethal Pursuer	Monitor & Abuse	Scourge Hook Pain Resonance
+Build	Killer	Nemesis	Corrupt Intervention	Discordance	Save The Best For Last	Scourge Hook Pain Resonance
+Build	Killer	Nemesis	Corrupt Intervention	Lethal Pursuer	Save The Best For Last	Scourge Hook Pain Resonance
+Build	Killer	Cenobite	Corrupt Intervention	Hoarder	Lethal Pursuer	Scourge Hook Pain Resonance
+Build	Killer	Cenobite	Corrupt Intervention	Lethal Pursuer	Scourge Hook Pain Resonance	Sloppy Butcher
+Build	Killer	Artist	Barbecue & Chilli	Corrupt Intervention	Lethal Pursuer	Scourge Hook Pain Resonance
+Build	Killer	Artist	Corrupt Intervention	Discordance	Lethal Pursuer	Scourge Hook Pain Resonance
+Build	Killer	Sadako	Corrupt Intervention	Lethal Pursuer	Save The Best For Last	Scourge Hook Pain Resonance
 Build	Killer	Sadako	Jolt	Lethal Pursuer	Scourge Hook Pain Resonance	Surveillance
-Build	Killer	Dredge	Barbecue & Chilli	Darkness Revealed	Deadlock	Scourge Hook Pain Resonance
+Build	Killer	Dredge	Barbecue & Chilli	Corrupt Intervention	Lethal Pursuer	Scourge Hook Pain Resonance
 Build	Killer	Dredge	Jolt	Lethal Pursuer	Scourge Hook Pain Resonance	Surveillance
-Build	Killer	Wesker	Barbecue & Chilli	Dissolution	Lethal Pursuer	Scourge Hook Pain Resonance
-Build	Killer	Wesker	Barbecue & Chilli	Lethal Pursuer	Save The Best For Last	Scourge Hook Pain Resonance
-Build	Killer	Knight	Barbecue & Chilli	Lethal Pursuer	Play With Your Food	Scourge Hook Pain Resonance
-Build	Killer	Knight	Barbecue & Chilli	Lethal Pursuer	Save The Best For Last	Scourge Hook Pain Resonance
+Build	Killer	Wesker	Corrupt Intervention	Dissolution	Lethal Pursuer	Scourge Hook Pain Resonance
+Build	Killer	Wesker	Barbecue & Chilli	Corrupt Intervention	Lethal Pursuer	Scourge Hook Pain Resonance
+Build	Killer	Knight	Barbecue & Chilli	Corrupt Intervention	Lethal Pursuer	Scourge Hook Pain Resonance
+Build	Killer	Knight	Jolt	Lethal Pursuer	Scourge Hook Pain Resonance	Surveillance

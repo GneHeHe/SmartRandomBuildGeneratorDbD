@@ -259,6 +259,7 @@ Dark Sense	Potential Energy	25
 Dark Sense	Premonition	-100
 Dark Sense	Spine Chill	-999
 Dark Sense	Wiretap	-100
+Dead Hard	Decisive Strike	25
 Dead Hard	Deliverance	50
 Dead Hard	For the People	50
 Dead Hard	Head On	-100
