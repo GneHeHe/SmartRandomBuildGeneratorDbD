@@ -49,8 +49,8 @@ Build	Killer	Nemesis	Corrupt Intervention	Lethal Pursuer	Save The Best For Last	
 Build	Killer	Cenobite	Corrupt Intervention	Hoarder	Lethal Pursuer	Scourge Hook Pain Resonance
 Build	Killer	Cenobite	Corrupt Intervention	Lethal Pursuer	Scourge Hook Pain Resonance	Sloppy Butcher
 Build	Killer	Artist	Barbecue & Chilli	Corrupt Intervention	Lethal Pursuer	Scourge Hook Pain Resonance
-Build	Killer	Artist	Corrupt Intervention	Discordance	Lethal Pursuer	Scourge Hook Pain Resonance
-Build	Killer	Sadako	Corrupt Intervention	Lethal Pursuer	Save The Best For Last	Scourge Hook Pain Resonance
+Build	Killer	Artist	Corrupt Intervention	Dead Man's Switch	Discordance	Scourge Hook Pain Resonance
+Build	Killer	Sadako	Corrupt Intervention	Discordance	Save The Best For Last	Scourge Hook Pain Resonance
 Build	Killer	Sadako	Jolt	Lethal Pursuer	Scourge Hook Pain Resonance	Surveillance
 Build	Killer	Dredge	Barbecue & Chilli	Corrupt Intervention	Lethal Pursuer	Scourge Hook Pain Resonance
 Build	Killer	Dredge	Jolt	Lethal Pursuer	Scourge Hook Pain Resonance	Surveillance
