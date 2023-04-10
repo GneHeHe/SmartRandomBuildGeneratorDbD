@@ -2,6 +2,15 @@
 
 # Smart Random Build Generator (SRBG)
 
+**
+Dear Random Build Enjoyers,
+I wanted to take a moment to let you know that I have made the difficult decision to step away from my SRBG project.
+As much as I have enjoyed working on this fun perk roulette tool, I have reached a point where I cannot dedicate any more time to it.
+Sincerely,
+See you in the Fog!
+GneHeHe
+**
+
 **Bored to play with same perks? You think most randomizers return crap builds?
 Well, SRBG is for you :)**
 
